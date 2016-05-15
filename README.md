@@ -3,7 +3,7 @@ TheOld - Crafters hibajelentések:
 Az Issues oldalon a zöld New Issue gombbal lehet bejelenteni minden hibát ami a szervercsoporthoz tartozik.
 A megfelelő hibajelentésekért értékes jutalmat is adunk!
 
-Hibajelentésekért járó jutalmak:
+Hibajelentésekért járó jutalmak: 
 Súlyus, kritikus, kihasználható hibák stb... - OldDiamond
 Közepes, kisebb hibák, fordítási hinák stb... - OldGold
 
