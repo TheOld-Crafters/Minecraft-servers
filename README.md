@@ -13,7 +13,7 @@ Az OldGoldot, vagy OldDiamondot a tulajtól kell kérni a szerveren, ha a hibaje
 Több információ az OldGoldról, és OldDiamondról: /warp oldgold
 
 Hasznos oldalak:
-Minecraft hibák jelentése: https://bugs.mojang.com/browse/MC
-Minecraft PE hibák jelentése: https://bugs.mojang.com/browse/MCPE
-PC szerverfájl hibák jelentése: https://github.com/PaperMC/Paper/issues
-PE szerverfájl hibák jelentése: https://github.com/iTXTech/Genisys
+- Minecraft hibák jelentése: https://bugs.mojang.com/browse/MC
+- Minecraft PE hibák jelentése: https://bugs.mojang.com/browse/MCPE
+- PC szerverfájl hibák jelentése: https://github.com/PaperMC/Paper/issues
+- PE szerverfájl hibák jelentése: https://github.com/iTXTech/Genisys
