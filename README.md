@@ -9,5 +9,6 @@ Hibajelentésekért járó jutalmak:
 
 
 Az OldGoldot, vagy OldDiamondot a tulajtól kell kérni a szerveren, ha a hibajelentést lezárták és megkapta az OldDiamond, vagy OldGold cédulát.
+Több információ az OldGoldról, és OldDiamondról: /warp oldgold
 
 Minecraft hibák jelentése: https://bugs.mojang.com/browse/MC
