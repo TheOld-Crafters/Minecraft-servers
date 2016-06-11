@@ -16,4 +16,4 @@ Hasznos oldalak:
 - Minecraft hibák jelentése: https://bugs.mojang.com/browse/MC
 - Minecraft PE hibák jelentése: https://bugs.mojang.com/browse/MCPE
 - PC szerverfájl hibák jelentése: https://github.com/PaperMC/Paper/issues
-- PE szerverfájl hibák jelentése: https://github.com/iTXTech/Genisys
+- PE szerverfájl hibák jelentése: https://github.com/iTXTech/Genisys/issues
