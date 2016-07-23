@@ -17,6 +17,6 @@ Hasznos oldalak:
 - Minecraft PE hibák jelentése: https://bugs.mojang.com/browse/MCPE
 - PC szerverfájl hibák jelentése: https://github.com/PaperMC/Paper/issues
 - PE szerverfájl hibák jelentése: https://github.com/iTXTech/Genisys/issues
-- MineMarket hibák jelentése: https://github.com/InfinityHosting/MineMarket-Issue/issues/40
+- MineMarket hibák jelentése: https://github.com/vngplanet/MineMarket/issues
 
 TheOld - Crafters PlotMe 0.13b plugin: http://pluginok.cf/index.php?resources/plotme-0-13b-worldedit-6-x-optimaliz%C3%A1lt-1-9-1-10-2.9/
