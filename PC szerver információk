@@ -1,8 +1,8 @@
 Szerver szoftver: Paper
 Szerverkezelő szoftver: Waterfall
-OS: Linux (amd64) version 3.10.0-229.el7.x86_64
+OS: Ubuntu 14.04.4 LTS
 Szerverkezelő: Multicraft
-Java: 8 x64
-Processzor: Intel Xenon E5
-Tároló: HDD
+Java: 8 u101 x64
+Processzor: 16 magos Intel
+Tároló: SSD
 
