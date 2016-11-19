@@ -3,4 +3,5 @@ OS: Ubuntu 14.04.5 LTS
 Szerverkezelő: Multicraft
 PHP: 7.0.12 (Genisys script) Linux x64
 Processzor: QEMU Virtual CPU version (cpu64-rhel6) 4x2700Mhz
-Tároló: HDD
+Tároló: 10 GB (HDD)
+Összes RAM: 8 GB
