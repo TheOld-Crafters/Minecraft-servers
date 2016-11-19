@@ -2,5 +2,5 @@ Szerver szoftver: Genisys
 OS: Ubuntu 14.04.5 LTS
 Szerverkezelő: Multicraft
 PHP: 7.0.12 (Genisys script) Linux x64
-Processzor: Intel Xenon E5 (4 vcpu)
+Processzor: QEMU Virtual CPU version (cpu64-rhel6) 4x2700Mhz
 Tároló: HDD
