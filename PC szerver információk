@@ -1,8 +1,8 @@
 Szerver szoftver: Paper
 Szerverkezelő szoftver: Waterfall
-OS: Ubuntu 14.04.5 LTS
+OS: Ubuntu 16.04.1 LTS
 Szerverkezelő: Multicraft
-Java: 8 u101 x64
-Processzor: 2 db. Intel Xeon Quad-Core E5620 2.4GHz
-Tároló: Samsung 850 EVO 512 GB (SSD)
-Összes RAM: 32 GB
+Java: 8 u111 x64
+Processzor: 2xIntel Xeon E3-1245 V2 @ 3.40GHz
+Tároló: 2x1 TB HDD (10000 rpm)
+Összes RAM: 4x8 GB
