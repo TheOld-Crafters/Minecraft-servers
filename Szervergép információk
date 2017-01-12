@@ -3,6 +3,6 @@ Szerverkezelő szoftver: Waterfall
 OS: Ubuntu 16.04.1 LTS
 Szerverkezelő: Multicraft
 Java: 8 u111 x64
-Processzor: 2xIntel Xeon E3-1245 V2 @ 3.40GHz
-Tároló: 2x1 TB HDD (10000 rpm)
-Összes RAM: 4x8 GB
+Processzor: 2xIntel Core i7-4790K @ 4.00GHz
+Tároló: 2x240 GB SSD
+Összes RAM: 32 GB DDR3
