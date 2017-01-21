@@ -267,7 +267,7 @@ FENCE:
 PUMPKIN:
   0: Tök
 NETHERRACK:
-  0: Alvilági Tégla
+  0: Alvilági Kő
 SOUL_SAND:
   0: Lélekhomok
 GLOWSTONE:
@@ -1221,3 +1221,47 @@ BONE_BLOCK:
   0: Csontblokk
 STRUCTURE_VOID:
   0: Szerkezet Kijelölő
+
+# 1.11 items andris155
+OBSERVER:
+  0: Varázsszem
+WHITE_SHULKER_BOX:
+  0: Fehér Shulkerdoboz
+ORANGE_SHULKER_BOX:
+  0: Narancssárga Shulkerdoboz
+MAGENTA_SHULKER_BOX:
+  0: Bíborvörös Shulkerdoboz
+LIGHT_BLUE_SHULKER_BOX:
+  0: Világoskék Shulkerdoboz
+YELLOW_SHULKER_BOX:
+  0: Sárga Shulkerdoboz
+LIME_SHULKER_BOX:
+  0: Lime Shulkerdoboz
+PINK_SHULKER_BOX:
+  0: Rózsaszín Shulkerdoboz
+GRAY_SHULKER_BOX:
+  0: Szürke Shulkerdoboz
+SILVER_SHULKER_BOX:
+  0: Világosszürke Shulkerdoboz
+CYAN_SHULKER_BOX:
+  0: Ciánkék Shulkerdoboz
+PURPLE_SHULKER_BOX:
+  0: Lila Shulkerdoboz
+BLUE_SHULKER_BOX:
+  0: Kék Shulkerdoboz
+BROWN_SHULKER_BOX:
+  0: Barna Shulkerdoboz
+GREEN_SHULKER_BOX:
+  0: Zöld Shulkerdoboz
+RED_SHULKER_BOX:
+  0: Vörös Shulkerdoboz
+BLACK_SHULKER_BOX:
+  0: Fekete Shulkerdoboz
+TOTEM:
+  0: Életmentés Toteme
+SHULKER_SHELL:
+  0: Shulkerhéj
+
+# 1.11.1 items andris155
+IRON_NUGGET:
+  0: Vasrög
