@@ -21,6 +21,5 @@ A játékod, és operációs rendszered pontos verziója. A legújabb nem megfel
 * Minecraft verzió: 
 * Minecraft launcher (nem kötelező): 
 
-
 #### Videók, képek, mód lista és egyéb fájlok
 
