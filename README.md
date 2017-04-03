@@ -4,13 +4,15 @@ Az Issues oldalon a zöld New Issue gombbal lehet bejelenteni minden hibát, ami
 A megfelelő hibajelentésekért értékes jutalmat is adunk!
 
 Hibajelentésekért járó jutalmak:
-- Súlyos, kritikus, kihasználható hibák stb... - OldDiamond
+- Súlyos, kritikus, kihasználható hibák stb... - OCD
 - Közepes, kisebb hibák, fordítási hibák stb... - OldGold
 
 
-Az OldGoldot, vagy OldDiamondot a tulajtól kell kérni a szerveren, ha a hibajelentést lezárták és megkapta az OldDiamond, vagy OldGold cédulát.
+Az OldGoldot, vagy OCD-t a tulajtól kell kérni, ha a hibajelentést lezárták és megkapta az OCD, vagy OldGold cédulát.
 
-Több információ az OldGoldról, és OldDiamondról: /warp oldgold
+Több információ az OldGoldról: /warp oldgold
+Több információ az OCD-ről: http://theold.minemarket.hu/
+
 
 Hasznos oldalak (Angol):
 - PC szerverfájl hibák jelentése: https://github.com/PaperMC/Paper/issues
