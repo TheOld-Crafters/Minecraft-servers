@@ -13,6 +13,7 @@ GRASS:
   0: Fűblokk
 DIRT:
   0: Föld
+  1: Terméketlen Föld
   2: Podzol
 COBBLESTONE:
   0: Zúzottkő
@@ -69,7 +70,7 @@ GLASS:
 LAPIS_ORE:
   0: Lazuritérc
 LAPIS_BLOCK:
-  0: Lazurittömb
+  0: Lazuritblokk
 DISPENSER:
   0: Adagoló
 SANDSTONE:
@@ -101,18 +102,18 @@ PISTON_EXTENSION:
 WOOL:
   0: Fehér Gyapjú
   1: Narancssárga Gyapjú
-  2: Magenta Gyapjú
+  2: Bíbor Gyapjú
   3: Világoskék Gyapjú
   4: Sárga Gyapjú
-  5: Neonzöld Gyapjú
+  5: Világoszöld Gyapjú
   6: Rózsaszín Gyapjú
   7: Szürke Gyapjú
   8: Világosszürke Gyapjú
-  9: Ciánkék Gyapjú
+  9: Türkizkék Gyapjú
   10: Lila Gyapjú
   11: Kék Gyapjú
   12: Barna Gyapjú
-  13: Sötétzöld Gyapjú
+  13: Zöld Gyapjú
   14: Vörös Gyapjú
   15: Fekete Gyapjú
 PISTON_MOVING_PIECE:
@@ -123,7 +124,7 @@ RED_ROSE:
   0: Pipacs
   1: Kék Orchidea
   2: Hagymavirág
-  3: Búzavirág
+  3: Kékpárna
   4: Piros Tulipán
   5: Narancssárga Tulipán
   6: Fehér Tulipán
@@ -134,9 +135,9 @@ BROWN_MUSHROOM:
 RED_MUSHROOM:
   0: Vörös Gomba
 GOLD_BLOCK:
-  0: Aranytömb
+  0: Aranyblokk
 IRON_BLOCK:
-  0: Vastömb
+  0: Vasblokk
 DOUBLE_STEP:
   0: Kő Dupla Lap
   1: Homokkő Dupla Lap
@@ -205,15 +206,15 @@ CHEST:
 REDSTONE_WIRE:
   0: Vöröskő
 DIAMOND_ORE:
-  0: Ásványi Gyémánt
+  0: Gyémántérc
 DIAMOND_BLOCK:
-  0: Gyémánttömb
+  0: Gyémántblokk
 WORKBENCH:
   0: Barkácsasztal
 CROPS:
   0: Búza
 SOIL:
-  0: Bekapált Föld
+  0: Termőföld
 FURNACE:
   0: Kemence
 BURNING_FURNACE:
@@ -286,23 +287,23 @@ LOCKED_CHEST:
   0: Lezárt Láda
 STAINED_GLASS:
   0: Fehér Festett Üveg
-  1: Narancs Festett Üveg
+  1: Narancssárga Festett Üveg
   2: Bíbor Festett Üveg
   3: Világoskék Festett Üveg
   4: Sárga Festett Üveg
   5: Világoszöld Festett Üveg
   6: Rózsaszín Festett Üveg
   7: Szürke Festett Üveg
-  8: Világos Szürke Festett Üveg
-  9: Türkiz Festett Üveg
+  8: Világosszürke Festett Üveg
+  9: Türkizkék Festett Üveg
   10: Lila Festett Üveg
   11: Kék Festett Üveg
   12: Barna Festett Üveg
   13: Zöld Festett Üveg
-  14: Piros Festett Üveg
+  14: Vörös Festett Üveg
   15: Fekete Festett Üveg
 TRAP_DOOR:
-  0: Csapóajtó
+  0: Fa csapóajtó
 MONSTER_EGGS:
   0: Kő Ezüstmollyal
   1: Zúzottkő Ezüstmollyal
@@ -322,7 +323,7 @@ HUGE_MUSHROOM_2:
 IRON_FENCE:
   0: Vasrács
 THIN_GLASS:
-  0: Festett Üveglap
+  0: Üveglap
 MELON_BLOCK:
   0: Dinnyeblokk
 PUMPKIN_STEM:
@@ -457,7 +458,7 @@ DAYLIGHT_DETECTOR:
 REDSTONE_BLOCK:
   0: Vöröskő Blokk
 QUARTZ_ORE:
-  0: Alvilági Kvarc Érc
+  0: Alvilági Kvarcérc
 HOPPER:
   0: Tölcsér
 QUARTZ_BLOCK:
@@ -473,25 +474,25 @@ ACTIVATOR_RAIL:
 DROPPER:
   0: Kidobó
 STAINED_CLAY:
-  0: Fehér Színezett Agyag
-  1: Narancssárga Színezett Agyag
-  2: Bíbor Színezett Agyag
-  3: Világoskék Színezett Agyag
-  4: Sárga Színezett Agyag
-  5: Világoszöld Színezett Agyag
-  6: Rózsaszín Színezett Agyag
-  7: Szürke Színezett Agyag
-  8: Világosszürke Színezett Agyag
-  9: Türkizkék Színezett Agyag
-  10: Lila Színezett Agyag
-  11: Kék Színezett Agyag
-  12: Barna Színezett Agyag
-  13: Zöld Színezett Agyag
-  14: Piros Színezett Agyag
-  15: Fekete Színezett Agyag
+  0: Fehér Terrakotta
+  1: Narancssárga Terrakotta
+  2: Bíbor Terrakotta
+  3: Világoskék Terrakotta
+  4: Sárga Terrakotta
+  5: Világoszöld Terrakotta
+  6: Rózsaszín Terrakotta
+  7: Szürke Terrakotta
+  8: Világosszürke Terrakotta
+  9: Türkizkék Terrakotta
+  10: Lila Terrakotta
+  11: Kék Terrakotta
+  12: Barna Terrakotta
+  13: Zöld Terrakotta
+  14: Vörös Terrakotta
+  15: Fekete Terrakotta
 STAINED_GLASS_PANE:
   0: Fehér Festett Üveglap
-  1: Narancs Festett Üveglap
+  1: Narancssárga Festett Üveglap
   2: Bíbor Festett Üveglap
   3: Világoskék Festett Üveglap
   4: Sárga Festett Üveglap
@@ -499,12 +500,12 @@ STAINED_GLASS_PANE:
   6: Rózsaszín Festett Üveglap
   7: Szürke Festett Üveglap
   8: Világosszürke Festett Üveglap
-  9: Türkiz Festett Üveglap
+  9: Türkizkék Festett Üveglap
   10: Lila Festett Üveglap
   11: Kék Festett Üveglap
   12: Barna Festett Üveglap
   13: Zöld Festett Üveglap
-  14: Piros Festett Üveglap
+  14: Vörös Festett Üveglap
   15: Fekete Festett Üveglap
 LEAVES_2:
   0: Akácia-levelek
@@ -524,7 +525,7 @@ CARPET:
   2: Bíbor Szőnyeg
   3: Világoskék Szőnyeg
   4: Sárga Szőnyeg
-  5: Neonzöld Szőnyeg
+  5: Világoszöld Szőnyeg
   6: Rózsaszín Szőnyeg
   7: Szürke Szőnyeg
   8: Világosszürke Szőnyeg
@@ -732,9 +733,9 @@ BOOK:
 SLIME_BALL:
   0: Nyálkagolyó
 STORAGE_MINECART:
-  0: Tároló Csille
+  0: Tárolócsille
 POWERED_MINECART:
-  0: Csille Kemencével
+  0: Gőzmeghajtású Csille
 EGG:
   0: Tojás
 COMPASS:
@@ -761,14 +762,14 @@ INK_SACK:
   3: Kakaóbab
   4: Lazurit
   5: Lila Festék
-  6: Ciánkék Festék
+  6: Türkizkék Festék
   7: Világosszürke Festék
   8: Szürke Festék
   9: Rózsaszín Festék
-  10: Neonzöld Festék
+  10: Világoszöld Festék
   11: Pitypangsárga
   12: Világoskék Festék
-  13: Magenta Festék
+  13: Bíbor Festék
   14: Narancssárga Festék
   15: Csontliszt
 BONE:
@@ -778,7 +779,22 @@ SUGAR:
 CAKE:
   0: Torta
 BED:
-  0: Ágy
+  0: Fehér Ágy
+  1: Narancssárga Ágy
+  2: Bíbor Ágy
+  3: Világoskék Ágy
+  4: Sárga Ágy
+  5: Világoszöld Ágy
+  6: Rózsaszín Ágy
+  7: Szürke Ágy
+  8: Világosszürke Ágy
+  9: Türkizkék Ágy
+  10: Lila Ágy
+  11: Kék Ágy
+  12: Barna Ágy
+  13: Zöld Ágy
+  14: Vörös Ágy
+  15: Fekete Ágy
 DIODE:
   0: Vöröskő-jelismétlő
 COOKIE:
@@ -815,6 +831,7 @@ NETHER_STALK:
   0: Alvilági Bibircsók
 POTION:
   # Regular Potions
+  # 1.9-től NBT-k azonosítják ezeket. @ andris155
   0: Ital
   16: Kínos Ital
   8192: Földi Ital
@@ -914,6 +931,7 @@ EYE_OF_ENDER:
 SPECKLED_MELON:
   0: Ragyogó Dinnye
 MONSTER_EGG:
+  # 1.9-től NBT-k azonosítják ezeket. @ andris155
   0: Idéző Tojás
   50: Creeper Idéző Tojás
   51: Csontváz Idéző Tojás
@@ -1113,6 +1131,7 @@ MUTTON:
 COOKED_MUTTON:
   0: Sült birkahús
 BANNER:
+  # Ha átszínezik megtévesztő az ID szerinti szín fordítás. @ andris155
   0: Zászló
   1: Zászló
   2: Zászló
@@ -1134,7 +1153,7 @@ SPRUCE_DOOR_ITEM:
 BIRCH_DOOR_ITEM:
   0: Nyírfa Ajtó
 JUNGLE_DOOR_ITEM:
-  0: Trópusi fa Ajtó
+  0: Trópusifa-Ajtó
 ACACIA_DOOR_ITEM:
   0: Akácia Ajtó
 DARK_OAK_DOOR_ITEM:
@@ -1192,13 +1211,14 @@ SPLASH_POTION:
 SPECTRAL_ARROW:
   0: Sprektrális Nyíl
 TIPPED_ARROW:
+  # Mivel NBT-t használ nem fordítható effekt szerint. @ andris155
   0: Effektes Nyíl
 LINGERING_POTION:
   0: Időző Bájital
 SHIELD:
   0: Pajzs
 ELYTRA:
-  0: Siklószárny
+  0: Kitinszárny
 BOAT_SPRUCE:
   0: Fenyőfa Csónak
 BOAT_BIRCH:
@@ -1230,13 +1250,13 @@ WHITE_SHULKER_BOX:
 ORANGE_SHULKER_BOX:
   0: Narancssárga Shulkerdoboz
 MAGENTA_SHULKER_BOX:
-  0: Bíborvörös Shulkerdoboz
+  0: Bíbor Shulkerdoboz
 LIGHT_BLUE_SHULKER_BOX:
   0: Világoskék Shulkerdoboz
 YELLOW_SHULKER_BOX:
   0: Sárga Shulkerdoboz
 LIME_SHULKER_BOX:
-  0: Lime Shulkerdoboz
+  0: Világoszöld Shulkerdoboz
 PINK_SHULKER_BOX:
   0: Rózsaszín Shulkerdoboz
 GRAY_SHULKER_BOX:
@@ -1244,7 +1264,7 @@ GRAY_SHULKER_BOX:
 SILVER_SHULKER_BOX:
   0: Világosszürke Shulkerdoboz
 CYAN_SHULKER_BOX:
-  0: Ciánkék Shulkerdoboz
+  0: Türkizkék Shulkerdoboz
 PURPLE_SHULKER_BOX:
   0: Lila Shulkerdoboz
 BLUE_SHULKER_BOX:
@@ -1265,3 +1285,73 @@ SHULKER_SHELL:
 # 1.11.1 items andris155
 IRON_NUGGET:
   0: Vasrög
+  
+# 1.12 items andris155
+CONCRETE:
+  0: Fehér Beton
+  1: Narancssárga Beton
+  2: Bíbor Beton
+  3: Világoskék Beton
+  4: Sárga Beton
+  5: Világoszöld Beton
+  6: Rózsaszín Beton
+  7: Szürke Beton
+  8: Világosszürke Beton
+  9: Türkizkék Beton
+  10: Lila Beton
+  11: Kék Beton
+  12: Barna Beton
+  13: Zöld Beton
+  14: Vörös Beton
+  15: Fekete Beton
+CONCRETE_POWDER:
+  0: Fehér Szárazbeton
+  1: Narancssárga Szárazbeton
+  2: Bíbor Szárazbeton
+  3: Világoskék Szárazbeton
+  4: Sárga Szárazbeton
+  5: Világoszöld Szárazbeton
+  6: Rózsaszín Szárazbeton
+  7: Szürke Szárazbeton
+  8: Világosszürke Szárazbeton
+  9: Türkizkék Szárazbeton
+  10: Lila Szárazbeton
+  11: Kék Szárazbeton
+  12: Barna Szárazbeton
+  13: Zöld Szárazbeton
+  14: Vörös Szárazbeton
+  15: Fekete Szárazbeton
+WHITE_GLAZED_TERRACOTTA:
+  0: Fehér Mázas Kerámia
+ORANGE_GLAZED_TERRACOTTA:
+  0: Narancssárga Mázas Kerámia
+MAGENTA_GLAZED_TERRACOTTA:
+  0: Bíbor Mázas Kerámia
+LIGHT_BLUE_GLAZED_TERRACOTTA:
+  0: Világoskék Mázas Kerámia
+YELLOW_GLAZED_TERRACOTTA:
+  0: Sárga Mázas Kerámia
+LIME_GLAZED_TERRACOTTA:
+  0: Világoszöld Mázas Kerámia
+PINK_GLAZED_TERRACOTTA:
+  0: Rózsaszín Mázas Kerámia
+GRAY_GLAZED_TERRACOTTA:
+  0: Szürke Mázas Kerámia
+SILVER_GLAZED_TERRACOTTA:
+  0: Világosszürke Mázas Kerámia
+CYAN_GLAZED_TERRACOTTA:
+  0: Türkizkék Mázas Kerámia
+PURPLE_GLAZED_TERRACOTTA:
+  0: Lila Mázas Kerámia
+BLUE_GLAZED_TERRACOTTA:
+  0: Kék Mázas Kerámia
+BROWN_GLAZED_TERRACOTTA:
+  0: Barna Mázas Kerámia
+GREEN_GLAZED_TERRACOTTA:
+  0: Zöld Mázas Kerámia
+RED_GLAZED_TERRACOTTA:
+  0: Vörös Mázas Kerámia
+BLACK_GLAZED_TERRACOTTA:
+  0: Fekete Mázas Kerámia
+KNOWLEDGE_BOOK:
+  0: Tudás Könyve
