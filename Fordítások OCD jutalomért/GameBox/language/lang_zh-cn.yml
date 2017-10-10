@@ -1,0 +1,99 @@
+# translation by: AndyYu (SpigotMC name)
+
+# use & for colors
+#   placeholders will be listed in front of the messages
+
+
+prefix: "[&3GameBox&r]"
+name: "&3GameBox&r"
+
+
+commandMessages:
+  notInThisWorld: ' &4你不能这么做'
+  noPermission: ' &4你没有权限!'
+  onlyAsPlayer: ' &4控制台不能这么做'
+  pluginReloaded: ' &2插件已重载'
+  wrongUsage:
+  - ' 使用 &2/gb&r 打开菜单'
+  - ' 获得更多帮助请输入 &2/gb help&r'
+  help:
+  - ' 使用 &2/gb&r 打开菜单'
+  - ' 你可以跳过菜单直接进入游戏'
+  inDisabledWorld: ' &4这个世界不允许这么做'
+
+
+mainButtons:
+  exitButton: "&4点击退出"
+  toMainGUIButton: "&2去主菜单"
+  toGameGUIButton: "&2去游戏菜单"
+  forwardButton: "&2往前"
+  backwardButton: "&2往后"
+  infoMainMenu:
+  - '&a欢迎使用GameBox'
+  - '&a点击一个游戏来开始吧!'
+  # %tokens% 变量表示筹码
+  tokensButton: "&1筹码: &2%tokens%"
+  soundToggle:
+    onDisplayName: "&a声音：开启"
+    onLore:
+    - ""
+    - "&7点击关闭游戏声音"
+    offDisplayName: "&c声音：关闭"
+    offLore:
+    - ""
+    - "&7点击开启声音"
+  inviteButton:
+    displayName: "&e邀请玩家"
+    lore:
+    - ""
+    - "&b点击在聊天栏里邀请玩家"
+  # 这行是邀请者出现在GUI里的信息
+  invitationSkull:
+    # %player% 是玩家变量
+    displayName: "&e%player% 邀请你玩"
+    lore:
+    - ""
+    - "&a点击接受邀请"
+
+inventoryTitles:
+  # 使用 %player% 变量表示玩家
+  mainGUI: ' 欢迎来到 &1Game&1Box&r %player%'
+  # %game% 变量表示游戏
+  gameGUIs: '             %game%&r'
+  noPermMessage: '          &4&l没有权限'
+  notEnoughMoney: '        &4&l钱不够'
+  notEnoughTokens: '        &4&lNot enough tokens'
+  otherPlayerNotEnoughMoney: '   &4另一个玩家钱不够'
+  alreadyInAnotherGame: '     &4已经在另一个游戏里了'
+
+
+shop:
+  freeItem: "&9免费"
+  moneyItem: "&9花费金钱: &4%money%"
+  tokenItem: "&9花费筹码: &4%token%"
+  notEnoughMoney: '        &4&l金钱不够'
+  notEnoughTokens: '        &4&l筹码不够'
+  inventoryIsFull: '        &4&l背包已满'
+  boughtSuccessful: '        &9&l成功购买'
+  shopIsClosed: '        &4&l商店系统未启用'
+  # 使用 %player% 变量表示玩家
+  mainShop: '   &c商店, &1%player%'
+  # use %page% for the page number
+  pageShop: '             &9页码 &l%page%'
+
+others:
+  wonToken: " 你获得了 %tokens% 筹码！ 来自游戏 &3%game%"
+  playerInput:
+    openingMessage: " &l&a请输入你想邀请的玩家的名字"
+    helpMessage:
+    - " &2你必须在 &5%seconds% &2秒内完成"
+    - " &2想要停止邀请，请输入 &c'%'&2."
+    timeRanOut: " &c超时了，邀请失败"
+    inputSuccessful: " &5%player%&2 被邀请了"
+    inputClosed: " &2输入关闭"
+    sameInvitation: " &4邀请已经存在！"
+    notValidPlayerName: " &1%player%&4 玩家不存在！"
+    notOnline: " &c玩家 &5%player%&c 不在线！"
+    notInviteYourself: " &c你居然邀请自己？是太寂寞了吗..."
+  invitation:
+  - " &3%player%&r 邀请你来玩游戏 &3%game%"

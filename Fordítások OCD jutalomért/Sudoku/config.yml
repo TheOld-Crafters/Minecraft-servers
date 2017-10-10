@@ -1,0 +1,193 @@
+# --------------------------------------------------------------------------- #
+#                                                                             #
+#                               Sudoku config                                 #
+#                                                                             #
+#                                  by Nikl                                    #
+# --------------------------------------------------------------------------- #
+#
+# About customizing the Sudoku puzzles:
+#   You can see all the puzzles in text files in the plugins folder.
+#
+#   YOU SHOULD NOT CHANGE the number or rows in a file!
+#
+#   To customize the puzzles you can replace the included puzzles with your own in the same format:
+#   81 characters numbers from 1 to 9 are tips (displayed at the beginning of the game)
+#     ANY OTHER CHARS are zeros
+#   For example: .3...1.7.4829763.5..5..36.985.19.2...17...498..4867.3.56173...27...491533....2..6
+#     is a valid puzzle and will work. The numbers are row for row. First 9 are the top row, 10th to 18th second row...
+
+
+
+
+# name of the language file (in the folder 'language')
+#   'default' always uses the up-to-date english language file included in the plugin jar
+#   To use your own language file or another language file from the folder, set 'langFile' to the name
+#     of the file (including the extension)
+langFile: "lang_hu.yml"
+
+gameBox:
+  mainButton:
+    # define the Material and data for the button (format: 'material:data')
+    materialData: "35:4"
+    # display name of the button
+    displayName: "&3Sudoku"
+    # lore of the button
+    lore:
+    - ""
+    - "&1The famous logic game"
+  gameButtons:
+    saveStats:
+      materialData: "159:3"
+      displayName: "&c&lSudoku"
+      lore:
+      - ""
+      - "&cClimb up the &ltop list"
+      - "&aGood luck!"
+      - ""
+      - "&1Cost: &420"
+      - "&1Reward: &230"
+      - "&1Token: &21"
+      slot: 22
+      cost: 20
+      token: 1
+      money: 30
+      # option for restart button
+      #   default is true
+      restartButton: true
+      # if true the best score of this button is saved
+      saveStats: true
+  topListButtons:
+    # use the same key as the game you want to display the top list for
+    #   for that button 'saveStats' must be true (see above)
+    saveStats:
+      materialData: "159:11"
+      displayName: "&cTop list"
+      lore:
+      - ""
+      - "&cSudoku &1Top List"
+      slot: 31
+      # inventory title of the top list (%player% and %game%)
+      inventoryTitle: '          &3Sudoku&r Top List'
+      # Lore of the skulls in the inventory. Use %rank% for the rank and %score% for the highest score of the player
+      skullLore:
+      - ''
+      - '&6Rank:&1   %rank%'
+      - '&6Solved:&1 %wins%'
+
+
+rules:
+  # enable/disable sound
+  playSounds: true
+
+
+# requires vault and an economy plugin
+#   to enable economy do not forget to enable it for GameBox too
+economy:
+  enabled: false
+
+items:
+  # the grid items are divided into 3 categories
+  #   cover items fill not-jet set slots
+  #   tip items are used for the already given numbers at the beginning of the game
+  #   number items are used for the player input
+
+  # the grid is divided in 9 3x3 fields like this
+
+  #    1   2   3
+  #
+  #    4   5   6
+  #
+  #    7   8   9
+
+  # for each 3x3 field the items can be customized
+  grid:
+    '1':
+      cover:
+        materialData: "160:11"
+        displayName: "&1"
+      tip:
+        materialData: "159:11"
+        displayName: "&1&l&n%value%"
+      number:
+        materialData: "35:11"
+        displayName: "&1%value%"
+    '2':
+      cover:
+        materialData: "160"
+        displayName: "&f"
+      tip:
+        materialData: "159"
+        displayName: "&f&l&n%value%"
+      number:
+        materialData: "35"
+        displayName: "&f%value%"
+    '3':
+      cover:
+        materialData: "160:11"
+        displayName: "&1"
+      tip:
+        materialData: "159:11"
+        displayName: "&1&l&n%value%"
+      number:
+        materialData: "35:11"
+        displayName: "&1%value%"
+    '4':
+      cover:
+        materialData: "160"
+        displayName: "&f"
+      tip:
+        materialData: "159"
+        displayName: "&f&l&n%value%"
+      number:
+        materialData: "35"
+        displayName: "&f%value%"
+    '5':
+      cover:
+        materialData: "160:11"
+        displayName: "&1"
+      tip:
+        materialData: "159:11"
+        displayName: "&1&l&n%value%"
+      number:
+        materialData: "35:11"
+        displayName: "&1%value%"
+    '6':
+      cover:
+        materialData: "160"
+        displayName: "&f"
+      tip:
+        materialData: "159"
+        displayName: "&f&l&n%value%"
+      number:
+        materialData: "35"
+        displayName: "&f%value%"
+    '7':
+      cover:
+        materialData: "160:11"
+        displayName: "&1"
+      tip:
+        materialData: "159:11"
+        displayName: "&1&l&n%value%"
+      number:
+        materialData: "35:11"
+        displayName: "&1%value%"
+    '8':
+      cover:
+        materialData: "160"
+        displayName: "&f"
+      tip:
+        materialData: "159"
+        displayName: "&f&l&n%value%"
+      number:
+        materialData: "35"
+        displayName: "&f%value%"
+    '9':
+      cover:
+        materialData: "160:11"
+        displayName: "&1"
+      tip:
+        materialData: "159:11"
+        displayName: "&1&l&n%value%"
+      number:
+        materialData: "35:11"
+        displayName: "&1%value%"

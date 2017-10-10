@@ -1,0 +1,35 @@
+# use & for colors
+#   placeholders will be listed in front of the messages
+
+# messages related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2You paid &4%cost%"
+    notEnoughMoney: " &4You do not have enough money!"
+  # use %score% to display the number of points at the end of the game
+  finishedWithoutPayout: " You finished the game with &2%score%&r points."
+  # use %score% for the score and %reward% for the reward
+  #   rewards are set in the config!
+  # this message will be send instead of the above 'finishedWithoutPayout' if the money reward is > 0
+  finishedWithPayout: " You finished with &2%score%&r points and won &2%reward%&r dollar!"
+
+
+inventoryTitles:
+  title: "GemCrush  Moves: %moves%  Score: %score%"
+
+
+
+prefix: "[&3GemCrush&r]"
+name: "&1GemCrush&r"
+
+
+
+gameHelp:
+  - '&1&lGet 3 of the same in a line to get points'
+  - '&1&lClick 2 Gems to switch them'
+  - '  &1&lthey have to be next to each other'
+  - '  &1&land you have to create a row of three'
+  - "  &1&lotherwise switching won't work"
+  - ''
+  - '&l&6Have fun!'

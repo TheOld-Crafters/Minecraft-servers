@@ -1,0 +1,63 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2Has pagado &4%cost%"
+    notEnoughMoney: " &4¡No tienes suficiente dinero!"
+    # use %reward% for the amount the player won
+    wonMoney: " &2¡Has ganado &1%reward%&2!"
+    # use %reward% for the amount the player won and %loser% for the player that gave up
+    wonMoneyGaveUp: " &2¡Has ganado &1%reward%&2! %loser% abandonó."
+    # use %reward% for the amount the player won and %loser% for the player that was too slow
+    wonMoneyTooSlow: " &2¡Has ganado &1%reward%&2! %loser% fue demasiado lento."
+  # this message is displayed if the player won and economy is disabled
+  won: " &2¡Has ganado la partida!"
+  lost: " &4Has perdido la partida"
+  # gave up message
+  gaveUp: " &4Has abandonado"
+  # too slow message
+  tooSlow: " &4Has sido demasiado lento"
+  # won message send when the other player gave up
+  #   use %loser% for the name of the player that gave up
+  otherGaveUp: " &2¡Has ganado! %loser% abandonó."
+  # won message send when the other player does not fire in time
+  #   use %loser% for the name of the player that gave up
+  otherTooSlow: " &2¡Has ganado! %loser% fue demasiado lento."
+
+name: '&1Battleship&r'
+prefix: "[&3Battleship&r]"
+
+gameHelp:
+  - '&1&lEste juego es para 2 jugadores'
+  - '&1&lHaz clic en un modo e invita jugadores'
+  - '  &1&lo acepta una invitación'
+  - ''
+  - "&1&lEn &3&lBattleship&1&l debes undir a los barcos"
+  - "  &1&lde tu oponente antes que él unda los tuyos."
+  - ''
+  - '&l&6¡Buena suerte!'
+
+
+
+
+inventoryTitles:
+  # use %count% for the number of ships to set
+  # use %timer% to display the timer
+  setShip1: "Poner portaaviones: %count% x 5 Bloques   &4%timer%"
+  setShip2: "Poner acorazado: %count% x 4 Bloques  &4%timer%"
+  setShip3: "Poner Crucero: %count% x 3 Bloques   &4%timer%"
+  setShip4: "Poner Destructor: %count% x 2 Bloques  &4%timer%"
+  # %timer%
+  attacker: "&2Battleship  &r¡Clic para disparar!   &4%timer%"
+  defender: "&4Battleship  &r¡Vigila!        &2%timer%"
+
+  changingGrids: "&2Battleship  &rCambiando cuadrícula  &2%timer%"
+
+  won: "&2Battleship    &2¡Has ganado!"
+  lost: "&2Battleship    &4¡Has perdido!"
+
+
+# Language translated by altrisi

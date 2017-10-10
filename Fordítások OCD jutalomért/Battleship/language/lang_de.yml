@@ -1,0 +1,69 @@
+# use & for colors
+# placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2Du hast &4%cost% &2bezahlt."
+    notEnoughMoney: " &4Du hast nicht genug Guthaben!"
+    # use %reward% for the amount the player won
+    wonMoney: " &2Du hast &1%reward%&2 gewonnen!"
+    # use %reward% for the amount the player won and %loser% for the player that gave up
+    wonMoneyGaveUp: " &2Du hast &1%reward%&2 gewonnen! %loser% hat kapituliert."
+    # use %reward% for the amount the player won and %loser% for the player that was too slow
+    wonMoneyTooSlow: " &2Du hast &1%reward%&2 gewonnen! %loser% war zu langsam."
+  # this message is displayed if the player won and economy is disabled
+  won: " &2Du hast gewonnen!"
+  lost: " &4Du hast verloren."
+  # gave up message
+  gaveUp: " &4Du hast kapituliert."
+  # too slow message
+  tooSlow: " &4Du warst zu langsam!"
+  # won message send when the other player gave up
+  # use %loser% for the name of the player that gave up
+  otherGaveUp: " &2Du hast gewonnen! %loser% hat kapituliert."
+  # won message send when the other player does not fire in time
+  # use %loser% for the name of the player that gave up
+  otherTooSlow: " &2Du hast gewonnen! %loser% war zu langsam."
+
+
+name: '&3Battleship&r'
+prefix: "[&3Battleship&r]"
+
+
+gameHelp:
+  - '&1&lDieses Spiel braucht zwei Spieler'
+  - '&1&lKlicke auf einen Spieltyp um jemanden'
+  - '  &1&leinzuladen oder eine Einladung von'
+  - '  &1&leinem anderen Spieler zu akzeptieren'
+  - ''
+  - "&1&lIn &3&lBattleship&1&l musst du alle Schiffe"
+  - "  &1&ldeines Gegners versenken, bevor er"
+  - '  &1&ldeine versenkt!'
+  - ''
+  - '&l&6Viel Erfolg!'
+
+
+  
+
+inventoryTitles:
+  # use %count% for the number of ships to set
+  # use %timer% to display the timer
+  setShip1: "Carrier: %count% x 5 Felder   &4%timer%"
+  setShip2: "Battleship: %count% x 4 Felder  &4%timer%"
+  setShip3: "Cruiser: %count% x 3 Felder   &4%timer%"
+  setShip4: "Destroyer: %count% x 2 Felder  &4%timer%"
+  # %timer%
+  attacker: "&2Battleship   &rFeuer frei!     &4%timer%"
+  defender: "&4Battleship   &rAchtung!        &2%timer%"
+
+  changingGrids: "&2Battleship  &rAngreifer wechselt &2%timer%"
+  
+  won: "&2Battleship        &2Gewonnen!"
+  lost: "&2Battleship        &4Verloren..."
+
+
+
+

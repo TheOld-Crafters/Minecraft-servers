@@ -1,0 +1,169 @@
+# ----------------------------------------------------------------------------#
+#                                                                             #
+#                              Battleship config                              #
+#                                                                             #
+# ----------------------------------------------------------------------------#
+
+# name of the language file (in the folder 'language')
+#   the default.yml file is overwritten on every server restart!
+#   This means you will have to use the other files to customize the messages, but since i am adding messages regulary in updates
+#   you can use the default file if you just want to have the up to date english default messages
+langFile: "lang_hu.yml"
+
+
+
+
+
+
+gameBox:
+  mainButton:
+    # define the Material and data for the button (format: 'material:data')
+    materialData: "IRON_BLOCK"
+    # display name of the button
+    displayName: "&3Battleship"
+    # lore of the button
+    lore:
+    - ""
+    - "&1Heavy battle on the ocean"
+  gameButtons:
+    # number of ships in the game (only 1 or 2)
+    #   if not set they will all default to 1
+    normalGame:
+      materialData: "IRON_BLOCK"
+      displayName: "&l&1Normal"
+      lore:
+      - ""
+      - '&l&51 Carrier, 1 Battleship,'
+      - '   &l&52 Cruisers, 1 Destroyer'
+      - '&1Cost: &45'
+      - '&1Reward: &210'
+      # slot of the button in the gui
+      #   be careful to not use the same twice ;)
+      slot: 12
+      cost: 5
+      reward: 10
+      tokens: 1
+      aircraftCarrier: 1
+      battleship: 1
+      cruiser: 2
+      destroyer: 1
+      inviteGuiTitle: "   Start a game of &3Battleship"
+    specialRules:
+      materialData: "COAL_BLOCK"
+      displayName: "&l&1Special rule"
+      lore:
+      - ""
+      - '&l&5One ship of each kind'
+      - '&1Cost: &410'
+      - '&1Reward: &215'
+      - '&l&5In this game the attacker'
+      - '   &l&5will even change after a hit'
+      slot: 14
+      cost: 5
+      # false by default
+      #   this changes attacker even if you hit a ship
+      changeGridAfterHit: true
+      # false by default
+      #   this changes attacker when the fire timer ran out instead of ending the game
+      switchGridsAfterFireTimerRanOut: true
+      reward: 10
+      inviteGuiTitle: "   &3Battleship&r with special rules"
+    withTopList:
+      materialData: "nether_star"
+      displayName: "&l&1Combat"
+      lore:
+      - ""
+      - '&l&52 Cruisers otherwise'
+      - '   &l&5one of each ship'
+      - '&1Cost: &450'
+      - '&1Reward: &2100'
+      - '&1Tokens: &25'
+      - '&l&5Your number of wins'
+      - '   &l&5in this game will be tracked!'
+      - '&l&5Compare yourself'
+      - '   &l&5with others in the top list.'
+      slot: 30
+      cost: 50
+      reward: 80
+      tokens: 5
+      # if true the best score of this button is saved
+      saveStats: true
+      cruiser: 2
+      inviteGuiTitle: "   &3Battleship   &5Combat"
+  topListButtons:
+    # use the same key as the game you want to display the top list for
+    #   for that button 'saveStats' must be true (see above)
+    withTopList:
+      materialData: "nether_star"
+      displayName: "&l&cTop list"
+      lore:
+      - ""
+      - "&1Combat &1top list"
+      slot: 32
+      # inventory title of the top list (%player% and %game%)
+      inventoryTitle: '              Top List'
+      # Lore of the skulls in the inventory. Use %rank% for the rank and %wins% for the number of wins
+      skullLore:
+      - ''
+      - '&6Rank:&1 %rank%'
+      - '&6Wins:&1 %wins%'
+
+
+
+
+
+
+
+gameRules:
+  # play sounds in the game
+  playSounds: true
+
+
+# requires vault and an economy plugin
+economy:
+  enabled: false
+
+# use "Material:data" or "ID:data"
+# Some materials can not be displayed in an inventory, just test everything after changing
+# You are advised to use different materials. At least on the same grid
+#   otherwise the game could break
+materials:
+  yourGrid:
+    ship:
+      material: "Iron_block"
+      name: "&7Ship"
+    lockedShip:
+      material: "7"
+      name: "&8Locked ship"
+    miss:
+      material: "160:3"
+      name: "&2Yeah! A miss!"
+    hit:
+      material: "35:14"
+      name: "&4Damn! A hit..."
+    water:
+      material: "160:11"
+      name: "&1Water"
+  othersGrid:
+    cover:
+      material: "WOOL:7"
+      name: "&6Cover"
+    miss:
+      material: "160:11"
+      name: "&4That did not hit..."
+    hit:
+      material: "Iron_block"
+      name: "&2Booom! Gotcha"
+
+    
+# Customise the timers used in the game (all times in seconds)
+timers:
+  # timer used during the ship-set part of the game
+  shipSetTimer:
+    countdown: 30
+  # timer used during the main part of the game
+  fireTimer:
+    countdown: 10
+  # timer used when attacker and defender change
+  changingGrids:
+    countdown: 3

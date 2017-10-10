@@ -1,0 +1,36 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2Du hast &4%cost% bezahlt"
+    notEnoughMoney: " &4Du hast nicht genug Geld!"
+    # use %reward% for the amount the player won
+    wonMoney: " &2Du hast &6%score%&2 Punkte erreicht und &6%reward%&2 gewonnen!"
+  gameOverNoPay: " &2Du hast &6%score%&2 Punkte erreicht"
+  inventoryTitles:
+    gameTitle: "&92048             &6Punkte: %score%"
+    lost: "&92048    &4Game Over  &6Punkte: %score%"
+  buttons:
+    up: '&3Hoch'
+    down: '&3Runter'
+    right: '&3Rechts'
+    left: '&3Links'
+
+
+prefix: "[&32048&r]"
+name: "&12048&r"
+
+gameHelp:
+  - '&1&lVerschiebe die Kacheln in eine Richtung'
+  - '  &1&lmit Klicks auf die Pfeile.'
+  - '&1&lKacheln bewegen sich immer bis zum Rand des'
+  - '  &1&lSpielfelds, oder bis sie mit einer anderen'
+  - '  &1&lKachel kollidieren.'
+  - '&1&lKollidieren zwei Kacheln mit der selben'
+  - '  &1&lNummer, werden sie zu einer kombiniert.'
+  - '&1&lNach jedem Zug entsteht eine neue Kachel.'
+  - '&1&lVersuche so viele Punkte wie möglich zu'
+  - '  &1&lerreichen, bis kein Zug mehr machbar ist.'

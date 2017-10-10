@@ -1,0 +1,156 @@
+# nutze & fuer farben
+#   platzhater werden vor der jeweiligen nachricht aufgelistet
+
+
+
+prefix: "[&3GameBox&r]"
+name: "&3GameBox&r"
+
+
+jsonPrefix:
+  # colors for JSON have to be named! valid colors:
+  #   black, white, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray
+  #   green, aqua, red, light_purple, yellow, dark_gray, blue,
+  preText: "["
+  preColor: "white"
+  text: "GameBox"
+  color: "dark_aqua"
+  afterText: "]"
+  afterColor: "white"
+
+
+# command messages
+commandMessages:
+  notInThisWorld: ' &4Nicht hier!'
+  noPermission: ' &4Du hast keine keine Erlaubnis!'
+  onlyAsPlayer: ' &4Das geht nur als Spieler'
+  pluginReloaded: ' &2Plugin wurde neu geladen'
+  wrongUsage:
+  - ' Benutze &2/gb&r um das GUI zu öffnen'
+  - ' Für mehr Informationen benutze &2/gb help&r'
+  help:
+  - ' Benutze &2/gb&r um das GUI zu öffnen'
+  - ' Die einzelnen Spiele lassen sich über das GUI öffnen'
+  - ' Oder öffne die Spiel GUIs mit: &2/gb <game>&r'
+  - '   &2/gb info&r für Informationen über die Spiele'
+  inDisabledWorld: ' &4Nicht in dieser Welt'
+  # customize info output here
+  #   the first output will always be version and author
+  info:
+    header:
+    - ' &6&lListe aller installierten Spiele:'
+    - ''
+    - ' &6+ - + - + - + - + - + - + - + - + - + - + - +'
+    # use %name% for the game name
+    # %shorts will be replaced by all available shortcut commands%
+    # %playerNum% will give the number of players needed per game
+    perGame:
+    - ' &3&l%name%:'
+    - '   &2/gb <%shorts%>'
+    - '   Spieler: %playerNum%'
+    footer:
+    - ' &6+ - + - + - + - + - + - + - + - + - + - + - +'
+  tokenInfo: ' &2%player% has %token% token'
+  reload:
+    fail: " &4Fehler beim reload von GameBox!"
+    success: " &aGameBox und alle Spiele wurden neu geladen!"
+
+
+mainButtons:
+  exitButton: "&4Schlie\u00DFen"
+  toMainGUIButton: "&2Zum Hauptmen\u00fc"
+  toGameGUIButton: "&2Zum Spielmen\u00fc"
+  forwardButton: "&2Vor"
+  backwardButton: "&2Zur\u00fcck"
+  infoMainMenu:
+  - '&1Hier befinden sich alle Spiele'
+  - '&1Klicke auf einen Button um'
+  - '  &1in das Spielmenü zu gelangen.'
+  # %tokens% will be replaced with the players number of tokens
+  tokensButton: "&1Token: &2%tokens%"
+  soundToggle:
+    onDisplayName: "&1Sounds an"
+    onLore:
+    - ""
+    - "&1Klicke zum stumm schalten"
+    offDisplayName: "&4Sounds aus"
+    offLore:
+    - ""
+    - "&1Klicke um Geräusche zu erlauben"
+  inviteButton:
+    displayName: "&eLade jemanden ein"
+    lore:
+    - ""
+    - "&1Klicke hier, um jemanden über den chat einzuladen"
+  # this is the name and lore of an invite. It is the players skull in the invitation GUI.
+  invitationSkull:
+    # %player% will be replaced by the players name
+    displayName: "&e%player%"
+    lore:
+    - ""
+    - "&1Klicke um die Einladung zu akzeptieren"
+
+inventoryTitles:
+  # use %player% for the player name
+  mainGUI: ' Wilkommen bei &1Game&1Box&r %player%'
+  # %game% will be replaced with the games prefix
+  gameGUIs: '             %game%&r'
+  noPermMessage: '          &4&lKeine Erlaubnis'
+  notEnoughMoney: '        &4&lNicht genug Geld'
+  notEnoughTokens: '        &4&lNicht genug Token'
+  otherPlayerNotEnoughMoney: '   &4Der andere Spieler hat nicht genug Geld'
+  alreadyInAnotherGame: '     &4Bereits in einem anderen Spiel'
+
+
+shop:
+  freeItem: "&9Umsonst"
+  moneyItem: "&9Geld: &4%money%"
+  tokenItem: "&9Token: &4%token%"
+  notEnoughMoney: '        &4&lNicht genug Geld'
+  notEnoughTokens: '        &4&lNicht genug Token'
+  inventoryIsFull: '        &4&lVolles Inventar!'
+  requirementNotFulfilled: '   &4&lVorraussetzungen nicht erfüllt'
+  shopIsClosed: '         &4&lGeschlossen'
+  boughtSuccessful: '        &9&lErfolgreich gekauft'
+  # use %player% for the player name
+  mainShop: '   &cFröhliches einkaufen, &1%player%'
+  # use %page% for the page number
+  pageShop: '             &9Seite Nr. &l%page%'
+
+others:
+  wonToken: " Du hast %tokens% Token in &3%game%&r gewonnen"
+  playerInput:
+    openingMessage: " &l&2Gebe den Namen eines Spielers ein, um ihn einzuladen."
+    helpMessage:
+    - " &2Du hast &5%seconds% &2Sekunden Zeit."
+    - " &2Um die Eingabe zu stoppen sende &c'%'&2."
+    timeRanOut: " &cDie Eingabe-zeit ist vorbei."
+    inputSuccessful: " &5%player%&2 wurde eingeladen."
+    inputClosed: " &2Die Eingabe wurde beendet."
+    sameInvitation: " &4Es gibt bereits eine solche Einladung."
+    notValidPlayerName: " &1%player%&4 ist kein gültiger Spielername."
+    notOnline: " &cEs ist kein &5%player%&c online."
+    notInviteYourself: " &cDu kannst dich nicht selber einladen..."
+  invitation:
+  - " &3%player%&r hat dich zu &3%game% eingeladen"
+
+  # this message is sent in the JSON format and has to be customised differently
+
+  # The message that gets send to the invited player (if not opt out in the config) consists of four parts
+  #   1. normal message before the clickable and hover-able part (called pre-)
+  #   2. clickable part (called click-)
+  #   3. the clickable part also includes a hover action (called hover-)
+  #   4. normal message after the clickable part (called after-)
+
+  # colors have to be named! valid colors:
+  #   black, white, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray
+  #   green, aqua, red, light_purple, yellow, dark_gray, blue,
+  invitationClickMessage:
+    preText: ""
+    preColor: "green"
+    clickText: " Klick hier um zu der Einladung zu gelangen"
+    clickColor: "blue"
+    hoverText: "Bring mich zur Einladung"
+    hoverColor: "gold"
+    afterText: ""
+    afterColor: "blue"

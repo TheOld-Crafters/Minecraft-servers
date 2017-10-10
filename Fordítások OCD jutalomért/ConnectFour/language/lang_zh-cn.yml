@@ -1,0 +1,36 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # %cost% 代表开始游戏需要支付的费用，需要打开economy经济开关
+    payed: " &a你支付了 &e%cost%"
+    notEnoughMoney: " &4你的钱不够!"
+    wonMoney: " &a你赢得了奖励 &e%reward%&a!"
+    # %reward% 变量代表赢得比赛获得的奖励
+    wonMoneyGaveUp: " &a你赢得了奖励 &e%reward%&a! %loser% 放弃了比赛"
+  inventoryTitles:
+    # %player% 变量代表现在轮到的一方的名字
+    ingame: "&4四子连线   轮到 &1%player% &1下棋"
+    won: "&4四子连线         &2你赢了"
+    lost: "&3Connect4         &4你输了"
+    draw: "&3Connect4         &3Draw!"
+  won: " &a你赢了! 恭喜你!"
+  lost: " &4你输了...再接再厉"
+  # 放弃比赛显示的消息
+  gaveUp: " &4你放弃了比赛...不要半途而废啊"
+  # 当另一个玩家放弃比赛时显示的消息
+  # %loser% 变量代表弃权者
+  otherGaveUp: " &a你赢了! %loser% 放弃了比赛"
+
+
+prefix: "[&3四子连线&r]"
+name: "&6四子连线&r"
+
+gameHelp:
+  - "&a双方轮流在棋盘上落子"
+  - "&e棋子会受到重力效果往下掉落至棋盘底部"
+  - '&a如果你的棋子在横/纵/斜连成四子一线'
+  - "&e你就赢了！祝你好运！"
+  

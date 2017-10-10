@@ -1,0 +1,111 @@
+# ----------------------------------------------------------------------------#
+#                                                                             #
+#                              Connect4 config                                #
+#                                                                             #
+#                                  by Nikl                                    #
+# ----------------------------------------------------------------------------#
+
+# name of the language file (in the folder 'language')
+langFile: "lang_hu.yml"
+
+gameBox:
+  mainButton:
+    # define the Material and data for the button (format: 'material:data')
+    materialData: "22"
+    # display name of the button
+    displayName: "&3ConnectFour"
+    # lore of the button
+    lore:
+    - ""
+    - "&1Get 4 in a row ;)"
+  gameButtons:
+    easy:
+      materialData: "22"
+      displayName: "&aTraining"
+      lore:
+      - ""
+      - "&1Cost: &45"
+      - "&1Reward: &a7"
+      slot: 20
+      cost: 5
+      reward: 7
+      # optional custom time per move in seconds (default is 30)
+      timePerMove: 20
+      # optional custom min number of chips before any winnings are payed (default: 7)
+      #     if the game is quited earlier by closing it, the player left int he game will not get payed the winnings, but will get back any money he payed to play the game.
+      # set it to a negative number to turn this off
+      minNumberOfPlayedChips: 7
+      inviteGuiTitle: "  Start &3ConnectFour &rTraining"
+    saveStats:
+      materialData: "gold_block"
+      displayName: "&c&lCompetition"
+      lore:
+      - ""
+      - "&cClimb up the &ltop list"
+      - "&aGood luck!"
+      - ""
+      - "&1Cost: &450"
+      - "&1Reward: &a75"
+      - "&1Tokens: &a1"
+      slot: 24
+      cost: 50
+      reward: 75
+      # if true the best score of this button is saved
+      saveStats: true
+      tokens: 1
+      inviteGuiTitle: "     Start a &cCompetition"
+  topListButtons:
+    # use the same key as the game you want to display the top list for
+    #   for that button 'saveStats' must be true (see above)
+    saveStats:
+      materialData: "gold_block"
+      displayName: "&c&lTop list"
+      lore:
+      - ""
+      - "&cCompetition &1top list"
+      slot: 33
+      # inventory title of the top list (%player% and %game%)
+      inventoryTitle: '              Top List'
+      # Lore of the skulls in the inventory. Use %rank% for the rank and %time% for the time in 'mm:ss'
+      skullLore:
+      - ''
+      - '&6Rank:&1 %rank%'
+      - '&6Wins:&1 %wins%'
+
+
+rules:
+  # enable/disable sound
+  playSounds: true
+
+
+# requires vault and an economy plugin
+#   to enable economy do not forget to enable it for GameBox too
+economy:
+  enabled: false
+
+# add as many as you want
+#   the players chips are selected randomly
+chips:
+  enzy:
+    materialData: "340"
+    displayName: "&3%player%'s Encyclopedia"
+    # optional lore
+    lore:
+    - ""
+    - "&cPretty heavy..."
+  sparks:
+    materialData: "377"
+    displayName: "&3%player%'s Sparks"
+  dia:
+    materialData: "diamond"
+    displayName: "&3%player%'s treasure"
+  apple:
+    materialData: "apple"
+    displayName: "&3%player%'s apple"
+  emerald:
+    materialData: "388"
+    displayName: "&3%player%'s Gem"
+  crystal:
+    materialData: "406"
+    displayName: "&3%player%'s Crystal"
+

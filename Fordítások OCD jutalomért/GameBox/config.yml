@@ -1,0 +1,136 @@
+# ----------------------------------------------------------------------------#
+#                                                                             #
+#                               GameBox config                                #
+#                                                                             #
+# ----------------------------------------------------------------------------#
+#
+# Plugin made by Nikl
+#   if you have any problems/suggestions please contact me on Spigot
+#   or write in the plugin discussion directly
+#
+# Thank you for playing! I hope you like the plugin
+#
+# ----------------------------------------------------------------------------
+
+
+
+# define the language file you want to use (find the files in the folder 'language')
+#   to use the default messages just write 'default'
+# If you want custom messages please write your own file or use one of the already written 'lang_xx.yml' files
+# If an update added new messages that are not in your defined file the plugin will print a warning and a list
+#   of missing paths and will use the corresponding default messages until you added them in your file
+#   To get an up to date language file just delete one of the included files and reload
+langFile: 'lang_hu.yml'
+
+# in these worlds the commands will not work
+blockedWorlds:
+  - "none"
+
+
+# time an invite stays valid (in seconds)
+timeForInvitations: 40
+# time the input stays open (in seconds)
+timeForPlayerInput: 20
+
+economy:
+  # this enables economy for the main plugin and all the games
+  #   you can turn on/off economy for each game in the corresponding game config found in 'games/gameName'
+  # THIS OPTION REQUIRES VAULT AND AN ECONOMY PLUGIN!
+  # THIS IS ONLY ABOUT MONEY-ECONOMY! TOKENS ARE SEPARATE
+  enabled: false
+  tokens:
+    enabled: true
+
+guiSettings:
+  # you should keep this on
+  #   the players can decide to turn sounds off in the gui
+  playSounds: true
+  # here you can customize the standard sounds in the main GUI
+  #   for all sounds take a look at the github repo:
+  #     https://github.com/NiklasEi/GameBox/blob/master/src/me/nikl/gamebox/Sounds.java
+  standardSounds:
+    successfulClick: "CLICK"
+    unsuccessfulClick: "VILLAGER_NO"
+
+  # you can disable navigation buttons by giving them a negative slot
+  #   valid slots are only from 0 to 8
+  hotBarNavigation:
+    exitSlot: 4
+    mainMenuSlot: 0
+    gameMenuSlot: 8
+    exitMaterial: "BARRIER"
+    mainMenuMaterial: "DARK_OAK_DOOR_ITEM"
+    gameMenuMaterial: "BIRCH_DOOR_ITEM"
+
+  # you will keep the items that are in these slots while you are in a GUI/Game
+  #   This should only be used to guaranty compatibility for plugins which only function
+  #   when players have certain items in the inventory
+  # Slots from 0 - 8
+  # Do not use a slot that is taken by navigation buttons
+  keepItemsSlots:
+  #- 2
+  #- 6
+
+mysql:
+  enabled: false
+  host: "localhost"
+  port: 3306
+  database: "TestDatabase"
+  username: "user"
+  password: "pass"
+
+
+
+
+hubMode:
+  enabled: false
+  enabledWorlds:
+  - "world"
+  giveItemOnWorldJoin: true
+  # slot in the hot bar the item is set to (if giveItemOnWorldJoin)
+  slot: 0
+  item:
+     # define the Material and data for the item (format: 'material:data')
+     materialData: "CHEST"
+     # display name of the button
+     displayName: "&3&lGameBox"
+     # lore of the item (optional)
+     lore:
+     - ""
+     - "&1Click with this item to open the menu"
+
+
+settings:
+  # this enables players to accept game invitations without having the play permission.
+  #   The permission is still needed to send the invitation though.
+  exceptInvitesWithoutPlayPermission: false
+  # If set players will keep their armor on when in a GUI or game
+  keepArmor: false
+  # invitation settings
+  invitations:
+    clickMessage:
+      # whether players can click to get to the invite
+      enabled: true
+  # all data is anonymous and helps me figuring out what games on what versions are played most
+  #   you can take a look at all the data that is send here: https://bstats.org/plugin/bukkit/GameBox
+  #   please consider leaving this on 'true'
+  bstats: true
+  # when a player is in GameBox and gets damaged the inventory will be closed
+  #   players should be in a save place when playing...
+  # if false the player can stay in game as long as he doesn't die
+  closeInventoryOnDamage: true
+
+
+# the plugin includes events on specific occasions
+#   for example: when entering GameBox and after leaving GameBox
+#
+# Plugin intern listeners are able to run commands for you
+listeners:
+  # event called before the player enters GameBox
+  enteringGameBox:
+    commands:
+    #- "tell %player% Have fun!
+  # event called directly after the player left GameBox
+  leftGameBox:
+    commands:
+    #- "tell %player% Come back!"

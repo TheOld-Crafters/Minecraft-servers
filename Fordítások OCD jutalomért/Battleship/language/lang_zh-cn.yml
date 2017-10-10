@@ -1,0 +1,64 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &a你支付了 &e%cost%"
+    notEnoughMoney: " &4你的钱不够!"
+    # use %reward% for the amount the player won
+    wonMoney: " &a你获得了奖励 &e%reward%&a!"
+    # use %reward% for the amount the player won and %loser% for the player that gave up
+    wonMoneyGaveUp: " &a你获得了奖励 &e%reward%&a! %loser% 放弃了比赛"
+    # use %reward% for the amount the player won and %loser% for the player that was too slow
+    wonMoneyTooSlow: " &a你获得了奖励 &1%reward%&a! %loser% 操作超时了"
+  # this message is displayed if the player won and economy is disabled
+  won: " &a你赢了!"
+  lost: " &4真遗憾..."
+  # gave up message
+  gaveUp: " &4你弃权了"
+  # too slow message
+  tooSlow: " &4你超时了"
+  # won message send when the other player gave up
+  #   use %loser% for the name of the player that gave up
+  otherGaveUp: " &a你赢了! %loser% 弃权了"
+  # won message send when the other player does not fire in time
+  #   use %loser% for the name of the player that gave up
+  otherTooSlow: " &a你赢了! %loser% 超时了"
+
+name: '&3炸沉敌舰&r'
+prefix: "[&3炸沉敌舰&r]"
+
+gameHelp:
+  - '&a这个游戏需要2个人参与，点击'
+  - '&a点击游戏选择模式并邀请玩家'
+  - '&a被邀请者打开菜单进入相应模式即可接受邀请'
+  - "&e--------------------------"
+  - "&e首先双方需要在各自“海面”上放置自己的船"
+  - '&eGUI标题上显示了现在允许放置的船的种类及数量'
+  - '&e比如&6&l5格船&e你就点击任意一行/列的5个格子'  
+  - '&e放置完毕后各自进入对方的隐藏“海面”'  
+  - '&e交替点击攻击，猜出对方的船的位置并炸沉它！' 
+  - '&e将对方的船全部炸沉者赢得游戏！'
+
+
+
+
+inventoryTitles:
+  # use %count% for the number of ships to set
+  # use %timer% to display the timer
+  setShip1: "放置5格船: %count% x 5方块   &4%timer%"
+  setShip2: "放置4格船: %count% x 4方块  &4%timer%"
+  setShip3: "放置3格船: %count% x 3方块   &4%timer%"
+  setShip4: "放置2格船: %count% x 2方块  &4%timer%"
+  # %timer%
+  attacker: "&2猜出敌舰位置   &r点击开火!      &4%timer%"
+  defender: "&4尽量隐藏自己   &r小心!         &2%timer%"  
+  
+  changingGrids: "&2炸沉敌舰   &r轮番攻击  &2%timer%"
+  
+  won: "&2炸沉敌舰    &2你赢了!"
+  lost: "&2炸沉敌舰    &4你输了"
+
+  

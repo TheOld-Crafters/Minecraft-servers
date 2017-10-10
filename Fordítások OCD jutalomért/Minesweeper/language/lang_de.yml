@@ -1,0 +1,36 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2Du hast &4%cost% gezahlt"
+    notEnoughMoney: " &4Du hast nicht genug Geld!"
+    # use %reward% for the amount the player won
+    wonMoney: " Du hast &2$%reward%&r gewonnen!"
+  inventoryTitles:
+    # displayed before the game starts
+    beginning: "Minesweeper    &2Klicke um zu starten"
+    # use %state% to display the number of flags and the number of mines that are left
+    #   %timer% will be replaced by the timer counting up
+    ingame: "Minesweeper     %state%   &1%timer%"
+    # use %timer% to display the time played
+    won: "Minesweeper    &2In &1%timer% &2Gewonnen"
+    lost: "Minesweeper     &4Verloren"
+
+
+prefix: "[&3Minesweeper&r]"
+name: "&1Minesweeper&r"
+
+gameHelp:
+  - '&1&lMinesweeper ist ein logik und mathe Spiel ;)'
+  - '&1&lMit links klick deckst du ein Feld auf'
+  - '  &1&lEs kann leer, eine Warnung oder eine Mine sein'
+  - '  &1&lDie Anzahl einer Warnung gibt die Anzahl der'
+  - '    &1&lMinen in direkter Umgebung an'
+  - '  &1&lWenn du eine Mine aufdeckst, hast du verloren'
+  - '&1&lDas Ziel ist es alle Felder aufzudecken'
+  - '  &1&laußer den Minen'
+  - '&1&lMakiere Felder mit Minen indem du mit'
+  - '  &1&lrechts klick Flaggen setzt'
