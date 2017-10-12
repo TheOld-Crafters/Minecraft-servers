@@ -67,7 +67,7 @@ gameBox:
         rewardIntervalls:
           1:
             money: 500
-            Token: 5
+            tokens: 5
           2:
             money: 400
             tokens: 4
