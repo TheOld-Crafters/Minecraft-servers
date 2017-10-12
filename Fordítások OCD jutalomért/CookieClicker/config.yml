@@ -51,7 +51,7 @@ gameBox:
       #     You can specify a day and a time below and the game will reset all games of all players every week on that day/time
       #     The payments below will be payed out automatically
       reset:
-        occasion: "hétfő"
+        occasion: "monday"
         timing: "00:00"
 
       # after the set amount of clicks on the cookie it's position will change
