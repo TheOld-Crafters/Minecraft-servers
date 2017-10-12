@@ -92,7 +92,7 @@ gameBox:
       displayName: "&6Cookie Clicker &c&lTop lista"
       slot: 24
       # inventory title of the top list (%player% and %game%)
-      inventoryTitle: '     &6Cookie Clicker &rTop lista '
+      inventoryTitle: '     &6Cookie Clicker &rTop lista'
       # Lore of the skulls in the inventory. Use %rank% for the rank and %score% for the highest score of the player
       skullLore:
       - ''
