@@ -66,23 +66,23 @@ gameBox:
         minScore: 1000000
         rewardIntervalls:
           1:
-            Pénz: 500
+            money: 500
             Token: 5
           2:
-            Pénz: 400
-            Token: 4
+            money: 400
+            tokens: 4
           3:
-            Pénz: 300
-            Token: 3
+            money: 300
+            tokens: 3
           4:
-            Pénz: 200
-            Token: 2
+            money: 200
+            tokens: 2
           6:
-            Pénz: 100
-            Token: 1
+            money: 100
+            tokens: 1
           11:
-            Pénz: 0
-            Token: 0
+            money: 0
+            tokens: 0
 
   topListButtons:
     # use the same key as the game you want to display the top list for
