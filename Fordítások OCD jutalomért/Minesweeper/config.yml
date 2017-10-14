@@ -50,7 +50,7 @@ gameBox:
       - "&1Bánya: &r10"
       - "&1Ár: &415"
       - "&1Jutalom: &a25"
-      - "&1Token: &a1"
+      - "&1Zseton: &a1"
       mines: 10
       slot: 29
       cost: 15
