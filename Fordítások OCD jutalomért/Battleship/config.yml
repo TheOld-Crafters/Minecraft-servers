@@ -30,7 +30,7 @@ gameBox:
     #   if not set they will all default to 1
     normalGame:
       materialData: "IRON_BLOCK"
-      displayName: "&l&1Normal"
+      displayName: "&l&1Normál"
       lore:
       - ""
       - '&l&51 Szállítócsatahajó'
