@@ -17,7 +17,7 @@ gameBox:
     # lore of the button
     lore:
     - ""
-    - "&1Mozditsa el a "Csempéket" és adja össze őket"
+    - "&1Mozdíts el a „Csempéket” és add össze őket."
   gameButtons:
     normal:
       materialData: "WOOL:13"
@@ -25,8 +25,8 @@ gameBox:
       lore:
       - ""
       - "&1Ára: &45"
-      - "&1Pénz jutalma ezen a ponton kezdődik: &6250"
-      - "&1Ennyi Tokent nyerhetsz: &61000"
+      - "&1A pénzjutalom ezen itt kezdődik: &6250"
+      - "&1Ennyi zsetont nyerhetsz: &61000"
       slot: 20
       cost: 5
       scoreIntervals:
@@ -57,8 +57,8 @@ gameBox:
       - "&aSok szerencsét!"
       - ""
       - "&1Ára: &450"
-      - "&1A Pénz jutalom itt kezdődik: &6250"
-      - "&1Ennyi tokent nyerhetsz: &61000"
+      - "&1A pénzjutalom itt kezdődik: &6250"
+      - "&1Ennyi zsetont nyerhetsz: &61000"
       slot: 24
       cost: 50
       # if true the best score of this button is saved
@@ -183,4 +183,4 @@ tiles:
     lore:
     - "&9Lehetetlen"
     - "&9..."
-    - "&cHacker!"
+    - "&cCsaló!"
