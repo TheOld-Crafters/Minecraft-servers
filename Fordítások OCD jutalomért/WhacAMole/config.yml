@@ -17,20 +17,20 @@ gameBox:
     # lore of the button
     lore:
     - ""
-    - "&1Those Moles just keep coming back..."
+    - "&1Mindig vissza térsz majd Moles játékhoz"
   gameButtons:
     normal:
       materialData: "IRON_BLOCK"
-      displayName: "&aClassic Whac A Mole"
+      displayName: "&aKlasszikus  Whac A Mole"
       lore:
       - ""
-      - "&6You have 4 molehills in your backyard."
-      - "&6Hit them back in their holes"
-      - "  &6when they show!"
+      - "&6Neked van 4 vakondtúrásod a hátsó udvarodban."
+      - "&6Ütötted őket és hátráltak"
+      - "  &6mikor mutatkoznak!"
       - ""
-      - "&1Cost: &45"
-      - "&1Money rewards start at a score of &65"
-      - "&1You can win tokens above &620"
+      - "&1Ára: &45"
+      - "&1A pénzjutalmak ettől a pontszámtól kezdődnek: &65"
+      - "&1Fentiek alapján Tokent nyerhetsz: &620"
       slot: 20
       cost: 5
       # time in seconds the game runs for
@@ -57,17 +57,17 @@ gameBox:
           tokens: 2
     saveStats:
       materialData: "159:3"
-      displayName: "&6&lCreepers chasing Humans"
+      displayName: "&6&lKúszónövények, amik üldözik Humanst"
       lore:
       - ""
-      - "&cCreepers are chasing humans on a huge"
-      - "  &cfield! Hit the creepers, but not"
-      - "  &cthe poor humans!"
-      - "&aGood luck!"
+      - "&cKúszónövények üldöznek embereket egy hatalmas"
+      - "  &cmezőn! Ütötte a kúszónövényeket, de nem"
+      - "  &cSegits rajtuk!"
+      - "&aSok Sikert!"
       - ""
-      - "&1Cost: &450"
-      - "&1Money rewards start at a score of &610"
-      - "&1You can win tokens above &620"
+      - "&1Ára: &450"
+      - "&1Pénz jutalom ettől a pontszámtól van: &610"
+      - "&1Fent Tokent tudsz nyerni: &620"
       slot: 24
       cost: 50
       # if true the best score of this button is saved
@@ -109,12 +109,12 @@ gameBox:
       - "  &6&lCreepers chasing Humans"
       slot: 33
       # inventory title of the top list (%player% and %game%)
-      inventoryTitle: '     &6Creepers chasing Humans &rTop List'
+      inventoryTitle: '     &6Kúszónövények, amik üldözik Humans &rTop Lista'
       # Lore of the skulls in the inventory. Use %rank% for the rank and %score% for the highest score of the player
       skullLore:
       - ''
       - '&6Rank:&1 %rank%'
-      - '&6Score:&1 %score%'
+      - '&6Pontszám:&1 %score%'
 
 items:
   creeper: "SKULL_ITEM:4"
