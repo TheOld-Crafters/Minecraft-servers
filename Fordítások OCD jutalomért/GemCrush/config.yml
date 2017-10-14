@@ -23,19 +23,19 @@ gameBox:
     # lore of the button
     lore:
     - ""
-    - "&1It's raining gems..."
+    - "&1Ez drágakövekkel áraszt el..."
   gameButtons:
     normalGame:
       materialData: "EMERALD"
-      displayName: "&1It's raining gems"
+      displayName: "&1Ez drágaköveket áraszt el"
       lore:
       - ""
-      - "&4Moves: &220"
-      - '&4Gems: &28'
-      - '&4Bombs: &2true'
-      - '&4Cost: &410'
+      - "&4Lépés: &220"
+      - '&4Gyémánt: &28'
+      - '&4Bombák: &2true'
+      - '&4Ára: &410'
       - ''
-      - '&3&lTop list is activated!'
+      - '&3&lA Top lista aktív'
       moves: 10
       # number of different gems in a normal game
       #   This number HAS TO BE equal or smaller then the number of gems defined in the section normalGems below
@@ -71,10 +71,10 @@ gameBox:
       displayName: "&1So much &l&epling"
       lore:
       - ""
-      - "&4Moves: &25"
-      - '&4Gems: &27'
-      - '&4Bombs: &2true'
-      - '&4Cost: &410'
+      - "&4Lépés: &25"
+      - '&4Gyémánt: &27'
+      - '&4Bombák: &2true'
+      - '&4Ára: &410'
       moves: 5
       differentGems: 7
       bombs: true
@@ -98,14 +98,14 @@ gameBox:
           tokens: 3
     materialdatatest:
       materialData: "nether_star"
-      displayName: "&1Training"
+      displayName: "&1Felkészülés"
       lore:
       - ""
-      - "&4Moves: &210"
-      - '&4Gems: &28'
-      - '&4Bombs: &2true'
+      - "&4Lépés: &210"
+      - '&4Gyémánt: &28'
+      - '&4Bombák: &2true'
       - ''
-      - '&3Free Training (no rewards)'
+      - '&3Ingyenes felkészülés (nincsenek jutalmak)'
       moves: 10
       differentGems: 8
       bombs: true
@@ -116,10 +116,10 @@ gameBox:
     #   for that button 'saveStats' must be true (see above)
     normalGame:
       materialData: "diamond_block"
-      displayName: "&cTop list"
+      displayName: "&cTop lista"
       lore:
       - ""
-      - "&3Compare your GemCrush skills with others"
+      - "&3Összehasonlítja a GemCrush készségeidet másokkal"
       slot: 9
       # inventory title of the top list (%player% and %game%)
       inventoryTitle: " &1It's raining gems      &rTop List"
@@ -127,7 +127,7 @@ gameBox:
       skullLore:
       - ''
       - '&6Rank:&1 %rank%'
-      - '&6Score:&1 %score%'
+      - '&6Pontszám:&1 %score%'
 
 
 game:
@@ -147,10 +147,10 @@ game:
     # ticks until the bomb explodes (starts counting AFTER all gems fell down and nothing else can break)
     ticksTillExplosion: 15
     pointsOnBreak: 20
-    displayName: '&cBomb'
+    displayName: '&cBomba'
     lore:
     - '&r'
-    - '&4Caution: &6explosive!'
+    - '&4Óvatossan: robbanóanyag!'
   playSounds: true
   # if you want you can change the sound volume here
   soundVolume: 0.4
@@ -181,7 +181,7 @@ normalGems:
   gem1:
     material: 'Diamond'
     # use & for colors
-    displayName: "&dDiamond"
+    displayName: "&dGyémánt"
     # optional custom number of points per destroyed gem of this type
     #   the default is 10 and is used if this option is not set
     pointsOnBreak: 10
@@ -197,31 +197,30 @@ normalGems:
     probability: 1
   gem3:
     material: 'BLAZE_POWDER'
-    displayName: '&eSparks'
+    displayName: '&eszikra'
     pointsOnBreak: 10
     probability: 1
   gem4:
     material: 'clay_ball'
-    displayName: '&7Pearl'
+    displayName: '&7Gyöngy'
   gem5:
     material: 'gold_block'
-    displayName: '&6Gold'
+    displayName: '&6Arany'
   gem6:
     material: 'iron_block'
-    displayName: '&fIron'
+    displayName: '&fVas'
   gem7:
     material: 'bone'
-    displayName: '&5Fossil'
+    displayName: '&5Kövület'
   gem8:
     material: 'apple'
-    displayName: '&cApple'
+    displayName: '&cAlma'
   gem9:
     material: 'anvil'
-    displayName: '&8Anvil'
+    displayName: '&8Üllő'
   gem10:
     material: 'structure_void'
-    displayName: '&2Wheel'
+    displayName: '&2Kör'
   gem11:
     material: 'double_plant'
-    displayName: '&6Amber'
-
+    displayName: '&6Borostyán'
