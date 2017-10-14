@@ -17,15 +17,15 @@ gameBox:
     # lore of the button
     lore:
     - ""
-    - "&1Get 4 in a row ;)"
+    - "&1Gyüjts ki 4-et egy sorba ;)"
   gameButtons:
     easy:
       materialData: "22"
-      displayName: "&aTraining"
+      displayName: "&aEdzés"
       lore:
       - ""
-      - "&1Cost: &45"
-      - "&1Reward: &a7"
+      - "&1Ára: &45"
+      - "&1Jutalom: &a7"
       slot: 20
       cost: 5
       reward: 7
@@ -35,42 +35,42 @@ gameBox:
       #     if the game is quited earlier by closing it, the player left int he game will not get payed the winnings, but will get back any money he payed to play the game.
       # set it to a negative number to turn this off
       minNumberOfPlayedChips: 7
-      inviteGuiTitle: "  Start &3ConnectFour &rTraining"
+      inviteGuiTitle: "  Elinditás &3ConnectFour &redzés alatt"
     saveStats:
       materialData: "gold_block"
-      displayName: "&c&lCompetition"
+      displayName: "&c&lVerseny"
       lore:
       - ""
-      - "&cClimb up the &ltop list"
-      - "&aGood luck!"
+      - "&cSzintje emelkedik a &ltop listán"
+      - "&aSok Szerencsét"
       - ""
-      - "&1Cost: &450"
-      - "&1Reward: &a75"
-      - "&1Tokens: &a1"
+      - "&1CÁra: &450"
+      - "&1Jutalom:: &a75"
+      - "&1Token: &a1"
       slot: 24
       cost: 50
       reward: 75
       # if true the best score of this button is saved
       saveStats: true
       tokens: 1
-      inviteGuiTitle: "     Start a &cCompetition"
+      inviteGuiTitle: "     Kezdjük a  &cVersenyt"
   topListButtons:
     # use the same key as the game you want to display the top list for
     #   for that button 'saveStats' must be true (see above)
     saveStats:
       materialData: "gold_block"
-      displayName: "&c&lTop list"
+      displayName: "&c&lTop lista"
       lore:
       - ""
       - "&cCompetition &1top list"
       slot: 33
       # inventory title of the top list (%player% and %game%)
-      inventoryTitle: '              Top List'
+      inventoryTitle: '              Top Lista'
       # Lore of the skulls in the inventory. Use %rank% for the rank and %time% for the time in 'mm:ss'
       skullLore:
       - ''
       - '&6Rank:&1 %rank%'
-      - '&6Wins:&1 %wins%'
+      - '&6Gyözelmek:&1 %wins%'
 
 
 rules:
@@ -88,24 +88,23 @@ economy:
 chips:
   enzy:
     materialData: "340"
-    displayName: "&3%player%'s Encyclopedia"
+    displayName: "&3%player% játékos Ismerettára"
     # optional lore
     lore:
     - ""
-    - "&cPretty heavy..."
+    - "&cElég nehéz..."
   sparks:
     materialData: "377"
-    displayName: "&3%player%'s Sparks"
+    displayName: "&3%player% játékos Szikrája"
   dia:
     materialData: "diamond"
-    displayName: "&3%player%'s treasure"
+    displayName: "&3%player% játékos Drágakője"
   apple:
     materialData: "apple"
-    displayName: "&3%player%'s apple"
+    displayName: "&3%player% játékos almája"
   emerald:
     materialData: "388"
-    displayName: "&3%player%'s Gem"
+    displayName: "&3%player% játékos Gyémántja"
   crystal:
     materialData: "406"
-    displayName: "&3%player%'s Crystal"
-
+    displayName: "&3%player% játékos kristálya"
