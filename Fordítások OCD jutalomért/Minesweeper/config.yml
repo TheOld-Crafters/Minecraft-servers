@@ -16,16 +16,16 @@ gameBox:
     # lore of the button
     lore:
     - ""
-    - "&1Watch your step..."
+    - "&Nézi a lépésedet..."
   gameButtons:
     easy:
       materialData: "WOOL:13"
-      displayName: "&aEasy"
+      displayName: "&aKönnyű"
       lore:
       - ""
-      - "&1Mines: &r5"
-      - "&1Cost: &45"
-      - "&1Reward: &a7"
+      - "&1Bánya: &r5"
+      - "&1Ár: &45"
+      - "&1Jutalom: &a7"
       mines: 5
       slot: 11
       cost: 5
@@ -35,22 +35,22 @@ gameBox:
       displayName: "&6Normal"
       lore:
       - ""
-      - "&1Mines: &r8"
-      - "&1Cost: &410"
-      - "&1Reward: &a15"
+      - "&1Bánya: &r8"
+      - "&1Ár: &410"
+      - "&1Jutalom: &a15"
       mines: 8
       cost: 10
       reward: 15
       slot: 20
     hard:
       materialData: "WOOL:14"
-      displayName: "&cHard"
+      displayName: "&cNehéz"
       lore:
       - ""
-      - "&1Mines: &r10"
-      - "&1Cost: &415"
-      - "&1Reward: &a25"
-      - "&1Tokens: &a1"
+      - "&1Bánya: &r10"
+      - "&1Ár: &415"
+      - "&1Jutalom: &a25"
+      - "&1Token: &a1"
       mines: 10
       slot: 29
       cost: 15
@@ -58,16 +58,16 @@ gameBox:
       tokens: 1
     saveStats:
       materialData: "diamond_block"
-      displayName: "&c&lCompetition"
+      displayName: "&c&lVerseny"
       lore:
       - ""
-      - "&1Mines: &r13"
-      - "&cClimb up the &ltop list"
-      - "&aGood luck!"
+      - "&1Bánya: &r13"
+      - "&cKerülj fel a &ltop listára"
+      - "&aSok Sikert"
       - ""
-      - "&1Cost: &450"
-      - "&1Reward: &a75"
-      - "&1Tokens: &a3"
+      - "&1Ára: &450"
+      - "&1RJutalom: &a75"
+      - "&1Token: &a3"
       mines: 10
       big: false
       slot: 24
@@ -81,7 +81,7 @@ gameBox:
     #   for that button 'saveStats' must be true (see above)
     saveStats:
       materialData: "diamond_block"
-      displayName: "&cTop list"
+      displayName: "&cTop lista"
       lore:
       - ""
       - "&cCompetition &1top list"
@@ -92,7 +92,7 @@ gameBox:
       skullLore:
       - ''
       - '&6Rank:&1 %rank%'
-      - '&6Time:&1 %time%'
+      - '&6Idő:&1 %time%'
 
 
 rules:
@@ -118,7 +118,7 @@ materials:
   warning: "WOOL:1"
 
 displaynames:
-  cover: "&bCover"
-  warning: "&cWarning"
-  mine: "&4Mine"
-  flag: "&1Flag"
+  cover: "&bTakarás"
+  warning: "&cFigyelmeztetés"
+  mine: "&4Bánya"
+  flag: "&1Zászló"
