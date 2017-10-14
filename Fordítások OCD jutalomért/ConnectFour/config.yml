@@ -21,7 +21,7 @@ gameBox:
   gameButtons:
     easy:
       materialData: "22"
-      displayName: "&aEdzés"
+      displayName: "&aKiképzés"
       lore:
       - ""
       - "&1Ára: &45"
@@ -35,18 +35,18 @@ gameBox:
       #     if the game is quited earlier by closing it, the player left int he game will not get payed the winnings, but will get back any money he payed to play the game.
       # set it to a negative number to turn this off
       minNumberOfPlayedChips: 7
-      inviteGuiTitle: "  Elinditás &3ConnectFour &redzés alatt"
+      inviteGuiTitle: "  &3ConnectFour &rkiképzés elindítása"
     saveStats:
       materialData: "gold_block"
       displayName: "&c&lVerseny"
       lore:
       - ""
-      - "&cSzintje emelkedik a &ltop listán"
+      - "&cJuss előrébb a &ltop listán"
       - "&aSok Szerencsét"
       - ""
       - "&1CÁra: &450"
       - "&1Jutalom:: &a75"
-      - "&1Token: &a1"
+      - "&1Zseton: &a1"
       slot: 24
       cost: 50
       reward: 75
@@ -98,13 +98,13 @@ chips:
     displayName: "&3%player% játékos Szikrája"
   dia:
     materialData: "diamond"
-    displayName: "&3%player% játékos Drágakője"
+    displayName: "&3%player% játékos Kincse"
   apple:
     materialData: "apple"
     displayName: "&3%player% játékos almája"
   emerald:
     materialData: "388"
-    displayName: "&3%player% játékos Gyémántja"
+    displayName: "&3%player% játékos Drágaköve"
   crystal:
     materialData: "406"
-    displayName: "&3%player% játékos kristálya"
+    displayName: "&3%player% játékos Kristálya"
