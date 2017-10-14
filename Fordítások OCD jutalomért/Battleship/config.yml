@@ -134,7 +134,7 @@ materials:
       name: "&7Hajó"
     lockedShip:
       material: "7"
-      name: "&8Bezárt hajó"
+      name: "&8Lezárt hajó"
     miss:
       material: "160:3"
       name: "&2Ezzazz! Egy hiba!"
