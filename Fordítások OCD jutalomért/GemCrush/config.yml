@@ -30,12 +30,12 @@ gameBox:
       displayName: "&1Ez drágaköveket áraszt el"
       lore:
       - ""
-      - "&4Lépés: &220"
-      - '&4Gyémánt: &28'
-      - '&4Bombák: &2true'
+      - "&4Lépések: &220"
+      - '&4Drágakövek: &28'
+      - '&4Bombák: &2igen'
       - '&4Ára: &410'
       - ''
-      - '&3&lA Top lista aktív'
+      - '&3&lA Top lista aktíválva'
       moves: 10
       # number of different gems in a normal game
       #   This number HAS TO BE equal or smaller then the number of gems defined in the section normalGems below
@@ -71,8 +71,8 @@ gameBox:
       displayName: "&1So much &l&epling"
       lore:
       - ""
-      - "&4Lépés: &25"
-      - '&4Gyémánt: &27'
+      - "&4Lépések: &25"
+      - '&4Drágakövek: &27'
       - '&4Bombák: &2true'
       - '&4Ára: &410'
       moves: 5
@@ -98,14 +98,14 @@ gameBox:
           tokens: 3
     materialdatatest:
       materialData: "nether_star"
-      displayName: "&1Felkészülés"
+      displayName: "&1Kiképzés"
       lore:
       - ""
-      - "&4Lépés: &210"
-      - '&4Gyémánt: &28'
-      - '&4Bombák: &2true'
+      - "&4Lépések: &210"
+      - '&4Drágakövek: &28'
+      - '&4Bombák: &2igen'
       - ''
-      - '&3Ingyenes felkészülés (nincsenek jutalmak)'
+      - '&3Ingyenes kiképzés (nincsenek jutalmak)'
       moves: 10
       differentGems: 8
       bombs: true
@@ -192,12 +192,12 @@ normalGems:
     probability: 2
   gem2:
     material: 'EMERALD'
-    displayName: '&2Emerald'
+    displayName: '&2Smaragd'
     pointsOnBreak: 10
     probability: 1
   gem3:
     material: 'BLAZE_POWDER'
-    displayName: '&eszikra'
+    displayName: '&eSzikra'
     pointsOnBreak: 10
     probability: 1
   gem4:
@@ -220,7 +220,7 @@ normalGems:
     displayName: '&8Üllő'
   gem10:
     material: 'structure_void'
-    displayName: '&2Kör'
+    displayName: '&2Kerék'
   gem11:
     material: 'double_plant'
     displayName: '&6Borostyán'
