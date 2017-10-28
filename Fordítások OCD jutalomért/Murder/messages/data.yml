@@ -29,7 +29,7 @@ innocent-role: Ártatlan
 dead-role: Halott
 death-title: '&cMeghaltál!'
 death-subtitle: '&c%killer% &cjátékos megölt!'
-murder-receive-sword-message: '&7[&cMurder&7]: &7A gyillkos megkapta a kardját!'
+murder-receive-sword-message: '&7[&cMurder&7]: &7A gyilkos megkapta a kardját!'
 bow-location-message: '&eÍj poziciója: &b(%loc%) &eblokk'
 near-player-location-message: '&bLegközelebbi játékos: &f%player% &bTávolság: &e(%distance%)
   &bblokk'
