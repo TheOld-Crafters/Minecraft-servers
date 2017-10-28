@@ -6,7 +6,7 @@
 # ----------------------------------------------------------------------------#
 
 # name of the language file (in the folder 'language')
-langFile: "default"
+langFile: "lang_hu.yml"
 
 rules:
   # enable/disable sound
@@ -30,7 +30,7 @@ gameBox:
     - "&1Vegyék át a győzelmet a sütijeid."
     - ""
     - "&5&o\"Gyere az erő sötét oldalához.."
-    - "&5&o    Neked vannak sütijeid\""
+    - "&5&o    Neked vannak sütijeid!\""
   gameButtons:
     weekly:
       materialData: "357"
@@ -39,8 +39,8 @@ gameBox:
       - ""
       - "&6Kattints a sütire!"
       - ""
-      - "&5&o\"Igen..."
-      - "  &5&ez ilyen egyszerű.\""
+      - "&5&o&e\"Igen..."
+      - "  &5&eez ilyen egyszerű.\""
       slot: 20
       cost: 0
       # if true the best score of this button is saved
@@ -96,7 +96,7 @@ gameBox:
       # Lore of the skulls in the inventory. Use %rank% for the rank and %score% for the highest score of the player
       skullLore:
       - ''
-      - '&6Rank:&1 %rank%'
+      - '&6Helyezés:&1 %rank%'
       - '&6Sütik:&1 %score%'
 
 
