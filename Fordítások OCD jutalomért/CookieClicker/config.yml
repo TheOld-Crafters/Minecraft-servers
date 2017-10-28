@@ -96,7 +96,7 @@ gameBox:
       # Lore of the skulls in the inventory. Use %rank% for the rank and %score% for the highest score of the player
       skullLore:
       - ''
-      - '&6Helyezés:&1 %rank%'
+      - '&6Rank:&1 %rank%'
       - '&6Sütik:&1 %score%'
 
 
