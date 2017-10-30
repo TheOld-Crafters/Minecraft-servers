@@ -1,0 +1,34 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2Fizettél &4%cost-t%"
+    notEnoughMoney: " &4Nincs elég pénzed!"
+    # use %reward% for the amount the player won
+    wonMoney: " &6%score%&2 pontot értél el és nyertél &6%reward%&2-t!"
+  gameOverNoPay: " &2Végső pontszámod: &6%score%"
+  inventoryTitles:
+    gameTitle: "&9VakondCsapás      Pontszám: %score%    &4%time%"
+    start: "&9VakondCsapás       &c&lKattints a kezdéshez"
+    gameOver: " &4Játék vége         &9Pontszám: %score%"
+  moleDisplayName: "&1&lVakond"
+  creeperDisplayName: "&c&lCreeper"
+  humanDisplayName: "&a&lEmber"
+
+
+prefix: "[&3VakondCsapás&r]"
+name: "&1VakondCsapás&r"
+
+
+gameHelp:
+  - '&1&lKlasszikus:'
+  - '  &1&lA vakondok a 4 vakondlyuk közül egyet kiválasztva előbújnak.'
+  - '  &1&lKattints rájuk mielőtt eltűnnének.'
+  - ""
+  - '&1&lCreeperek embert kergetnek:'
+  - '  &1&lA táskádban bárhol Creeperek vagy Emberek'
+  - '  &1&l  bukkanhatnak fel.'
+  - '&1&l  Csapd le a Creeper-eket, de kegyelmezz az Embereknek!'

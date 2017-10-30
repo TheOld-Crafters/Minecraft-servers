@@ -1,0 +1,43 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2Du hast &4%cost% gezahlt"
+    notEnoughMoney: " &4Du hast nicht genug Geld!"
+    # use %reward% for the amount the player won
+    wonMoney: " Du hast &2\$%reward%&r gewonnen!"
+    # use %reward% for the amount the player won and %loser% for the player that gave up
+    wonMoneyGaveUp: " &2Du hast &1%reward%&2 gewonnen! %loser% hat aufgegeben."
+  inventoryTitles:
+    # %player% will be replaced by the name of the player whose turn it is to play
+    # %time will be replaced by the time left for the current move%
+
+    # title for your turn
+    ingame1: "&3Connect4     &rDu bist am Zug    &4%time%"
+    # title for the other player's turn
+    ingame2: "&3Connect4  &rWarte auf deinen Zug  &a%time%"
+    won: "&3Connect4         &2Gewonnen"
+    lost: "&3Connect4         &4Verloren"
+    draw: "&3Connect4      &3Unentschieden!"
+  won: " &2Du hast das Spiel gewonnen!"
+  lost: " &4Du hast das Spiel verloren"
+  # gave up message
+  gaveUp: " &4Du hast aufgegeben"
+  # won message send when the other player gave up
+  #   use %loser% for the name of the player that gave up
+  otherGaveUp: " &2Gewonnen! %loser% hat aufgegeben."
+
+
+prefix: "[&3Connect4&r]"
+name: "&1Connect4&r"
+
+gameHelp:
+  - "&1&lWerfe chips in das spiel indem du klicks"
+  - "  &1&lwenn du am Zug bist."
+  - '&1&lChips fallen immer, bis sie auf einen anderen'
+  - "  &1&lchip oder den Boden des Spielfeldes treffen."
+  - ""
+  - '&1&lBilde eine Reihe von vier chips um zu gewinnen'

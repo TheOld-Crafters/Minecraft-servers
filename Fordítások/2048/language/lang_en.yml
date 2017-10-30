@@ -1,0 +1,38 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2You paid &4%cost%"
+    notEnoughMoney: " &4You do not have enough money!"
+    # use %reward% for the amount the player won
+    wonMoney: " &2You reached a score of &6%score%&2 and won &6%reward%&2!"
+  gameOverNoPay: " &2You reached a score of &6%score%"
+  inventoryTitles:
+    gameTitle: "&92048             Score: %score%"
+    lost: "&92048    &4Game Over  &9Score: %score%"
+  buttons:
+    up: '&3Up'
+    down: '&3Down'
+    right: '&3Right'
+    left: '&3Left'
+
+
+
+prefix: "[&32048&r]"
+name: "&12048&r"
+
+gameHelp:
+  - '&1&lMove all tiles in a direction by clicking'
+  - '  &1&lone of the navigation buttons'
+  - '&1&lTiles slide as far as possible in the chosen'
+  - '  &1&ldirection until they are stopped by either'
+  - '  &1&lanother tile or the edge of the grid.'
+  - '&1&lIf two tiles of the same number collide while'
+  - '  &1&lmoving, they merge into a tile with the'
+  - '  &1&ltotal value of the two tiles that collided.'
+  - '&1&lEvery turn a new tile with a value of '
+  - '  &1&ltwo or four will randomly appear'
+  - '  &1&lin an empty slot on the board.'

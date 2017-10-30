@@ -1,0 +1,169 @@
+# ----------------------------------------------------------------------------#
+#                                                                             #
+#                              Battleship config                              #
+#                                                                             #
+# ----------------------------------------------------------------------------#
+
+# name of the language file (in the folder 'language')
+#   the default.yml file is overwritten on every server restart!
+#   This means you will have to use the other files to customize the messages, but since i am adding messages regulary in updates
+#   you can use the default file if you just want to have the up to date english default messages
+langFile: "lang_hu.yml"
+
+
+
+
+
+
+gameBox:
+  mainButton:
+    # define the Material and data for the button (format: 'material:data')
+    materialData: "IRON_BLOCK"
+    # display name of the button
+    displayName: "&3Battleship"
+    # lore of the button
+    lore:
+    - ""
+    - "&1Nehéz csata az óceánon"
+  gameButtons:
+    # number of ships in the game (only 1 or 2)
+    #   if not set they will all default to 1
+    normalGame:
+      materialData: "IRON_BLOCK"
+      displayName: "&l&1Normál"
+      lore:
+      - ""
+      - '&l&51 Szállítócsatahajó'
+      - '   &l&52 Utasszállító hajók, 1 romboló'
+      - '&1Ár: &45'
+      - '&1Jutalom: &210'
+      # slot of the button in the gui
+      #   be careful to not use the same twice ;)
+      slot: 12
+      cost: 5
+      reward: 10
+      tokens: 1
+      aircraftCarrier: 1
+      battleship: 1
+      cruiser: 2
+      destroyer: 1
+      inviteGuiTitle: "   Játék inditás &3Battleship"
+    specialRules:
+      materialData: "COAL_BLOCK"
+      displayName: "&l&1Különleges szabály"
+      lore:
+      - ""
+      - '&l&5Mindegyik fajta egy hajó'
+      - '&1Ára: &410'
+      - '&1Jutalom: &215'
+      - '&l&5IEbben a játékban a támadó'
+      - '   &l&5egy ütés után változni fog'
+      slot: 14
+      cost: 5
+      # false by default
+      #   this changes attacker even if you hit a ship
+      changeGridAfterHit: true
+      # false by default
+      #   this changes attacker when the fire timer ran out instead of ending the game
+      switchGridsAfterFireTimerRanOut: true
+      reward: 10
+      inviteGuiTitle: "   &3Battleship&r különleges szabályokkal"
+    withTopList:
+      materialData: "nether_star"
+      displayName: "&l&1Harc"
+      lore:
+      - ""
+      - '&l&52 Utasszállító hajók, '
+      - '   &l&5mindegyik hajó'
+      - '&1Ára: &450'
+      - '&1Jutalom: &2100'
+      - '&1Tokens: &25'
+      - '&l&5Számold győzelmeket'
+      - '   &l&5ezt a játékot követni fogják!'
+      - '&l&5Összehasonlítsd magadat'
+      - '   &l&5mássokkal tekintsd meg a TOP Listát'
+      slot: 30
+      cost: 50
+      reward: 80
+      tokens: 5
+      # if true the best score of this button is saved
+      saveStats: true
+      cruiser: 2
+      inviteGuiTitle: "   &3Battleship   &5Küzdelem"
+  topListButtons:
+    # use the same key as the game you want to display the top list for
+    #   for that button 'saveStats' must be true (see above)
+    withTopList:
+      materialData: "nether_star"
+      displayName: "&l&cTop lista"
+      lore:
+      - ""
+      - "&1Küzdelmi &1Top lista"
+      slot: 32
+      # inventory title of the top list (%player% and %game%)
+      inventoryTitle: '              Top List'
+      # Lore of the skulls in the inventory. Use %rank% for the rank and %wins% for the number of wins
+      skullLore:
+      - ''
+      - '&6Rank:&1 %rank%'
+      - '&6Gyözelmek:&1 %wins%'
+
+
+
+
+
+
+
+gameRules:
+  # play sounds in the game
+  playSounds: true
+
+
+# requires vault and an economy plugin
+economy:
+  enabled: false
+
+# use "Material:data" or "ID:data"
+# Some materials can not be displayed in an inventory, just test everything after changing
+# You are advised to use different materials. At least on the same grid
+#   otherwise the game could break
+materials:
+  yourGrid:
+    ship:
+      material: "Iron_block"
+      name: "&7Hajó"
+    lockedShip:
+      material: "7"
+      name: "&8Lezárt hajó"
+    miss:
+      material: "160:3"
+      name: "&2Ezzazz! Egy hiba!"
+    hit:
+      material: "35:14"
+      name: "&4A fenébe! Egy ütés.."
+    water:
+      material: "160:11"
+      name: "&1Víz"
+  othersGrid:
+    cover:
+      material: "WOOL:7"
+      name: "&6Befedés"
+    miss:
+      material: "160:11"
+      name: "&4Ez nem ütött..."
+    hit:
+      material: "Iron_block"
+      name: "&2Bumm! Eltalálva"
+
+    
+# Customise the timers used in the game (all times in seconds)
+timers:
+  # timer used during the ship-set part of the game
+  shipSetTimer:
+    countdown: 30
+  # timer used during the main part of the game
+  fireTimer:
+    countdown: 10
+  # timer used when attacker and defender change
+  changingGrids:
+    countdown: 3

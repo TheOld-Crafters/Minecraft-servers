@@ -1,0 +1,38 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2Has pagado &4%cost%"
+    notEnoughMoney: " &4¡No tienes suficiente dinero!"
+    # use %reward% for the amount the player won
+    wonMoney: " &2¡Has ganado &1%reward%&2!"
+  inventoryTitles:
+    # displayed before the game starts
+    beginning: "BuscaMinas      &2Clic para empezar"
+    # use %state% to display the number of flags and the number of mines that are left
+    #   %timer% will be replaced by the timer counting up
+    ingame: "BuscaMinas     %state%   &1%timer%"
+    # use %timer% to display the time played
+    won: "BuscaMinas   &2Has ganado en &1%timer%"
+    lost: "BuscaMinas     &4Has perdido"
+
+
+prefix: "[&3BuscaMinas&r]"
+name: "&1BuscaMinas&r"
+
+gameHelp:
+  - '&1&lBuscaMinas es sobre lógica y algo de matemáticas ;)'
+  - '&1&lDescubre un slot con clic izquierdo'
+  - '  &1&lPuede estar vacía, tener una mina o un aviso'
+  - '  &1&lLos avisos indican el número de minas que hay'
+  - '    &1&len los slots adyacentes'
+  - '  &1&lSi descubres una mina has perdido'
+  - '&1&lEl objetivo es destapar todos los slots '
+  - '  &1&lexcepto las minas'
+  - '&1&lCuando estás seguro de que un slot tiene'
+  - '  &1&luna mina, márcala con clic derecho'
+  
+# Language translated by altrisi

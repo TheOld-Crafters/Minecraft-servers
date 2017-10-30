@@ -1,0 +1,34 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2You paid &4%cost%"
+    notEnoughMoney: " &4You do not have enough money!"
+    # use %reward% for the amount the player won
+    wonMoney: " &2You scored &6%score%&2 and won &6%reward%&2!"
+  gameOverNoPay: " &2You reached a final score of &6%score%"
+  inventoryTitles:
+    gameTitle: "&9WhacAMole      Score: %score%    &4%time%"
+    start: "&9WhacAMole       &c&lClick to start"
+    gameOver: " &4Game Over         &9Score: %score%"
+  moleDisplayName: "&1&lMole"
+  creeperDisplayName: "&c&lCreeper"
+  humanDisplayName: "&a&lHuman"
+
+
+prefix: "[&3WhacAMole&r]"
+name: "&1WhacAMole&r"
+
+
+gameHelp:
+  - '&1&lClassic:'
+  - '  &1&lMoles appear in one of 4 molehills.'
+  - '  &1&lClick on them before they disappear.'
+  - ""
+  - '&1&lCreepers chasing Humans:'
+  - '  &1&lAnywhere in your inventory creepers'
+  - '  &1&l  or humans can appear.'
+  - '&1&l  Hit the creepers, but spare the humans!'

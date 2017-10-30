@@ -1,0 +1,39 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2Du hast &4%cost% gezahlt"
+    notEnoughMoney: " &4Nicht genug Geld!"
+  closedGame: " &2Momentaner Punktestand: &6%score%"
+  inventoryTitles:
+    gameTitle: "&9&lCC   &r&1%score% Kekse"
+  cookieName: "&1&lKeks"
+  ovenName: "&a&lDeine Keksproduktion"
+  ovenLore:
+    - ""
+    - '&1Do produzierst im Moment:'
+    - "  &2%cookies_per_second% &1Kekse pro Sekunde"
+    - "  &2%cookies_per_click% &1Kekse pro Klick"
+  productionLore:
+    - "Kaufen für: %cost% (linksclick)"
+    - "  Verkaufe mit Rechtsklick"
+    - ""
+    - '&1Du hast %count% %name%(s)'
+    - "  &1Jedes Gebäude produziert %cookies_per_second_per_item% pro Sekunde"
+    - "  &1Gesamtproduktion: %cookies_per_second%"
+
+
+prefix: "[&3CookieClicker&r]"
+name: "&1CookieClicker&r"
+
+
+gameHelp:
+  - '&1&lBacke Kekse, indem du auf den Keks klickst.'
+  - ""
+  - '&1&lMit Keksen kannst du Gebäude kaufen,'
+  - '  &1&ldie automatisch Kekse produzieren.'
+  - ""
+  - '&1&lDu kannst Upgrades freischalten und kaufen.'

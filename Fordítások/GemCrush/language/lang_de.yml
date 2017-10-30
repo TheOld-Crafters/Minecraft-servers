@@ -1,0 +1,34 @@
+# nutze & fuer farben
+#   platzhater werden vor der jeweiligen nachricht aufgelistet
+
+game:
+  econ:
+    # benutze %cost% fuer den Preis
+    payed: " &2Du hast &4%cost% gezahlt"
+    notEnoughMoney: " &4Du hast nicht genug Geld!"
+  # benutze %score% fuer die Anzahl der Punkte am Ende des Spiels
+  finishedWithoutPayout: " Du hast das Spiel mit &2%score%&r Punkten beendet."
+  # benutze %score% fuer die Anzahl der Punkte und %reward% fuer den Lohn
+  #   der Lohn wird im config file festgelegt!
+  # diese Nachricht wird anstatt von 'finishedWithoutPayout' wenn Lohn > 0 ist
+  finishedWithPayout: " Du hast das Spiel mit &2%score%&r Punkten beendet und &2%score%&r Dollar gewonnen!"
+
+
+inventoryTitles:
+  title: "GemCrush  Z\u00fcge: %moves%  Punkte: %score%"
+
+
+prefix: "[&3GemCrush&r]"
+name: "&1GemCrush&r"
+
+
+gameHelp:
+  - '&1&lKombiniere drei gleiche Items'
+  - '  &1&lum Punkte zu bekommen'
+  - '&1&lKlicke zwei Items um sie zu tauschen.'
+  - '  &1&lDafür müssen sie nebeneinander sein'
+  - '  &1&lund mit dem Wechsel muss eine Reihe von'
+  - '    &1&ldrei gleichen erzeugt werden,'
+  - "    &1&lansonsten funktioniert der Tausch nicht"
+  - ''
+  - '&l&6Viel Spass!'

@@ -1,0 +1,377 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+# 注意：为了中国玩家更好的体验 汉化并没有完全忠于原文
+# Attention: The meaning of zh-cn translation may be different from the original en lang file.
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &a你支付了 &4%cost%"
+    notEnoughMoney: " &4你的钱不够!"
+  closedGame: " &2你的当前积分 &6%score%"
+  inventoryTitles:
+    gameTitle: "&9&l饼干工厂   &r&1%score% 个饼干"
+  cookieName: "&a&l点击制作饼干"
+  ovenName: "&a&l饼干生产情况"
+  ovenLore:
+    - ""
+    - '&e当前生产情况'
+    - "  &f%cookies_per_second% &e个饼干 / 每秒"
+    - "  &f%cookies_per_click% &e个饼干 / 每次点击"
+
+
+prefix: "[&3饼干工厂&r]"
+name: "&3饼干工厂&r"
+
+
+gameHelp:
+  - '&e疯狂点击 制作更多饼干！'
+  - ""
+  - '&e可以用饼干购买升级 让自己制作更快'
+  - '&e甚至自动制作饼干！'
+  - ""
+  - '&e用更多饼干解锁升级道具 快上加快！'
+  - ""
+  - '&e每周一清零统计 优秀的制作者获得奖励！'
+
+
+buildings:
+  # this allows you to colour the display name of the buildings
+  #   %name% is defined for each building below
+  buildingDisplayName: "&a&l%name%"
+  # The following lore is used for all buildings
+  # placeholders: cost, name, cookies_per_second_per_item, cookies_per_second
+  buildingLore:
+    - "&6左键点击花费 &r&c%cost%&6 购买"
+    - ""
+    - '&e你拥有 &r&2%count%&e 个 %name%'
+    - "  &a每个每秒自动生产 &r&2%cookies_per_second_per_item%&a 个饼干"
+    - "  &a总生产: &r&2%cookies_per_second%&1"
+    - ""
+    # here the building specific description is added
+  cursor:
+    name: "超级鼠标"
+    description:
+      - '&a"每10秒自动帮你点击一次"'
+  grandma:
+    name: "老奶奶"
+    description:
+      - '&a"和蔼可亲的老奶奶能帮你制作更多饼干"'
+  farm:
+    name: "饼干农场"
+    description:
+      - '&a"种瓜得瓜，种饼干得饼干"'
+  mine:
+    name: "饼干矿场"
+    description:
+      - '&a"比钻石矿更珍贵的...饼干矿！"'
+  factory:
+    name: "饼干加工厂"
+    description:
+      - '&a"流水化作业，生产大量饼干"'
+  bank:
+    name: "饼干银行"
+    description:
+      - '&a"大量！大量！大量的饼干！"'
+
+
+upgrades:
+  # this allows you to colour the display name of the upgrades
+  #   %name% is defined for each upgrade below
+  upgradeDisplayName: "&a&l%name%"
+  # with the following lines every upgrade lore begins
+  #   %cost% can be used
+  upgradeLore:
+    - "&e价格: &r&c%cost%"
+    - ""
+  # to this the other (defined below) lore parts are added
+
+  # there are different types of upgrades and they have different middle lore parts
+  #   here %building% is replaced by the defined building name in LOWERCASE!
+  #   use %Building% to get the name exactly as defined
+  types:
+    classic:
+      - "&b让 %Building% 发挥两倍效果！"
+      - ""
+    classic_mouse:
+      - "&b让鼠标点击和 %building% 发挥两倍效果！"
+      - ""
+    gain_mouse_and_other:
+      - "&b让鼠标点击和 %building%s 多获得 &l%gain%&r&b 个饼干"
+      - "     &b获得的饼干将来自 %building% 以外的其它建筑"
+      - ""
+    gain_mouse_per_cps: 
+      - "&b让每秒生产饼干数量增加 &l%gain%"
+      - ""
+
+  # list of all upgrades is following
+  #   DO NOT change the numbers! they are unique in-game IDs for the upgrades
+  upgrades:
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    # Mouse upgrades (type: gain_mouse_per_cps)
+    75:
+      name: "塑料鼠标"
+      description:
+        - '&e"轻盈的塑料鼠标"'
+    76:
+      name: "铁鼠标"
+      description:
+        - '&a"稍微有点重"'
+    77:
+      name: "泰坦鼠标"
+      description:
+        - '&a"沉重而有力！"'
+    78:
+      name: "金刚石鼠标"
+      description:
+        - '&a"能用来切割钻石的鼠标"'
+    119:
+      name: "稀有的鼠标"
+      description:
+        - '&5&o"十分难以见到"'
+    190:
+      name: "极乐的鼠标"
+      description:
+        - '&a"非常棒的鼠标"'
+    191:
+      name: "合金鼠标"
+      description:
+        - '&a"十分坚固的鼠标"'
+    366:
+      name: "钢铁鼠标"
+      description:
+        - '&a"用钢铁制作而成"'
+    367:
+      name: "不灭的鼠标"
+      description:
+        - '&a"永远不会毁灭"'
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    # Cursor upgrades
+    #   the following three upgrades double the mouse and cursor efficiency (type: classic_mouse)
+    0:
+      name: "&a金手指"
+      description:
+        - '&e"看起来很灵活"'
+    1:
+      name: "&a护手霜"
+      description:
+        - '&e"老是点鼠标点的手疼？"'
+    2:
+      name: "手套"
+      description:
+        - '&e"用它来保护自己的手"'
+
+    #  the following Cursor upgrades add gain to mouse and cursor for all non cursor buildings owned (type: gain_mouse)
+    3:
+      name: "一百次点击"
+      description:
+        - '&e"点点点"'
+    4:
+      name: "一千次点击"
+      description:
+        - '&e"点点点点"'
+    5:
+      name: "一万次点击"
+      description:
+        - '&e"点点点点点"'
+    6:
+      name: "十万次点击"
+      description:
+        - '&e"点点点点点点"'
+    43:
+      name: "百万次点击"
+      description:
+        - '&e"点点点点点点点"'
+    82:
+      name: "千万次点击"
+      description:
+        - '&e"疯狂点击"'
+    109:
+      name: "一亿次点击"
+      description:
+        - '&e"点到手软"'
+    188:
+      name: "十亿次点击"
+      description:
+        - '&e"看起来像是不可能完成的任务"'
+    189:
+      name: "百亿次点击"
+      description:
+        - '&e"确实是不可能完成的任务"'
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    # Grandma upgrades (type: classic)
+    7:
+      name: "老花镜"
+      description:
+        - '&e"看不清东西时要用到这玩意"'
+    8:
+      name: "饼干托盘"
+      description:
+        - '&e"这个铁盘子可以盛更多饼干"'
+    9:
+      name: "老奶奶的假牙"
+      description:
+        - '&e"你看见我的假牙了吗"'
+    44:
+      name: "老奶奶的拐杖"
+      description:
+        - '&e"用来辅助行走"'
+    110:
+      name: "老奶奶的耳环"
+      description:
+        - '&e"祖传的耳环 会有什么特殊效果呢"'
+    192:
+      name: "老奶奶的手链"
+      description:
+        - '&e"祖传的手链 会有什么特殊效果呢"'
+    294:
+      name: "老奶奶的项链"
+      description:
+        - '&e"祖传的项链 会有什么特殊效果呢"'
+    307:
+      name: "老奶奶的戒指"
+      description:
+        - '&e"上面镶嵌着祖母绿宝石"'
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    # Farm upgrades (type: classic)
+    10:
+      name: "木锄头"
+      description:
+        - '&e"用它真的能挖出饼干吗!"'
+    11:
+      name: "铁锄头"
+      description:
+        - '&e"比木锄头效果更好"'
+    12:
+      name: "金锄头"
+      description:
+        - '&e"用来生产更多饼干"'
+    45:
+      name: "钻石锄头"
+      description:
+        - '&e"最高级的锄头 生产大量饼干"'
+    111:
+      name: "普通化肥"
+      description:
+        - '&e"让饼干作物产量更高"'
+    193:
+      name: "高级化肥"
+      description:
+        - '&e"让饼干作物产量更高"'
+    295:
+      name: "超级化肥"
+      description:
+        - '&e"让饼干作物产量更高"'
+    308:
+      name: "金坷垃"
+      description:
+        - '&e"饼干亩产一千八"'
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    # Mine upgrades (type: classic)
+    16:
+      name: "木镐"
+      description:
+        - '&e"用这个真的能挖出饼干吗"'
+    17:
+      name: "石镐"
+      description:
+        - '&e"更好的镐子 挖出更多饼干"'
+    18:
+      name: "铁镐"
+      description:
+        - '&e"沉重且耐用的镐子"'
+    47:
+      name: "金镐"
+      description:
+        - '&e"华丽而高效的镐子"'
+    113:
+      name: "钻石镐"
+      description:
+        - '&e"效率最佳的镐子 能不能继续提升呢"'
+    195:
+      name: "钻石镐 效率I"
+      description:
+        - '&e"让钻石镐的速度更快"'
+    296:
+      name: "钻石镐 效率III"
+      description:
+        - '&e"让钻石镐的速度更快"'
+    309:
+      name: "钻石镐 效率V"
+      description:
+        - '&e"让钻石镐的速度达到最快"'
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    # Factory upgrades (type: classic)
+    13:
+      name: "普通流水线"
+      description:
+        - '&e"流水线化生产饼干"'
+    14:
+      name: "高级流水线"
+      description:
+        - '&e"更快的饼干生产速度"'
+    15:
+      name: "超级流水线"
+      description:
+        - '&e"超快的饼干生产速度"'
+    46:
+      name: "特级流水线"
+      description:
+        - '&e"极快的饼干生产速度"'
+    112:
+      name: "普通自动化流水线"
+      description:
+        - '&e"自动帮你生产饼干"'
+    194:
+      name: "高级自动化流水线"
+      description:
+        - '&e"自动帮你生产大量饼干"'
+    297:
+      name: "超级自动化流水线"
+      description:
+        - '&e"自动帮你生产更多饼干"'
+    310:
+      name: "特级自动化流水线"
+      description:
+        - '&e"自动帮你生产超多饼干"'
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    # Bank upgrades (type: classic)
+    232:
+      name: "借记卡"
+      description:
+        - '&e"生成并存储大量饼干"'
+    233:
+      name: "信用卡"
+      description:
+        - '&e"生成并存储更多饼干"'
+    234:
+      name: "青铜级信用卡"
+      description:
+        - '&e"生成并存储更多更多的饼干"'
+    235:
+      name: "白银级信用卡"
+      description:
+        - '&e"生成并存储更多更多更多的饼干"'
+    236:
+      name: "黄金级信用卡"
+      description:
+        - '&e"生成并存储更多更多更多更多的饼干"'
+    237:
+      name: "白金级信用卡"
+      description:
+        - '&e"生成并存储超多的饼干"'
+    298:
+      name: "钻石级信用卡"
+      description:
+        - '&e"生成和存储的饼干已经多到数不过来了"'
+    311:
+      name: "超级信用卡"
+      description:
+        - '&e"超多饼干！"'

@@ -1,0 +1,40 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2Fizettél &4%cost%"
+    notEnoughMoney: " &4Nincs elég pénzed!"
+    # use %reward% for the amount the player won
+    wonMoney: " &2Megnyerted a &6Sudoku&2-t és kaptál &6%reward%&2-t!"
+  inventoryTitles:
+    gameTitle: "&9Sudoku             "
+    won: "&9Sudoku              &2Nyertél!"
+  won: " &2Megfejtettél egy &6Sudoku&2 rejtvényt."
+
+
+prefix: "[&3Sudoku&r]"
+name: "&1Sudoku&r"
+
+restartButton:
+  displayName: "&c&lÚjraindítás"
+  lore:
+  - ""
+  - "&6Kattints duplán a rejtvény újraindításához"
+
+gameHelp:
+  - '&1&lA Sudoku egy 9x9-es rácson játszandó logikai játék.'
+  - '&1&lA rács el van osztva 9 3x3-as rácsra.'
+  - ''
+  - '&1&lA győzelemhez minden sorban, oszlopban és 3x3-as rácsban'
+  - '  &1&lszámoknak kell lenniük 1-től 9-ig'
+  - '&1&lA játék indításakor pár szám helye meg van adva.'
+  - '  &1&lLogika alkalmazásával meg kell találd a többi szám helyét.'
+  - '  &1&lA bal-klikk növeli az értéket 1-el,'
+  - '  &1&la jobb-klikk csökkenti az értéket 1-el.'
+  - ''
+  - '&1&lHa elrontottad és újra szeretnéd kezdeni,'
+  - '  &1&lnyomd meg az Újraindítás gombot'
+  - '  &1&la táskádban.'
