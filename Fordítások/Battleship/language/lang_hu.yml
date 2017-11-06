@@ -50,6 +50,8 @@ inventoryTitles:
   setShip2: "Csatahajó: %count% x 4 Blokk  &4%timer%"
   setShip3: "Cirkáló: %count% x 3 Blokk   &4%timer%"
   setShip4: "Romboló: %count% x 2 Blokk  &4%timer%"
+  # title while waiting for the other player to set his ship(s)
+  waiting: "&2Battleship | &rKérlek várj..."
   # %timer%
   attacker: "&2Csatahajó   &rKattints a tüzeléshez!      &4%timer%"
   defender: "&4Csatahajó   &rVigyázz!         &2%timer%"  
