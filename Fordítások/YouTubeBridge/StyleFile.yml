@@ -1,0 +1,1573 @@
+prefix: '&9Youtube>'
+text:
+  noPermission: '&7You dont have enough §cpermissions'
+  steps:
+    verify:
+      actionbar: '&7Add &e{Tag} &7to your Channel description'
+      chat: '&7Add &e{Tag}&7 to your Channel description to verify'
+    finished:
+      actionbar: '&aSuccessfully §7received the rank §e{Rank}'
+      chat: '&7Well done, you now have the §e{Rank} §7Rank'
+  cancelUser: '&7You &ccancelled &7the Setup'
+  cancelAlreadyUsedLink: '&7The Youtube Channel is already linked with another account!'
+  cancelNoRequirements: §7You dont have enough §e{Requirements}
+  cancelBlockedUser: '&7You are blocked from getting the youtuber rank'
+  cancelBlockedChannel: '&7The Channel &e{Name} &7is blocked by the server'
+  cancelInvalidLink: '&7This Youtube Channel Url is invalid, please try it again'
+dialog:
+  AddBlockedChannel:
+    commandDisabledMessage: '&7Close the dialog with &cclose'
+    closedMessage: '&7You &cclosed &7the dialog'
+    closedCommandString: close
+    list:
+      '0':
+        title: Block Channel
+        subtitle: §7Paste in the §aChannel Url §7in the Chat
+        actionbar: ''
+        chat: []
+  CreatePackage:
+    commandDisabledMessage: '&7Close the dialog with &cclose'
+    closedMessage: '&7You &cclosed &7the dialog'
+    closedCommandString: close
+    list:
+      '0':
+        title: Create Package
+        subtitle: §7Type in the name of the package
+        actionbar: ''
+        chat: []
+  TitleRequirement:
+    commandDisabledMessage: '&7Close the dialog with &cclose'
+    closedMessage: '&7You &cclosed &7the dialog'
+    closedCommandString: close
+    list:
+      '0':
+        title: Title Requirement
+        subtitle: §7Type in the requirement
+        actionbar: ''
+        chat: []
+  DescriptionRequirement:
+    commandDisabledMessage: '&7Close the dialog with &cclose'
+    closedMessage: '&7You &cclosed &7the dialog'
+    closedCommandString: close
+    list:
+      '0':
+        title: Description Requirement
+        subtitle: §7Type in the requirement
+        actionbar: ''
+        chat: []
+  AddPromoteCommand:
+    commandDisabledMessage: '&7Close the dialog with &cclose'
+    closedMessage: '&7You &cclosed &7the dialog'
+    closedCommandString: close
+    list:
+      '0':
+        title: Promote Command
+        subtitle: §7Type in the command
+        actionbar: ''
+        chat: []
+  AddDemoteCommand:
+    commandDisabledMessage: '&7Close the dialog with &cclose'
+    closedMessage: '&7You &cclosed &7the dialog'
+    closedCommandString: close
+    list:
+      '0':
+        title: Demote Command
+        subtitle: §7Type in the command
+        actionbar: ''
+        chat: []
+  GetUrl:
+    commandDisabledMessage: §7Type in §cclose §7to exit
+    closedMessage: §7Successfully closed the Dialog
+    closedCommandString: close
+    list:
+      '0':
+        title: Get Channel Url
+        subtitle: §7Paste your §aChannel Url §7in the Chat
+        actionbar: '§7Example: §ehttp://www.youtube.com/users/SomeName'
+        chat: []
+  AddBlockedUser:
+    commandDisabledMessage: '&7Close the dialog with &cclose'
+    closedMessage: '&7You &cclosed &7the dialog'
+    closedCommandString: close
+    list:
+      '0':
+        title: Block User
+        subtitle: §7Type in the name of the §aPlayer§7 to block
+        actionbar: ''
+        chat: []
+  browser:
+    commandDisabledMessage: '&7Close the dialog with &cclose'
+    closedMessage: '&7You &cclosed &7the search'
+    closedCommandString: close
+    list:
+      '0':
+        title: '&fSearch'
+        subtitle: '&7Type in a search term'
+        actionbar: '&7Type in &cclose &7to abort'
+        chat: []
+gui:
+  Panel:
+    title: Youtube > Panel
+    size: 45
+    items:
+      List:
+        slot: 12
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: All Youtubers
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '47:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to show all §aYoutubers
+      BlockedUsers:
+        slot: 14
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Blocked Users
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '73:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to manage §aBlocked Users
+          - ''
+          - '&7 Blocked Users&b> &e{Amount}'
+      BlockedChannels:
+        slot: 16
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Blocked Channels
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '152:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to manage §aBlocked Channels
+          - ''
+          - '&7 Blocked Channels&b> &e{Amount}'
+      Packages:
+        slot: 31
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Packages
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '54:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to view and edit all §aPackages
+          - ''
+          - '&7 Existing Packages&b> &e{Amount}'
+      SpecialVideoSettings:
+        slot: 33
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Special Video Settings
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '386:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to edit the §aSpecial Video §7Settings
+  PackageEditor:
+    title: Packages > {Package} > Edit
+    size: 54
+    items:
+      Commands:
+        slot: 19
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Manage Commands
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '145:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to edit the commands for this package
+      IncreaseSortid:
+        slot: 12
+        name:
+          animation: Flashing
+          secondary: §f§l
+          primaryDelay: 3
+          secondaryDelay: 3
+          content: Increase Sortid
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '77:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to §aincrease§7 the sortid
+      DisplaySortid:
+        slot: 21
+        name:
+          animation: NoAnimation
+          content: §a{Amount} Sort ID
+        material:
+          animation: NoAnimation
+          content: '160:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7The Sort Id decides what youtube package is the best and the worst'
+          - '&7this is important for the auto adjusting feature'
+      DecreaseSortid:
+        slot: 30
+        name:
+          animation: Flashing
+          secondary: §f§l
+          primaryDelay: 3
+          secondaryDelay: 3
+          content: Decrease Sortid
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '143:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to §cdecrease§7 the sortid
+      Delete:
+        slot: 45
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Delete this package
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '152:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to §cdelete §7this package
+      Up:
+        slot: 0
+        name:
+          animation: Flashing
+          secondary: §f§l
+          primaryDelay: 3
+          secondaryDelay: 3
+          content: + {Amount}
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '77:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to §aincrease§7 {Type} by §e{Amount}
+      Display:
+        slot: 0
+        name:
+          animation: NoAnimation
+          content: §a{Amount} {Type}
+        material:
+          animation: NoAnimation
+          content: '160:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Use the upper or lower buttons to adjust the value'
+          - ''
+          - '&7{Description}'
+      Down:
+        slot: 0
+        name:
+          animation: Flashing
+          secondary: §f§l
+          primaryDelay: 3
+          secondaryDelay: 3
+          content: '{Amount}'
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '143:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to §cdecrease§7 {Type} by §e{Amount}
+      Back:
+        slot: 50
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Back
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '323:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go back'
+  SpecialVideoSettings:
+    title: Panel > Special Video Settings
+    size: 54
+    items:
+      Title:
+        slot: 21
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Required Title
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '160:14'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to remove or change requirement'
+          - ''
+          - '&7Title Requirement: §a{Requirement}'
+          - ''
+          - '&7With the title requirement set, a video needs to have this special
+            word in the title'
+          - '&7to be recognized as a Special Video'
+      Description:
+        slot: 25
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Required Description
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '160:14'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to remove or change requirement'
+          - ''
+          - '&7Description Requirement: §a{Requirement}'
+          - ''
+          - '&7With the title requirement set, a video needs to have this special
+            word in the description'
+          - '&7to be recognized as a Special Video'
+      DisabledTitle:
+        slot: 21
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Required Title
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '160:14'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to set description requirement'
+          - ''
+          - '&7With the title requirement set, a video needs to have this special
+            word in the title'
+          - '&7to be recognized as a Special Video'
+      DisabledDescription:
+        slot: 25
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Required Description
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '160:14'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to set description requirement'
+          - ''
+          - '&7With the title requirement set, a video needs to have this special
+            word in the description'
+          - '&7to be recognized as a Special Video'
+      Back:
+        slot: 50
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Back
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '323:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go back'
+  BlockedUserBrowser:
+    title: Blocked Users > List
+    size: 54
+    items:
+      Previous:
+        slot: 46
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Previous
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bprevios page'
+      Next:
+        slot: 54
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Next
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bnext page'
+      Search:
+        slot: 47
+        name:
+          animation: ZoomEffect
+          delay: 3
+          color: §a
+          content: Search
+        material:
+          animation: NoAnimation
+          content: '345:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to open the search dialog'
+      CloseSearch:
+        slot: 47
+        name:
+          animation: WaveEffect
+          secondary: §f
+          delay: 3
+          content: Close Search
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '152:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to hide the search'
+      Back:
+        slot: 50
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Back
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '323:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go back'
+      Entry:
+        slot: 0
+        name:
+          animation: NoAnimation
+          content: §a§l{Name}
+        material:
+          animation: NoAnimation
+          content: 397:3/{Name}
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to unblock §e{Name}
+          - ''
+          - '§7UUID:'
+          - '&a{UUID}'
+      Add:
+        slot: 52
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Block User
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '145:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to block a User
+          - ''
+          - §7Then the User will be demoted and blocked
+  BlockedChannelBrowser:
+    title: Blocked Channels > List
+    size: 54
+    items:
+      Previous:
+        slot: 46
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Previous
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bprevios page'
+      Next:
+        slot: 54
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Next
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bnext page'
+      Search:
+        slot: 47
+        name:
+          animation: ZoomEffect
+          delay: 3
+          color: §a
+          content: Search
+        material:
+          animation: NoAnimation
+          content: '345:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to open the search dialog'
+      CloseSearch:
+        slot: 47
+        name:
+          animation: WaveEffect
+          secondary: §f
+          delay: 3
+          content: Close Search
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '152:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to hide the search'
+      Back:
+        slot: 50
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Back
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '323:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go back'
+      Entry:
+        slot: 0
+        name:
+          animation: NoAnimation
+          content: §a§l{Name}
+        material:
+          animation: NoAnimation
+          content: '160:14'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to unblock Channel
+          - ''
+          - '&7Channel Id: §e{ID}'
+      Add:
+        slot: 52
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Block Channel
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '145:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to block a Channel
+  EditCommandBrowser:
+    title: '{Package} > Edit > Commands'
+    size: 54
+    items:
+      Previous:
+        slot: 46
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Previous
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bprevios page'
+      Next:
+        slot: 54
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Next
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bnext page'
+      Search:
+        slot: 47
+        name:
+          animation: ZoomEffect
+          delay: 3
+          color: §a
+          content: Search
+        material:
+          animation: NoAnimation
+          content: '345:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to open the search dialog'
+      CloseSearch:
+        slot: 47
+        name:
+          animation: WaveEffect
+          secondary: §f
+          delay: 3
+          content: Close Search
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '152:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to hide the search'
+      Back:
+        slot: 50
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Back
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '323:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go back'
+      Promote:
+        slot: 0
+        name:
+          animation: NoAnimation
+          content: §a{Command}
+        material:
+          animation: NoAnimation
+          content: '160:5'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to §cdelete
+          - ''
+          - '&7This command will be executed when a player receives this package'
+      Demote:
+        slot: 0
+        name:
+          animation: NoAnimation
+          content: §c{Command}
+        material:
+          animation: NoAnimation
+          content: '160:14'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to §cdelete
+          - ''
+          - '&7This command will be executed when a player looses this package'
+      AddPromote:
+        slot: 52
+        name:
+          animation: NoAnimation
+          content: §aAdd Promote Command
+        material:
+          animation: NoAnimation
+          content: '160:5'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to add promote command
+          - ''
+          - '&7This command will be executed when a player receives this package'
+      AddDemote:
+        slot: 53
+        name:
+          animation: NoAnimation
+          content: §cAdd Demote Command
+        material:
+          animation: NoAnimation
+          content: '160:14'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to add demote command
+          - ''
+          - '&7This command will be executed when a player looses this package'
+  UserBrowser:
+    title: Youtuber > List
+    size: 54
+    items:
+      Previous:
+        slot: 46
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Previous
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bprevios page'
+      Next:
+        slot: 54
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Next
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bnext page'
+      Search:
+        slot: 47
+        name:
+          animation: ZoomEffect
+          delay: 3
+          color: §a
+          content: Search
+        material:
+          animation: NoAnimation
+          content: '345:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to open the search dialog'
+      CloseSearch:
+        slot: 47
+        name:
+          animation: WaveEffect
+          secondary: §f
+          delay: 3
+          content: Close Search
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '152:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to hide the search'
+      Back:
+        slot: 50
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Back
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '323:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go back'
+      Entry:
+        slot: 0
+        name:
+          animation: NoAnimation
+          content: §a§l{Name}
+        material:
+          animation: NoAnimation
+          content: 397:3/{Name}
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&eClick to view Profile'
+          - '&e'
+          - '&7Rank: §b{Package}'
+          - '&7Subscriber Count: &e{Subs}'
+          - '&7Video Count: &e{Videos}'
+          - '&7View Count: &e{Views}'
+      Add:
+        slot: 52
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Add User
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '145:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to add a user
+          - ''
+          - §7This way you can manually promote players
+  Splash:
+    title: Get a Youtuber Rank
+    size: 36
+    items:
+      Entry:
+        slot: 0
+        name:
+          animation: NoAnimation
+          content: §b§l{Package}
+        material:
+          animation: NoAnimation
+          content: '340:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7- You need §e{Subs}+ §7Subscribers
+          - §7- You need §e{Videos}+ §7Videos
+          - §7- You need §e{Views} §7total Views and
+          - §e{Avg_Views}+ §7average Views!
+          - //
+          - //§7Additionally you need §e{SpecialVideos} §7 Videos with
+          - //#Title§e{Title} §7in the title
+          - //#Description§e{Description} §7in the description
+      Next:
+        slot: 23
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Next
+          primary: §a
+        material:
+          animation: NoAnimation
+          content: '133:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to receive your §bRank§7!
+  VideoBrowser:
+    title: '{Player} > Videos'
+    size: 54
+    items:
+      Previous:
+        slot: 46
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Previous
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bprevios page'
+      Next:
+        slot: 54
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Next
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bnext page'
+      Search:
+        slot: 47
+        name:
+          animation: ZoomEffect
+          delay: 3
+          color: §a
+          content: Search
+        material:
+          animation: NoAnimation
+          content: '345:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to open the search dialog'
+      CloseSearch:
+        slot: 47
+        name:
+          animation: WaveEffect
+          secondary: §f
+          delay: 3
+          content: Close Search
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '152:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to hide the search'
+      Back:
+        slot: 50
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Back
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '323:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go back'
+      Entry:
+        slot: 0
+        name:
+          animation: NoAnimation
+          content: §a§l{Title}
+        material:
+          animation: NoAnimation
+          content: '160:5'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to paste the url in the chat'
+          - ''
+  PlayerBrowser:
+    title: Profile > &e{Channel} &r> Videos
+    size: 54
+    items:
+      Previous:
+        slot: 46
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Previous
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bprevios page'
+      Next:
+        slot: 54
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Next
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bnext page'
+      Search:
+        slot: 47
+        name:
+          animation: ZoomEffect
+          delay: 3
+          color: §a
+          content: Search
+        material:
+          animation: NoAnimation
+          content: '345:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to open the search dialog'
+      CloseSearch:
+        slot: 47
+        name:
+          animation: WaveEffect
+          secondary: §f
+          delay: 3
+          content: Close Search
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '152:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to hide the search'
+      Back:
+        slot: 50
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Back
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '323:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go back'
+      Entry:
+        slot: 0
+        name:
+          animation: NoAnimation
+          content: §a§l{Player}
+        material:
+          animation: NoAnimation
+          content: 397:4/{Player}
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to choose §e{Player}'
+  PackageBrowser:
+    title: Packages > List
+    size: 54
+    items:
+      Previous:
+        slot: 46
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Previous
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bprevios page'
+      Next:
+        slot: 54
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Next
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '262:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go to the §bnext page'
+      Search:
+        slot: 47
+        name:
+          animation: ZoomEffect
+          delay: 3
+          color: §a
+          content: Search
+        material:
+          animation: NoAnimation
+          content: '345:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to open the search dialog'
+      CloseSearch:
+        slot: 47
+        name:
+          animation: WaveEffect
+          secondary: §f
+          delay: 3
+          content: Close Search
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '152:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to hide the search'
+      Back:
+        slot: 50
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Back
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '323:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go back'
+      Entry:
+        slot: 0
+        name:
+          animation: NoAnimation
+          content: §a§l{Package}
+        material:
+          animation: NoAnimation
+          content: '95:11'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to §aedit§7 or §cdelete §7this package'
+          - ''
+          - '&7Requirements:'
+          - '&7Subscribers: &e{Subs}'
+          - '&7Total Views: &e{Views}'
+          - '&7Video Amount: &e{Videos}'
+          - '&7Special Videos: &e{SpecialVideos}'
+          - ''
+          - '&7Sort ID: &b{Sortid}'
+      Add:
+        slot: 52
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Create Package
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '145:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to create a package
+  Profile:
+    title: Youtuber > {Player}
+    size: 54
+    items:
+      Info:
+        slot: 12
+        name:
+          animation: NoAnimation
+          content: §a§l{Name}
+        material:
+          animation: NoAnimation
+          content: 397:3/{Name}
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Rank: &e{Package}'
+          - '&7Subscribers: &e{Subs}'
+          - '&7Total Views: &e{Views}'
+          - '&7Video Amount: &e{Videos}'
+      Paste:
+        slot: 14
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Paste Url
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '421:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to get §aChannel Url
+      Videos:
+        slot: 16
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Videos
+          primary: §a§l
+        material:
+          animation: NoAnimation
+          content: '160:11'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to show all §auploads
+      Demote:
+        slot: 33
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Demote Channel
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '331:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to §cdemote §7this user
+      Block:
+        slot: 31
+        name:
+          animation: WaveEffect
+          secondary: §7
+          delay: 3
+          content: Demote and Block Channel
+          primary: §c§l
+        material:
+          animation: NoAnimation
+          content: '152:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - §7Click to §cdemote §7and §cblock §7this channel
+      Back:
+        slot: 50
+        name:
+          animation: Flashing
+          secondary: §7§l
+          primaryDelay: 10
+          secondaryDelay: 3
+          content: Back
+          primary: §b§l
+        material:
+          animation: NoAnimation
+          content: '323:0'
+        amount:
+          animation: NoAnimation
+          content: 1
+        lore:
+          animation: NoAnimation
+          content:
+          - '&7Click to go back'
