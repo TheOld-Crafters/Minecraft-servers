@@ -16,12 +16,12 @@ game:
     # %time will be replaced by the time left for the current move%
 
     # title for your turn
-    ingame1: "&3Csatlakozás4     &rA te köröd    &4%time%"
+    ingame1: "&3Amőba     &rA te köröd    &4%time%"
     # title for the other player's turn
-    ingame2: "&3Csatlakozás4    &rNem a te köröd  &a%time%"
-    won: "&3Csatlakozás4           &2Nyertél"
-    lost: "&3Csatlakozás4           &4Vesztettél"
-    draw: "&3Csatlakozás4           &3Döntetlen!"
+    ingame2: "&3Amőba    &rNem a te köröd  &a%time%"
+    won: "&3Amőba           &2Nyertél"
+    lost: "&3Amőba           &4Vesztettél"
+    draw: "&3Amőba           &3Döntetlen!"
   won: " &2Megnyerted a játékot!"
   lost: " &4Elvesztetted a játékot"
   # gave up message
@@ -31,8 +31,8 @@ game:
   otherGaveUp: " &2Nyertél! %loser% feladta."
 
 
-prefix: "[&3Csatlakozás4&r]"
-name: "&1Csatlakozás4&r"
+prefix: "[&3Amőba&r]"
+name: "&1Amőba&r"
 
 gameHelp:
   - "&1&lKattintással dobálj darabkákat a játékba"
