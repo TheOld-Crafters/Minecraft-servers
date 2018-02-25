@@ -1,0 +1,612 @@
+Prefix: '&l&oCosmetics >&r'
+No-Permission: '%prefix% &c&lYou don''t have the permission!'
+Cosmetic-Disabled: '%prefix% &c&lThis cosmetic is disabled!'
+Invalid-Gadget: '%prefix% &c&lInvalid Gadget!'
+Invalid-Pet: '%prefix% &c&lInvalid Pet!'
+Invalid-Mount: '%prefix% &c&lInvalid Mount!'
+Invalid-Effect: '%prefix% &c&lInvalid Effect!'
+Invalid-Morph: '%prefix% &c&lInvalid Morph!'
+Invalid-Hat: '%prefix% &c&lInvalid Hat!'
+Invalid-Suit: '%prefix% &c&lInvalid Suit!'
+Invalid-Emote: '%prefix% &c&lInvalid Emote!'
+Invalid-Menu: '%prefix% &c&lInvalid Menu!'
+Ammo: '&7Your ammo: &e%ammo%'
+Purchase: '&a&lPURCHASE'
+Cancel: '&c&lCANCEL'
+Buy-Ammo-Description: '&e&lBuy %amount% %gadgetname% ammo &e&lfor %price%$'
+Right-Click-Buy-Ammo: '&7Right Click to Buy Ammo'
+Not-Enough-Money: '%prefix% &c&lYou don''t have enough money!'
+Successful-Purchase: '%prefix% &a&lSuccessful purchase!'
+Buy-Treasure-Key: '&lBuy a Treasure Key'
+Treasure-Keys: '&7&lTreasure Keys'
+Treasure-Chests: '&6&lTreasure Chests'
+Dont-Have-Key: '&4&lYou need a key!'
+Click-Open-Chest: '&aClick to open a chest'
+Click-Buy-Key: '&aClick to buy a key'
+Your-Keys: '&7&oYour keys: &f&l%keys%'
+Buy-Treasure-Key-ItemName: '&e&l1 &7&lTreasure Key &e&lfor %price%$'
+Found-Legendary: '%prefix% &c&l%name% found Legendary %found%'
+Chest-Not-Enough-Space: '%prefix% &c&lThere isn''t enough space for a treasure chest!'
+Too-Close-To-Other-Chest: '%prefix% &c&lYou are too close to another treasure chest!'
+You-Won-Treasure-Chests: '%prefix% &f&lYou won: %name%!'
+Clear-Cosmetics: '&c&lClear cosmetics'
+Clear-Gadget: '&c&lClear current gadget'
+Clear-Pet: '&c&lClear current pet'
+Clear-Mount: '&c&lClear current mount'
+Clear-Effect: '&c&lClear current effect'
+Clear-Morph: '&c&lClear current morph'
+Clear-Hat: '&c&lClear current hat'
+Clear-Suit: '&c&lClear current suit'
+Clear-Emote: '&c&lClear current emote'
+Rename-Pet-Purchase: '&c&lRename the pet to &f&l%name% &c&lfor &e&l%price%$'
+Active-Pet-Needed: '&c&lYou need to spawn a pet to rename it'
+Rename-Pet: '&c&lClick to rename: %petname%'
+Treasure-Chests-Loot:
+  Ammo: '%ammo% %name% ammo'
+  Pet: '%pet% pet'
+  Mount: '%mount% mount'
+  Effect: '%effect% effect'
+  Morph: '%morph% morph'
+  Hat: '%hat% hat'
+  Money: '&e&l%money%$'
+  gadget: '%gadget% gadget'
+  Suit: '%suit%'
+  Emote: '%emote% emote'
+  Nothing: '&c&lNothing'
+Menus:
+  Main-Menu: '&lMain Menu'
+  Pets: '&lPets'
+  Gadgets: '&lGadgets'
+  Mounts: '&lMounts'
+  Morphs: '&lMorphs'
+  Hats: '&lHats'
+  Particle-Effects: '&lParticle Effects'
+  Suits: '&lSuits'
+  Emotes: '&lEmotes'
+  Buy-Ammo: '&lBuy Ammo'
+  Rename-Pet: '&lRename Pet'
+Disable-Gadgets: '&c&lDisable Gadgets'
+Enable-Gadgets: '&a&lEnable Gadgets'
+Disable-Third-Person-View: '&c&lDisable Morphs Third Person View'
+Enable-Third-Person-View: '&a&lEnable Morphs Third Person View'
+Gadgets-Enabled-Needed: '%prefix% &c&lYou need to enable gadgets!'
+Gadgets:
+  Equip: '%prefix% &9You equipped %gadgetname%'
+  Unequip: '%prefix% &9You unequipped %gadgetname%'
+  Countdown-Message: '%prefix% &c&lYou can''t use %gadgetname% &c&lfor %time%s!'
+  PaintballGun:
+    name: '&b&lPaintball Gun'
+  BatBlaster:
+    name: '&7&lBat Blaster'
+  MelonThrower:
+    name: '&a&lMelon Thrower'
+    Wait-For-Finish: '%prefix% &c&lWait for your previous melon to finish exploding!'
+  EtherealPearl:
+    name: '&5&lEthereal Pearl'
+  FleshHook:
+    name: '&7&lFlesh Hook'
+  DiscoBall:
+    name: '&d&lDisco Ball'
+    Already-Active: '&c&lThere is already a disco ball active!'
+    Not-Space-Above: '&c&lThere is not enough space above you!'
+  ColorBomb:
+    name: '&d&lColor Bomb'
+  Chickenator:
+    name: '&f&lChickenator'
+  PortalGun:
+    name: '&c&lPortal &9&lGun'
+    No-Block-Range: '%prefix% &c&lNo BLOCKS in range!'
+    Different-Worlds: '%prefix% &c&lPortals must be in the same world!'
+  BlizzardBlaster:
+    name: '&b&lBlizzard Blaster'
+  ThorHammer:
+    name: '&f&lThor''s Hammer'
+  SmashDown:
+    name: '&c&lSmashDown'
+  ExplosiveSheep:
+    name: '&4&lExplosive Sheep'
+    Already-Active: '&c&lThere is already a an explosive sheep active!'
+  AntiGravity:
+    name: '&d&lAnti Gravity'
+  Tsunami:
+    name: '&9&lTsunami'
+  Rocket:
+    name: '&4&lRocket'
+    Not-Enough-Space: '%prefix% &c&lNot enough space around and above you!'
+    Not-On-Ground: '%prefix% &c&lYou must be on the ground!'
+    Takeoff: '&4&lTAKEOFF!!'
+  BlackHole:
+    name: '&1&lBlack Hole'
+  TNT:
+    name: '&4&lT&f&lN&4&lT'
+  FunGun:
+    name: '&6&lFun Gun'
+  Parachute:
+    name: '&f&lParachute'
+  QuakeGun:
+    name: '&5&lQuake &d&lGun'
+  GhostParty:
+    name: '&f&lGhost Party'
+  Firework:
+    name: '&c&lFirework'
+  ChristmasTree:
+    name: '&2&lChristmas Tree'
+    Click-On-Block: '%prefix% &c&lPlease click on a block!'
+  FreezeCannon:
+    name: '&b&lFreeze Cannon'
+  Snowball:
+    name: '&f&lSnowball'
+  PartyPopper:
+    name: '&e&lParty Popper'
+  Trampoline:
+    name: '&9&lTrampoline'
+  Gadget-Ready-ActionBar: '%gadgetname% &f&lis ready!'
+  Lore: '&9Gadget'
+Mounts:
+  DruggedHorse:
+    menu-name: '&2&lDrugged Horse'
+    entity-displayname: '&l%playername%''s drugged horse'
+  InfernalHorror:
+    menu-name: '&4&lInfernal Horror'
+    entity-displayname: '&l%playername%''s infernal horror'
+  GlacialSteed:
+    menu-name: '&b&lGlacial Steed'
+    entity-displayname: '&l%playername%''s glacial steed'
+  WalkingDead:
+    menu-name: '&2&lWalking Dead'
+    entity-displayname: '&l%playername%''s walking dead'
+  MountOfFire:
+    menu-name: '&c&lMount of Fire'
+    entity-displayname: '&l%playername%''s mount of fire'
+  MountOfWater:
+    menu-name: '&9&lMount of Water'
+    entity-displayname: '&l%playername%''s mount of water'
+  EcologistHorse:
+    menu-name: '&a&lEcologist Horse'
+    entity-displayname: '&l%playername%''s ecologist horse'
+  NyanSheep:
+    menu-name: '&4&lNy&6&la&e&ln &a&lSh&b&lee&d&lp'
+    entity-displayname: '&l%playername%''s nyan sheep'
+  Snake:
+    menu-name: '&6&lSnake'
+    entity-displayname: '&l%playername%''s snake'
+  Dragon:
+    menu-name: '&5&lDragon'
+    entity-displayname: '&l%playername%''s dragon'
+  SkySquid:
+    menu-name: '&9&lSky Squid'
+    entity-displayname: '&l%playername%''s sky squid'
+  HypeCart:
+    menu-name: '&7&lHypeCart'
+    entity-displayname: '&l%playername%''s hypecart'
+  Slime:
+    menu-name: '&a&lSlime'
+    entity-displayname: '&l%playername%''s slime'
+  Spider:
+    menu-name: '&8&lSpider'
+    entity-displayname: '&l%playername%''s spider'
+  Rudolph:
+    menu-name: '&f&lRudolp&4&lh'
+    entity-displayname: '&l%playername%''s rudolph'
+  MoltenSnake:
+    menu-name: '&c&lMolten Snake'
+    entity-displayname: '&l%playername%''s Molten Snake'
+  FlyingShip:
+    menu-name: '&a&lFlying Ship'
+    entity-displayname: '&l%playername%''s Flying Ship'
+  Spawn: '%prefix% &9You spawned %mountname%'
+  Despawn: '%prefix% &9You despawned %mountname%'
+Particle-Effects:
+  Summon: '%prefix% &9You summoned %effectname%'
+  Unsummon: '%prefix% &9You unsummoned %effectname%'
+  RainCloud:
+    name: '&9&lRain Cloud'
+  SnowCloud:
+    name: '&f&lSnow Cloud'
+  BloodHelix:
+    name: '&4&lBlood Helix'
+  FrostLord:
+    name: '&b&lFrost Lord'
+  FlameRings:
+    name: '&c&lFlame Rings'
+  GreenSparks:
+    name: '&a&lGreen Sparks'
+  InLove:
+    name: '&c&lIn Love'
+  FrozenWalk:
+    name: '&b&lFrozen Walk'
+  Enchanted:
+    name: '&7&lEnchanted'
+  Music:
+    name: '&9&lMusic'
+  Inferno:
+    name: '&4&lInferno'
+  AngelWings:
+    name: '&f&lAngel Wings'
+  SuperHero:
+    name: '&4&lSuper Hero'
+  SantaHat:
+    name: '&4&lSanta &f&lHat'
+  CrushedCandyCane:
+    name: '&4&lCrushed &f&lCandy &4&lCane'
+  EnderAura:
+    name: '&d&lEnder Aura'
+  FlameFairy:
+    name: '&6&lFlame Fairy'
+Pets:
+  Piggy:
+    menu-name: '&d&lPiggy'
+    entity-displayname: '&l%playername%''s piggy'
+  Sheep:
+    menu-name: '&f&lSheep'
+    entity-displayname: '&l%playername%''s sheep'
+  EasterBunny:
+    menu-name: '&6&lEaster Bunny'
+    entity-displayname: '&l%playername%''s easter bunny'
+  Cow:
+    menu-name: '&c&lCow'
+    entity-displayname: '&l%playername%''s cow'
+  Kitty:
+    menu-name: '&9&lKitty'
+    entity-displayname: '&l%playername%''s kitty'
+  Dog:
+    menu-name: '&7&lDog'
+    entity-displayname: '&l%playername%''s dog'
+  Chick:
+    menu-name: '&e&lChick'
+    entity-displayname: '&l%playername%''s chick'
+  Wither:
+    menu-name: '&8&lWither'
+    entity-displayname: '&l%playername%''s wither'
+  Pumpling:
+    menu-name: '&6&lPumpling'
+    entity-displayname: '&l%playername%''s pumpling'
+  CompanionCube:
+    menu-name: '&d&lCompanion Cube'
+    entity-displayname: '&l%playername%''s cube'
+  ChristmasElf:
+    menu-name: '&a&lChristmas Elf'
+    entity-displayname: '&l%playername%''s Christmas elf'
+  Mooshroom:
+    menu-name: '&4&lMooshroom'
+    entity-displayname: '&l%playername%''s Mooshroom'
+  IronGolem:
+    menu-name: '&7&lIronGolem'
+    entity-displayname: '&l%playername%''s IronGolem'
+  Snowman:
+    menu-name: '&f&lSnowman'
+    entity-displayname: '&l%playername%''s Snowman'
+  Villager:
+    menu-name: '&a&lVillager'
+    entity-displayname: '&l%playername%''s Villager'
+  Bat:
+    menu-name: '&8&lBat'
+    entity-displayname: '&l%playername%''s Bat'
+  PolarBear:
+    menu-name: '&b&lPolarBear'
+    entity-displayname: '&l%playername%''s PolarBear'
+  Llama:
+    menu-name: '&7&lLlama'
+    entity-displayname: '&l%playername%''s Llama'
+  Parrot:
+    menu-name: '&a&lParrot'
+    entity-displayname: '&l%playername%''s Parrot'
+  Spawn: '%prefix% &9You spawned %petname%'
+  Despawn: '%prefix% &9You despawned %petname%'
+Morphs:
+  Blaze:
+    name: '&6&lBlaze'
+    skill: '&eCrouch&7 to: &aFly'
+  Chicken:
+    name: '&f&lChicken'
+    skill: '&eCrouch&7 to: &aLay eggs'
+  Slime:
+    name: '&a&lSlime'
+    skill: '&eCrouch&7 to: &aBounce'
+  Pig:
+    name: '&d&lPig'
+    skill: '&eCollide&7 to: &aBounce Players'
+  Enderman:
+    name: '&5&lEnderman'
+    skill: '&eDouble Jump&7 to: &aTeleport'
+  Bat:
+    name: '&8&lBat'
+    skill: '&eDouble Jump&7 to: &aFlap'
+  Creeper:
+    name: '&a&lCreeper'
+    skill: '&eCrouch&7 to: &aDetonate'
+    charging: '&a&lCharging: %chargelevel%/100'
+    release-to-explode: '&f&lRelease to explode!'
+  Snowman:
+    name: '&f&lSnowman'
+    skill: '&eLeft Click&7 to: &aThrow Snowball'
+  Morph: '%prefix% &9You morphed into %morphname%'
+  Unmorph: '%prefix% &9You unmorphed from %morphname%'
+  WitherSkeleton:
+    name: '&8&lWither Skeleton'
+    skill: '&eSneak&7 to: &aBone Bomb'
+  ElderGuardian:
+    name: '&8&lElder Guardian'
+    skill: '&eLeft-Click&7 to: &aLaser'
+  Cow:
+    name: '&8&lCow'
+    skill: '&eLeft-Click&7 to: &aMoo'
+  Sheep:
+    name: '&f&lSheep'
+    skill: '&eLeft-Click&7 to: &aChange Colors'
+  Mooshroom:
+    name: '&c&lMooshroom'
+    skill: '&eCrouch&7 to: &aSoup Throw'
+  Villager:
+    name: '&a&lVillager'
+    skill: '&eLeft-Click&7 to: &aEmerald Throw'
+  Witch:
+    name: '&5&lWitch'
+    skill: '&eLEft-Click&7 to: &aPotion Throw'
+  PolarBear:
+    name: '&f&lPolarBear'
+    skill: '&eLeft-Click&7 to: &aBlizzard'
+  Llama:
+    name: '&3&lLlama'
+    skill: '&eLeft-Click&7 to: &aSpit'
+  Parrot:
+    name: '&a&lParrot'
+    skill: '&eDouble Jump&7 to: &aFlap'
+Hats:
+  Equip: '%prefix% &9You equipped %hatname% &9hat!'
+  Unequip: '%prefix% &9You unequipped %hatname% &9hat!'
+  Astronaut:
+    Name: '&7&lAstronaut'
+  Scared:
+    Name: '&4&lScared'
+  Angel:
+    Name: '&f&lAngel'
+  Embarassed:
+    Name: '&7&lEmbarassed'
+  Kissy:
+    Name: '&c&lKissy'
+  Sad:
+    Name: '&9&lSad'
+  Cool:
+    Name: '&6&lCool'
+  Surprised:
+    Name: '&4&lSurprised'
+  Dead:
+    Name: '&8&lDead'
+  Crying:
+    Name: '&9&lCrying'
+  BigSmile:
+    Name: '&6&lBigSmile'
+  Wink:
+    Name: '&e&lWink'
+  Derp:
+    Name: '&3&lDerp'
+  Smile:
+    Name: '&e&lSmile'
+  Iron:
+    Name: '&7&lIron'
+  Gold:
+    Name: '&e&lGold'
+  Diamond:
+    Name: '&b&lDiamond'
+  CommandBlock:
+    Name: '&7&lCommand Block'
+  Music:
+    Name: '&9&lMusic'
+  Squid:
+    Name: '&3&lSquid'
+  Chicken:
+    Name: '&f&lChicken'
+  Blaze:
+    Name: '&6&lBlaze'
+  Piston:
+    Name: '&7&lPiston'
+  Sheep:
+    Name: '&f&lSheep'
+  Pig:
+    Name: '&d&lPig'
+  Golem:
+    Name: '&7&lGolem'
+  Enderman:
+    Name: '&5&lEnderman'
+  Mario:
+    Name: '&4&lMario'
+  Luigi:
+    Name: '&2&lLuigi'
+  Batman:
+    Name: '&8&lBatman'
+  Chest:
+    Name: '&6&lChest'
+  Skull:
+    Name: '&f&lSkull'
+  JackOLantern:
+    Name: '&6&lJack-O''-Lantern'
+  Ghost:
+    Name: '&f&lGhost'
+  ScaryClown:
+    Name: '&4&lScary Clown'
+  Santa:
+    Name: '&4&lSanta'
+  Snowman:
+    Name: '&f&lSnowman'
+  Present:
+    Name: '&c&lPresent'
+  Elf:
+    Name: '&a&lElf'
+  Bedrock:
+    Name: '&8&lBedrock'
+  Bread:
+    Name: '&f&lBread'
+  Cheese:
+    Name: '&e&lCheese'
+  Pancakes:
+    Name: '&f&lPancakes'
+  Cake:
+    Name: '&c&lCake'
+  Cookie:
+    Name: '&6&lCookie'
+  CandyCane:
+    Name: '&c&lCandy &f&lCane'
+  Chocolate:
+    Name: '&a&lChocolate'
+  WhiteChocolate:
+    Name: '&f&lWhite Chocolate'
+  Apple:
+    Name: '&4&lApple'
+  Melon:
+    Name: '&a&lMelon'
+  CarvedPumpkin:
+    Name: '&6&lCarved Pumpkin'
+  Strawberry:
+    Name: '&c&lStrawberry'
+  Coconut:
+    Name: '&f&lCoconut'
+  Taco:
+    Name: '&e&lTaco'
+  Bacon:
+    Name: '&f&lBacon'
+  Fries:
+    Name: '&6&lFries'
+  Hamburger:
+    Name: '&6&lHamburger'
+  Popcorn:
+    Name: '&6&lPopcorn'
+  WhiteDonut:
+    Name: '&f&lWhite Donut'
+  PinkDonut:
+    Name: '&d&lPink Donut'
+  ChocolateDonut:
+    Name: '&a&lChocolate Donut'
+  Pie:
+    Name: '&4&lPie'
+  A:
+    Name: '&6&lA'
+  B:
+    Name: '&4&lB'
+  C:
+    Name: '&2&lC'
+  D:
+    Name: '&b&lD'
+  E:
+    Name: '&e&lE'
+  F:
+    Name: '&5&lF'
+  G:
+    Name: '&d&lG'
+  H:
+    Name: '&a&lH'
+  I:
+    Name: '&6&lI'
+  J:
+    Name: '&4&lJ'
+  K:
+    Name: '&2&lK'
+  L:
+    Name: '&b&lL'
+  M:
+    Name: '&e&lM'
+  N:
+    Name: '&5&lN'
+  O:
+    Name: '&d&lO'
+  P:
+    Name: '&a&lP'
+  Q:
+    Name: '&6&lQ'
+  R:
+    Name: '&4&lR'
+  S:
+    Name: '&2&lS'
+  T:
+    Name: '&b&lT'
+  U:
+    Name: '&e&lU'
+  V:
+    Name: '&5&lV'
+  W:
+    Name: '&d&lW'
+  X:
+    Name: '&a&lX'
+  Y:
+    Name: '&6&lY'
+  Z:
+    Name: '&4&lZ'
+  Must-Remove-Hat: '%prefix% &c&lYou must remove your helmet to equip a hat!'
+Suits:
+  Rave:
+    helmet-name: '&b&lR&a&la&e&lv&6&le &f&lHelmet'
+    chestplate-name: '&b&lR&a&la&e&lv&6&le &f&lChestplate'
+    leggings-name: '&b&lR&a&la&e&lv&6&le &f&lLeggings'
+    boots-name: '&b&lR&a&la&e&lv&6&le &f&lBoots'
+  Astronaut:
+    helmet-name: '&f&lAstronaut &f&lHelmet'
+    chestplate-name: '&f&lAstronaut &f&lChestplate'
+    leggings-name: '&f&lAstronaut &f&lLeggings'
+    boots-name: '&f&lAstronaut &f&lBoots'
+  Diamond:
+    helmet-name: '&b&lDiamond &f&lHelmet'
+    chestplate-name: '&b&lDiamond &f&lChestplate'
+    leggings-name: '&b&lDiamond &f&lLeggings'
+    boots-name: '&b&lDiamond &f&lBoots'
+  Santa:
+    helmet-name: '&4&lSanta &f&lHelmet'
+    chestplate-name: '&4&lSanta &f&lChestplate'
+    leggings-name: '&4&lSanta &f&lLeggings'
+    boots-name: '&4&lSanta &f&lBoots'
+  Equip: '%prefix% &9You equipped %suitname%!'
+  Unequip: '%prefix% &9You unequipped %suitname%!'
+  Suit-Part-Lore: '&9Suits Part'
+Emotes:
+  Equip: '%prefix% &9You equipped %emotename%'
+  Unequip: '%prefix% &9You unequipped %emotename%'
+  Cry:
+    Name: '&9&lCry'
+  Angry:
+    Name: '&c&lAngry'
+  Happy:
+    Name: '&e&lHappy'
+  Cheeky:
+    Name: '&6&lCheeky'
+  Love:
+    Name: '&4&lLove'
+  DealWithIt:
+    Name: '&7&lDeal With it'
+  Cool:
+    Name: '&9&lCool'
+  Surprised:
+    Name: '&6&lSurprised'
+  Wink:
+    Name: '&a&lWink'
+  Must-Remove-Helmet: '%prefix% &c&lYou must remove your helmet to equip an emote!'
+Menu:
+  Gadgets: '&9&lGadgets'
+  Particle-Effects: '&b&lParticle Effects'
+  Mounts: '&6&lMounts'
+  Pets: '&a&lPets'
+  Morphs: '&2&lMorphs'
+  Hats: '&b&lHats'
+  Suits: '&c&lSuits'
+  Emotes: '&e&lEmotes'
+  Main-Menu: '&c&lMain Menu'
+  Activate: '&b&lActivate'
+  Deactivate: '&c&lDeactivate'
+  Spawn: '&b&lSpawn'
+  Despawn: '&c&lDespawn'
+  Summon: '&b&lSummon'
+  Unsummon: '&c&lUnsummon'
+  Equip: '&b&lEquip'
+  Unequip: '&c&lUnequip'
+  Morph: '&b&lMorph into'
+  Unmorph: '&c&lUnmorph from'
+  Previous-Page: '&c&lPrevious Page'
+  Next-Page: '&a&lNext Page'
+Enabled-SelfMorphView: '%prefix% &9you enabled self view for morphs!'
+Disabled-SelfMorphView: '%prefix% &9you disabled self view for morphs!'
+Enabled-Gadgets: '%prefix% &9you enabled gadgets!'
+Disabled-Gadgets: '%prefix% &9you disabled gadgets!'
+Not-Allowed-From-Console: '&c&lThis can''t be executed from console!'
+World-Disabled: '%prefix% &c&lCosmetics are disabled in this world!'
+Disabled-Command-Holding-Message: '%prefix% &c&lYou can''t use this command while
+  holding cosmetics!'
+Disabled-Command-Wearing-Message: '%prefix% &c&lYou can''t use this command while
+  wearing cosmetics!'
