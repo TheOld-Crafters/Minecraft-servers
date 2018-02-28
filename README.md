@@ -8,7 +8,7 @@ Hibajelentésekért kapható jutalmak:
 
 A videós hibajelentésekért több OCD jár.
 
-Több információ az OCD-ről: http://theold.minemarket.hu/
+Több információ az OCD-ről: https://theold.minemarket.hu/
 
 
 Hasznos oldalak (Angol):
