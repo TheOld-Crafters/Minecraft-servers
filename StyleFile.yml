@@ -1,18 +1,18 @@
-#Fordította: poma123 2018
+﻿#Fordította: poma123 2018
 prefix: '&9YouTube>'
 text:
   noPermission: '&7Ehhez nincs §cjogod'
   steps:
     verify:
       actionbar: '&7Add hozzá a(z) &e{Tag} &7tag-et a csatorna-leírásodba'
-      chat: '&7Add hozzá a(z) &e{Tag}&7 tag-et a csatorna-leírásodba a megerõsítéshez'
+      chat: '&7Add hozzá a(z) &e{Tag}&7 tag-et a csatorna-leírásodba a megerősítéshez'
     finished:
       actionbar: '&aSkeresen §7megszerezted a(z) §e{Rank} §7rangot'
       chat: '&7Jól van, mostantól tiéd a(z) §e{Rank} §7rang'
   cancelUser: '&cMegszakítottad &7a Beállítást'
   cancelAlreadyUsedLink: '&7Ez a YouTube Csatorna már egy másik felhasználóhoz van csatolva!'
   cancelNoRequirements: §7Nincs elég §e{Requirements}
-  cancelBlockedUser: '&7El vagy tiltva a YouTube rang megszerzésétõl'
+  cancelBlockedUser: '&7El vagy tiltva a YouTube rang megszerzésétől'
   cancelBlockedChannel: '&7A(z) &e{Name} &7csatorna le van tiltva a szerver által'
   cancelInvalidLink: '&7Hibás YouTube Csatorna Url, kérjük próbáld újra'
 dialog:
@@ -77,7 +77,7 @@ dialog:
         actionbar: ''
         chat: []
   GetUrl:
-    commandDisabledMessage: §7Gépeld be: §cclose §7a kilépéshez
+    commandDisabledMessage: §7Gépeld be §cclose §7a kilépéshez
     closedMessage: '&cLezártad &7a párbeszédet'
     closedCommandString: close
     list:
@@ -188,7 +188,7 @@ gui:
           content:
           - §7Kattints a §aCsomagok §7megtekintéséhez és szerkesztéséhez
           - ''
-          - '&7 Meglévõ Csomagok&b> &e{Amount}'
+          - '&7 Meglévő Csomagok&b> &e{Amount}'
       SpecialVideoSettings:
         slot: 33
         name:
@@ -334,7 +334,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Használd a felsõ vagy az alsó gombot az érték beállításához'
+          - '&7Használd a felső vagy az alsó gombot az érték beállításához'
           - ''
           - '&7{Description}'
       Down:
@@ -374,7 +374,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az előző menübe való visszatéréshez'
   SpecialVideoSettings:
     title: Panel > Különleges Videó Beállítások
     size: 54
@@ -485,7 +485,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az előző menübe való visszatéréshez'
   BlockedUserBrowser:
     title: Tiltott Felhasználók > Lista
     size: 54
@@ -497,7 +497,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
+          content: Előző
           primary: §b§l
         material:
           animation: NoAnimation
@@ -508,7 +508,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az §belőző oldal§7hoz való lapozáshoz'
       Next:
         slot: 54
         name:
@@ -516,7 +516,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
+          content: Következő
           primary: §b§l
         material:
           animation: NoAnimation
@@ -527,7 +527,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a §bkövetkező oldal§7hoz való lapozáshoz'
       Search:
         slot: 47
         name:
@@ -581,7 +581,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az előző menübe való visszatéréshez'
       Entry:
         slot: 0
         name:
@@ -631,7 +631,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
+          content: Előző
           primary: §b§l
         material:
           animation: NoAnimation
@@ -642,7 +642,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az §belőző oldal§7hoz való lapozáshoz'
       Next:
         slot: 54
         name:
@@ -650,7 +650,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
+          content: Következő
           primary: §b§l
         material:
           animation: NoAnimation
@@ -661,7 +661,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a §bkövetkező oldal§7hoz való lapozáshoz'
       Search:
         slot: 47
         name:
@@ -715,7 +715,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az előző menübe való visszatéréshez'
       Entry:
         slot: 0
         name:
@@ -762,7 +762,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
+          content: Előző
           primary: §b§l
         material:
           animation: NoAnimation
@@ -773,7 +773,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az §belőző oldal§7hoz való lapozáshoz'
       Next:
         slot: 54
         name:
@@ -781,7 +781,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
+          content: Következő
           primary: §b§l
         material:
           animation: NoAnimation
@@ -792,7 +792,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a §bkövetkező oldal§7hoz való lapozáshoz'
       Search:
         slot: 47
         name:
@@ -846,7 +846,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az előző menübe való visszatéréshez'
       Promote:
         slot: 0
         name:
@@ -926,7 +926,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
+          content: Előző
           primary: §b§l
         material:
           animation: NoAnimation
@@ -937,7 +937,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az §belőző oldal§7hoz való lapozáshoz'
       Next:
         slot: 54
         name:
@@ -945,7 +945,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
+          content: Következő
           primary: §b§l
         material:
           animation: NoAnimation
@@ -956,7 +956,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a §bkövetkező oldal§7hoz való lapozáshoz'
       Search:
         slot: 47
         name:
@@ -1010,7 +1010,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az előző menübe való visszatéréshez'
       Entry:
         slot: 0
         name:
@@ -1083,7 +1083,7 @@ gui:
           animation: WaveEffect
           secondary: §7
           delay: 3
-          content: Következõ
+          content: Következő
           primary: §a
         material:
           animation: NoAnimation
@@ -1094,7 +1094,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Click to receive your §bRank§7!
+          - §7Kattints a §bRang§7od megszerzéséhez!
   VideoBrowser:
     title: '{Player} > Videók'
     size: 54
@@ -1106,7 +1106,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
+          content: Előző
           primary: §b§l
         material:
           animation: NoAnimation
@@ -1117,7 +1117,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az §belőző oldal§7hoz való lapozáshoz'
       Next:
         slot: 54
         name:
@@ -1125,7 +1125,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
+          content: Következő
           primary: §b§l
         material:
           animation: NoAnimation
@@ -1136,7 +1136,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a §bkövetkező oldal§7hoz való lapozáshoz'
       Search:
         slot: 47
         name:
@@ -1190,7 +1190,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az előző menübe való visszatéréshez'
       Entry:
         slot: 0
         name:
@@ -1218,7 +1218,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
+          content: Előző
           primary: §b§l
         material:
           animation: NoAnimation
@@ -1229,7 +1229,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az §belőző oldal§7hoz való lapozáshoz'
       Next:
         slot: 54
         name:
@@ -1237,7 +1237,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
+          content: Következő
           primary: §b§l
         material:
           animation: NoAnimation
@@ -1248,7 +1248,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a §bkövetkező oldal§7hoz való lapozáshoz'
       Search:
         slot: 47
         name:
@@ -1302,7 +1302,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az előző menübe való visszatéréshez'
       Entry:
         slot: 0
         name:
@@ -1329,7 +1329,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
+          content: Előző
           primary: §b§l
         material:
           animation: NoAnimation
@@ -1340,7 +1340,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az §belőző oldal§7hoz való lapozáshoz'
       Next:
         slot: 54
         name:
@@ -1348,7 +1348,7 @@ gui:
           secondary: §7§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
+          content: Következő
           primary: §b§l
         material:
           animation: NoAnimation
@@ -1359,7 +1359,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a §bkövetkező oldal§7hoz való lapozáshoz'
       Search:
         slot: 47
         name:
@@ -1413,7 +1413,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az előző menübe való visszatéréshez'
       Entry:
         slot: 0
         name:
@@ -1567,4 +1567,4 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az előző menübe való visszatéréshez'
