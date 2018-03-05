@@ -1,110 +1,110 @@
-#Fordította: poma123 2018
+#FordÃ­totta: poma123 2018
 prefix: '&9YouTube>'
 text:
-  noPermission: '&7Ehhez nincs §cjogod'
+  noPermission: '&7Ehhez nincs Â§cjogod'
   steps:
     verify:
-      actionbar: '&7Add hozzá a(z) &e{Tag} &7tag-et a csatorna-leírásodba'
-      chat: '&7Add hozzá a(z) &e{Tag}&7 tag-et a csatorna-leírásodba a megerõsítéshez'
+      actionbar: '&7Add hozzÃ¡ a(z) &e{Tag} &7tag-et a csatorna-leÃ­rÃ¡sodba'
+      chat: '&7Add hozzÃ¡ a(z) &e{Tag}&7 tag-et a csatorna-leÃ­rÃ¡sodba a megerÃµsÃ­tÃ©shez'
     finished:
-      actionbar: '&aSkeresen §7megszerezted a(z) §e{Rank} §7rangot'
-      chat: '&7Jól van, mostantól tiéd a(z) §e{Rank} §7rang'
-  cancelUser: '&7You &ccancelled &7the Setup'
-  cancelAlreadyUsedLink: '&7Ez a YouTube Csatorna már egy másik felhasználóhoz van csatolva!'
-  cancelNoRequirements: §7Nincs elég §e{Requirements}
-  cancelBlockedUser: '&7El vagy tiltva a YouTube rang megszerzésétõl'
-  cancelBlockedChannel: '&7A(z) &e{Name} &7csatorna le van tiltva a szerver által'
-  cancelInvalidLink: '&7Hibás YouTube Csatorna Url, kérjük próbáld újra'
+      actionbar: '&aSkeresen Â§7megszerezted a(z) Â§e{Rank} Â§7rangot'
+      chat: '&7JÃ³l van, mostantÃ³l tiÃ©d a(z) Â§e{Rank} Â§7rang'
+  cancelUser: '&cMegszakÃ­tottad &7a BeÃ¡llÃ­tÃ¡st'
+  cancelAlreadyUsedLink: '&7Ez a YouTube Csatorna mÃ¡r egy mÃ¡sik felhasznÃ¡lÃ³hoz van csatolva!'
+  cancelNoRequirements: Â§7Nincs elÃ©g Â§e{Requirements}
+  cancelBlockedUser: '&7El vagy tiltva a YouTube rang megszerzÃ©sÃ©tÃµl'
+  cancelBlockedChannel: '&7A(z) &e{Name} &7csatorna le van tiltva a szerver Ã¡ltal'
+  cancelInvalidLink: '&7HibÃ¡s YouTube Csatorna Url, kÃ©rjÃ¼k prÃ³bÃ¡ld Ãºjra'
 dialog:
   AddBlockedChannel:
-    commandDisabledMessage: '&7Párbeszéd lezárása: &cclose'
-    closedMessage: '&cLezártad &7a párbeszédet'
+    commandDisabledMessage: '&7PÃ¡rbeszÃ©d lezÃ¡rÃ¡sa: &cclose'
+    closedMessage: '&cLezÃ¡rtad &7a pÃ¡rbeszÃ©det'
     closedCommandString: close
     list:
       '0':
-        title: Csatorna Letiltása
-        subtitle: §7Illeszd be a §aCsatorna Url§7-t a Chat-be
+        title: Csatorna LetiltÃ¡sa
+        subtitle: Â§7Illeszd be a Â§aCsatorna UrlÂ§7-t a Chat-be
         actionbar: ''
         chat: []
   CreatePackage:
-    commandDisabledMessage: '&7Párbeszéd lezárása: &cclose'
-    closedMessage: '&cLezártad &7a párbeszédet'
+    commandDisabledMessage: '&7PÃ¡rbeszÃ©d lezÃ¡rÃ¡sa: &cclose'
+    closedMessage: '&cLezÃ¡rtad &7a pÃ¡rbeszÃ©det'
     closedCommandString: close
     list:
       '0':
-        title: Csomag Létrehozása
-        subtitle: §7Gépeld be a csomag kívánt nevét
+        title: Csomag LÃ©trehozÃ¡sa
+        subtitle: Â§7GÃ©peld be a csomag kÃ­vÃ¡nt nevÃ©t
         actionbar: ''
         chat: []
   TitleRequirement:
-    commandDisabledMessage: '&7Párbeszéd lezárása: &cclose'
-    closedMessage: '&cLezártad &7a párbeszédet'
+    commandDisabledMessage: '&7PÃ¡rbeszÃ©d lezÃ¡rÃ¡sa: &cclose'
+    closedMessage: '&cLezÃ¡rtad &7a pÃ¡rbeszÃ©det'
     closedCommandString: close
     list:
       '0':
-        title: Cím Követelmény
-        subtitle: §7Gépeld be a kívánt követelményt
+        title: CÃ­m KÃ¶vetelmÃ©ny
+        subtitle: Â§7GÃ©peld be a kÃ­vÃ¡nt kÃ¶vetelmÃ©nyt
         actionbar: ''
         chat: []
   DescriptionRequirement:
-    commandDisabledMessage: '&7Párbeszéd lezárása: &cclose'
-    closedMessage: '&cLezártad &7a párbeszédet'
+    commandDisabledMessage: '&7PÃ¡rbeszÃ©d lezÃ¡rÃ¡sa: &cclose'
+    closedMessage: '&cLezÃ¡rtad &7a pÃ¡rbeszÃ©det'
     closedCommandString: close
     list:
       '0':
-        title: Leírás Követelmény
-        subtitle: §7Gépeld be a kívánt követelményt
+        title: LeÃ­rÃ¡s KÃ¶vetelmÃ©ny
+        subtitle: Â§7GÃ©peld be a kÃ­vÃ¡nt kÃ¶vetelmÃ©nyt
         actionbar: ''
         chat: []
   AddPromoteCommand:
-    commandDisabledMessage: '&7Párbeszéd lezárása: &cclose'
-    closedMessage: '&cLezártad &7a párbeszédet'
+    commandDisabledMessage: '&7PÃ¡rbeszÃ©d lezÃ¡rÃ¡sa: &cclose'
+    closedMessage: '&cLezÃ¡rtad &7a pÃ¡rbeszÃ©det'
     closedCommandString: close
     list:
       '0':
-        title: Felfokozás Parancs
-        subtitle: §7Gépeld be a kívánt parancsot
+        title: FelfokozÃ¡s Parancs
+        subtitle: Â§7GÃ©peld be a kÃ­vÃ¡nt parancsot
         actionbar: ''
         chat: []
   AddDemoteCommand:
-    commandDisabledMessage: '&7Párbeszéd lezárása: &cclose'
-    closedMessage: '&cLezártad &7a párbeszédet'
+    commandDisabledMessage: '&7PÃ¡rbeszÃ©d lezÃ¡rÃ¡sa: &cclose'
+    closedMessage: '&cLezÃ¡rtad &7a pÃ¡rbeszÃ©det'
     closedCommandString: close
     list:
       '0':
-        title: Lefokozás Parancs
-        subtitle: §7Gépeld be a kívánt parancsot
+        title: LefokozÃ¡s Parancs
+        subtitle: Â§7GÃ©peld be a kÃ­vÃ¡nt parancsot
         actionbar: ''
         chat: []
   GetUrl:
-    commandDisabledMessage: §7Gépeld be: §cclose §7a kilépéshez
-    closedMessage: '&cLezártad &7a párbeszédet'
+    commandDisabledMessage: Â§7GÃ©peld be: Â§cclose Â§7a kilÃ©pÃ©shez
+    closedMessage: '&cLezÃ¡rtad &7a pÃ¡rbeszÃ©det'
     closedCommandString: close
     list:
       '0':
-        title: Csatorna Url Kérése
-        subtitle: §7Illeszd be a §aCsatornád Webcímét§7 a Chat-be
-        actionbar: '§7Példa: §ehttp://www.youtube.com/users/MintaJanos'
+        title: Csatorna Url KÃ©rÃ©se
+        subtitle: Â§7Illeszd be a Â§aCsatornÃ¡d WebcÃ­mÃ©tÂ§7 a Chat-be
+        actionbar: 'Â§7PÃ©lda: Â§ehttp://www.youtube.com/users/MintaJanos'
         chat: []
   AddBlockedUser:
-    commandDisabledMessage: '&7Párbeszéd lezárása: &cclose'
-    closedMessage: '&cLezártad &7a párbeszédet'
+    commandDisabledMessage: '&7PÃ¡rbeszÃ©d lezÃ¡rÃ¡sa: &cclose'
+    closedMessage: '&cLezÃ¡rtad &7a pÃ¡rbeszÃ©det'
     closedCommandString: close
     list:
       '0':
-        title: Felhasználó Tiltása
-        subtitle: §7Gépeld be a tiltani kívánt §afelhasználó§7 nevét
+        title: FelhasznÃ¡lÃ³ TiltÃ¡sa
+        subtitle: Â§7GÃ©peld be a tiltani kÃ­vÃ¡nt Â§afelhasznÃ¡lÃ³Â§7 nevÃ©t
         actionbar: ''
         chat: []
   browser:
-    commandDisabledMessage: '&7Párbeszéd lezárása: &cclose'
-    closedMessage: '&cBezártad &7a keresést'
+    commandDisabledMessage: '&7PÃ¡rbeszÃ©d lezÃ¡rÃ¡sa: &cclose'
+    closedMessage: '&cBezÃ¡rtad &7a keresÃ©st'
     closedCommandString: close
     list:
       '0':
-        title: '&fKeresés'
-        subtitle: '&7Gépelj be egy kifelyezést'
-        actionbar: '§7Gépeld be: §cclose §7a megszakításhoz'
+        title: '&fKeresÃ©s'
+        subtitle: '&7GÃ©pelj be egy kifelyezÃ©st'
+        actionbar: 'Â§7GÃ©peld be: Â§cclose Â§7a megszakÃ­tÃ¡shoz'
         chat: []
 gui:
   Panel:
@@ -115,10 +115,10 @@ gui:
         slot: 12
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Összes Videós
-          primary: §a§l
+          content: Ã–sszes VideÃ³s
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '47:0'
@@ -128,15 +128,15 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints az összes §aVideós §7megtekintéséhez
+          - Â§7Kattints az Ã¶sszes Â§aVideÃ³s Â§7megtekintÃ©sÃ©hez
       BlockedUsers:
         slot: 14
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Tiltott Felhasználók
-          primary: §c§l
+          content: Tiltott FelhasznÃ¡lÃ³k
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '73:0'
@@ -146,17 +146,17 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a §aTiltott Felhasználók §7kezeléséhez
+          - Â§7Kattints a Â§aTiltott FelhasznÃ¡lÃ³k Â§7kezelÃ©sÃ©hez
           - ''
-          - '&7 Tiltott Felhasználók&b> &e{Amount}'
+          - '&7 Tiltott FelhasznÃ¡lÃ³k&b> &e{Amount}'
       BlockedChannels:
         slot: 16
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Tiltott Csatornák
-          primary: §c§l
+          content: Tiltott CsatornÃ¡k
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '152:0'
@@ -166,17 +166,17 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a §aTiltott Csatornák §7kezeléséhez
+          - Â§7Kattints a Â§aTiltott CsatornÃ¡k Â§7kezelÃ©sÃ©hez
           - ''
-          - '&7 Tiltott Csatornák&b> &e{Amount}'
+          - '&7 Tiltott CsatornÃ¡k&b> &e{Amount}'
       Packages:
         slot: 31
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
           content: Csomagok
-          primary: §b§l
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '54:0'
@@ -186,17 +186,17 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a §aCsomagok §7megtekintéséhez és szerkesztéséhez
+          - Â§7Kattints a Â§aCsomagok Â§7megtekintÃ©sÃ©hez Ã©s szerkesztÃ©sÃ©hez
           - ''
-          - '&7 Meglévõ Csomagok&b> &e{Amount}'
+          - '&7 MeglÃ©vÃµ Csomagok&b> &e{Amount}'
       SpecialVideoSettings:
         slot: 33
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Különleges Videó Beállítások
-          primary: §b§l
+          content: KÃ¼lÃ¶nleges VideÃ³ BeÃ¡llÃ­tÃ¡sok
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '386:0'
@@ -206,19 +206,19 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a §aKülönleges Videó Beállítások §7szerkesztéséhez
+          - Â§7Kattints a Â§aKÃ¼lÃ¶nleges VideÃ³ BeÃ¡llÃ­tÃ¡sok Â§7szerkesztÃ©sÃ©hez
   PackageEditor:
-    title: Csomagok > {Package} > Szerkesztés
+    title: Csomagok > {Package} > SzerkesztÃ©s
     size: 54
     items:
       Commands:
         slot: 19
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Csomagok Kezelése
-          primary: §a§l
+          content: Csomagok KezelÃ©se
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '145:0'
@@ -228,16 +228,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a csomag parancsainak szerkesztéséhez
+          - Â§7Kattints a csomag parancsainak szerkesztÃ©sÃ©hez
       IncreaseSortid:
         slot: 12
         name:
           animation: Flashing
-          secondary: §f§l
+          secondary: Â§fÂ§l
           primaryDelay: 3
           secondaryDelay: 3
-          content: RendezésID Növelése
-          primary: §a§l
+          content: RendezÃ©sID NÃ¶velÃ©se
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '77:0'
@@ -247,12 +247,12 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a RendezésID §anöveléséhez
+          - Â§7Kattints a RendezÃ©sID Â§anÃ¶velÃ©sÃ©hez
       DisplaySortid:
         slot: 21
         name:
           animation: NoAnimation
-          content: §a{Amount} RendezésID
+          content: Â§a{Amount} RendezÃ©sID
         material:
           animation: NoAnimation
           content: '160:0'
@@ -262,17 +262,17 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7A RendezésID határozza meg, hogy melyik youtube csomag a legjobb és a legrosszabb'
-          - '&7ez fontos az automatikus beállító funkcióhoz'
+          - '&7A RendezÃ©sID hatÃ¡rozza meg, hogy melyik youtube csomag a legjobb Ã©s a legrosszabb'
+          - '&7ez fontos az automatikus beÃ¡llÃ­tÃ³ funkciÃ³hoz'
       DecreaseSortid:
         slot: 30
         name:
           animation: Flashing
-          secondary: §f§l
+          secondary: Â§fÂ§l
           primaryDelay: 3
           secondaryDelay: 3
-          content: RendezésID Csökkentése
-          primary: §c§l
+          content: RendezÃ©sID CsÃ¶kkentÃ©se
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '143:0'
@@ -282,15 +282,15 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a RendezésID §acsökkentéséhez
+          - Â§7Kattints a RendezÃ©sID Â§acsÃ¶kkentÃ©sÃ©hez
       Delete:
         slot: 45
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
           content: Delete this package
-          primary: §c§l
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '152:0'
@@ -300,16 +300,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints ezen csomag §ctörléséhez
+          - Â§7Kattints ezen csomag Â§ctÃ¶rlÃ©sÃ©hez
       Up:
         slot: 0
         name:
           animation: Flashing
-          secondary: §f§l
+          secondary: Â§fÂ§l
           primaryDelay: 3
           secondaryDelay: 3
           content: + {Amount}
-          primary: §a§l
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '77:0'
@@ -319,12 +319,12 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a(z) §a{Type} §e{Amount}§7-el való növeléséhez
+          - Â§7Kattints a(z) Â§a{Type} Â§e{Amount}Â§7-el valÃ³ nÃ¶velÃ©sÃ©hez
       Display:
         slot: 0
         name:
           animation: NoAnimation
-          content: §a{Amount} {Type}
+          content: Â§a{Amount} {Type}
         material:
           animation: NoAnimation
           content: '160:0'
@@ -334,18 +334,18 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Használd a felsõ vagy az alsó gombot az érték beállításához'
+          - '&7HasznÃ¡ld a felsÃµ vagy az alsÃ³ gombot az Ã©rtÃ©k beÃ¡llÃ­tÃ¡sÃ¡hoz'
           - ''
           - '&7{Description}'
       Down:
         slot: 0
         name:
           animation: Flashing
-          secondary: §f§l
+          secondary: Â§fÂ§l
           primaryDelay: 3
           secondaryDelay: 3
           content: '{Amount}'
-          primary: §c§l
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '143:0'
@@ -355,16 +355,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a(z) §a{Type} §e{Amount}§7-el való csökkentéséhez
+          - Â§7Kattints a(z) Â§a{Type} Â§e{Amount}Â§7-el valÃ³ csÃ¶kkentÃ©sÃ©hez
       Back:
         slot: 50
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
           content: Vissza
-          primary: §b§l
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '323:0'
@@ -374,19 +374,19 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az elÃµzÃµ menÃ¼be valÃ³ visszatÃ©rÃ©shez'
   SpecialVideoSettings:
-    title: Panel > Különleges Videó Beállítások
+    title: Panel > KÃ¼lÃ¶nleges VideÃ³ BeÃ¡llÃ­tÃ¡sok
     size: 54
     items:
       Title:
         slot: 21
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Cím Követelmény
-          primary: §a§l
+          content: CÃ­m KÃ¶vetelmÃ©ny
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '160:14'
@@ -396,20 +396,20 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a követelmény törléséhez vagy megváltoztatásához'
+          - '&7Kattints a kÃ¶vetelmÃ©ny tÃ¶rlÃ©sÃ©hez vagy megvÃ¡ltoztatÃ¡sÃ¡hoz'
           - ''
-          - '&7Cím Követelmény: §a{Requirement}'
+          - '&7CÃ­m KÃ¶vetelmÃ©ny: Â§a{Requirement}'
           - ''
-          - '&7A cím követelménnyel, a videó címének tartalmaznia kell ezt a különleges szót,'
-          - '&7hogy Speciális Videóként legyen felismerve'
+          - '&7A cÃ­m kÃ¶vetelmÃ©nnyel, a videÃ³ cÃ­mÃ©nek tartalmaznia kell ezt a kÃ¼lÃ¶nleges szÃ³t,'
+          - '&7hogy SpeciÃ¡lis VideÃ³kÃ©nt legyen felismerve'
       Description:
         slot: 25
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Leírás Követelmény
-          primary: §a§l
+          content: LeÃ­rÃ¡s KÃ¶vetelmÃ©ny
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '160:14'
@@ -419,20 +419,20 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a követelmény törléséhez vagy megváltoztatásához'
+          - '&7Kattints a kÃ¶vetelmÃ©ny tÃ¶rlÃ©sÃ©hez vagy megvÃ¡ltoztatÃ¡sÃ¡hoz'
           - ''
-          - '&7Leírás Követelmény: §a{Requirement}'
+          - '&7LeÃ­rÃ¡s KÃ¶vetelmÃ©ny: Â§a{Requirement}'
           - ''
-          - '&7A leírás követelménnyel, a videó címének tartalmaznia kell ezt a különleges szót,'
-          - '&7hogy Speciális Videóként legyen felismerve'
+          - '&7A leÃ­rÃ¡s kÃ¶vetelmÃ©nnyel, a videÃ³ cÃ­mÃ©nek tartalmaznia kell ezt a kÃ¼lÃ¶nleges szÃ³t,'
+          - '&7hogy SpeciÃ¡lis VideÃ³kÃ©nt legyen felismerve'
       DisabledTitle:
         slot: 21
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Cím Követelmény
-          primary: §a§l
+          content: CÃ­m KÃ¶vetelmÃ©ny
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '160:14'
@@ -442,18 +442,18 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a követelmény törléséhez vagy megváltoztatásához'
+          - '&7Kattints a kÃ¶vetelmÃ©ny tÃ¶rlÃ©sÃ©hez vagy megvÃ¡ltoztatÃ¡sÃ¡hoz'
           - ''
-          - '&7A cím követelménnyel, a videó címének tartalmaznia kell ezt a különleges szót,'
-          - '&7hogy Speciális Videóként legyen felismerve'
+          - '&7A cÃ­m kÃ¶vetelmÃ©nnyel, a videÃ³ cÃ­mÃ©nek tartalmaznia kell ezt a kÃ¼lÃ¶nleges szÃ³t,'
+          - '&7hogy SpeciÃ¡lis VideÃ³kÃ©nt legyen felismerve'
       DisabledDescription:
         slot: 25
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
           content: Required Description
-          primary: §a§l
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '160:14'
@@ -463,19 +463,19 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a követelmény törléséhez vagy megváltoztatásához'
+          - '&7Kattints a kÃ¶vetelmÃ©ny tÃ¶rlÃ©sÃ©hez vagy megvÃ¡ltoztatÃ¡sÃ¡hoz'
           - ''
-          - '&7A cím követelménnyel, a videó címének tartalmaznia kell ezt a különleges szót,'
-          - '&7hogy Speciális Videóként legyen felismerve'
+          - '&7A cÃ­m kÃ¶vetelmÃ©nnyel, a videÃ³ cÃ­mÃ©nek tartalmaznia kell ezt a kÃ¼lÃ¶nleges szÃ³t,'
+          - '&7hogy SpeciÃ¡lis VideÃ³kÃ©nt legyen felismerve'
       Back:
         slot: 50
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
           content: Vissza
-          primary: §b§l
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '323:0'
@@ -485,20 +485,20 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az elÃµzÃµ menÃ¼be valÃ³ visszatÃ©rÃ©shez'
   BlockedUserBrowser:
-    title: Tiltott Felhasználók > Lista
+    title: Tiltott FelhasznÃ¡lÃ³k > Lista
     size: 54
     items:
       Previous:
         slot: 46
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
-          primary: §b§l
+          content: ElÃµzÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -508,16 +508,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az Â§belÃµzÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Next:
         slot: 54
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
-          primary: §b§l
+          content: KÃ¶vetkezÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -527,14 +527,14 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a Â§bkÃ¶vetkezÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Search:
         slot: 47
         name:
           animation: ZoomEffect
           delay: 3
-          color: §a
-          content: Keresés
+          color: Â§a
+          content: KeresÃ©s
         material:
           animation: NoAnimation
           content: '345:0'
@@ -544,15 +544,15 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés megnyitásához'
+          - '&7Kattints a KeresÃ©s megnyitÃ¡sÃ¡hoz'
       CloseSearch:
         slot: 47
         name:
           animation: WaveEffect
-          secondary: §f
+          secondary: Â§f
           delay: 3
-          content: Keresés Bezárása
-          primary: §c§l
+          content: KeresÃ©s BezÃ¡rÃ¡sa
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '152:0'
@@ -562,16 +562,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés elrejtéséhez'
+          - '&7Kattints a KeresÃ©s elrejtÃ©sÃ©hez'
       Back:
         slot: 50
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
           content: Vissza
-          primary: §b§l
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '323:0'
@@ -581,12 +581,12 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az elÃµzÃµ menÃ¼be valÃ³ visszatÃ©rÃ©shez'
       Entry:
         slot: 0
         name:
           animation: NoAnimation
-          content: §a§l{Name}
+          content: Â§aÂ§l{Name}
         material:
           animation: NoAnimation
           content: 397:3/{Name}
@@ -596,18 +596,18 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints §e{Name} §7tiltásának feloldásához
+          - Â§7Kattints Â§e{Name} Â§7tiltÃ¡sÃ¡nak feloldÃ¡sÃ¡hoz
           - ''
-          - '§7UUID:'
+          - 'Â§7UUID:'
           - '&a{UUID}'
       Add:
         slot: 52
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Felhasználó Tiltása
-          primary: §a§l
+          content: FelhasznÃ¡lÃ³ TiltÃ¡sa
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '145:0'
@@ -617,22 +617,22 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a felhasználó tiltásához
+          - Â§7Kattints a felhasznÃ¡lÃ³ tiltÃ¡sÃ¡hoz
           - ''
-          - §7Utána a felhasználó megválik a rangjától és tiltásra kerül
+          - Â§7UtÃ¡na a felhasznÃ¡lÃ³ megvÃ¡lik a rangjÃ¡tÃ³l Ã©s tiltÃ¡sra kerÃ¼l
   BlockedChannelBrowser:
-    title: Tiltott Csatornák > Lista
+    title: Tiltott CsatornÃ¡k > Lista
     size: 54
     items:
       Previous:
         slot: 46
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
-          primary: §b§l
+          content: ElÃµzÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -642,16 +642,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az Â§belÃµzÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Next:
         slot: 54
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
-          primary: §b§l
+          content: KÃ¶vetkezÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -661,14 +661,14 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a Â§bkÃ¶vetkezÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Search:
         slot: 47
         name:
           animation: ZoomEffect
           delay: 3
-          color: §a
-          content: Keresés
+          color: Â§a
+          content: KeresÃ©s
         material:
           animation: NoAnimation
           content: '345:0'
@@ -678,15 +678,15 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés megnyitásához'
+          - '&7Kattints a KeresÃ©s megnyitÃ¡sÃ¡hoz'
       CloseSearch:
         slot: 47
         name:
           animation: WaveEffect
-          secondary: §f
+          secondary: Â§f
           delay: 3
-          content: Keresés Bezárása
-          primary: §c§l
+          content: KeresÃ©s BezÃ¡rÃ¡sa
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '152:0'
@@ -696,16 +696,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés elrejtéséhez'
+          - '&7Kattints a KeresÃ©s elrejtÃ©sÃ©hez'
       Back:
         slot: 50
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
           content: Vissza
-          primary: §b§l
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '323:0'
@@ -715,12 +715,12 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az elÃµzÃµ menÃ¼be valÃ³ visszatÃ©rÃ©shez'
       Entry:
         slot: 0
         name:
           animation: NoAnimation
-          content: §a§l{Name}
+          content: Â§aÂ§l{Name}
         material:
           animation: NoAnimation
           content: '160:14'
@@ -730,17 +730,17 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a csatorna tiltásának feloldásához
+          - Â§7Kattints a csatorna tiltÃ¡sÃ¡nak feloldÃ¡sÃ¡hoz
           - ''
-          - '&7Csatorna Id: §e{ID}'
+          - '&7Csatorna Id: Â§e{ID}'
       Add:
         slot: 52
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Csatorna Tiltása
-          primary: §a§l
+          content: Csatorna TiltÃ¡sa
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '145:0'
@@ -750,20 +750,20 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a Csatorna tiltásához
+          - Â§7Kattints a Csatorna tiltÃ¡sÃ¡hoz
   EditCommandBrowser:
-    title: '{Package} > Szerkesztés > Parancsok'
+    title: '{Package} > SzerkesztÃ©s > Parancsok'
     size: 54
     items:
       Previous:
         slot: 46
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
-          primary: §b§l
+          content: ElÃµzÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -773,16 +773,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az Â§belÃµzÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Next:
         slot: 54
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
-          primary: §b§l
+          content: KÃ¶vetkezÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -792,14 +792,14 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a Â§bkÃ¶vetkezÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Search:
         slot: 47
         name:
           animation: ZoomEffect
           delay: 3
-          color: §a
-          content: Keresés
+          color: Â§a
+          content: KeresÃ©s
         material:
           animation: NoAnimation
           content: '345:0'
@@ -809,15 +809,15 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés megnyitásához'
+          - '&7Kattints a KeresÃ©s megnyitÃ¡sÃ¡hoz'
       CloseSearch:
         slot: 47
         name:
           animation: WaveEffect
-          secondary: §f
+          secondary: Â§f
           delay: 3
-          content: Keresés Bezárása
-          primary: §c§l
+          content: KeresÃ©s BezÃ¡rÃ¡sa
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '152:0'
@@ -827,16 +827,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés elrejtéséhez'
+          - '&7Kattints a KeresÃ©s elrejtÃ©sÃ©hez'
       Back:
         slot: 50
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
           content: Vissza
-          primary: §b§l
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '323:0'
@@ -846,12 +846,12 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az elÃµzÃµ menÃ¼be valÃ³ visszatÃ©rÃ©shez'
       Promote:
         slot: 0
         name:
           animation: NoAnimation
-          content: §a{Command}
+          content: Â§a{Command}
         material:
           animation: NoAnimation
           content: '160:5'
@@ -861,14 +861,14 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a §ctörléshez
+          - Â§7Kattints a Â§ctÃ¶rlÃ©shez
           - ''
-          - '&7Ez a parancs fog végrehajtásra kerülni, ha egy játékos megkapja ezt a csomagot'
+          - '&7Ez a parancs fog vÃ©grehajtÃ¡sra kerÃ¼lni, ha egy jÃ¡tÃ©kos megkapja ezt a csomagot'
       Demote:
         slot: 0
         name:
           animation: NoAnimation
-          content: §c{Command}
+          content: Â§c{Command}
         material:
           animation: NoAnimation
           content: '160:14'
@@ -878,14 +878,14 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a §ctörléshez
+          - Â§7Kattints a Â§ctÃ¶rlÃ©shez
           - ''
-          - '&7Ez a parancs fog végrehajtásra kerülni, ha egy játékos elveszíti ezt a csomagot'
+          - '&7Ez a parancs fog vÃ©grehajtÃ¡sra kerÃ¼lni, ha egy jÃ¡tÃ©kos elveszÃ­ti ezt a csomagot'
       AddPromote:
         slot: 52
         name:
           animation: NoAnimation
-          content: §aFelfokozás Parancs Hozzáadása
+          content: Â§aFelfokozÃ¡s Parancs HozzÃ¡adÃ¡sa
         material:
           animation: NoAnimation
           content: '160:5'
@@ -895,14 +895,14 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints ide felfokozás parancs hozzáadásához
+          - Â§7Kattints ide felfokozÃ¡s parancs hozzÃ¡adÃ¡sÃ¡hoz
           - ''
-          - '&7Ez a parancs fog végrehajtásra kerülni, ha egy játékos megkapja ezt a csomagot'
+          - '&7Ez a parancs fog vÃ©grehajtÃ¡sra kerÃ¼lni, ha egy jÃ¡tÃ©kos megkapja ezt a csomagot'
       AddDemote:
         slot: 53
         name:
           animation: NoAnimation
-          content: §cLefokozás Parancs Hozzáadása
+          content: Â§cLefokozÃ¡s Parancs HozzÃ¡adÃ¡sa
         material:
           animation: NoAnimation
           content: '160:14'
@@ -912,22 +912,22 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints ide lefokozás parancs hozzáadásához
+          - Â§7Kattints ide lefokozÃ¡s parancs hozzÃ¡adÃ¡sÃ¡hoz
           - ''
-          - '&7Ez a parancs fog végrehajtásra kerülni, ha egy játékos elveszíti ezt a csomagot'
+          - '&7Ez a parancs fog vÃ©grehajtÃ¡sra kerÃ¼lni, ha egy jÃ¡tÃ©kos elveszÃ­ti ezt a csomagot'
   UserBrowser:
-    title: Videós > Lista
+    title: VideÃ³s > Lista
     size: 54
     items:
       Previous:
         slot: 46
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
-          primary: §b§l
+          content: ElÃµzÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -937,16 +937,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az Â§belÃµzÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Next:
         slot: 54
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
-          primary: §b§l
+          content: KÃ¶vetkezÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -956,14 +956,14 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a Â§bkÃ¶vetkezÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Search:
         slot: 47
         name:
           animation: ZoomEffect
           delay: 3
-          color: §a
-          content: Keresés
+          color: Â§a
+          content: KeresÃ©s
         material:
           animation: NoAnimation
           content: '345:0'
@@ -973,15 +973,15 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés megnyitásához'
+          - '&7Kattints a KeresÃ©s megnyitÃ¡sÃ¡hoz'
       CloseSearch:
         slot: 47
         name:
           animation: WaveEffect
-          secondary: §f
+          secondary: Â§f
           delay: 3
-          content: Keresés Bezárása
-          primary: §c§l
+          content: KeresÃ©s BezÃ¡rÃ¡sa
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '152:0'
@@ -991,16 +991,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés elrejtéséhez'
+          - '&7Kattints a KeresÃ©s elrejtÃ©sÃ©hez'
       Back:
         slot: 50
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
           content: Vissza
-          primary: §b§l
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '323:0'
@@ -1010,12 +1010,12 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az elÃµzÃµ menÃ¼be valÃ³ visszatÃ©rÃ©shez'
       Entry:
         slot: 0
         name:
           animation: NoAnimation
-          content: §a§l{Name}
+          content: Â§aÂ§l{Name}
         material:
           animation: NoAnimation
           content: 397:3/{Name}
@@ -1025,20 +1025,20 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&eKattints a Profil megtekintéséhez'
+          - '&eKattints a Profil megtekintÃ©sÃ©hez'
           - '&e'
-          - '&7Rang: §b{Package}'
-          - '&7Feliratkozók Száma: &e{Subs}'
-          - '&7Videók Száma: &e{Videos}'
-          - '&7Nézettség Száma: &e{Views}'
+          - '&7Rang: Â§b{Package}'
+          - '&7FeliratkozÃ³k SzÃ¡ma: &e{Subs}'
+          - '&7VideÃ³k SzÃ¡ma: &e{Videos}'
+          - '&7NÃ©zettsÃ©g SzÃ¡ma: &e{Views}'
       Add:
         slot: 52
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Felhasználó Hozzáadása
-          primary: §a§l
+          content: FelhasznÃ¡lÃ³ HozzÃ¡adÃ¡sa
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '145:0'
@@ -1048,18 +1048,18 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints egy felhasználó hozzáadásához
+          - Â§7Kattints egy felhasznÃ¡lÃ³ hozzÃ¡adÃ¡sÃ¡hoz
           - ''
-          - §7Ezen a módon manuálisan tudsz felfokozni felhasználókat
+          - Â§7Ezen a mÃ³don manuÃ¡lisan tudsz felfokozni felhasznÃ¡lÃ³kat
   Splash:
-    title: Szerezz Videós rangot!
+    title: Szerezz VideÃ³s rangot!
     size: 36
     items:
       Entry:
         slot: 0
         name:
           animation: NoAnimation
-          content: §b§l{Package}
+          content: Â§bÂ§l{Package}
         material:
           animation: NoAnimation
           content: '340:0'
@@ -1069,22 +1069,22 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7- Szükséged van §e{Subs}+ §7Feliratkozóra
-          - §7- Szükséged van §e{Videos}+ §7Videóra
-          - §7- Szükséged van §e{Views} §7teljes Nézettségre és
-          - §e{Avg_Views}+ §7átlag Nézettségre!
+          - Â§7- SzÃ¼ksÃ©ged van Â§e{Subs}+ Â§7FeliratkozÃ³ra
+          - Â§7- SzÃ¼ksÃ©ged van Â§e{Videos}+ Â§7VideÃ³ra
+          - Â§7- SzÃ¼ksÃ©ged van Â§e{Views} Â§7teljes NÃ©zettsÃ©gre Ã©s
+          - Â§e{Avg_Views}+ Â§7Ã¡tlag NÃ©zettsÃ©gre!
           - //
-          - //§7Ráadásul szükséged van §e{SpecialVideos} §7 Videóra
-          - //#Title§e{Title} §7szövegre a címben és
-          - //#Description§e{Description} §7szövegre a leírásban
+          - //Â§7RÃ¡adÃ¡sul szÃ¼ksÃ©ged van Â§e{SpecialVideos} Â§7 VideÃ³ra
+          - //#TitleÂ§e{Title} Â§7szÃ¶vegre a cÃ­mben Ã©s
+          - //#DescriptionÂ§e{Description} Â§7szÃ¶vegre a leÃ­rÃ¡sban
       Next:
         slot: 23
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Következõ
-          primary: §a
+          content: KÃ¶vetkezÃµ
+          primary: Â§a
         material:
           animation: NoAnimation
           content: '133:0'
@@ -1094,20 +1094,20 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Click to receive your §bRank§7!
+          - Â§7Click to receive your Â§bRankÂ§7!
   VideoBrowser:
-    title: '{Player} > Videók'
+    title: '{Player} > VideÃ³k'
     size: 54
     items:
       Previous:
         slot: 46
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
-          primary: §b§l
+          content: ElÃµzÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -1117,16 +1117,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az Â§belÃµzÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Next:
         slot: 54
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
-          primary: §b§l
+          content: KÃ¶vetkezÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -1136,14 +1136,14 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a Â§bkÃ¶vetkezÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Search:
         slot: 47
         name:
           animation: ZoomEffect
           delay: 3
-          color: §a
-          content: Keresés
+          color: Â§a
+          content: KeresÃ©s
         material:
           animation: NoAnimation
           content: '345:0'
@@ -1153,15 +1153,15 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés megnyitásához'
+          - '&7Kattints a KeresÃ©s megnyitÃ¡sÃ¡hoz'
       CloseSearch:
         slot: 47
         name:
           animation: WaveEffect
-          secondary: §f
+          secondary: Â§f
           delay: 3
-          content: Keresés Bezárása
-          primary: §c§l
+          content: KeresÃ©s BezÃ¡rÃ¡sa
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '152:0'
@@ -1171,16 +1171,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés elrejtéséhez'
+          - '&7Kattints a KeresÃ©s elrejtÃ©sÃ©hez'
       Back:
         slot: 50
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
           content: Vissza
-          primary: §b§l
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '323:0'
@@ -1190,12 +1190,12 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az elÃµzÃµ menÃ¼be valÃ³ visszatÃ©rÃ©shez'
       Entry:
         slot: 0
         name:
           animation: NoAnimation
-          content: §a§l{Title}
+          content: Â§aÂ§l{Title}
         material:
           animation: NoAnimation
           content: '160:5'
@@ -1205,21 +1205,21 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a webcím chatre való kiírásához'
+          - '&7Kattints a webcÃ­m chatre valÃ³ kiÃ­rÃ¡sÃ¡hoz'
           - ''
   PlayerBrowser:
-    title: Profil > &e{Channel} &r> Videók
+    title: Profil > &e{Channel} &r> VideÃ³k
     size: 54
     items:
       Previous:
         slot: 46
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
-          primary: §b§l
+          content: ElÃµzÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -1229,16 +1229,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az Â§belÃµzÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Next:
         slot: 54
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
-          primary: §b§l
+          content: KÃ¶vetkezÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -1248,14 +1248,14 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a Â§bkÃ¶vetkezÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Search:
         slot: 47
         name:
           animation: ZoomEffect
           delay: 3
-          color: §a
-          content: Keresés
+          color: Â§a
+          content: KeresÃ©s
         material:
           animation: NoAnimation
           content: '345:0'
@@ -1265,15 +1265,15 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés megnyitásához'
+          - '&7Kattints a KeresÃ©s megnyitÃ¡sÃ¡hoz'
       CloseSearch:
         slot: 47
         name:
           animation: WaveEffect
-          secondary: §f
+          secondary: Â§f
           delay: 3
-          content: Keresés Bezárása
-          primary: §c§l
+          content: KeresÃ©s BezÃ¡rÃ¡sa
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '152:0'
@@ -1283,16 +1283,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés elrejtéséhez'
+          - '&7Kattints a KeresÃ©s elrejtÃ©sÃ©hez'
       Back:
         slot: 50
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
           content: Vissza
-          primary: §b§l
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '323:0'
@@ -1302,12 +1302,12 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az elÃµzÃµ menÃ¼be valÃ³ visszatÃ©rÃ©shez'
       Entry:
         slot: 0
         name:
           animation: NoAnimation
-          content: §a§l{Player}
+          content: Â§aÂ§l{Player}
         material:
           animation: NoAnimation
           content: 397:4/{Player}
@@ -1317,7 +1317,7 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints §e{Player} §7kiválasztásához'
+          - '&7Kattints Â§e{Player} Â§7kivÃ¡lasztÃ¡sÃ¡hoz'
   PackageBrowser:
     title: Csomagok > Lista
     size: 54
@@ -1326,11 +1326,11 @@ gui:
         slot: 46
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Elõzõ
-          primary: §b§l
+          content: ElÃµzÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -1340,16 +1340,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az §belõzõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints az Â§belÃµzÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Next:
         slot: 54
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
-          content: Következõ
-          primary: §b§l
+          content: KÃ¶vetkezÃµ
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '262:0'
@@ -1359,14 +1359,14 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a §bkövetkezõ oldal§7hoz való lapozáshoz'
+          - '&7Kattints a Â§bkÃ¶vetkezÃµ oldalÂ§7hoz valÃ³ lapozÃ¡shoz'
       Search:
         slot: 47
         name:
           animation: ZoomEffect
           delay: 3
-          color: §a
-          content: Keresés
+          color: Â§a
+          content: KeresÃ©s
         material:
           animation: NoAnimation
           content: '345:0'
@@ -1376,15 +1376,15 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés megnyitásához'
+          - '&7Kattints a KeresÃ©s megnyitÃ¡sÃ¡hoz'
       CloseSearch:
         slot: 47
         name:
           animation: WaveEffect
-          secondary: §f
+          secondary: Â§f
           delay: 3
-          content: Keresés Bezárása
-          primary: §c§l
+          content: KeresÃ©s BezÃ¡rÃ¡sa
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '152:0'
@@ -1394,16 +1394,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints a Keresés elrejtéséhez'
+          - '&7Kattints a KeresÃ©s elrejtÃ©sÃ©hez'
       Back:
         slot: 50
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
           content: Vissza
-          primary: §b§l
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '323:0'
@@ -1413,12 +1413,12 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az elÃµzÃµ menÃ¼be valÃ³ visszatÃ©rÃ©shez'
       Entry:
         slot: 0
         name:
           animation: NoAnimation
-          content: §a§l{Package}
+          content: Â§aÂ§l{Package}
         material:
           animation: NoAnimation
           content: '95:11'
@@ -1428,23 +1428,23 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints, hogy §aszerkeszd§7 vagy §ctöröld §7ezt a csomagot'
+          - '&7Kattints, hogy Â§aszerkeszdÂ§7 vagy Â§ctÃ¶rÃ¶ld Â§7ezt a csomagot'
           - ''
-          - '&7Követelmények:'
-          - '&7Feliratkozók: &e{Subs}'
-          - '&7Teljes Nézettség: &e{Views}'
-          - '&7Videó Mennyiség: &e{Videos}'
-          - '&7Speciális Videók: &e{SpecialVideos}'
+          - '&7KÃ¶vetelmÃ©nyek:'
+          - '&7FeliratkozÃ³k: &e{Subs}'
+          - '&7Teljes NÃ©zettsÃ©g: &e{Views}'
+          - '&7VideÃ³ MennyisÃ©g: &e{Videos}'
+          - '&7SpeciÃ¡lis VideÃ³k: &e{SpecialVideos}'
           - ''
-          - '&7RendezésID: &b{Sortid}'
+          - '&7RendezÃ©sID: &b{Sortid}'
       Add:
         slot: 52
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Csomag Létrehozása
-          primary: §a§l
+          content: Csomag LÃ©trehozÃ¡sa
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '145:0'
@@ -1454,16 +1454,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints egy csomag létrehozásához
+          - Â§7Kattints egy csomag lÃ©trehozÃ¡sÃ¡hoz
   Profile:
-    title: Videós > {Player}
+    title: VideÃ³s > {Player}
     size: 54
     items:
       Info:
         slot: 12
         name:
           animation: NoAnimation
-          content: §a§l{Name}
+          content: Â§aÂ§l{Name}
         material:
           animation: NoAnimation
           content: 397:3/{Name}
@@ -1474,17 +1474,17 @@ gui:
           animation: NoAnimation
           content:
           - '&7Rang: &e{Package}'
-          - '&7Feliratkozók: &e{Subs}'
-          - '&7Teljes Nézettség: &e{Views}'
-          - '&7Videó Mennyiség: &e{Videos}'
+          - '&7FeliratkozÃ³k: &e{Subs}'
+          - '&7Teljes NÃ©zettsÃ©g: &e{Views}'
+          - '&7VideÃ³ MennyisÃ©g: &e{Videos}'
       Paste:
         slot: 14
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Url Beillesztése
-          primary: §a§l
+          content: Url BeillesztÃ©se
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '421:0'
@@ -1494,15 +1494,15 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints, hogy megkapd a §aCsatorna Url§7-t
+          - Â§7Kattints, hogy megkapd a Â§aCsatorna UrlÂ§7-t
       Videos:
         slot: 16
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Videók
-          primary: §a§l
+          content: VideÃ³k
+          primary: Â§aÂ§l
         material:
           animation: NoAnimation
           content: '160:11'
@@ -1512,15 +1512,15 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints az összes §afeltöltés §7megtekintéséhez
+          - Â§7Kattints az Ã¶sszes Â§afeltÃ¶ltÃ©s Â§7megtekintÃ©sÃ©hez
       Demote:
         slot: 33
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Csatorna Lefokozása
-          primary: §c§l
+          content: Csatorna LefokozÃ¡sa
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '331:0'
@@ -1530,15 +1530,15 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a felhasználó §clefokozásához
+          - Â§7Kattints a felhasznÃ¡lÃ³ Â§clefokozÃ¡sÃ¡hoz
       Block:
         slot: 31
         name:
           animation: WaveEffect
-          secondary: §7
+          secondary: Â§7
           delay: 3
-          content: Csatorna Lefokozása és Tiltása
-          primary: §c§l
+          content: Csatorna LefokozÃ¡sa Ã©s TiltÃ¡sa
+          primary: Â§cÂ§l
         material:
           animation: NoAnimation
           content: '152:0'
@@ -1548,16 +1548,16 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - §7Kattints a csatorna §clefokozásához §7és §ctiltásához
+          - Â§7Kattints a csatorna Â§clefokozÃ¡sÃ¡hoz Â§7Ã©s Â§ctiltÃ¡sÃ¡hoz
       Back:
         slot: 50
         name:
           animation: Flashing
-          secondary: §7§l
+          secondary: Â§7Â§l
           primaryDelay: 10
           secondaryDelay: 3
           content: Vissza
-          primary: §b§l
+          primary: Â§bÂ§l
         material:
           animation: NoAnimation
           content: '323:0'
@@ -1567,4 +1567,4 @@ gui:
         lore:
           animation: NoAnimation
           content:
-          - '&7Kattints az elõzõ menübe való visszatéréshez'
+          - '&7Kattints az elÃµzÃµ menÃ¼be valÃ³ visszatÃ©rÃ©shez'
