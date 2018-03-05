@@ -103,7 +103,7 @@ dialog:
     list:
       '0':
         title: '&fKeresés'
-        subtitle: '&7Gépelj be egy kifelyezést'
+        subtitle: '&7Gépelj be egy kifejezést'
         actionbar: '§7Gépeld be: §cclose §7a megszakításhoz'
         chat: []
 gui:
