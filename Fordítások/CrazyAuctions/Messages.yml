@@ -15,7 +15,7 @@ Messages:
   Item-Doesnt-Exist: '&cEz a tárgy nincs többé az aukcióban.'
   Max-Items: '&cJelenleg nem tudsz több tárgyat az Őrült Aukciókban.'
   Item-BlackListed: '&cEz a tárgyat nem adhatod el.'
-  Item-Damaged: '&cEz a tárgy sérült és ez nem engedélyezett az eladása.’
+  Item-Damaged: '&cEz a tárgy sérült és ez nem engedélyezett az eladása.'
   Sold-Msg: '&7Köszi, hogy megvetted ezt a tárgyat.'
   Bid-More-Money: '&cAz ár túl alacsony, fizess érte többet!'
   Not-A-Currency: '&cEz nem egy pénznem. Használj pénzt vagy zsetonokat.' #Vedd ki a zsetonokat, ha nincsen TokenManagered.
@@ -27,7 +27,7 @@ Messages:
   Win-Bidding: '&7Megnyerted az árverést &a%Price%$&7-ért. Írd be a /ah collect parancsot, hogy begyűjthesd a megnyert tárgyat.'
   Player-Bought-Item: '&7%Player% megvette az egyik eladásra kínált tárgyadat &a%Price%$&7-ért.'
   Someone-Won-Players-Bid: '&7%Player% megnyerte az egyik tárgyadat az árverésen &a%Price%$&7-ért.'
-  Added-Item-To-Auction: '&7Felraktál egy tárgyat az aukciós házba, amit majd &a%Price%$&7-ért vehetnek meg.
+  Added-Item-To-Auction: '&7Felraktál egy tárgyat az aukciós házba, amit majd &a%Price%$&7-ért vehetnek meg.'
   Bid-Msg: '&7Liciteltél &a%Bid%$&7rt erre a tárgyra.'
   Help-Menu:
     - '&e-- &6Őrült Aukciók &e--'
