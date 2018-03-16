@@ -1,11 +1,11 @@
 Settings:
-  Prefix: '&7[&4Crazy &bAuctions&7]: ' #Prefix of when you get Crazy Auctions Messages.
-  GUIName: '&4Crazy &bAuctions&8' #Name of the Main GUI.
-  Players-Current-Items: '&8Your Current Listings' #The Name of the Player Current Items GUI.
-  Cancelled/Expired-Items: '&8Cancelled/Expired Listings' #Name of the Cancelled/Expired GUI.
-  Buying-Item: '&8Purchase Item: Are You Sure?' #Name of the Buying GUI.
-  Bidding-On-Item: '&8You Are Bidding On This Item.' #Name of the Bidding GUI.
-  Categories: '&8Categories' #Name of the Category GUI.
+  Prefix: '&7[&4Aukciós &bHáz&7]: ' #Prefix of when you get Crazy Auctions Messages.
+  GUIName: '&4Aukciós &bHáz&8' #Name of the Main GUI.
+  Players-Current-Items: '&8Jelenlegi eladni kívánt tárgyaid ' #The Name of the Player Current Items GUI.
+  Cancelled/Expired-Items: '&8Megszüntetett/Lejárt tárgyak' #Name of the Cancelled/Expired GUI.
+  Buying-Item: '&8Biztos vagy benne?' #Name of the Buying GUI.
+  Bidding-On-Item: '&8Licitáltál erre a tárgyra.' #Name of the Bidding GUI.
+  Categories: '&8Kategóriák' #Name of the Category GUI.
   Sell-Time: 2d #The time that each item will sell for.
   Bid-Time: 2m 30s #Time for each item that is biddable.
   Full-Expire-Time: 10d #The full time the item is in the crazy auctions.
@@ -18,148 +18,148 @@ Settings:
   Category-Page-Opens-First: False #If set to true the categories page will open when they do /CA.
   Sounds:
     Toggle: False #Disable the clicking sound.
-    Sound: 'CLICK' #Make sure if you use 1.8 or lower you use the 1.8 sound and 1.9 and up use 1.9 sounds. The default sound is 1.8.
+    Sound: 'KATT' #Make sure if you use 1.8 or lower you use the 1.8 sound and 1.9 and up use 1.9 sounds. The default sound is 1.8.
     #1.8 sounds are found here: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html
     #1.9 sounds are found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
   GUISettings: #Settings for things in the gui.
     SellingItemLore: #The lore on items that are being sold.
       - '&7-------------------------'
-      - '&aClick here to purchase.'
+      - '&aKattints a megvásárlásához.'
       - ''
-      - '&9Price: &e$%Price%'
-      - '&9Seller: &e%Seller%'
+      - '&9Ár: &e%Price%$'
+      - '&9Eladó: &e%Seller%'
       - '&7-------------------------'
     CurrentLore: #Lore on items that are in your current items GUI.
       - '&7-------------------------'
-      - '&aClick here to cancel.'
+      - '&aKattints a megszüntetéséhez.'
       - ''
-      - '&9Price: &e$%Price%'
-      - '&9Expire: &e%Time%'
+      - '&9Ár: &e%Price%$'
+      - '&9Lejár: &e%Time%'
       - '&7-------------------------'
     Cancelled/ExpiredLore: #Lore on items that are in your cancelled/expired GUI.
       - '&7-------------------------'
-      - '&aClick here to return to you.'
+      - '&aKattints, hogy visszatérjen hozzád.'
       - ''
-      - '&9Full Expire: &e%Time%'
+      - '&9Idő a teljes lejáratig: &e%Time%'
       - '&7-------------------------'
     Bidding: #Lore on Bidding Items.
       - '&7-------------------------'
-      - '&aClick here to bid.'
+      - '&aKattints a licitáláshoz.'
       - ''
-      - '&9Seller: &e%Seller%'
-      - '&9Current Bid: &e$%TopBid%'
-      - '&9Top Bidder: &e%TopBidder%'
-      - '&9Time Left: &e%Time%'
+      - '&9Eladó &e%Seller%'
+      - '&9Jelenlegi licit: &e%TopBid%$'
+      - '&9Jelenlegi legtöbbet licitáló játékos: &e%TopBidder%'
+      - '&9Hátramaradt idő: &e%Time%'
       - '&7-------------------------'
     Category-Settings:
       Armor:
         Item: '315'
         Toggle: true
         Slot: 11
-        Name: '&6&lArmor'
+        Name: '&6&lPáncélzat'
         Lore:
-          - '&7This category contains all'
-          - '&7armor that is currently being sold.'
+          - '&7Ez a kategória az összes'
+          - '&7eladásra kínált páncélzatot tartalmazza.'
       Weapons:
         Item: '283'
         Toggle: true
         Slot: 12
-        Name: '&6&lWeapons'
+        Name: '&6&lFegyverek'
         Lore:
-          - '&7This category contains all'
-          - '&7weapons that is currently being sold.'
+          - '&7Ez a kategória az összes'
+          - '&7eladásra kínált fegyvert tartalmazza.'
       Tools:
         Item: '285'
         Toggle: true
         Slot: 13
-        Name: '&6&lTools'
+        Name: '&6&lEszközök'
         Lore:
-          - '&7This category contains all'
-          - '&7tools that is currently being sold.'
+          - '&7Ez a kategória az összes'
+          - '&7eladásra kínált eszközt tartalmazza.'
       Food:
         Item: '322'
         Toggle: true
         Slot: 14
-        Name: '&6&lFood'
+        Name: '&6&lÉtel'
         Lore:
-          - '&7This category contains all'
-          - '&7food that is currently being sold.'
+          - '&7Ez a kategória az összes'
+          - '&7eladásra kínált ételt tartalmazza.'
       Potions:
         Item: '373:8227'
         Toggle: true
         Slot: 15
-        Name: '&6&lPotions'
+        Name: '&6&lVarázsitalok'
         Lore:
-          - '&7This category contains all'
-          - '&7potions that is currently being sold.'
+          - '&7Ez a kategória az összes'
+          - '&7eladásra kínált varázsitalt tartalmazza.'
       Blocks:
         Item: '2'
         Toggle: true
         Slot: 16
-        Name: '&6&lBlocks'
+        Name: '&6&lBlokkok'
         Lore:
-          - '&7This category contains all'
-          - '&7blocks that is currently being sold.'
+          - '&7Ez a kategória az összes'
+          - '&7eladásra kínált blokkot tartalmazza.'
       Other:
         Item: '371'
         Toggle: true
         Slot: 17
-        Name: '&6&lOthers'
+        Name: '&6&lEgyéb'
         Lore:
-          - '&7This category contains all the'
-          - '&7other items currently being sold.'
+          - '&7Ez a kategória az összes'
+          - '&7eladásra kínált egyéb tárgyat tartalmazza.'
       None:
         Item: '166'
         Toggle: true
         Slot: 23
-        Name: '&6&lNone'
+        Name: '&6&lÖsszes'
         Lore:
-          - '&7This category contains all'
-          - '&7items currently being sold.'
+          - '&7Ez a kategória az összes'
+          - '&7eladásra kínált tárgyat tartalmazza.'
     OtherSettings: #Other Settings for the GUIs.
       SellingItems: #The button for your current items.
         Item: '264' #The item that this button is.
         Toggle: true #If the item is in the gui or not.
         Slot: 46 #The slot it is in. I recommend not changing these. If you do make sure they are still in the bottom row.
-        Name: '&6Items You are Selling' #Name of the item.
+        Name: '&6Eladó tárgyaid' #Name of the item.
         Lore: #Lore of the item.
-          - '&aClick here to view all the items you'
-          - '&aare currently selling on the auction.'
+          - '&aKattints a jelenleg'
+          - '&aeladó tárgyaid megtekintéséhez.'
       Cancelled/ExpiredItems: #The button for Cancelled/Expired Items.
         Item: '394'
         Toggle: true
         Slot: 47
-        Name: '&6Collect Expired / Cancelled Items'
+        Name: '&6Lejárt / Már nem eladható tárgyaid összegyűjtése'
         Lore:
-          - '&aClick here to view and collect all of the'
-          - '&aitems you have cancelled or has expired.'
+          - '&aKattints az összes lejárt vagy már'
+          - '&a nem eladható tárgyaid összegyűjtéséhez.'
       PreviousPage: #The button for Previous Page.
         Item: '339'
         Toggle: true
         Slot: 49
-        Name: '&6Previous Page'
+        Name: '&6Előző oldal'
         Lore: {}
       Refesh: #The button for Refresh Page.
         Item: '175'
         Toggle: true
         Slot: 50
-        Name: '&6Refresh Page'
+        Name: '&6Oldal újratöltése'
         Lore: {}
       NextPage: #The button for Next Page.
         Item: '339'
         Toggle: true
         Slot: 51
-        Name: '&6Next Page'
+        Name: '&6Következő oldal'
         Lore: {}
       Category1: #The button for Next Page.
         Item: '54'
         Toggle: true
         Slot: 52
-        Name: '&6Categories'
+        Name: '&6Kategóriák'
         Lore:
-          - '&bCurrent Category: &6%Category%'
-          - '&aWant see items in specific categories?'
-          - '&aClick here to see all categories of items.'
+          - '&bJelenlegi kategória: &6%Category%'
+          - '&aCsak egyetlen kategóriában keresel tárgyakat?'
+          - '&aKattints ide a kategóriák megtekintéséhez.'
       Category2: #The button for Next Page.
         Item: '54'
         Toggle: true
@@ -167,48 +167,48 @@ Settings:
         Name: '&6Categories'
         Lore:
           - '&bCurrent Category: &6%Category%'
-          - '&aWant see items in specific categories?'
-          - '&aClick here to see all categories of items.'
+          - '&aCsak egyetlen kategóriban keresel tárgyakat?'
+          - '&aKattints ide a kategóriák megtekintéséhez.'
       Bidding/Selling: #Switch between Bidding and Selling.
         Selling:
           Item: '341'
           Toggle: true
           Slot: 53
-          Name: '&6Currently looking at items being sold.'
+          Name: '&6Jelenleg az eladó tárgyakat látod.'
           Lore:
-            - '&7&l(&6&l!&7&l) &7Click here to see items'
-            - '&7that you can be bidded on.'
+            - '&7&l(&6&l!&7&l) &7Kattints ide, hogy'
+            - '&7az árverésen lévő tárgyakat lásd.'
         Bidding:
           Item: '378'
           Toggle: true
           Slot: 53
-          Name: '&6Currently looking at items that can be bid on.'
+          Name: '&6Jelenleg az árverésen lévő tárgyakat látod.'
           Lore:
-            - '&7&l(&6&l!&7&l) &7Click here to see items'
-            - '&7that you can buy at a price.'
+            - '&7&l(&6&l!&7&l) &7Kattints ide, hogy'
+            - '&7az eladó tárgyakat lásd.'
       WhatIsThis: #The info on all the Books buttons.
         SellingShop: #The Book in the main shop.
           Item: '340'
           Toggle: true
           Slot: 54
-          Name: '&6What Is This Page?'
+          Name: '&6Mi ez az oldal?'
           Lore:
-            - '&aThis is the crazy auctions, here you can'
-            - '&aput items for sale, and buy items'
-            - '&athat others have put for sale.'
+            - '&aEz az aukciós ház, ahol'
+            - '&aeladhatsz tárgyakat,'
+            - '&avagy vehetsz másoktól.'
             - ''
-            - '&aThe auction is also a great place to make'
-            - '&amoney by selling items that others'
-            - '&amay be interested in buying.'
+            - '&aAz aukciós ház jó abban is,'
+            - '&ahogy pénzt keress tárgyak eladása által'
+            - '&aamik másokat érdekelhetnek.'
         BiddingShop: #The Book in the main shop.
           Item: '340'
           Toggle: true
           Slot: 54
-          Name: '&6What Is This Page?'
+          Name: '&6Mi ez az oldal?'
           Lore:
-            - '&aThis is the crazy auctions, here you can'
-            - '&aput items for sale, and bid on items'
-            - '&athat others have put for sale.'
+            - '&aEz az aukciós ház, ahol'
+            - '&aárverésre rakhatsz tárgyakat,'
+            - '&avagy licitálhatsz másokéra.'
             - ''
             - '&aThe bidding auction is also a great place to'
             - '&amake money by bidding off items that others'
@@ -217,85 +217,85 @@ Settings:
           Item: '340'
           Toggle: true
           Slot: 54
-          Name: '&6What Is This Page?'
+          Name: '&6Mi ez az oldal?'
           Lore:
-            - '&aThese are your current listings, all of'
-            - '&athe items you currenty have listed on'
-            - '&acrazy auctions are displayed here.'
+            - '&aAzok a tárgyak, amiket jelenleg'
+            - '&a eladásra kínálsz az aukciós házban,'
+            - '&aitt jelennek meg.'
             - ''
-            - '&aYou can cancel and view your listings'
-            - '&aexpire time here.'
+            - '&aItt meg tudod szüntetni tárgyaid eladását,'
+            - '&avagy megnézheted a lejárati idejüket.'
         Cancelled/ExpiredItems: #The Book in the Cancelled/Expired Items GUI.
           Item: '340'
           Toggle: true
           Slot: 54
-          Name: '&6What Is This Page?'
+          Name: '&6Mi ez az oldal?'
           Lore:
-            - '&aThis page houses all of your cancelled and'
-            - '&aexpired items, when a listings is cancelled'
-            - '&aor expires you will be able to return that'
-            - '&aitem back to you from this menu.'
+            - '&aEzen az oldalon találod az összes'
+            - '&amegszüntetett vagy lejárt tárgyadat.'
+            - '&aEzeket a tárgyakat magadhoz'
+            - '&ainnen vissza tudod hozni.'
             - ''
-            - '&aJust click on the item and if you have enough'
-            - '&ainventory space you will receive that item.'
+            - '&aCsak kattints a tárgyra, ha van'
+            - '&aelég hely a leltáradban a visszaszerzéséhez.'
         Viewing: #The Book in the Viewing Items GUI.
           Item: '340'
           Toggle: true
           Slot: 50
-          Name: '&6What Is This Page?'
+          Name: '&6Mi ez az oldal?'
           Lore:
-            - '&aThis page shows all the items that'
-            - '&aa player has currently on the bidding'
-            - '&aand selling market. You can quickly see'
-            - '&awhat a specific player is selling.'
+            - '&aEz az oldal az összes árverésre bocsájtott'
+            - '&a, vagy eladó tárgyakat mutatja.'
+            - '&aItt gyorsan meg tudod nézni, hogy egy'
+            - '&abizonyos játékos éppen mit árul.'
         Categories: #The Book in the Viewing Items GUI.
           Item: '340'
           Toggle: true
           Slot: 54
-          Name: '&6What Is This Page?'
+          Name: '&6Mi ez az oldal?'
           Lore:
-            - '&aThis page shows all the categories'
-            - '&athat you can choose from. When you click'
-            - '&aa category it will open the gui with only'
-            - '&aitems that belong to that category.'
+            - '&aEz az oldal megmutatja az összes kategóriát,'
+            - '&aahonnan tudsz választani. Mikor rákattintasz'
+            - '&aegy kategóriára, akkor csak abban a'
+            - '&atémában kereshetsz tárgyakat.'
       Back: #The Back Buttons.
         Item: '339'
         Slot: 46
-        Name: '&6Back'
+        Name: '&6Vissza'
       Return: #The Return Buttons.
         Item: '390'
         Slot: 50
-        Name: '&6Return All'
+        Name: '&6Összes visszagyűjtése'
         Lore:
-          - '&aClick here to return all cancelled'
-          - '&aand expired items to your inventory.'
+          - '&aKattints ide, hogy az összes megszüntetett'
+          - '&aés lejárt tárgyadat visszakaphasd.'
       Confirm: #The Confirm Buttons.
         Item: '160:5'
-        Name: '&aConfirm'
+        Name: '&aMegerősítés'
       Cancel: #The Cancel Buttons.
         Item: '160:14'
-        Name: '&cCancel'
+        Name: '&cMégsem'
       Your-Item: #The item that shows when you try to buy/bid on your item.
         Item: '166'
-        Name: '&cYou Cant Purchase Your Own Item.'
+        Name: '&cNem tudod a saját tárgyaidat megvásárolni.'
       Cant-Afford: #The item that shows when you cant afford this item.
         Item: '166'
-        Name: '&cYou Cant Afford This Item.'
+        Name: '&cNincs erre elég pénzed.'
       Top-Bidder: #The item for when a player is already the top bidder.
         Item: '166'
-        Name: '&cYou are already the top bidder.'
+        Name: '&cJelenleg te vagy a legtöbbet licitáló.'
       Bidding: #The item in the middle when bidding on an item.
         Item: '160:15'
-        Name: '&7Bidding'
+        Name: '&7Licitálás'
         Lore:
-          - '&7<--&aAdd &cRemove&7-->'
-          - '&9Your Current Bid: &e$%Bid%'
-          - '&9Current Top Bid: &e$%TopBid%'
+          - '&7<--&aHozzáad &cTöröl&7-->'
+          - '&9Árajánlatod: &e%Bid%$'
+          - '&9Jelenlegi legnagyobb árajánlat: &e%TopBid%$'
       Bid: #The button for when you want to confirm your bid.
         Item: '160:3'
-        Name: '&bBid Now'
+        Name: '&bLicitálás most'
         Lore:
-          - '&7Click here to Bid Now.'
+          - '&7Kattints ide az azonnali licitáláshoz.'
   BlackList:
     - '7'
     - '120'
