@@ -10,7 +10,7 @@ Settings:
   Bid-Time: 2m 30s #Time for each item that is biddable.
   Full-Expire-Time: 10d #The full time the item is in the crazy auctions.
   Bid-Winner-Time: 20d #The time the winner of a bid has to claim there prize.
-  Minimum-Sell-Price: 50 #Minimum amount you can sell a item for.
+  Minimum-Sell-Price: 10 #Minimum amount you can sell a item for.
   Max-Beginning-Sell-Price: 10000000 #Max amount you can sell a item for.
   Minimum-Bid-Price: 100 #Minimum starting bid.
   Max-Beginning-Bid-Price: 10000000 #Maximum starting bid.
