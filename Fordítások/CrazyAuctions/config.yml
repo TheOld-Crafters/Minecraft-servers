@@ -1,6 +1,6 @@
 Settings:
-  Prefix: '&7[&4Aukciós &bHáz&7]: ' #Prefix of when you get Crazy Auctions Messages.
-  GUIName: '&4Aukciós &bHáz&8' #Name of the Main GUI.
+  Prefix: '&7[&4Crazy &bAuctions&7]: ' #Prefix of when you get Crazy Auctions Messages.
+  GUIName: '&4Crazy &bAuctions&8' #Name of the Main GUI.
   Players-Current-Items: '&8Jelenlegi eladni kívánt tárgyaid ' #The Name of the Player Current Items GUI.
   Cancelled/Expired-Items: '&8Megszüntetett/Lejárt tárgyak' #Name of the Cancelled/Expired GUI.
   Buying-Item: '&8Biztos vagy benne?' #Name of the Buying GUI.
@@ -18,7 +18,7 @@ Settings:
   Category-Page-Opens-First: False #If set to true the categories page will open when they do /CA.
   Sounds:
     Toggle: False #Disable the clicking sound.
-    Sound: 'KATT' #Make sure if you use 1.8 or lower you use the 1.8 sound and 1.9 and up use 1.9 sounds. The default sound is 1.8.
+    Sound: 'CLICK' #Make sure if you use 1.8 or lower you use the 1.8 sound and 1.9 and up use 1.9 sounds. The default sound is 1.8.
     #1.8 sounds are found here: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html
     #1.9 sounds are found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
   GUISettings: #Settings for things in the gui.
