@@ -1,0 +1,173 @@
+# use & for colors
+#   placeholders will be listed in front of the messages
+
+
+prefix: "[&3JátékDoboz&r]"
+name: "&3JátékDoboz&r"
+
+
+jsonPrefix:
+  # colors for JSON have to be named! valid colors:
+  #   black, white, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray
+  #   green, aqua, red, light_purple, yellow, dark_gray, blue,
+  preText: "["
+  preColor: "white"
+  text: "JátékDoboz"
+  color: "dark_aqua"
+  afterText: "]"
+  afterColor: "white"
+
+
+
+# command messages
+commandMessages:
+  notInThisWorld: ' &4Ezt nem teheted meg ebben a világban'
+  noPermission: ' &4Ehhez nincs jogod!'
+  onlyAsPlayer: ' &4Ezt csak játékosként teheted meg'
+  pluginReloaded: ' &2Plugin újratöltve'
+  wrongUsage:
+  - ' Használd a &2/gb&r parancsot, hogy megtekintsd a fő GUI-t'
+  - ' További információkért: &2/gb help&r'
+  help:
+  - ' Használd a &2/gb&r parancsot, hogy megtekintsd a fő GUI-t'
+  - ' A játékokhoz a menün keresztül jutsz el'
+  - ' Használj rövidített parancsokat, mint például: &2/gb <játék>&r'
+  - '   Információkért az összes telepített játékről használd a'
+  - '   &2/gb info&r parancsot'
+  inDisabledWorld: ' &4Ebben a világban nem lehetséges'
+  # customize info output here
+  #   the first output will always be version and author
+  info:
+    header:
+    - ' &6+ - + - + - + - + - + - + - + - + - + - + - +'
+    - ' &6&lAz összes telepített játék listája:'
+    # use %name% for the game name
+    # %shorts will be replaced by all available shortcut commands%
+    # %playerNum% will give the number of players needed per game
+    perGame:
+    - ' &3&l%name% &r(%playerNum% player)'
+    - '   &2/gb <%shorts%>'
+    footer:
+    - ' &6+ - + - + - + - + - + - + - + - + - + - + - +'
+  tokenInfo: ' &2%player%-nak/-nek van %token% zsetonja'
+  ownTokenInfo: ' &2%token% tokened van.'
+  gaveToken: ' &2Gave %token% token to %player%.'
+  tookToken: ' &2Took %token% token from %player%.'
+  notEnoughToken: ' &4Failed! %player% only has %token% token.'
+  setToken: ' &2%player% now has %token% token.'
+  reload:
+    fail: " &4A plugin és a futó játékok újratöltése sikertelen volt!"
+    success: " &aA plugin és a futó játékok újratöltése sikeres volt!"
+  settingsCommand:
+    gameDisableSuccess: " &aYou have disabled %gameID%."
+    gameDisableFail: " &4This game is not enabled at the moment!"
+    gameEnableSuccess: " &aYou have enabled %gameID%."
+    gameEnableFail: " &4This game is not disabled at the moment!"
+    gameInvalidSetting: " &4Invalid game setting!"
+
+
+mainButtons:
+  exitButton: "&4Kattints a kilépéshez"
+  toMainGUIButton: "&2Főmenübe"
+  toGameGUIButton: "&2Játékmenübe"
+  forwardButton: "&2&lTovább"
+  backwardButton: "&2&lVissza"
+  infoMainMenu:
+  - '&1Itt megtalálhatod az összes játékot'
+  - '&1Kattints a gombok egyikére,'
+  - '  &1hogy megnyisd a játékmenüt.'
+  # %tokens% will be replaced with the players number of tokens
+  tokensButton: "&1Zsetonok: &2%tokens%"
+  soundToggle:
+    onDisplayName: "&1Hang bekapcsolva"
+    onLore:
+    - ""
+    - "&1Kattints a hangok kikapcsolásához"
+    offDisplayName: "&4Hang kikapcsolva"
+    offLore:
+    - ""
+    - "&1Kattints a hangok bekapcsolásához"
+  inviteButton:
+    displayName: "&eHívj meg valakit"
+    lore:
+    - ""
+    - "&1Kattints egy játékos meghívásához"
+  # this is the name and lore of an invite. It is the players skull in the invitation GUI.
+  invitationSkull:
+    # %player% will be replaced by the players name
+    displayName: "&e%player%"
+    lore:
+    - ""
+    - "&1Kattints a meghívás elfogadásához"
+
+
+
+inventoryTitles:
+  # use %player% for the player name
+  mainGUI: 'Üdv a &1Játék&1Dobozban&r!'
+  # %game% will be replaced with the games prefix
+  gameGUIs: '             %game%&r'
+  noPermMessage: '          &4&lNincs jogod'
+  notEnoughMoney: '        &4&lNincs elég pénzed'
+  notEnoughTokens: '        &4&lNincs elég zsetonod'
+  otherPlayerNotEnoughMoney: '   &4A másik játékosnak nincs elég pénze'
+  alreadyInAnotherGame: '     &4Már egy másik játékban van'
+
+
+shop:
+  freeItem: "&9Ingyenes"
+  moneyItem: "&9Pénz: &4%money%"
+  tokenItem: "&9Zseton: &4%token%"
+  notEnoughMoney: '        &4&lNincs elég pénzed'
+  notEnoughTokens: '        &4&lNincs elég zsetonod'
+  inventoryIsFull: '        &4&lInventory tele'
+  requirementNotFulfilled: '       &4&lElőfeltételek hiányoznak'
+  boughtSuccessful: '        &9&lSikeres vétel'
+  shopIsClosed: '        &4&lA bolt jelenleg zárva'
+  # use %player% for the player name
+  mainShop: '   &9Kellemes vásárlást, &1%player%'
+  # use %page% for the page number
+  pageShop: '             &9Oldalszám: &l%page%'
+
+
+others:
+  wonToken: " Nyertél %tokens% zsetont ebben: &3%game%"
+  playerInput:
+    openingMessage: " &l&2Kérlek írd be a meghívni kívánt játékos nevét."
+    helpMessage:
+    - " &2Van &5%seconds% &2másodperced."
+    - " &2Hogy megállítsd a bevitelt, küldj &c'%'&2-t."
+    timeRanOut: " &cBevitelre kapott időd lejárt."
+    inputSuccessful: " &5%player%&2 meghívva."
+    inputClosed: " &2Bevitel bezárva."
+    sameInvitation: " &4Már van egy ilyen meghívás."
+    notValidPlayerName: " &1%player%&4 nem egy valós játékosnév."
+    notOnline: " &cNincs &5%player%&c nevű online játékos."
+    notInviteYourself: " &cNem hívhatod meg saját magad."
+  invitation:
+  - " &3%player%&r meghívott téged erre: &3%game%"
+  invitationTitleMessage:
+    title: "&1Meghívtak ide &3%game%"
+    subTitle: "Meghívó: &3%player%"
+  invitationActionbarMessage: "&3%player%&r meghívva ide &3%game%"
+
+  # this message is sent in the JSON format and has to be customised differently
+
+  # The message that gets send to the invited player (if not opt out in the config) consists of four parts
+  #   1. normal message before the clickable and hover-able part (called pre-)
+  #   2. clickable part (called click-)
+  #   3. the clickable part also includes a hover action (called hover-)
+  #   4. normal message after the clickable part (called after-)
+
+  # colors have to be named! valid colors:
+  #   black, white, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray
+  #   green, aqua, red, light_purple, yellow, dark_gray, blue,
+  invitationClickMessage:
+    preText: ""
+    preColor: "green"
+    clickText: " Kattints ide, hogy egyenesen menj a meghívásra"
+    clickColor: "blue"
+    hoverText: "Vigyél a meghívásra"
+    hoverColor: "gold"
+    afterText: ""
+    afterColor: "blue"

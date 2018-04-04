@@ -1,0 +1,143 @@
+# translation by: AndyYu (SpigotMC name)
+
+# use & for colors
+#   placeholders will be listed in front of the messages
+
+
+prefix: "[&3GameBox&r]"
+name: "&3GameBox&r"
+
+jsonPrefix:
+  # 插件JSON信息前置 以下是可选颜色
+  #   black, white, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray
+  #   green, aqua, red, light_purple, yellow, dark_gray, blue,
+  preText: "["
+  preColor: "white"
+  text: "GameBox"
+  color: "dark_aqua"
+  afterText: "]"
+  afterColor: "white"
+
+# command messages
+commandMessages:
+  notInThisWorld: ' &4你不能这么做'
+  noPermission: ' &4你没有权限!'
+  onlyAsPlayer: ' &4控制台不能这么做'
+  pluginReloaded: ' &2插件已重载'
+  wrongUsage:
+  - ' 使用 &2/gb&r 打开菜单'
+  - ' 获得更多帮助请输入 &2/gb help&r'
+  help:
+  - ' 使用 &2/gb&r 打开菜单'
+  - ' 你可以跳过菜单直接进入游戏'
+  inDisabledWorld: ' &4这个世界不允许这么做'
+  # info插件信息页
+  # 首先出现的是作者和版本信息
+  info:
+    header:
+    - ' &6+ - + - + - + - + - + - + - + - + - + - + - +'
+    - ' &6&l列出所有已下载游戏:'
+    # %name% 变量代表游戏名
+    # %shorts 变量代表开始游戏的短指令%
+    # %playerNum% 变量代表玩这个游戏最少需要的玩家
+    perGame:
+    - ' &3&l%name%&r (需要玩家: %playerNum%)'
+    - '   &2/gb <%shorts%>'
+    footer:
+    - ' &6+ - + - + - + - + - + - + - + - + - + - + - +'
+  tokenInfo: ' &2%player% 拥有 %token% 筹码'
+  reload:
+    fail: " &c重载GameBox和所有游戏失败!"
+    success: " &a成功重载GameBox和所有游戏!"
+
+
+mainButtons:
+  exitButton: "&4点击退出"
+  toMainGUIButton: "&2去主菜单"
+  toGameGUIButton: "&2去游戏菜单"
+  forwardButton: "&2往前"
+  backwardButton: "&2往后"
+  infoMainMenu:
+  - '&a欢迎使用GameBox'
+  - '&a点击一个游戏来开始吧!'
+  # %tokens% 变量表示筹码
+  tokensButton: "&1筹码: &2%tokens%"
+  soundToggle:
+    onDisplayName: "&a声音开启"
+    onLore:
+    - ""
+    - "&e点击关闭音效"
+    offDisplayName: "&c声音关闭"
+    offLore:
+    - ""
+    - "&e点击打开音效"
+  inviteButton:
+    displayName: "&6邀请玩家"
+    lore:
+    - ""
+    - "&e点击通过聊天栏邀请玩家"
+  # GUI菜单里显示的邀请者头像
+  invitationSkull:
+    # %player% 变量代表玩家名字
+    displayName: "&e%player%"
+    lore:
+    - ""
+    - "&e点击接受邀请"
+
+inventoryTitles:
+  # 使用 %player% 变量表示玩家
+  mainGUI: ' 欢迎来到 &1Game&1Box&r %player%'
+  # %game% 变量表示游戏
+  gameGUIs: '             %game%&r'
+  noPermMessage: '          &4&l没有权限'
+  notEnoughMoney: '        &4&l钱不够'
+  notEnoughTokens: '        &4&l筹码不够'
+  otherPlayerNotEnoughMoney: '   &4另一个玩家钱不够'
+  alreadyInAnotherGame: '     &4已经在另一个游戏里了'
+
+
+shop:
+  freeItem: "&9免费"
+  moneyItem: "&9需要金钱: &4%money%"
+  tokenItem: "&9需要筹码: &4%token%"
+  notEnoughMoney: '        &4&l金钱不够'
+  notEnoughTokens: '        &4&l筹码不够'
+  inventoryIsFull: '        &4&l背包已满'
+  requirementNotFulfilled: '       &4&l未满足条件'
+  boughtSuccessful: '        &9&l成功购买'
+  shopIsClosed: '        &4&l商店未启用'
+  # 使用 %player% 变量表示玩家
+  mainShop: '   &c欢迎来到商店, &1%player%'
+  # 使用 %page% 页代表商店页码
+  pageShop: '             &9页 &l%page%'
+
+others:
+  wonToken: " 你获得了 %tokens% 筹码！ 来自游戏 &3%game%"
+  playerInput:
+    openingMessage: " &l&a请输入你想邀请的玩家的名字"
+    helpMessage:
+    - " &2你必须在 &5%seconds% &2秒内完成"
+    - " &2想要停止邀请，请输入 &c'%'."
+    timeRanOut: " &c超时了，邀请失败"
+    inputSuccessful: " &5%player%&2 被邀请了"
+    inputClosed: " &2输入关闭"
+    sameInvitation: " &4邀请已经存在！"
+    notValidPlayerName: " &1%player%&4 玩家不存在！"
+    notOnline: " &c玩家 &5%player%&c 不在线！"
+    notInviteYourself: " &c你居然邀请自己？是太寂寞了吗..."
+  invitation:
+  - " &3%player%&r 邀请你玩 &3%game%"
+  - " 请打开游戏 &3%game%&r 的相应模式来接受邀请"
+
+  # 邀请信息JSON消息可选颜色:
+  #   black, white, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray
+  #   green, aqua, red, light_purple, yellow, dark_gray, blue,
+  invitationClickMessage:
+    preText: ""
+    preColor: "green"
+    clickText: " 点我直接进入邀请游戏"
+    clickColor: "blue"
+    hoverText: "点我"
+    hoverColor: "gold"
+    afterText: ""
+    afterColor: "blue"  

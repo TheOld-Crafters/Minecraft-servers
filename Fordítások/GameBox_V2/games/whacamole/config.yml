@@ -1,0 +1,134 @@
+﻿# ----------------------------------------------------------------------------#
+#                                                                             #
+#                             Whac A Mole config                              #
+#                          Fordítás: poma123, 2017                            #
+#                                  by Nikl                                    #
+# ----------------------------------------------------------------------------#
+
+# name of the language file (in the folder 'language')
+langFile: "lang_hu.yml"
+
+gameBox:
+  mainButton:
+    # define the Material and data for the button (format: 'material:data')
+    materialData: "334"
+    # display name of the button
+    displayName: "&3VakondCsapás"
+    # lore of the button
+    lore:
+    - ""
+    - "&1Ezek a vakondok folyton visszajönnek..."
+  gameButtons:
+    normal:
+      materialData: "IRON_BLOCK"
+      displayName: "&aKlasszikus VakondCsapás"
+      lore:
+      - ""
+      - "&6A vakondok a 4 vakondlyuk közül"
+      - "&6egyet kiválasztva előbújnak."
+      - "&6Csapd vissza őket a föld alá,"
+      - "  &6amikor meglátod!"
+      - ""
+      - "&1Ár: &45"
+      - "&1Pénz jutalmakat &65 &1pontszám után kapsz."
+      - "&1Zsetonokat nyerhetsz &620 &1pontszám fölött."
+      slot: 20
+      cost: 5
+      # time in seconds the game runs for
+      #   defaults to 60
+      time: 70
+      # possible gamemodes are: "classic" => four slots where moles can appear
+      #                         "fullInventory" => moles can appear everywhere!
+      # Visit the plugins page on Spigot for other modes I may add in the future:
+      gameMode: "classic"
+      # here you can customize the players winnings
+      scoreIntervals:
+        0:
+          money: 0
+          tokens: 0
+        5:
+          money: 2
+        10:
+          money: 5
+        20:
+          money: 10
+          tokens: 1
+        30:
+          money: 20
+          tokens: 2
+    saveStats:
+      materialData: "159:3"
+      displayName: "&6&lCreeperek embert kergetnek"
+      lore:
+      - ""
+      - "&cA Creeperek óriási területen kergetik"
+      - "  &caz embereket! Csapd le a Creepereket, de"
+      - "  &cne szegény embereket!"
+      - "&aSok sikert!"
+      - ""
+      - "&1Ár: &450"
+      - "&1Pénz jutalmakat &610 &1pontszám után kapsz."
+      - "&1Zsetonokat nyerhetsz &620 &1pontszám fölött."
+      slot: 24
+      cost: 50
+      # if true the best score of this button is saved
+      saveStats: true
+      gameMode: "fullInventory"
+
+      # the following two options are only loaded for gamemode 'fullInventory'
+      #   they default to 'gameOverOnHittingHuman = false'
+      #                   'punishmentOnHittingHuman = 5'
+
+      # if true the game is lost when the player hits a human
+      gameOverOnHittingHuman: false
+      # if 'gameOverOnHittingHuman' is false, this is the amount of points players loose when they hit a human
+      punishmentOnHittingHuman: 5
+
+      scoreIntervals:
+        0:
+          money: 0
+          tokens: 0
+        10:
+          money: 25
+        15:
+          money: 50
+        20:
+          money: 75
+          tokens: 1
+        30:
+          money: 100
+          tokens: 2
+  topListButtons:
+    # use the same key as the game you want to display the top list for
+    #   for that button 'saveStats' must be true (see above)
+    saveStats:
+      materialData: "159:11"
+      displayName: "&6Creeperek embert kergetnek &c&lTop lista"
+      lore:
+      - ""
+      - "  &6&lCreeperek embert kergetnek"
+      slot: 33
+      # inventory title of the top list (%player% and %game%)
+      inventoryTitle: '     &6Creeperek embert kergetnek &rTop Lista'
+      # Lore of the skulls in the inventory. Use %rank% for the rank and %score% for the highest score of the player
+      skullLore:
+      - ''
+      - '&6Rank:&1 %rank%'
+      - '&6Pontszám:&1 %score%'
+
+items:
+  creeper: "SKULL_ITEM:4"
+  human: "SKULL_ITEM:3"
+  mole: "LEATHER"
+  cover: "STAINED_GLASS_PANE"
+  grass: "LONG_GRASS"
+
+rules:
+  # enable/disable sound
+  playSounds: true
+
+
+# requires vault and an economy plugin
+#   to enable economy do not forget to enable it for GameBox too
+economy:
+  enabled: false

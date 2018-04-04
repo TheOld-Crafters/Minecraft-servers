@@ -1,0 +1,256 @@
+# ----------------------------------------------------------------------------#
+#                                                                             #
+#                              Match It config                                #
+#                                                                             #
+#                                  by Nikl                                    #
+# ----------------------------------------------------------------------------#
+
+# name of the language file (in the folder 'language')
+langFile: "lang_hu.yml"
+
+rules:
+  # enable/disable sound
+  playSounds: true
+
+# requires vault and an economy plugin
+#   to enable economy do not forget to enable it for GameBox too
+economy:
+  enabled: false
+
+gameBox:
+  mainButton:
+    # define the Material and data for the button (format: 'material:data')
+    materialData: "95:11"
+    # display name of the button
+    displayName: "&3Match It"
+    # lore of the button
+    lore:
+    - ""
+    - "&1Memory game."
+    - "&1Find all pairs."
+  gameButtons:
+    small:
+      materialData: "95:11"
+      displayName: "&aSmall game"
+      lore:
+      - ""
+      - "Pairs: &15"
+      slot: 11
+      cost: 0
+      size: "small"
+      # time in seconds until a mismatched pair is covered again (default 1.5)
+      timeVisible: 1.5
+    medium:
+      materialData: "95:11"
+      displayName: "&aMedium game"
+      lore:
+      - ""
+      - "Pairs: &114"
+      slot: 20
+      cost: 0
+      size: "medium"
+    big:
+      materialData: "95:11"
+      displayName: "&aBig game"
+      lore:
+      - ""
+      - "Pairs: &127"
+      - ""
+      - "Check the top list ;)"
+      slot: 29
+      cost: 0
+      size: "big"
+      # if true the best score of this button is saved
+      saveStats: true
+
+  topListButtons:
+    # use the same key as the game you want to display the top list for
+    #   for that button 'saveStats' must be true (see above)
+    big:
+      materialData: "95:13"
+      displayName: "&6Big game &c&lTop list"
+      slot: 24
+      # inventory title of the top list (%player% and %game%)
+      inventoryTitle: '        &6Match It &rTop List'
+      # Lore of the skulls in the inventory. Use %rank% for the rank and %time% for the players' best time
+      skullLore:
+      - ''
+      - '&6Rank:&1 %rank%'
+      - '&6Time:&1 %time%'
+
+coverItem:
+  materialData: "160:3"
+  displayName: "&1Click to uncover"
+
+borderItem:
+  materialData: "160:15"
+  displayName: ""
+
+items:
+  '1':
+    # material data of the item
+    materialData: "98"
+    # optional custom display name
+    displayName: "&1Stone Bricks"
+    # optional custom lore
+    lore:
+    - ""
+    - "Old and with many cracks"
+  '2':
+    # material data of the item
+    materialData: "100"
+    # optional custom display name
+    displayName: "&1Red Mushroom Block"
+  '3':
+    # material data of the item
+    materialData: "101"
+    # optional custom display name
+    displayName: "&1Iron Bars"
+  '4':
+    # material data of the item
+    materialData: "103"
+    # optional custom display name
+    displayName: "&1Melon"
+  '5':
+    # material data of the item
+    materialData: "106"
+    # optional custom display name
+    displayName: "&1Vines"
+  '6':
+    # material data of the item
+    materialData: "387"
+    # optional custom display name
+    displayName: "&1Book"
+    lore:
+    - ""
+    - "You should read that!"
+    - "     - your teacher"
+  '7':
+    # material data of the item
+    materialData: "diamond"
+    # optional custom display name
+    displayName: "&1Diamond"
+  '8':
+    # material data of the item
+    materialData: "emerald"
+    # optional custom display name
+    displayName: "&1Emerald"
+  '9':
+    # material data of the item
+    materialData: "341"
+    # optional custom display name
+    displayName: "&1Slime"
+  '10':
+    # material data of the item
+    materialData: "egg"
+    # optional custom display name
+    displayName: "&1Egg"
+  '11':
+    # material data of the item
+    materialData: "302"
+    # optional custom display name
+    displayName: "&1Ancient helmet"
+    lore:
+    - ""
+    - "Maybe Ceasar wore it?..."
+  '12':
+    # material data of the item
+    materialData: "357"
+    # optional custom display name
+    displayName: "&1Cookie"
+    lore:
+    - ""
+    - "Grandmas cookies are the best!"
+  '13':
+    # material data of the item
+    materialData: "352"
+    # optional custom display name
+    displayName: "&1A bone..."
+  '14':
+    # material data of the item
+    materialData: "358"
+    # optional custom display name
+    displayName: "&1Treasure map"
+    lore:
+    - ""
+    - "I wonder where it leads to..."
+  '15':
+    materialData: "35:13"
+    displayName: "&1Green wool"
+  '16':
+    materialData: "35:14"
+    displayName: "&1Red wool"
+  '17':
+    materialData: "38"
+    displayName: "&1Poppy"
+    lore:
+    - ""
+    - "Beautiful!"
+  '18':
+    materialData: "40"
+    displayName: "&1Red mushroom"
+    lore:
+    - ""
+    - "Don't eat that!"
+  '19':
+    materialData: "tnt"
+    displayName: "&1TNT"
+    lore:
+    - ""
+    - "Cause I'm TNT, I'm dynamite!"
+    - "   Watch me explooooode!!"
+  '20':
+    materialData: "jukebox"
+    displayName: "&1A jukebox"
+    lore:
+    - ""
+    - "There's music in the air"
+  '21':
+    materialData: "dragon_egg"
+    displayName: "&1Dragon egg"
+  '22':
+    materialData: "anvil"
+    displayName: "&1An anvil"
+  '23':
+    materialData: "111"
+    displayName: "&1Lily Pad"
+  '24':
+    materialData: "116"
+    displayName: "&1Enchanting table"
+    lore:
+    - ""
+    - "It's voodoo!"
+  '25':
+    materialData: "double_plant"
+    displayName: "&1Sunflower"
+  '26':
+    materialData: "288"
+    displayName: "&1Feather"
+  '27':
+    materialData: "315"
+    displayName: "&1Golden Chestplate"
+    lore:
+    - ""
+    - "Fancy!"
+  '28':
+    materialData: "bookshelf"
+    displayName: "&1Bookshelf"
+    lore:
+    - ""
+    - "Read all those books, build a rocket"
+    - "   and fly to the moon ;)"
+  '29':
+    materialData: "cactus"
+    displayName: "&1Cactus"
+  '30':
+    materialData: "170"
+    displayName: "&1Hay Bale"
+  '31':
+    materialData: "267"
+    displayName: "&1Sword"
+    lore:
+    - ""
+    - "Plain iron sword."
+    - "Kinda boring..."
+
+

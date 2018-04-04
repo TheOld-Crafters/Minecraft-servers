@@ -1,0 +1,36 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2Nyertél &4%cost%-t"
+    notEnoughMoney: " &4Nincs elég pénzed!"
+    # use %reward% for the amount the player won
+    wonMoney: " &2Nyertél &1%reward%&2-t!"
+  inventoryTitles:
+    # displayed before the game starts
+    beginning: "Aknakereső      &2Klikk a kezdéshez"
+    # use %state% to display the number of flags and the number of mines that are left
+    #   %timer% will be replaced by the timer counting up
+    ingame: "Aknakereső     %state%   &1%timer%"
+    # use %timer% to display the time played
+    won: "Aknakereső   &2Nyertél! Időd: &1%timer%"
+    lost: "Aknakereső    &4Vesztettél"
+
+prefix: "[&3Aknakereső&r]"
+name: "&1Aknakereső&r"
+
+gameHelp:
+  - '&1&lAz Aknakereső logikára és matematikára alapszik ;)'
+  - '&1&lBal klikkel fedj fel egy mezőt'
+  - '  &1&lA mező alatt lehet egy akna, egy vészjelzés vagy egyszerűen semmi'
+  - '  &1&lA vészjelzések elárulják az aknák számát'
+  - '    &1&la környező 8 mezőben'
+  - '  &1&lHa egy aknát fedsz fel, veszítesz'
+  - '&1&lCélod az összes mező felfedése '
+  - '  &1&la bombák elkerülésével'
+  - '&1&lMikor biztos vagy abban, hogy egy mező alatt akna van'
+  - '  &1&ljobb-klikkel egy zászlót elhelyezve megjelölheted azt.'
+  

@@ -1,0 +1,189 @@
+# ----------------------------------------------------------------------------#
+#                                                                             #
+#                                2048 config                                  #
+#                                                                             #
+#                                  by Nikl                                    #
+# ----------------------------------------------------------------------------#
+
+# name of the language file (in the folder 'language')
+langFile: "lang_hu.yml"
+
+gameBox:
+  mainButton:
+    # define the Material and data for the button (format: 'material:data')
+    materialData: "159:11"
+    # display name of the button
+    displayName: "&32048"
+    # lore of the button
+    lore:
+    - ""
+    - "&1Mozdíts el a „Csempéket” és add össze őket."
+  gameButtons:
+    normal:
+      materialData: "WOOL:13"
+      displayName: "&a2048"
+      lore:
+      - ""
+      - "&1Ára: &45"
+      - "&1A pénzjutalom ezen itt kezdődik: &6250"
+      - "&1Ennyi zsetont nyerhetsz: &61000"
+      slot: 20
+      cost: 5
+      scoreIntervals:
+        # all keys have to be integers otherwise they will be ignored and a warning will be printed in the console
+
+        # money is only paid if economy is enabled
+        # tokens can be used in the GameBox shop
+
+        # You can add as many intervals as you want to. The order of the intervals doesn't matter
+        #   the given rewards will always be used if the game is finished with a score between the key and the
+        #   next higher key. For the highest key the interval goes to infinity
+        0:
+          money: 0
+          tokens: 0
+        250:
+          money: 5
+        500:
+          money: 10
+        1000:
+          money: 20
+          tokens: 1
+    saveStats:
+      materialData: "159:3"
+      displayName: "&c&lVerseny"
+      lore:
+      - ""
+      - "&cTalálkozzunk a &ltop listán"
+      - "&aSok szerencsét!"
+      - ""
+      - "&1Ára: &450"
+      - "&1A pénzjutalom itt kezdődik: &6250"
+      - "&1Ennyi zsetont nyerhetsz: &61000"
+      slot: 24
+      cost: 50
+      # if true the best score of this button is saved
+      saveStats: true
+      scoreIntervals:
+        0:
+          money: 0
+          tokens: 0
+        250:
+          money: 30
+        500:
+          money: 60
+        1000:
+          money: 100
+          tokens: 1
+        2000:
+          money: 250
+          tokens: 2
+  topListButtons:
+    # use the same key as the game you want to display the top list for
+    #   for that button 'saveStats' must be true (see above)
+    saveStats:
+      materialData: "159:11"
+      displayName: "&cTop lista"
+      lore:
+      - ""
+      - "&cVerseny &1Top Lista"
+      slot: 33
+      # inventory title of the top list (%player% and %game%)
+      inventoryTitle: '              Top List'
+      # Lore of the skulls in the inventory. Use %rank% for the rank and %score% for the highest score of the player
+      skullLore:
+      - ''
+      - '&6Rank:&1 %rank%'
+      - '&6SPntszám:&1 %score%'
+
+
+rules:
+  # enable/disable sound
+  playSounds: true
+  # if true there will be navigation buttons around the grid in the top inventory
+  #   additionally to the navigation in the bottom inventory
+  topNavigation: false
+  # if true the grid will be surrounded with black
+  surroundTheGrid:
+    enable: true
+    materialData: "160:15"
+
+# Buttons in the game
+buttons:
+  # Navigation buttons (up, down, right and left)
+  #   Display names are separately in the language files.
+  navigation:
+    materialData: "ARROW"
+    glow: false
+
+# requires vault and an economy plugin
+#   to enable economy do not forget to enable it for GameBox too
+economy:
+  enabled: false
+
+# if you want to you can set a lore. Just add a node 'lore' to a tile and make it a list
+#   'glow' is an optional boolean
+tiles:
+  1:
+    materialData: "WOOL"
+    displayName: "&a2"
+  2:
+    materialData: "WOOL:1"
+    displayName: "&a4"
+  3:
+    materialData: "WOOL:4"
+    displayName: "&a8"
+  4:
+    materialData: "WOOL:5"
+    displayName: "&a16"
+  5:
+    materialData: "WOOL:3"
+    displayName: "&a32"
+  6:
+    materialData: "WOOL:2"
+    displayName: "&a64"
+  7:
+    materialData: "WOOL:11"
+    displayName: "&a128"
+  8:
+    materialData: "WOOL:13"
+    displayName: "&a256"
+  9:
+    materialData: "159"
+    displayName: "&a512"
+    glow: true
+  10:
+    materialData: "159:1"
+    displayName: "&a1024"
+    glow: true
+  11:
+    materialData: "159:4"
+    displayName: "&a2048"
+    glow: true
+  12:
+    materialData: "159:5"
+    displayName: "&a4096"
+    glow: true
+  13:
+    materialData: "159:3"
+    displayName: "&a&l8192"
+    glow: true
+  14:
+    materialData: "159:2"
+    displayName: "&a&l16384"
+    glow: true
+  15:
+    materialData: "159:11"
+    displayName: "&a&l32768"
+    glow: true
+  16:
+    materialData: "159:13"
+    displayName: "&a&l65536"
+    glow: true
+  17:
+    materialData: "57"
+    displayName: "&c&l131072"
+    glow: true
+    lore:
+    - "&9Lehetetlen"
+    - "&9..."
+    - "&cCsaló!"

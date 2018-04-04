@@ -1,0 +1,65 @@
+# ----------------------------------------------------------------------------#
+#                                                                             #
+#                           Cookie Clicker config                             #
+#                                                                             #
+#                                  by Nikl                                    #
+# ----------------------------------------------------------------------------#
+
+# name of the language file (in the folder 'language')
+langFile: "lang_hu.yml"
+
+rules:
+  # enable/disable sound
+  playSounds: true
+
+# requires vault and an economy plugin
+#   to enable economy do not forget to enable it for GameBox too
+economy:
+  enabled: false
+
+gameBox:
+  mainButton:
+    # define the Material and data for the button (format: 'material:data')
+    materialData: "357"
+    # display name of the button
+    displayName: "&3Cookie Clicker"
+    # lore of the button
+    lore:
+    - ""
+    - "&1Vegyék át a győzelmet a sütijeid."
+    - ""
+    - "&5&o\"Gyere az erő sötét oldalához.."
+    - "&5&o    Neked vannak sütijeid!\""
+  gameButtons:
+    weekly:
+      materialData: "357"
+      displayName: "&aCookie Clicker"
+      lore:
+      - ""
+      - "&6Kattints a sütire!"
+      - ""
+      - "&5&o&e\"Igen..."
+      - "  &5&eez ilyen egyszerű.\""
+      slot: 20
+      cost: 0
+      # if true the best score of this button is saved
+      saveStats: true
+
+      # after the set amount of clicks on the cookie it's position will change
+      #   This is optional and can be turned off by setting it to 0 or a negative number
+      #   This option is supposed to prevent players from using autoclickers
+      moveCookieAfterClicks: 100
+  topListButtons:
+    # use the same key as the game you want to display the top list for
+    #   for that button 'saveStats' must be true (see above)
+    weekly:
+      materialData: "397:3"
+      displayName: "&6Cookie Clicker &c&lTop lista"
+      slot: 24
+      # inventory title of the top list (%player% and %game%)
+      inventoryTitle: '     &6Cookie Clicker &rTop lista'
+      # Lore of the skulls in the inventory. Use %rank% for the rank and %score% for the highest score of the player
+      skullLore:
+      - ''
+      - '&6Rank:&1 %rank%'
+      - '&6Sütik:&1 %score%'

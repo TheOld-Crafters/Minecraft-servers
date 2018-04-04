@@ -1,0 +1,34 @@
+# translation by: AndyYu (SpigotMC name)
+
+# 全部信息可添加彩色代码
+
+# 游戏内显示的信息
+game:
+  econ:
+    # 使用 %cost% 来设置玩游戏花费的金钱
+    payed: " &2你支付了 &4%cost%"
+    notEnoughMoney: " &4你的钱不够!"
+  # 使用 %score% 来显示当游戏结束后玩家获得的分输
+  finishedWithoutPayout: " 游戏结束！你获得了 &2%score%&r 分！"
+  # 使用 %score% 代表分数 使用 %reward% 代表奖励
+  #   奖励可在config里配置！
+  # 当设置了金钱奖励后，这条消息将会取代上一条消息来显示
+  finishedWithPayout: " 游戏结束！你获得了 &2%score%&r 分！ 赢得奖励 &2%reward%&r !"
+
+
+inventoryTitles:
+  title: "宝石消消乐  剩余步数: %moves%  分数: %score%"
+
+
+
+prefix: "[&3宝石消消乐&r]"
+name: "&1宝石消消乐&r"
+
+
+
+gameHelp:
+  - '&a让3个相同物品连成一线'
+  - '&a点击两个物品交换位置'
+  - '&a这两个物品必须是相邻的'
+  - ''
+  - '&6开始玩吧!'
