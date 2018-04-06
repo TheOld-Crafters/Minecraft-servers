@@ -5,25 +5,25 @@
 game:
   econ:
     # use %cost% for the amount payed
-    payed: " &2You paid &4%cost%"
-    notEnoughMoney: " &4You do not have enough money!"
+    payed: " &2Fizettél &4%cost%&2-t"
+    notEnoughMoney: " &4Nincsen elég pénzed!"
     # use %reward% for the amount the player won
-    wonMoney: " &2You solved a puzzle and won &6%reward%&2!"
+    wonMoney: " &2Megoldottál egy fejtörőt és nyertél &6%reward%&2-t!"
   inventoryTitles:
-    gameTitle: "        &9Three In A Row"
-    won: "&9Three In A Row           &2You won!"
-  won: " &2You solved a &6ThreeInARow&2 puzzle."
+    gameTitle: "        &9Három Egy Sorban"
+    won: "&9Három Egy Sorban         &2Nyertél!"
+  won: " &2Megoldottál egy &6HáromEgySorban&2 rejtvényt."
 
-prefix: "[&3ThreeInARow&r]"
-name: "&1ThreeInARow&r"
+prefix: "[&3HáromEgySorban&r]"
+name: "&1HáromEgySorban&r"
 
 gameHelp:
-  - '&1&lThree in a row is a logic game played on a 6x6 grid.'
+  - '&1&lA "Három egy sorban" egy 6x6-os négyzetrácson játszandó logikai játék.'
   - ''
-  - '&1&lTo win there have to be three blue and'
-  - '  &1&lthree white tiles in each row and column.'
-  - '  &1&lIt is forbidden to have more then two tiles'
-  - '  &1&lof the same color next to each other!'
+  - '&1&lHárom kék és három fehér csempének'
+  - '  &1&lkell lennie minden sorban és oszlopban, ahhoz, hogy nyerj.'
+  - '  &1&lFigyelj, mert nem lehet két egyforma színű'
+  - '  &1&lcsempe egymás mellett!'
   - ''
-  - '&1&lThere is only one possible solution that can be'
-  - '  &1&lreached without guessing!'
+  - '&1&lEgyetlen megoldás van ahhoz, hogy'
+  - '  &1&ltippelések nélkül teljesítsd!'
