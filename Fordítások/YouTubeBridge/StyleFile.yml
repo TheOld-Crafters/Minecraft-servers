@@ -10,30 +10,30 @@ GUI-Settings:
         Title: §b§l~§f§l~1~{Name}
         Amount: 1
         Lore:
-        - §7- You need §e{Subs}+ §7Subscribers
-        - §7- You need §e{Videos}+ §7Videos
-        - §7- You need §e{Views} §7total Views and
-        - §e{Avg_Views}+ §7average Views!
+        - §7- §e{Subs}+ §7feliratkozóval kell rendelkezned
+        - §7- §e{Videos}+ §7videó szükséges a csatornádra
+        - §7- §e{Views} §7teljes nézettségre és
+        - §e{Avg_Views}+ §7átlagos nézettségre van szükséged!
         - //
-        - //§7Additionally you need §e{SpecialVideos} §7 Videos with
-        - //#Title§e{Title} §7in the title
-        - //#Description§e{Description} §7in the description
+        - //§7Emellett legyen §e{SpecialVideos} §7 videód
+        - //#Title§e{Title} §7szöveggel a címben és
+        - //#Description§e{Description} §7szöveggel a leírásban!
       Next:
         Material: '133:0'
-        Title: §a§l~§f§l~1~Next
+        Title: §a§l~§f§l~1~Következő
         Amount: 1
         Slot: 21
         Lore:
-        - §7Click to get your §bRank§7
+        - §7Kattints, hogy megkapd a §bRank§7 rangot!
       List:
         Material: '47:0'
-        Title: §6§l~§f§l~1~List of Youtubers
+        Title: §6§l~§f§l~1~YouTuberek listája
         Amount: 1
         Slot: 25
         Lore:
-        - §7Click to view all Youtubers§7
+        - §7Kattints az összes YouTuber megtekintéséhez§7
   Users:
-    Title: Youtubers
+    Title: YouTuberek
     Slots: 54
     GUI-Items:
       Entry:
@@ -41,30 +41,30 @@ GUI-Settings:
         Title: §a§l~§f§l~3~{Player}
         Amount: 1
         Lore:
-        - '&eClick to view Profile'
+        - '&eKattints a profil megtekintéséhez'
         - '&e'
-        - '&7Rank: §b{Package}'
-        - '&7Subscriber Count: &e{Subs}'
-        - '&7Video Count: &e{Videos}'
-        - '&7View Count: &e{Views}'
+        - '&7Rang: §b{Package}'
+        - '&7Feliratkozók száma: &e{Subs}'
+        - '&7Videók száma: &e{Videos}'
+        - '&7Megtekintések száma: &e{Views}'
 Dialogs:
   Get-Url:
-    Upper-Title: Get Channel Url
-    Lower-Title: §7Paste your §aChannel Url §7in the Chat
+    Upper-Title: Csatorna link megszerzése
+    Lower-Title: §7Másold be a §acsatorna linkjét §7a chatbe
     Action-Bar: '§7Example: §ehttp://www.youtube.com/users/SomeName'
 General:
-  cancelInvalidLink: '&7This Youtube Channel Url is invalid, please try it again'
+  cancelInvalidLink: '&7Ez a YouTube csatorna nem létezik, próbáld meg újra.'
 Common:
   GUI-Items:
     Back:
       Material: '323:0'
-      Title: §b§lƒ30ƒ§f§lƒ5ƒBack
+      Title: §b§lƒ30ƒ§f§lƒ5ƒVissza
       Amount: 1
       Lore:
-      - §7Click to go back
+      - §7Kattints a visszalépéshez
     Search:
       Material: '345:0'
-      Title: §b§lƒ30ƒ§f§lƒ5ƒSearch
+      Title: §b§lƒ30ƒ§f§lƒ5ƒKeresés
       Amount: 1
       Lore:
-      - §7Click to search
+      - §7Kattints a kereséshez
