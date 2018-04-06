@@ -1,14 +1,16 @@
 **Tag+**
 Tag jogai plusz:
 
-/heal - Életed feltöltése.
+/me - Én mondom szöveg.
+/pweather - Eső ki/be kapcsolása saját magadnak.
 /feed - Étel csíkod feltöltése.
 /hat - Felveszi azt a blokkot/tárgyat a fejedre, ami a kezedben van.
 /afk - Elmentél a géptől szöveg kiírás.
 Halálkor nem veszik el az xp szint
+Színes írás táblára pl.: &2
+7 otthon
 5 levédés
 4 telek
-7 otthon
 2 pet
 4 aukció
 $70 - 10 perc online töltött időért. (napi limit: $11 000)
@@ -20,67 +22,62 @@ A plusz beállított otthonok a rang lejárata után is megmaradnak.
 **V.I.P.**
 Tag+ jogai plusz:
 
-/fly - Repülés ki/be kapcsolása. (Nyomd meg 2x gyorsan a space-t repüléshez. Leszálláshoz használd a shift gombot.) A gyors repülést hosszútávon tilos használni!
+/heal - Életed feltöltése.
+/pwarp set - Saját warp beállítása.
 /additions repair​ - Megjavítja azt a tárgyat, ami a kezedben van.
-/god - Halhatatlanság mód ki/be kapcsolása.
-/pweather - Eső ki/be kapcsolása saját magadnak.
 /petstore - Aktív pet elmentése.
 /pswitch - Váltás a petek között.
-Színes írás táblára pl.: &2
 Tank, és Halhatatlan kaszt használata a mobarénában.
 10 otthon
+7 levédés
 7 telek
 7 telek összevonása egybe
-7 levédés
 5 pet
 7 aukció
 $120 - 10 perc online töltött időért. (napi limit: $15 000)
+A beállított warp a rang lejárata után is megmarad.
 
 
 **Elit**
 V.I.P. jogai plusz:
 
+/ptime day, night - Saját idő változtatása. (day = nappal, night = éjszaka)
+/god - Halhatatlanság mód ki/be kapcsolása.
 /nick - Színes név pl.: zöld név /nick &2név
 Színes írás színkódokkal. pl.: &3
-/gm 1 - kreatív játékmód (Nem minden tárgy elérhető kreatívban)
-/gm 0 - túlélő játékmód
 /condense - A tárgyakból blokkot készít. pl.: 9 smaragd -> 1 smaragd blokk
-11 pet
+14 otthon
+10 levédés
 10 telek
 10 telek összevonása egybe
-10 levédés
-14 otthon
+11 pet
 10 aukció
 $250 - 10 perc online töltött időért. (napi limit: $30 000)
-Az Elit rangtól nem lehet a pet-re tárgyakat helyezni.
 
 
 **Prémium**
 Elit jogai plusz:
 
-/invsee - Belenézhetsz más táskájába (inventory).
+/fly - Repülés ki/be kapcsolása. (Nyomd meg 2x gyorsan a space-t repüléshez. Leszálláshoz használd a shift gombot.) A gyors repülést hosszútávon tilos használni!
 /workbench, /craft - Barkácsasztal megnyitása bárhol.
-/me - Én mondom szöveg.
-/pwarp set - Saját warp beállítása.
 Hiperugrás kaszt használata a mobarénában.
 80x80-as levédés az 50x50-es helyett.
 Dupla McMMO XP
+20 otthon
 15 levédés
 15 telek
 15 telek összevonása egybe
 16 pet
-20 otthon
 15 aukció
 $500 - 10 perc online töltött időért. (napi limit: $60 000)
-A beállított warp a rang lejárata után is megmarad.
 
 
 **Old**
 Prémium jogai plusz:
 
-/ptime day, night - Saját idő változtatása. (day = nappal, night = éjszaka)
+/gm 1 - kreatív játékmód (Nem minden tárgy elérhető kreatívban)
+/gm 0 - túlélő játékmód
 /enderchest - Végzetláda megnyitása bárhol.
-/enderchest játékos - Belenézés más végzetládájába.
 /kittycannon - Robbanó macska eldobása.
 Chat formázás formázási kódokkal. pl.: &m
 Tripla McMMO XP
@@ -92,3 +89,4 @@ Tripla McMMO XP
 33 pet
 50 aukció
 $1500 - 10 perc online töltött időért. (napi limit: $150 000)
+Az Old rangtól nem lehet a pet-re tárgyakat helyezni.
