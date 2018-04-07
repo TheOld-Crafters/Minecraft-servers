@@ -86,7 +86,7 @@ buildings:
     description:
       - '&5&o"Sütiket teremt, varázslattal."'
   shipment:
-    name: "Szállítvány"
+    name: "Szállítmány"
     description:
       - '&5&o"Friss sütiket szállít, a süti bolygóról."'
   alchemy_lab:
