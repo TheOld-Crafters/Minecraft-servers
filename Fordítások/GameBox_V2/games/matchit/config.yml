@@ -22,19 +22,19 @@ gameBox:
     # define the Material and data for the button (format: 'material:data')
     materialData: "95:11"
     # display name of the button
-    displayName: "&3Párkereső"
+    displayName: "&3Match It"
     # lore of the button
     lore:
     - ""
-    - "&1Memória játék."
-    - "&1Találd meg az összes párt."
+    - "&1Memóriajáték."
+    - "&1Keresd meg a párokat."
   gameButtons:
     small:
       materialData: "95:11"
-      displayName: "&aKis játék"
+      displayName: "&aKönnyű játék"
       lore:
       - ""
-      - "Párok: &15"
+      - "Pairs: &15"
       slot: 11
       cost: 0
       size: "small"
@@ -45,18 +45,18 @@ gameBox:
       displayName: "&aKözepes játék"
       lore:
       - ""
-      - "Párok: &114"
+      - "Pairs: &114"
       slot: 20
       cost: 0
       size: "medium"
     big:
       materialData: "95:11"
-      displayName: "&aNagy játék"
+      displayName: "&aNehéz játék"
       lore:
       - ""
-      - "Párok: &127"
+      - "Pairs: &127"
       - ""
-      - "Nézd meg a top listát ;)"
+      - "Ellenőrizd a toplistát ;)"
       slot: 29
       cost: 0
       size: "big"
@@ -68,10 +68,10 @@ gameBox:
     #   for that button 'saveStats' must be true (see above)
     big:
       materialData: "95:13"
-      displayName: "&6Nagy játék &c&lTop lista"
+      displayName: "&6Nehéz játék &c&ltoplistája"
       slot: 24
       # inventory title of the top list (%player% and %game%)
-      inventoryTitle: '        &6Párkereső &rTop lista'
+      inventoryTitle: '        &6Match It &rtoplista'
       # Lore of the skulls in the inventory. Use %rank% for the rank and %time% for the players' best time
       skullLore:
       - ''
@@ -80,7 +80,7 @@ gameBox:
 
 coverItem:
   materialData: "160:3"
-  displayName: "&1Kattints a felfedezéshez"
+  displayName: "&1Kattints a felfedéshez."
 
 borderItem:
   materialData: "160:15"
@@ -91,21 +91,21 @@ items:
     # material data of the item
     materialData: "98"
     # optional custom display name
-    displayName: "&1Kőtégla"
+    displayName: "&1Kőtéglák"
     # optional custom lore
     lore:
     - ""
-    - "Régi, kevés repedéssel"
+    - "Régi, sok repedéssel"
   '2':
     # material data of the item
     materialData: "100"
     # optional custom display name
-    displayName: "&1Piros gomba block"
+    displayName: "&1Piros Gomba Blokk"
   '3':
     # material data of the item
     materialData: "101"
     # optional custom display name
-    displayName: "&1Vasrács"
+    displayName: "&1Vasrudak"
   '4':
     # material data of the item
     materialData: "103"
@@ -115,7 +115,7 @@ items:
     # material data of the item
     materialData: "106"
     # optional custom display name
-    displayName: "&1Inda"
+    displayName: "&1Szőlő"
   '6':
     # material data of the item
     materialData: "387"
@@ -123,8 +123,8 @@ items:
     displayName: "&1Könyv"
     lore:
     - ""
-    - "Olvasd el!"
-    - "     - Tanárod"
+    - "El kell olvasnod!"
+    - "     - tanárod"
   '7':
     # material data of the item
     materialData: "diamond"
@@ -149,10 +149,10 @@ items:
     # material data of the item
     materialData: "302"
     # optional custom display name
-    displayName: "&1Ősi sapka"
+    displayName: "&1Ókori sisak"
     lore:
     - ""
-    - "Talán Cézár hordta ezt?"
+    - "Lehetséges, hogy Julius Ceasar viselte?..."
   '12':
     # material data of the item
     materialData: "357"
@@ -160,12 +160,12 @@ items:
     displayName: "&1Süti"
     lore:
     - ""
-    - "Nagymama sütije a legjobb!"
+    - "Nagyi sütijei a legfinomabbak!"
   '13':
     # material data of the item
     materialData: "352"
     # optional custom display name
-    displayName: "&1Csont"
+    displayName: "&1Egy csont..."
   '14':
     # material data of the item
     materialData: "358"
@@ -173,13 +173,13 @@ items:
     displayName: "&1Kincses térkép"
     lore:
     - ""
-    - "Kíváncsi vagyok hová vezet..."
+    - "Kíváncsi vagyok, hogy hova vezet..."
   '15':
     materialData: "35:13"
     displayName: "&1Zöld gyapjú"
   '16':
     materialData: "35:14"
-    displayName: "&1Piros gyapjú"
+    displayName: "&1Piros Gyapjú"
   '17':
     materialData: "38"
     displayName: "&1Pipacs"
@@ -188,7 +188,7 @@ items:
     - "Gyönyörű!"
   '18':
     materialData: "40"
-    displayName: "&1Piros gomba"
+    displayName: "&1Piros Gomba"
     lore:
     - ""
     - "Ne edd meg!"
@@ -197,29 +197,29 @@ items:
     displayName: "&1TNT"
     lore:
     - ""
-    - "TNT vagyok, dinamit vagyok!"
-    - "   Nézz, ahogy felrobbanoook!!"
+    - "Mert TNT vagyok, dinamit vagyok!"
+    - "   Nézz engem felrobbanniiiiii!!"
   '20':
     materialData: "jukebox"
-    displayName: "&1Zenedoboz"
+    displayName: "&1Egy zenegép"
     lore:
     - ""
-    - "Zene a levegőben"
+    - "Zene van a levegőben"
   '21':
     materialData: "dragon_egg"
-    displayName: "&1Sárkány tojás"
+    displayName: "&1Sárkánytojás"
   '22':
     materialData: "anvil"
-    displayName: "&1Üllő"
+    displayName: "&1Egy üllő"
   '23':
     materialData: "111"
     displayName: "&1Tavirózsa"
   '24':
     materialData: "116"
-    displayName: "&1Varázsasztal"
+    displayName: "&1Varázslóasztal"
     lore:
     - ""
-    - "Ez fekete mágia!"
+    - "Ez egy vudu!"
   '25':
     materialData: "double_plant"
     displayName: "&1Napraforgó"
@@ -228,17 +228,17 @@ items:
     displayName: "&1Toll"
   '27':
     materialData: "315"
-    displayName: "&1Arany mellvért"
+    displayName: "&1Arany Mellvért"
     lore:
     - ""
-    - "Különleges!"
+    - "Díszes!"
   '28':
     materialData: "bookshelf"
     displayName: "&1Könyvespolc"
     lore:
     - ""
-    - "Olvasd el az összes könyvet, építs egy rakétát"
-    - "   és repülj el a holdra ;)"
+    - "Olvasd el az összes könyvet, építs egy rakétát,"
+    - "   és repülj a holdra ;)"
   '29':
     materialData: "cactus"
     displayName: "&1Kaktusz"
@@ -251,6 +251,6 @@ items:
     lore:
     - ""
     - "Egyszerű vaskard."
-    - "Unalmas..."
+    - "Kicsit unalmas..."
 
 
