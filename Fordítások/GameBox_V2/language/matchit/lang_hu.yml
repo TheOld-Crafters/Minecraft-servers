@@ -5,12 +5,12 @@
 game:
   econ:
     # use %cost% for the amount payed
-    payed: " &2You paid &4%cost%"
-    notEnoughMoney: " &4You do not have enough money!"
+    payed: " &2Fizettél &4%cost%&2-t"
+    notEnoughMoney: " &4Nincsen elég pénzed!"
   inventoryTitles:
     gameTitle: "&9&lMatch It    &r&a%matched%&r/&4%pairs%     &r&1%time%"
-    gameTitleStart: "&9&lMatch It    &r&1Click to start"
-    gameTitleWon: "&9&lMatch It      Won in   &r&1%time%"
+    gameTitleStart: "&9&lMatch It    &r&1Kattints a kezdéshez"
+    gameTitleWon: "&9&lMatch It      Nyertél   &r&1%time%&9&l időn belül"
 
 
 prefix: "[&3MatchIt&r]"
@@ -18,7 +18,7 @@ name: "&1MatchIt&r"
 
 
 gameHelp:
-  - '&1&lMatch the same items as fast as you can.'
+  - '&1&lPárosítsd az egyforma tárgyakat a lehető leggyorsabban.'
   - ""
-  - '&1&lA click on a cover will show the item'
-  - '  &1&lbehind it.'
+  - '&1&lEgy fedésre kattintva látod a tárgyat,'
+  - '  &1&lami mögötte van.'
