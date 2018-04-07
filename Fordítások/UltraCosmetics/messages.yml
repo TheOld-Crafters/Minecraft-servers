@@ -3,7 +3,7 @@ No-Permission: '%prefix% &c&lNincs ehhez jogod!'
 Cosmetic-Disabled: '%prefix% &c&lEz a kozmetika ki van kapcsolva!'
 Invalid-Gadget: '%prefix% &c&lÉrvénytelen kütyü!'
 Invalid-Pet: '%prefix% &c&lÉrvénytelen háziállat!'
-Invalid-Mount: '%prefix% &c&lÉrvénytelen hegy!'
+Invalid-Mount: '%prefix% &c&lÉrvénytelen hátas!'
 Invalid-Effect: '%prefix% &c&lÉrvénytelen effekt!'
 Invalid-Morph: '%prefix% &c&lÉrvénytelen morf!'
 Invalid-Hat: '%prefix% &c&lÉrvénytelen fejfedő!'
@@ -17,7 +17,7 @@ Buy-Ammo-Description: '&e&lVegyél %amount% %gadgetname% lőszert &e&l %price%$-
 Right-Click-Buy-Ammo: '&7Jobb klikk a lőszer vásárlásához.'
 Not-Enough-Money: '%prefix% &c&lNincs elég pénzed!'
 Successful-Purchase: '%prefix% &a&lSikeres vásárlás!'
-Buy-Treasure-Key: '&lKincses kulcs vásárlása'
+Buy-Treasure-Key: '&lKincseskulcs vásárlása'
 Treasure-Keys: '&7&lKincseskulcs'
 Treasure-Chests: '&6&lKincsesláda'
 Dont-Have-Key: '&4&lSzükséged van kulcsra!'
@@ -32,7 +32,7 @@ You-Won-Treasure-Chests: '%prefix% &f&lNyertél:: %name%!'
 Clear-Cosmetics: '&c&lKozmetika törlése'
 Clear-Gadget: '&c&lAktuális kütyü törlése'
 Clear-Pet: '&c&lAktuális háziállat törlése'
-Clear-Mount: '&c&lAktuális hegy törlése'
+Clear-Mount: '&c&lAktuális hátas törlése'
 Clear-Effect: '&c&lAktuális effekt törlése'
 Clear-Morph: '&c&lAktuális morf törlése'
 Clear-Hat: '&c&lAktuális fejfedő törlése'
@@ -44,7 +44,7 @@ Rename-Pet: '&c&lKlikkelj, hogy átnevezd: %petname%'
 Treasure-Chests-Loot:
   Ammo: '%ammo% %name% Lőszer'
   Pet: '%pet% háziállat'
-  Mount: '%mount% hegy'
+  Mount: '%mount% hátas'
   Effect: '%effect% effekt'
   Morph: '%morph% morf'
   Hat: '%hat% fejfedő'
@@ -57,7 +57,7 @@ Menus:
   Main-Menu: '&lFőmenü'
   Pets: '&lHáziállatok'
   Gadgets: '&lKütyük'
-  Mounts: '&lHegyek'
+  Mounts: '&lHátasok'
   Morphs: '&lMorfok'
   Hats: '&lFejfedők'
   Particle-Effects: '&lRészecske effektek'
@@ -75,340 +75,340 @@ Gadgets:
   Unequip: '%prefix% &9Levetted %gadgetname%'
   Countdown-Message: '%prefix% &c&lNem tudod használni %gadgetname% &c&l %time%-ig!'
   PaintballGun:
-    name: '&b&lPaintball Gun'
+    name: '&b&lPaintball pisztoly'
   BatBlaster:
-    name: '&7&lBat Blaster'
+    name: '&7&lDenevér vető'
   MelonThrower:
-    name: '&a&lMelon Thrower'
-    Wait-For-Finish: '%prefix% &c&lWait for your previous melon to finish exploding!'
+    name: '&a&lDinnye dobó'
+    Wait-For-Finish: '%prefix% &c&lVárd meg, míg az előző dinnye felrobban!'
   EtherealPearl:
-    name: '&5&lEthereal Pearl'
+    name: '&5&lFöldöntúli gyöngy'
   FleshHook:
-    name: '&7&lFlesh Hook'
+    name: '&7&lHús kampó'
   DiscoBall:
-    name: '&d&lDisco Ball'
-    Already-Active: '&c&lThere is already a disco ball active!'
-    Not-Space-Above: '&c&lThere is not enough space above you!'
+    name: '&d&lDiszkó labda'
+    Already-Active: '&c&lMár van aktív diszkó labdád!'
+    Not-Space-Above: '&c&lNincs elég hely feletted!'
   ColorBomb:
-    name: '&d&lColor Bomb'
+    name: '&d&lSzín bomba'
   Chickenator:
-    name: '&f&lChickenator'
+    name: '&f&lCsirkenátor'
   PortalGun:
-    name: '&c&lPortal &9&lGun'
-    No-Block-Range: '%prefix% &c&lNo BLOCKS in range!'
-    Different-Worlds: '%prefix% &c&lPortals must be in the same world!'
+    name: '&c&lPortál&9&lvető'
+    No-Block-Range: '%prefix% &c&Nincsen block a tartományban!'
+    Different-Worlds: '%prefix% &c&lA portáloknak, ugyanabban a világban kell lenniük!'
   BlizzardBlaster:
-    name: '&b&lBlizzard Blaster'
+    name: '&b&lHóvihar vető'
   ThorHammer:
-    name: '&f&lThor''s Hammer'
+    name: '&f&lThor kalapácsa'
   SmashDown:
-    name: '&c&lSmashDown'
+    name: '&c&lLezúzó'
   ExplosiveSheep:
-    name: '&4&lExplosive Sheep'
-    Already-Active: '&c&lThere is already a an explosive sheep active!'
+    name: '&4&lRobbanó bárány'
+    Already-Active: '&c&lMár van aktív robbanó bárányod!'
   AntiGravity:
-    name: '&d&lAnti Gravity'
+    name: '&d&lAntigravitáció'
   Tsunami:
-    name: '&9&lTsunami'
+    name: '&9&lCunami'
   Rocket:
-    name: '&4&lRocket'
-    Not-Enough-Space: '%prefix% &c&lNot enough space around and above you!'
-    Not-On-Ground: '%prefix% &c&lYou must be on the ground!'
-    Takeoff: '&4&lTAKEOFF!!'
+    name: '&4&lRakéta'
+    Not-Enough-Space: '%prefix% &c&lNincs elég hely, körülötted és fölötted!'
+    Not-On-Ground: '%prefix% &c&lA talajon kell lenned!'
+    Takeoff: '&4&lFELSZÁLLÁS!!'
   BlackHole:
-    name: '&1&lBlack Hole'
+    name: '&1&lFekete lyuk'
   TNT:
     name: '&4&lT&f&lN&4&lT'
   FunGun:
-    name: '&6&lFun Gun'
+    name: '&6&lMóka pisztoly'
   Parachute:
-    name: '&f&lParachute'
+    name: '&f&lEjtőernyő'
   QuakeGun:
-    name: '&5&lQuake &d&lGun'
+    name: '&5&lRázkódó &d&lpisztoly'
   GhostParty:
-    name: '&f&lGhost Party'
+    name: '&f&lSzellem parti'
   Firework:
-    name: '&c&lFirework'
+    name: '&c&lTüzijáték'
   ChristmasTree:
-    name: '&2&lChristmas Tree'
-    Click-On-Block: '%prefix% &c&lPlease click on a block!'
+    name: '&2&lKarácsonyfa'
+    Click-On-Block: '%prefix% &c&lKérlek kattints egy blockra!'
   FreezeCannon:
-    name: '&b&lFreeze Cannon'
+    name: '&b&lJégágyú'
   Snowball:
-    name: '&f&lSnowball'
+    name: '&f&lHógolyó'
   PartyPopper:
-    name: '&e&lParty Popper'
+    name: '&e&lParti puska'
   Trampoline:
-    name: '&9&lTrampoline'
-  Gadget-Ready-ActionBar: '%gadgetname% &f&lis ready!'
-  Lore: '&9Gadget'
+    name: '&9&lTrambulin'
+  Gadget-Ready-ActionBar: '%gadgetname% &f&lkészen áll!'
+  Lore: '&9Kütyüt'
 Mounts:
   DruggedHorse:
-    menu-name: '&2&lDrugged Horse'
-    entity-displayname: '&l%playername%''s drugged horse'
+    menu-name: '&2&lRészeg Ló'
+    entity-displayname: '&l%playername%' Részeg Lova'
   InfernalHorror:
-    menu-name: '&4&lInfernal Horror'
-    entity-displayname: '&l%playername%''s infernal horror'
+    menu-name: '&4&lPokoli Horror'
+    entity-displayname: '&l%playername%' Pokoli Horrorja'
   GlacialSteed:
-    menu-name: '&b&lGlacial Steed'
-    entity-displayname: '&l%playername%''s glacial steed'
+    menu-name: '&b&lGlaciális Paripa'
+    entity-displayname: '&l%playername%' Glaciális Paripája'
   WalkingDead:
-    menu-name: '&2&lWalking Dead'
-    entity-displayname: '&l%playername%''s walking dead'
+    menu-name: '&2&lSétáló Halott'
+    entity-displayname: '&l%playername%' Sétáló Halottja'
   MountOfFire:
-    menu-name: '&c&lMount of Fire'
-    entity-displayname: '&l%playername%''s mount of fire'
+    menu-name: '&c&lTűz Hátas'
+    entity-displayname: '&l%playername%' Tűz Hátasa'
   MountOfWater:
-    menu-name: '&9&lMount of Water'
-    entity-displayname: '&l%playername%''s mount of water'
+    menu-name: '&9&lVíz Hátas'
+    entity-displayname: '&l%playername%' Víz Hátasa'
   EcologistHorse:
-    menu-name: '&a&lEcologist Horse'
-    entity-displayname: '&l%playername%''s ecologist horse'
+    menu-name: '&a&lÖkológus Ló'
+    entity-displayname: '&l%playername%' Ölológus Lova'
   NyanSheep:
     menu-name: '&4&lNy&6&la&e&ln &a&lSh&b&lee&d&lp'
     entity-displayname: '&l%playername%''s nyan sheep'
   Snake:
-    menu-name: '&6&lSnake'
-    entity-displayname: '&l%playername%''s snake'
+    menu-name: '&6&lKígyó'
+    entity-displayname: '&l%playername%' Kígyója'
   Dragon:
-    menu-name: '&5&lDragon'
-    entity-displayname: '&l%playername%''s dragon'
+    menu-name: '&5&lSárkány'
+    entity-displayname: '&l%playername%' Sárkánya'
   SkySquid:
-    menu-name: '&9&lSky Squid'
-    entity-displayname: '&l%playername%''s sky squid'
+    menu-name: '&9&lÉgi Tintahal'
+    entity-displayname: '&l%playername%' Égi Tintahala'
   HypeCart:
-    menu-name: '&7&lHypeCart'
-    entity-displayname: '&l%playername%''s hypecart'
+    menu-name: '&7&lHiperautó'
+    entity-displayname: '&l%playername%' Hiperautója'
   Slime:
-    menu-name: '&a&lSlime'
-    entity-displayname: '&l%playername%''s slime'
+    menu-name: '&a&lNyálka'
+    entity-displayname: '&l%playername%' Nyálkája'
   Spider:
-    menu-name: '&8&lSpider'
-    entity-displayname: '&l%playername%''s spider'
+    menu-name: '&8&lPók'
+    entity-displayname: '&l%playername%' Pókja'
   Rudolph:
-    menu-name: '&f&lRudolp&4&lh'
-    entity-displayname: '&l%playername%''s rudolph'
+    menu-name: '&f&lRudol&4&lf'
+    entity-displayname: '&l%playername%' Rudolfa'
   MoltenSnake:
-    menu-name: '&c&lMolten Snake'
-    entity-displayname: '&l%playername%''s Molten Snake'
+    menu-name: '&c&lOlvadt Kígyó'
+    entity-displayname: '&l%playername%' Olvadt Kígyója'
   FlyingShip:
-    menu-name: '&a&lFlying Ship'
-    entity-displayname: '&l%playername%''s Flying Ship'
-  Spawn: '%prefix% &9You spawned %mountname%'
-  Despawn: '%prefix% &9You despawned %mountname%'
+    menu-name: '&a&lLéghajó'
+    entity-displayname: '&l%playername%' Léghajója'
+  Spawn: '%prefix% &9Lehívtad %mountname%'
+  Despawn: '%prefix% &9Elküldted %mountname%'
 Particle-Effects:
-  Summon: '%prefix% &9You summoned %effectname%'
-  Unsummon: '%prefix% &9You unsummoned %effectname%'
+  Summon: '%prefix% &9Megidézted %effectname%'
+  Unsummon: '%prefix% &9Eltüntetted %effectname%'
   RainCloud:
-    name: '&9&lRain Cloud'
+    name: '&9&lEsőfelhő'
   SnowCloud:
-    name: '&f&lSnow Cloud'
+    name: '&f&lHófelhő'
   BloodHelix:
-    name: '&4&lBlood Helix'
+    name: '&4&lVér Spirál'
   FrostLord:
-    name: '&b&lFrost Lord'
+    name: '&b&lJeges Úr'
   FlameRings:
-    name: '&c&lFlame Rings'
+    name: '&c&lTűzgyűrűk'
   GreenSparks:
-    name: '&a&lGreen Sparks'
+    name: '&a&lZöld Szikrák'
   InLove:
-    name: '&c&lIn Love'
+    name: '&c&lSzerelemben'
   FrozenWalk:
-    name: '&b&lFrozen Walk'
+    name: '&b&lJeges Séta'
   Enchanted:
-    name: '&7&lEnchanted'
+    name: '&7&lVarázslatos'
   Music:
-    name: '&9&lMusic'
+    name: '&9&lZene'
   Inferno:
-    name: '&4&lInferno'
+    name: '&4&lPokol'
   AngelWings:
-    name: '&f&lAngel Wings'
+    name: '&f&lAngyal Szárnyak'
   SuperHero:
-    name: '&4&lSuper Hero'
+    name: '&4&lSzuperhős'
   SantaHat:
-    name: '&4&lSanta &f&lHat'
+    name: '&4&lTélapó &f&lSapka'
   CrushedCandyCane:
-    name: '&4&lCrushed &f&lCandy &4&lCane'
+    name: '&4&lTörött &f&lCukor &4&lVessző'
   EnderAura:
-    name: '&d&lEnder Aura'
+    name: '&d&lBevégző Aura'
   FlameFairy:
-    name: '&6&lFlame Fairy'
+    name: '&6&lTűz tündér'
 Pets:
   Piggy:
-    menu-name: '&d&lPiggy'
-    entity-displayname: '&l%playername%''s piggy'
+    menu-name: '&d&lMalacka'
+    entity-displayname: '&l%playername%' Malackája'
   Sheep:
-    menu-name: '&f&lSheep'
-    entity-displayname: '&l%playername%''s sheep'
+    menu-name: '&f&lBárány'
+    entity-displayname: '&l%playername%' Báránya'
   EasterBunny:
-    menu-name: '&6&lEaster Bunny'
-    entity-displayname: '&l%playername%''s easter bunny'
+    menu-name: '&6&lHúsvéti Nyuszi'
+    entity-displayname: '&l%playername%' Húsvéti Nyuszija'
   Cow:
-    menu-name: '&c&lCow'
-    entity-displayname: '&l%playername%''s cow'
+    menu-name: '&c&lTehén'
+    entity-displayname: '&l%playername%' Tehene'
   Kitty:
-    menu-name: '&9&lKitty'
-    entity-displayname: '&l%playername%''s kitty'
+    menu-name: '&9&lCica'
+    entity-displayname: '&l%playername%' Cicája'
   Dog:
-    menu-name: '&7&lDog'
-    entity-displayname: '&l%playername%''s dog'
+    menu-name: '&7&lKutya'
+    entity-displayname: '&l%playername%' Kutyája'
   Chick:
-    menu-name: '&e&lChick'
-    entity-displayname: '&l%playername%''s chick'
+    menu-name: '&e&lCsibe'
+    entity-displayname: '&l%playername%' Csibéje'
   Wither:
     menu-name: '&8&lWither'
-    entity-displayname: '&l%playername%''s wither'
+    entity-displayname: '&l%playername%' Witherje'
   Pumpling:
     menu-name: '&6&lPumpling'
-    entity-displayname: '&l%playername%''s pumpling'
+    entity-displayname: '&l%playername%' pumplingja'
   CompanionCube:
-    menu-name: '&d&lCompanion Cube'
-    entity-displayname: '&l%playername%''s cube'
+    menu-name: '&d&lTárs Kocka'
+    entity-displayname: '&l%playername%' Kockája'
   ChristmasElf:
-    menu-name: '&a&lChristmas Elf'
-    entity-displayname: '&l%playername%''s Christmas elf'
+    menu-name: '&a&lKarácsonyi Manó'
+    entity-displayname: '&l%playername%' Karácsonyi Manója'
   Mooshroom:
-    menu-name: '&4&lMooshroom'
-    entity-displayname: '&l%playername%''s Mooshroom'
+    menu-name: '&4&lGombatehén'
+    entity-displayname: '&l%playername%' Gombatehene'
   IronGolem:
-    menu-name: '&7&lIronGolem'
-    entity-displayname: '&l%playername%''s IronGolem'
+    menu-name: '&7&lVasgólem'
+    entity-displayname: '&l%playername%' Vasgólemje'
   Snowman:
-    menu-name: '&f&lSnowman'
-    entity-displayname: '&l%playername%''s Snowman'
+    menu-name: '&f&lHóember'
+    entity-displayname: '&l%playername%' Hóemberje'
   Villager:
-    menu-name: '&a&lVillager'
-    entity-displayname: '&l%playername%''s Villager'
+    menu-name: '&a&lFalusi'
+    entity-displayname: '&l%playername%' Falusija'
   Bat:
-    menu-name: '&8&lBat'
-    entity-displayname: '&l%playername%''s Bat'
+    menu-name: '&8&lDenevér'
+    entity-displayname: '&l%playername%' Denevérje'
   PolarBear:
-    menu-name: '&b&lPolarBear'
-    entity-displayname: '&l%playername%''s PolarBear'
+    menu-name: '&b&lJegesmedve'
+    entity-displayname: '&l%playername%' Jegesmedvéje'
   Llama:
-    menu-name: '&7&lLlama'
-    entity-displayname: '&l%playername%''s Llama'
+    menu-name: '&7&lLáma'
+    entity-displayname: '&l%playername%' Lámája'
   Parrot:
-    menu-name: '&a&lParrot'
-    entity-displayname: '&l%playername%''s Parrot'
-  Spawn: '%prefix% &9You spawned %petname%'
-  Despawn: '%prefix% &9You despawned %petname%'
+    menu-name: '&a&lPapagály'
+    entity-displayname: '&l%playername%' Papagálya'
+  Spawn: '%prefix% &9Megidézted %petname%'
+  Despawn: '%prefix% &9Elküldted %petname%'
 Morphs:
   Blaze:
-    name: '&6&lBlaze'
-    skill: '&eCrouch&7 to: &aFly'
+    name: '&6&lŐrláng'
+    skill: '&eGuggolj&7 a: &areüléshez'
   Chicken:
-    name: '&f&lChicken'
-    skill: '&eCrouch&7 to: &aLay eggs'
+    name: '&f&lCsirke'
+    skill: '&eGuggolj&7 hogy: &alehelyezz tojásokat'
   Slime:
-    name: '&a&lSlime'
-    skill: '&eCrouch&7 to: &aBounce'
+    name: '&a&lNyálka'
+    skill: '&eGuggolj&7 az: &aütközéshez'
   Pig:
-    name: '&d&lPig'
-    skill: '&eCollide&7 to: &aBounce Players'
+    name: '&d&lMalac'
+    skill: '&eÜtközz&7 hogy: &avisszpattanj játékosokról'
   Enderman:
-    name: '&5&lEnderman'
-    skill: '&eDouble Jump&7 to: &aTeleport'
+    name: '&5&lBevégző'
+    skill: '&eDupla ugrás&7 a: &ateleportáláshoz'
   Bat:
-    name: '&8&lBat'
-    skill: '&eDouble Jump&7 to: &aFlap'
+    name: '&8&lDenevér'
+    skill: '&eDupla ugrás&7 a: &alebegéshez'
   Creeper:
     name: '&a&lCreeper'
-    skill: '&eCrouch&7 to: &aDetonate'
-    charging: '&a&lCharging: %chargelevel%/100'
-    release-to-explode: '&f&lRelease to explode!'
+    skill: '&eGuggolj&7 a: &arobbanáshoz'
+    charging: '&a&lTöltés: %chargelevel%/100'
+    release-to-explode: '&f&lRobbanásra kész!'
   Snowman:
-    name: '&f&lSnowman'
-    skill: '&eLeft Click&7 to: &aThrow Snowball'
-  Morph: '%prefix% &9You morphed into %morphname%'
-  Unmorph: '%prefix% &9You unmorphed from %morphname%'
+    name: '&f&lHóember'
+    skill: '&eBal klikk&7 a: &aa hógolyó eldobásához'
+  Morph: '%prefix% &9Átváltoztál %morphname%-ra/re'
+  Unmorph: '%prefix% &9Vissza változtál %morphname%-ból/ből'
   WitherSkeleton:
-    name: '&8&lWither Skeleton'
-    skill: '&eSneak&7 to: &aBone Bomb'
+    name: '&8&lWither Csontváz'
+    skill: '&eLopakodj&7 a: &acsontbombához'
   ElderGuardian:
-    name: '&8&lElder Guardian'
-    skill: '&eLeft-Click&7 to: &aLaser'
+    name: '&8&lVén örző'
+    skill: '&eBal klikk&7 a: &alézerhez'
   Cow:
-    name: '&8&lCow'
-    skill: '&eLeft-Click&7 to: &aMoo'
+    name: '&8&lTehén'
+    skill: '&eBal klikk&7 a: &amúhoz'
   Sheep:
-    name: '&f&lSheep'
-    skill: '&eLeft-Click&7 to: &aChange Colors'
+    name: '&f&lBárány'
+    skill: '&eBal klikkk&7 a: &aSzínváltáshoz'
   Mooshroom:
-    name: '&c&lMooshroom'
-    skill: '&eCrouch&7 to: &aSoup Throw'
+    name: '&c&lGombatehén'
+    skill: '&eGuggolj&7 a: &aleves dobáshoz'
   Villager:
-    name: '&a&lVillager'
-    skill: '&eLeft-Click&7 to: &aEmerald Throw'
+    name: '&a&lFalusi'
+    skill: '&eBal klikk&7 a: &asmaragd dobáshoz'
   Witch:
-    name: '&5&lWitch'
-    skill: '&eLEft-Click&7 to: &aPotion Throw'
+    name: '&5&lBoszorkány'
+    skill: '&eBal klikk&7 a: &abájital dobáshoz'
   PolarBear:
-    name: '&f&lPolarBear'
-    skill: '&eLeft-Click&7 to: &aBlizzard'
+    name: '&f&lJegesmedve'
+    skill: '&eBal klikk&7 a: &ahóviharhoz'
   Llama:
-    name: '&3&lLlama'
-    skill: '&eLeft-Click&7 to: &aSpit'
+    name: '&3&lLáma'
+    skill: '&eBal klikk&7 a: &aköpéshez'
   Parrot:
-    name: '&a&lParrot'
-    skill: '&eDouble Jump&7 to: &aFlap'
+    name: '&a&lPapagáj'
+    skill: '&eDupla ugrás&7 a: &alebegéshez'
 Hats:
-  Equip: '%prefix% &9You equipped %hatname% &9hat!'
-  Unequip: '%prefix% &9You unequipped %hatname% &9hat!'
+  Equip: '%prefix% &9Felvetted a %hatname% &9sapkát!'
+  Unequip: '%prefix% &9Levetted a %hatname% &9sapkát!'
   Astronaut:
-    Name: '&7&lAstronaut'
+    Name: '&7&lAsztronauta'
   Scared:
-    Name: '&4&lScared'
+    Name: '&4&lIjedt'
   Angel:
-    Name: '&f&lAngel'
+    Name: '&f&lAngyal'
   Embarassed:
-    Name: '&7&lEmbarassed'
+    Name: '&7&lZavart'
   Kissy:
-    Name: '&c&lKissy'
+    Name: '&c&lCsókos'
   Sad:
-    Name: '&9&lSad'
+    Name: '&9&lSzomorú'
   Cool:
-    Name: '&6&lCool'
+    Name: '&6&lKirály'
   Surprised:
-    Name: '&4&lSurprised'
+    Name: '&4&lMeglepődött'
   Dead:
-    Name: '&8&lDead'
+    Name: '&8&lHalott'
   Crying:
-    Name: '&9&lCrying'
+    Name: '&9&lSíró'
   BigSmile:
-    Name: '&6&lBigSmile'
+    Name: '&6&lNagy mosoly'
   Wink:
-    Name: '&e&lWink'
+    Name: '&e&lKacsintós'
   Derp:
-    Name: '&3&lDerp'
+    Name: '&3&lOstobaság'
   Smile:
-    Name: '&e&lSmile'
+    Name: '&e&lMosoly'
   Iron:
-    Name: '&7&lIron'
+    Name: '&7&lVas'
   Gold:
-    Name: '&e&lGold'
+    Name: '&e&lArany'
   Diamond:
-    Name: '&b&lDiamond'
+    Name: '&b&lGyémánt'
   CommandBlock:
-    Name: '&7&lCommand Block'
+    Name: '&7&lParancs Block'
   Music:
-    Name: '&9&lMusic'
+    Name: '&9&lZene'
   Squid:
-    Name: '&3&lSquid'
+    Name: '&3&lTintahal'
   Chicken:
-    Name: '&f&lChicken'
+    Name: '&f&lCsirke'
   Blaze:
-    Name: '&6&lBlaze'
+    Name: '&6&lŐrláng'
   Piston:
-    Name: '&7&lPiston'
+    Name: '&7&lDugattyú'
   Sheep:
-    Name: '&f&lSheep'
+    Name: '&f&lBárány'
   Pig:
-    Name: '&d&lPig'
+    Name: '&d&lMalac'
   Golem:
-    Name: '&7&lGolem'
+    Name: '&7&lGólem'
   Enderman:
-    Name: '&5&lEnderman'
+    Name: '&5&lBevégző'
   Mario:
     Name: '&4&lMario'
   Luigi:
@@ -416,69 +416,69 @@ Hats:
   Batman:
     Name: '&8&lBatman'
   Chest:
-    Name: '&6&lChest'
+    Name: '&6&lLáda'
   Skull:
-    Name: '&f&lSkull'
+    Name: '&f&lKoponya'
   JackOLantern:
-    Name: '&6&lJack-O''-Lantern'
+    Name: '&6&lTöklámpás'
   Ghost:
-    Name: '&f&lGhost'
+    Name: '&f&lSzellem'
   ScaryClown:
-    Name: '&4&lScary Clown'
+    Name: '&4&lIjesztő bohóc'
   Santa:
-    Name: '&4&lSanta'
+    Name: '&4&lTélapó'
   Snowman:
-    Name: '&f&lSnowman'
+    Name: '&f&lHóember'
   Present:
-    Name: '&c&lPresent'
+    Name: '&c&lAjándék'
   Elf:
-    Name: '&a&lElf'
+    Name: '&a&lManó'
   Bedrock:
     Name: '&8&lBedrock'
   Bread:
-    Name: '&f&lBread'
+    Name: '&f&lKenyér'
   Cheese:
-    Name: '&e&lCheese'
+    Name: '&e&lSajt'
   Pancakes:
-    Name: '&f&lPancakes'
+    Name: '&f&lPalacsinta'
   Cake:
-    Name: '&c&lCake'
+    Name: '&c&lTorta'
   Cookie:
-    Name: '&6&lCookie'
+    Name: '&6&lSüti'
   CandyCane:
-    Name: '&c&lCandy &f&lCane'
+    Name: '&c&lCukor &f&lVessző'
   Chocolate:
-    Name: '&a&lChocolate'
+    Name: '&a&lCsokoládé'
   WhiteChocolate:
-    Name: '&f&lWhite Chocolate'
+    Name: '&f&lFehér Csokoládé'
   Apple:
-    Name: '&4&lApple'
+    Name: '&4&lAlma'
   Melon:
-    Name: '&a&lMelon'
+    Name: '&a&lDinnye'
   CarvedPumpkin:
-    Name: '&6&lCarved Pumpkin'
+    Name: '&6&lFaragott Tök'
   Strawberry:
-    Name: '&c&lStrawberry'
+    Name: '&c&lSzamóca'
   Coconut:
-    Name: '&f&lCoconut'
+    Name: '&f&lKókusz'
   Taco:
     Name: '&e&lTaco'
   Bacon:
-    Name: '&f&lBacon'
+    Name: '&f&lSzalonna'
   Fries:
-    Name: '&6&lFries'
+    Name: '&6&lSült'
   Hamburger:
     Name: '&6&lHamburger'
   Popcorn:
     Name: '&6&lPopcorn'
   WhiteDonut:
-    Name: '&f&lWhite Donut'
+    Name: '&f&lFehér Fánk'
   PinkDonut:
-    Name: '&d&lPink Donut'
+    Name: '&d&lRózsaszín fánk'
   ChocolateDonut:
-    Name: '&a&lChocolate Donut'
+    Name: '&a&lCsokoládé Fánk'
   Pie:
-    Name: '&4&lPie'
+    Name: '&4&lPite'
   A:
     Name: '&6&lA'
   B:
@@ -531,82 +531,82 @@ Hats:
     Name: '&6&lY'
   Z:
     Name: '&4&lZ'
-  Must-Remove-Hat: '%prefix% &c&lYou must remove your helmet to equip a hat!'
+  Must-Remove-Hat: '%prefix% &c&lLe kell venned a sisakot, mielőtt fejfedőt vennél fel!'
 Suits:
   Rave:
-    helmet-name: '&b&lR&a&la&e&lv&6&le &f&lHelmet'
-    chestplate-name: '&b&lR&a&la&e&lv&6&le &f&lChestplate'
-    leggings-name: '&b&lR&a&la&e&lv&6&le &f&lLeggings'
-    boots-name: '&b&lR&a&la&e&lv&6&le &f&lBoots'
+    helmet-name: '&b&lB&a&lu&e&ll&6&li &f&lSisak'
+    chestplate-name: '&b&lB&a&lu&e&ll&6&li &f&lMellvért'
+    leggings-name: '&b&lB&a&lu&e&ll&6&li &f&lLábszárvédő'
+    boots-name: '&b&lB&a&lu&e&ll&6&li &f&lCipő'
   Astronaut:
-    helmet-name: '&f&lAstronaut &f&lHelmet'
-    chestplate-name: '&f&lAstronaut &f&lChestplate'
-    leggings-name: '&f&lAstronaut &f&lLeggings'
-    boots-name: '&f&lAstronaut &f&lBoots'
+    helmet-name: '&f&lAsztronauta &f&lSisak'
+    chestplate-name: '&f&lAsztronauta &f&lMellvért'
+    leggings-name: '&f&lAsztronauta &f&lLábszárvédő'
+    boots-name: '&f&lAsztronauta &f&lCipő'
   Diamond:
-    helmet-name: '&b&lDiamond &f&lHelmet'
-    chestplate-name: '&b&lDiamond &f&lChestplate'
-    leggings-name: '&b&lDiamond &f&lLeggings'
-    boots-name: '&b&lDiamond &f&lBoots'
+    helmet-name: '&b&lGyémánt &f&lSisak'
+    chestplate-name: '&b&lGyémánt &f&lMellvért'
+    leggings-name: '&b&lGyémánt &f&lLábszárvédő'
+    boots-name: '&b&lGyémánt &f&lCipő'
   Santa:
-    helmet-name: '&4&lSanta &f&lHelmet'
-    chestplate-name: '&4&lSanta &f&lChestplate'
-    leggings-name: '&4&lSanta &f&lLeggings'
-    boots-name: '&4&lSanta &f&lBoots'
-  Equip: '%prefix% &9You equipped %suitname%!'
-  Unequip: '%prefix% &9You unequipped %suitname%!'
-  Suit-Part-Lore: '&9Suits Part'
+    helmet-name: '&4&lTélapó &f&lSisak'
+    chestplate-name: '&4&lTélapó &f&lMellvért'
+    leggings-name: '&4&lTélapó &f&lLábszárvédő'
+    boots-name: '&4&lTélapó &f&lCipő'
+  Equip: '%prefix% &9Felvetted a %suitname%-t!'
+  Unequip: '%prefix% &9Levetted a %suitname%-t!'
+  Suit-Part-Lore: '&9Ruha darabok'
 Emotes:
-  Equip: '%prefix% &9You equipped %emotename%'
-  Unequip: '%prefix% &9You unequipped %emotename%'
+  Equip: '%prefix% &9Felvetted a %emotename%-t'
+  Unequip: '%prefix% &9Levetted a %emotename%-t'
   Cry:
-    Name: '&9&lCry'
+    Name: '&9&lSír'
   Angry:
-    Name: '&c&lAngry'
+    Name: '&c&lMérges'
   Happy:
-    Name: '&e&lHappy'
+    Name: '&e&lBoldog'
   Cheeky:
-    Name: '&6&lCheeky'
+    Name: '&6&lPimasz'
   Love:
-    Name: '&4&lLove'
+    Name: '&4&lSzerelmes'
   DealWithIt:
-    Name: '&7&lDeal With it'
+    Name: '&7&lDolgozd fel'
   Cool:
-    Name: '&9&lCool'
+    Name: '&9&lKirály'
   Surprised:
-    Name: '&6&lSurprised'
+    Name: '&6&lMeglepődött'
   Wink:
-    Name: '&a&lWink'
-  Must-Remove-Helmet: '%prefix% &c&lYou must remove your helmet to equip an emote!'
+    Name: '&a&lKacsint'
+  Must-Remove-Helmet: '%prefix% &c&lElőször le kell venned a sisakot, hogy használd a hangulatot!'
 Menu:
-  Gadgets: '&9&lGadgets'
-  Particle-Effects: '&b&lParticle Effects'
-  Mounts: '&6&lMounts'
-  Pets: '&a&lPets'
-  Morphs: '&2&lMorphs'
-  Hats: '&b&lHats'
-  Suits: '&c&lSuits'
-  Emotes: '&e&lEmotes'
-  Main-Menu: '&c&lMain Menu'
-  Activate: '&b&lActivate'
-  Deactivate: '&c&lDeactivate'
-  Spawn: '&b&lSpawn'
-  Despawn: '&c&lDespawn'
-  Summon: '&b&lSummon'
-  Unsummon: '&c&lUnsummon'
-  Equip: '&b&lEquip'
-  Unequip: '&c&lUnequip'
-  Morph: '&b&lMorph into'
-  Unmorph: '&c&lUnmorph from'
-  Previous-Page: '&c&lPrevious Page'
-  Next-Page: '&a&lNext Page'
-Enabled-SelfMorphView: '%prefix% &9you enabled self view for morphs!'
-Disabled-SelfMorphView: '%prefix% &9you disabled self view for morphs!'
-Enabled-Gadgets: '%prefix% &9you enabled gadgets!'
-Disabled-Gadgets: '%prefix% &9you disabled gadgets!'
-Not-Allowed-From-Console: '&c&lThis can''t be executed from console!'
-World-Disabled: '%prefix% &c&lCosmetics are disabled in this world!'
-Disabled-Command-Holding-Message: '%prefix% &c&lYou can''t use this command while
-  holding cosmetics!'
-Disabled-Command-Wearing-Message: '%prefix% &c&lYou can''t use this command while
-  wearing cosmetics!'
+  Gadgets: '&9&lKütyük'
+  Particle-Effects: '&b&lRészecske effektek'
+  Mounts: '&6&lHátasok'
+  Pets: '&a&lHáziállatok'
+  Morphs: '&2&lMorfok'
+  Hats: '&b&lSapkák'
+  Suits: '&c&lRuhák'
+  Emotes: '&e&lHangulatok'
+  Main-Menu: '&c&lFőmenü'
+  Activate: '&b&lAktív'
+  Deactivate: '&c&lNem aktív'
+  Spawn: '&b&lLehív'
+  Despawn: '&c&lElkült'
+  Summon: '&b&lMegidéz'
+  Unsummon: '&c&lEltüntet'
+  Equip: '&b&lFelvenni'
+  Unequip: '&c&lLevenni'
+  Morph: '&b&lÁtváltozni ezzé'
+  Unmorph: '&c&lVisszaváltozni ebből'
+  Previous-Page: '&c&lElőző oldal'
+  Next-Page: '&a&lKövetkező oldal'
+Enabled-SelfMorphView: '%prefix% &9Engedélyezted a saját nézeted a morfnak!'
+Disabled-SelfMorphView: '%prefix% &Letiltottad a saját nézeted a morfnak!'
+Enabled-Gadgets: '%prefix% &9Engedélyezted a kütyüket!'
+Disabled-Gadgets: '%prefix% &9Letiltottad a kütyüket!'
+Not-Allowed-From-Console: '&c&lEzt nem lehet konzollal végrehajtani!'
+World-Disabled: '%prefix% &c&lA kozmetikák le vannak tiltva ebben a világban!'
+Disabled-Command-Holding-Message: '%prefix% &c&lNem használhatod ezt a parancsot, 
+  amíg tart a kozmetika!'
+Disabled-Command-Wearing-Message: '%prefix% &c&lNem használhatod ezt a parancsot,
+  amíg használod a kozmetikát!'
