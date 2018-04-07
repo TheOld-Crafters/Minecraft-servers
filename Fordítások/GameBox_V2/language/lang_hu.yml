@@ -165,7 +165,7 @@ others:
   invitationClickMessage:
     preText: ""
     preColor: "green"
-    clickText: " Kattintson ide a közvetlen meghíváshoz"
+    clickText: " Kattints ide a közvetlen meghíváshoz"
     clickColor: "blue"
     hoverText: "Vigyél a meghívásra"
     hoverColor: "gold"
