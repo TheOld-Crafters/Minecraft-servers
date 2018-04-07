@@ -23,7 +23,7 @@ gameBox:
       displayName: "&aKönnyű"
       lore:
       - ""
-      - "&1Bánya: &r5"
+      - "&1Akna: &r5"
       - "&1Ár: &45"
       - "&1Jutalom: &a7"
       mines: 5
@@ -38,7 +38,7 @@ gameBox:
       displayName: "&6Normal"
       lore:
       - ""
-      - "&1Bánya: &r8"
+      - "&1Akna: &r8"
       - "&1Ár: &410"
       - "&1Jutalom: &a15"
       mines: 8
@@ -50,7 +50,7 @@ gameBox:
       displayName: "&c&lVerseny"
       lore:
       - ""
-      - "&1Bánya: &r13"
+      - "&1Akna: &r13"
       - "&cKerülj fel a &ltop listára"
       - "&aSok Sikert"
       - ""
@@ -104,5 +104,5 @@ materials:
 displaynames:
   cover: "&bTakarás"
   warning: "&cFigyelmeztetés"
-  mine: "&4Bánya"
+  mine: "&4Akna"
   flag: "&1Zászló"
