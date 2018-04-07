@@ -13,8 +13,8 @@ game:
     gameTitleWon: "&9&lPárkereső      Nyertél ennyi idő alatt:   &r&1%time%"
 
 
-prefix: "[&3MatchIt&r]"
-name: "&1MatchIt&r"
+prefix: "[&3Párkereső&r]"
+name: "&1Párkereső&r"
 
 
 gameHelp:
