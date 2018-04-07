@@ -15,7 +15,7 @@ gameBox:
     # define the Material and data for the button (format: 'material:data')
     materialData: "IRON_BLOCK"
     # display name of the button
-    displayName: "&3Battleship"
+    displayName: "&3Csatahajó"
     # lore of the button
     lore:
     - ""

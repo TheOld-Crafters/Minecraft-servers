@@ -13,7 +13,7 @@ gameBox:
     # define the Material and data for the button (format: 'material:data')
     materialData: "22"
     # display name of the button
-    displayName: "&3ConnectFour"
+    displayName: "&3Amőba"
     # lore of the button
     lore:
     - ""
