@@ -1,24 +1,24 @@
 # use & for colors
 #   placeholders will be listed in front of the keys
-
+# Fordította: sizarra, 2018 
 # messages and inventory titles directly related to the game
 game:
   econ:
     # use %cost% for the amount payed
-    payed: " &2You paid &4%cost%"
-    notEnoughMoney: " &4You do not have enough money!"
+    payed: " &2Fizettél &4%cost%-t"
+    notEnoughMoney: " &4Nincs elég pénzed!"
   closedGame: " &2You have a current score of &6%score%"
   inventoryTitles:
     # %score% uses short names for high numbers. For longer names use %score_long%
     gameTitle: "&9&lCC   &r&1%score% cookies"
   cookieName: "&1&lCookie"
-  ovenName: "&a&lYour Cookie Production"
+  ovenName: "&a&lA saját süti termelésed"
   # for longer names of high numbers use %cookies_per_second_long% and %cookies_per_click_long%
   ovenLore:
     - ""
     - '&1You currently produce'
-    - "  &2%cookies_per_second% &1cookies per second"
-    - "  &2%cookies_per_click% &1cookies per click"
+    - "  &2%cookies_per_second% &1Sütik másodpercenként"
+    - "  &2%cookies_per_click% &1Sütik klikkeléskor"
 
 
 prefix: "[&3CookieClicker&r]"
@@ -26,15 +26,15 @@ name: "&1CookieClicker&r"
 
 
 gameHelp:
-  - '&1&lClick on the cookie to produce cookies.'
+  - '&1&lKlikkelj a sütire, a süti készítéshez.'
   - ""
-  - '&1&lFor cookies you can buy buildings,'
-  - '  &1&lthat automatically produce more cookies'
+  - '&1&lA sütikből, épületeket tudsz vásárolni,'
+  - '  &1&lamelyek több sütit gyártanak.'
   - ""
-  - '&1&lYou can also unlock and buy upgrades.'
+  - '&1&lFeloldhatsz és vásárolhatsz fejlesztéseket.'
   - ""
-  - '"&oThe most addictive cookie game"'
-  - '            - Your Grandma'
+  - '"&oA legerősebb függőséget okozó játék!"'
+  - '            - A nagymamád'
 
 
 # If you would like to use longer names for high numbers attach 'long' to the placeholders
@@ -46,71 +46,71 @@ buildings:
   # The following lore is used for all buildings
   # placeholders: cost, name, cookies_per_second_per_item, cookies_per_second
   buildingLore:
-    - "Buy one for &r&c%cost%&5&o (left click)"
+    - "Egy vásárlása ennyiért &r&c%cost%&5&o (Bal klikk)"
     - ""
     - '&1You have &r&2%count%&1 %name%(s)'
-    - "  &1Each produces &r&2%cookies_per_second_per_item%&1 cookies per second"
-    - "  &1Total production: &r&2%cookies_per_second%&1"
+    - "  &1Termelsz &r&2%cookies_per_second_per_item%&1 sütit másodpercenként"
+    - "  &1Teljes termelés: &r&2%cookies_per_second%&1"
     - ""
     # here the building specific description is added
   cursor:
-    name: "Cursor"
+    name: "Kurzor"
     description:
-      - '&5&o"Autoclicks once every 10 seconds."'
+      - '&5&o"Autómataklikkelés minden 10. másodpercbe."'
   grandma:
-    name: "Grandma"
+    name: "Nagyi"
     description:
-      - '&5&o"A nice grandma to bake more cookies."'
+      - '&5&o"Egy szép nagyi, aki több sütit süt."'
   farm:
     name: "Farm"
     description:
-      - '&5&o"Grows cookie plants from cookie seeds."'
+      - '&5&o"Süti növényeket növeszt, süti magból."'
   mine:
-    name: "Mine"
+    name: "Bánya"
     description:
-      - '&5&o"Mines out cookie dough and chocolate chips."'
+      - '&5&o"Süti pénzt és csokoládé chipset bányászik."'
   factory:
-    name: "Factory"
+    name: "Gyár"
     description:
-      - '&5&o"Produces large quantities of cookies."'
+      - '&5&o"Nagy mennyiségben gyárt sütiket."'
   bank:
     name: "Bank"
     description:
-      - '&5&o"Generates cookies from interest."'
+      - '&5&o"Sütiket gyárt a kamatból."'
   temple:
-    name: "Temple"
+    name: "Templom"
     description:
-      - '&5&o"Full of precious, ancient chocolate."'
+      - '&5&o"Tele értékes, ősi csokoládéval."'
   wizard_tower:
-    name: "Wizard Tower"
+    name: "Varázsló torony"
     description:
-      - '&5&o"Summons cookies with magic spells."'
+      - '&5&o"Sütiket teremt, varázslattal."'
   shipment:
-    name: "Shipment"
+    name: "Szállítvány"
     description:
-      - '&5&o"Brings in fresh cookies from the cookie planet."'
+      - '&5&o"Friss sütiket szállít, a süti bolygóról."'
   alchemy_lab:
-    name: "Alchemy Lab"
+    name: "Alkímia laboratórium"
     description:
-      - '&5&o"Turns gold into cookies!"'
+      - '&5&o"Aranyból sütiket gyárt!"'
   portal:
-    name: "Portal"
+    name: "Portál"
     description:
-      - '&5&o"Opens a door to the cookieverse."'
+      - '&5&o"Ajtót nyit a sütiverzumba."'
   time_machine:
-    name: "Time Machine"
+    name: "Időgép"
     description:
-      - '&5&o"Brings cookies from the past,'
-      - '&5&o     before they were even eaten."'
+      - '&5&o"Elszállítja a sütiket,'
+      - '&5&o     mielőtt megennék azokat."'
   antimatter_condenser:
-    name: "Antimatter Condenser"
+    name: "Antianyag kondenzátor"
     description:
-      - '&5&o"Condenses the antimatter in the universe...'
-      - '&5&o     into cookies."'
+      - '&5&o"Antianyagot kondenzál az univerzumban...'
+      - '&5&o     sütivé."'
   prism:
-    name: "Prism"
+    name: "Prizma"
     description:
-      - '&5&o"Converts light itself into cookies."'
+      - '&5&o"A fényt sütivé alakítja."'
 
 
 upgrades:
@@ -120,7 +120,7 @@ upgrades:
   # with the following lines every upgrade lore begins
   #   %cost% can be used
   upgradeLore:
-    - "Price: &r&c%cost%"
+    - "Ár: &r&c%cost%"
     - ""
   # to this the other (defined below) lore parts are added
 
@@ -129,17 +129,17 @@ upgrades:
   #   use %Building% to get the name exactly as defined
   types:
     classic:
-      - "&b%Building%s are &ltwice&r&b as efficient."
+      - "&bMinden%Building% &kétszer&r&b olyan hatékony."
       - ""
     classic_mouse:
-      - "&bThe mouse and %building%s are &ltwice&r&b as efficient."
+      - "&bAz egér, és minden %building% &lkétszer&r&b olyan hatékony."
       - ""
     gain_mouse_and_other:
-      - "&bThe mouse and %building%s gain &l%gain%&r&b cookies"
+      - "&bAz egér, és minden %building% nyeresége &l%gain%&r&b süti"
       - "     &bfor each non-%building% object owned."
       - ""
     gain_mouse_per_cps: # gain a percentage of current CPS
-      - "&bClicking gains &l%gain%&r&b of your CpS.."
+      - "&bKlikkelésed másodpercenként &l%gain%&r&b nyereséget hoz."
       - ""
 
   # list of all upgrades is following
@@ -148,765 +148,759 @@ upgrades:
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Mouse upgrades (type: gain_mouse_per_cps)
     75:
-      name: "Plastic mouse"
+      name: "Műanyag egér"
       description:
-        - '&5&o"Slightly squeaky."'
+        - '&5&o"Kissé csikorgós."'
     76:
-      name: "Iron mouse"
+      name: "Vas egér"
       description:
-        - '&5&o"Click like it''s 1,349!"'
+        - '&5&o"Kattints rá!"'
     77:
-      name: "Titanium mouse"
+      name: "Titán egér"
       description:
-        - '&5&o"Heavy, but powerful."'
+        - '&5&o"Nehéz, de erős."'
     78:
       name: "Adamantium mouse"
       description:
-        - '&5&o"You could cut diamond with these."'
+        - '&5&o"Ezzel akár gyémántot is vághatsz."'
     119:
-      name: "Unobtainium mouse"
+      name: "Unobtainium egér"
       description:
-        - '&5&o"These nice mice should suffice."'
+        - '&5&o"Ezek a szép egerek elég kisegítőek lehetnek."'
     190:
-      name: "Eludium mouse"
+      name: "Eludium egér"
       description:
-        - '&5&o"I rodent do that if I were you."'
+        - '&5&o"Én rágcsáló lennék a helyedben."'
     191:
-      name: "Wishalloy mouse"
+      name: "Wishalloy egér"
       description:
-        - '&5&o"Clicking is fine and dandy,'
-        - '&5&o  but don''t smash your'
-        - '&5&o  mouse over it.'
-        - '&5&o  Get your game on. Go play."'
+        - '&5&o"Kattintása finom és remek,'
+        - '&5&o  de ne rázd'
+        - '&5&o  az egeret.'
+        - '&5&o  Szerezd meg a játékodat. Menj játszani!"'
     366:
-      name: "Fantasteel mouse"
+      name: "Fantaacél egér"
       description:
-        - '&5&o"You could be clicking using'
-        - '&5&o   your touchpad and'
-        - '&5&o   we''d benone the wiser."'
+        - '&5&o"Klikkeléskór'
+        - '&5&o   az egérpadon használnád,'
+        - '&5&o   mi sem lennénk bölcsebbek."'
     367:
-      name: "Nevercrack mouse"
+      name: "Törhetetlen egér"
       description:
-        - '&5&o"How much beefier can you'
-        - '&5&o   make a mouse until'
-        - '&5&o   it''s considered a rat?"'
+        - '&5&o"Tudsz húsos egeret készíteni'
+        - '&5&o   ami nem tekinthető'
+        - '&5&o   patkánynak?"'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Cursor upgrades
     #   the following three upgrades double the mouse and cursor efficiency (type: classic_mouse)
     0:
-      name: "Reinforced index finger"
+      name: "Megerősített mutatóujj"
       description:
-        - '&5&o"prod prod"'
+        - '&5&o"Döfés döfés"'
     1:
-      name: "Carpal tunnel prevention cream"
+      name: "Alagút szindróma megelőző krém"
       description:
-        - '&5&o"it... it hurts to click..."'
+        - '&5&o"Ettől... Ettől fájdalmas a klikkelés..."'
     2:
-      name: "Ambidextrous"
+      name: "Kétkezes"
       description:
-        - '&5&o"Look ma, both hands!"'
+        - '&5&o"Nézd már, dupla kéz!"'
 
     #  the following Cursor upgrades add gain to mouse and cursor for all non cursor buildings owned (type: gain_mouse)
     3:
-      name: "Thousand fingers"
+      name: "Ezer ujj"
       description:
-        - '&5&o"clickity"'
+        - '&5&o"Katt"'
     4:
-      name: "Million fingers"
+      name: "Millió ujj"
       description:
-        - '&5&o"clickityclickity"'
+        - '&5&o"Kattkatt"'
     5:
-      name: "Billion fingers"
+      name: "Milliárd ujj"
       description:
-        - '&5&o"clickityclickityclickity"'
+        - '&5&o"Kattkattkatt"'
     6:
-      name: "Trillion fingers"
+      name: "Billió ujj"
       description:
-        - '&5&o"clickityclickityclickityclickity"'
+        - '&5&o"Kattkattkattkatt"'
     43:
-      name: "Quadrillion fingers"
+      name: "Billiárd ujj"
       description:
-        - '&5&o"clickityclickityclickityclickityclick"'
+        - '&5&o"Kattkattkattkattkatt"'
     82:
-      name: "Quintillion fingers"
+      name: "Trillió ujj"
       description:
-        - '&5&o"man, just go click click click click click,'
-        - '&5&o     it’s real easy, man."'
+        - '&5&o"Ember, csak menj katt katt katt katt,'
+        - '&5&o     ilyen könnyű, ember."'
     109:
-      name: "Sextillion fingers"
+      name: "Trilliárd ujj"
       description:
-        - '&5&o"sometimes'
-        - '&5&othings just'
-        - '&5&oclick"'
+        - '&5&o"Néha'
+        - '&5&ominden csak'
+        - '&5&okatt."'
     188:
-      name: "Septillion fingers"
+      name: "Kvadrillió ujj"
       description:
-        - '&5&o"[cursory flavor text]"'
+        - '&5&o"[Felületes, ízes szöveg]"'
     189:
-      name: "Octillion fingers"
+      name: "Kvadrilliárd ujj"
       description:
-        - '&5&o"Turns out you &5&lcan&5&o quite put your finger on it."'
+        - '&5&o"Kiderült, hogy elég ujjat &5&ltudsz&5&o rátenni."'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Grandma upgrades (type: classic)
     7:
-      name: "Forwards from grandma"
+      name: "Előre a nagyitól"
       description:
-        - '&5&o"RE:RE:thought you''d get a kick out of this ;))"'
+        - '&5&o"Azt hittem, hogy ki akarsz rúgni. ;))"'
     8:
-      name: "Steel-plated rolling pins"
+      name: "Acélhengert gördülőcsapok"
       description:
-        - '&5&o"Just what you kneaded."'
+        - '&5&o"Csak amit gyúrtál."'
     9:
-      name: "Lubricated dentures"
+      name: "Bekent fogsorok"
       description:
-        - '&5&o"squish"'
+        - '&5&o"kilövellés"'
     44:
-      name: "Prune juice"
+      name: "Szilvalé"
       description:
-        - '&5&o"Gets me going."'
+        - '&5&o"Megengedem."'
     110:
-      name: "Double-thick glasses"
+      name: "Dupla vastagú üvegek"
       description:
-        - '&5&o"Oh... so THAT''s what I''ve been baking."'
+        - '&5&o"óh... szóval EZ az amit sütöttem.."'
     192:
-      name: "Aging agents"
+      name: "Öregedő anyagok"
       description:
-        - '&5&o"Counter-intuitively, grandmas have the'
-        - '&5&o    uncanny ability to become more'
-        - '&5&o    powerful the older they get."'
+        - '&5&o"Ellen-ösztönös, nagymamáknak'
+        - '&5&o    van egy szörnyű képességük, hogy erősebbé'
+        - '&5&o    váljanak de egyben idősebbé is."'
     294:
-      name: "Xtreme walkers"
+      name: "Extrém gyalogosok"
       description:
-        - '&5&o"Complete with flame decals and a'
-        - '&5&o    little horn that goes "toot"."'
+        - '&5&o"Lángoló matricák'
+        - '&5&o    amik, kicsit sípolnak"."'
     307:
-      name: "The Unbridling"
+      name: "A féktelen"
       description:
-        - '&5&o"It might be a classic tale of bad'
-        - '&5&o    parenting, but let''s see where'
-        - '&5&o    grandma is going with this."'
+        - '&5&o"Lehet, hogy a klasszikus történet a rossz'
+        - '&5&o    nevelésről, de nézzük meg, hogy'
+        - '&5&o    jár a nagyi ezzel."'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Farm upgrades (type: classic)
     10:
-      name: "Cheap hoes"
+      name: "Olcsó kapák"
       description:
-        - '&5&o"Rake in the dough!"'
+        - '&5&o"Gereblyézés a veteményes közt!"'
     11:
-      name: "Fertilizer"
+      name: "Trágya"
       description:
-        - '&5&o"It''s chocolate, I swear."'
+        - '&5&o"Ez csokoládé, esküszöm!"'
     12:
-      name: "Cookie trees"
+      name: "Süti fák"
       description:
-        - '&5&o"A relative of the breadfruit."'
+        - '&5&o"Ez a kenyérgyümölcs rokona."'
     45:
-      name: "Genetically-modified cookies"
+      name: "Genetikailag módosított sütik
       description:
-        - '&5&o"All-natural mutations."'
+        - '&5&o"Csak természetes mutáció."'
     111:
-      name: "Gingerbread scarecrows"
+      name: "Mézeskalács madárijesztő"
       description:
-        - '&5&o"Staring at your crops with mischievous glee."'
+        - '&5&o"Ragyogó vidámsággal néz a növényekre."'
     193:
-      name: "Pulsar sprinklers"
+      name: "Pulzár locsolók"
       description:
-        - '&5&o"There''s no such thing as over-watering.'
-        - '&5&o    The moistest is the bestest."'
+        - '&5&o"Nincs olyan, hogy túlöntözés.'
+        - '&5&o    A legvékonyabb, a legjobb"'
     295:
-      name: "Fudge fungus"
+      name: "Növesztő Gomba"
       description:
-        - '&5&o"A sugary parasite whose tendrils help cookie growth.'
-        - '&5&o    Please do not breathe in the spores.'
-        - '&5&o    In case of spore ingestion,'
-        - '&5&o    seek medical help within the next 36 seconds."'
+        - '&5&o"A cukros parazita, akinek a gyülölcsei segítenek a sütik növekedésében.'
+        - '&5&o    Kérlek, ne lélegezd be a spórákat.'
+        - '&5&o    Spóra lenyelése esetén,'
+        - '&5&o    kérjen orvosi segítséget, 36 másodpercen belül."'
     308:
-      name: "Wheat triffids"
+      name: "Búza triffidok"
       description:
-        - '&5&o"Taking care of crops is so much easier when your plants'
-        - '&5&o    can just walk about and help around the farm.'
-        - '&5&oDo not pet. Do not feed. Do not attempt to converse with."'
+        - '&5&o"A növények ápolása, sokkal egyszerűbb ha a növények,'
+        - '&5&o    tudnak sétálni, és segíteni a gazdaságban,.'
+        - '&5&oNe dédelgesd. Ne etesd. Ne beszélgess velük."'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Mine upgrades (type: classic)
     16:
-      name: "Sugar gas"
+      name: "Cukor gáz"
       description:
-        - '&5&o"A pink, volatile gas, found in'
-        - '&5&o    the depths of some chocolate caves."'
+        - '&5&o"Rózsaszí, párolgó gáz található,'
+        - '&5&o    mélyen, a csokoládé barlangban."'
     17:
-      name: "Megadrill"
+      name: "Megafúró"
       description:
-        - '&5&o"You''re in deep."'
+        - '&5&o"A mélyben vagy."'
     18:
-      name: "Ultradrill"
+      name: "Ultrafúró"
       description:
-        - '&5&o"Finally caved in?"'
+        - '&5&o"Végre a barlangba?"'
     47:
-      name: "Ultimadrill"
+      name: "Végső fúró"
       description:
-        - '&5&o"Pierce the heavens, etc."'
+        - '&5&o"Elfúr a mennyországig, stb."'
     113:
-      name: "H-bomb mining"
+      name: "H-bomba bányászat"
       description:
-        - '&5&o"Questionable efficiency,'
-        - '&5&o    but spectacular nonetheless."'
+        - '&5&o"Kérdéses hatékonyság,'
+        - '&5&o    de mindazonáltal látványos."'
     195:
-      name: "Coreforge"
+      name: "Magkohászat"
       description:
-        - '&5&o"You''ve finally dug a tunnel down to'
-        - '&5&o     the Earth''s core.'
-        - '&5&o     It''s pretty warm down here."'
+        - '&5&o"Végre, ástál egy alagutat'
+        - '&5&o     a Föld magjához.'
+        - '&5&o     Nagyon meleg van itt."'
     296:
-      name: "Planetsplitters"
+      name: "Bolygó elosztók"
       description:
-        - '&5&o"These new state-of-the-art excavators'
-        - '&5&o     have been tested on Merula,'
-        - '&5&o     Globort and Flwanza VI, among other'
-        - '&5&o     distant planets which have been'
-        - '&5&o     curiously quiet lately."'
+        - '&5&o"Ezeket az új, csúcstechnológiás gépeket'
+        - '&5&o     tesztelték a Merula-n,'
+        - '&5&o     Globort-on és a Flwanza VI-n, olyan'
+        - '&5&o     távoli bolygók között, amelyek'
+        - '&5&o     nagyon csendesek voltak."'
     309:
-      name: "Canola oil wells"
+      name: "Repceolajkút"
       description:
-        - '&5&o"A previously untapped resource,'
-        - '&5&o     canola oil permeates the underground'
-        - '&5&o     olifers which grant it its particular'
-        - '&5&o     taste and lucrative properties."'
+        - '&5&o"Egy korábban, kiaknázatlan erőforrás,'
+        - '&5&o     a repceolaj átszivárog a föld alatti'
+        - '&5&o     olajbogyóknak, amelyek különleges ízlést és'
+        - '&5&o     jövedelmező tulajdonságokat biztosítanak."'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Factory upgrades (type: classic)
     13:
-      name: "Sturdier conveyor belts"
+      name: "Keményebb szállítószallagok"
       description:
-        - '&5&o"You''re going places."'
+        - '&5&o"Te most elmész helyekre."'
     14:
-      name: "Child labor"
+      name: "Gyermeklabor"
       description:
-        - '&5&o"Cheaper, healthier workforce."'
+        - '&5&o"Olcsóbb, egészségesebb munkaerő."'
     15:
-      name: "Sweatshop"
+      name: "Verejtékbolt"
       description:
-        - '&5&o"Slackers will be terminated."'
+        - '&5&o"A laza láncok megszünnek."'
     46:
-      name: "Radium reactors"
+      name: "Rádium reaktorok"
       description:
-        - '&5&o"Gives your cookies a healthy glow."'
+        - '&5&o"Egészséges ragyogást ad a sütidnek."'
     112:
-      name: "Recombobulators"
+      name: "Rekombobulátorok"
       description:
-        - '&5&o"A major part of cookie recombobulation."'
+        - '&5&o"Nagy része a sütidnek recombobuláció."'
     194:
-      name: "Deep-bake process"
+      name: "Mély-sütéses eljárás"
       description:
-        - '&5&o"A patented process increasing cookie'
-        - '&5&o    yield two-fold for the same'
-        - '&5&o    amount of ingredients.'
-        - '&5&o    Don''t ask how, don''t take pictures,'
-        - '&5&o    and be sure to wear your'
-        - '&5&o    protective suit."'
+        - '&5&o"Egy szabadalmaztatott eljárás, amely növeli a süti'
+        - '&5&o    kétszeres hozamát ugyanazon összetevők'
+        - '&5&o    mennyiségéhez képest.'
+        - '&5&o    Ne kérdezd meg, hogyan, ne készíts képeket,'
+        - '&5&o    és győződj meg rólar'
+        - '&5&o    hogy viseled a védőöltözetet."'
     297:
-      name: "Cyborg workforce"
+      name: "Kiborg munkaerő"
       description:
-        - '&5&o"Semi-synthetic organisms don''t'
-        - '&5&o    slack off, don''t unionize, and'
-        - '&5&o    have 20% shorter lunch breaks,'
-        - '&5&o    making them ideal labor fodder."'
+        - '&5&o"A félszintetikus szervezetek nem lazulnak'
+        - '&5&o    nem veszekednek, és'
+        - '&5&o    20%-kal rövidebb ebédszüneteket tesznek,'
+        - '&5&o    így ideális munkaerőt alkotnak."'
     310:
-      name: "78-hour days"
+      name: "78 órás napok"
       description:
-        - '&5&o"Why didn''t we think of this earlier?"'
+        - '&5&o"Miért nem gondoltunk erre korábban?"'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Bank upgrades (type: classic)
     232:
-      name: "Taller tellers"
+      name: "Magasabb pénztárosok"
       description:
-        - '&5&o"Able to process a higher amount'
-        - '&5&o     of transactions. Careful though,'
-        - '&5&o     as taller tellers tell tall tales."'
+        - '&5&o"Képes nagyobb összegű tranzakciók'
+        - '&5&o     feldolgozására. Gondos azonban,'
+        - '&5&o     mivel a magasabbak mondják a magas regéket."'
     233:
-      name: "Scissor-resistant credit cards"
+      name: "Olló-ellenállású hitelkártyák"
       description:
-        - '&5&o"For those truly valued customers."'
+        - '&5&o"Az igazán értékes ügyfelek számárs."'
     234:
-      name: "Acid-proof vaults"
+      name: "Savbiztos széfek"
       description:
-        - '&5&o"You know what they say:'
-        - '&5&o    better safe than sorry."'
+        - '&5&o"Tudod mit mondanak:'
+        - '&5&o    Jobb félni, mint megijedni."'
     235:
-      name: "Chocolate coins"
+      name: "Csokoládé érmék"
       description:
-        - '&5&o"This revolutionary currency is'
-        - '&5&o    much easier to melt and form'
-        - '&5&o    into ingots - and tastes much'
-        - '&5&o    better, for a change."'
+        - '&5&o"Ez a forradalmi pénznem sokkal'
+        - '&5&o    sokkal könnyebben olvad, és'
+        - '&5&o    ingósággá alakul - és'
+        - '&5&o    sokkal jobban ízlik a váltásért."'
     236:
-      name: "Exponential interest rates"
+      name: "Exponenciális kamatlábak"
       description:
-        - '&5&o"Can''t argue with mathematics!'
-        - '&5&o     Now fork it over."'
+        - '&5&o"Nem vitatkozhat a matematikával!'
+        - '&5&o     Most vigyük át."'
     237:
-      name: "Financial zen"
+      name: "Pénzügyi zen"
       description:
-        - '&5&o"The ultimate grail of economic thought;'
-        - '&5&o    the feng shui of big money,'
-        - '&5&o    the stock market yoga,'
-        - '&5&o    the Heimlich maneuver'
-        - '&5&o    of dimes and nickels."'
+        - '&5&o"A gazdasági gondolkodás végső grálája;'
+        - '&5&o    a nagy pénz feng shui-ja,'
+        - '&5&o    a tőzsdei jóga,'
+        - '&5&o    a Heimlich manőver'
+        - '&5&o    érméből és nikkelből."'
     298:
-      name: "Way of the wallet"
+      name: "A pénztárca módja"
       description:
-        - '&5&o"This new monetary school of thought'
-        - '&5&o    is all the rage on the'
-        - '&5&o    banking scene;'
-        - '&5&o    follow its precepts'
-        - '&5&o    and you may just profit from it."'
+        - '&5&o"Ez az új pénzügyi gondolkodásmód'
+        - '&5&o    egészen a banki'
+        - '&5&o    jelenet dühe;'
+        - '&5&o    kövesse annak szabályait,'
+        - '&5&o   és csak profitálhat."'
     311:
-      name: "The stuff rationale"
+      name: "A cuccok logikája"
       description:
-        - '&5&o"If not now, when? If not it, what?'
-        - '&5&o    If not things... stuff?"'
+        - '&5&o"Ha nem most, mikor? Ha nem, mit?'
+        - '&5&o    Ha nem a dolgok ... cuccok?"'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Temple upgrades (type: classic)
     238:
-      name: "Golden idols"
+      name: "Arany bálványok"
       description:
-        - '&5&o"Lure even greedier adventurers'
-        - '&5&o     to retrieve your cookies.'
-        - '&5&o     Now that''s a real idol game!"'
+        - '&5&o"Csábíts még vígabb kalandorokat,'
+        - '&5&o     hogy még több sütit szerezz.'
+        - '&5&o     Ez egy igazi bálvány játék!"'
     239:
-      name: "Sacrifices"
+      name: "Áldozatok"
       description:
-        - '&5&o"What''s a life to a gigaton of cookies?"'
+        - '&5&o"Milyen egy élet tonnányi sütikkel?"'
     240:
-      name: "Delicious blessing"
+      name: "Mennyei áldás"
       description:
-        - '&5&o"And lo, the Baker''s almighty spoon'
-        - '&5&o    came down and distributed'
-        - '&5&o    holy gifts unto the believers -'
-        - '&5&o    shimmering sugar,'
-        - '&5&o    and chocolate dark as night,'
-        - '&5&o    and all manner of wheats.'
-        - '&5&o    And boy let me tell you,'
-        - '&5&o    that party was mighty gnarly."'
+        - '&5&o"És íme, a pék mindenható kanálja'
+        - '&5&o    leereszkedett, és'
+        - '&5&o    szent ajándékokat adott a hívőknek -'
+        - '&5&o    csillogó cukrot,'
+        - '&5&o    csokoládét sötétként éjszaka,'
+        - '&5&o    és mindenféle búzából.'
+        - '&5&o    A fiú állítása szerint'
+        - '&5&o    a találkozás furcsa volt."'
     241:
-      name: "Sun festival"
+      name: "Napfesztivál"
       description:
-        - '&5&o"Free the primordial powers of your temples'
-        - '&5&o    with these annual celebrations'
-        - '&5&o    involving fire-breathers,'
-        - '&5&o    traditional dancing,'
-        - '&5&o    ritual beheadings'
-        - '&5&o    and other merriments!"'
+        - '&5&o"Szabadítsd meg templomodnak az ősi'
+        - '&5&o    erejét ezekkel az éves ünnepségekkel,'
+        - '&5&o    amelyek tûzfojtókat,'
+        - '&5&o    hagyományos táncot,'
+        - '&5&o    rituális lefejezéseket'
+        - '&5&o    és más örömöket vonnak maguk után!"'
     242:
-      name: "Enlarged pantheon"
+      name: "EKibővített pantheon"
       description:
-        - '&5&o"Enough spiritual inadequacy! More'
-        - '&5&o    divinities than you''ll ever need,'
-        - '&5&o    or your money back!'
-        - '&5&o    100% guaranteed!"'
+        - '&5&o"Elég a lelki elégtelenségből! Több'
+        - '&5&o    istenség, mint amire valaha szükséged lesz,'
+        - '&5&o    vagy visszakapod a pénzed!'
+        - '&5&o    100%-osan garantált!"'
     243:
-      name: "Great Baker in the sky"
+      name: "Nagy pék az égen"
       description:
-        - '&5&o"This is it. The ultimate deity has finally'
-        - '&5&o    cast Their sublimely divine eye upon'
-        - '&5&o    your operation;'
-        - '&5&o    whether this is a good thing'
-        - '&5&o    or possibly the end of days'
-        - '&5&o    is something you should find out...'
-        - '&5&o    very soon!"'
+        - '&5&o"Ez az. A végső istenség végül'
+        - '&5&o    a szublimálisan isteni szemet'
+        - '&5&o    vette a műveletre;'
+        - '&5&o    hogy ez jó dolog vagy talán'
+        - '&5&o    a "napok vége", de valami,'
+        - '&5&o    amit ki kell találnod...'
+        - '&5&o    hamarosan!"'
     299:
-      name: "Creation myth"
+      name: "Teremtési mítosz"
       description:
-        - '&5&o"Stories have been circulating'
-        - '&5&o    about the origins of'
-        - '&5&o    the very first cookie'
-        - '&5&o    that was ever baked;'
-        - '&5&o    tales of how it all began,'
-        - '&5&o    in the Dough beyond time'
-        - '&5&o    and the Ovens of destiny."'
+        - '&5&o"Történetek keringtek'
+        - '&5&o    az első'
+        - '&5&o    süti eredetéről;'
+        - '&5&o    mesék arról, hogyan'
+        - '&5&o    kezdődött mindez,'
+        - '&5&o    a tészta későbbi időpontjában'
+        - '&5&o    a sors kályhájából..."'
     312:
-      name: "Theocracy"
+      name: "Papi uralom"
       description:
-        - '&5&o"You''ve turned your cookie empire'
-        - '&5&o    into a perfect theocracy,'
-        - '&5&o    gathering the adoration'
-        - '&5&o    of zillions of followers'
-        - '&5&o    from every corner of the universe.'
-        - '&5&o    Don''t let it go to your head."'
+        - '&5&o"A sütik-birodalmát'
+        - '&5&o    tökéletes teokráciává változtatta,'
+        - '&5&o    ami összegyűjti a követők'
+        - '&5&o    zillionjainak imádatát'
+        - '&5&o    a világegyetem minden sarkából.'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Wizard Tower upgrades (type: classic)
     244:
-      name: "Pointier hats"
+      name: "Kúpos sapkák"
       description:
-        - '&5&o"Tests have shown increased thaumic'
-        - '&5&o     receptivity relative to the'
-        - '&5&o     geometric proportions of'
-        - '&5&o     wizardly conic implements."'
+        - '&5&o"A tesztek a megnövelt thaumikus'
+        - '&5&o     receptivitást mutatják a'
+        - '&5&o     varázslatos kúpos eszközök'
+        - '&5&o     geometriai arányához képest."'
     245:
-      name: "Beardlier beards"
+      name: "Szakállas szakállak"
       description:
-        - '&5&o"Haven''t you heard? The beard is the word."'
+        - '&5&o"Nem hallottad? A szakáll nagy szó!"'
     246:
-      name: "Ancient grimoires"
+      name: "Ősi grimók"
       description:
-        - '&5&o"Contain interesting spells such as:'
-        - '&5&o    "Turn Water To Drool",'
-        - '&5&o    "Grow Eyebrows On Furniture"'
-        - '&5&o    and "Summon Politician"."'
+        - '&5&o"Vízvarázslat használata:'
+        - '&5&o    "Megfordul a víz a nyálban",'
+        - '&5&o    "Szemöldököt növeszteni a bútorra"'
+        - '&5&o     és "Politikust idézni."'
     247:
-      name: "Kitchen curses"
+      name: "Konyhai átkok"
       description:
-        - '&5&o"Exotic magic involved in all'
-        - '&5&o    things pastry-related.'
+        - '&5&o""Egzotikus mágia, ami'
+        - '&5&o    mindent elkövet a cukrászsütéshez.'
         - '&5&o    '
-        - '&5&o    Hexcellent!"'
+        - '&5&o    kiváló!"'
     248:
-      name: "School of sorcery"
+      name: "A varázslás iskolája"
       description:
-        - '&5&o"This cookie-funded academy of'
-        - '&5&o    witchcraft is home to the 4'
-        - '&5&o    prestigious houses of magic :'
-        - '&5&o    the Jocks, the Nerds,'
-        - '&5&o    the Preps, and the Deathmunchers."'
+        - '&5&o"Ez a süti által támogatott'
+        - '&5&o    boszorkányság akadémiája a 4'
+        - '&5&o    legkiválóbb mágia háznak ad otthont:'
+        - '&5&o    a Jock-oknak, a Nerd-öknek,'
+        - '&5&o    a Prep-eknek és a Deathmuncher-eknek."'
     249:
-      name: "Dark formulas"
+      name: "Sötét képletek"
       description:
-        - '&5&o"Eldritch forces are behind these spells -'
-        - '&5&o    you get the feeling you really'
-        - '&5&o    shouldn''t be messing with those.'
-        - '&5&o    But I mean, free cookies, right?"'
+        - '&5&o"Az Eldritch erők a varázslatok mögött vannak -'
+        - '&5&o    akkor olyan érzést kapsz,'
+        - '&5&o    amit tényleg nem kellene elrontanod.'
+        - '&5&o    De úgy értem, ingyenes sütiket, ugye?"'
     300:
-      name: "Cookiemancy"
+      name: "Süti mágia"
       description:
-        - '&5&o"There it is;'
-        - '&5&o the perfected school of baking magic.'
-        - '&5&o From summoning chips to hexing nuts,'
-        - '&5&o there is not a single part of'
-        - '&5&o cookie-making that hasn''t been'
-        - '&5&o improved tenfold by magic tricks."'
+        - '&5&o"Megvan.'
+        - '&5&o A tökéletes süti mágia iskola!'
     313:
-      name: "Rabbit trick"
+      name: "Nyuszi trükk"
       description:
-        - '&5&o"Using nothing more than a fancy top hat,'
-        - '&5&o    your wizards have found a way'
-        - '&5&o    to simultaneously curb rabbit population'
-        - '&5&o    and produce heaps of extra cookies'
-        - '&5&o    for basically free!'
+        - '&5&o"A mágikus kalapok'
+        - '&5&o    a nyúl populáció'
+        - '&5&o    egyidejű megfékezését'
+        - '&5&o    és a különleges'
+        - '&5&o    sütik készítését eredményezhetik'
         - ''
-        - '&5&o    Resulting cookies may or may not'
-        - '&5&o    be fit for vegans.'
+        - '&5&o    A keletkező sütik nem feltétlenül'
+        - '&5&o    alkalmasak a vegetáriánusoknak.'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Shipment upgrades (type: classic)
     19:
-      name: "Vanilla nebulae"
+      name: "Vanília ködfátyol"
       description:
-        - '&5&o"If you removed your space helmet,'
-        - '&5&o     you could probably smell it!'
+        - '&5&o"Ha leveszed az űrsisakod,'
+        - '&5&o     akkor meg fogod szagolni!'
         - '&5&o     '
-        - '&5&o     (Note : don''t do that.)"'
+        - '&5&o     (Jegyzet : ne tedd meg.)"'
     20:
-      name: "Wormholes"
+      name: "Féreglyukak"
       description:
-        - '&5&o"By using these as shortcuts,'
-        - '&5&o  your ships can travel much faster."'
+        - '&5&o"A féreglyukak használatával,'
+        - '&5&o  az űrhajók gyorsabban tudnak közlekedni."'
     21:
-      name: "Frequent flyer"
+      name: "Törzsutas"
       description:
-        - '&5&o"Come back soon!"'
+        - '&5&o"Gyere vissza hamar!"'
     48:
-      name: "Warp drive"
+      name: "Warp vezetés"
       description:
-        - '&5&o"To boldly bake."'
+        - '&5&o"A boldog sütésért."'
     114:
-      name: "Chocolate monoliths"
+      name: "Csokoládé monolitok"
       description:
-        - '&5&o"My god. It''s full of chocolate bars."'
+        - '&5&o"Istenem! Csokoládéval van tömve!"'
     196:
-      name: "Generation ship"
+      name: "Generációs hajó"
       description:
-        - '&5&o"Built to last, this humongous spacecraft'
-        - '&5&o    will surely deliver your cookies'
-        - '&5&o    to the deep ends of space, one day."'
+        - '&5&o"Építsd ameddig lehet, ez a humongous űrhajó'
+        - '&5&o    biztosan kiszállítja majd a sütiket'
+        - '&5&o    a világűr legmélyére, egy nap alatt."'
     301:
-      name: "Dyson sphere"
+      name: "Dyson gömb"
       description:
-        - '&5&o"You''ve found a way to apply your knowledge'
-        - '&5&o of cosmic technology to slightly'
-        - '&5&o more local endeavors;'
-        - '&5&o this gigantic sphere of meta-materials,'
-        - '&5&o wrapping the solar system,'
-        - '&5&o is sure to kick your baking abilities'
-        - '&5&o           up a notch."'
+        - '&5&o"Találtál módot'
+        - '&5&o arra, hogy a'
+        - '&5&o kozmikus technológia,'
+        - '&5&o ismereteidet kicsit,'
+        - '&5&o több helyi'
+        - '&5&o törekvésre alkalmazd.'
     314:
-      name: "The final frontier"
+      name: "A végső határ"
       description:
-        - '&5&o"It''s been a long road, getting from there'
-        - '&5&o    to here. It''s all worth it though -'
-        - '&5&o    the sights are lovely and'
-        - '&5&o    the oil prices slightly more reasonable."'
+        - '&5&o"Régóta hosszú út, onnan idáig.'
+        - '&5&o    Mindet megéri -'
+        - '&5&o    a látnivalók szépek és az'
+        - '&5&o    olajárak kissé ésszerűbbek."'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Alchemy Lab upgrades (type: classic)
     22:
-      name: "Antimony"
+      name: "Antimon"
       description:
-        - '&5&o"Actually worth a lot of mony."'
+        - '&5&o"Valójában sok pénzt ér."'
     23:
-      name: "Essence of dough"
+      name: "A tészta esszenciája"
       description:
-        - '&5&o"Extracted through the 5 ancient steps'
-        - '&5&o  of alchemical baking."'
+        - '&5&o"Az alkímiai sütés 5 ősi'
+        - '&5&o  lépésen keresztül vonták ki."'
     24:
-      name: "True chocolate"
+      name: "Igaz csokoládé"
       description:
-        - '&5&o"The purest form of cacao."'
+        - '&5&o"A kakaó legtisztább formája."'
     49:
-      name: "Ambrosia"
+      name: "Istenek eledele"
       description:
-        - '&5&o"Adding this to the cookie mix is sure to'
-        - '&5&o     make them even more addictive!'
-        - '&5&o     Perhaps dangerously so.'
-        - '&5&o     Let''s hope you can keep'
-        - '&5&o     selling these legally."'
+        - '&5&o"Hozzáadva ezt a süti mixhez biztos'
+        - '&5&o     hogy még addiktívabbá teszik őket!'
+        - '&5&o     Talán veszélyes módon.'
+        - '&5&o     Reméljük, továbbra is'
+        - '&5&o     értékesítheti ezeket."'
     115:
       name: "Aqua crustulae"
       description:
-        - '&5&o"Careful with the dosing -'
-        - '&5&o     one drop too much and'
-        - '&5&o     you get muffins...'
-        - '&5&o     Nobody likes muffins..."'
+        - '&5&o"Óvatosan az adagolással -'
+        - '&5&o     egy csepp már túl sok,'
+        - '&5&o     és muffin lesz...'
+        - '&5&o     Senki sem szereti a muffinokat..."'
     197:
-      name: "Origin crucible"
+      name: "Eredeti tégely"
       description:
-        - '&5&o"Built from the rarest of earths'
-        - '&5&o    and located at the very deepest'
-        - '&5&o    of the largest mountain,'
-        - '&5&o    this legendary crucible is said'
-        - '&5&o    to retain properties'
-        - '&5&o    from the big-bang itself."'
+        - '&5&o"A legritkább földekből épült,'
+        - '&5&o    és a legmagasabb'
+        - '&5&o    hegység legmélyebb'
+        - '&5&o    részén található, ez a legendás tégely'
+        - '&5&o    azt mondja, hogy megőrzi'
+        - '&5&o    tulajdonságait a nagy bummtól."'
     302:
-      name: "Theory of atomic fluidity"
+      name: "Az atomos folyékonyság elmélete"
       description:
-        - '&5&o"Pushing alchemy to its most extreme limits,'
-        - '&5&o you find that everything is transmutable'
-        - '&5&o into anything else - lead to gold,'
-        - '&5&o mercury to water; more importantly,'
-        - '&5&o you realize that anything can -and should-'
-        - '&5&o be converted to cookies."'
+        - '&5&o"Ha az alkímia a legszélsőségesebb határait'
+        - '&5&o lenyomva tartja, úgy találja, hogy'
+        - '&5&o minden átváltható más dolgokba - aranyhoz,'
+        - '&5&o higanyhoz vezet; ami még fontosabb,'
+        - '&5&o rájössz, hogy bármi lehet -'
+        - '&5&o és azt sütikké kell átalakítani."'
     315:
       name: "Beige goo"
       description:
-        - '&5&o"Well now you''ve done it. Good job. Very nice.'
-        - '&5&o    That''s 3 galaxies you''ve just'
-        - '&5&o    converted into cookies.'
-        - '&5&o    Good thing you can hop'
-        - '&5&o    from universe to universe."'
+        - '&5&o"Hát most te csináltad. Szép munka. Nagyon szép.'
+        - '&5&o    Az a három galaxis, amikből'
+        - '&5&o    sütit készítettél.'
+        - '&5&o    Jó dolog, hogy univerzumból'
+        - '&5&o    univerzumba mehetsz."'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Portal upgrades (type: classic)
     25:
-      name: "Ancient tablet"
+      name: "Ősi táblagép"
       description:
-        - '&5&o"A strange slab of peanut brittle, holding'
-        - '&5&o     an ancient cookie recipe. Neat!"'
+        - '&5&o"Furcsa fűszeres mogyorólemez,'
+        - '&5&o     ősi süti receptet tárolva. Helyes!"'
     26:
-      name: "Insane oatling workers"
+      name: "Őrült munkatársak"
       description:
-        - '&5&o"ARISE, MY MINIONS!"'
+        - '&5&o"FELTÁMADOK, MINYONOK!"'
     27:
-      name: "Soul bond"
+      name: "Lélekkötés"
       description:
-        - '&5&o"So I just sign up and get more cookies?'
-        - '&5&o     Sure, whatever!"'
+        - '&5&o"Szóval belépek és kapok több sütit?'
+        - '&5&o     Persze, akármit!"'
     50:
-      name: "Sanity dance"
+      name: "Szellemi tánc"
       description:
-        - '&5&o"We can change if we want to.'
-        - '&5&o     We can leave our brains behind."'
+        - '&5&o"Megváltoztathatjuk, ha akarjuk..'
+        - '&5&o     Kiléphetünk az agyunkból."'
     116:
-      name: "Brane transplant"
+      name: "Ásvány-transzplantáció"
       description:
-        - '&5&o"This refers to the practice of merging'
-        - '&5&o  higher dimensional universes,'
-        - '&5&o  or "branes", with our own,'
-        - '&5&o  in order to facilitate transit'
-        - '&5&o  (and harvesting of precious cookie dough)."'
+        - '&5&o"Ez arra utal, hogy'
+        - '&5&o  a magasabb rendű univerzumok,'
+        - '&5&o  vagy "ásványok" egyesülését a sajátunkkal kell'
+        - '&5&o  összekapcsolni, hogy megkönnyítsük az átutazást'
+        - '&5&o  (és értékes sütemény tésztát)."'
     198:
-      name: "Deity-sized portals"
+      name: "Isten-méretű portálok"
       description:
-        - '&5&o"It''s almost like, say, an elder god'
-        - '&5&o    could fit through this thing now.'
+        - '&5&o"Valószínűleg azt mondják, hogy egy'
+        - '&5&o    idősebb isten most beleillik a dologba.'
         - '&5&o    '
-        - '&5&o    Hypothetically."'
+        - '&5&o    Elméletileg."'
     303:
-      name: "End of times back-up plan"
+      name: "A várakozási idő vége"
       description:
-        - '&5&o"Just in case, alright?"'
+        - '&5&o"Csak egyszer, rendben?"'
     316:
-      name: "Maddening chants"
+      name: "Dühítő énekek"
       description:
-        - '&5&o"A popular verse goes like so:'
-        - '&5&o    "jau''hn madden jau''hn madden'
+        - '&5&o"A népszerű vers így szól:'
+        - '&5&o    "jau''hn megőrjít jau''hn megőrjít'
         - '&5&o    aeiouaeiouaeiou brbrbrbrbrbrbr""'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Time Machine upgrades (type: classic)
     28:
-      name: "Flux capacitors"
+      name: "Flux kondenzátorok"
       description:
-        - '&5&o"Bake to the future."'
+        - '&5&o"Sütés a jövőbe."'
     29:
-      name: "Time paradox resolver"
+      name: "Idő paradoxon megoldása"
       description:
-        - '&5&o"No more fooling around with'
-        - '&5&o     your own grandmother!"'
+        - '&5&o"Nincs több bolondozás'
+        - '&5&o     a saját nagymamáddal!"'
     30:
-      name: "Quantum conundrum"
+      name: "Kvantum rejtély"
       description:
-        - '&5&o"There is only one constant,'
-        - '&5&o and that is universal uncertainty.'
+        - '&5&o"Csak egy konstans létezik,'
+        - '&5&o és ez az univerzális bizonytalanság.'
         - '&5&o '
-        - '&5&o     Or is it?"'
+        - '&5&o     Vagy nem?"'
     51:
-      name: "Causality enforcer"
+      name: "Ok-okozati végrehajtó"
       description:
-        - '&5&o"What happened, happened."'
+        - '&5&o"Ami történt, történt."'
     117:
-      name: "Yestermorrow comparators"
+      name: "Yestermorrow komparátorok"
       description:
-        - '&5&o"Fortnights into milleniums."'
+        - '&5&o"Fortnightok az évezredekben."'
     199:
-      name: "Far future enactment"
+      name: "Távol-jövő rendelet"
       description:
-        - '&5&o"The far future enactment authorizes you'
-        - '&5&o    to delve deep into the future -'
-        - '&5&o    where civilization has fallen'
-        - '&5&o    and risen again,'
-        - '&5&o    and cookies are plentiful."'
+        - '&5&o"A távol-jövőbeni engedményezés felhatalmaz'
+        - '&5&o    téged arra, hogy mélyen belevágj a jövőbe -'
+        - '&5&o    ahol a civilizáció ismét elesett'
+        - '&5&o    és felemelkedett,'
+        - '&5&o    és ahol sütik bőségesen a süteményeket."'
     304:
-      name: "Great loop hypothesis"
+      name: "Nagyszerű hurokhipotézis"
       description:
-        - '&5&o"What if our universe is just one instance'
-        - '&5&o    of an infinite cycle?'
-        - '&5&o    What if, before and after it,'
-        - '&5&o    stretched infinite amounts of'
-        - '&5&o    the same universe,'
-        - '&5&o    themselves containing infinite'
-        - '&5&o    amounts of cookies?"'
+        - '&5&o"Mi van, ha a mi univerzumunk'
+        - '&5&o    egy végtelen ciklus?'
+        - '&5&o    Mi van, ha előtte és utána,'
+        - '&5&o    végtelen mennyiségű ugyanolyan'
+        - '&5&o    univerzum van,'
+        - '&5&o    amelyek végtelen mennyiségű'
+        - '&5&o    sütiket tartalmaztak?"'
     317:
-      name: "Cookietopian moments of maybe"
+      name: "Sütikóstoló pillanatok"
       description:
-        - '&5&o"Reminiscing how things could have been,'
-        - '&5&o should have been, will have been."'
+        - '&5&o"Felidézzük, hogy a dolgok hogy voltak,'
+        - '&5&o hogy vannak, és hogy lesznek."'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Antimatter Condenser upgrades (type: classic)
     99:
-      name: "Sugar bosons"
+      name: "Cukorbajok"
       description:
-        - '&5&o"Sweet firm bosons."'
+        - '&5&o"Édes, határozott bajok."'
     100:
-      name: "String theory"
+      name: "Madzag elmélet"
       description:
-        - '&5&o"Reveals new insight about the true'
-        - '&5&o     meaning of baking cookies'
-        - '&5&o     (and, as a bonus, the'
-        - '&5&o     structure of the universe)."'
+        - '&5&o"Új betekintést nyer'
+        - '&5&o     a sütik (és, mint bónusz,'
+        - '&5&o     a világegyetem szerkezetének)'
+        - '&5&o     valódi jelentőségéről."'
     101:
-      name: "Large macaron collider"
+      name: "Nagy makaron ütköző"
       description:
-        - '&5&o"How singular!"'
+        - '&5&o"Milyen egyedülálló!"'
     102:
-      name: "Big bang bake"
+      name: "Nagy beng sütés"
       description:
-        - '&5&o"And that''s how it all began."'
+        - '&5&o"És ez így kezdődött."'
     118:
-      name: "Reverse cyclotrons"
+      name: "Fordított ciklotronok"
       description:
-        - '&5&o"These can uncollision particles'
-        - '&5&o and unspin atoms.'
-        - '&5&o   For... uh...'
-        - '&5&o   better flavor, and stuff."'
+        - '&5&o"Ezek lehetnek a kesztyűs részecskék'
+        - '&5&o   és az intakt atomok.'
+        - '&5&o   Mert... uh...'
+        - '&5&o   jobb íz, és cucc."'
     200:
-      name: "Nanocosmics"
+      name: "Nanokozmiák"
       description:
-        - '&5&o"The theory of nanocosmics posits'
-        - '&5&o    that each subatomic particle'
-        - '&5&o    is in fact its own self-'
-        - '&5&o    contained universe, holding'
-        - '&5&o    unfathomable amounts of energy."'
+        - '&5&o"A nanokozmiák elmélete azt állítja,'
+        - '&5&o    hogy minden egyes szubatomi részecske'
+        - '&5&o    tulajdonképpen saját, önálló -'
+        - '&5&o    univerzum, amely elfogyhatatlan'
+        - '&5&o    mennyiségű energiát tartalmaz."'
     305:
-      name: "The Pulse"
+      name: "A Pulzus
       description:
-        - '&5&o"You''ve tapped into the very pulse'
-        - '&5&o    of the cosmos,'
-        - '&5&o    a timeless rhythm along which'
-        - '&5&o    every material and antimaterial'
-        - '&5&o    thing beats in unison.'
-        - '&5&o    This, somehow, means more cookies."'
+        - '&5&o"Bekerültél a kozmosz'
+        - '&5&o    nagy impulzusába,,'
+        - '&5&o    egy időtlen ritmusba,'
+        - '&5&o    amelyen minden anyagi és'
+        - '&5&o    antimaterápiás dolog egyformán ver.'
+        - '&5&o    Ez valahogy több sütit jelent."'
     318:
-      name: "Some other super-tiny fundamental particle?"
+      name: "Valami más szuper-apró részecske?"
       description:
-        - '&5&o"When even the universe is running'
-        - '&5&o      out of ideas,'
-        - '&5&o      that''s when you know:'
-        - '&5&o      you''re nearing the end."'
+        - '&5&o"Amikor még az univerzum is'
+        - '&5&o      elfogy az ötletekből,'
+        - '&5&o      rájössz:'
+        - '&5&o      közeledsz a végéhez."'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # Prism upgrades (type: classic)
     175:
-      name: "Gem polish"
+      name: "Drágakő fényezés"
       description:
-        - '&5&o"Get rid of the grime'
-        - '&5&o    and let more light in.'
-        - '&5&o    Truly, truly outrageous."'
+        - '&5&o"A szennyeződéstől való megszabadulás'
+        - '&5&o    és a  könnyebbség elengedése.'
+        - '&5&o    Valóban, valóban felháborító."'
     176:
-      name: "9th color"
+      name: "Kilencedik szín"
       description:
-        - '&5&o"Delve into the untouched optical'
-        - '&5&o     depths where even the mantis'
-        - '&5&o     shrimp hasn''t set an eye!"'
+        - '&5&o"Fedezd fel az érintetlen optikai'
+        - '&5&o     mélységeket, ahogy még a'
+        - '&5&o     mantis garnéla sem nézett ki!"'
     177:
-      name: "Chocolate light"
+      name: "Csokoládé fény"
       description:
-        - '&5&o"Bask into its cocoalesence.'
-        - '&5&o    (Warning :'
-        - '&5&o     may cause various interesting'
-        - '&5&o     albeit deadly skin conditions.)"'
+        - '&5&o"Sütkérezzünk a kakaófényben.'
+        - '&5&o    (Figyelmeztetés :'
+        - '&5&o     különböző érdekes, bár'
+        - '&5&o     halálos bőrelváltozásokat okozhat.)"'
     178:
-      name: "Grainbow"
+      name: "Grivárvány"
       description:
-        - '&5&o"Remember the different grains using'
-        - '&5&o    the handy Roy G. Biv mnemonic:'
-        - '&5&o    R is for rice, O is for Oats...'
-        - '&5&o    uh, B for barley?..."'
+        - '&5&o"Emlékezz a különböző szemcsékre a praktikus'
+        - '&5&o    Roy G. Biv emlékeztető használatával:'
+        - '&5&o    R a rizs, Z a zab...'
+        - '&5&o    uh, Á az árpa?"'
     179:
-      name: "Pure cosmic light"
+      name: "Tiszta kozmikus fény"
       description:
-        - '&5&o"Your prisms now receive pristine'
-        - '&5&o unadulterated photons from the'
-        - '&5&o other end of the universe."'
+        - '&5&o"A prizmáid mostantól a világegyetem'
+        - '&5&o másik végétől kezdve érintetlenül'
+        - '&5&o érintetlen fotont kapnak."'
     201:
-      name: "Glow-in-the-dark"
+      name: "Világít-a-sötétben"
       description:
-        - '&5&o"Your prisms now glow in the dark,'
-        - '&5&o  effectively doubling their output."'
+        - '&5&o"A prizmáid most sötétben ragyognak,'
+        - '&5&o  és hatékonyan megduplázzák a kimenetüket."'
     306:
-      name: "Lux sanctorum"
+      name: "Lux szanatórium"
       description:
-        - '&5&o"Your prism attendants have become'
-        - '&5&o   increasingly mesmerized with'
-        - '&5&o   something in the light - '
-        - '&5&o   or maybe something beyond it;'
-        - '&5&o   beyond us all, perhaps?"'
+        - '&5&o"A prizmás kísérők'
+        - '&5&o   egyre jobban megbabonáztak'
+        - '&5&o   valami fényben - '
+        - '&5&o   vagy talán valami mögött;'
+        - '&5&o   talán közel vagyunk?"'
     319:
-      name: "Reverse shadows"
+      name: "Fordított árnyékok"
       description:
-        - '&5&o"Oh man,'
-        - '&5&o   this is really messing with your eyes."'
+        - '&5&o"Óh ember,'
+        - '&5&o   ez tényleg a szemeddel piszkít."'
