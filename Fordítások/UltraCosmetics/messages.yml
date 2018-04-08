@@ -145,55 +145,55 @@ Gadgets:
 Mounts:
   DruggedHorse:
     menu-name: '&2&lRészeg Ló'
-    entity-displayname: '&l%playername%' Részeg Lova'
+    entity-displayname: '&l%playername% Részeg Lova'
   InfernalHorror:
     menu-name: '&4&lPokoli Horror'
-    entity-displayname: '&l%playername%' Pokoli Horrorja'
+    entity-displayname: '&l%playername% Pokoli Horrorja'
   GlacialSteed:
     menu-name: '&b&lGlaciális Paripa'
-    entity-displayname: '&l%playername%' Glaciális Paripája'
+    entity-displayname: '&l%playername% Glaciális Paripája'
   WalkingDead:
     menu-name: '&2&lSétáló Halott'
-    entity-displayname: '&l%playername%' Sétáló Halottja'
+    entity-displayname: '&l%playername% Sétáló Halottja'
   MountOfFire:
     menu-name: '&c&lTűz Hátas'
-    entity-displayname: '&l%playername%' Tűz Hátasa'
+    entity-displayname: '&l%playername% Tűz Hátasa'
   MountOfWater:
     menu-name: '&9&lVíz Hátas'
-    entity-displayname: '&l%playername%' Víz Hátasa'
+    entity-displayname: '&l%playername% Víz Hátasa'
   EcologistHorse:
     menu-name: '&a&lÖkológus Ló'
-    entity-displayname: '&l%playername%' Ölológus Lova'
+    entity-displayname: '&l%playername% Ölológus Lova'
   NyanSheep:
     menu-name: '&4&lNy&6&la&e&ln &a&lSh&b&lee&d&lp'
-    entity-displayname: '&l%playername%''s nyan sheep'
+    entity-displayname: '&l%playername% nyan sheep-je'
   Snake:
     menu-name: '&6&lKígyó'
-    entity-displayname: '&l%playername%' Kígyója'
+    entity-displayname: '&l%playername% Kígyója'
   Dragon:
     menu-name: '&5&lSárkány'
-    entity-displayname: '&l%playername%' Sárkánya'
+    entity-displayname: '&l%playername% Sárkánya'
   SkySquid:
     menu-name: '&9&lÉgi Tintahal'
-    entity-displayname: '&l%playername%' Égi Tintahala'
+    entity-displayname: '&l%playername% Égi Tintahala'
   HypeCart:
     menu-name: '&7&lHiperautó'
-    entity-displayname: '&l%playername%' Hiperautója'
+    entity-displayname: '&l%playername% Hiperautója'
   Slime:
     menu-name: '&a&lNyálka'
-    entity-displayname: '&l%playername%' Nyálkája'
+    entity-displayname: '&l%playername% Nyálkája'
   Spider:
     menu-name: '&8&lPók'
-    entity-displayname: '&l%playername%' Pókja'
+    entity-displayname: '&l%playername% Pókja'
   Rudolph:
     menu-name: '&f&lRudol&4&lf'
-    entity-displayname: '&l%playername%' Rudolfa'
+    entity-displayname: '&l%playername% Rudolfa'
   MoltenSnake:
     menu-name: '&c&lOlvadt Kígyó'
-    entity-displayname: '&l%playername%' Olvadt Kígyója'
+    entity-displayname: '&l%playername% Olvadt Kígyója'
   FlyingShip:
     menu-name: '&a&lLéghajó'
-    entity-displayname: '&l%playername%' Léghajója'
+    entity-displayname: '&l%playername% Léghajója'
   Spawn: '%prefix% &9Lehívtad %mountname%'
   Despawn: '%prefix% &9Elküldted %mountname%'
 Particle-Effects:
@@ -236,61 +236,61 @@ Particle-Effects:
 Pets:
   Piggy:
     menu-name: '&d&lMalacka'
-    entity-displayname: '&l%playername%' Malackája'
+    entity-displayname: '&l%playername% Malackája'
   Sheep:
     menu-name: '&f&lBárány'
-    entity-displayname: '&l%playername%' Báránya'
+    entity-displayname: '&l%playername% Báránya'
   EasterBunny:
     menu-name: '&6&lHúsvéti Nyuszi'
-    entity-displayname: '&l%playername%' Húsvéti Nyuszija'
+    entity-displayname: '&l%playername% Húsvéti Nyuszija'
   Cow:
     menu-name: '&c&lTehén'
-    entity-displayname: '&l%playername%' Tehene'
+    entity-displayname: '&l%playername% Tehene'
   Kitty:
     menu-name: '&9&lCica'
-    entity-displayname: '&l%playername%' Cicája'
+    entity-displayname: '&l%playername% Cicája'
   Dog:
     menu-name: '&7&lKutya'
-    entity-displayname: '&l%playername%' Kutyája'
+    entity-displayname: '&l%playername% Kutyája'
   Chick:
     menu-name: '&e&lCsibe'
-    entity-displayname: '&l%playername%' Csibéje'
+    entity-displayname: '&l%playername% Csibéje'
   Wither:
     menu-name: '&8&lWither'
-    entity-displayname: '&l%playername%' Witherje'
+    entity-displayname: '&l%playername% Witherje'
   Pumpling:
     menu-name: '&6&lPumpling'
-    entity-displayname: '&l%playername%' pumplingja'
+    entity-displayname: '&l%playername% pumplingja'
   CompanionCube:
     menu-name: '&d&lTárs Kocka'
-    entity-displayname: '&l%playername%' Kockája'
+    entity-displayname: '&l%playername% Kockája'
   ChristmasElf:
     menu-name: '&a&lKarácsonyi Manó'
-    entity-displayname: '&l%playername%' Karácsonyi Manója'
+    entity-displayname: '&l%playername% Karácsonyi Manója'
   Mooshroom:
     menu-name: '&4&lGombatehén'
-    entity-displayname: '&l%playername%' Gombatehene'
+    entity-displayname: '&l%playername% Gombatehene'
   IronGolem:
     menu-name: '&7&lVasgólem'
-    entity-displayname: '&l%playername%' Vasgólemje'
+    entity-displayname: '&l%playername% Vasgólemje'
   Snowman:
     menu-name: '&f&lHóember'
-    entity-displayname: '&l%playername%' Hóemberje'
+    entity-displayname: '&l%playername% Hóemberje'
   Villager:
     menu-name: '&a&lFalusi'
-    entity-displayname: '&l%playername%' Falusija'
+    entity-displayname: '&l%playername% Falusija'
   Bat:
     menu-name: '&8&lDenevér'
-    entity-displayname: '&l%playername%' Denevérje'
+    entity-displayname: '&l%playername% Denevérje'
   PolarBear:
     menu-name: '&b&lJegesmedve'
-    entity-displayname: '&l%playername%' Jegesmedvéje'
+    entity-displayname: '&l%playername% Jegesmedvéje'
   Llama:
     menu-name: '&7&lLáma'
-    entity-displayname: '&l%playername%' Lámája'
+    entity-displayname: '&l%playername% Lámája'
   Parrot:
     menu-name: '&a&lPapagály'
-    entity-displayname: '&l%playername%' Papagálya'
+    entity-displayname: '&l%playername% Papagálya'
   Spawn: '%prefix% &9Megidézted %petname%'
   Despawn: '%prefix% &9Elküldted %petname%'
 Morphs:
