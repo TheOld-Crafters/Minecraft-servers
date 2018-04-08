@@ -166,7 +166,7 @@ Mounts:
     entity-displayname: '&l%playername% Ölológus Lova'
   NyanSheep:
     menu-name: '&4&lNy&6&la&e&ln &a&lSh&b&lee&d&lp'
-    entity-displayname: '&l%playername% nyan sheep-je'
+    entity-displayname: '&l%playername% nyan Báránya'
   Snake:
     menu-name: '&6&lKígyó'
     entity-displayname: '&l%playername% Kígyója'
