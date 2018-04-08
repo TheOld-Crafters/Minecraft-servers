@@ -98,7 +98,7 @@ gameBox:
       # Lore of the skulls in the inventory. Use %rank% for the rank and %time% for the time in 'mm:ss'
       skullLore:
       - ''
-      - '&6Rank:&1 %rank%'
+      - '&6Helyezés:&1 %rank%'
       - '&6Pontszám:&1 %score%'
 
 

@@ -35,7 +35,7 @@ gameBox:
       reward: 7
     normal:
       materialData: "WOOL:1"
-      displayName: "&6Normal"
+      displayName: "&6Normál"
       lore:
       - ""
       - "&1Akna: &r8"
@@ -80,7 +80,7 @@ gameBox:
       # Lore of the skulls in the inventory. Use %rank% for the rank and %time% for the time in 'mm:ss'
       skullLore:
       - ''
-      - '&6Rank:&1 %rank%'
+      - '&6Helyezés:&1 %rank%'
       - '&6Idő:&1 %time%'
 
 

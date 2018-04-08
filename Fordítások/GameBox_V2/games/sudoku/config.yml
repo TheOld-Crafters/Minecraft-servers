@@ -62,14 +62,14 @@ gameBox:
       displayName: "&cTop lista"
       lore:
       - ""
-      - "&cSudoku &1Top List"
+      - "&cSudoku &1Top Lista"
       slot: 31
       # inventory title of the top list (%player% and %game%)
       inventoryTitle: '          &3Sudoku&r Top List'
       # Lore of the skulls in the inventory. Use %rank% for the rank and %score% for the highest score of the player
       skullLore:
       - ''
-      - '&6Rank:&1   %rank%'
+      - '&6Helyezés:&1   %rank%'
       - '&6Megoldottak:&1 %wins%'
 
 rules:

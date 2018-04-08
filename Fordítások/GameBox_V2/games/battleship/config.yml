@@ -76,7 +76,7 @@ gameBox:
       # Lore of the skulls in the inventory. Use %rank% for the rank and %wins% for the number of wins
       skullLore:
       - ''
-      - '&6Rank:&1 %rank%'
+      - '&6Helyezés:&1 %rank%'
       - '&6Gyözelmek:&1 %wins%'
 
 gameRules:
