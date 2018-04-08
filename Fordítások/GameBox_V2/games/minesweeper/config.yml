@@ -73,7 +73,7 @@ gameBox:
       displayName: "&cTop lista"
       lore:
       - ""
-      - "&cCompetition &1top list"
+      - "&cVerseny &1top lista"
       slot: 33
       # inventory title of the top list (%player% and %game%)
       inventoryTitle: '              Top List'
