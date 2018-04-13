@@ -39,12 +39,12 @@ gameBox:
       displayName: "&c&lSudoku"
       lore:
       - ""
-      - "&cKerülj fel a &ltop listára"
+      - "&cKerülj fel a &ltoplistára"
       - "&aSok Sikert!"
       - ""
       - "&1Ára: &420"
       - "&1Jutalom: &230"
-      - "&1Token: &21"
+      - "&1Zseton: &21"
       slot: 22
       cost: 20
       token: 1
@@ -59,13 +59,13 @@ gameBox:
     #   for that button 'saveStats' must be true (see above)
     saveStats:
       materialData: "159:11"
-      displayName: "&cTop lista"
+      displayName: "&cToplista"
       lore:
       - ""
-      - "&cSudoku &1Top Lista"
+      - "&cSudoku &1Toplista"
       slot: 31
       # inventory title of the top list (%player% and %game%)
-      inventoryTitle: '          &3Sudoku&r Top Lista'
+      inventoryTitle: '          &3Sudoku&r Toplista'
       # Lore of the skulls in the inventory. Use %rank% for the rank and %score% for the highest score of the player
       skullLore:
       - ''

@@ -17,11 +17,11 @@ gameBox:
     # define the Material and data for the button (format: 'material:data')
     materialData: "35:11"
     # display name of the button
-    displayName: "&3Three In A Row"
+    displayName: "&3Három Egy Sorban"
     # lore of the button
     lore:
     - ""
-    - "&1Japanese logic game"
+    - "&1Japán logikai játék"
   gameButtons:
     saveStats:
       materialData: "159:3"

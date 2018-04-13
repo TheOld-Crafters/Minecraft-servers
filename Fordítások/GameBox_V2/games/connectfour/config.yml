@@ -41,11 +41,11 @@ gameBox:
       displayName: "&c&lVerseny"
       lore:
       - ""
-      - "&cKerülj fel a &ltop listára"
+      - "&cKerülj fel a &ltoplistára"
       - "&aSok Szerencsét"
       - ""
       - "&1CÁra: &450"
-      - "&1Jutalom:: &a75"
+      - "&1Jutalom: &a75"
       - "&1Zseton: &a1"
       slot: 24
       cost: 50
@@ -62,10 +62,10 @@ gameBox:
       displayName: "&c&lTop lista"
       lore:
       - ""
-      - "&cVerseny &1top lista"
+      - "&cVerseny &1toplista"
       slot: 33
       # inventory title of the top list (%player% and %game%)
-      inventoryTitle: '              Top Lista'
+      inventoryTitle: '              Toplista'
       # Lore of the skulls in the inventory. Use %rank% for the rank and %time% for the time in 'mm:ss'
       skullLore:
       - ''

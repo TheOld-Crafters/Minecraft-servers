@@ -30,7 +30,7 @@ gameBox:
       - "  &6amikor meglátod!"
       - ""
       - "&1Ár: &45"
-      - "&1Pénz jutalmakat &65 &1pontszám után kapsz."
+      - "&1Pénzjutalmakat &65 &1pontszám után kapsz."
       - "&1Zsetonokat nyerhetsz &620 &1pontszám fölött."
       slot: 20
       cost: 5
@@ -58,11 +58,11 @@ gameBox:
           tokens: 2
     saveStats:
       materialData: "159:3"
-      displayName: "&6&lCreeperek embert kergetnek"
+      displayName: "&6&lCreeper-ek embert kergetnek"
       lore:
       - ""
-      - "&cA Creeperek óriási területen kergetik"
-      - "  &caz embereket! Csapd le a Creepereket, de"
+      - "&cA Creeper-ek óriási területen kergetik"
+      - "  &caz embereket! Csapd le a Creeper-eket, de"
       - "  &cne szegény embereket!"
       - "&aSok sikert!"
       - ""
@@ -103,13 +103,13 @@ gameBox:
     #   for that button 'saveStats' must be true (see above)
     saveStats:
       materialData: "159:11"
-      displayName: "&6Creeperek embert kergetnek &c&lTop lista"
+      displayName: "&6Creeper-ek embert kergetnek &c&lToplista"
       lore:
       - ""
-      - "  &6&lCreeperek embert kergetnek"
+      - "  &6&lCreeper-ek embert kergetnek"
       slot: 33
       # inventory title of the top list (%player% and %game%)
-      inventoryTitle: '     &6Creeperek embert kergetnek &rTop Lista'
+      inventoryTitle: '     &6Creeper-ek embert kergetnek &rToplista'
       # Lore of the skulls in the inventory. Use %rank% for the rank and %score% for the highest score of the player
       skullLore:
       - ''

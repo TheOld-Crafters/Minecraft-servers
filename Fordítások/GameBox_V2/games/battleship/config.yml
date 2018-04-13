@@ -40,7 +40,7 @@ gameBox:
       battleship: 1
       cruiser: 2
       destroyer: 1
-      inviteGuiTitle: "   Játék inditás &3Battleship"
+      inviteGuiTitle: "   Játék inditás &3Csatahajó"
     withTopList:
       materialData: "nether_star"
       displayName: "&l&1Harc"
@@ -48,11 +48,11 @@ gameBox:
       - ""
       - '&1Ára: &450'
       - '&1Jutalom: &2100'
-      - '&1Tokens: &25'
+      - '&1Zseton: &25'
       - '&l&5Számold győzelmeket'
       - '   &l&5ezt a játékot követni fogják!'
       - '&l&5Összehasonlítsd magadat'
-      - '   &l&5mássokkal tekintsd meg a TOP Listát'
+      - '   &l&5mássokkal tekintsd meg a TOPlistát'
       slot: 30
       cost: 50
       reward: 80
@@ -60,7 +60,7 @@ gameBox:
       # if true the best score of this button is saved
       saveStats: true
       cruiser: 2
-      inviteGuiTitle: "   &3Battleship   &5Küzdelem"
+      inviteGuiTitle: "   &3Csatahajó   &5Küzdelem"
   topListButtons:
     # use the same key as the game you want to display the top list for
     #   for that button 'saveStats' must be true (see above)
@@ -72,7 +72,7 @@ gameBox:
       - "&1Küzdelmi &1Top lista"
       slot: 32
       # inventory title of the top list (%player% and %game%)
-      inventoryTitle: '              Top List'
+      inventoryTitle: '              Toplista'
       # Lore of the skulls in the inventory. Use %rank% for the rank and %wins% for the number of wins
       skullLore:
       - ''
@@ -104,7 +104,7 @@ materials:
       name: "&2Ezzazz! Egy hiba!"
     hit:
       material: "35:14"
-      name: "&4A fenébe! Egy ütés.."
+      name: "&4A fenébe! Egy ütés..."
     water:
       material: "160:11"
       name: "&1Víz"
