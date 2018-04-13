@@ -95,7 +95,7 @@ Gadgets:
     name: '&f&lCsirkenátor'
   PortalGun:
     name: '&c&lPortál&9&lvető'
-    No-Block-Range: '%prefix% &c&Nincsen block a tartományban!'
+    No-Block-Range: '%prefix% &c&lNincsen blokk a tartományban!'
     Different-Worlds: '%prefix% &c&lA portáloknak, ugyanabban a világban kell lenniük!'
   BlizzardBlaster:
     name: '&b&lHóvihar vető'
@@ -163,7 +163,7 @@ Mounts:
     entity-displayname: '&l%playername% Víz Hátasa'
   EcologistHorse:
     menu-name: '&a&lÖkológus Ló'
-    entity-displayname: '&l%playername% Ölológus Lova'
+    entity-displayname: '&l%playername% Ökológus Lova'
   NyanSheep:
     menu-name: '&4&lNy&6&la&e&ln &a&lSh&b&lee&d&lp'
     entity-displayname: '&l%playername% nyan Báránya'
@@ -187,7 +187,7 @@ Mounts:
     entity-displayname: '&l%playername% Pókja'
   Rudolph:
     menu-name: '&f&lRudol&4&lf'
-    entity-displayname: '&l%playername% Rudolfa'
+    entity-displayname: '&l%playername% Rudolfja'
   MoltenSnake:
     menu-name: '&c&lOlvadt Kígyó'
     entity-displayname: '&l%playername% Olvadt Kígyója'
@@ -257,7 +257,7 @@ Pets:
     entity-displayname: '&l%playername% Csibéje'
   Wither:
     menu-name: '&8&lWither'
-    entity-displayname: '&l%playername% Witherje'
+    entity-displayname: '&l%playername% Wither-je'
   Pumpling:
     menu-name: '&6&lPumpling'
     entity-displayname: '&l%playername% pumplingja'
