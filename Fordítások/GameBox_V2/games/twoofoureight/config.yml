@@ -17,7 +17,7 @@ gameBox:
     # lore of the button
     lore:
     - ""
-    - "&1Mozdíts el a „Csempéket” és add össze őket."
+    - "&1Mozdítsd el a „Csempéket” és add össze őket."
   gameButtons:
     normal:
       materialData: "WOOL:13"
