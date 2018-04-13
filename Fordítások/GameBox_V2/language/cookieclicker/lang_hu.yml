@@ -7,16 +7,16 @@ game:
     # use %cost% for the amount payed
     payed: " &2Fizettél &4%cost%-t"
     notEnoughMoney: " &4Nincs elég pénzed!"
-  closedGame: " &2You have a current score of &6%score%"
+  closedGame: " &2A jelenlegi pontod &6%score%"
   inventoryTitles:
     # %score% uses short names for high numbers. For longer names use %score_long%
-    gameTitle: "&9&lCC   &r&1%score% cookies"
+    gameTitle: "&9&lCC   &r&1%score% süti"
   cookieName: "&1&lCookie"
   ovenName: "&a&lA saját süti termelésed"
   # for longer names of high numbers use %cookies_per_second_long% and %cookies_per_click_long%
   ovenLore:
     - ""
-    - '&1You currently produce'
+    - '&1A jelenlegi termelésed'
     - "  &2%cookies_per_second% &1Sütik másodpercenként"
     - "  &2%cookies_per_click% &1Sütik klikkeléskor"
 
@@ -96,7 +96,7 @@ buildings:
   portal:
     name: "Portál"
     description:
-      - '&5&o"Ajtót nyit a sütiverzumba."'
+      - '&5&o"Ajtót nyit a sütiuniverzumba."'
   time_machine:
     name: "Időgép"
     description:
@@ -269,13 +269,13 @@ upgrades:
     110:
       name: "Dupla vastagú üvegek"
       description:
-        - '&5&o"óh... szóval EZ az amit sütöttem.."'
+        - '&5&o"óh... szóval EZ az, amit sütöttem.."'
     192:
       name: "Öregedő anyagok"
       description:
         - '&5&o"Ellen-ösztönös, nagymamáknak'
         - '&5&o    van egy szörnyű képességük, hogy erősebbé'
-        - '&5&o    váljanak de egyben idősebbé is."'
+        - '&5&o    váljanak, de egyben idősebbé is."'
     294:
       name: "Extrém gyalogosok"
       description:
@@ -325,7 +325,7 @@ upgrades:
     308:
       name: "Búza triffidok"
       description:
-        - '&5&o"A növények ápolása, sokkal egyszerűbb ha a növények,'
+        - '&5&o"A növények ápolása, sokkal egyszerűbb, ha a növények,'
         - '&5&o    tudnak sétálni, és segíteni a gazdaságban,.'
         - '&5&oNe dédelgesd. Ne etesd. Ne beszélgess velük."'
 
@@ -371,7 +371,7 @@ upgrades:
       name: "Repceolajkút"
       description:
         - '&5&o"Egy korábban, kiaknázatlan erőforrás,'
-        - '&5&o     a repceolaj átszivárog a föld alatti'
+        - '&5&o     a repceolaj átszivárog a földalatti'
         - '&5&o     olajbogyóknak, amelyek különleges ízlést és'
         - '&5&o     jövedelmező tulajdonságokat biztosítanak."'
 
@@ -388,7 +388,7 @@ upgrades:
     15:
       name: "Verejtékbolt"
       description:
-        - '&5&o"A laza láncok megszünnek."'
+        - '&5&o"A laza láncok megszűnnek."'
     46:
       name: "Rádium reaktorok"
       description:
@@ -396,7 +396,7 @@ upgrades:
     112:
       name: "Rekombobulátorok"
       description:
-        - '&5&o"Nagy része a sütidnek recombobuláció."'
+        - '&5&o"Nagy része a sütidnek rekombobuláció."'
     194:
       name: "Mély-sütéses eljárás"
       description:
@@ -497,7 +497,7 @@ upgrades:
       description:
         - '&5&o"Szabadítsd meg templomodnak az ősi'
         - '&5&o    erejét ezekkel az éves ünnepségekkel,'
-        - '&5&o    amelyek tûzfojtókat,'
+        - '&5&o    amelyek tűzfojtókat,'
         - '&5&o    hagyományos táncot,'
         - '&5&o    rituális lefejezéseket'
         - '&5&o    és más örömöket vonnak maguk után!"'

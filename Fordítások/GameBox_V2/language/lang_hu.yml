@@ -136,7 +136,7 @@ others:
     openingMessage: " &l&2Kérlek írd be a meghívni kívánt játékos nevét."
     helpMessage:
     - " &2Van &5%seconds% &2másodperced."
-    - " &2Hogy megállítsd a bevitelt, küldj &c'%'&2-t."
+    - " &2Hogy megállítsad a bevitelt, küldj &c'%'&2-t."
     timeRanOut: " &cBevitelre kapott időd lejárt."
     inputSuccessful: " &5%player%&2 meghívva."
     inputClosed: " &2Bevitel bezárva."
