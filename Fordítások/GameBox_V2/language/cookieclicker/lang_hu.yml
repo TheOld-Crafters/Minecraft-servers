@@ -303,7 +303,7 @@ upgrades:
       description:
         - '&5&o"Ez a kenyérgyümölcs rokona."'
     45:
-      name: "Genetikailag módosított sütik
+      name: "Genetikailag módosított sütik"
       description:
         - '&5&o"Csak természetes mutáció."'
     111:
@@ -836,10 +836,10 @@ upgrades:
         - '&5&o    univerzum, amely elfogyhatatlan'
         - '&5&o    mennyiségű energiát tartalmaz."'
     305:
-      name: "A Pulzus
+      name: "A Pulzus"
       description:
         - '&5&o"Bekerültél a kozmosz'
-        - '&5&o    nagy impulzusába,,'
+        - '&5&o    nagy impulzusába,'
         - '&5&o    egy időtlen ritmusba,'
         - '&5&o    amelyen minden anyagi és'
         - '&5&o    antimaterápiás dolog egyformán ver.'
