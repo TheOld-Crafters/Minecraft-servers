@@ -1,81 +1,81 @@
 # If set to true, will check for updates
-Check-For-Updates: true
-# List of the enabled categories.
-Categories-Enabled:
-  Gadgets: true
-  Particle-Effects: true
-  Mounts: true
-  Pets: true
-  Morphs: true
-  Hats: true
-  Suits: true
-  Emotes: true
+Frissítések ellenőrzése: true
+# List of the Engedélyezve categories.
+Engedélyezett kategóriák:
+  Eszközök: true
+  Részecske hatások: true
+  Hátasok: true
+  Petek: true
+  Morf: true
+  Sapkák: true
+  Öltözékek: true
+  Hangulatjelek: true
 # Other settings for categories:
 # - The Item in Main Menu.
 # - Do you want a BackToMainMenu Arrow in it?
-Categories:
-  Gadgets:
-    Main-Menu-Item: '409:0'
-    Go-Back-Arrow: true
+Kategóriák:
+  Eszközök:
+    Főmenü: '409:0'
+    Vissza: true
     # You wanna show the cooldown of current gadget in actionbar?
-    Cooldown-In-ActionBar: true
-  Particle-Effects:
-    Main-Menu-Item: '399:0'
-    Go-Back-Arrow: true
-  Mounts:
-    Main-Menu-Item: '329:0'
-    Go-Back-Arrow: true
-  Pets:
-    Main-Menu-Item: '352:0'
-    Go-Back-Arrow: true
-  Morphs:
-    Main-Menu-Item: '334:0'
-    Go-Back-Arrow: true
-  Hats:
-    Main-Menu-Item: '314:0'
-    Go-Back-Arrow: true
-  Suits:
-    Main-Menu-Item: '299:0'
-    Go-Back-Arrow: true
-  Emotes:
-    Go-Back-Arrow: true
-  Clear-Cosmetic-Item: '152:0'
+    Lehülési idő megjelenítése az akciósávban: true
+  Részecske hatások:
+    Főmenü: '399:0'
+    Vissza: true
+  Hátasok:
+    Főmenü: '329:0'
+    Vissza: true
+  Petek:
+    Főmenü: '352:0'
+    Vissza: true
+  Morf:
+    Főmenü: '334:0'
+    Vissza: true
+  Sapkák:
+    Főmenü: '314:0'
+    Vissza: true
+  Öltözékek:
+    Főmenü: '299:0'
+    Vissza: true
+  Hangulatjelek:
+    Vissza: true
+  Kozmetikai tárgyak törlése: '152:0'
   # Previous Page Item
-  Previous-Page-Item: '368:0'
+  Előző oldal: '368:0'
   # Next Page Item
-  Next-Page-Item: '381:0'
+  Következő: '381:0'
   # Back to Main Menu Item
-  Back-Main-Menu-Item: '262:0'
-  Self-View-Item:
-    # Item in Morphs Menu when Self View enabled.
-    When-Enabled: '381:0'
+  Vissza a főmenübe: '262:0'
+  Önnézet:
+    # Item in Morphs Menu when Self View Engedélyezve.
+    Bekapcsolva: '381:0'
     # Item in Morphs Menu when Self View disabled.
-    When-Disabled: '368:0'
-  Gadgets-Item:
-    # Item in Gadgets Menu when Gadgets enabled.
-    When-Enabled: '351:10'
+    Kikapcsolva: '368:0'
+  Eszközök:
+    # Item in Gadgets Menu when Gadgets Engedélyezve.
+    Bekapcsolva: '351:10'
     # Item in Gadgets Menu when Gadgets disabled.
-    When-Disabled: '351:8'
+    Kikapcsolva: '351:8'
   # Item in Pets Menu to rename current pet.
-  Rename-Pet-Item: '421:0'
+  Pet átnevezése: '421:0'
   # Should GUI close after selecting a cosmetic?
-  Close-GUI-After-Select: true
-  Back-To-Main-Menu-Custom-Command:
-    Enabled: false
-    Command: cc open custommenu.yml {player}
+  Ablak bezárása választás után: true
+  Egyéni parancs a főmenübe való visszatéréshez:
+    Engedélyezve: false
+    Parancs: cc open custommenu.yml {player}
 # The economy that should be used. Supports 'Vault' or 'PlayerPoints'
-Economy: Vault
+Gazdaság: Vault
 # Treasure Chests Settings.
 # /uc reload will not be enough to toggle them!
 # 
-# NOTE: Money will be given
+# NOTE: Pénz will be given
 #       to player even if disabled in case
 #       there is nothing to give!
 # 
 # 
 # About Treasure Chests designs:
 # For a list of effect: http://pastebin.com/CVKkufck
-# For the chest-types: NORMAL or ENDER
+# For the chest-Típuss: NORMAL or ENDER
 # Material syntax: 'id:data'
 # You CAN make more designs just copy one, paste it and modify.
 # Not twice same name!
@@ -86,135 +86,135 @@ Economy: Vault
 # third-BLOCKS: BLOCKS "around around" the center.
 # below-chests: Block below the chests.
 # barriers: the barrier.
-# chest-type: The chest type (NORMAL or ENDER)
+# chest-Típus: The chest Típus (NORMAL or ENDER)
 # effect: The effect (complete list: http://pastebin.com/CVKkufck)
 # 
 # For permission command:
 # Change it to correspond to your Permissions plugin!
 # Default one is Pex's.
 # 
-TreasureChests:
-  Enabled: false
-  Key-Price: 1000
-  Loots:
-    Money:
-      Enabled: true
-      Max: 100
-      Chance: 10
-      Message:
-        enabled: false
-        message: '%prefix% &6&l%name% found %money%$'
-    Gadgets-Ammo:
-      Enabled: true
-      Min: 20
-      Max: 100
-      Chance: 60
-      Message:
-        enabled: false
-        message: '%prefix% &6&l%name% found %ammo% %gadget% ammo'
-    Gadgets:
-      Enabled: true
-      Chance: 20
-      Message:
-        enabled: false
-        message: '%prefix% &6&l%name% found gadget %gadget%'
-    Mounts:
-      Enabled: true
-      Chance: 10
-      Message:
-        enabled: false
-        message: '%prefix% &6&l%name% found rare %mount%'
-    Pets:
-      Enabled: true
-      Chance: 10
-      Message:
-        enabled: false
-        message: '%prefix% &6&l%name% found rare %pet%'
-    Morphs:
-      Enabled: true
-      Chance: 4
-      Message:
-        enabled: true
-        message: '%prefix% &6&l%name% found legendary %morph%'
-    Effects:
-      Enabled: true
-      Chance: 4
-      Message:
-        enabled: true
-        message: '%prefix% &6&l%name% found legendary %effect%'
-    Hats:
-      Enabled: true
-      Chance: 10
-      Message:
-        enabled: false
-        message: '%prefix% &6&l%name% found rare %hat%'
-    Suits:
-      Enabled: true
-      Chance: 5
-      Message:
-        enabled: false
-        message: '%prefix% &6&l%name% found rare %suit%'
-    Emotes:
-      Enabled: true
-      Chance: 5
-      Message:
-        enabled: false
-        message: '%prefix% &6&l%name% found rare %emote%'
-    Commands:
-      shoutout:
-        Name: '&d&lShoutout'
-        Material: NETHER_STAR
-        Enabled: false
-        Chance: 100
-        Message:
-          enabled: false
-          message: '%prefix% &6&l%name% found a rare shoutout!'
-        Cancel-If-Permission: 'no'
-        Commands:
+Kincsesláda:
+  Engedélyezve: false
+  Kulcs ára: 1000
+  Zsákmányok:
+    Pénz:
+      Engedélyezve: true
+      Maximum: 100
+      Esély: 10
+      Üzenet:
+        Engedélyezve: false
+        Üzenet: '%prefix% &6&l%name% talált %Pénz%$'
+    Eszköz lőszer:
+      Engedélyezve: true
+      Minimum: 20
+      Maximum: 100
+      Esély: 60
+      Üzenet:
+        Engedélyezve: false
+        Üzenet: '%prefix% &6&l%name% talált %Töltény% %gadget% lőszert'
+    Eszközök:
+      Engedélyezve: true
+      Esély: 20
+      Üzenet:
+        Engedélyezve: false
+        Üzenet: '%prefix% &6&l%name% talált egy %gadget%'
+    Hátasok:
+      Engedélyezve: true
+      Esély: 10
+      Üzenet:
+        Engedélyezve: false
+        Üzenet: '%prefix% &6&l%name% talált egy ritka %mount%'
+    Petek:
+      Engedélyezve: true
+      Esély: 10
+      Üzenet:
+        Engedélyezve: false
+        Üzenet: '%prefix% &6&l%name% talált egy ritka %pet%'
+    Morf:
+      Engedélyezve: true
+      Esély: 4
+      Üzenet:
+        Engedélyezve: true
+        Üzenet: '%prefix% &6&l%name% talált egy legendás %morph%'
+    Effektek:
+      Engedélyezve: true
+      Esély: 4
+      Üzenet:
+        Engedélyezve: true
+        Üzenet: '%prefix% &6&l%name% talált egy legendás %effect%'
+    Sapkák:
+      Engedélyezve: true
+      Esély: 10
+      Üzenet:
+        Engedélyezve: false
+        Üzenet: '%prefix% &6&l%name% talált egy ritka %hat%'
+    Öltözékek:
+      Engedélyezve: true
+      Esély: 5
+      Üzenet:
+        Engedélyezve: false
+        Üzenet: '%prefix% &6&l%name% talált egy ritka %suit%'
+    Hangulatjelek:
+      Engedélyezve: true
+      Esély: 5
+      Üzenet:
+        Engedélyezve: false
+        Üzenet: '%prefix% &6&l%name% talált egy ritka %emote%'
+    Parancsok:
+      Kiáltás:
+        Név: '&d&lKiáltás'
+        Alapanyag: NETHER_STAR
+        Engedélyezve: false
+        Esély: 100
+        Üzenet:
+          Engedélyezve: false
+          Üzenet: '%prefix% &6&l%name% talált egy ritka kiáltást!'
+        Mégse ha engedélyezett: 'no'
+        Parancs:
         - say %name% is awesome!
-      flower:
-        Name: '&e&lFlower'
-        Material: YELLOW_FLOWER
-        Enabled: false
-        Chance: 100
-        Message:
-          enabled: true
-          message: '%prefix% &6&l%name% found a flower!'
-        Cancel-If-Permission: example.yellowflower
-        Commands:
+      Virág:
+        Név: '&e&lVirág'
+        Alapanyag: YELLOW_FLOWER
+        Engedélyezve: false
+        Esély: 100
+        Üzenet:
+          Engedélyezve: true
+          Üzenet: '%prefix% &6&l%name% talált egy virágot!'
+        Mégse ha engedélyezett: example.yellowflower
+        Parancs:
         - give %name% yellow_flower 1
         - pex user %name% add example.yellowflower
-  Designs:
-    Classic:
-      center-block: '169:0'
-      around-center: '5:0'
-      third-blocks: '5:1'
-      below-chests: '17:0'
-      barriers: '85:0'
-      chest-type: NORMAL
-      effect: FLAME
+  Modellek:
+    Klasszikus:
+      Középső blokk: '169:0'
+      Középpont körül: '5:0'
+      Harmadik blokk: '5:1'
+      Láda alatt: '17:0'
+      Akadályok: '85:0'
+      Láda típus: NORMAL
+      Effektek: FLAME
     Modern:
-      center-block: '169:0'
-      around-center: '159:11'
-      third-blocks: '155:0'
-      below-chests: '159:11'
-      barriers: '160:3'
-      chest-type: ENDER
-      effect: REDSTONE
-    Nether:
-      center-block: '89:0'
-      around-center: '88:0'
-      third-blocks: '87:0'
-      below-chests: '112:0'
-      barriers: '113:0'
-      chest-type: NORMAL
-      effect: SMOKE_NORMAL
-  Permission-Add-Command: pex user %name% add %permission%
+      Középső blokk: '169:0'
+      Középpont körül: '159:11'
+      Harmadik blokk: '155:0'
+      Láda alatt: '159:11'
+      Akadályok: '160:3'
+      Láda típus: ENDER
+      Effektek: REDSTONE
+    Pokol:
+      Középső blokk: '89:0'
+      Középpont körül: '88:0'
+      Harmadik blokk: '87:0'
+      Láda típus: '112:0'
+      Akadályok: '113:0'
+      Láda típus: NORMAL
+      Effektek: SMOKE_NORMAL
+  Engedély adás parancsa: pex user %name% add %permission%
 # This option will fill the blank slots of inventories
 # with a custom item!
-Fill-Blank-Slots-With-Item:
-  Enabled: false
-  Item: '160:15'
+Bank helyek feltöltése tárggyal:
+  Engedélyezve: false
+  Tárgy: '160:15'
 # Toggle this to allow players to rename pets.
 # 
 # Permission-Required:
@@ -222,33 +222,33 @@ Fill-Blank-Slots-With-Item:
 # ultracosmetics.pets.rename
 # will be required to rename a pet.
 # 
-# Requires Money:
-# If true, money will be required
+# Requires Pénz:
+# If true, Pénz will be required
 # to rename a pet.
-Pets-Rename:
-  Enabled: false
-  Permission-Required: false
-  Requires-Money:
-    Enabled: true
-    Price: 100
+Pet átnevezése:
+  Engedélyezve: false
+  Engedély köteles: false
+  Pénz szükséges:
+    Engedélyezve: true
+    Ár: 100
 # Do pets drop items? (not pickable up by players)
-Pets-Drop-Items: true
+Petek által dobott itemek: true
 # Are pets babies?
-Pets-Are-Babies: true
+A petek bébik?: true
 # Do you want the mounts
 # that normally make block trails
 # to do so?
-Mounts-Block-Trails: true
-# This option allows to use ammo
+Hátas ösvényen közlekedése: true
+# This option allows to use Töltény
 # for gadgets, for limited uses.
-# Ammo can be given with /uc give ammo
+# Töltény can be given with /uc give Töltény
 # or bought from menu when activating gadget.
 # 
 # For the system: 'file' or 'mysql'
 # 
 # If you set mysql, please fill the MySQL infos.
-Ammo-System-For-Gadgets:
-  Enabled: false
+Töltény System eszközökhöz:
+  Engedélyezve: false
   System: file
   MySQL:
     hostname: localhost
@@ -258,2158 +258,2158 @@ Ammo-System-For-Gadgets:
     database: UltraCosmetics
   # Do you want that in the gadgets menu
   # each gadget item has an amount
-  # corresponding to your ammo.
-  Show-Ammo-In-Menu-As-Item-Amount: true
+  # corresponding to your Töltény.
+  Töltény darabjának mutatása a menüben mint tárgy: true
 # The menu item settings.
 # 
-# List for type: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
-Menu-Item:
-  Give-On-Join: true
-  Give-On-Respawn: true
+# List for Típus: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+Menü:
+  Belépéskor oda adás: true
+  Újraéledéskor oda adás: true
   Slot: 3
-  Type: ENDER_CHEST
+  Típus: ENDER_CHEST
   Data: 0
-  Displayname: '&6&lCosmetics'
+  Megjelenítendő név: '&6&lKozmetika'
 # Settings related to permissions.
 # 
-# List for "Type" https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
-No-Permission:
-  Show-In-Lore: true
-  Lore-Message-Yes: '&o&7Permission: &a&lYes!'
-  Lore-Message-No: '&o&7Permission: &4&lNo!'
-  Dont-Show-Item: false
-  Custom-Item:
-    enabled: false
-    Type: INK_SACK
+# List for "Típus" https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+Nincs engedély:
+  Ismertetőben megjelenítés: true
+  Ismertető üzenet Igen: '&o&7Emgedély: &a&lMegadva!'
+  Ismertető üzenet Nem: '&o&7Engedély: &4&lMegtagadva!'
+  Tárgy elrejtése: false
+  Egyéni tárgy:
+    Engedélyezve: false
+    Típus: INK_SACK
     Data: 8
-    Name: '&c&l{cosmetic-name}'
-    Lore:
+    Név: '&c&l{cosmetic-name}'
+    Ismertető:
     - ''
-    - '&c&lYou do not have permission for this!'
+    - '&c&lNincs engedélyed ehhez!'
     - ''
 # If set to true, in messages the cosmetics' names
-# won't be colored.
+# won't be coIsmertetőd.
 # Example:
 # With true: &a&lYou activated &9&lPaintball Gun!
 # With false: &a&lYou activated Paintball Gun!
-Chat-Cosmetic-PlaceHolder-Color: true
+Kozmetika nevének színezése az üzenetben: true
 # What is the slot for gadgets?
-Gadget-Slot: 4
+Eszköz helye: 4
 # If toggled to true,
 # players will be able to remove
 # their current gadget by pressing
 # their drop key.
-Remove-Gadget-With-Drop: false
+Eszköz törlése eldobással: false
 # List of commands that won't work when holding a cosmetic, wearing an emote, or wearing a hat.
-# Type commands in lowercase without slashes.
-Disabled-Commands:
+# Típus commands in lowercase without slashes.
+Letiltott parancsok:
 - hat
 # List of the worlds
-# where cosmetics are enabled!
-Enabled-Worlds:
+# where cosmetics are Engedélyezve!
+Engedélyezett világok:
 - world
-Gadgets:
-  BatBlaster:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oLaunch waves of annoying bats'
-    - '&7&oto people you don''t like!'
-    Cooldown: 8.0
+Eszközök:
+  DenevérÁgyú:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oKilő egy csapat idegesítő Denevért'
+    - '&7&oazokra, akiket nem szeretsz!'
+    Lehülési idő: 8.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Chickenator:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oShoot, boom, KFC.'
-    Cooldown: 6.0
+    Kincsesládában találni: true
+  Csirkenátor:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oLövés. Robbanás. KFC.'
+    Lehülési idő: 6.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  ColorBomb:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oA colorful bomb!'
-    Cooldown: 25.0
+    Kincsesládában találni: true
+  Színbomba:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oEgy színes bomba!'
+    Lehülési idő: 25.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  DiscoBall:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oJust, dance!'
-    Cooldown: 45.0
+    Kincsesládában találni: true
+  DiscoGömb:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oTáncolj!'
+    Lehülési idő: 45.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  EtherealPearl:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oTake a ride through the skies'
-    - '&7&oon your very own Ethereal Pearl!'
-    Cooldown: 2.0
+    Kincsesládában találni: true
+  Éteri Gyöngy:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oLovagold meg az egeket'
+    - '&7&oa saját Éteri Gyöngyöddel!'
+    Lehülési idő: 2.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  FleshHook:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oMake new friends by throwing a hook'
-    - '&7&ointo their face and pulling them'
-    - '&7&otowards you!'
-    Cooldown: 5.0
+    Kincsesládában találni: true
+  HúsHorog:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oSzerezz új barátokat úgy,'
+    - '&7&ohogy az arcukba dobod a horgot'
+    - '&7&oés magadhoz húzod őket!'
+    Lehülési idő: 5.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  MelonThrower:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oDeliciously fun!'
-    Cooldown: 2.0
+    Kincsesládában találni: true
+  DinnyeDobó:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oFinoman vicces!'
+    Lehülési idő: 2.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  BlizzardBlaster:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oLet it go!'
-    Cooldown: 12.0
+    Kincsesládában találni: true
+  JégÁgyú:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oLegyen hóó!'
+    Lehülési idő: 12.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  PortalGun:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oMomentum, a function of mass and velocity,'
-    - '&7&ois converved between portals. In Layman''''s terms,'
-    - '&7&ospeedy thing goes in, speedy thing goes out.'
-    Cooldown: 2.0
+    Kincsesládában találni: true
+  PortalPuska:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oA pillanat, a tömeg és a sebesség függvénye'
+    - '&7&omegmarad a portálok között. Layman szerint,'
+    - '&7&ogyors dolog bemegy, gyors dolog jön ki.'
+    Lehülési idő: 2.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  ExplosiveSheep:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oAre you sure it''s supposed'
-    - '&7&oto flicker like that?'
-    Cooldown: 25.0
+    Kincsesládában találni: true
+  RobbanóBárány:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oBiztos vagy benne, hogy ez'
+    - '&7&oígy szokott vibrálni?'
+    Lehülési idő: 25.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  PaintballGun:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  PaintballPisztoly:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&oPEW PEW PEW PEW!!!'
-    Cooldown: 0.5
+    Lehülési idő: 0.5
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
     # With what block will it paint?
-    Block-Type: STAINED_CLAY
-    Particle:
+    Block-Típus: STAINED_CLAY
+    Részecske:
       # Should it display particles?
-      Enabled: false
+      Engedélyezve: false
       # what particles? (List: http://pastebin.com/CVKkufck)
-      Effect: FIREWORKS_SPARK
+      Effekt: FIREWORKS_SPARK
     # The radius of painting.
-    Radius: 2
+    Távolság: 2
     # A list of the BLOCKS that
     # can't be painted.
-    BlackList:
+    Feketelista:
     - REDSTONE_BLOCK
-  ThorHammer:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oGet the real Mjölnir'
-    Cooldown: 8.0
+  Thor Kalapácsa:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oKapd el az igazi Mjölnirt'
+    Lehülési idő: 8.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  AntiGravity:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oYou don''t like gravity?'
-    - '&7&oThen, this gadget is made for you!'
-    Cooldown: 30.0
+    Kincsesládában találni: true
+  AntiGravitáció:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oNem szereted a gravitációt?'
+    - '&7&oAkkor ez az eszköz neked készült!'
+    Lehülési idő: 30.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   SmashDown:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oAND HIS NAME IS... JOHN CENA!!'
-    Cooldown: 15.0
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oÉs úgy hívták hogy... JOHN CENA!!'
+    Lehülési idő: 15.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Rocket:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oHouston, we have got a problem..'
-    Cooldown: 60.0
+    Kincsesládában találni: true
+  Rakéta:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oHouston, van egy kis probléma..'
+    Lehülési idő: 60.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  BlackHole:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oYou should not get caught by it..'
-    Cooldown: 35.0
+    Kincsesládában találni: true
+  FeketeLyuk:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oNem kéne bele esned..'
+    Lehülési idő: 35.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Tsunami:
-    # Description of this cosmetic.
-    Description:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&9&oTSUNAMI!!'
-    - '&7&oJUMP!'
-    - '&7&oLet''s go!'
-    Cooldown: 12.0
+    - '&7&oUGRÁS!'
+    - '&7&oHajrá!'
+    Lehülési idő: 12.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   TNT:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBlow some people up!'
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oRobbantsunk fel pár embert!'
     - '&7&oKABOOM!'
-    Cooldown: 10.0
+    Lehülési idő: 10.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  FunGun:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oWoow! So much fun in a gun!'
-    Cooldown: 4.0
+    Kincsesládában találni: true
+  Mókapuska:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oWoow! Sok móka egy puskában!'
+    Lehülési idő: 4.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Parachute:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Ejtőernyő:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&oGERONIMOooo!'
-    Cooldown: 60.0
+    Lehülési idő: 60.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  QuakeGun:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oGet a real Rail Gun'
-    - '&7&oand strike players and mobs!'
-    Cooldown: 3.0
+    Kincsesládában találni: true
+  Rengető Puska:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oSzerezz egy igazi Légpuskát'
+    - '&7&oés találd el az ellenséget!'
+    Lehülési idő: 3.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  GhostParty:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oWho Ya Gonna Call?'
-    - '&f&lGHOST &4&lBUSTERS!'
-    Cooldown: 45.0
+    Kincsesládában találni: true
+  Szellem Parti:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oKit fogsz hívni?'
+    - '&f&lSZELLEM &4&lÍRTÓK!'
+    Lehülési idő: 45.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Firework:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oNeed to celebrate?'
-    - '&7&oUse fireworks!'
-    Cooldown: 0.2
+    Kincsesládában találni: true
+  Tüzijáték:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oÜnnepelni kell?'
+    - '&7&oHasználj tüzijátékot!'
+    Lehülési idő: 0.2
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  ChristmasTree:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oHere is a Christmas'
-    - '&7&oTree for you!'
-    Cooldown: 20.0
+    Kincsesládában találni: true
+  Karácsonyi fa:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oTessék egy karácsonyi'
+    - '&7&ofa neked!'
+    Lehülési idő: 20.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  FreezeCannon:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oTransform the floor into a rink!'
-    Cooldown: 8.0
+    Kincsesládában találni: true
+  Fagyasztó Ágyú:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oVáltoztasd a talajt jégpályává!'
+    Lehülési idő: 8.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Snowball:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oJoin in on the festive fun by'
-    - '&7&othrowing snow at people!'
-    Cooldown: 0.5
+    Kincsesládában találni: true
+  Hógolyó:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oCsatlakozz az ünnepi mókához'
+    - '&7&oés dobálj havat az embereknek!'
+    Lehülési idő: 0.5
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  PartyPopper:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oCelebrate by blasting confetti into'
-    - '&7&opeoples'' eyes!'
-    Cooldown: 2.0
+    Kincsesládában találni: true
+  PartyPukkancs:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oÜnnepelj azzal, hogy confettit lősz'
+    - '&7&oaz emberek szemébe!'
+    Lehülési idő: 2.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Trampoline:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oConstructs a trampoline!'
-    - '&7&othat sends you and your'
-    - '&7&ofriends into air!'
-    Cooldown: 75.0
+    Kincsesládában találni: true
+  Trambulin:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oLétrehoz egy trambulint,'
+    - '&7&oami felküld téged és a barátaidat'
+    - '&7&oa levegőbe!'
+    Lehülési idő: 75.0
     # Should it affect players? (Velocity, etc.)
-    Affect-Players: true
-    # if true, the gadget will be enabled.
-    Enabled: true
-    # if true, the description of gadget will be showed.
-    Show-Description: true
+    Befolyásolja a játékost: true
+    # if true, the gadget will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of gadget will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-Mounts:
-  DruggedHorse:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThat is just too much!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+Hátasok:
+  Drogos Paci:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oEz egy kicsit sok!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  InfernalHorror:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThis mount comes directly from... hell!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Pokoli Horror:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oEgy hátas egyenesen a pokolból!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  GlacialSteed:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThis mount comes from North Pole!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Jeges veszedelem:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oEz a hátas az Északi Sarkról érkezett!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  WalkingDead:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  A sétáló halott:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&oGraaaaw...'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  MountOfFire:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThe mount of Hadès!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Tüzes Paripa:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oHádész lova!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  MountOfWater:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThe mount of Poséidon!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Vizes Paripa:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oPoséidon lova!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  EcologistHorse:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBecome ecologist!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Ökologus lova:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oLegyél te is ökológus!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Snake:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oWatch out! It may bite..'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Kígyó:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oVigyázat, lehet harap..'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  NyanSheep:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  NyanBárány:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&4&lNyan &6&lnyan &e&lnyan'
     - '&a&lnyan &3&lnyan &9&lnyan'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Dragon:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBecome a dragon rider!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Sárkány:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oLegyél sárkánylovas!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Slime:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Nyálka:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&oSplat! Splat!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  HypeCart:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oEver wanted to drive a F1?'
-    - '&7&oNow you can!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Csúcsmobil:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oSzerettél volna eddig F1-et vezetni?'
+    - '&7&oMost megteheted!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Spider:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oYOU are the spider jockey!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Pók:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oTE vagy a pók zsoké!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Rudolph:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oWhat would be Christmas'
-    - '&7&owithout Rudolph the Reeinder?'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oMert milyen lenne a karácsony'
+    - '&7&oRudolph nélkül?'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  MoltenSnake:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oDeep under the Earth''s surface, there'
-    - '&7&oexists a mythical species of Molten'
-    - '&7&oSnakes. This one will serve you eternally.'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Olvadt Kígyó:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oMélyen a föld felszín alatt, létezik'
+    - '&7&oa misztikus csoportja az olvadt kígyóknak.'
+    - '&7&oEz az egy örökké szolgálni fog.'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-Particle-Effects:
-  RainCloud:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThe weather forecast'
-    - '&7&ois telling me it''s raining.'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+Részecske Effektek:
+  Esős Felhő:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oAz időjárás azt mondja'
+    - '&7&ohogy most esik az eső.'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  SnowCloud:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThe weather forecast'
-    - '&7&ois telling me it''s snowing.'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Havas Felhő:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oAz időjárás azt mondja'
+    - '&7&ohogy most havazik.'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  BloodHelix:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oAncient legend says this magic'
-    - '&7&oempowers the blood of its user,'
-    - '&7&ogiving them godly powers..'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Véres vonal:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oŐsi legendák szerint, ez a varázslat'
+    - '&7&ofelerősíti a vért használót,'
+    - '&7&oisteni erőket adva neki..'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  FrostLord:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oI am The Almighty Frostlord!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Fagy Ura:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oÉn vagyok a mindenható Fagy Ura!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  FlameRings:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oWatch out! They are hot!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Tüzes Karikák:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oVigyázat! Forrók!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  InLove:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oOMG wow I''m in love!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Szerelmes:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oOMG Szerelmes vagyok!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  GreenSparks:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oLittle and green sparkly sparks!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Zöld Szikrák:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oKicsi zöld szikrázó szikrák!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  FrozenWalk:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oMy feet are so cold!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Fagyos séta:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oA talpam olyan hideg!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Music:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oMuch music!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Zene:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oSok zene!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Enchanted:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBecome an almighty enchanter!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Bűbájos:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oLegyél te a mindenható varázsló!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Inferno:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oEffect created by Satan himself!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oMaga Sátán készítette ezt az effeket!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  AngelWings:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBecome an angel!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Angyal szárnyak:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oLegyél angyali!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  SuperHero:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBecome Superman!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Szuperhős:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oTe vagy az új Szuperman!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  SantaHat:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBecome Santa!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Télapó sapkája:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oTélapó küldte!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  CrushedCandyCane:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThere''s no such thing as too much'
-    - '&7&oChristmas Candy. Do not listen'
-    - '&7&oto your dentist.'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Törött cukor vessző:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oNincs is jobb a sok karácsonyi'
+    - '&7&ocukornál. Ne halgass'
+    - '&7&oa fogorvosodra.'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  EnderAura:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThese mystic particle attach to'
-    - '&7&oonly the most legendary of players!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Végtelen Aura:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oEzek a misztikus részecskék'
+    - '&7&ocsak a legendás játékosokhoz tapadnak!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  FlameFairy:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oHEY!!'
-    # if true, the effect will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Lángtündér:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oHÉ!!'
+    # if true, the effect will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-Pets:
-  Piggy:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+Petek:
+  Malacka:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&oOink! Oink!'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Sheep:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBaaaa, baa'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Bárány:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oBeeee, beee'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  EasterBunny:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oIs it Easter yet?'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Húsvéti Nyuszi:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oMáris húsvét van?'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Cow:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oMoooo!'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Tehén:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oMúúú!'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Mooshroom:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oMoooo!'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Gombatehén:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oMúúú!'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Kitty:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Cica:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&oMeoooow'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Dog:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Kutya:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&oWoof!'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Chick:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBwaaaaaaak!!'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Csibe:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oKotkodáács!!'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Wither:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oWatch out for me..'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oŐ legalább vigyáz rám..'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Pumpling:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oJust a little floating pumpkin'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oCsak egy kicsi lebegő tök'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  ChristmasElf:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oI can make presents for you!'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Karácsonyi manó:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oCsináltam egy ajándékot neked!'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  IronGolem:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oI like flowers'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Vasgólem:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oKedvelem a virágokat'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Snowman:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Hóember:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&oPew pew pew'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Villager:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Falusi:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&oHmmmmmmmmm'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Bat:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oI prefer dark areas'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Denevér:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oA sötét helyeket preferálom'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  PolarBear:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oI prefer cold areas'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Jegedmedve:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oA hideg helyeket preferálom'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Llama:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oNeed me to carry anything?'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Láma:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oSzükségem van valamire?'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Parrot:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oPolly want a cracker?'
-    # if true, the pet will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Papagály:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oPolly szeretne kekszet?'
+    # if true, the pet will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-Hats:
-  Astronaut:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oHouston, we have got a problem.'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+Sapkák:
+  Asztronauta:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oHouston, van egy kis probléma.'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Scared:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oOh gawd, that scared me!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Ijedt:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oOh istenem, ez megijesztett!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Angel:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oDid it hurt when you fell from heaven?'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Angyal:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oFájt, mikor leestél a mennyből?'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Embarassed:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oI am kinda embarassed by that.'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Zavart:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oNagyon zavarban vagyok.'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Kissy:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oWanna kiss?'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Csókos:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oEgy puszit?'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Sad:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oI am so sad.'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Szomorú:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oNagyon szomorú vagyok.'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Cool:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oI am such a cool guy.'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Király:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oEgy király srác vagyok.''
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Surprised:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oWow, did not expect that!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Meglepődött:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oWáó, nem kellett volna!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Dead:
-    # Description of this cosmetic.
-    Description:
-    - '&7&ogot rekt'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Halott:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oMegaláztak.'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Crying:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oi cri evrytiem'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Sírós:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oMindig sírok.'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  BigSmile:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oUh, because I am really happy!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Nagy mosoly:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oOh, tényleg boldog vagyok!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Wink:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oYou know what I mean ;)'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Kacsintós:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oHa érted mire gondolok ;)'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Derp:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oDerp Derp Derping all around'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Hülyeség:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oHülyeség, Hülyeség, Hülyéskedés mindenfelé'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Smile:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oUh, because I am happy'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Mosoly:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oOh, boldog vagyok!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Iron:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oAs hard as iron!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Vas:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oEz erős, ez vas!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Gold:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oMy precious!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Arany:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oDrágaságom!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Diamond:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThis is really strong!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Gyémánt:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oEz igazán erős!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Piston:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oHave you got the redstone?'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Dugattyú:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oVan egy kis redstone-d?'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  CommandBlock:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oControl the world with it!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Parancsblokk:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oEzzel irányítom a világot!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Music:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oYou are so musical.'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Zene:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oTe egy zenész vagy.'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Squid:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBloop Bloop!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Tintahal:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oBlugy blugy!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Chicken:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBwwaaaaaaaaaaaakkkkk!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Csirke:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oKotkooooodáááács!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Pig:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oOink Oink!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Malac:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oRöff röff!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Blaze:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oWatch out for the fire!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Őrláng:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oFigyelj a tűzre!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Sheep:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBaaaa, baa'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Bárány:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oBeee, beee!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Golem:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oI am your guard.'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Gólem:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oÉn vagyok a védelmeződ.'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Enderman:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oNow I am here, now I am there.'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Bevégző:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oMost itt vagyok, most ott vagyok.'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Mario:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oIt is me! Mario!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oÉn vagyok!Mario!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Luigi:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oLuigi time!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oLuigi idő!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Batman:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oI am batman!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oÉn vagyok Batman!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Chest:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oOpen, and close'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Láda:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oNyitva, és zárva.'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Skull:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oWho iss headless now?'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Koponya:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oKi a fejnélküli most?'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Ghost:
-    # Description of this cosmetic.
-    Description:
-    - '&7&o2spooky4u'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Szellem:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oIjesztő'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  JackOLantern:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oA little pumkin'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Töklámpás:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oEgy kicsi tök'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  ScaryClown:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oHope you are not scared of clowns.'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Ijesztő bohóc:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oRemélem, nem félsz a bohócoktól.'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Santa:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oOh oh oh! Merry Christmas!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Télapó:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oHo ho hoo!Boldog karácsonyt!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Snowman:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oI don''t have a skull.. or bones'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Hóember:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oNincsen koponyám...se csontjaim'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Present:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oFrom Santa, to you!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Ajándék:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oTélapótól, neked!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Elf:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oI work for Santa!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Manó:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oA télapónak dolgozom!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Bedrock:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oUnbreakable!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Alapkő:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oTörhetetlen!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Bread:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Kenyér:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Cheese:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Sajt:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Pancakes:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBetter with syrup!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Palacsinta:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oSziruppal jobb!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Cake:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oMmmm, cake.'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Torta:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oMmmm, torta.'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Cookie:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oCookie'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Süti:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oSüti'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  CandyCane:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Cukor vessző:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Chocolate:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Csokoládé:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  WhiteChocolate:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Fehér csokoládé:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Apple:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Alma:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Melon:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Dinnye:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  CarvedPumpkin:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Faragott tök:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Strawberry:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Eper:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Coconut:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Kókusz:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Taco:
-    # Description of this cosmetic.
-    Description:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Bacon:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oEverything''s better with bacon.'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Szalonna:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oSzalonnával, minden jobb.'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Fries:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Sültkrumpli:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Hamburger:
-    # Description of this cosmetic.
-    Description:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Popcorn:
-    # Description of this cosmetic.
-    Description:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  WhiteDonut:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Fehér fánk:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  PinkDonut:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Rózsaszín fánk:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  ChocolateDonut:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Csokoládé fánk:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&o'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Pie:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oi like pie'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Pite:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oKedvelem a pitét'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   A:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThe first letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oA első betű az áábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   B:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThe second letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oA második betű az ábc-ben!!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   C:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oThe third letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oA harmadik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   D:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The fourth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A negyedik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   E:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The fifth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&A ötödik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   F:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The sixth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A hatodik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   G:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The seventh letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A hetedik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   H:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The eighth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A nyolcadik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   I:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The ninth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A kilencedik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   J:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The tenth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A tizedik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   K:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The eleventh letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A tizenegyedik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   L:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The twelfth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A tizenkettedik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   M:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The thirteenth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A tizenharmadik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   N:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The fourteenth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A tizennegyedik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   O:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The fifteenth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A tizenötödik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   P:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The sixteenth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A tizenhatodik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Q:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The seventeenth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A tizenhetedik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   R:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The eighteenth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A tizennyolcadik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   S:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The nineteenth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A tizenkilecedik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   T:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The twentieth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A huszadik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   U:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The twenty-first letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A huszonegyedik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   V:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The twenty-second letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A huszonkettedik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   W:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The twenty-third letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A huszonharmadik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   X:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The twenty-fourth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A huszonnegyedik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Y:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The twenty-fifth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A huszonötödik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
   Z:
-    # Description of this cosmetic.
-    Description:
-    - '&7&9The twenty-sixth letter in the alphabet!'
-    # if true, the hat will be enabled.
-    Enabled: true
-    # if true, the description of this hat will be showed.
-    Show-Description: true
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&9A huszonhatodik betű az ábc-ben!'
+    # if true, the hat will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this hat will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-Suits:
-  Rave:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oSuch amazing colors!'
-    # if true, the suit will be enabled.
-    Enabled: true
-    # if true, the description of this suit will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+Ruhák:
+  Nagy buli:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oMilyen csodálatos színek!'
+    # if true, the suit will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this suit will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Astronaut:
-    # Description of this cosmetic.
-    Description:
+    Kincsesládában találni: true
+  Asztronauta:
+    # Leírás of this cosmetic.
+    Leírás:
     - '&7&oHouston?'
-    # if true, the suit will be enabled.
-    Enabled: true
-    # if true, the description of this suit will be showed.
-    Show-Description: true
+    # if true, the suit will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this suit will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Diamond:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oShow your Mining skills'
-    - '&7&owith this amazing outfit!'
-    # if true, the suit will be enabled.
-    Enabled: true
-    # if true, the description of this suit will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Gyémánt:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oMutasd meg a bányász képességeid,'
+    - '&7&oezzel a csodálatos ruhával!'
+    # if true, the suit will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this suit will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Santa:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oBecome Santa and deliver presents!'
-    # if true, the suit will be enabled.
-    Enabled: true
-    # if true, the description of this suit will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Télapó:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oJön a télapó, és szállítja az ajándékokat!'
+    # if true, the suit will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás of this suit will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-Emotes:
-  Cry:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oAre you really sad? :('
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+Hangulatok:
+  Sír:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oTényleg szomorú vagy? :('
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Angry:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oShow your rage to the other players!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Mérges:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oTöltsd ki a dühöd egy másik játékoson!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Happy:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oDon''t worry, be happy!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Boldog:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oNe aggódj, légy boldog!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Cheeky:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oYou like being cheeky? Well, this emote is for you!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Szemtelen:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oSzereted a szemtelent?Akkor ez a hangulat neked való!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Love:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oYou have beautiful eyes, do you know that?'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Szerelmes:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oSzépek a szemeid, tudtad?'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  DealWithIt:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oDo you feel like showing off? This emote is for you!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Dicsekvő:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oSzeretsz dicsekedni?Akkor ez a te hangulatod!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Cool:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oKeep cool man!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Király:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oLegyél király, ember!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Surprised:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oOH LORD!!!'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Meglepődött:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oOH URAM!!!'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
-  Wink:
-    # Description of this cosmetic.
-    Description:
-    - '&7&oHaving fun? Let someone know you are in on the joke'
-    # if true, the mount will be enabled.
-    Enabled: true
-    # if true, the description will be showed.
-    Show-Description: true
+    Kincsesládában találni: true
+  Kacsintós:
+    # Leírás of this cosmetic.
+    Leírás:
+    - '&7&oSzórakozni? Tájékoztasd valakivel, hogy a viccben van'
+    # if true, the mount will be Engedélyezve.
+    Engedélyezve: true
+    # if true, the Leírás will be showed.
+    Üzenet: true
     # if true, it'll be possible to find
     # it in treasure chests
-    Can-Be-Found-In-Treasure-Chests: true
+    Kincsesládában találni: true
