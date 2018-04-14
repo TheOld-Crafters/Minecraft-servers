@@ -11,7 +11,7 @@ game:
   inventoryTitles:
     # %score% uses short names for high numbers. For longer names use %score_long%
     gameTitle: "&9&lCC   &r&1%score% süti"
-  cookieName: "&1&lCookie"
+  cookieName: "&1&lSüti"
   ovenName: "&a&lA saját süti termelésed"
   # for longer names of high numbers use %cookies_per_second_long% and %cookies_per_click_long%
   ovenLore:
@@ -48,7 +48,7 @@ buildings:
   buildingLore:
     - "Egy vásárlása ennyiért &r&c%cost%&5&o (Bal klikk)"
     - ""
-    - '&1You have &r&2%count%&1 %name%(s)'
+    - '&1%name%-ból/-ből neked &1&r&2%count% darab van.'
     - "  &1Termelsz &r&2%cookies_per_second_per_item%&1 sütit másodpercenként"
     - "  &1Teljes termelés: &r&2%cookies_per_second%&1"
     - ""
@@ -56,7 +56,7 @@ buildings:
   cursor:
     name: "Kurzor"
     description:
-      - '&5&o"Autómataklikkelés minden 10. másodpercbe."'
+      - '&5&o"Autómata klikkelés minden 10. másodpercbe."'
   grandma:
     name: "Nagyi"
     description:
@@ -129,7 +129,7 @@ upgrades:
   #   use %Building% to get the name exactly as defined
   types:
     classic:
-      - "&bMinden%Building% &kétszer&r&b olyan hatékony."
+      - "&bMinden %Building% &lkétszer&r&b olyan hatékony."
       - ""
     classic_mouse:
       - "&bAz egér, és minden %building% &lkétszer&r&b olyan hatékony."
