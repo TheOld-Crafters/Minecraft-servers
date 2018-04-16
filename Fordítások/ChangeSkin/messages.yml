@@ -32,31 +32,31 @@ no-skin: '&4Meg kell adnod a skint, amelyre váltani szeretnél.'
 no-console: '&4Játékosnak kell lenned a saját skined beállításához.'
 
 # UUID resolve request was sent to the mojang servers and is waiting for a response
-queue-name-resolve: '&6Skin név fordítás UUID-re kérelem elküldve.'
+queue-name-resolve: '&6A skin név fordítás UUID-re kérelem elküldve.'
 
 # Supplied username is cannot be resolved because of connection problems
-no-resolve: "&4UUID nem dolgozható fel."
+no-resolve: "&4Az UUID nem dolgozható fel."
 
 # UUID was successful resolved
-uuid-resolved: '&2UUID sikeresen lefordítva a játékosnévről.'
+uuid-resolved: '&2Az UUID sikeresen lefordítva a játékosnévről.'
 
 # Skin preferences was reset to the default value
 reset: '&2Beállítások visszaállítása az alapértelmezett értékre.'
 
 # Queuing skin change
-skin-change-queue: '&6Skin megváltoztatva.'
+skin-change-queue: '&6A skin megváltoztatva.'
 
 # The supplied UUID is not in the correct format Example: 550e8400-e29b-11d4-a716-446655440000
-invalid-uuid: '&2Érvénytelen UUID.'
+invalid-uuid: '&2Érvénytelen az UUID.'
 
 # Skin is downloading form the mojang servers
-skin-downloading: '&2Skin letöltése folyamatban.'
+skin-downloading: '&2A skin letöltése folyamatban.'
 
 # Instant updates was disabled, so the players have to relogin
-skin-changed-no-instant: '&2Skin megváltoztatva. Csatlakozz újra a változtatások megtekintéséhez.'
+skin-changed-no-instant: '&2A skin megváltoztatva. Csatlakozz újra a változtatások megtekintéséhez.'
 
 # Skin was successful updates
-skin-changed: '&2Skin sikeresen frissítve.'
+skin-changed: '&2A skin sikeresen frissítve.'
 
 # On name to username rate-limiting
 rate-limit: '&4Név fordítása UUID-re korlát elérve. Kérjük várj egy kis időt, vagy küldd be a skin UUID-t.'
@@ -98,4 +98,4 @@ select-noargs: '&4Hiányzik a skin ID.'
 invalid-skin-name: '&4Érvénytelen skin név.'
 
 # User tried to select a custom skin by it's id, but it wasn't found
-skin-not-found: '&4Skin nem található.'
+skin-not-found: '&4A skin nem található.'
