@@ -141,7 +141,7 @@ Gadgets:
   Trampoline:
     name: '&9&lTrambulin'
   Gadget-Ready-ActionBar: '%gadgetname% &f&lkészen áll!'
-  Lore: '&9Kütyüt'
+  Lore: '&9Kütyü'
 Mounts:
   DruggedHorse:
     menu-name: '&2&lRészeg Ló'
