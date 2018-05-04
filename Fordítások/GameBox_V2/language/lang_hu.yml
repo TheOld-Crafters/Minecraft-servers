@@ -171,3 +171,11 @@ others:
     hoverColor: "gold"
     afterText: ""
     afterColor: "blue"
+
+topList:
+  unknownSkullName: "&1Ismeretlen Játékos"
+  # Will be added below the rank information for unknown players
+  unknownSkullLore:
+  - ""
+  - "A játékos még nem lépett be"
+  - "   a szerverre ezelőtt."

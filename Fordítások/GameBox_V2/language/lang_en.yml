@@ -171,3 +171,11 @@ others:
     hoverColor: "gold"
     afterText: ""
     afterColor: "blue"
+
+topList:
+  unknownSkullName: "&1Unknown Player"
+  # Will be added below the rank information for unknown players
+  unknownSkullLore:
+  - ""
+  - "This player has not joined"
+  - "   the server before."
