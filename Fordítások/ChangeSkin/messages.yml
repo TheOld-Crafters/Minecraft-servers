@@ -14,7 +14,7 @@
 # bla: ''
 
 # Cooldown is activated and the user typed in the changeskin command too fast
-cooldown: '&4Kérjük várj. Nem válthatsz túl gyorsan skint.'
+cooldown: '&4Kérlek várj. Nem válthatsz túl gyorsan skint.'
 
 # Specific skin permissions are activated and the user doesn't have the permission for the supplied skin
 no-permission: "&4Nincs jogod ennek a skinnek a beállításához."
@@ -47,7 +47,7 @@ reset: '&2Beállítások visszaállítása az alapértelmezett értékre.'
 skin-change-queue: '&6A skin megváltoztatva.'
 
 # The supplied UUID is not in the correct format Example: 550e8400-e29b-11d4-a716-446655440000
-invalid-uuid: '&2Érvénytelen az UUID.'
+invalid-uuid: '&2Érvénytelen UUID.'
 
 # Skin is downloading form the mojang servers
 skin-downloading: '&2A skin letöltése folyamatban.'
@@ -62,7 +62,7 @@ skin-changed: '&2A skin sikeresen frissítve.'
 rate-limit: '&4Név fordítása UUID-re korlát elérve. Kérjük várj egy kis időt, vagy küldd be a skin UUID-t.'
 
 # On name to username and the username is not premium
-not-premium: '&4Ez nem felhasználóneve egy eredetis karakernek.'
+not-premium: '&4Ez nem felhasználóneve egy eredetis karakternek.'
 
 # User cannot request a skin update if the user doesn't have one
 dont-have-skin: "&4Nincs skined, hogy érvénytelenítsd azt."
