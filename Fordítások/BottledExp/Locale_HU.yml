@@ -64,4 +64,4 @@ command:
       NoItems: '&4Nincs elegendő tárgyad!'
       Refund: '&2Visszatérítve! Összeg: &3[amount]'
       Cost: '&eA tranzakció ára: &3[cost]'
-      Order: '&2Ennyit rendeltél: &3[bottles] &2bottles!'
+      Order: '&2Ennyit rendeltél: &3[bottles] &2palack!'
