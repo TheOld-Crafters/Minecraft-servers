@@ -1,9 +1,9 @@
-Prefix: '&e[&aPalackozott Tapasztalat&e] '
+Prefix: '&e[&aBottledExp&e] '
 Nopermission: '&4Nincsen hozzá engedélyed!'
 NoPlayer: '&4A játékosnév nem található!'
 MoreThanZero: '&4Nullánál nagyobb számot adj meg.'
 Self: '&4Nem tudsz tapasztalatot küldeni magadnak!'
-Reload: '&eA config fájlok újratöltve!'
+Reload: '&eA konfig fájlok újratöltve!'
 Enchant: '&2elköltöttél &3[xp] &2tapasztalatot erre a varázslatra.'
 GotExp: '&2Kaptál &3[xp] &2tapasztalatot'
 Store:
