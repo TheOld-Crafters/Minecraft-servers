@@ -1,67 +1,67 @@
-Prefix: '&e[&aBottledExp&e] '
-Nopermission: '&4You dont have permission for this!'
-NoPlayer: '&4Cant find player with this name!'
-MoreThanZero: '&4Please give number bigger than 0'
-Self: '&4You cant send exp for yourself!'
-Reload: '&eConfiguration files was reloaded!'
-Enchant: '&2You have spend &3[xp] &2xp for this enchantment'
-GotExp: '&2You have got &3[xp] &2xp'
+Prefix: '&e[&aPalackozott Tapasztalat&e] '
+Nopermission: '&4Nincsen hozzá engedélyed!'
+NoPlayer: '&4A játékosnév nem található!'
+MoreThanZero: '&4Nullánál nagyobb számot adj meg.'
+Self: '&4Nem tudsz tapasztalatot küldeni magadnak!'
+Reload: '&eA config fájlok újratöltve!'
+Enchant: '&2elköltöttél &3[xp] &2tapasztalatot erre a varázslatra.'
+GotExp: '&2Kaptál &3[xp] &2tapasztalatot'
 Store:
-  Name: '&6|   BottledExp   |'
-  Lore: '&eStored Exp:'
+  Name: '&6|   Palackozott Tapasztalat   |'
+  Lore: '&eEltárolt tapasztalat:'
   ExpLoreColor: '&6'
 command:
   help:
     output:
-      usage: '&eUsage: &6%usage%'
-      title: '&2----&e ==== &6BottledExp &e==== &2----'
+      usage: '&eHasználat: &6%usage%'
+      title: '&2----&e ==== &6Palackozott tapasztalat &e==== &2----'
   stats:
     help:
-      info: '&2Check your exp information'
-      args: '&3(playername)'
+      info: '&2Nézd meg a tapasztalatod információját'
+      args: '&3(Játékosnév)'
     info:
       feedback:
-      - '&2You currently have &3[xp] &2xp and you are at lvl &3[level]&2!'
-      - '&2You still need &3[xpdelta] &2xp or &3[bottles] &2bottles for next level!'
-      Moneyfeedback: '&2This will gonna cost you &3[money]'
+      - '&2Jelenleg van &3[xp] &2tapasztalatod és ekkora szinten vagy: &3[level]&2!'
+      - '&2Még kell &3[xpdelta] &2tapasztalat vagy &3[bottles] &2palack a következő szinthez!'
+      Moneyfeedback: '&2Ennyibe fog kerülni: &3[money]'
   until:
     help:
-      info: '&2Check how many bootles you need to reach level'
+      info: '&2Nézd meg mennyi palack kell a következő szintig'
       args: '[level]'
     info:
-      moreThan: '&4This should be more than your level!'
-      feedback: '&2You need &3[xp] &2xp or &3[bottles] &2bottles to reach &3[level]
-        &2level'
-      Moneyfeedback: '&2This will gonna cost you &3[money]'
+      moreThan: '&4Ennek többnek kell lennie, mint a szinted!!'
+      feedback: '&2Még kell &3[xp] &2tapasztalat vagy &3[bottles] &2palack hogy elérd &3[level]
+        &2szintet.'
+      Moneyfeedback: '&2Ennyibe fog kerülni &3[money]'
   give:
     help:
-      info: '&2Give exp to another player'
-      args: '[playername] [exp]'
+      info: '&2adj át másik játékosnak tapasztalatot.'
+      args: '[Játékosnév] [tapasztalat]'
     info:
-      noExp: '&4You dont have enough exp to give'
-      sender: '&2You just send &3[amount] &2xp to &3[name] &2and &3[lost] &2xp was
-        lost during transfer'
-      receiver: '&2You just got &3[amount] &2xp from &3[name] &2and &3[lost] &2xp
-        was lost during transfer'
+      noExp: '&4Nincs elegendő tapasztalatod!'
+      sender: '&2Küldtél &3[amount] &2tapasztalatot neki: &3[name] &2és &3[lost] &2tapasztalat elveszett
+        a küldés közben.'
+      receiver: '&2Kaptál &3[amount] &2tapasztalatot tőle: &3[name] &2és &3[lost] &2tapasztalat elveszett
+        a küldés közben'
   eblock:
     help:
-      info: '&2Creates custom exp exchange block you are looking at'
+      info: '&2Csinál 1 személyre szabható Tapasztalat cserélőt abból, amire nézel.'
       args: ''
     info:
-      created: '&6Created'
-      removed: '&eRemoved'
+      created: '&6Elkészült!'
+      removed: '&eEltávolítva!'
   reload:
     help:
-      info: '&2Reload config files'
+      info: '&2A konfig fájlok újratöltése.'
       args: ''
   get:
     help:
-      info: '&2Exchange exp to exp bottles'
-      args: '[amount] or Max'
+      info: '&2Válts át tapasztalatot tapasztalat palackokra'
+      args: '[amount] vagy maximum'
     info:
-      noExp: '&4You dont have enough exp'
-      NoMoney: '&4You don''t have enough money!'
-      NoItems: '&4You don''t have enough items!'
-      Refund: '&2Refund issued! Amount: &3[amount]'
-      Cost: '&eTransaction cost: &3[cost]'
-      Order: '&2You have ordered: &3[bottles] &2bottles!'
+      noExp: '&4Nincsen elegendő tapasztalatod.'
+      NoMoney: '&4Nincs elegendő pénzed!'
+      NoItems: '&4Nincs elegendő tárgyad!'
+      Refund: '&2Visszatérítve! Összeg: &3[amount]'
+      Cost: '&eA tranzakció ára: &3[cost]'
+      Order: '&2Ennyit rendeltél: &3[bottles] &2palack!'
