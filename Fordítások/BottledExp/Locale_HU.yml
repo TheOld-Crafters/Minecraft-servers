@@ -30,7 +30,7 @@ command:
       args: '[level]'
     info:
       moreThan: '&4Ennek az értéknek nagyobbnak kell lennie a jelenlegi szintednél!'
-      feedback: '&3[xp] &2xp-re vagy &3[bottles] &2palackra van szükséged, hogy elérd a &3[level]
+      feedback: '&3[xp] &2xp-re vagy &3[bottles] &2palackra van szükséged, hogy elérd a(z) &3[level]
         &2szintet.'
       Moneyfeedback: '&2Ez &3[money] &2$-ba fog kerülni.'
   give:
