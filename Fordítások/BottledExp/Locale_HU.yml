@@ -4,7 +4,7 @@ NoPlayer: '&4A játékosnév nem található!'
 MoreThanZero: '&4Nullánál nagyobb számot adj meg.'
 Self: '&4Nem tudsz tapasztalatot küldeni magadnak!'
 Reload: '&eA konfig fájlok újratöltve!'
-Enchant: '&2elköltöttél &3[xp] &2tapasztalatot erre a varázslatra.'
+Enchant: '&2Elköltöttél &3[xp] &2tapasztalatot erre a varázslatra.'
 GotExp: '&2Kaptál &3[xp] &2tapasztalatot'
 Store:
   Name: '&6|   Palackozott Tapasztalat   |'
@@ -27,7 +27,7 @@ command:
   until:
     help:
       info: '&2Nézd meg mennyi palack kell a következő szintig'
-      args: '[level]'
+      args: '[Szint]'
     info:
       moreThan: '&4Ennek többnek kell lennie, mint a szinted!!'
       feedback: '&2Még kell &3[xp] &2tapasztalat vagy &3[bottles] &2palack hogy elérd &3[level]
@@ -35,8 +35,8 @@ command:
       Moneyfeedback: '&2Ennyibe fog kerülni &3[money]'
   give:
     help:
-      info: '&2adj át másik játékosnak tapasztalatot.'
-      args: '[Játékosnév] [tapasztalat]'
+      info: '&2Adj át másik játékosnak tapasztalatot.'
+      args: '[Játékosnév] [Tapasztalat]'
     info:
       noExp: '&4Nincs elegendő tapasztalatod!'
       sender: '&2Küldtél &3[amount] &2tapasztalatot neki: &3[name] &2és &3[lost] &2tapasztalat elveszett
@@ -57,11 +57,11 @@ command:
   get:
     help:
       info: '&2Válts át tapasztalatot tapasztalat palackokra'
-      args: '[amount] vagy maximum'
+      args: '[Darabszám] vagy max'
     info:
       noExp: '&4Nincsen elegendő tapasztalatod.'
       NoMoney: '&4Nincs elegendő pénzed!'
       NoItems: '&4Nincs elegendő tárgyad!'
       Refund: '&2Visszatérítve! Összeg: &3[amount]'
       Cost: '&eA tranzakció ára: &3[cost]'
-      Order: '&2Ennyit rendeltél: &3[bottles] &2palack!'
+      Order: '&2Ennyit kaptál: &3[bottles] &2palack!'
