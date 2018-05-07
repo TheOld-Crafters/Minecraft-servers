@@ -1,67 +1,67 @@
 Prefix: '&e[&aBottledExp&e] '
-Nopermission: '&4You dont have permission for this!'
-NoPlayer: '&4Cant find player with this name!'
-MoreThanZero: '&4Please give number bigger than 0'
-Self: '&4You cant send exp for yourself!'
-Reload: '&eConfiguration files was reloaded!'
-Enchant: '&2You have spend &3[xp] &2xp for this enchantment'
-GotExp: '&2You have got &3[xp] &2xp'
+Nopermission: '&4Nincs jogod ehhez!'
+NoPlayer: '&4Nem található játékos ezzel a névvel.'
+MoreThanZero: '&4Kérlek, 0-nál nagyobb számot adj meg.'
+Self: '&4Nem küldhetsz exp-t magadnak!'
+Reload: '&eKonfigurációs fájlok újratöltve!'
+Enchant: '&2Elköltöttél &3[xp] &2xp-t erre a fejlesztésre.'
+GotExp: '&2Jelenleg &3[xp] &2xp-d van.'
 Store:
   Name: '&6|   BottledExp   |'
-  Lore: '&eStored Exp:'
+  Lore: '&eTárolt Exp:'
   ExpLoreColor: '&6'
 command:
   help:
     output:
-      usage: '&eUsage: &6%usage%'
+      usage: '&eHasználat: &6%usage%'
       title: '&2----&e ==== &6BottledExp &e==== &2----'
   stats:
     help:
-      info: '&2Check your exp information'
+      info: '&2Exp szinted ellenőrzése.'
       args: '&3(playername)'
     info:
       feedback:
-      - '&2You currently have &3[xp] &2xp and you are at lvl &3[level]&2!'
-      - '&2You still need &3[xpdelta] &2xp or &3[bottles] &2bottles for next level!'
-      Moneyfeedback: '&2This will gonna cost you &3[money]'
+      - '&2Jelenleg &3[xp] &2xp-d van &3[level]&2 szinten!'
+      - '&3[xpdelta] &2xp-re vagy &3[bottles] &2palackra van szükséged a következő szinthez!'
+      Moneyfeedback: '&2Ez &3[money] &2$-ba fog kerülni.'
   until:
     help:
-      info: '&2Check how many bootles you need to reach level'
+      info: '&2Ellenőrizd, hány palackra van szükséged, hogy elérd a megadott szintet.'
       args: '[level]'
     info:
-      moreThan: '&4This should be more than your level!'
-      feedback: '&2You need &3[xp] &2xp or &3[bottles] &2bottles to reach &3[level]
-        &2level'
-      Moneyfeedback: '&2This will gonna cost you &3[money]'
+      moreThan: '&4Ennek az értéknek nagyobbnak kell lennie a jelenlegi szintednél!'
+      feedback: '&3[xp] &2xp-re vagy &3[bottles] &2palackra van szükséged, hogy elérd a &3[level]
+        &2szintet.'
+      Moneyfeedback: '&2Ez &3[money] &2$-ba fog kerülni.'
   give:
     help:
-      info: '&2Give exp to another player'
+      info: '&2Exp küldése más játékosnak.'
       args: '[playername] [exp]'
     info:
-      noExp: '&4You dont have enough exp to give'
-      sender: '&2You just send &3[amount] &2xp to &3[name] &2and &3[lost] &2xp was
-        lost during transfer'
-      receiver: '&2You just got &3[amount] &2xp from &3[name] &2and &3[lost] &2xp
-        was lost during transfer'
+      noExp: '&4Nincs elég exp-d ahhoz, hogy másnak add.'
+      sender: '&3[amount] &2xp-t küldtél &3[name] &2-nak / nek, és &3[lost] &2xp
+        elveszett az átadás közben.'
+      receiver: '&2Kaptál &3[amount] &2xp-t &3[name] &2-tól / től, &3[lost] &2xp
+        elveszett az átadás közben.'
   eblock:
     help:
-      info: '&2Creates custom exp exchange block you are looking at'
+      info: '&2Exp átváltót csinál abból a blokkból, amire nézel.'
       args: ''
     info:
-      created: '&6Created'
-      removed: '&eRemoved'
+      created: '&6Létrehozva'
+      removed: '&eEltávolítva'
   reload:
     help:
-      info: '&2Reload config files'
+      info: '&2Konfig fájlok újratöltése.'
       args: ''
   get:
     help:
-      info: '&2Exchange exp to exp bottles'
-      args: '[amount] or Max'
+      info: '&2Exp átváltása varázspalackokra.'
+      args: '[amount] vagy Max'
     info:
-      noExp: '&4You dont have enough exp'
-      NoMoney: '&4You don''t have enough money!'
-      NoItems: '&4You don''t have enough items!'
-      Refund: '&2Refund issued! Amount: &3[amount]'
-      Cost: '&eTransaction cost: &3[cost]'
-      Order: '&2You have ordered: &3[bottles] &2bottles!'
+      noExp: '&4Nincs elég exp-d.'
+      NoMoney: '&4Nincs elég pénzed!'
+      NoItems: '&4Nincs elég tárgyad!'
+      Refund: '&2Visszatérítés kész! Mennyiség: &3[amount]'
+      Cost: '&eUtalás költsége: &3[cost]'
+      Order: '&2Rendeltél &3[bottles] &palackot!'
