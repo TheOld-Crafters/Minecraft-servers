@@ -42,7 +42,7 @@ command:
       sender: '&2Küldtél &3[amount] &2tapasztalatot neki: &3[name] &2és &3[lost] &2tapasztalat elveszett
         a küldés közben.'
       receiver: '&2Kaptál &3[amount] &2tapasztalatot tőle: &3[name] &2és &3[lost] &2tapasztalat elveszett
-        a küldés közben'
+        a küldés közben.'
   eblock:
     help:
       info: '&2Csinál 1 személyre szabható Tapasztalat cserélőt abból, amire nézel.'
