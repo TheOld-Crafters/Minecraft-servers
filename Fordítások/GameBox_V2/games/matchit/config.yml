@@ -95,7 +95,7 @@ items:
     # optional custom lore
     lore:
     - ""
-    - "Régi, számos repedéssel..."
+    - "Régi, számos repedéssel"
   '2':
     # material data of the item
     materialData: "100"
