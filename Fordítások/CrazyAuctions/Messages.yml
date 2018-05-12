@@ -13,7 +13,7 @@ Messages:
   Admin-Force-Cancelled: '&7Kivettél egy tárgyad az aukcióról.'
   Admin-Force-Cancelled-To-Player: '&cAz egyik eladni kívánt tárgyadat az egyik admin kivette.'
   Item-Doesnt-Exist: '&cEz a tárgy nincs többé az aukcióban.'
-  Max-Items: '&cJelenleg nem tudsz több tárgyat az Őrült Aukciókban.'
+  Max-Items: '&cTúl sok tárgyad van fent az Őrült Aukcióban.'
   Item-BlackListed: '&cEz a tárgyat nem adhatod el.'
   Item-Damaged: '&cEz a tárgy sérült és ez nem engedélyezett az eladása.'
   Sold-Msg: '&7Köszi, hogy megvetted ezt a tárgyat.'
