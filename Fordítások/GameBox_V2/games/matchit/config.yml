@@ -26,7 +26,7 @@ gameBox:
     # lore of the button
     lore:
     - ""
-    - "&1Memória játék."
+    - "&1Memóriajáték."
     - "&1Találd meg az összes párt."
   gameButtons:
     small:
@@ -68,10 +68,10 @@ gameBox:
     #   for that button 'saveStats' must be true (see above)
     big:
       materialData: "95:13"
-      displayName: "&6Nagy játék &c&lToplista"
+      displayName: "&6Nagy játék &c&ltoplista"
       slot: 24
       # inventory title of the top list (%player% and %game%)
-      inventoryTitle: '        &6Párkereső &rToplista'
+      inventoryTitle: '        &6Párkereső &rtoplista'
       # Lore of the skulls in the inventory. Use %rank% for the rank and %time% for the players' best time
       skullLore:
       - ''
@@ -80,7 +80,7 @@ gameBox:
 
 coverItem:
   materialData: "160:3"
-  displayName: "&1Kattints a felfedezéshez"
+  displayName: "&1Kattints a felfedéshez"
 
 borderItem:
   materialData: "160:15"
@@ -95,12 +95,12 @@ items:
     # optional custom lore
     lore:
     - ""
-    - "Régi, kevés repedéssel"
+    - "Régi, számos repedéssel"
   '2':
     # material data of the item
     materialData: "100"
     # optional custom display name
-    displayName: "&1Piros gomba block"
+    displayName: "&1Piros gombablokk"
   '3':
     # material data of the item
     materialData: "101"
@@ -149,10 +149,10 @@ items:
     # material data of the item
     materialData: "302"
     # optional custom display name
-    displayName: "&1Ősi sapka"
+    displayName: "&1Ókori sisak"
     lore:
     - ""
-    - "Talán Cézár hordta ezt?"
+    - "Talán Caesear hordta ezt?"
   '12':
     # material data of the item
     materialData: "357"
@@ -160,7 +160,7 @@ items:
     displayName: "&1Süti"
     lore:
     - ""
-    - "Nagymama sütije a legjobb!"
+    - "Nagyi sütije a legjobb!"
   '13':
     # material data of the item
     materialData: "352"
@@ -198,13 +198,13 @@ items:
     lore:
     - ""
     - "TNT vagyok, dinamit vagyok!"
-    - "   Nézz, ahogy felrobbanoook!!"
+    - "   Nézd, ahogy felrobbanoook!!"
   '20':
     materialData: "jukebox"
     displayName: "&1Zenedoboz"
     lore:
     - ""
-    - "Zene a levegőben"
+    - "Zene a levegőben..."
   '21':
     materialData: "dragon_egg"
     displayName: "&1Sárkány tojás"
@@ -216,7 +216,7 @@ items:
     displayName: "&1Tavirózsa"
   '24':
     materialData: "116"
-    displayName: "&1Varázsasztal"
+    displayName: "&1Varázslóasztal"
     lore:
     - ""
     - "Ez fekete mágia!"
@@ -251,6 +251,6 @@ items:
     lore:
     - ""
     - "Egyszerű vaskard."
-    - "Unalmas..."
+    - "Kicsit unalmas..."
 
 
