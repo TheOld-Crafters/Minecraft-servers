@@ -1,6 +1,6 @@
 Messages:
   Players-Only: '&cCsak játékosok használhatják ezt a parancsot.'
-  Reload: '&7Újratöltötted az Őrült Aukciók fájlját.'
+  Reload: '&7Újratöltötted az Crazy Aukciók fájljait.'
   Need-More-Money: '&cSzükséged van további &a$%Money_Needed%&c pénzre.'
   Inventory-Full: '&cTele van a leltárad. Szabadíts fel helyet a megvásárlásához.'
   No-Permission: '&cNincs engedélyed a parancs használatához!'
@@ -13,7 +13,7 @@ Messages:
   Admin-Force-Cancelled: '&7Kivettél egy tárgyad az aukcióról.'
   Admin-Force-Cancelled-To-Player: '&cAz egyik eladni kívánt tárgyadat az egyik admin kivette.'
   Item-Doesnt-Exist: '&cEz a tárgy nincs többé az aukcióban.'
-  Max-Items: '&cJelenleg nem tudsz több tárgyat az Őrült Aukciókban.'
+  Max-Items: '&cJelenleg nem tudsz több tárgyat feltenni a Crazy aukcióba..'
   Item-BlackListed: '&cEz a tárgyat nem adhatod el.'
   Item-Damaged: '&cEz a tárgy sérült és ez nem engedélyezett az eladása.'
   Sold-Msg: '&7Köszi, hogy megvetted ezt a tárgyat.'
