@@ -150,8 +150,8 @@ Mounts:
     menu-name: '&4&lPokoli Horror'
     entity-displayname: '&l%playername% Pokoli Horrorja'
   GlacialSteed:
-    menu-name: '&b&lGlaciális Paripa'
-    entity-displayname: '&l%playername% Glaciális Paripája'
+    menu-name: '&b&lJeges Paripa'
+    entity-displayname: '&l%playername% Jeges Paripája'
   WalkingDead:
     menu-name: '&2&lSétáló Halott'
     entity-displayname: '&l%playername% Sétáló Halottja'
