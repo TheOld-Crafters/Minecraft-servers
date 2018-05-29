@@ -289,8 +289,8 @@ Pets:
     menu-name: '&7&lLáma'
     entity-displayname: '&l%playername% Lámája'
   Parrot:
-    menu-name: '&a&lPapagály'
-    entity-displayname: '&l%playername% Papagálya'
+    menu-name: '&a&lPapagáj'
+    entity-displayname: '&l%playername% Papagája'
   Spawn: '%prefix% &9Megidézted %petname%'
   Despawn: '%prefix% &9Elküldted %petname%'
 Morphs:
