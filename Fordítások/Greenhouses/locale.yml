@@ -1,0 +1,131 @@
+###########################################################################################
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+# If this file is deleted, then it will be recreate at the next reload.                   #
+###########################################################################################
+general:
+   notavailable: "Greenhouses are not available in this world"
+   greenhouses: "Greenhouses"
+   biome: "Biome"
+   owner: "Owner"
+
+help:
+   help: "help"
+   make: "Tries to make a greenhouse"
+   remove: "Removes a greenhouse that you are standing in if you are the owner"
+   info: "How to make a greenhouse"
+   list: "Lists all the greenhouse biomes that can be made"
+   recipe: "Tells you how to make greenhouse biome"
+   opengui: "Opens the Greenhouse GUI"
+
+list:
+   title: "[Greenhouse Biome Recipes]"
+   info: "Use /greenhouse recipe <number> to see details on how to make each greenhouse"
+
+
+################
+#General Errors#
+################
+error:
+   #"Error: Invalid Player (check spelling)"
+   unknownPlayer: "That player is unknown."
+   noPermission: "You don't have permission to use that command!"
+   commandNotReady: "You can't use that command right now."
+   offlinePlayer: "That player is offline or doesn't exist."
+   unknownCommand: "Unknown command."
+   greenhouseProtected: "Greenhouse protected"
+   move: "Move to a greenhouse you own first."
+   notowner: "You must be the owner of this greenhouse to do that."
+   removing: "Removing greenhouse!"
+   notyours: "This is not your greenhouse!"
+   notinside: "You are not in a greenhouse!"
+   tooexpensive: "You cannot afford [price]" 
+   alreadyexists: "Greenhouse already exists!"
+   norecipe: "Cannot make a greenhouse!"
+   
+messages:
+   enter: "Entering [owner]'s [biome] greenhouse!"
+   leave: "Now leaving [owner]'s greenhouse."
+   youarein: "You are now in [owner]'s [biome] greenhouse!"
+   removed: "This greenhouse is no more..."
+   removedmessage: "A [biome] greenhouse of yours is no more!"
+   ecolost: "Your greenhouse at [location] lost its eco system and was removed."
+
+info:
+   title: "&A[How To Build A Greenhouse]"
+   instructions:
+     - "&EMake a box out of out of glass with 4 walls and a flat glass"
+     - "&Eroof and add up to &F4 doors &Ein the walls."
+     - "&EPlace &F1 hopper &Ein a wall or roof and add water buckets."
+     - "&Eto make snow and/or bonemeal to grow plants automatically."
+     - "&ECheck the biome recipes for what blocks must be inside a"
+     - "&Egreenhouse to make one successfully."  
+   info: "[Greenhouse Info]"
+   none: "None"
+   nomore: "&4You cannot build any more greenhouses!"
+   onemore: "&6You can build one more greenhouse."
+   youcanbuild: "&AYou can build up to [number] more greenhouses!"
+   unlimited: "&AYou can build an unlimited number of greenhouses!"
+   welcome: "&BWelcome! Click here for instructions"
+
+recipe:
+   blockscolor: "&f"
+   hint: "Use /greenhouse list to see a list of recipe numbers!"
+   wrongnumber: "Recipe number must be between 1 and [size]"
+   title: "[[biome] recipe]"
+   nowater: "No water allowed."
+   noice: "No ice allowed."
+   nolava: "No lava allowed."
+   watermustbe: "Water > [coverage]% of floor area."
+   icemustbe: "Ice blocks > [coverage]% of floor area."
+   lavamustbe: "Lava > [coverage]% of floor area."
+   minimumblockstitle: "[Minimum blocks required]"
+   nootherblocks: "No other blocks required."
+   missing: "Greenhouse is missing"
+
+event:
+   broke: "You broke this greenhouse! Reverting biome to [biome]!"
+   fix: "Fix the greenhouse and then make it again."
+   cannotplace: "Blocks cannot be placed above a greenhouse!"
+   pistonerror: "Pistons cannot push blocks over a greenhouse!"
+
+create:
+   noroof: "There seems to be no roof!"
+   missingwall: "A wall is missing!"
+   nothingabove: "There can be no blocks above the greenhouse! Red glass blocks should show the problem blocks."
+   holeinroof: "There is a hole in the roof or it is not flat! Red glass blocks should show the problem."
+   holeinwall: "There is a hole in the wall!"
+   hoppererror: "Only one hopper is allowed in the walls or roof."
+   doorerror: "You cannot have more than 4 doors in the greenhouse!"
+   success: "You successfully made a [biome] biome greenhouse! Biome will sync at next teleport or login."
+
+limits:
+   noneallowed: "Permissions do not allow you any greenhouses so [number] were removed."
+   limitedto: "Permissions limit you to [limit] greenhouses so [number] were removed."
+   
+
+##################################
+#Admin commands that use /gadmin #
+##################################
+
+#Help
+adminHelp:
+   reload: "reload configuration from file."
+   info: "provides info on the greenhouse you are in"
+
+#reload
+reload:
+   configReloaded: "Configuration reloaded from file."
+
+admininfo:
+   error: "Greenhouse info only available in-game"
+   error2: "Put yourself in a greenhouse to see info."
+   flags: "[Greenhouse Flags]"
+
+news:
+   headline: "[Greenhouse News]"
+
+controlpanel:
+   title: "&AGreenhouses"
+
+
