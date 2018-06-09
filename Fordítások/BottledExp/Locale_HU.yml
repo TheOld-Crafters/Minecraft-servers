@@ -21,9 +21,9 @@ command:
       args: '&3(Játékosnév)'
     info:
       feedback:
-      - '&2Jelenleg van &3[xp] &2tapasztalatod és ekkora szinten vagy: &3[level]&2!'
+      - '&2Jelenleg van &3[xp] &2tapasztalatod és &3[level]. &2szinten vagy!'
       - '&2Még kell &3[xpdelta] &2tapasztalat vagy &3[bottles] &2palack a következő szinthez!'
-      Moneyfeedback: '&2Ennyibe fog kerülni: &3[money]'
+      Moneyfeedback: '&3[money]&2-ba fog kerülni'
   until:
     help:
       info: '&2Nézd meg mennyi palack kell a következő szintig'
@@ -45,7 +45,7 @@ command:
         a küldés közben.'
   eblock:
     help:
-      info: '&2Csinál 1 személyre szabható Tapasztalat cserélőt abból, amire nézel.'
+      info: '&2Csinál 1 személyre szabható tapasztalatcserélőt abból, amire nézel.'
       args: ''
     info:
       created: '&6Elkészült!'
@@ -64,4 +64,4 @@ command:
       NoItems: '&4Nincs elegendő tárgyad!'
       Refund: '&2Visszatérítve! Összeg: &3[amount]'
       Cost: '&eA tranzakció ára: &3[cost]'
-      Order: '&2Ennyit kaptál: &3[bottles] &2palack!'
+      Order: '&3[bottles] &2palackot kaptál!'
