@@ -1,14 +1,15 @@
-# TheOld - Crafters
-TheOld - Crafters hibajelentések:
+# TheNew - Crafters
+TheNew - Crafters hibajelentések:
 Az Issues oldalon a zöld New Issue gombbal lehet bejelenteni minden hibát, ami a szervercsoporthoz, tartozik.
 A komolyabb, nagyobb hibajelentésekért értékes jutalmat is adunk!
 
 Hibajelentésekért és fordításokért kapható jutalmak:
 - OCD
-
+gyémánt
+op
 A videós hibajelentésekért több OCD jár.
 
-Több információ az OCD-ről: https://theold.minemarket.hu/
+Több információ az OCD-ről: újkabát andrásnak . com
 
 
 Hasznos oldalak (Angol):
