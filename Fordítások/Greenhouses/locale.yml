@@ -4,104 +4,104 @@
 # If this file is deleted, then it will be recreate at the next reload.                   #
 ###########################################################################################
 general:
-   notavailable: "Greenhouses are not available in this world"
-   greenhouses: "Greenhouses"
-   biome: "Biome"
-   owner: "Owner"
+   notavailable: "Az üvegházak nem elérhetőek ebben a világban."
+   greenhouses: "Üvegházak"
+   biome: "Biom"
+   owner: "Tulajdonos"
 
 help:
-   help: "help"
-   make: "Tries to make a greenhouse"
-   remove: "Removes a greenhouse that you are standing in if you are the owner"
-   info: "How to make a greenhouse"
-   list: "Lists all the greenhouse biomes that can be made"
-   recipe: "Tells you how to make greenhouse biome"
-   opengui: "Opens the Greenhouse GUI"
+   help: "segítség"
+   make: "Megpróbál készíteni 1 üvegházat."
+   remove: "Lebont 1 üvegházat, amiben állsz ha te vagy annak a tulajdonosa."
+   info: "Hogyan csinálj üvegházat."
+   list: "Lista az összes biomról, amiben csinálhatsz üvegházat."
+   recipe: "Elmondja, hogyan csinálj 1 üvegház biomot."
+   opengui: "Megnyitja az üvegház menüt."
 
 list:
-   title: "[Greenhouse Biome Recipes]"
-   info: "Use /greenhouse recipe <number> to see details on how to make each greenhouse"
+   title: "[Üvegház Biom Receptek]"
+   info: "Használd a /greenhouse recipe <szám> hogy lásd a részleteit annak hogy hogyan csináljunk üvegházakat."
 
 
 ################
 #General Errors#
 ################
 error:
-   #"Error: Invalid Player (check spelling)"
-   unknownPlayer: "That player is unknown."
-   noPermission: "You don't have permission to use that command!"
-   commandNotReady: "You can't use that command right now."
-   offlinePlayer: "That player is offline or doesn't exist."
-   unknownCommand: "Unknown command."
-   greenhouseProtected: "Greenhouse protected"
-   move: "Move to a greenhouse you own first."
-   notowner: "You must be the owner of this greenhouse to do that."
-   removing: "Removing greenhouse!"
-   notyours: "This is not your greenhouse!"
-   notinside: "You are not in a greenhouse!"
-   tooexpensive: "You cannot afford [price]" 
-   alreadyexists: "Greenhouse already exists!"
-   norecipe: "Cannot make a greenhouse!"
+   #"Error: Érvénytelen játékosnév.! (Nézd meg a helyesírást, hogy jól írtad-e.)"
+   unknownPlayer: "A játékos ismeretlen.."
+   noPermission: "Nincs jogod ahhoz, hogy használd ezt a parancsot.!"
+   commandNotReady: "Jelenleg nem használhatod ezt a parancsot."
+   offlinePlayer: "A játékos nem aktív,vagy nem létezik."
+   unknownCommand: "Ismeretlen parancs."
+   greenhouseProtected: "Az üvegház védett."
+   move: "Először menj oda egy üvegházhoz, ami a tiéd."
+   notowner: "Az üvegház tulajdonosának kell lenned, hogy ezt csinálhasd."
+   removing: "Az üvegház lebontása!!"
+   notyours: "Ez nem a te üvegházad!"
+   notinside: "Nem vagy egy üvegházban!"
+   tooexpensive: "Nincs elegendő pénzed. Szükséges: [price]" 
+   alreadyexists: "Az üvegház már létezik!"
+   norecipe: "Nem tudsz csinálni egy üvegházat!"
    
 messages:
-   enter: "Entering [owner]'s [biome] greenhouse!"
-   leave: "Now leaving [owner]'s greenhouse."
-   youarein: "You are now in [owner]'s [biome] greenhouse!"
-   removed: "This greenhouse is no more..."
-   removedmessage: "A [biome] greenhouse of yours is no more!"
-   ecolost: "Your greenhouse at [location] lost its eco system and was removed."
+   enter: "Belépés [owner] [biome] üvegházába!"
+   leave: "Kilépés [owner] üvegházából."
+   youarein: "Benne vagy [owner] [biome] üvegházában!"
+   removed: "Az üvegház már nem létezik..."
+   removedmessage: "A te [biome] biomú üvegházad, már nem létezik.!"
+   ecolost: "Az üvegházad [location] elvesztette az ökoszisztémáját, így eltávolították."
 
 info:
-   title: "&A[How To Build A Greenhouse]"
+   title: "&A[Hogyan építs egy üvegházat]"
    instructions:
-     - "&EMake a box out of out of glass with 4 walls and a flat glass"
-     - "&Eroof and add up to &F4 doors &Ein the walls."
-     - "&EPlace &F1 hopper &Ein a wall or roof and add water buckets."
-     - "&Eto make snow and/or bonemeal to grow plants automatically."
-     - "&ECheck the biome recipes for what blocks must be inside a"
-     - "&Egreenhouse to make one successfully."  
-   info: "[Greenhouse Info]"
-   none: "None"
-   nomore: "&4You cannot build any more greenhouses!"
-   onemore: "&6You can build one more greenhouse."
-   youcanbuild: "&AYou can build up to [number] more greenhouses!"
-   unlimited: "&AYou can build an unlimited number of greenhouses!"
-   welcome: "&BWelcome! Click here for instructions"
+     - "&EKészíts üvegből 1 dobozt 4 fallal,üveglappal"
+     - "&Ea tetőre és adj hozzá &F4 ajtót &Ea falakban."
+     - "&ERakj le&F1 tölcsért &Eegy falba vagy a tetőbe és rakj bele vizes vödröket."
+     - "&Ehogy csináljon havat vagy csontlisztet hogy a növényeid nőjjenek automatikusan."
+     - "&ENézd meg a biomokhoz tartozó recepteket, hogy mi kell az"
+     - "&Eüvegházhoz, hogy tudj csinálni egyet.."  
+   info: "[Üvegház infó]"
+   none: "Semmi"
+   nomore: "&4Nem tudsz több üvegházat csinálni!"
+   onemore: "&6Tudsz még egy üvegházat csinálni."
+   youcanbuild: "&AMég tudsz csinálni [number] üvegházat.!"
+   unlimited: "&ABármennyi üvegházat csinálhatsz!"
+   welcome: "&BÜdvözlünk! Kattints ide az utasításokhoz."
 
 recipe:
    blockscolor: "&f"
-   hint: "Use /greenhouse list to see a list of recipe numbers!"
-   wrongnumber: "Recipe number must be between 1 and [size]"
-   title: "[[biome] recipe]"
-   nowater: "No water allowed."
-   noice: "No ice allowed."
-   nolava: "No lava allowed."
-   watermustbe: "Water > [coverage]% of floor area."
-   icemustbe: "Ice blocks > [coverage]% of floor area."
-   lavamustbe: "Lava > [coverage]% of floor area."
-   minimumblockstitle: "[Minimum blocks required]"
-   nootherblocks: "No other blocks required."
-   missing: "Greenhouse is missing"
+   hint: "Használd a /greenhouse list a receptszámok megtekintéséhez!"
+   wrongnumber: "A recept számának 1 és [size] között kell lennie."
+   title: "[[biome] recept]"
+   nowater: "Nem engedélyezett a víz."
+   noice: "Nem engedélyezett a jég."
+   nolava: "Nem engedélyezett a láva."
+   watermustbe: "Víz > [coverage]% az alapterületen."
+   icemustbe: "Jég blokk > [coverage]% az alapterületen."
+   lavamustbe: "Lava > [coverage]% az alapterületen."
+   minimumblockstitle: "[Minimum blokk szükséges]"
+   nootherblocks: "Semmi más nem szükséges."
+   missing: "Az üvegház hiányzik."
 
 event:
-   broke: "You broke this greenhouse! Reverting biome to [biome]!"
-   fix: "Fix the greenhouse and then make it again."
-   cannotplace: "Blocks cannot be placed above a greenhouse!"
-   pistonerror: "Pistons cannot push blocks over a greenhouse!"
+   broke: "Összetörted az üvegházad! Visszaállítjuk a biomot [biome]-ra!"
+   fix: "Javítsd meg az üvegházat, majd készítsd újra."
+   cannotplace: "Nem rakhatsz blokkot az üvegház fölé!"
+   pistonerror: "A pisztolyok nem tudnak blokkokat nyomni az üvegházban!"
 
 create:
-   noroof: "There seems to be no roof!"
-   missingwall: "A wall is missing!"
-   nothingabove: "There can be no blocks above the greenhouse! Red glass blocks should show the problem blocks."
-   holeinroof: "There is a hole in the roof or it is not flat! Red glass blocks should show the problem."
-   holeinwall: "There is a hole in the wall!"
-   hoppererror: "Only one hopper is allowed in the walls or roof."
-   doorerror: "You cannot have more than 4 doors in the greenhouse!"
-   success: "You successfully made a [biome] biome greenhouse! Biome will sync at next teleport or login."
+   noroof: "Nincsen tető!"
+   missingwall: "Hiányzik pár fal!"
+   nothingabove: "Nem lehet semmiféle blokk az üvegház felett! Piros üveg jelzi a problémás blokkokat."
+   holeinroof: "Egy lyuk van a tetőben, vagy nem lapos! Piros üveg jelzi a problémát."
+   holeinwall: "Egy lyuk van a falban!"
+   hoppererror: "Csak egy hopper engedélyezett a tetőben vagy a falban."
+   doorerror: "Nem lehet több mint 4 ajtód az üvegházban!"
+   success: "Sikeresen csináltál egy [biome] biomú üvegházat! A biome a következő teleportnál/loginnál cserélődik ki."
 
 limits:
-   noneallowed: "Permissions do not allow you any greenhouses so [number] were removed."
-   limitedto: "Permissions limit you to [limit] greenhouses so [number] were removed."
+   noneallowed: "A engedélyeid nem engedélyeznek több üvegházat így [number] üvegház el lett távolítva."
+   limitedto: "Az engedélyeid le limitálnak [limit] üvegházra így [number] el lett távolítva."
    
 
 ##################################
@@ -110,22 +110,22 @@ limits:
 
 #Help
 adminHelp:
-   reload: "reload configuration from file."
-   info: "provides info on the greenhouse you are in"
+   reload: "Újratöltés a konfigurációs fájlból."
+   info: "Információt ad az üvegházban, ahol vagy"
 
 #reload
 reload:
-   configReloaded: "Configuration reloaded from file."
+   configReloaded: "A konfiguráció újratöltött a fájlból."
 
 admininfo:
-   error: "Greenhouse info only available in-game"
-   error2: "Put yourself in a greenhouse to see info."
-   flags: "[Greenhouse Flags]"
+   error: "Az üvegház infó csak a játékban elérhető."
+   error2: "Menj be egy üvegházba, hogy láthasd az infót."
+   flags: "[Az üvegház flagjei]"
 
 news:
-   headline: "[Greenhouse News]"
+   headline: "[Az üvegház újdonságai]"
 
 controlpanel:
-   title: "&AGreenhouses"
+   title: "&AÜvegházak"
 
 
