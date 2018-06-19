@@ -6,7 +6,7 @@
 general:
    notavailable: "Az üvegházak nem elérhetőek ebben a világban."
    greenhouses: "Üvegházak"
-   biome: "Biom"
+   biome: "Biome"
    owner: "Tulajdonos"
 
 help:
@@ -57,7 +57,7 @@ info:
      - "&EKészíts üvegből 1 dobozt 4 fallal,üveglappal"
      - "&Ea tetőre és adj hozzá &F4 ajtót &Ea falakban."
      - "&ERakj le&F1 tölcsért &Eegy falba vagy a tetőbe és rakj bele vizes vödröket."
-     - "&Ehogy csináljon havat vagy csontlisztet hogy a növényeid nőjjenek automatikusan."
+     - "&Ehogy csináljon havat vagy csontlisztet hogy a növényeid nőjenek automatikusan."
      - "&ENézd meg a biomokhoz tartozó recepteket, hogy mi kell az"
      - "&Eüvegházhoz, hogy tudj csinálni egyet.."  
    info: "[Üvegház infó]"
@@ -78,13 +78,13 @@ recipe:
    nolava: "Nem engedélyezett a láva."
    watermustbe: "Víz > [coverage]% az alapterületen."
    icemustbe: "Jég blokk > [coverage]% az alapterületen."
-   lavamustbe: "Lava > [coverage]% az alapterületen."
+   lavamustbe: "Láva > [coverage]% az alapterületen."
    minimumblockstitle: "[Minimum blokk szükséges]"
    nootherblocks: "Semmi más nem szükséges."
    missing: "Az üvegház hiányzik."
 
 event:
-   broke: "Összetörted az üvegházad! Visszaállítjuk a biomot [biome]-ra!"
+   broke: "Összetörted az üvegházad! Visszaállítjuk a biomot [biome]-ra/re!"
    fix: "Javítsd meg az üvegházat, majd készítsd újra."
    cannotplace: "Nem rakhatsz blokkot az üvegház fölé!"
    pistonerror: "A pisztolyok nem tudnak blokkokat nyomni az üvegházban!"
@@ -95,9 +95,9 @@ create:
    nothingabove: "Nem lehet semmiféle blokk az üvegház felett! Piros üveg jelzi a problémás blokkokat."
    holeinroof: "Egy lyuk van a tetőben, vagy nem lapos! Piros üveg jelzi a problémát."
    holeinwall: "Egy lyuk van a falban!"
-   hoppererror: "Csak egy hopper engedélyezett a tetőben vagy a falban."
+   hoppererror: "Csak egy tölcsér engedélyezett a tetőben vagy a falban."
    doorerror: "Nem lehet több mint 4 ajtód az üvegházban!"
-   success: "Sikeresen csináltál egy [biome] biomú üvegházat! A biome a következő teleportnál/loginnál cserélődik ki."
+   success: "Sikeresen csináltál egy [biome] biomú üvegházat! A biome a következő teleportnál/belépésnél cserélődik ki."
 
 limits:
    noneallowed: "A engedélyeid nem engedélyeznek több üvegházat így [number] üvegház el lett távolítva."
@@ -120,7 +120,7 @@ reload:
 admininfo:
    error: "Az üvegház infó csak a játékban elérhető."
    error2: "Menj be egy üvegházba, hogy láthasd az infót."
-   flags: "[Az üvegház flagjei]"
+   flags: "[Az üvegház tulajdonoságai]"
 
 news:
    headline: "[Az üvegház újdonságai]"
