@@ -71,10 +71,10 @@ MSG:
   NODIRECTACCESSTOSHOP: Nincs hozzáférésed a(z) &c%shop%&f bolthoz.
   MAINMENUDISABLED: Nem használhatod ezt a parancsot. Használd a /shop <id> -t helyette.
   WORLDBLACKLISTED: Nincs hozzáférésed a(z) %shop% bolthoz ebben a világban.
-  WORLDBANNED: Nincs hozzáférésed .
+  WORLDBANNED: Nincs hozzáférésed.
   WORLDBANNEDTARGET: '%player%-nek nincs hozzáférése a bolthoz ebben a világban.'
-  GAMEMODEBANNED: Nincs hozzáférésed a bolthoz amíg ebben a játékmódban vagy: %gamemode%.
-  GAMEMODEBANNEDTARGET: '%player%-nek nincs hozzáférése a bolthoz amíg ebben a játékmódban van: %gamemode%.'
+  GAMEMODEBANNED: Nincs hozzáférésed a bolthoz, amíg ebben a játékmódban vagy: %gamemode%.
+  GAMEMODEBANNEDTARGET: '%player%-nek nincs hozzáférése a bolthoz, amíg ebben a játékmódban van: %gamemode%.'
   ITEM:
     FULLINVENTORY: Nincs elég hely a táskádban.
     CANNOTAFFORD: Neked kell még &c%price%$&f hogy megvedd: &c%amount% x %item%&f.
@@ -89,7 +89,7 @@ MSG:
     SOLDALLFREE: Elajándékoztál minden %item%&f (&a%amount% x %item%&f).
     NOACCESS: Nincs hozzáférésed ehhez a tárgyhoz.
   ENCHANT:
-    CANNOTAPPLY: A következő varázslat: &c%enchantment%&f alkalmazható a tárgyra ami a kezedben van.
+    CANNOTAPPLY: A következő varázslat: &c%enchantment%&f alkalmazható a tárgyra, ami a kezedben van.
     ALREADYAPPLIED: A tárgyon már van &c%enchantment%&f alkalmazva.
     LEVELDIFF: Kell egy tárgy legalább &c%enchantment% %level%&f el/al.
     CANNOTAFFORD: Kell még &c%price%$&f hogy meg tudd venni a(z) &c%enchantment%&f.
@@ -108,7 +108,7 @@ MSG:
     NOITEM: A kezedben kell tartanod a tárgyat, hogy el tudd adni.
     INVALIDQUANTITY: Helytelen darabszám. 1 és %max% között kell lennie.
     CANNOTSELL: Nem adhatod el ezt a tárgyat.
-    MULTIPLEQUANTITYONLY: Nem adhatsz el ennyi darbot. Csak a többszöröseit tudod eladni ennek a számnak: %quantity%.
+    MULTIPLEQUANTITYONLY: Nem adhatsz el ennyi darabot. Csak a többszöröseit tudod eladni ennek a számnak: %quantity%.
   SELLHANDALL:
     SOLD: Eladtál %quantity% x %item% ennyiért: %price%$.
   SELLALL:
