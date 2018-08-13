@@ -21,7 +21,7 @@ System:
   NoPatternPermission: '&cSajnálom neked nincs engedélyed ehhez a mintához!'
   TrailSelected: '&7Kiválasztottad a &a&l!name! &7csíkot'
 MenuNames:
-  Selector: 'Csíkok: Válassz tipust'
+  Selector: 'Csíkok: Válassz típust'
   Particles: 'Csíkok: Részecskék'
   Blokkok: 'Csíkok: Blokkok'
   Languages: 'Csíkok: Nyelvek'
@@ -47,18 +47,18 @@ Menu:
   Event: '&fEvent'
   Clear: '&cCsík eltávolítása'
   Access: '&a&lKattints a választáshoz!'
-  NoAccess: '&c&lNincs egedély ehhez a csíkhoz!'
+  NoAccess: '&c&lNincs engedély ehhez a csíkhoz!'
   Sell: Eladás
   Buy: Vétel
   Modes: '&8!prev &7< &f&l!current &7> &8!next'
   Back: '&7<< Vissza a főmenöbe'
-  NoTrails: '&cNincs eggyetlen egy csíkod sem ebbem a szekcióban!'
+  NoTrails: '&cNincs eggyetlen egy csíkod sem ebben a szekcióban!'
   LangSelect: '&8Kattics a választáshoz'
   Lore:
   - '&6&l----------'
   - '!permission!'
   Next: '&aKövetkező Oldal'
-  Prev: '&aElőzőoldal'
+  Prev: '&aElőző Oldal'
 Event:
   Messages:
     Start: === /n&a&LAz event elkezdődött szerezz ingyenes !a! ládát most! /n&6Írd be /Trails
@@ -131,7 +131,7 @@ Event:
     Name: '!color! Tündér csík'
     Lore:
     - ' '
-    - '&8Megidéz egy tündért ami követ téged'
+    - '&8Megidéz egy tündért, ami követ téged'
     - ' '
     - '&7Ritkaság: !r!'
 ParticleMenu:
@@ -159,7 +159,7 @@ ParticleMenu:
   Snowball: '&fHógólyók'
   Void: '&7Üresség'
   LavaPop: '&eLáva POP'
-  Rainbow: '&eszivárvány'
+  Rainbow: '&eSzivárvány'
   Breath: '&dLélegzés'
   EndRod: '&7End rúd'
   Damage: '&cSebzés'
@@ -195,7 +195,7 @@ BlockMenu:
     - '&8Blokkok:'
     - '&8- Üveg (Fehér)'
     - '&8- Üveg (Narancs)'
-    - '&8- Üveg (Magenta)'
+    - '&8- Üveg (Bíborvörös)'
     - '&8- Üveg (Kék)'
     - ' '
     - '!permission!'
@@ -216,9 +216,9 @@ BlockMenu:
     - ' '
     - '&8Blokkok:'
     - '&8- Agyag (Narancs)'
-    - '&8- Agyag (Magenta)'
+    - '&8- Agyag (Bíborvörös)'
     - '&8- Agyag (Szürke)'
-    - '&8- Agyag (Rózsazín)'
+    - '&8- Agyag (Rózsaszín)'
     - ' '
     - '!permission!'
   '5':
@@ -226,8 +226,8 @@ BlockMenu:
     Lore:
     - ' '
     - '&8Blokkok:'
-    - '&8- Lapis érc'
-    - '&8- Emeráld érc'
+    - '&8- Lazurit érc'
+    - '&8- Smaragd érc'
     - '&8- Vöröskő érc'
     - '&8- Szén érc'
     - ' '
@@ -262,7 +262,7 @@ BlockMenu:
     - '&8- Vas blokk'
     - '&8- Arany blokk'
     - '&8- Gyémánt blokk'
-    - '&8- Emeráld blokk'
+    - '&8- Smaragd blokk'
     - ' '
     - '!permission!'
 RainAndWings:
@@ -277,7 +277,7 @@ RainAndWings:
   Marmoreal: '&7Márvány'
   Darkred: '&4Vörös'
   Pink: '&dRózsaszín'
-  Darkcyan: '&3Sötét Cyán'
+  Darkcyan: '&3Sötét Cián'
   Aqua: '&bAqua'
   Gray: '&7Szürke'
   Rainbow: �7Szivárvány
