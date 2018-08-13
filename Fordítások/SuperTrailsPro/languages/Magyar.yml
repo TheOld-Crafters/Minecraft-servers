@@ -19,7 +19,7 @@ System:
   CmdNoPermissionTrail: '&cSajnálom neked nincs engedélyed ehhez a csíkhoz!'
   NoWingsPermission: '&cSajnálom neked nincs engedélyed ehhez a szárnyhoz!'
   NoPatternPermission: '&cSajnálom neked nincs engedélyed ehhez a mintához!'
-  TrailSelected: '&7Kiválasztottad a &a&l!name! &7csíkot'
+  TrailSelected: '&7Kiválasztottad a(z) &a&l!name! &7csíkot'
 MenuNames:
   Selector: 'Csíkok: Válassz típust'
   Particles: 'Csíkok: Részecskék'
@@ -53,7 +53,7 @@ Menu:
   Modes: '&8!prev &7< &f&l!current &7> &8!next'
   Back: '&7<< Vissza a főmenöbe'
   NoTrails: '&cNincs eggyetlen egy csíkod sem ebben a szekcióban!'
-  LangSelect: '&8Kattics a választáshoz'
+  LangSelect: '&8Kattincs a választáshoz'
   Lore:
   - '&6&l----------'
   - '!permission!'
@@ -146,14 +146,14 @@ ParticleMenu:
   Spark: '&fCsillámok'
   Flame: '&6Lángok'
   White: '&fFehér Varázs'
-  Note: '&3Notes'
+  Note: '&3Hangjegyek'
   Snow: '&fHó'
   Water: '&9Víz'
   Lava: '&6Láva'
-  Crit: '&fCritikus sebzés'
+  Crit: '&fKritikus sebzés'
   Smoke: '&7Füst'
   Spell: '&eVarázslat'
-  Enchant: '&fEnchant'
+  Enchant: '&fFejlesztés'
   Splash: '&9Loccsanás'
   Slime: '&aNyálka'
   Snowball: '&fHógólyók'
@@ -204,7 +204,7 @@ BlockMenu:
     Lore:
     - ' '
     - '&8Blokkok:'
-    - '&8- Kvarc Érc'
+    - '&8- Kvarc érc'
     - '&8- Alvilági tégla'
     - '&8- Alvilágikő'
     - '&8- Izzókő'
@@ -238,7 +238,7 @@ BlockMenu:
     - ' '
     - '&8Blokkok:'
     - '&8- TNT'
-    - '&8- Méreg'
+    - '&8- Dugattyú'
     - '&8- Hangdoboz'
     - '&8- Vöröskő blokk'
     - ' '
@@ -295,7 +295,7 @@ Wings:
   kzcqxgpvje: §f§lSárkány Szárnyak
   sdgdnomvsr: §f§lPillangó Szárnyak
   wjhexhsoba: §f§lRövid Szárnyak
-  mqpylnthdn: '§f§lPillangó #2 Szárnyak
+  mqpylnthdn: '§f§lPillangó #2 Szárnyak'
   xebgnppkni: §f§lManó Szárnyak
   heuanigzbt: §f§lHosszú Szárnyak
   lmbcmrpjan: §f§lDémon Szárnyak
