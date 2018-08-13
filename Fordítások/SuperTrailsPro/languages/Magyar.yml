@@ -3,302 +3,302 @@
 #    - 'Lore Test'
 
 LanguageID: 0
-LanguageName: English
+LanguageName: Magyar
 System:
-  Selected: '&6You selected &aEnglish &6language'
-  Home_Page: Home
-  Commands_Page: Commands
-  Updates_Page: Updates
-  Usage_Page: Usage
-  Languages_Page: Languages
-  Community_Page: Community
-  Trails_CMD: Open trail menu
-  TrailsID_CMD: Select trail by ID
-  SuperTrails_CMD: Admin panel - Home Page
-  SuperTrails_Player_CMD: Home Page
-  CmdNoPermissionTrail: '&cSorry, you don''t have permission for this trail!'
-  NoWingsPermission: '&cSorry, you don''t have permission for those wings'
-  NoPatternPermission: '&cSorry, you don''t have permission for this pattern'
-  TrailSelected: '&7You selected &a&l!name! &7trail'
+  Selected: '&6Kiválasztottad a &aMagyar &6nyelvet.'
+  Home_Page: Főoldal
+  Commands_Page: Parancsok
+  Updates_Page: Frissítések
+  Usage_Page: Használat
+  Languages_Page: Nyelvek
+  Community_Page: Közösség
+  Trails_CMD: Csík menü megnyitása
+  TrailsID_CMD: Válassz csíkod ID alapján
+  SuperTrails_CMD: Admin panel - Főoldal
+  SuperTrails_Player_CMD: Főoldal
+  CmdNoPermissionTrail: '&cSajnálom neked nincs engedélyed ehhez a csíkhoz!'
+  NoWingsPermission: '&cSajnálom neked nincs engedélyed ehhez a szárnyhoz!'
+  NoPatternPermission: '&cSajnálom neked nincs engedélyed ehhez a mintához!'
+  TrailSelected: '&7Kiválasztottad a &a&l!name! &7csíkot'
 MenuNames:
-  Selector: 'Trails: Select Type'
-  Particles: 'Trails: Particles'
-  Blocks: 'Trails: Blocks'
-  Languages: 'Trails: Languages'
-  Modes: 'Trails: Modes'
-  Rain1: Select rain color
-  Rain2: Select rain item
-  Wings1: Select wings
-  Wings2: Color or Pattern
-  Wings3: Select first color
-  Wings4: Select second color
-  Wings5: Select third color
-  WingsPattern: Select pattern
-  Event: 'Trails: Event'
-  EventSecond: 'Trails: Event'
-  EventOpen: 'Trails: Open'
+  Selector: 'Csíkok: Válassz tipust'
+  Particles: 'Csíkok: Részecskék'
+  Blokkok: 'Csíkok: Blokkok'
+  Languages: 'Csíkok: Nyelvek'
+  Modes: 'Csík módok'
+  Rain1: Válassz eső színt
+  Rain2: Válassz eső tárgyat
+  Wings1: Válassz szárnyakat
+  Wings2: Szín a mintán
+  Wings3: Válassz első színt
+  Wings4: Válassz második színt
+  Wings5: Válassz harmadik színt
+  WingsPattern: Válassz mintát
+  Event: 'Csíkok: Eventek'
+  EventSecond: 'Csíkok: Eventek'
+  EventOpen: 'Csíkok: Nyitva'
 Menu:
-  Particle: '&6Particle Trails'
-  Block: '&3Block Trails'
-  Rain: '&7Rains'
-  Wings: '&fWings'
-  Langs: '&7Languages'
-  Admin: '&7Admin Options'
+  Particle: '&6Részecske csíkok'
+  Block: '&3Blokk csíkok'
+  Rain: '&7Eső'
+  Wings: '&fSzárnyak'
+  Langs: '&7Nyelvek'
+  Admin: '&7Admin Beállítások'
   Event: '&fEvent'
-  Clear: '&cRemove Trail'
-  Access: '&a&lClick to select!'
-  NoAccess: '&c&lNo permission to this trail'
-  Sell: Sell
-  Buy: Buy
+  Clear: '&cCsík eltávolítása'
+  Access: '&a&lKattints a választáshoz!'
+  NoAccess: '&c&lNincs egedély ehhez a csíkhoz!'
+  Sell: Eladás
+  Buy: Vétel
   Modes: '&8!prev &7< &f&l!current &7> &8!next'
-  Back: '&7<< Back to main menu'
-  NoTrails: '&cYou don''t have any trails in this section'
-  LangSelect: '&8Click to select'
+  Back: '&7<< Vissza a főmenöbe'
+  NoTrails: '&cNincs eggyetlen egy csíkod sem ebbem a szekcióban!'
+  LangSelect: '&8Kattics a választáshoz'
   Lore:
   - '&6&l----------'
   - '!permission!'
-  Next: '&aNext Page'
-  Prev: '&aPrevious Page'
+  Next: '&aKövetkező Oldal'
+  Prev: '&aElőzőoldal'
 Event:
   Messages:
-    Start: === /n&a&LEvent started, get !a! free event chest now! /n&6Type /Trails
-    End: '&cEvent finished!'
+    Start: === /n&a&LAz event elkezdődött szerezz ingyenes !a! ládát most! /n&6Írd be /Trails
+    End: '&cEvent befejeződött'
   Rarity:
-    Common: '&f&lCOMMON'
-    Rare: '&3&lRARE'
-    Epic: '&6&lEPIC'
+    Common: '&f&lGYAKORI'
+    Rare: '&3&lRITKA'
+    Epic: '&6&lEPIKUS'
   Chest:
-    Name: Event chest
+    Name: Event láda
     Lore:
     - ' '
-    - '&7Chests you have: !a!'
+    - '&7Ládák amikkel rendelkezel !a!'
     - ' '
     - '!open!'
-    Open: '&a>> Click to open <<'
-    CantOpen: '&cYou don''t have chests'
+    Open: '&a>> Kattints a megnyitáshoz <<'
+    CantOpen: '&cNincsenek ládáid'
   OpenChest:
-    Name: '&aClick to open'
+    Name: '&aKattints a megnyitáshoz'
     Lore:
     - ' '
     - 'Loot: ???'
     - ' '
-    - '&7Click on any chest to open it'
+    - '&7Kattincs valamelyik ládára a kinyitáshoz'
   Empty:
-    Name: '&7Chest empty'
+    Name: '&7A láda üres'
   Confetti:
-    Name: '&fConfetti Trail'
+    Name: '&fKomfetti csík'
     Lore:
     - ' '
-    - '&fColors:'
+    - '&fSzínek:'
     - '!color1!'
     - '!color2!'
     - '!color3!'
     - ' '
-    - '&7Rarity: !r!'
+    - '&7Ritkaság: !r!'
     - ' '
-    - '&a&lClick to select'
+    - '&a&lKattints a kiválasztáshoz'
   ColorSpin:
-    Name: '!color! Spin Trail'
+    Name: '!color! Forgó csík'
     Lore:
     - ' '
-    - '&7Rarity: !r!'
+    - '&7Ritkasád: !r!'
     - ' '
-    - '&a&lClick to select'
+    - '&a&lKattints a kiválasztáshoz'
   Color:
-    Name: '!color!&f Wings/Rain color'
+    Name: '!color!&f Szárnyak/Eső szín'
     Lore:
     - ' '
-    - '&8Available in Wings and Rain builders'
+    - '&8Elérhető a Eső és Szárny építőben.'
     - ' '
-    - '&7Rarity: !r!'
+    - '&7Ritkaság: !r!'
   UnlockedColor:
-    Name: '!color!&f color'
+    Name: '!color!&f szín'
     Lore:
     - ' '
-    - '&8You got this color form event chest'
+    - '&8Ezt a színt event ládából kaptad'
     - ' '
-    - '&7Rarity: !r!'
+    - '&7Ritkaság: !r!'
   LockedColor:
-    Name: '&cLocked'
+    Name: '&cLezárt'
     Lore:
     - ' '
-    - '&7Get from event chests'
+    - '&7Szerezd meg az event ládából'
     - ' '
-    - '&7Rarity: !r!'
+    - '&7Ritkaság: !r!'
   Nothing:
     Name: '&c???'
   Fairy:
-    Name: '!color! Fairy Trail'
+    Name: '!color! Tündér csík'
     Lore:
     - ' '
-    - '&8Spawn fairy that follow you'
+    - '&8Megidéz egy tündért ami követ téged'
     - ' '
-    - '&7Rarity: !r!'
+    - '&7Ritkaság: !r!'
 ParticleMenu:
-  Heart: '&cHearts'
-  Angry: '&6Angry'
-  Magic: '&3Magic'
+  Heart: '&cSzivek'
+  Angry: '&6Mérges'
+  Magic: '&3Varázs'
   Fun: '&eFun'
-  Cloud: '&fCloud'
-  Witch: '&5Witch'
+  Cloud: '&fFelhő'
+  Witch: '&5Boszorkány'
   Ender: '&dEnder'
-  Green: '&aGreen'
-  Spark: '&fSparks'
-  Flame: '&6Flames'
-  White: '&fWhite Magic'
+  Green: '&aZöld'
+  Spark: '&fCsillámok'
+  Flame: '&6Lángok'
+  White: '&fFehér Varázs'
   Note: '&3Notes'
-  Snow: '&fSnow'
-  Water: '&9Water'
-  Lava: '&6Lava'
-  Crit: '&fCrit'
-  Smoke: '&7Smoke'
-  Spell: '&eSpell'
+  Snow: '&fHó'
+  Water: '&9Víz'
+  Lava: '&6Láva'
+  Crit: '&fCritikus sebzés'
+  Smoke: '&7Füst'
+  Spell: '&eVarázslat'
   Enchant: '&fEnchant'
-  Splash: '&9Splash'
-  Slime: '&aSlime'
-  Snowball: '&fSnowballs'
-  Void: '&7Void'
-  LavaPop: '&eLava POP'
-  Rainbow: '&eRainbow'
-  Breath: '&dBreath'
-  EndRod: '&7End Rod'
-  Damage: '&cDamage'
+  Splash: '&9Loccsanás'
+  Slime: '&aNyálka'
+  Snowball: '&fHógólyók'
+  Void: '&7Üresség'
+  LavaPop: '&eLáva POP'
+  Rainbow: '&eszivárvány'
+  Breath: '&dLélegzés'
+  EndRod: '&7End rúd'
+  Damage: '&cSebzés'
   Totem: '&aTotem'
 Modes:
-  Default: Default
-  Circle: Circle
-  Magician: Magician
-  Shooter: Shooter
+  Default: Alapértelmezett
+  Circle: Kör
+  Magician: Varázslatos
+  Shooter: Lövöldözős
   Slinky: Slinky
-  Pulse: Pulse
-  ModeNotSupported: '&cCurrent mode not supported with that trail'
-  TrailNotSupported: '&cCurrent trail not supported with that mode'
+  Pulse: Vibráló
+  ModeNotSupported: '&cA jelenlegi mód nem támogatott ezzel a csíkkal!'
+  TrailNotSupported: '&cA jelenlegi csíl nem támogatott ezzel a móddal!'
   Lore:
   - '&6&l----------'
   - '!permission!'
 BlockMenu:
   '1':
-    Name: '&fBlocks #1'
+    Name: '&fBlokkok #1'
     Lore:
     - ' '
-    - '&8Blocks:'
-    - '&8- Wool (Red)'
-    - '&8- Wool (Yellow)'
-    - '&8- Wool (Green)'
-    - '&8- Wool (Blue)'
+    - '&8Blokkok:'
+    - '&8- Gyapjú (Piros)'
+    - '&8- Gyapjú (Sárga)'
+    - '&8- Gyapjú (Zöld)'
+    - '&8- Gyapjú (Kék)'
     - ' '
     - '!permission!'
   '2':
-    Name: '&fBlocks #2'
+    Name: '&fBlokkok #2'
     Lore:
     - ' '
-    - '&8Blocks:'
-    - '&8- Glass (White)'
-    - '&8- Glass (Orange)'
-    - '&8- Glass (Magenta)'
-    - '&8- Glass (Blue)'
+    - '&8Blokkok:'
+    - '&8- Üveg (Fehér)'
+    - '&8- Üveg (Narancs)'
+    - '&8- Üveg (Magenta)'
+    - '&8- Üveg (Kék)'
     - ' '
     - '!permission!'
   '3':
-    Name: '&fBlocks #3'
+    Name: '&fBlokkok #3'
     Lore:
     - ' '
-    - '&8Blocks:'
-    - '&8- Quartz Ore'
-    - '&8- Nether Brick'
-    - '&8- Netherrack'
-    - '&8- Glowstone'
+    - '&8Blokkok:'
+    - '&8- Kvarc Érc'
+    - '&8- Alvilági tégla'
+    - '&8- Alvilágikő'
+    - '&8- Izzókő'
     - ' '
     - '!permission!'
   '4':
-    Name: '&fBlocks #4'
+    Name: '&fBlokkok #4'
     Lore:
     - ' '
-    - '&8Blocks:'
-    - '&8- Clay (Orange)'
-    - '&8- Clay (Magenta)'
-    - '&8- Clay (Gray)'
-    - '&8- Clay (Pink)'
+    - '&8Blokkok:'
+    - '&8- Agyag (Narancs)'
+    - '&8- Agyag (Magenta)'
+    - '&8- Agyag (Szürke)'
+    - '&8- Agyag (Rózsazín)'
     - ' '
     - '!permission!'
   '5':
-    Name: '&fBlocks #5'
+    Name: '&fBlokkok #5'
     Lore:
     - ' '
-    - '&8Blocks:'
-    - '&8- Lapis Ore'
-    - '&8- Emerald Ore'
-    - '&8- Redstone Ore'
-    - '&8- Coal Ore'
+    - '&8Blokkok:'
+    - '&8- Lapis érc'
+    - '&8- Emeráld érc'
+    - '&8- Vöröskő érc'
+    - '&8- Szén érc'
     - ' '
     - '!permission!'
   '6':
-    Name: '&fBlocks #6'
+    Name: '&fBlokkok #6'
     Lore:
     - ' '
-    - '&8Blocks:'
+    - '&8Blokkok:'
     - '&8- TNT'
-    - '&8- Piston'
-    - '&8- Note Block'
-    - '&8- Redstone Block'
+    - '&8- Méreg'
+    - '&8- Hangdoboz'
+    - '&8- Vöröskő blokk'
     - ' '
     - '!permission!'
   '7':
-    Name: '&fBlocks #7'
+    Name: '&fBlokkok #7'
     Lore:
     - ' '
-    - '&8Blocks:'
+    - '&8Blokkok:'
     - '&8- Podzol'
-    - '&8- Grass'
-    - '&8- Gravel'
-    - '&8- Sand'
+    - '&8- Üveg'
+    - '&8- Sóder'
+    - '&8- Homok'
     - ' '
     - '!permission!'
   '8':
-    Name: '&fBlocks #8'
+    Name: '&fBlokkok #8'
     Lore:
     - ' '
-    - '&8Blocks:'
-    - '&8- Iron Block'
-    - '&8- Gold Block'
-    - '&8- Diamond Block'
-    - '&8- Emerald Block'
+    - '&8Blokkok:'
+    - '&8- Vas blokk'
+    - '&8- Arany blokk'
+    - '&8- Gyémánt blokk'
+    - '&8- Emeráld blokk'
     - ' '
     - '!permission!'
 RainAndWings:
-  White: '&fWhite'
-  Red: '&cRed'
-  Yellow: '&eYellow'
-  Green: '&aGreen'
-  Blue: '&9Blue'
-  Purple: '&dPurple'
-  Black: '&7Black'
-  Orange: '&6Orange'
-  Marmoreal: '&7Marmoreal'
-  Darkred: '&4Dark Red'
-  Pink: '&dPink'
-  Darkcyan: '&3Dark Cyan'
+  White: '&fFehér'
+  Red: '&cPiros'
+  Yellow: '&eSárga'
+  Green: '&aZöld'
+  Blue: '&9Kék'
+  Purple: '&dLila'
+  Black: '&7Fekete'
+  Orange: '&6Narancs'
+  Marmoreal: '&7Márvány'
+  Darkred: '&4Vörös'
+  Pink: '&dRózsaszín'
+  Darkcyan: '&3Sötét Cyán'
   Aqua: '&bAqua'
-  Gray: '&7Gray'
-  Rainbow: �7Rainbow
-  Color: '&fColor'
-  Pattern: '&fPattern'
+  Gray: '&7Szürke'
+  Rainbow: �7Szivárvány
+  Color: '&fSzín'
+  Pattern: '&fMinta'
 Wings:
-  Angel: '&f&lAngel'
-  embfebwdmb: §f§lBat Wings
-  ynsggkbbrd: §f§lFairy Wings
-  vuitmvtwsj: §f§lFantasy Wings
-  pumdvqnery: §f§lWings
-  bzsekxnbll: §f§lGull Wings
-  faxawyexyn: §f§lHawk Wings
-  nbgyytlckk: §f§lEvil Wings
-  kzcqxgpvje: §f§lDragon Wings
-  sdgdnomvsr: §f§lButterfly Wings
-  wjhexhsoba: §f§lShort Wings
-  mqpylnthdn: '§f§lButterfly #2 Wings'
-  xebgnppkni: §f§lElf Wings
-  heuanigzbt: §f§lLong Wings
-  lmbcmrpjan: §f§lDemonic Wings
-  qdpscnblyg: §f§lAngel Wings
+  Angel: '&f&lAngyal'
+  embfebwdmb: §f§lDenevér Szárnyak
+  ynsggkbbrd: §f§lTündér Szárnyak
+  vuitmvtwsj: §f§lFantázia Szárnyak
+  pumdvqnery: §f§lSzárnyak
+  bzsekxnbll: §f§lSirály Szárnyak
+  faxawyexyn: §f§lSólyom szárnyak
+  nbgyytlckk: §f§lÖrdög Szárnyak
+  kzcqxgpvje: §f§lSárkány Szárnyak
+  sdgdnomvsr: §f§lPillangó Szárnyak
+  wjhexhsoba: §f§lRövid Szárnyak
+  mqpylnthdn: '§f§lPillangó #2 Szárnyak
+  xebgnppkni: §f§lManó Szárnyak
+  heuanigzbt: §f§lHosszú Szárnyak
+  lmbcmrpjan: §f§lDémon Szárnyak
+  qdpscnblyg: §f§lAnygyal Szárnyak
 Pattern:
-  Pattern1: P1
+Pattern1: P1
