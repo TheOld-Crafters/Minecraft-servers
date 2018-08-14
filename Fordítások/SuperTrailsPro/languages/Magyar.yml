@@ -13,7 +13,7 @@ System:
   Languages_Page: Nyelvek
   Community_Page: Közösség
   Trails_CMD: Csík menü megnyitása
-  TrailsID_CMD: Válassz csíkod ID alapján
+  TrailsID_CMD: Válassz csíkot ID alapján
   SuperTrails_CMD: Admin panel - Főoldal
   SuperTrails_Player_CMD: Főoldal
   CmdNoPermissionTrail: '&cSajnálom neked nincs engedélyed ehhez a csíkhoz!'
@@ -51,9 +51,9 @@ Menu:
   Sell: Eladás
   Buy: Vétel
   Modes: '&8!prev &7< &f&l!current &7> &8!next'
-  Back: '&7<< Vissza a főmenöbe'
-  NoTrails: '&cNincs eggyetlen egy csíkod sem ebben a szekcióban!'
-  LangSelect: '&8Kattincs a választáshoz'
+  Back: '&7<< Vissza a főmenübe'
+  NoTrails: '&cNincs egyetlen egy csíkod sem ebben a szekcióban!'
+  LangSelect: '&8Kattints a választáshoz'
   Lore:
   - '&6&l----------'
   - '!permission!'
@@ -82,11 +82,11 @@ Event:
     - ' '
     - 'Loot: ???'
     - ' '
-    - '&7Kattincs valamelyik ládára a kinyitáshoz'
+    - '&7Kattints valamelyik ládára a kinyitáshoz'
   Empty:
     Name: '&7A láda üres'
   Confetti:
-    Name: '&fKomfetti csík'
+    Name: '&fKonfetti csík'
     Lore:
     - ' '
     - '&fSzínek:'
@@ -101,14 +101,14 @@ Event:
     Name: '!color! Forgó csík'
     Lore:
     - ' '
-    - '&7Ritkasád: !r!'
+    - '&7Ritkaság: !r!'
     - ' '
     - '&a&lKattints a kiválasztáshoz'
   Color:
     Name: '!color!&f Szárnyak/Eső szín'
     Lore:
     - ' '
-    - '&8Elérhető a Eső és Szárny építőben.'
+    - '&8Elérhető az Eső és Szárny építőben.'
     - ' '
     - '&7Ritkaság: !r!'
   UnlockedColor:
@@ -172,7 +172,7 @@ Modes:
   Slinky: Slinky
   Pulse: Vibráló
   ModeNotSupported: '&cA jelenlegi mód nem támogatott ezzel a csíkkal!'
-  TrailNotSupported: '&cA jelenlegi csíl nem támogatott ezzel a móddal!'
+  TrailNotSupported: '&cA jelenlegi csík nem támogatott ezzel a móddal!'
   Lore:
   - '&6&l----------'
   - '!permission!'
@@ -280,7 +280,7 @@ RainAndWings:
   Darkcyan: '&3Sötét Cián'
   Aqua: '&bAqua'
   Gray: '&7Szürke'
-  Rainbow: �7Szivárvány
+  Rainbow: '&7Szivárvány'
   Color: '&fSzín'
   Pattern: '&fMinta'
 Wings:
@@ -299,6 +299,6 @@ Wings:
   xebgnppkni: §f§lManó Szárnyak
   heuanigzbt: §f§lHosszú Szárnyak
   lmbcmrpjan: §f§lDémon Szárnyak
-  qdpscnblyg: §f§lAnygyal Szárnyak
+  qdpscnblyg: §f§lAngyal Szárnyak
 Pattern:
 Pattern1: P1
