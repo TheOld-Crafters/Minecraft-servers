@@ -1,3 +1,4 @@
+
 # use & for colors
 #   placeholders will be listed in front of the keys
 
@@ -28,18 +29,62 @@ game:
   #   use %loser% for the name of the player that gave up
   otherTooSlow: " &2You won! %loser% was too slow."
 
-name: '&1TicTacToe&r'
-prefix: "[&3TicTacToe&r]"
+name: '&1Amőba&r'
+prefix: "[&3Amőba&r]"
 
 gameHelp:
   - '&1&lTry to get 3 marks in a row on the 3x3 grid.'
   - '&1&lAt the same time stop the computer from doing so.'
 
 inventoryTitles:
-  won: "&2TicTacToe       &2You won!"
-  lost: "&2TicTacToe       &4You lost!"
-  draw: "&2TicTacToe       &4Draw!"
-  othersTurn: "&2TicTacToe     &4NPC's turn!  &a%time%"
-  yourTurn: "&2TicTacToe     &2Your turn!  &4%time%"
+  won: "&2Amőba       &2You won!"
+  lost: "&2Amőba       &4You lost!"
+  draw: "&2Amőba       &4Draw!"
+  othersTurn: "&2Amőba     &4NPC's turn!  &a%time%"
+  yourTurn: "&2Amőba     &2Your turn!  &4%time%"
 
-  
+
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2Fizettél: &4%cost%"
+    notEnoughMoney: " &4Nincs elegendő pénzed!"
+    # use %reward% for the amount the player won
+    wonMoney: " &2Nyertél: &1%reward%&2!"
+    # use %reward% for the amount the player won and %loser% for the player that gave up
+    wonMoneyGaveUp: " &2Nyertél: &1%reward%&2! %loser% feladta."
+    # use %reward% for the amount the player won and %loser% for the player that was too slow
+    wonMoneyTooSlow: " &2nyertél: &1%reward%&2! %loser% túl lassú volt."
+  # this message is displayed if the player won and economy is disabled
+  won: " &2Megnyerted a játékot!"
+  lost: " &4Elvesztetted a játékot."
+  draw: " &4A játék végeredménye döntetlen lett!"
+  # gave up message
+  gaveUp: " &4Feladtad"
+  # too slow message
+  tooSlow: " &4Kifutottál az idődből!"
+  # won message send when the other player gave up
+  #   use %loser% for the name of the player that gave up
+  otherGaveUp: " &2Nyertél! %loser% feladta."
+  # won message send when the other player does not fire in time
+  #   use %loser% for the name of the player that gave up
+  otherTooSlow: " &2Nyertél! %loser% túl lassú volt!"
+
+name: '&1Amőba&r'
+prefix: "[&3Amőba&r]"
+
+gameHelp:
+  - '&1&lPróbálj megszerzni 3 jelet egymás után a 3x3-as területen!'
+  - '&1&lUgyan akkor llísd le a gépet!'
+
+inventoryTitles:
+  won: "&2Amőba       &2Te nyertél!"
+  lost: "&2Amőba       &4Te vesztettél!"
+  draw: "&2Amőba       &4Döntetlen!"
+  othersTurn: "&2Amőba     &4A Gép következik!  &a%time%"
+  yourTurn: "&2Amőba     &2Te következel!  &4%time%"
+
