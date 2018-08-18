@@ -5,41 +5,41 @@
 game:
   econ:
     # use %cost% for the amount payed
-    payed: " &2You paid &4%cost%"
-    notEnoughMoney: " &4You do not have enough money!"
+    payed: " &2Fizettél ennyit: &4%cost%"
+    notEnoughMoney: " &4Nincs elég pénzed!"
     # use %reward% for the amount the player won
-    wonMoney: " &2You won &1%reward%&2!"
+    wonMoney: " &2Nyertél: &1%reward%&2-t!"
     # use %reward% for the amount the player won and %loser% for the player that gave up
-    wonMoneyGaveUp: " &2You won &1%reward%&2! %loser% gave up."
+    wonMoneyGaveUp: " &2Nyertél &1%reward%&2-t! %loser% feladta."
     # use %reward% for the amount the player won and %loser% for the player that was too slow
-    wonMoneyTooSlow: " &2You won &1%reward%&2! %loser% was too slow."
+    wonMoneyTooSlow: " &2Nyertél &1%reward%&2-t! %loser% túl lassú volt."
   # this message is displayed if the player won and economy is disabled
-  won: " &2You won the game!"
-  lost: " &4You lost the game"
-  draw: " &4The game finished draw"
+  won: " &2Megnyerted a játékot!"
+  lost: " &4Elveszítetted a játékot."
+  draw: " &4A játék döntetlen lett."
   # gave up message
-  gaveUp: " &4You gave up"
+  gaveUp: " &4Feladtad"
   # too slow message
-  tooSlow: " &4Your time ran out"
+  tooSlow: " &4Elfogyott az időd"
   # won message send when the other player gave up
   #   use %loser% for the name of the player that gave up
-  otherGaveUp: " &2You won! %loser% gave up."
+  otherGaveUp: " &2Nyertél! %loser% feladta."
   # won message send when the other player does not fire in time
   #   use %loser% for the name of the player that gave up
-  otherTooSlow: " &2You won! %loser% was too slow."
+  otherTooSlow: " &2Nyertél! %loser% túl lassú volt."
 
 name: '&1TicTacToe&r'
 prefix: "[&3TicTacToe&r]"
 
 gameHelp:
-  - '&1&lThis game is for two players'
-  - '&1&lTry to get 3 marks in a row on the 3x3 grid.'
+  - '&1&lA játékot csak ketten lehet játszani.'
+  - '&1&lPróbálj meg szerezni 3 jelölést sorban a 3x3 rácsban.'
 
 inventoryTitles:
-  won: "&2TicTacToe       &2You won!"
-  lost: "&2TicTacToe       &4You lost!"
-  draw: "&2TicTacToe       &4Draw!"
-  othersTurn: "&2TicTacToe     &4Others turn!  &a%time%"
-  yourTurn: "&2TicTacToe     &2Your turn!  &4%time%"
+  won: "&2TicTacToe       &2Nyertél!"
+  lost: "&2TicTacToe       &4Vesztettél!"
+  draw: "&2TicTacToe       &4Döntetlen!"
+  othersTurn: "&2TicTacToe     &4OAz ellenfeled körje!  &a%time%"
+  yourTurn: "&2TicTacToe     &2A te köröd!  &4%time%"
 
   
