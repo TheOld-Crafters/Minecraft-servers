@@ -15,21 +15,21 @@ gameBox:
     # define the Material and data for the button (format: 'material:data')
     materialData: "shears"
     # display name of the button
-    displayName: "&3Rock Paper Scissors"
+    displayName: "&3Kő-Papír-Olló"
     # lore of the button
     lore:
     - ""
-    - "&1Fight like real men"
+    - "&1Küzdj, mint a profik!"
   gameButtons:
     saveStats:
       materialData: "PAPER"
-      displayName: "&l&1Rock Paper Scissors"
+      displayName: "&l&1Kő-Papír-Olló"
       lore:
       - ""
-      - '&1Cost: &45'
-      - '&1Reward: &29'
+      - '&1Ára: &45'
+      - '&1Nyeremény: &29'
       - ""
-      - "&1Best of five rounds"
+      - "&15 körből a legjobb nyer!"
       # slot of the button in the gui
       #   be careful to not use the same twice ;)
       slot: 22
@@ -37,7 +37,7 @@ gameBox:
       reward: 9
       # time in seconds for each turn (default 10)
       timePerTurn: 10
-      inviteGuiTitle: "     &3Rock Paper Scissors"
+      inviteGuiTitle: "     &3Kő-Papír-Olló"
       saveStats: true
       # Only use numbers up to 9. Preferably uneven ones to get rid of draws.
       rounds: 5
@@ -46,33 +46,33 @@ gameBox:
     #   for that button 'saveStats' must be true (see above)
     saveStats:
       materialData: "nether_star"
-      displayName: "&l&cTop list"
+      displayName: "&l&cToplista"
       lore:
       - ""
-      - "&1Rock Paper Scissors scores"
+      - "&1Kő-Papír-Olló pontszámok"
       slot: 31
       # inventory title of the top list (%player% and %game%)
-      inventoryTitle: '              Top List'
+      inventoryTitle: '              Toplista'
       # Lore of the skulls in the inventory. Use %rank% for the rank and %wins% for the number of wins
       skullLore:
       - ''
-      - '&6Rank:&1 %rank%'
-      - '&6Wins:&1 %wins%'
+      - '&6Helyezés:&1 %rank%'
+      - '&6Nyerések száma:&1 %wins%'
 
 scissors:
   materialData: 'shears'
-  displayName: '&5Scissors'
+  displayName: '&5Olló'
 paper:
   materialData: 'paper'
-  displayName: '&5Paper'
+  displayName: '&5Papír'
 rock:
   materialData: 'cobblestone'
-  displayName: '&5Rock'
+  displayName: '&5Kő'
 
 # indicators
 indicatorWon:
   materialData: 'stained_glass_pane:5'
-  displayName: '&5Won'
+  displayName: '&5Nyertél.'
 indicatorPlaceholder:
   materialData: 'stained_glass_pane:7'
   displayName: '&5'
