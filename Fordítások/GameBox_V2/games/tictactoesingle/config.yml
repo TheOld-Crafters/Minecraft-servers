@@ -103,7 +103,7 @@ sheetInner:
 markers:
   marker1:
     materialData: 'slime_ball'
-    displayName: '&5%player%' jele'
+    displayName: '&5%player% jele'
   marker2:
     materialData: 'barrier'
-    displayName: '&5%player%' jele'
+    displayName: '&5%player% jele'
