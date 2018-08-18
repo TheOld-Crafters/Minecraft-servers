@@ -5,44 +5,43 @@
 game:
   econ:
     # use %cost% for the amount payed
-    payed: " &2You paid &4%cost%"
-    notEnoughMoney: " &4You do not have enough money!"
+    payed: " &2Elköltöttél: &4%cost%"
+    notEnoughMoney: " &4Nincs elegendő pénzed!"
     # use %reward% for the amount the player won
-    wonMoney: " &2You won &1%reward%&2!"
+    wonMoney: " &2Nyertél&1%reward%&2!"
     # use %reward% for the amount the player won and %loser% for the player that gave up
-    wonMoneyGaveUp: " &2You won &1%reward%&2! %loser% gave up."
+    wonMoneyGaveUp: " &2Nyertél &1%reward%&2! %loser% a vesztesek feladták."
     # use %reward% for the amount the player won and %loser% for the player that was too slow
-    wonMoneyTooSlow: " &2You won &1%reward%&2! %loser% was too slow."
+    wonMoneyTooSlow: " &2Nyertél &1%reward%&2! %loser% túl lassú volt!"
   # this message is displayed if the player won and economy is disabled
-  won: " &2You won the game!"
-  lost: " &4You lost the game"
+  won: " &2Megnyerted a játékot!"
+  lost: " &4Elvesztetted a játékot!"
   # gave up message
-  gaveUp: " &4You gave up"
+  gaveUp: " &4Feladtad!"
   # too slow message
-  tooSlow: " &4Your time ran out"
+  tooSlow: " &4Kifutottál az időből!"
   # won message send when the other player gave up
   #   use %loser% for the name of the player that gave up
-  otherGaveUp: " &2You won! %loser% gave up."
+  otherGaveUp: " &2Te nyertél! %loser% feladta."
   # won message send when the other player does not fire in time
   #   use %loser% for the name of the player that gave up
-  otherTooSlow: " &2You won! %loser% was too slow."
+  otherTooSlow: " &2Te nertél! %loser% túl lassú volt!"
 
-name: '&1RockPaperScissors&r'
-prefix: "[&3RockPaperScissors&r]"
+name: '&1KőPapírOlló&r'
+prefix: "[&3KőPapírOlló&r]"
 
 gameHelp:
-  - '&1&lThis game is for two players'
+  - '&1&lEz a játék két embernek szól!'
   - ""
-  - '&1&lRock beats scissors'
-  - '&1&lScissors beat paper'
-  - '&1&lPaper beats Rock'
+  - '&1&lKő üti az ollót!'
+  - '&1&lOlló elvágja a papírt!'
+  - '&1&lPapír becsomagolja a követ!'
 
 inventoryTitles:
-  won: "&2RockPaperScissors   &2You won!"
-  draw: "&2RockPaperScissors   &2Draw..."
-  lost: "&2RockPaperScissors   &4You lost!"
-  wait: "&2RockPaperScissors   &4Wait  &2%time%"
-  nextRound: "&2    Next round in:            &2%time%"
-  nextRoundDraw: "&2    Draw! repeat round in:    &2%time%"
-  choose: "&2RockPaperScissors   &2Choose  &4%time%"
-
+  won: "&2KőPapírOlló   &2Te nyertél!"
+  draw: "&2KőPapírOlló   &2Döntetlen..."
+  lost: "&2KőPapírOlló   &4Vesztettél!"
+  wait: "&2KőPapírOlló   &4Várj &2%time%"
+  nextRound: "&2    Következő kőr:            &2%time%"
+  nextRoundDraw: "&2    Döntetlen! Visszavágóig:    &2%time%"
+choose: "&2KőPapírOlló   &2Válassz  &4%time%"
