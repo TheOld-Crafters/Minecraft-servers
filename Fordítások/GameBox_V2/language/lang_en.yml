@@ -70,35 +70,35 @@ mainButtons:
   exitButton: "&4Click to exit"
   toMainGUIButton: "&2To main menu"
   toGameGUIButton: "&2To game menu"
-  forwardButton: "&2&lNext"
-  backwardButton: "&2&lBack"
+  forwardButton: "&2&lNext →"
+  backwardButton: "&2&lBack ←"
   infoMainMenu:
-  - '&1Here you find all the games'
-  - '&1Click on one of the buttons'
-  - '  &1to open the games menu.'
+  - '&bHere you find all the games'
+  - '&bClick on one of the buttons'
+  - '  &bto open the games menu.'
   # %tokens% will be replaced with the players number of tokens
-  tokensButton: "&1Tokens: &2%tokens%"
+  tokensButton: "&bTokens: &2%tokens%"
   soundToggle:
-    onDisplayName: "&1Sound on"
+    onDisplayName: "&aSound on"
     onLore:
     - ""
-    - "&1Click to turn sounds off"
+    - "&bClick to turn sounds off"
     offDisplayName: "&4Sound off"
     offLore:
     - ""
-    - "&1Click to turn sounds on"
+    - "&bClick to turn sounds on"
   inviteButton:
     displayName: "&eInvite someone"
     lore:
     - ""
-    - "&1Click to invite someone over chat"
+    - "&bClick to invite someone over chat"
   # this is the name and lore of an invite. It is the players skull in the invitation GUI.
   invitationSkull:
     # %player% will be replaced by the players name
     displayName: "&e%player%"
     lore:
     - ""
-    - "&1Click to accept the invitation"
+    - "&bClick to accept the invitation"
 
 
 
@@ -144,6 +144,7 @@ others:
     notValidPlayerName: " &1%player%&4 is not a valid player name."
     notOnline: " &cThere is no &5%player%&c online."
     notInviteYourself: " &cYou cannot invite yourself."
+    otherInDisabledWorld: " &5%player%&c is in a disabled world."
   invitation:
   - " &3%player%&r invited you to &3%game%"
   invitationTitleMessage:
@@ -173,9 +174,65 @@ others:
     afterColor: "blue"
 
 topList:
+  playerSkullName: "&1%player%"
   unknownSkullName: "&1Unknown Player"
   # Will be added below the rank information for unknown players
   unknownSkullLore:
   - ""
   - "This player has not joined"
   - "   the server before."
+
+# Names of high numbers used for visualization
+# Let the numbers be 'n' then the names are used for 10^(3*n)
+# meaning 1 -> 1 000
+#         2 -> 1 000 000
+#         4 -> 1 000 000 000 000
+# You can skip numbers and the default name will be used
+# max number: 21 (corresponding to 10^63)
+# FYI: The number settings are optional and are not listed as missing messages, if they are not in a custom language file.
+highNumberNames:
+  0: ""
+  1: "Million"
+  2: "Billion"
+  3: "Trillion"
+  4: "Quadrillion"
+  5: "Quintillion"
+  6: "Sextillion"
+  7: "Septillion"
+  8: "Octillion"
+  9: "Nonillion"
+  10: "Decillion"
+  11: "Undecillion"
+  12: "Duodecillion"
+  13: "Tredecillion"
+  14: "Quattuordecillion"
+  15: "Quindecillion"
+  16: "Sexdecillion"
+  17: "Septendecillion"
+  18: "Octodecillion"
+  19: "Novemdecillion"
+  20: "Vigintillion"
+
+# Short-names of high numbers used for visualization
+highNumberShortNames:
+  0: ""
+  1: "M"
+  2: "B"
+  3: "T"
+  4: "Quad"
+  5: "Quin"
+  6: "Sext"
+  7: "Sept"
+  8: "Oct"
+  9: "Non"
+  10: "Dec"
+  11: "Undec"
+  12: "Duodec"
+  13: "Tredec"
+  14: "Quattuordec"
+  15: "Quindec"
+  16: "Sexdec"
+  17: "Septendec"
+  18: "Octodec"
+  19: "Novemdec"
+  20: "Vigint"

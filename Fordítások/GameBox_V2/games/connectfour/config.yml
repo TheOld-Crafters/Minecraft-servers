@@ -103,8 +103,9 @@ chips:
     materialData: "apple"
     displayName: "&3%player% játékos almája"
   emerald:
-    materialData: "388"
+    materialData: "emerald"
     displayName: "&3%player% játékos Drágaköve"
   crystal:
-    materialData: "406"
+    materialData: "quartz"
     displayName: "&3%player% játékos Kristálya"
+

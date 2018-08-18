@@ -70,35 +70,35 @@ mainButtons:
   exitButton: "&4Kattints a kilépéshez"
   toMainGUIButton: "&2Főmenübe"
   toGameGUIButton: "&2Játékmenübe"
-  forwardButton: "&2&lTovább"
-  backwardButton: "&2&lVissza"
+  forwardButton: "&2&lTovább  →"
+  backwardButton: "&2&lVissza ←"
   infoMainMenu:
-  - '&1Itt megtalálhatod az összes játékot'
-  - '&1Kattints a gombok egyikére,'
-  - '  &1hogy megnyisd a játékmenüt.'
+  - '&bItt megtalálhatod az összes játékot'
+  - '&bKattints a gombok egyikére,'
+  - '  &bhogy megnyisd a játékmenüt.'
   # %tokens% will be replaced with the players number of tokens
-  tokensButton: "&1Zsetonok: &2%tokens%"
+  tokensButton: "&bZsetonok: &2%tokens%"
   soundToggle:
-    onDisplayName: "&1Hang bekapcsolva"
+    onDisplayName: "&aHang bekapcsolva"
     onLore:
     - ""
-    - "&1Kattints a hangok kikapcsolásához"
+    - "&bKattints a hangok kikapcsolásához"
     offDisplayName: "&4Hang kikapcsolva"
     offLore:
     - ""
-    - "&1Kattints a hangok bekapcsolásához"
+    - "&bKattints a hangok bekapcsolásához"
   inviteButton:
     displayName: "&eHívj meg valakit"
     lore:
     - ""
-    - "&1Kattints egy játékos meghívásához"
+    - "&bKattints egy játékos meghívásához"
   # this is the name and lore of an invite. It is the players skull in the invitation GUI.
   invitationSkull:
     # %player% will be replaced by the players name
     displayName: "&e%player%"
     lore:
     - ""
-    - "&1Kattints a meghívás elfogadásához"
+    - "&bKattints a meghívás elfogadásához"
 
 
 
@@ -144,6 +144,7 @@ others:
     notValidPlayerName: " &1%player%&4 nem egy valós játékosnév."
     notOnline: " &cNincs &5%player%&c nevű online játékos."
     notInviteYourself: " &cNem hívhatod meg saját magad."
+    otherInDisabledWorld: " &5%player%&c egy letiltott világban van."
   invitation:
   - " &3%player%&r meghívott téged erre: &3%game%"
   invitationTitleMessage:
@@ -173,9 +174,65 @@ others:
     afterColor: "blue"
 
 topList:
+  playerSkullName: "&1%player%"
   unknownSkullName: "&1Ismeretlen Játékos"
   # Will be added below the rank information for unknown players
   unknownSkullLore:
   - ""
   - "A játékos még nem lépett be"
   - "   a szerverre ezelőtt."
+
+# Names of high numbers used for visualization
+# Let the numbers be 'n' then the names are used for 10^(3*n)
+# meaning 1 -> 1 000
+#         2 -> 1 000 000
+#         4 -> 1 000 000 000 000
+# You can skip numbers and the default name will be used
+# max number: 21 (corresponding to 10^63)
+# FYI: The number settings are optional and are not listed as missing messages, if they are not in a custom language file.
+highNumberNames:
+  0: ""
+  1: "Million"
+  2: "Billion"
+  3: "Trillion"
+  4: "Quadrillion"
+  5: "Quintillion"
+  6: "Sextillion"
+  7: "Septillion"
+  8: "Octillion"
+  9: "Nonillion"
+  10: "Decillion"
+  11: "Undecillion"
+  12: "Duodecillion"
+  13: "Tredecillion"
+  14: "Quattuordecillion"
+  15: "Quindecillion"
+  16: "Sexdecillion"
+  17: "Septendecillion"
+  18: "Octodecillion"
+  19: "Novemdecillion"
+  20: "Vigintillion"
+
+# Short-names of high numbers used for visualization
+highNumberShortNames:
+  0: ""
+  1: "M"
+  2: "B"
+  3: "T"
+  4: "Quad"
+  5: "Quin"
+  6: "Sext"
+  7: "Sept"
+  8: "Oct"
+  9: "Non"
+  10: "Dec"
+  11: "Undec"
+  12: "Duodec"
+  13: "Tredec"
+  14: "Quattuordec"
+  15: "Quindec"
+  16: "Sexdec"
+  17: "Septendec"
+  18: "Octodec"
+  19: "Novemdec"
+  20: "Vigint"
