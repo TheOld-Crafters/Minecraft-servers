@@ -26,7 +26,7 @@ langFile: "lang_hu.yml"
 gameBox:
   mainButton:
     # define the Material and data for the button (format: 'material:data')
-    materialData: "35:4"
+    materialData: "wool:4"
     # display name of the button
     displayName: "&3Sudoku"
     # lore of the button
@@ -35,7 +35,7 @@ gameBox:
     - "&1A híres logikai játék"
   gameButtons:
     saveStats:
-      materialData: "159:3"
+      materialData: "stained_clay:3"
       displayName: "&c&lSudoku"
       lore:
       - ""
@@ -58,7 +58,7 @@ gameBox:
     # use the same key as the game you want to display the top list for
     #   for that button 'saveStats' must be true (see above)
     saveStats:
-      materialData: "159:11"
+      materialData: "stained_clay:11"
       displayName: "&cToplista"
       lore:
       - ""
@@ -99,91 +99,91 @@ items:
   grid:
     '1':
       cover:
-        materialData: "160:11"
+        materialData: "stained_glass_pane:11"
         displayName: "&1"
       tip:
-        materialData: "159:11"
+        materialData: "stained_clay:11"
         displayName: "&1&l&n%value%"
       number:
-        materialData: "35:11"
+        materialData: "wool:11"
         displayName: "&1%value%"
     '2':
       cover:
-        materialData: "160"
+        materialData: "stained_glass_pane"
         displayName: "&f"
       tip:
-        materialData: "159"
+        materialData: "stained_clay"
         displayName: "&f&l&n%value%"
       number:
-        materialData: "35"
+        materialData: "wool"
         displayName: "&f%value%"
     '3':
       cover:
-        materialData: "160:11"
+        materialData: "stained_glass_pane:11"
         displayName: "&1"
       tip:
-        materialData: "159:11"
+        materialData: "stained_clay:11"
         displayName: "&1&l&n%value%"
       number:
-        materialData: "35:11"
+        materialData: "wool:11"
         displayName: "&1%value%"
     '4':
       cover:
-        materialData: "160"
+        materialData: "stained_glass_pane"
         displayName: "&f"
       tip:
-        materialData: "159"
+        materialData: "stained_clay"
         displayName: "&f&l&n%value%"
       number:
-        materialData: "35"
+        materialData: "wool"
         displayName: "&f%value%"
     '5':
       cover:
-        materialData: "160:11"
+        materialData: "stained_glass_pane:11"
         displayName: "&1"
       tip:
-        materialData: "159:11"
+        materialData: "stained_clay:11"
         displayName: "&1&l&n%value%"
       number:
-        materialData: "35:11"
+        materialData: "wool:11"
         displayName: "&1%value%"
     '6':
       cover:
-        materialData: "160"
+        materialData: "stained_glass_pane"
         displayName: "&f"
       tip:
-        materialData: "159"
+        materialData: "stained_clay"
         displayName: "&f&l&n%value%"
       number:
-        materialData: "35"
+        materialData: "wool"
         displayName: "&f%value%"
     '7':
       cover:
-        materialData: "160:11"
+        materialData: "stained_glass_pane:11"
         displayName: "&1"
       tip:
-        materialData: "159:11"
+        materialData: "stained_clay:11"
         displayName: "&1&l&n%value%"
       number:
-        materialData: "35:11"
+        materialData: "wool:11"
         displayName: "&1%value%"
     '8':
       cover:
-        materialData: "160"
+        materialData: "stained_glass_pane"
         displayName: "&f"
       tip:
-        materialData: "159"
+        materialData: "stained_clay"
         displayName: "&f&l&n%value%"
       number:
-        materialData: "35"
+        materialData: "wool"
         displayName: "&f%value%"
     '9':
       cover:
-        materialData: "160:11"
+        materialData: "stained_glass_pane:11"
         displayName: "&1"
       tip:
-        materialData: "159:11"
+        materialData: "stained_clay:11"
         displayName: "&1&l&n%value%"
       number:
-        materialData: "35:11"
+        materialData: "wool:11"
         displayName: "&1%value%"

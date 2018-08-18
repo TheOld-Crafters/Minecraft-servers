@@ -97,23 +97,23 @@ materials:
       material: "Iron_block"
       name: "&7Hajó"
     lockedShip:
-      material: "7"
+      material: "bedrock"
       name: "&8Lezárt hajó"
     miss:
-      material: "160:3"
+      material: "stained_glass_pane:3"
       name: "&2Ezzazz! Egy hiba!"
     hit:
-      material: "35:14"
+      material: "WOOL:14"
       name: "&4A fenébe! Egy ütés..."
     water:
-      material: "160:11"
+      material: "stained_glass_pane:11"
       name: "&1Víz"
   othersGrid:
     cover:
       material: "WOOL:7"
       name: "&6Befedés"
     miss:
-      material: "160:11"
+      material: "stained_glass_pane:11"
       name: "&4Ez nem ütött..."
     hit:
       material: "Iron_block"

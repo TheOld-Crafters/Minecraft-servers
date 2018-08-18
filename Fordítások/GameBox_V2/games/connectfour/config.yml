@@ -5,13 +5,14 @@
 #                                  by Nikl                                    #
 # ----------------------------------------------------------------------------#
 
-# name of the language file (in the folder 'language')
+# Name of the language file (in the folder 'language/connectfour')
+# Please use the full name, including the file ending (.yml)
 langFile: "lang_hu.yml"
 
 gameBox:
   mainButton:
     # define the Material and data for the button (format: 'material:data')
-    materialData: "22"
+    materialData: "lapis_block"
     # display name of the button
     displayName: "&3Amőba"
     # lore of the button
@@ -20,7 +21,7 @@ gameBox:
     - "&1Gyüjts ki 4-et egy sorba ;)"
   gameButtons:
     easy:
-      materialData: "22"
+      materialData: "lapis_block"
       displayName: "&aKiképzés"
       lore:
       - ""
@@ -32,8 +33,7 @@ gameBox:
       # optional custom time per move in seconds (default is 30)
       timePerMove: 20
       # optional custom min number of chips before any winnings are payed (default: 7)
-      #     if the game is quited earlier by closing it, the player left int he game will not get payed the winnings, but will get back any money he payed to play the game.
-      # set it to a negative number to turn this off
+      # this only effects payouts when one player quits/gives up
       minNumberOfPlayedChips: 7
       inviteGuiTitle: "&3ConnectFour &rkiképzés elindítása"
     saveStats:
@@ -87,14 +87,14 @@ economy:
 #   the players chips are selected randomly
 chips:
   enzy:
-    materialData: "340"
+    materialData: "book"
     displayName: "&3%player% játékos Ismerettára"
     # optional lore
     lore:
     - ""
     - "&cElég nehéz..."
   sparks:
-    materialData: "377"
+    materialData: "blaze_powder"
     displayName: "&3%player% játékos Szikrája"
   dia:
     materialData: "diamond"

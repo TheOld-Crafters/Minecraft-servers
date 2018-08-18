@@ -20,7 +20,7 @@ economy:
 gameBox:
   mainButton:
     # define the Material and data for the button (format: 'material:data')
-    materialData: "95:11"
+    materialData: "stained_glass:11"
     # display name of the button
     displayName: "&3Párkereső"
     # lore of the button
@@ -30,7 +30,7 @@ gameBox:
     - "&1Találd meg az összes párt."
   gameButtons:
     small:
-      materialData: "95:11"
+      materialData: "stained_glass:11"
       displayName: "&aKis játék"
       lore:
       - ""
@@ -41,7 +41,7 @@ gameBox:
       # time in seconds until a mismatched pair is covered again (default 1.5)
       timeVisible: 1.5
     medium:
-      materialData: "95:11"
+      materialData: "stained_glass:11"
       displayName: "&aKözepes játék"
       lore:
       - ""
@@ -50,7 +50,7 @@ gameBox:
       cost: 0
       size: "medium"
     big:
-      materialData: "95:11"
+      materialData: "stained_glass:11"
       displayName: "&aNagy játék"
       lore:
       - ""
@@ -67,7 +67,7 @@ gameBox:
     # use the same key as the game you want to display the top list for
     #   for that button 'saveStats' must be true (see above)
     big:
-      materialData: "95:13"
+      materialData: "stained_glass:13"
       displayName: "&6Nagy játék &c&lToplista"
       slot: 24
       # inventory title of the top list (%player% and %game%)
@@ -79,17 +79,17 @@ gameBox:
       - '&6Idő:&1 %time%'
 
 coverItem:
-  materialData: "160:3"
+  materialData: "stained_glass_pane:3"
   displayName: "&1Kattints a felfedéshez"
 
 borderItem:
-  materialData: "160:15"
+  materialData: "stained_glass_pane:15"
   displayName: ""
 
 items:
   '1':
     # material data of the item
-    materialData: "98"
+    materialData: "SMOOTH_BRICK:2"
     # optional custom display name
     displayName: "&1Kőtégla"
     # optional custom lore
@@ -98,27 +98,27 @@ items:
     - "Régi, számos repedéssel"
   '2':
     # material data of the item
-    materialData: "100"
+    materialData: "HUGE_MUSHROOM_2"
     # optional custom display name
     displayName: "&1Piros gombablokk"
   '3':
     # material data of the item
-    materialData: "101"
+    materialData: "IRON_FENCE"
     # optional custom display name
     displayName: "&1Vasrács"
   '4':
     # material data of the item
-    materialData: "103"
+    materialData: "melon_block"
     # optional custom display name
     displayName: "&1Dinnye"
   '5':
     # material data of the item
-    materialData: "106"
+    materialData: "vine"
     # optional custom display name
     displayName: "&1Inda"
   '6':
     # material data of the item
-    materialData: "387"
+    materialData: "written_book"
     # optional custom display name
     displayName: "&1Könyv"
     lore:
@@ -137,7 +137,7 @@ items:
     displayName: "&1Smaragd"
   '9':
     # material data of the item
-    materialData: "341"
+    materialData: "slime_ball"
     # optional custom display name
     displayName: "&1Nyálka"
   '10':
@@ -147,7 +147,7 @@ items:
     displayName: "&1Tojás"
   '11':
     # material data of the item
-    materialData: "302"
+    materialData: "chainmail_helmet"
     # optional custom display name
     displayName: "&1Ókori sisak"
     lore:
@@ -155,7 +155,7 @@ items:
     - "Talán Caesear hordta ezt?"
   '12':
     # material data of the item
-    materialData: "357"
+    materialData: "cookie"
     # optional custom display name
     displayName: "&1Süti"
     lore:
@@ -163,31 +163,31 @@ items:
     - "Nagyi sütije a legjobb!"
   '13':
     # material data of the item
-    materialData: "352"
+    materialData: "bone"
     # optional custom display name
     displayName: "&1Csont"
   '14':
     # material data of the item
-    materialData: "358"
+    materialData: "map"
     # optional custom display name
     displayName: "&1Kincses térkép"
     lore:
     - ""
     - "Kíváncsi vagyok hová vezet..."
   '15':
-    materialData: "35:13"
+    materialData: "wool:13"
     displayName: "&1Zöld gyapjú"
   '16':
-    materialData: "35:14"
+    materialData: "wool:14"
     displayName: "&1Piros gyapjú"
   '17':
-    materialData: "38"
+    materialData: "RED_ROSE"
     displayName: "&1Pipacs"
     lore:
     - ""
     - "Gyönyörű!"
   '18':
-    materialData: "40"
+    materialData: "red_mushroom"
     displayName: "&1Piros gomba"
     lore:
     - ""
@@ -212,10 +212,10 @@ items:
     materialData: "anvil"
     displayName: "&1Üllő"
   '23':
-    materialData: "111"
+    materialData: "WATER_LILY"
     displayName: "&1Tavirózsa"
   '24':
-    materialData: "116"
+    materialData: "ENCHANTMENT_TABLE"
     displayName: "&1Varázslóasztal"
     lore:
     - ""
@@ -224,10 +224,10 @@ items:
     materialData: "double_plant"
     displayName: "&1Napraforgó"
   '26':
-    materialData: "288"
+    materialData: "feather"
     displayName: "&1Toll"
   '27':
-    materialData: "315"
+    materialData: "GOLD_CHESTPLATE"
     displayName: "&1Arany mellvért"
     lore:
     - ""
@@ -243,10 +243,10 @@ items:
     materialData: "cactus"
     displayName: "&1Kaktusz"
   '30':
-    materialData: "170"
+    materialData: "hay_block"
     displayName: "&1Szalmabála"
   '31':
-    materialData: "267"
+    materialData: "iron_sword"
     displayName: "&1Kard"
     lore:
     - ""

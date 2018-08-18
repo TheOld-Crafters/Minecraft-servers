@@ -1,0 +1,48 @@
+# use & for colors
+#   placeholders will be listed in front of the keys
+
+# messages and inventory titles directly related to the game
+game:
+  econ:
+    # use %cost% for the amount payed
+    payed: " &2You paid &4%cost%"
+    notEnoughMoney: " &4You do not have enough money!"
+    # use %reward% for the amount the player won
+    wonMoney: " &2You won &1%reward%&2!"
+    # use %reward% for the amount the player won and %loser% for the player that gave up
+    wonMoneyGaveUp: " &2You won &1%reward%&2! %loser% gave up."
+    # use %reward% for the amount the player won and %loser% for the player that was too slow
+    wonMoneyTooSlow: " &2You won &1%reward%&2! %loser% was too slow."
+  # this message is displayed if the player won and economy is disabled
+  won: " &2You won the game!"
+  lost: " &4You lost the game"
+  # gave up message
+  gaveUp: " &4You gave up"
+  # too slow message
+  tooSlow: " &4Your time ran out"
+  # won message send when the other player gave up
+  #   use %loser% for the name of the player that gave up
+  otherGaveUp: " &2You won! %loser% gave up."
+  # won message send when the other player does not fire in time
+  #   use %loser% for the name of the player that gave up
+  otherTooSlow: " &2You won! %loser% was too slow."
+
+name: '&1RockPaperScissors&r'
+prefix: "[&3RockPaperScissors&r]"
+
+gameHelp:
+  - '&1&lThis game is for two players'
+  - ""
+  - '&1&lRock beats scissors'
+  - '&1&lScissors beat paper'
+  - '&1&lPaper beats Rock'
+
+inventoryTitles:
+  won: "&2RockPaperScissors   &2You won!"
+  draw: "&2RockPaperScissors   &2Draw..."
+  lost: "&2RockPaperScissors   &4You lost!"
+  wait: "&2RockPaperScissors   &4Wait  &2%time%"
+  nextRound: "&2    Next round in:            &2%time%"
+  nextRoundDraw: "&2    Draw! repeat round in:    &2%time%"
+  choose: "&2RockPaperScissors   &2Choose  &4%time%"
+

@@ -96,7 +96,7 @@ economy:
 
 # use "Material:data" or "ID:data"
 materials:
-  cover: "160:7"
+  cover: "stained_glass_pane:7"
   flag: "SIGN"
   mine: "TNT"
   warning: "WOOL:1"

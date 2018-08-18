@@ -1,0 +1,109 @@
+# ----------------------------------------------------------------------------#
+#                                                                             #
+#                             Tic Tac Toe config                              #
+#                                                                             #
+# ----------------------------------------------------------------------------#
+
+# name of the language file (in the folder 'language')
+#   the default.yml file is overwritten on every server restart!
+#   This means you will have to use the other files to customize the messages, but since i am adding messages regulary in updates
+#   you can use the default file if you just want to have the up to date english default messages
+langFile: "lang_hu.yml"
+
+gameBox:
+  mainButton:
+    # define the Material and data for the button (format: 'material:data')
+    materialData: "PAPER"
+    # display name of the button
+    displayName: "&3Tic Tac Toe (against NPC)"
+    # lore of the button
+    lore:
+    - ""
+    - "&1Play against the computer"
+  gameButtons:
+    easy:
+      materialData: "PAPER"
+      displayName: "&l&1Easy"
+      lore:
+      - ""
+      - '&1Cost: &45'
+      - '&1Reward: &29'
+      - ""
+      - '&1This NPC is not trained well'
+      # slot of the button in the gui
+      #   be careful to not use the same twice ;)
+      slot: 20
+      cost: 5
+      reward: 9
+      # time in seconds for each turn (default 10)
+      timePerTurn: 10
+      randomMoveProbability: 50
+    middle:
+      materialData: "PAPER"
+      displayName: "&l&1Medium"
+      lore:
+      - ""
+      - '&1Cost: &410'
+      - '&1Reward: &225'
+      - ""
+      - '&1Medium NPC'
+      # slot of the button in the gui
+      #   be careful to not use the same twice ;)
+      slot: 22
+      cost: 10
+      reward: 25
+      # time in seconds for each turn (default 10)
+      timePerTurn: 10
+      randomMoveProbability: 25
+    hard:
+      materialData: "PAPER"
+      displayName: "&l&1Tic Tac Toe"
+      lore:
+      - ""
+      - '&1Cost: &45'
+      - '&1Reward: &29'
+      - '&1Token: &21'
+      - ""
+      - '&1Careful: Strong NPC!'
+      # slot of the button in the gui
+      #   be careful to not use the same twice ;)
+      slot: 24
+      cost: 10
+      reward: 50
+      tokens: 1
+      # time in seconds for each turn (default 10)
+      timePerTurn: 10
+      saveStats: true
+      randomMoveProbability: 5
+  topListButtons:
+    # use the same key as the game you want to display the top list for
+    #   for that button 'saveStats' must be true (see above)
+    hard:
+      materialData: "nether_star"
+      displayName: "&l&cTop list"
+      lore:
+      - ""
+      - "&1Combat &1top list"
+      slot: 33
+      # inventory title of the top list (%player% and %game%)
+      inventoryTitle: '              Top List'
+      # Lore of the skulls in the inventory. Use %rank% for the rank and %wins% for the number of wins
+      skullLore:
+      - ''
+      - '&6Rank:&1 %rank%'
+      - '&6Wins:&1 %wins%'
+
+sheetBorder:
+  materialData: 'leather'
+  displayName: '&5'
+sheetInner:
+  materialData: 'paper'
+  displayName: '&5Click to set your mark'
+
+markers:
+  marker1:
+    materialData: 'slime_ball'
+    displayName: '&5%player%''s mark'
+  marker2:
+    materialData: 'barrier'
+    displayName: '&5%player%''s mark'

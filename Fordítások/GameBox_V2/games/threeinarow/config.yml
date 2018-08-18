@@ -15,7 +15,7 @@ langFile: "lang_hu.yml"
 gameBox:
   mainButton:
     # define the Material and data for the button (format: 'material:data')
-    materialData: "35:11"
+    materialData: "wool:11"
     # display name of the button
     displayName: "&3Három Egy Sorban"
     # lore of the button
@@ -24,7 +24,7 @@ gameBox:
     - "&1Japán logikai játék"
   gameButtons:
     saveStats:
-      materialData: "159:3"
+      materialData: "stained_clay:3"
       displayName: "&a&lHárom Egy Sorban"
       lore:
       - ""
@@ -48,7 +48,7 @@ gameBox:
     # use the same key as the game you want to display the top list for
     #   for that button 'saveStats' must be true (see above)
     saveStats:
-      materialData: "159:11"
+      materialData: "stained_clay:11"
       displayName: "&a&lToplista"
       lore:
       - ""
@@ -73,37 +73,37 @@ economy:
 
 game:
   blueTile:
-    materialData: "35:11"
+    materialData: "wool:11"
     displayName: "&1Kék csempe"
   whiteTile:
-    materialData: "35"
+    materialData: "wool"
     displayName: "&rFehér csempe"
   blueTileTip:
-    materialData: "159:11"
+    materialData: "stained_clay:11"
     displayName: "&1Kék csempe"
     lore:
     - ""
     - "&cEz nem mozgatható el"
   whiteTileTip:
-    materialData: "159"
+    materialData: "stained_clay"
     displayName: "&rFehér csempe"
     lore:
     - ""
     - "&cEz nem mozgatható el"
   wrongHelpItem:
-    materialData: "160:14"
+    materialData: "stained_glass_pane:14"
     displayName: "&4&lNincs teljesítve:"
     lore:
     - ""
     - "Kék: %blue_count%/3"
     - "Fehér: %white_count%/3"
   correctHelpItem:
-    materialData: "160:13"
+    materialData: "stained_glass_pane:13"
     displayName: "&a&lTeljesítetted a kirakóst!"
     lore:
     - ""
     - "Kék: 3/3"
     - "Fehér: 3/3"
   backGround:
-    materialData: "160:7"
+    materialData: "stained_glass_pane:7"
     displayName: "&a"

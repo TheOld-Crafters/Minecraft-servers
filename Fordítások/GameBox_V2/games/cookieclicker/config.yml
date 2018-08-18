@@ -20,7 +20,7 @@ economy:
 gameBox:
   mainButton:
     # define the Material and data for the button (format: 'material:data')
-    materialData: "357"
+    materialData: "cookie"
     # display name of the button
     displayName: "&3Cookie Clicker"
     # lore of the button
@@ -32,7 +32,7 @@ gameBox:
     - "&5&o    Neked vannak sütijeid!\""
   gameButtons:
     weekly:
-      materialData: "357"
+      materialData: "cookie"
       displayName: "&aCookie Clicker"
       lore:
       - ""
@@ -53,7 +53,7 @@ gameBox:
     # use the same key as the game you want to display the top list for
     #   for that button 'saveStats' must be true (see above)
     weekly:
-      materialData: "397:3"
+      materialData: "SKULL_ITEM:3"
       displayName: "&6Cookie Clicker &c&lToplista"
       slot: 24
       # inventory title of the top list (%player% and %game%)

@@ -1,7 +1,7 @@
 ﻿# ----------------------------------------------------------------------------#
 #                                                                             #
 #                             Whac A Mole config                              #
-#                          Fordítás: poma123, 2017                            #
+#                                                                             #
 #                                  by Nikl                                    #
 # ----------------------------------------------------------------------------#
 
@@ -11,7 +11,7 @@ langFile: "lang_hu.yml"
 gameBox:
   mainButton:
     # define the Material and data for the button (format: 'material:data')
-    materialData: "334"
+    materialData: "leather"
     # display name of the button
     displayName: "&3VakondCsapás"
     # lore of the button
@@ -57,7 +57,7 @@ gameBox:
           money: 20
           tokens: 2
     saveStats:
-      materialData: "159:3"
+      materialData: "stained_clay:3"
       displayName: "&6&lCreeper-ek embert kergetnek"
       lore:
       - ""
@@ -102,7 +102,7 @@ gameBox:
     # use the same key as the game you want to display the top list for
     #   for that button 'saveStats' must be true (see above)
     saveStats:
-      materialData: "159:11"
+      materialData: "stained_clay:11"
       displayName: "&6Creeper-ek embert kergetnek &c&lToplista"
       lore:
       - ""
