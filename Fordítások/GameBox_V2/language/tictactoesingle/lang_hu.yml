@@ -39,7 +39,7 @@ inventoryTitles:
   won: "&2TicTacToe       &2Nyertél!"
   lost: "&2TicTacToe       &4Vesztettél!"
   draw: "&2TicTacToe       &4Döntetlen!"
-  othersTurn: "&2TicTacToe     &4A gép gondolkodik...  &a%time%"
+  othersTurn: "&2TicTacToe &4A gép gondolkodik...  &a%time%"
   yourTurn: "&2TicTacToe     &2Te jössz!  &4%time%"
 
   
