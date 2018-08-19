@@ -28,18 +28,18 @@ game:
   #   use %loser% for the name of the player that gave up
   otherTooSlow: " &2Nyertél! %loser% túl lassú volt."
 
-name: '&1Amőba&r'
-prefix: "[&3Amőba&r]"
+name: '&1TicTacToe&r'
+prefix: "[&3TicTacToe&r]"
 
 gameHelp:
   - '&1&lPróbálj kirakni egy sorban hármat ugyanabból a jelből!'
   - '&1&lUgyanakkor, légy gyorsabb, mint a gép!'
 
 inventoryTitles:
-  won: "&2Amőba          &2Nyertél!"
-  lost: "&2Amőba          &4Vesztettél!"
-  draw: "&2Amőba          &4Döntetlen!"
-  othersTurn: "&2Amőba        &4A gép gondolkodik...  &a%time%"
-  yourTurn: "&2Amőba        &2Te jössz!  &4%time%"
+  won: "&2TicTacToe       &2Nyertél!"
+  lost: "&2TicTacToe       &4Vesztettél!"
+  draw: "&2TicTacToe       &4Döntetlen!"
+  othersTurn: "&2TicTacToe     &4A gép gondolkodik...  &a%time%"
+  yourTurn: "&2TicTacToe     &2Te jössz!  &4%time%"
 
   

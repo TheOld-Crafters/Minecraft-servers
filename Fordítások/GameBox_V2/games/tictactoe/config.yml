@@ -15,7 +15,7 @@ gameBox:
     # define the Material and data for the button (format: 'material:data')
     materialData: "PAPER"
     # display name of the button
-    displayName: "&3Amőba (PvP)"
+    displayName: "&3Tic Tac Toe (PvP)"
     # lore of the button
     lore:
     - ""
@@ -23,7 +23,7 @@ gameBox:
   gameButtons:
     saveStats:
       materialData: "PAPER"
-      displayName: "&l&1Amőba"
+      displayName: "&l&1Tic Tac Toe"
       lore:
       - ""
       - '&1Ára: &45'
@@ -36,7 +36,7 @@ gameBox:
       tokens: 1
       # time in seconds for each turn (default 10)
       timePerTurn: 10
-      inviteGuiTitle: "       &3Amőba"
+      inviteGuiTitle: "       &3Tic Tac Toe"
       saveStats: true
   topListButtons:
     # use the same key as the game you want to display the top list for
