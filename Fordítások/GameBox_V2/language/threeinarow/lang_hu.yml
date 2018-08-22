@@ -18,10 +18,10 @@ prefix: "[&3HáromEgySorban&r]"
 name: "&1HáromEgySorban&r"
 
 gameHelp:
-  - '&1&lA "Három egy sorban" egy 6x6-os négyzetrácson játszandó játék.'
+  - '&1&lEz egy 6x6-os négyzetrácson játszandó logikai játék.'
   - ''
-  - '&1&lHárom kék és három fehér csempének'
-  - '  &1&lkell lennie minden sorban és oszlopban, ahhoz, hogy nyerj.'
+  - '&1&lHárom kék és három fehér csempének kell lennie'
+  - '  &1&lminden sorban és oszlopban ahhoz, hogy nyerj.'
   - '  &1&lFigyelj, mert nem lehet két egyforma színű'
   - '  &1&lcsempe egymás mellett!'
   - ''
