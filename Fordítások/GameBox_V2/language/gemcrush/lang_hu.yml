@@ -16,7 +16,7 @@ game:
 
 
 inventoryTitles:
-  title: "GemCrush Mozgások: %moves% Pontszám: %score%"
+  title: "GemCrush Mozgások: %moves% Pont: %score%"
 
 
 
