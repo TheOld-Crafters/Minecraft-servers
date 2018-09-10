@@ -14,8 +14,8 @@ help:
    make: "Megpróbál üvegházat készíteni."
    remove: "Ha az üvegházadban állsz, törli azt."
    info: "Hogyan készíts üvegházat"
-   list: "Listázza az összes biomet, amelyben üvegház készíthető."
-   recipe: "Elmondja hogyan kell üvegház biomet készíteni."
+   list: "Listázza az összes biome-t, amelyben üvegház készíthető."
+   recipe: "Elmondja, hogyan kell üvegház biome-t készíteni."
    opengui: "Megnyitja az üvegház menüt."
 
 list:
@@ -39,7 +39,7 @@ error:
    removing: "Üvegház törlése!"
    notyours: "Ez nem a te üvegházad!"
    notinside: "Nem vagy üvegházban!"
-   tooexpensive: "Ehhez nincs elég pénzed,ennyi szükséges: [price]" 
+   tooexpensive: "Ehhez nincs elég pénzed, ennyi szükséges: [price]" 
    alreadyexists: "Az üvegház már létezik!"
    norecipe: "Nem tudsz üvegházat csinálni!"
    
@@ -58,7 +58,7 @@ info:
      - "&Ehelyezz &F4 ajtót &Ea falakba."
      - "&ERakj a falba vagy a tetőbe &F1 tölcsért, &Eés helyezz bele vizes vödröket,"
      - "&Ehogy havat és/vagy csontlisztet készítsen, mellyel automatikusan tudod növeszteni a növényeidet."
-     - "&ENézd meg a biomeokhoz tartozó recepteket, hogy megtudd milyen blockok legyenek feltétlenül"
+     - "&ENézd meg a biome-okhoz tartozó recepteket, hogy megtudd milyen blokkok legyenek feltétlenül"
      - "&Eaz üvegházban ahhoz, hogy sikeresen elkészítsd."  
    info: "[Üvegház információk]"
    none: "Semmi"
@@ -84,10 +84,10 @@ recipe:
    missing: "Hiányzó üvegház."
 
 event:
-   broke: "Összetörted az üvegházad! Visszaállítjuk a biomeot [biome]-ra/re!"
+   broke: "Összetörted az üvegházad! Visszaállítjuk a biome-ot [biome]-ra/re!"
    fix: "Javítsd meg az üvegházat, majd készítsd el újra."
    cannotplace: "Nem helyezhetőek blokkok az üvegház felé!"
-   pistonerror: "A pistonok nem tudnak blokkokat tolni az üvegházban!"
+   pistonerror: "A dugattyúk nem tudnak blokkokat tolni az üvegházban!"
 
 create:
    noroof: "Úgy látszik nincs tető!"
@@ -95,7 +95,7 @@ create:
    nothingabove: "Nem lehet blokk az üvegház felett! Piros üveg jelzi a problémás blokkokat."
    holeinroof: "Egy lyuk van a tetőn, vagy nem teljesen sima! Piros üveg jelzi a problémás blokkokat."
    holeinwall: "Egy lyuk van a falban!"
-   hoppererror: "Csak 1 hopper engedélyezett a falban vagy a tetőben."
+   hoppererror: "Csak 1 tölcsér engedélyezett a falban vagy a tetőben."
    doorerror: "Nem lehet több 4 ajtónál egy üvegházban!"
    success: "Sikeresen elkészítettél egy [biome] üvegházat! A biome szinkronizálódik a következő teleportálásnál vagy belépésnél."
 
