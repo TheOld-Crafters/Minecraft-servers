@@ -28,7 +28,7 @@ list:
 ################
 error:
    #"Error: Érvénytelen felhasználónév (Ellenőrizd, hogy jól írtad-e.)"
-   unknownPlayer: "Ismeretlen felhasználónév."
+   unknownPlayer: "Ez a játékos ismeretlen."
    noPermission: "Nincs jogod használni ezt a parancsot!"
    commandNotReady: "Jelenleg nem használhatod ezt a parancsot."
    offlinePlayer: "Ez a játékos offline, vagy nem található."
