@@ -26,6 +26,8 @@ game:
   # won message send when the other player does not fire in time
   #   use %loser% for the name of the player that gave up
   otherTooSlow: " &2Nyertél! %loser% túl lassú volt."
+  # Display names of the player heads
+  playerHeadName: "&9%player%"
 
 name: '&1Kő-Papír-Olló&r'
 prefix: "[&3Kő-Papír-Olló&r]"

@@ -37,6 +37,8 @@ gameBox:
       reward: 9
       # time in seconds for each turn (default 10)
       timePerTurn: 10
+      # time in seconds between turns (default 5)
+      waitPerTurn: 5
       inviteGuiTitle: "     &3Kő-Papír-Olló"
       saveStats: true
       # Only use numbers up to 9. Preferably uneven ones to get rid of draws.
