@@ -110,7 +110,8 @@ inventoryTitles:
   noPermMessage: '          &4&lNincs jogod'
   notEnoughMoney: '        &4&lNincs elég pénzed'
   notEnoughTokens: '        &4&lNincs elég zsetonod'
-  otherPlayerNotEnoughMoney: '   &4A másik játékosnak nincs elég pénze'
+  otherPlayerNotEnoughMoney: '&4A másik játékosnak nincs elég pénze'
+  otherPlayerInBlockedWorld: '&4A másik játékos tiltott világban van!'
   alreadyInAnotherGame: '     &4Már egy másik játékban van'
 
 
