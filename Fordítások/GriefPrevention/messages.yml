@@ -3,577 +3,584 @@
 # Use dollar signs ($) for formatting codes, which are documented here: http://minecraft.gamepedia.com/Formatting_codes
 Messages:
   RespectingClaims:
-    Text: Now respecting claims.
+    Text: Mostantól nézi a lefoglalt területeket.
   IgnoringClaims:
-    Text: Now ignoring claims.
+    Text: Mostantól nem nézi a lefoglalt területeket.
   SuccessfulAbandon:
-    Text: Claims abandoned.  You now have {0} available claim blocks.
+    Text: Lefoglalt területek törölve. Mostantól {0} blokknyi területet foglalhatsz
+      le!
     Notes: '0: remaining blocks'
   RestoreNatureActivate:
-    Text: Ready to restore some nature!  Right click to restore nature, and use /BasicClaims
-      to stop.
+    Text: Foglaljunk vissza egy kis természetet. Jobb kattintással elkezdheted, és
+      /BasicClaims paranccsal megállíthatod.
   RestoreNatureAggressiveActivate:
-    Text: Aggressive mode activated.  Do NOT use this underneath anything you want
-      to keep!  Right click to aggressively restore nature, and use /BasicClaims to
-      stop.
+    Text: Agresszív mód aktiválva. NE Használd, semmi alatt, amit meg akarsz tartani!
+      Jobb kattintással elkezdheted, és /BasicClaims paranccsal megállíthatod.
   FillModeActive:
-    Text: Fill mode activated with radius {0}.  Right click an area to fill.
+    Text: Feltöltés mód aktiválva {0} sugárban. Jobb kattintással feltöltöd a területet.
     Notes: '0: fill radius'
   TransferClaimPermission:
-    Text: That command requires the administrative claims permission.
+    Text: Ehhez a parancshoz Admin engedélye kell.
   TransferClaimMissing:
-    Text: There's no claim here.  Stand in the administrative claim you want to transfer.
+    Text: Nincs itt levédés! Állj az Admin általi levédésben, amit át akarsz ruházni!
   TransferClaimAdminOnly:
-    Text: Only administrative claims may be transferred to a player.
+    Text: Csak Admin képes átruházni játékosra!
   PlayerNotFound2:
-    Text: No player by that name has logged in recently.
+    Text: Ilyen nevű játékos nem jelentkezett be a közelmúltban.
   TransferTopLevel:
-    Text: Only top level claims (not subdivisions) may be transferred.  Stand outside
-      of the subdivision and try again.
+    Text: Csak a legmagasabb szintű levédés vihető át (parcella nem). Állj a levédésen
+      kívül, és próbálkozz újra.
   TransferSuccess:
-    Text: Claim transferred.
+    Text: Levédés átruházva.
   TrustListNoClaim:
-    Text: Stand inside the claim you're curious about.
+    Text: Állj be azon levédésbe, amire kíváncsi vagy.
   ClearPermsOwnerOnly:
-    Text: Only the claim owner can clear all permissions.
+    Text: Csak a tulajdonos jogosult az összes engedélyt törölni.
   UntrustIndividualAllClaims:
-    Text: Revoked {0}'s access to ALL your claims.  To set permissions for a single
-      claim, stand inside it.
+    Text: Megszüntetted {0} hozzáférését az ÖSSZES levédésedhez. Ha egyetlen levédésre
+      vonatkozó engedélyeket szeretnél beállítani, állj abban a levédésben.
     Notes: '0: untrusted player'
   UntrustEveryoneAllClaims:
-    Text: Cleared permissions in ALL your claims.  To set permissions for a single
-      claim, stand inside it.
+    Text: Törölted az engedélyeket MINDEN levédésedben. Ha egyetlen levédésre vonatkozó
+      engedélyeket szeretnél beállítani, állj abban a levédésben.
   NoPermissionTrust:
-    Text: You don't have {0}'s permission to manage permissions here.
+    Text: Neked nincs jogosultságod {0} engedélyei kezelésére.
     Notes: '0: claim owner''s name'
   ClearPermissionsOneClaim:
-    Text: Cleared permissions in this claim.  To set permission for ALL your claims,
-      stand outside them.
+    Text: Törölted az engedélyeket ebben a levédésben. Ha engedélyt törölnél az ÖSSZES
+      levédésben, állj rajtuk kívül.
   UntrustIndividualSingleClaim:
-    Text: Revoked {0}'s access to this claim.  To set permissions for a ALL your claims,
-      stand outside them.
+    Text: Megszüntetted {0} hozzáférését ehhez a levédéshez. Ha megszüntetnéd az összes
+      levédésben, állj rajtuk kívül.
     Notes: '0: untrusted player'
   OnlySellBlocks:
-    Text: Claim blocks may only be sold, not purchased.
+    Text: A levédéshez használható blokkok csak eladhatók, nem vásárolhatók meg.
   BlockPurchaseCost:
-    Text: Each claim block costs {0}.  Your balance is {1}.
+    Text: Minden védett blokk {0}-ba kerül. Az egyenleged {1}
     Notes: '0: cost of one block; 1: player''s account balance'
   ClaimBlockLimit:
-    Text: You've reached your claim block limit.  You can't purchase more.
+    Text: Elérted a levédés blokkhatárát. Nem lehet több levédésed.
   InsufficientFunds:
-    Text: You don't have enough money.  You need {0}, but you only have {1}.
+    Text: Nincs elég pénzed! Szükséged lenne {0}, de csak {1} van.
     Notes: '0: total cost; 1: player''s account balance'
   PurchaseConfirmation:
-    Text: Withdrew {0} from your account.  You now have {1} available claim blocks.
+    Text: Fizetve {0}. Most {1} rendelkezésedre áll a levédés blokkokból.
     Notes: '0: total cost; 1: remaining blocks'
   OnlyPurchaseBlocks:
-    Text: Claim blocks may only be purchased, not sold.
+    Text: A levédésblokkok csak megvásárolhatók, és nem értékesíthetők.
   BlockSaleValue:
-    Text: Each claim block is worth {0}.  You have {1} available for sale.
+    Text: Minden levédett blokk {0}-ba kerül. Neked van {1} eladó.
     Notes: '0: block value; 1: available blocks'
   NotEnoughBlocksForSale:
-    Text: You don't have that many claim blocks available for sale.
+    Text: Nincs annyi levédési blokkod, mint amennyit eladnál.
   BlockSaleConfirmation:
-    Text: Deposited {0} in your account.  You now have {1} available claim blocks.
+    Text: Kaptál {0} fiókodba. Most {1} áll rendelkezésédre a levédés blokkokból.
     Notes: '0: amount deposited; 1: remaining blocks'
   AdminClaimsMode:
-    Text: Administrative claims mode active.  Any claims created will be free and
-      editable by other administrators.
+    Text: Az Admin levédés aktív! Minden létrehozott levédés ingyenes és szerkeszthető
+      más Adminok számára.
   BasicClaimsMode:
-    Text: Returned to basic claim creation mode.
+    Text: Visszatérés az alap levédési módba.
   SubdivisionMode:
-    Text: Subdivision mode.  Use your shovel to create subdivisions in your existing
-      claims.  Use /basicclaims to exit.
+    Text: Felosztási mód. Használja az ásóját, hogy parcellákra ossza a meglévő levédését.
+      Használja a /BasicClaims a kilépéshez.
   SubdivisionVideo2:
-    Text: 'Click for Subdivision Help: {0}'
+    Text: 'Kattints a Felosztási Segítségre: {0}'
     Notes: 0:video URL
   DeleteClaimMissing:
-    Text: There's no claim here.
+    Text: Itt nincs semmilyen levédés.
   DeletionSubdivisionWarning:
-    Text: This claim includes subdivisions.  If you're sure you want to delete it,
-      use /DeleteClaim again.
+    Text: Ez az levédés, parcellákat tartalmaz. Ha biztos vagy benne, hogy törölni
+      szeretnéd, használd ismét a /DeleteClaime-t.
   DeleteSuccess:
-    Text: Claim deleted.
+    Text: Levédés törölve.
   CantDeleteAdminClaim:
-    Text: You don't have permission to delete administrative claims.
+    Text: Neked nincs engedélyed az Admin levédések törlésére.
   DeleteAllSuccess:
-    Text: Deleted all of {0}'s claims.
+    Text: Törölted {0} minden levédését.
     Notes: '0: owner''s name'
   NoDeletePermission:
-    Text: You don't have permission to delete claims.
+    Text: Neked nincs engedélyed a levédések törlésére.
   AllAdminDeleted:
-    Text: Deleted all administrative claims.
+    Text: Az összes Admin levédés törölve.
   AdjustBlocksSuccess:
-    Text: 'Adjusted {0}''s bonus claim blocks by {1}.  New total bonus blocks: {2}.'
+    Text: '{0} módosította a bónusz levédés blokk számát {1}. Új teljes bónusz blokkok:
+      {2}.'
     Notes: '0: player; 1: adjustment; 2: new total'
   NotTrappedHere:
-    Text: You can build here.  Save yourself.
+    Text: Itt építhetsz. Mentsd magad!
   RescuePending:
-    Text: If you stay put for 10 seconds, you'll be teleported out.  Please wait.
+    Text: Ha 10 másodpercig egyhelyben maradsz, el leszel teleportálva. Kérlek, várj.
   NonSiegeWorld:
-    Text: Siege is disabled here.
+    Text: Az ostrom itt le van tiltva.
   AlreadySieging:
-    Text: You're already involved in a siege.
+    Text: Már részt veszel egy ostromban.
   NotSiegableThere:
-    Text: '{0} isn''t protected there.'
+    Text: '{0} nem védett ott.'
     Notes: '0: defending player'
   SiegeTooFarAway:
-    Text: You're too far away to siege.
+    Text: Túl messze vagy az ostromhoz.
   NoSiegeYourself:
-    Text: You cannot siege yourself, don't be silly
+    Text: Nem indíthatsz ostromot magad ellen, ne gyerekeskedj.
   NoSiegeDefenseless:
-    Text: That player is defenseless.  Go pick on somebody else.
+    Text: Ez a játékos védtelen. Válasz egy számodra egyenlő ellen felett.
   AlreadyUnderSiegePlayer:
-    Text: '{0} is already under siege.  Join the party!'
+    Text: '{0} már ostrom alatt van. Csatlakozz a bulihoz!'
     Notes: '0: defending player'
   AlreadyUnderSiegeArea:
-    Text: That area is already under siege.  Join the party!
+    Text: Ez a terület már ostrom alatt van. Csatlakozz a bulihoz!
   NoSiegeAdminClaim:
-    Text: Siege is disabled in this area.
+    Text: Az ostrom letiltva ezen a területen.
   SiegeOnCooldown:
-    Text: You're still on siege cooldown for this defender or claim.  Find another
-      victim.
+    Text: Az idő még nem járt le az ostromon. Találj másikat áldozat.
   SiegeAlert:
-    Text: You're under siege!  If you log out now, you will die.  You must defeat
-      {0}, wait for him to give up, or escape.
+    Text: Ostrom alatt vagy! Ha most jelentkezel ki, meghalsz! Le kell, győzd {0},
+      vagy várnod kell, hogy feladja / elmeneküljön.
     Notes: '0: attacker name'
   SiegeConfirmed:
-    Text: The siege has begun!  If you log out now, you will die.  You must defeat
-      {0}, chase him away, or admit defeat and walk away.
+    Text: Az ostrom megkezdődött! Ha most jelentkezel ki, meghalsz! Le kell, győzd
+      {0}-t, vagy elkergetned. A másik opció a vereség!
     Notes: '0: defender name'
   AbandonClaimMissing:
-    Text: Stand in the claim you want to delete, or consider /AbandonAllClaims.
+    Text: Állj a törölni kívánt levédésen, vagy fontold meg az összes levédés törlését
+      /AbandonAllClaims parancsal.
   NotYourClaim:
-    Text: This isn't your claim.
+    Text: Ez nem a te levédésed!
   DeleteTopLevelClaim:
-    Text: To delete a subdivision, stand inside it.  Otherwise, use /AbandonTopLevelClaim
-      to delete this claim and all subdivisions.
+    Text: Parcella rész törléséhez állj benne. Ellenkező esetben a /AbandonTopLevelClaim
+      használatával törölje ezt a levédést és az összes parcellát ami benne van.
   AbandonSuccess:
-    Text: Claim abandoned.  You now have {0} available claim blocks.
+    Text: Lemondtál erről a levédésről. Jelenleg {0} levédés blokk áll rendelkezésedre.
     Notes: '0: remaining claim blocks'
   CantGrantThatPermission:
-    Text: You can't grant a permission you don't have yourself.
+    Text: Nem adhatsz olyan engedélyt, amellyel te sem rendelkezel.
   GrantPermissionNoClaim:
-    Text: Stand inside the claim where you want to grant permission.
+    Text: Állj abba a levédésbe, ahol engedélyt kívánsz adni.
   GrantPermissionConfirmation:
-    Text: Granted {0} permission to {1} {2}.
+    Text: 'Engedélyt adtál {0} számára, erre: {1} {2}.'
     Notes: '0: target player; 1: permission description; 2: scope (changed claims)'
   ManageUniversalPermissionsInstruction:
-    Text: To manage permissions for ALL your claims, stand outside them.
+    Text: Annak érdekében, hogy kezeld az összes levédésednek engedélyeit, állj rajtuk
+      kívül.
   ManageOneClaimPermissionsInstruction:
-    Text: To manage permissions for a specific claim, stand inside it.
+    Text: Egy adott levédés engedélyeinek kezelése érdekében állj benne.
   CollectivePublic:
-    Text: the public
+    Text: a nyilvánosság
     Notes: as in 'granted the public permission to...'
   BuildPermission:
-    Text: build
+    Text: építhet
   ContainersPermission:
-    Text: access containers and animals
+    Text: hozzáférés az állatokhoz, és ládákhoz
   AccessPermission:
-    Text: use buttons and levers
+    Text: gombok, és karok használata
   PermissionsPermission:
-    Text: manage permissions
+    Text: engedélyek kezelése
   LocationCurrentClaim:
-    Text: in this claim
+    Text: ebben a levédésben
   LocationAllClaims:
-    Text: in all your claims
+    Text: összes levédésben
   PvPImmunityStart:
-    Text: You're protected from attack by other players as long as your inventory
-      is empty.
+    Text: Védve vagy más játékosok támadásaitól, ameddig az eszköztárad üres.
   SiegeNoDrop:
-    Text: You can't give away items while involved in a siege.
+    Text: Nem adhatsz, tárgyakat még részt veszel egy ostromba.
   DonateItemsInstruction:
-    Text: To give away the item(s) in your hand, left-click the chest again.
+    Text: A kezedben lévő tárgy(ak) átadásához kattintson újra a ládára, Bal kattintással.
   ChestFull:
-    Text: This chest is full.
+    Text: Ez a láda tele van.
   DonationSuccess:
-    Text: Item(s) transferred to chest!
+    Text: A tárgy a ládába került!
   PlayerTooCloseForFire2:
-    Text: You can't start a fire this close to another player.
+    Text: Nem gyújthatsz tüzet ilyen közel egy másik játékoshoz.
   TooDeepToClaim:
-    Text: This chest can't be protected because it's too deep underground.  Consider
-      moving it.
+    Text: Ezt a ládát nem lehet levédeni, mert túl alacsonyan van a földben. Gondold
+      át a láda áthelyezését!
   ChestClaimConfirmation:
-    Text: This chest is protected.
+    Text: Ez a láda védve van.
   AutomaticClaimNotification:
-    Text: This chest and nearby blocks are protected from breakage and theft.
+    Text: Ez a láda és a blokk(ok) a közelében védve vannak töréstől és a lopástól.
   UnprotectedChestWarning:
-    Text: This chest is NOT protected.  Consider using a golden shovel to expand an
-      existing claim or to create a new one.
+    Text: Ez a láda NINCS védve. Gondolkodj el meglévő levédés bővítéséről vagy egy
+      újabb létrehozásáról, egy arany lapát használatával.
   ThatPlayerPvPImmune:
-    Text: You can't injure defenseless players.
+    Text: Nem tudsz megsebezni védtelen játékost!
   CantFightWhileImmune:
-    Text: You can't fight someone while you're protected from PvP.
+    Text: Nem harcolhatsz mással, míg PvP ellen védve vagy.
   NoDamageClaimedEntity:
-    Text: That belongs to {0}.
+    Text: Ez {0} tulajdona.
     Notes: '0: owner name'
   ShovelBasicClaimMode:
-    Text: Shovel returned to basic claims mode.
+    Text: Az ásó visszatért az alap levédés módba.
   RemainingBlocks:
-    Text: You may claim up to {0} more blocks.
+    Text: Legfeljebb {0} további blokkot védhetsz le.
     Notes: '0: remaining blocks'
-  CreativeBasicsVideo2:
-    Text: 'Click for Land Claim Help: {0}'
-    Notes: '{0}: video URL'
   SurvivalBasicsVideo2:
-    Text: 'Click for Land Claim Help: {0}'
+    Text: 'Kattints a föld levédés súgóhoz: {0}'
     Notes: '{0}: video URL'
   TrappedChatKeyword:
-    Text: trapped;stuck
-    Notes: When mentioned in chat, players get information about the /trapped command
-      (multiple words can be separated with semi-colons)
+    Text: csapdába estem; beragadtam
+    Notes: Ha egy játékos ezeket a szavakat használja chatben, akkor neki megjelenik,
+      az információ azokról a parancsokról melyekkel segíthet magán
   TrappedInstructions:
-    Text: Are you trapped in someone's land claim?  Try the /trapped command.
+    Text: Csapdába estél valaki által levédett területen? Próbáld ki a /trapped parancsot.
   PvPNoDrop:
-    Text: You can't drop items while in PvP combat.
+    Text: A PvP harc közben nem dobhatsz el tárgyakat.
   SiegeNoTeleport:
-    Text: You can't teleport out of a besieged area.
+    Text: Nem tudsz el teleportálni egy ostromlott területről.
   BesiegedNoTeleport:
-    Text: You can't teleport into a besieged area.
+    Text: Nem tudsz teleportálni egy ostromlott területre.
   SiegeNoContainers:
-    Text: You can't access containers while involved in a siege.
+    Text: Nem tudsz hozzá férni a ládákhoz miközben egy ostrom részese vagy.
   PvPNoContainers:
-    Text: You can't access containers during PvP combat.
+    Text: Nem tudsz hozzá férni a ládákhoz PvP harc közben.
   PvPImmunityEnd:
-    Text: Now you can fight with other players.
+    Text: Mostantól tudsz más emberekkel harcolni! Fuss Forest, fuss!
   NoBedPermission:
-    Text: '{0} hasn''t given you permission to sleep here.'
+    Text: '{0} nem adott engedélyt itt aludni.'
     Notes: '0: claim owner'
   NoWildernessBuckets:
-    Text: You may only dump buckets inside your claim(s) or underground.
+    Text: A levédésedben vagy a föld alatt üríthetsz csak vödröket.
   NoLavaNearOtherPlayer:
-    Text: You can't place lava this close to {0}.
+    Text: Nem rakhatsz le lávát ilyen közel hozzá {0}.
     Notes: '0: nearby player'
   TooFarAway:
-    Text: That's too far away.
+    Text: Az nagyon messze van. Még nekem is.
   BlockNotClaimed:
-    Text: No one has claimed this block.
+    Text: Senki sem védte le ezt a blokkot.
   BlockClaimed:
-    Text: That block has been claimed by {0}.
+    Text: Ez a blokk le lett védve {0} által.
     Notes: '0: claim owner'
   SiegeNoShovel:
-    Text: You can't use your shovel tool while involved in a siege.
+    Text: Nem használhatod az ásódat még egy ostrom részese vagy.
   RestoreNaturePlayerInChunk:
-    Text: Unable to restore.  {0} is in that chunk.
+    Text: Nem sikerült visszaállítani. {0} ebben a darabban (Chunk) ö is jelen van.
     Notes: '0: nearby player'
   NoCreateClaimPermission:
-    Text: You don't have permission to claim land.
+    Text: Neked nincs engedélyed, hogy levédd ezt a területet.
   ResizeNeedMoreBlocks:
-    Text: You don't have enough blocks for this size.  You need {0} more.
+    Text: Nincs elegendő blokkod ekkora területhez. Szükséged van még {0} blokkra.
     Notes: '0: how many needed'
   NoCreativeUnClaim:
-    Text: You can't unclaim this land.  You can only make this claim larger or create
-      additional claims.
+    Text: Nem tudod feloldani ezt a levédést. Ezt a levédést, csak növelni tudod,
+      vagy újat lére hozni mellette.
   ClaimResizeSuccess:
-    Text: Claim resized.  {0} available claim blocks remaining.
+    Text: A levédés átméretezve. A rendelkezésedre {0} levédésre elegendő blokk maradt.
     Notes: '0: remaining blocks'
   ResizeFailOverlap:
-    Text: Can't resize here because it would overlap another nearby claim.
+    Text: Nem lehet átméretezni ezt, mert egy másik levédésbe nyúlik bele.
   ResizeStart:
-    Text: Resizing claim.  Use your shovel again at the new location for this corner.
+    Text: A levédés átméretezése. Arany ásód, használva jelöld ki a másik sarkát az
+      új területnek.
   ResizeFailOverlapSubdivision:
-    Text: You can't create a subdivision here because it would overlap another subdivision.  Consider
-      /abandonclaim to delete it, or use your shovel at a corner to resize it.
+    Text: Itt nem hozhatsz létre új parcellát, mert átfedés van egy másik parcellával.
+      Vedd fontolóra a /abandonclaim parancsot, hogy töröld, vagy használd a ásót
+      egy sarokban, hogy átméretezd.
   SubdivisionStart:
-    Text: Subdivision corner set!  Use your shovel at the location for the opposite
-      corner of this new subdivision.
+    Text: Új parcella sarka kijelölve. Használd az arany ásót, hogy meghatározd a
+      másik véget.
   CreateSubdivisionOverlap:
-    Text: Your selected area overlaps another subdivision.
+    Text: A kiválasztott rész, egy már meglévő parcellával átfedésben van.
   SubdivisionSuccess:
-    Text: Subdivision created!  Use /trust to share it with friends.
+    Text: Parcella kész! Használd a /trust hogy megoszd egy baráttal!
   CreateClaimFailOverlap:
-    Text: You can't create a claim here because it would overlap your other claim.  Use
-      /abandonclaim to delete it, or use your shovel at a corner to resize it.
+    Text: Itt nem készíthetsz egy új levédést, mert egy másik levédéseddel átfedésben
+      van. Használd az /AbandonClaim et hogy töröld, vagy az arany ásót, hogy átméretezd.
   CreateClaimFailOverlapOtherPlayer:
-    Text: You can't create a claim here because it would overlap {0}'s claim.
+    Text: Nem készíthetsz levédést itt, mert átfedésben van {0} területével.
     Notes: '0: other claim owner'
   ClaimsDisabledWorld:
-    Text: Land claims are disabled in this world.
+    Text: Ebben a világban a levédés tiltva van.
   ClaimStart:
-    Text: Claim corner set!  Use the shovel again at the opposite corner to claim
-      a rectangle of land.  To cancel, put your shovel away.
+    Text: Levédés területének első sarka beállítva! Használd az arany ásót, hogy kijelöld
+      a másikat. Vagy tedd el az ásót, hogy félbe szakítsad a levédést.
   NewClaimTooNarrow:
-    Text: This claim would be too small.  Any claim must be at least {0} blocks wide.
+    Text: A levédeni kívánt terület túl kicsi, legalább {0} blokk szélesnek kell lennie.
     Notes: '0: minimum claim width'
   CreateClaimInsufficientBlocks:
-    Text: You don't have enough blocks to claim that entire area.  You need {0} more
-      blocks.
+    Text: Nincs elég blokk a terület levédéséhez, még {0} blokk kell hozzá!
     Notes: '0: additional blocks needed'
   AbandonClaimAdvertisement:
-    Text: To delete another claim and free up some blocks, use /AbandonClaim.
+    Text: Hogy törölj létező levédést, használd a /AbandonClaim parancsot!
   CreateClaimFailOverlapShort:
-    Text: Your selected area overlaps an existing claim.
+    Text: A kiválasztott rész átfedésben van egy másik levédéssel.
   CreateClaimSuccess:
-    Text: Claim created!  Use /trust to share it with friends.
+    Text: Levédés kész! Használd a /trust parancsot, hogy megoszd barátaiddal! Már,
+      ha van :/
   SiegeWinDoorsOpen:
-    Text: Congratulations!  Buttons and levers are temporarily unlocked.
+    Text: Gratulálok! A gombok, és a karok feloldva ideiglenesen!
   RescueAbortedMoved:
-    Text: You moved!  Rescue cancelled.
+    Text: Megmozdultál! Megmentés lemondva!
   SiegeDoorsLockedEjection:
-    Text: Looting time is up!  Ejected from the claim.
+    Text: Fosztogatási idő lejárt! Kidobtalak a védett területről.
   NoModifyDuringSiege:
-    Text: Claims can't be modified while under siege.
+    Text: A védett területeket nem lehet módosítani ostrom alatt.
   OnlyOwnersModifyClaims:
-    Text: Only {0} can modify this claim.
+    Text: Csak {0} módosíthatja ez a területet.
     Notes: '0: owner name'
   NoBuildUnderSiege:
-    Text: This claim is under siege by {0}.  No one can build here.
+    Text: Ez a terület ostrom alatt van {0} által. Senki nem építhet itt!
     Notes: '0: attacker name'
   NoBuildPvP:
-    Text: You can't build in claims during PvP combat.
+    Text: Nem építhetsz ezen a területen PvP közben!
   NoBuildPermission:
-    Text: You don't have {0}'s permission to build here.
+    Text: Nincs {0} engedélyed, hogy itt építs!
     Notes: '0: owner name'
   NonSiegeMaterial:
-    Text: That material is too tough to break.
+    Text: Ez az anyag túl erős, nem lehet kiütni!
   NoOwnerBuildUnderSiege:
-    Text: You can't make changes while under siege.
+    Text: Nem tudsz változtatni semmit az ostrom alatt.
   NoAccessPermission:
-    Text: You don't have {0}'s permission to use that.
+    Text: 'Nincs engedélyed, hogy használd ezt, tulaj: {0}.'
     Notes: '0: owner name.  access permission controls buttons, levers, and beds'
   NoContainersSiege:
-    Text: This claim is under siege by {0}.  No one can access containers here right
-      now.
+    Text: Ez a terület ostrom alatt áll {0} által. Senki nem férhet hozzá a ládákhoz
+      most itt!
     Notes: '0: attacker name'
   NoContainersPermission:
-    Text: You don't have {0}'s permission to use that.
+    Text: Nincs engedélyed, hogy ezt használd. Kérj engedélyt tőle {0}.
     Notes: '0: owner''s name.  containers also include crafting blocks'
   OwnerNameForAdminClaims:
-    Text: an administrator
+    Text: Admin
     Notes: as in 'You don't have an administrator's permission to build here.'
   ClaimTooSmallForEntities:
-    Text: This claim isn't big enough for that.  Try enlarging it.
+    Text: Ez a levédés nem elég nagy ehhez, próbáld nagyítani a terület!
   TooManyEntitiesInClaim:
-    Text: This claim has too many entities already.  Try enlarging the claim or removing
-      some animals, monsters, paintings, or minecarts.
+    Text: Ezen a terület túl sok entitás tartózkodik. Vagy nagyíts a területen, vagy
+      kardot elő és ess neki az állatoknak, szörnyeknek!
   YouHaveNoClaims:
-    Text: You don't have any land claims.
+    Text: Nincs egyetlen levédésed se! Ciki
   ConfirmFluidRemoval:
-    Text: Abandoning this claim will remove lava inside the claim.  If you're sure,
-      use /AbandonClaim again.
+    Text: Ha elhagyod ezt a levédett terület, a benne lévő lává el lesz távolítva.
+      Ha biztos vagy akkor /AbandonClaim újra!
   AutoBanNotify:
-    Text: Auto-banned {0}({1}).  See logs for details.
+    Text: Automatikus végleges kitiltás ({0}{1}) Lásd a naplót további részletekért.
   AdjustGroupBlocksSuccess:
-    Text: 'Adjusted bonus claim blocks for players with the {0} permission by {1}.  New
-      total: {2}.'
+    Text: 'Változtatva lett a bonusz levédésre használható blokkok száma {0} engedélyével,
+      változás {1}. Új bonusz levédés szám: {2}!'
     Notes: '0: permission; 1: adjustment amount; 2: new total bonus'
   InvalidPermissionID:
-    Text: Please specify a player name, or a permission in [brackets].
+    Text: Kérlek, pontosíts a játékos nevén, vagy adj jogosultságot [játékos név]
+      használatával.
   HowToClaimRegex:
-    Text: (^|.*\W)how\W.*\W(claim|protect|lock)(\W.*|$)
+    Text: (^|.*\W)how\W.*\W(lefoglal|levéd|lezár)(\W.*|$)
     Notes: This is a Java Regular Expression.  Look it up before editing!  It's used
       to tell players about the demo video when they ask how to claim land.
   NoBuildOutsideClaims:
-    Text: You can't build here unless you claim some land first.
+    Text: Nem építhetsz itt, hacsak le nem véded a területet először!
   PlayerOfflineTime:
-    Text: '  Last login: {0} days ago.'
+    Text: Utolsó belépés ideje {0} nappal ezelőtt!
     Notes: '0: number of full days since last login'
   BuildingOutsideClaims:
-    Text: Other players can build here, too.  Consider creating a land claim to protect
-      your work!
+    Text: Más játékosok is építhetnek itt. Gondolkozz el a terület levédésen, hogy
+      megvéd, amit építesz!
   TrappedWontWorkHere:
-    Text: Sorry, unable to find a safe location to teleport you to.  Contact an admin.
+    Text: Elnézést, de nem találtam biztonságos helyet, ahova tudnálak teleportálni.
+      Kérj segítséget egy Admintól!
   CommandBannedInPvP:
-    Text: You can't use that command while in PvP combat.
+    Text: Nem használhatod ezt a parancsot, PvP közben.
   UnclaimCleanupWarning:
-    Text: The land you've unclaimed may be changed by other players or cleaned up
-      by administrators.  If you've built something there you want to keep, you should
-      reclaim it.
+    Text: A földön, aminek feloldottad a levédését, lehet, hogy más játékosok építeni
+      fognak, vagy egy Admin meg fogja tisztítani. Ha valamit építettél ott és meg
+      akarod tartani, lehet vissza kéni vonni a feloldást.
   BuySellNotConfigured:
-    Text: Sorry, buying and selling claim blocks is disabled.
+    Text: Bocs, de a levédéshez használható blokkokat nem lehet venni és eladni!
   NoTeleportPvPCombat:
-    Text: You can't teleport while fighting another player.
+    Text: Nem tudsz teleportálni, míg más játékossal harcolsz. Először nyerni kell!
   NoTNTDamageAboveSeaLevel:
-    Text: 'Warning: TNT will not destroy blocks above sea level.'
+    Text: 'Figyelmeztetés: A TNT nem fog blokkokat elpusztítani vízszint fölött.'
   NoTNTDamageClaims:
-    Text: 'Warning: TNT will not destroy claimed blocks.'
+    Text: 'Figyelmeztetés: A TNT nem fog blokkokat elpusztítani levédet területen.'
   IgnoreClaimsAdvertisement:
-    Text: To override, use /IgnoreClaims.
+    Text: A felülíráshoz használja a /IgnoreClaims parancsot.
   NoPermissionForCommand:
-    Text: You don't have permission to do that.
+    Text: Neked nincs engedélyed erre.
   ClaimsListNoPermission:
-    Text: You don't have permission to get information about another player's land
-      claims.
+    Text: Neked nincs engedélyed arra, hogy információt szerezz más játékos levédéseiről.
   ExplosivesDisabled:
-    Text: This claim is now protected from explosions.  Use /ClaimExplosions again
-      to disable.
+    Text: Ez a levédés védve a robbanásoktól. Használd a /ClaimExplosions újra, hogy
+      bekapcsold.
   ExplosivesEnabled:
-    Text: This claim is now vulnerable to explosions.  Use /ClaimExplosions again
-      to re-enable protections.
+    Text: Ez a levédés nincs védve a robbanásoktól. Használd a /ClaimExplosions újra,
+      hogy kikapcsold.
   ClaimExplosivesAdvertisement:
-    Text: To allow explosives to destroy blocks in this land claim, use /ClaimExplosions.
+    Text: Ahhoz, hogy engedélyezd a robbanás általi blokk pusztítást ebben a levédésben,
+      használd a /ClaimExplosions parancsot.
   PlayerInPvPSafeZone:
-    Text: That player is in a PvP safe zone.
+    Text: A játékos PvP által védett zónában van.
   NoPistonsOutsideClaims:
-    Text: 'Warning: Pistons won''t move blocks outside land claims.'
+    Text: 'Figyelmeztetés: A Dugattyú nem fog blokkokat a védett területről kitolni!'
   SoftMuted:
-    Text: Soft-muted {0}.
+    Text: Lágy némítás {0}.
     Notes: '0: The changed player''s name.'
   UnSoftMuted:
-    Text: Un-soft-muted {0}.
+    Text: Lágy némitás feloldva {0}.
     Notes: '0: The changed player''s name.'
   DropUnlockAdvertisement:
-    Text: Other players can't pick up your dropped items unless you /UnlockDrops first.
+    Text: Más játékosok nem tudják felvenni az általad eldobott tárgyakat, hacsak
+      először nem engedélyezed azt /UnlockDrops paranccsal.
   PickupBlockedExplanation:
-    Text: You can't pick this up unless {0} uses /UnlockDrops.
+    Text: Nem tudod ezt felvenni, ha csak {0} nem használja a / UnlockDrops parancsot.
     Notes: '0: The item stack''s owner.'
   DropUnlockConfirmation:
-    Text: Unlocked your drops.  Other players may now pick them up (until you die
-      again).
+    Text: Tárgyak felvétele engedélyezve. Más játékosok képesek felvenni tárgyakat,
+      amiket te dobtál el (amíg meg nem halsz újra).
   DropUnlockOthersConfirmation:
-    Text: Unlocked {0}'s drops.
+    Text: '{0} által eldobott tárgyak felvehetők.'
     Notes: '0: The owner of the unlocked drops.'
   AdvertiseACandACB:
-    Text: You may use /ACB to give yourself more claim blocks, or /AdminClaims to
-      create a free administrative claim.
+    Text: Használhatod az /ACB-t, hogy adj meg több levédés blokkot, vagy /AdminClaims-ot
+      egy ingyenes Admin levédés létrehozásához.
   AdvertiseAdminClaims:
-    Text: You could create an administrative land claim instead using /AdminClaims,
-      which you'd share with other administrators.
+    Text: Használd a /AdminClaims parancsot, amivel a lefoglalt területet más Adminokkal
+      is megoszthatod.
   AdvertiseACB:
-    Text: You may use /ACB to give yourself more claim blocks.
+    Text: Használhatod a /ACB parancsot hogy adj magadnak levédett blokkokat.
   NotYourPet:
-    Text: That belongs to {0} until it's given to you with /GivePet.
+    Text: Ez {0} játékosé, az után lesz a tiéd ha /GivePet-el oda adja neked!
     Notes: '0: owner name'
   PetGiveawayConfirmation:
-    Text: Pet transferred.
+    Text: Pet átadva.
   PetTransferCancellation:
-    Text: Pet giveaway cancelled.
+    Text: Pet odaadás lemondva.
   ReadyToTransferPet:
-    Text: Ready to transfer!  Right-click the pet you'd like to give away, or cancel
-      with /GivePet cancel.
+    Text: Készen állsz az átadásra! Kattints a jobb gombbal a kedvencre, amelyet el
+      szeretnél adni, vagy szakítsad félbe a /GivePet paranccsal.
   AvoidGriefClaimLand:
-    Text: Prevent grief!  If you claim your land, you will be grief-proof.
+    Text: Akadályozd meg a bánatot! Ha levéded a földed, bánatmentes leszel.
   BecomeMayor:
-    Text: Subdivide your land claim and become a mayor!
+    Text: Oszd fel a lefoglalt területedet és válj polgármesteré!
   ClaimCreationFailedOverClaimCountLimit:
-    Text: You've reached your limit on land claims.  Use /AbandonClaim to remove one
-      before creating another.
+    Text: Elérted a korlátot a lefoglalható területnél. Használd a /AbandonClaim ahhoz,
+      hogy egyet eltávolíts, mielőtt újat létrehoznál.
   CreateClaimFailOverlapRegion:
-    Text: You can't claim all of this because you're not allowed to build here.
+    Text: Nem tudod levédeni ezt a területet, mert nincs engedélyed, hogy itt építs.
   ResizeFailOverlapRegion:
-    Text: You don't have permission to build there, so you can't claim that area.
+    Text: Nincs jogosultságod, hogy itt építs, ezért le sem védheted a területet.
   NoBuildPortalPermission:
-    Text: You can't use this portal because you don't have {0}'s permission to build
-      an exit portal in the destination land claim.
+    Text: Nem használhatod ez a portált, mert nincs jogosultságod {0}-tól arra, hogy
+      a másik világban az érkezési helyre építs.
     Notes: '0: Destination land claim owner''s name.'
   ShowNearbyClaims:
-    Text: Found {0} land claims.
+    Text: Találtam {0} darab föld levédést.
     Notes: '0: Number of claims found.'
   NoChatUntilMove:
-    Text: Sorry, but you have to move a little more before you can chat.  We get lots
-      of spam bots here.  :)
+    Text: Elnézést, egy kicsit tovább kell menned, hogy tud chatelni. Sok spam bots-ot
+      kapunk itt. :)
   SiegeImmune:
-    Text: That player is immune to /siege.
+    Text: Ez a játékos immunis az ostromra. Bezzeg az influenzára nem.
   SetClaimBlocksSuccess:
-    Text: Updated accrued claim blocks.
+    Text: Frissítve a felhalmozott levédésre alkalmas blokkok.
   IgnoreConfirmation:
-    Text: You're now ignoring chat messages from that player.
+    Text: Mostantól figyelmen kívül hagyod a csevegési üzenetek ettől a játékostól.
   NotIgnoringPlayer:
-    Text: You're not ignoring that player.
+    Text: Te nem hagyod figyelmen kívül azt a játékost.
   UnIgnoreConfirmation:
-    Text: You're no longer ignoring chat messages from that player.
+    Text: Te nem hagyod figyelmen kívül azt a játékost.
   SeparateConfirmation:
-    Text: Those players will now ignore each other in chat.
+    Text: Ezek a játékosok mostantól figyelmen kívül hagyják egymást chaten.
   UnSeparateConfirmation:
-    Text: Those players will no longer ignore each other in chat.
+    Text: Ezek a játékosok többé nem fogják figyelmen kívül hagyni egymást chaten.
   NotIgnoringAnyone:
-    Text: You're not ignoring anyone.
+    Text: Nem hagysz figyelmen kívül senkit se. Milyen kedves!
   TrustListHeader:
-    Text: 'Explicit permissions here:'
+    Text: 'Explicit engedélyek itt:'
   Manage:
-    Text: Manage
+    Text: Igazgat
   Build:
-    Text: Build
+    Text: Építhet
   Containers:
-    Text: Containers
+    Text: Ládák
   Access:
-    Text: Access
+    Text: Hozzáférés
   HasSubclaimRestriction:
-    Text: This subclaim does not inherit permissions from the parent
+    Text: Ez a parcella nem örököli a teljes levédés jogosultságait
   StartBlockMath:
-    Text: '{0} blocks from play + {1} bonus = {2} total.'
+    Text: '{0} blokk a játékból + {1} bónusz = {2} totál.'
   ClaimsListHeader:
-    Text: 'Claims:'
+    Text: 'Levédések:'
   ContinueBlockMath:
-    Text: ' (-{0} blocks)'
+    Text: ' (-{0} blokk)'
   EndBlockMath:
-    Text: ' = {0} blocks left to spend'
+    Text: ' = {0} blokk maradt, hogy felhasználd'
   NoClaimDuringPvP:
-    Text: You can't claim lands during PvP combat.
+    Text: Nem tudsz földet levédeni PvP közben.
   UntrustAllOwnerOnly:
-    Text: Only the claim owner can clear all its permissions.
+    Text: Csak a levédés tulajdonosa tudja törölni az összes engedélyét.
   ManagersDontUntrustManagers:
-    Text: Only the claim owner can demote a manager.
+    Text: Csak a levédés tulajdonosa tud lefokozni igazgatót.
   BookAuthor:
-    Text: BigScary
+    Text: kova97 :D
   BookTitle:
-    Text: How to Claim Land
+    Text: Hogyan védd le a földed!
   BookIntro:
-    Text: Claim land to protect your stuff!  Click the link above to learn land claims
-      in 3 minutes or less.  :)
+    Text: Védd le a területed, hogy biztonságban tudd a tárgyaidat! Kattints a linkre
+      feljebb, hogy többet megtudj!
   BookDisabledChestClaims:
-    Text: '  On this server, placing a chest will NOT claim land for you.'
+    Text: Ezen a szerveren, ha leteszel egy ládát, az NEM fog levédni telet is körülötte!
   BookUsefulCommands:
-    Text: 'Useful Commands:'
+    Text: 'Hasznos parancsok:'
   BookLink:
-    Text: 'Click: {0}'
+    Text: 'Kattints: {0}'
     Notes: '{0}: video URL'
   BookTools:
-    Text: Our claim tools are {0} and {1}.
+    Text: Levédési eszközeink {0} és {1}.
     Notes: '0: claim modification tool name; 1:claim information tool name'
   ResizeClaimTooNarrow:
-    Text: This new size would be too small.  Claims must be at least {0} blocks wide.
+    Text: Ez a levédés túl kicsi. Bármilyen levédés minimum {0} blokk szélesnek kell
+      lennie.blokk szélesnek kell lennie.
     Notes: '0: minimum claim width'
   ResizeClaimInsufficientArea:
-    Text: This claim would be too small.  Any claim must use at least {0} total claim
-      blocks.
+    Text: Ez a levédés túl kicsi. Bármilyen levédés minimum {0} blokkot kell, hogy
+      tartalmazzon.
     Notes: '0: minimum claim area'
   NoProfanity:
-    Text: Please moderate your language.
+    Text: Figyelj oda a szóhasználatra!
   PlayerNotIgnorable:
-    Text: You can't ignore that player.
+    Text: Nem hagyhatod figyelmen kívül ez a játékost.
   NoEnoughBlocksForChestClaim:
-    Text: Because you don't have any claim blocks available, no automatic land claim
-      was created for you.  You can use /ClaimsList to monitor your available claim
-      block total.
+    Text: Mivel nem áll rendelkezésre 1 levédés blokk se, így nem hozhatsz létre automatikus
+      föld levédést. A / ClaimsList segítségével ellenőrizheted a rendelkezésedre
+      álló levédés blokk összegét.
   IsIgnoringYou:
-    Text: That player is ignoring you.
+    Text: Az a játékos mellőz téged.
   MustHoldModificationToolForThat:
-    Text: You must be holding a golden shovel to do that.
+    Text: Ehhez egy arany ásót kell kézben tartanod.
   StandInClaimToResize:
-    Text: Stand inside the land claim you want to resize.
+    Text: Állj bele a földterület levédésbe, amelyet át szeretnél méretezni.
   ClaimsExtendToSky:
-    Text: Land claims always extend to max build height.
+    Text: A földi levédés mindig a maximális építési magasságig terjednek.
   ClaimsAutoExtendDownward:
-    Text: Land claims auto-extend deeper into the ground when you place blocks under
-      them.
+    Text: A földi levédés önműködően terjed lefelé, amikor blokkokat helyezel alá.
   MinimumRadius:
-    Text: Minimum radius is {0}.
+    Text: Minimális sugár az {0}.
     Notes: '0: minimum radius'
   RadiusRequiresGoldenShovel:
-    Text: You must be holding a golden shovel when specifying a radius.
+    Text: A sugár meghatározásakor arany ásót kézben kell tartania.
   ClaimTooSmallForActiveBlocks:
-    Text: This claim isn't big enough to support any active block types (hoppers,
-      spawners, beacons...).  Make the claim bigger first.
+    Text: Ez a levédés nem elég nagy, hogy támogasson aktív blokkokat (Tölcsér, Spawner,
+      Jelzőfény...). Növeld a területet először.
   TooManyActiveBlocksInClaim:
-    Text: This claim is at its limit for active block types (hoppers, spawners, beacons...).  Either
-      make it bigger, or remove other active blocks first.
+    Text: Ez a levédés elérte a korlátját aktív blokk típusoknál (Tölcsér, Spawner,
+      Jelzőfény...). Vagy növeld a területet, vagy csökkentsd az aktív blokkok számát
+      először.
   ConsoleOnlyCommand:
-    Text: That command may only be executed from the server console.
-  WorldNotFound:
-    Text: World not found.
+    Text: Világ nem található
   AdjustBlocksAllSuccess:
-    Text: Adjusted all online players' bonus claim blocks by {0}.
+    Text: Minden online játékos bónusz levédés blokkját {0} javítottad.
     Notes: '0: adjustment amount'
   TooMuchIpOverlap:
-    Text: Sorry, there are too many players logged in with your IP address.
+    Text: Bocs, de túl sok játékos jelentkezett be a te IP címeddel.
   StandInSubclaim:
-    Text: You need to be standing in a subclaim to restrict it
+    Text: Szükség van arra, hogy egy parcellában állj, hogy korlátozd azt.
   SubclaimRestricted:
-    Text: This subclaim's permissions will no longer inherit from the parent claim
+    Text: Ez a parcella nem örököli a teljes levédés jogosultságait
   SubclaimUnrestricted:
-    Text: This subclaim's permissions will now inherit from the parent claim
+    Text: Ez a parcella örököli a teljes levédés jogosultságait.
   NetherPortalTrapDetectionMessage:
-    Text: It seems you might be stuck inside a nether portal. We will rescue you in
-      a few seconds if that is the case!
+    Text: Úgy látszik egy Pokol átjáróban ragadtál! Meg fogunk menteni egy pár másodpercen
+      belül, ha így van!
     Notes: Sent to player on join, if they left while inside a nether portal.
+  CreativeBasicsVideo2:
+    Text: 'Kattints a föld levédés segítséghez: {0}'
+    Notes: '{0}: video URL'
+  WorldNotFound:
+    Text: A világ nem található.
