@@ -255,7 +255,7 @@ Messages:
     Text: Nem sikerült visszaállítani. {0} ebben a darabban (Chunk) ö is jelen van.
     Notes: '0: nearby player'
   NoCreateClaimPermission:
-    Text: Neked nincs engedélyed, hogy levédd ezt a területet.
+    Text: Nincs engedélyed, hogy levédd ezt a területet.
   ResizeNeedMoreBlocks:
     Text: Nincs elegendő blokkod ekkora területhez. Szükséged van még {0} blokkra.
     Notes: '0: how many needed'
@@ -322,14 +322,14 @@ Messages:
   NoBuildPvP:
     Text: Nem építhetsz ezen a területen PvP közben!
   NoBuildPermission:
-    Text: Nincs {0} engedélyed, hogy itt építs!
+    Text: Nincs engedélyed, hogy itt építs! A terület tulaja {0}.
     Notes: '0: owner name'
   NonSiegeMaterial:
     Text: Ez az anyag túl erős, nem lehet kiütni!
   NoOwnerBuildUnderSiege:
     Text: Nem tudsz változtatni semmit az ostrom alatt.
   NoAccessPermission:
-    Text: 'Nincs engedélyed, hogy használd ezt, tulaj: {0}.'
+    Text: Nincs engedélyed, hogy használd ezt. A terület tulaja {0}.
     Notes: '0: owner name.  access permission controls buttons, levers, and beds'
   NoContainersSiege:
     Text: Ez a terület ostrom alatt áll {0} által. Senki nem férhet hozzá a ládákhoz
