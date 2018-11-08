@@ -74,7 +74,7 @@ Messages:
   NotEnoughBlocksForSale:
     Text: Nincs annyi levédési blokkod, mint amennyit eladnál.
   BlockSaleConfirmation:
-    Text: Kaptál {0} fiókodba. Most {1} áll rendelkezésédre a levédés blokkokból.
+    Text: Kaptál {0} fiókodba. Most {1} áll rendelkezésedre a levédés blokkokból.
     Notes: '0: amount deposited; 1: remaining blocks'
   AdminClaimsMode:
     Text: Az Admin levédés aktív! Minden létrehozott levédés ingyenes és szerkeszthető
@@ -123,7 +123,7 @@ Messages:
   NoSiegeYourself:
     Text: Nem indíthatsz ostromot magad ellen, ne gyerekeskedj.
   NoSiegeDefenseless:
-    Text: Ez a játékos védtelen. Válasz egy számodra egyenlő ellen felett.
+    Text: Ez a játékos védtelen. Válassz egy számodra egyenlő ellenfelet.
   AlreadyUnderSiegePlayer:
     Text: '{0} már ostrom alatt van. Csatlakozz a bulihoz!'
     Notes: '0: defending player'
@@ -143,7 +143,7 @@ Messages:
     Notes: '0: defender name'
   AbandonClaimMissing:
     Text: Állj a törölni kívánt levédésen, vagy fontold meg az összes levédés törlését
-      /AbandonAllClaims parancsal.
+      /AbandonAllClaims paranccsal.
   NotYourClaim:
     Text: Ez nem a te levédésed!
   DeleteTopLevelClaim:
@@ -349,12 +349,12 @@ Messages:
   YouHaveNoClaims:
     Text: Nincs egyetlen levédésed se! Ciki
   ConfirmFluidRemoval:
-    Text: Ha elhagyod ezt a levédett terület, a benne lévő lává el lesz távolítva.
+    Text: Ha elhagyod ezt a levédett terület, a benne lévő láva el lesz távolítva.
       Ha biztos vagy akkor /AbandonClaim újra!
   AutoBanNotify:
     Text: Automatikus végleges kitiltás ({0}{1}) Lásd a naplót további részletekért.
   AdjustGroupBlocksSuccess:
-    Text: 'Változtatva lett a bonusz levédésre használható blokkok száma {0} engedélyével,
+    Text: 'Változtatva lett a bónusz levédésre használható blokkok száma {0} engedélyével,
       változás {1}. Új bonusz levédés szám: {2}!'
     Notes: '0: permission; 1: adjustment amount; 2: new total bonus'
   InvalidPermissionID:
@@ -371,7 +371,7 @@ Messages:
     Notes: '0: number of full days since last login'
   BuildingOutsideClaims:
     Text: Más játékosok is építhetnek itt. Gondolkozz el a terület levédésen, hogy
-      megvéd, amit építesz!
+      megvédd, amit építesz!
   TrappedWontWorkHere:
     Text: Elnézést, de nem találtam biztonságos helyet, ahova tudnálak teleportálni.
       Kérj segítséget egy Admintól!
@@ -380,7 +380,7 @@ Messages:
   UnclaimCleanupWarning:
     Text: A földön, aminek feloldottad a levédését, lehet, hogy más játékosok építeni
       fognak, vagy egy Admin meg fogja tisztítani. Ha valamit építettél ott és meg
-      akarod tartani, lehet vissza kéni vonni a feloldást.
+      akarod tartani, lehet vissza kéne vonni a feloldást.
   BuySellNotConfigured:
     Text: Bocs, de a levédéshez használható blokkokat nem lehet venni és eladni!
   NoTeleportPvPCombat:
@@ -388,7 +388,7 @@ Messages:
   NoTNTDamageAboveSeaLevel:
     Text: 'Figyelmeztetés: A TNT nem fog blokkokat elpusztítani vízszint fölött.'
   NoTNTDamageClaims:
-    Text: 'Figyelmeztetés: A TNT nem fog blokkokat elpusztítani levédet területen.'
+    Text: 'Figyelmeztetés: A TNT nem fog blokkokat elpusztítani levédett területen.'
   IgnoreClaimsAdvertisement:
     Text: A felülíráshoz használja a /IgnoreClaims parancsot.
   NoPermissionForCommand:
@@ -515,7 +515,7 @@ Messages:
     Text: Védd le a területed, hogy biztonságban tudd a tárgyaidat! Kattints a linkre
       feljebb, hogy többet megtudj!
   BookDisabledChestClaims:
-    Text: Ezen a szerveren, ha leteszel egy ládát, az NEM fog levédni telet is körülötte!
+    Text: Ezen a szerveren, ha leteszel egy ládát, az NEM fog levédeni területet is körülötte!
   BookUsefulCommands:
     Text: 'Hasznos parancsok:'
   BookLink:
@@ -526,7 +526,7 @@ Messages:
     Notes: '0: claim modification tool name; 1:claim information tool name'
   ResizeClaimTooNarrow:
     Text: Ez a levédés túl kicsi. Bármilyen levédés minimum {0} blokk szélesnek kell
-      lennie.blokk szélesnek kell lennie.
+      lennie.
     Notes: '0: minimum claim width'
   ResizeClaimInsufficientArea:
     Text: Ez a levédés túl kicsi. Bármilyen levédés minimum {0} blokkot kell, hogy
