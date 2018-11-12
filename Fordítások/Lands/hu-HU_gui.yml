@@ -1,0 +1,402 @@
+# Here you can edit all GUI strings.
+# If you encounter any issues, contact plugin support.
+# Plugin page: https://www.spigotmc.org/resources/.53313
+# Discord: https://discord.gg/JVU9qd7
+# --------------------------
+# Translated by Angeschossen
+
+
+general:
+  wYes: '&aYes'
+  wNo: '&cNo'
+  time:
+    days: '&7day(s)'
+    hours: '&7hour(s)'
+    minutes: '&7minute(s)'
+    seconds: '&7second(s)'
+  status:
+    online: '&aOnline'
+    offline: '&cOffline'
+  role:
+    owner: '&4Owner'
+    admin: '&cAdmin'
+    member: '&eMember'
+  defaultLandName: '%player%''s Land'
+
+gui:
+  general:
+    back:
+      name: '&c&lBack'
+      lore: '&7Go back to&a %to%&7.'
+    close:
+      name: '&c&lClose'
+      lore: '&7Close this window.'
+    previoussite:
+      name: '&c&lPrevious site'
+      lore: '&7Go to previous site.'
+    nextSite:
+      name: '&a&lNext site'
+      lore: '&7Go to next site.'
+    noAccess:
+      name: '&c&l&nYou are not allowed to do this'
+      lore: '&7Contact the land &cOwner &7for help.'
+    disabled:
+      name: '&c&l&nThis is disabled'
+      lore: '&7An administrator disabled this.'
+    bypass:
+      name: '&c&l&nBypass needed'
+      lore: '&7You need a bypass permission;;&7to run this action.;;&7Contact an administrator.'
+    error:
+      name: '&4&l&nError'
+      lore: '&cYou can''t do that.'
+  main:
+    title: '&2Lands Menu'
+    lands:
+      name: '&6&l&nLands'
+      lore: '&7Click here to see;;&7all lands you''re in.'
+  lands:
+    title: '&2&lLands'
+    noLand:
+      name: '&c&lNo land to show'
+      lore: '&7You currently don''t be an;;&7member of an land.;;&7Create one by using &8/&aLand create &8<&aName&8>;;&7or just join an land.'
+    land:
+      lore: '&7World:&e %world%;;&7Chunks:&a %chunks%;;&7Is yours: %owning%'
+  land:
+    title: '&2&lLand'
+    chunks:
+      name: '&6&l&nChunks'
+      lore: '&7Click here to see;;&7all &achunks &7of this &eland&7.'
+    roles:
+      name: '&6&l&nRoles'
+      lore: '&7Click here to see &amembers &7wich;;&7are trusted in the &ewhole land&7.'
+    invites:
+      name: '&6&l&nInvites'
+      lore: '&7Click here to see &ainvites &7wich;;&7trust players in the &ewhole land;;&7or in &esingle chunks&7.'
+    rent:
+      name: '&6&l&nRent'
+      lore: '&7Click here to set the land &arent value&7.;;&7Only players, wich are trusted in the;;&ewhole land &7and &cnot just in chunks&7,;;&7will pay this.;;;;&7Players wich are trusted in the whole land;;&7can be found here at the skull item.'
+    settings:
+      name: '&d&lSettings'
+      lore: '&7Click here to edit settings of your land.;;&7Only accessible for the;;&4owner &7of the land. :)'
+    info:
+      name: '&e&lInfo:'
+      lore: '&7Here you can edit:;;&8- &dChunks;;&8- &dMembers;;&8- &dInvites;;&8- &dTaxes;;;;&7These settings are for the &cwhole land&7.;;&6You can find chunk specific;;&6settings in the chunks section.;;;;&7Land:&a %land%'
+  chunks:
+    title: '&6&lChunks'
+    chunk:
+      lore: '&7Click here to get more information;;&7about this &achunk&7.'
+    info:
+      name: '&6&lInfo:'
+      lore: '&7Here you can see all &echunks;;&7of this land. Click on them to &eedit&7.;;;;&7Land:&a %land%'
+  chunk:
+    title: '&6&lChunk'
+    members:
+      name: '&6&l&nRoles'
+      lore: '&7Click here to see;;&7all &amembers &7of this &echunk&7.'
+    leave:
+      name: '&c&lLeave'
+      lore: '&cLeave &7this chunk.'
+    teleport:
+      name: '&d&lTeleport'
+      lore: '&dTeleport &7to this chunk.'
+    settings:
+      name: '&6&lSettings'
+      lore: '&7Click here to adjust &asettings;;&7wich affect this chunk.;;&7You also can apply settings to all chunks.'
+    rent:
+      name: '&6&l&nRent'
+      lore: '&7Click here to set;;&7the &arent price &7of &ethis chunk&7.;;&7Only players in &ethis chunk &7will pay it.;;&7Players wich are trusted in;;&7the &cwhole land, will not pay this&7.;;;;&7Players wich are trusted in this chunk;;&7can be found here at the skull item.'
+    info:
+      name: '&e&lInfo:'
+      lore: '&7Here you can:;;&8- &dEdit members;;&8- &dTeleport &7to the chunk;;&8- &dLeave &7this chunk;;&8- &7Set chunk &dtaxes;;;;&7This settings affect only &cthis chunk&7.;;&6Settings for the whole land can;;&6be found in the land section.;;;;&7Land:&a %land%'
+  roles:
+    title:
+      normal: '&5&lRoles'
+      select: '&5&lSelect Role'
+    owner:
+      name: '&4&lOwner&4 %owner%'
+      lore: '&7Player&a %owner% &7is the owner;;&7of this objective.;;;;&5Status: %status%'
+    admins:
+      name: '&c&lAdmins'
+      lore: '&7Click here to see;;&7all &cadmins&7.'
+    members:
+      name: '&e&lMembers'
+      lore: '&7Click here to see;;&7all &emembers&7.'
+    visitors:
+      name: '&7&lVisitors'
+      lore: '&7Click here to adjust;;&7settings that belong to visitors;;&7of &ethis chunk&7.'
+    info:
+      name: '&e&lInfo:'
+      lore: '&7Click on the roles to see;;&7the members or &dremove &7them.;;;;&7Land:&a %land%'
+  role:
+    title: '&5&lRole'
+    member:
+      lore: '&7Click here to get;;&7more information.'
+    group:
+      name: '&5&lRole:'
+    roleSettings:
+      name: '&6&lSettings'
+      loreChunk: '&7Click to open settings. Here you can;;&7adjust &arestrictions &7for &ethis chunk&7.;;&7You also can apply them to all chunks.'
+      loreLand: '&7Click to open settings. Here you can;;&7adjust &arestrictions &7for &ethis land&7.'
+    info:
+      name: '&6&lInfo:'
+      loreAdmins: '&7Here you can see all &cadmins&7.;;;;&7You can edit role permission;;&7at the command block.;;;;&7Click on an player to &dedit &7him.;;;;&7Land:&a %land%'
+      loreMembers: '&7Here you can see all &emembers&7.;;;;&7You can edit role permission;;&7at the command block.;;;;&7Click on an player to &dedit &7him.;;;;&7Land:&a %land%'
+  roleMember:
+    title: '&5&lRole Member'
+    untrust:
+      name: '&c&l&nUntrust'
+      lore: '&cUntrust &7this member;;&7from this objective.'
+    errors:
+      self: '&cYou can''t do this with yourself.;;&7You need to use &8/&aLand leave'
+    info:
+      lore:
+        online: ';;&7Status: &aOnline;;;;&7Lands: %lands%'
+        offline: ';;&cOffline:;;&7Since&5 %status%;;;;&7Lands: %lands%'
+  invites:
+    title: '&d&lInvites'
+    invite:
+      land:
+        lore: '&7Sender:&a %sender%;;&7Sent:&e %time%;;;;&7Rightclick to &drevoke this invite&7.'
+      chunk:
+        lore: '&7This invite belongs to chunk:;;&7X:&a %x% &7Z:&a %z%;;;;&7Sender:&a %sender%;;&7Sent:&e %time%;;;;&7Rightclick to &drevoke this invite&7.'
+    info:
+      name: '&e&lInfo:'
+      lore: '&7Here you can &erevoke invites&7.;;&7Use &drightclick &7to revoke an invite.;;;;&7Land:&a %land%'
+  rent:
+    title: '&c&lRent'
+    plus1:
+      lore: '&7Add&a %value% &7to rent price.'
+    plus2:
+      lore: '&7Add&a %value% &7to rent price.'
+    plus3:
+      lore: '&7Add&a %value% &7to rent price.'
+    minus1:
+      lore: '&7Remove&c %value% &7from rent price.'
+    minus2:
+      lore: '&7Remove&c %value% &7from rent price.'
+    minus3:
+      lore: '&7Remove&c %value% &7from rent price.'
+    info:
+      name: '&e&l&nStatus:&a %status%'
+      loreLand: '&7Price is total: %total%;;&7Click here to change this.;;&7Next rent:&a %next% &7%format%;;;;&6NOTE: &aThis rent value will be only;;&ataken from players wich are trusted;;&ain the &6whole land&a. &cThis players;;&cwill not pay the rent of the;;&cchunks. &ePlayers wich are trusted in;;&especific chunks, will just pay the;;&erent of these chunks.;;;;&7If price is total, player must;;&7only pay the rent for the land;;&7or chunk on land/chunk join.'
+      loreChunk: '&7Price is total: %total%;;&7Click here to change this.;;&7Next rent:&a %next% &7%format%;;;;&6NOTE: &aThis rent value will be only;;&ataken from players wich are trusted;;&ain &6this chunk&a. &cThis players;;&cwill not pay the rent of the;;&cland. &ePlayers wich are trusted in;;&ethe whole land, will just pay the;;&erent of the land.;;;;&7If price is total, player must;;&7only pay the rent for the land;;&7or chunk on land/chunk join.'
+  roleSettings:
+    title: '&5&lRole Settings'
+    notUnlocked:
+      name: '&cNot unlocked'
+      lore: '&7You have no permission;;&7to edit this setting.'
+    applyLand:
+      name: '&dApply to Land'
+      lore: '&7Click here to synchronise the;;&ewhole land &7with these settings.'
+    infoChunk:
+      name: '&d&lChunk'
+      lore: '&7These settings affect;;&7only &cthis chunk&7.'
+    infoLand:
+      name: '&d&lLand'
+      lore: '&7These settings affect;;&7the &cwhole land&7.'
+    role:
+      visitor:
+        place:
+          name: '&ePlace'
+          lore: '&7Unlocked: %access%;;;;&7Should visitors be;;&7able to &5build&7?;;;;&7Status: %status%'
+        break:
+          name: '&eBreak'
+          lore: '&7Unlocked: %access%;;;;&7Should visitors be;;&7able to &5break blocks&7?;;;;&7Status: %status%'
+        interact:
+          name: '&eGeneral Interaction'
+          lore: '&7Unlocked: %access%;;;;&7Should visitors be;;&7able to &5interact&7?;;;;&4Info: &cThere are some other settings,;;&cwhich affect parts of interaction.;;;;&7Status: %status%'
+        interact_door:
+          name: '&6Open: &eDoors'
+          lore: '&7Unlocked: %access%;;;;&7Should visitors be;;&7able to &5open doors etc.&7?;;;;&7Status: %status%'
+        interact_container:
+          name: '&6Open: &eContainer'
+          lore: '&7Unlocked: %access%;;;;&7Should visitors be;;&7able to &5open containers&7?;;;;&7Status: %status%'
+        interact_button:
+          name: '&6Interact: &eButtons'
+          lore: '&7Unlocked: %access%;;;;&7Should visitors be;;&7able to &5interact &7with;;&5buttons&7, &5levers&7, &5plates etc.&7?;;;;&4Info: &cIf allowed, visitors;;&cmight be able to open doors.;;&cEven if open doors setting;;&cdisallows it.;;;;&7Status: %status%'
+        igniteBlocks:
+          name: '&eIgnite Blocks'
+          lore: '&7Unlocked: %access%;;;;&7Should visitors be;;&7able to &5ignite blocks&7?;;;;&7Status: %status%'
+        combatPvp:
+          name: '&eAttack Players'
+          lore: '&7Unlocked: %access%;;;;&7Should visitors be;;&7able to &5attack each other&7?;;;;&4Info: &cThey can only attack players;;&cwich can also attack them.;;;;&7Status: %status%'
+        combatAnimal:
+          name: '&eAttack Animals'
+          lore: '&7Unlocked: %access%;;;;&7Should visitors be;;&7able to &5attack animals&7?;;;;&7Status: %status%'
+        playerTrust:
+          name: '&eTrust Player'
+          lore: '&7Unlocked: %access%;;;;&7Should visitors be;;&7able to &5trust members&7?;;;;&7Status: %status%'
+        playerSetRole:
+          name: '&eSet Role'
+          lore: '&7Unlocked: %access%;;;;&7Should visitors be;;&7able to &5set roles&7?;;;;&4Info: &cOwners can''t be edited.;;;;&7Status: %status%'
+        playerUntrust:
+          name: '&eUntrust Player'
+          lore: '&7Unlocked: %access%;;;;&7Should visitors be;;&7able to &5untrust members&7?;;;;&4Info: &cOwners can''t be untrusted.;;;;&7Status: %status%'
+        landClaim_land:
+          name: '&eClaim Land'
+          lore: '&7Unlocked: %access%;;;;&7Should vistors be able to;;&5claim land&7?;;;;&4Info: &cThis works only for players;;&cwich are trusted in the whole land.;;;;&7Status: %status%'
+        playerTrust_land:
+          name: '&eTrust Player'
+          lore: '&7Unlocked: %access%;;;;&7Should vistors be able to;;&5trust members &7in the &ewhole land&7?;;;;&7Status: %status%'
+        playerSetRole_land:
+          name: '&eSet Role'
+          lore: '&7Unlocked: %access%;;;;&7Should vistors be able to;;&5set roles &7in the &ewhole land&7?;;;;&4Info: &cOwners can''t be edited.;;;;&7Status: %status%'
+        playerUntrust_land:
+          name: '&eUntrust Player'
+          lore: '&7Unlocked: %access%;;;;&7Should vistors be able to;;&5untrust members &7in the &ewhole land&7?;;;;&4Info: &cOwners can''t be untrusted.;;;;&7Status: %status%'
+      member:
+        place:
+          name: '&ePlace'
+          lore: '&7Unlocked: %access%;;;;&7Should members be;;&7able to &5build&7?;;;;&7Status: %status%'
+        break:
+          name: '&eBreak'
+          lore: '&7Unlocked: %access%;;;;&7Should members be;;&7able to &5break blocks&7?;;;;&7Status: %status%'
+        interact:
+          name: '&eGeneral Interaction'
+          lore: '&7Unlocked: %access%;;;;&7Should members be;;&7able to &5interact&7?;;;;&4Info: &cThere are some other settings,;;&cwhich affect parts of interaction.;;;;&7Status: %status%'
+        interact_door:
+          name: '&6Open: &eDoors'
+          lore: '&7Unlocked: %access%;;;;&7Should members be;;&7able to &5open doors etc.&7?;;;;&7Status: %status%'
+        interact_container:
+          name: '&6Open: &eContainer'
+          lore: '&7Unlocked: %access%;;;;&7Should members be;;&7able to &5open containers&7?;;;;&7Status: %status%'
+        interact_button:
+          name: '&6Interact: &eButtons'
+          lore: '&7Unlocked: %access%;;;;&7Should members be;;&7able to &5interact &7with;;&5buttons&7, &5levers&7, &5plates etc.&7?;;;;&4Info: &cIf allowed, members;;&cmight be able to open doors.;;&cEven if open doors setting;;&cdisallows it.;;;;&7Status: %status%'
+        igniteBlocks:
+          name: '&eIgnite Blocks'
+          lore: '&7Unlocked: %access%;;;;&7Should members be;;&7able to &5ignite blocks&7?;;;;&7Status: %status%'
+        combatPvp:
+          name: '&eAttack Players'
+          lore: '&7Unlocked: %access%;;;;&7Should members be;;&7able to &5attack each other&7?;;;;&4Info: &cThey can only attack players;;&cwich can also attack them.;;;;&7Status: %status%'
+        combatAnimal:
+          name: '&eAttack Animals'
+          lore: '&7Unlocked: %access%;;;;&7Should members be;;&7able to &5attack animals&7?;;;;&7Status: %status%'
+        playerTrust:
+          name: '&eTrust Player'
+          lore: '&7Unlocked: %access%;;;;&7Should members be;;&7able to &5trust members&7?;;;;&7Status: %status%'
+        playerSetRole:
+          name: '&eSet Role'
+          lore: '&7Unlocked: %access%;;;;&7Should members be;;&7able to &5set roles&7?;;;;&4Info: &cOwners can''t be edited.;;;;&7Status: %status%'
+        playerUntrust:
+          name: '&eUntrust Player'
+          lore: '&7Unlocked: %access%;;;;&7Should members be;;&7able to &5untrust members&7?;;;;&4Info: &cOwners can''t be untrusted.;;;;&7Status: %status%'
+        landClaim_land:
+          name: '&eClaim Land'
+          lore: '&7Unlocked: %access%;;;;&7Should members be able to;;&5claim land&7?;;;;&7Info: &cThis works only for players;;&cwich are trusted in the whole land.;;;;&7Status: %status%'
+        playerTrust_land:
+          name: '&eTrust Player'
+          lore: '&7Unlocked: %access%;;;;&7Should members be able to;;&5trust members &7in the &ewhole land&7?;;;;&7Status: %status%'
+        playerSetRole_land:
+          name: '&eSet Role'
+          lore: '&7Unlocked: %access%;;;;&7Should members be able to;;&5set roles &7in the &ewhole land&7?;;;;&4Info: &cOwners can''t be edited.;;;;&7Status: %status%'
+        playerUntrust_land:
+          name: '&eUntrust Player'
+          lore: '&7Unlocked: %access%;;;;&7Should members be able to;;&5untrust members &7in the &ewhole land&7?;;;;&eInfo: &7&lOwners can''t be untrusted.;;;;&7Status: %status%'
+      admin:
+        place:
+          name: '&ePlace'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be;;&7able to &5build&7?;;;;&7Status: %status%'
+        break:
+          name: '&eBreak'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be;;&7able to &5break blocks&7?;;;;&7Status: %status%'
+        interact:
+          name: '&eGeneral Interaction'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be;;&7able to &5interact&7?;;;;&4Info: &cThere are some other settings,;;&cwhich affect parts of interaction.;;;;&7Status: %status%'
+        interact_door:
+          name: '&6Open: &eDoors'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be;;&7able to &5open doors etc.&7?;;;;&7Status: %status%'
+        interact_container:
+          name: '&6Open: &eContainer'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be;;&7able to &5open containers&7?;;;;&7Status: %status%'
+        interact_button:
+          name: '&6Interact: &eButtons'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be;;&7able to &5interact &7with;;&5buttons&7, &5levers&7, &5plates etc.&7?;;;;&4Info: &cIf allowed, admins;;&cmight be able to open doors.;;&cEven if open doors setting;;&cdisallows it.;;;;&7Status: %status%'
+        igniteBlocks:
+          name: '&eIgnite Blocks'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be;;&7able to &5ignite blocks&7?;;;;&7Status: %status%'
+        combatPvp:
+          name: '&eAttack Players'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be;;&7able to &5attack each other&7?;;;;&4Info: &cThey can only attack players;;&cwich can also attack them.;;;;&7Status: %status%'
+        combatAnimal:
+          name: '&eAttack Animals'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be;;&7able to &5attack animals&7?;;;;&7Status: %status%'
+        playerTrust:
+          name: '&eTrust Player'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be;;&7able to &5trust members&7?;;;;&7Status: %status%'
+        playerSetRole:
+          name: '&eSet Role'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be;;&7able to &5set roles&7?;;;;&4Info: &cOwners can''t be edited.;;;;&7Status: %status%'
+        playerUntrust:
+          name: '&eUntrust Player'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be;;&7able to &5untrust members&7?;;;;&4Info: &cOwners can''t be untrusted.;;;;&7Status: %status%'
+        landClaim_land:
+          name: '&eClaim Land'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be able to;;&5claim land&7?;;;;&7Info: &cThis works only for players;;&cwich are trusted in the whole land.;;;;&7Status: %status%'
+        playerTrust_land:
+          name: '&eTrust Player'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be able to;;&5trust members &7in the &ewhole land&7?;;;;&7Status: %status%'
+        playerSetRole_land:
+          name: '&eSet Role'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be able to;;&5set roles &7in the &ewhole land&7?;;;;&4Info: &cOwners can''t be edited.;;;;&7Status: %status%'
+        playerUntrust_land:
+          name: '&eUntrust Player'
+          lore: '&7Unlocked: %access%;;;;&7Should admins be able to;;&5untrust members &7in the &ewhole land&7?;;;;&eInfo: &7&lOwners can''t be untrusted.;;;;&7Status: %status%'
+  chunkSettings:
+    title:
+      chunk: '&e&lChunk Settings'
+      land: '&e&lLand Settings'
+    notUnlocked:
+      name: '&cNot unlocked'
+      lore: '&7You have no permission;;&7to edit this setting.'
+    applyLand:
+      name: '&dApply to Land'
+      lore: '&7Click here to synchronise the;;&ewhole land &7with these settings.'
+    setting:
+      entityGriefing:
+        name: '&eEntity griefing'
+        lore: '&7Unlocked: %access%;;;;&7Should entities be able to;;&5grief blocks &7in &ethis chunk&7?;;;;&7Status: %status%'
+      pistonGriefing:
+        name: '&ePiston griefing'
+        lore: '&7Unlocked: %access%;;;;&7Should pistons be able to &5grief;;&5blocks &7in &ethis chunk&7?;;;;&eInfo: &7This allows pistons from wilderness to;;&7interact in this chunk.;;;;&7Status: %status%'
+      monsterSpawning:
+        name: '&eMonster Spawning'
+        lore: '&7Unlocked: %access%;;;;&7Should monsters be able to &5spawn;;&5directly &7in &ethis chunk&7?;;;;&4Info: &cMonsters can still walk into;;&cyour land. You''re still able;;&cto spawn monsters via spawners;;&cand spawn eggs.;;;;&7Status: %status%'
+  playerInvites:
+    title: '&6&lYour Invites'
+    landInvite:
+      name: '&eLand Invite'
+      lore: '&7Land:&a %land%;;&7Sender:&a %sender%;;&7Sent:&5 %time%'
+    chunkInvite:
+      name: '&eChunk Invite'
+      lore: '&7X:&a %x% &7Z:&a %z%;;&7Land:&a %land%;;&7Sender:&a %sender%;;&7Sent:&5 %time%'
+  settingsOverview:
+    title: '&6&lSelect Setting Type'
+    roles:
+      name: '&7> &e&lRole settings'
+      lore: '&7Adjut role settings for;;&7your land.'
+    land:
+      name: '&7> &e&lLand settings'
+      lore: '&7Adjust land settings for;;&7your land.'
+
+integration:
+  dynmap:
+    chunk:
+      title: 'Land %land%'
+      description: 'Land %land%: X: %x% Z: %z% - Owner: %owner%'
+
+sign:
+  topLands:
+    line1: '&6#&e%place%'
+    line2: '&5%owner%'
+    line3: '&2Land &a%land%'
+    line4: '&9Size:&b %size%'
+    noLand:
+      line1: '&cNo top'
+      line2: '&cland'
+      line3: '&cto show.'
+      line4: ''
+
+claimBlock:
+  name: '&aClaim block'
+  lore: '&7With this block you;;&7can &aclaim the chunk;;&7you''re standing on by;;&7simply placing it.'
