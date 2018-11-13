@@ -74,10 +74,10 @@ general:
 
 help:
   general:
-    help: '&8[&aLands&8] &7Használd a &8/&aLand help &7parancsot segítségért'
+    help: '&8[&aLands&8] &7Használd a &8/&aLand help &7parancsot segítségért!'
     cmd: '&8[&aLands&8] &cNincs ilyen parancs! &7Parancs&a %cmd% &7nem megtalálható.'
     error: '&8[&aLands&8] &cVáratlan hiba történt! Hiba:&a %error% &cDátum:&a %date%&c. Kérlek, üzenj a szerver adminjának!'
-    title: '&7------------<- &aTelkek Segítség &7Oldal&a %site% &7->------------'
+    title: '&7------------<- &aTerületek Segítség &7Oldal&a %site% &7->------------'
     notExist: '&8[&aLands&8] &cEz az oldal nem létezik.'
     footer: '&7Használd a &8/&aLand help %next% &7a következő oldalra lapozáshoz.'
     helpCmd: '&8/&7Land help &8[&aSite&8] - &eTerületek információ'
@@ -117,7 +117,7 @@ land:
     hasOwn: '&8[&aLands&8] &cMásik terület tulajdonosa vagy! &7Először azt el kell hagynod.'
     maxOwn: '&8[&aLands&8] &cNem hozhatsz létre új területet! &7Elérted a maximum &e %max% &7darab saját területet.'
     maxReached: '&8[&aLands&8] &cTúl sok területen vagy tag! &7A maximum darabszám: &a %max%&7.'
-    already: '&8[&aLands&8] &cIlyen nevű terület már létezik'
+    already: '&8[&aLands&8] &cIlyen nevű terület már létezik.'
     costs: '&8[&aLands&8] &cNincs elég pénzed. &7 Ennyire van szükséged: &a %costs%&7.'
     success: '&8[&aLands&8] &7Sikeresen létrehozott terület&a %land% &7, ára: &a %costs%&7.'
   rename:
@@ -162,10 +162,10 @@ land:
     landDelete: '&8[&aLands&8] &7A terület sikeresen törölve, mert te voltál az utolsó tag.'
     chunkDelete: '&8[&aLands&8] &7A chunk sikeresen törölve, mert te voltál a tulajdonos.'
   delete:
-    notExist: '&8[&aLands&8] &cNem vagy ennek a területnek a tagja! &7Használd a &8/&aLand menu &7parancsot, hogy lásd a telkeid.'
-    notOwner: '&8[&aLands&8] &cNem te vagy ennek a teleknek a tulajdonosa.'
+    notExist: '&8[&aLands&8] &cNem vagy ennek a területnek a tagja! &7Használd a &8/&aLand menu &7parancsot, hogy lásd a területeid.'
+    notOwner: '&8[&aLands&8] &cNem te vagy ennek a területnek a tulajdonosa.'
     confirm: '&8[&aLands&8] &cMegerősítéshez írd be: &8/&aLand delete %land% confirm'
-    success: '&8[&aLands&8] &7A telek sikeresen törölve:&a %land%&7.'
+    success: '&8[&aLands&8] &7A terület sikeresen törölve:&a %land%&7.'
   trust:
     noLand: '&8[&aLands&8] &cNincs saját területed, hogy engedélyt adhass másoknak. &7Használd a &8/&aLand create &8<&aName&8> &7parancsot a létrehozáshoz vagy a &8/&aLand edit &8<&aLand&8> &7a szerkesztéshez.'
     notExist: '&8[&aLands&8] &cA&e %player% &c nevű játékos nem létezik. &7Elgépelés?'
