@@ -40,13 +40,13 @@ general:
   noPerm: '&8[&aLands&8] &cNincs engedélyed erre a műveletre.'
   worldInvalid: '&8[&aLands&8] &cEz deaktiválva van a játékvilágban.'
   noAccess:
-    general: '&8[&aLands&8] &Ezen a területen a tulajdonos nem adott neked jogot. &7Lépj kapcsolatba a telek tulajdonosával!'
+    general: '&8[&aLands&8] &Ezen a területen a tulajdonos nem adott neked jogot. &7Lépj kapcsolatba a terület tulajdonosával!'
     claim: '&8[&aLands&8] &cItt nem foglalhatsz területet, mert már valaki máshoz tartozik.'
     place: '&8[&aLands&8] &cItt nem helyezhetsz el blokkot. &7Lépj kapcsolatba a tulajdonossal!'
     break: '&8[&aLands&8] &cItt nem törhetsz szét blokkot. &7Lépj kapcsolatba a tulajdonossal!'
     interact: '&8[&aLands&8] &cNem használhatod ezt a blokkot. &7Lépj kapcsolatba a tulajdonossal!'
     ignite: '&8[&aLands&8] &cNem gyújthatod meg ezt a blokkot. &7Lépj kapcsolatba a tulajdonossal!'
-    edit: '&8[&aLands&8] &cNem szerkesztheted ezt a telket. &7Lépj kapcsolatba a tulajdonossal!'
+    edit: '&8[&aLands&8] &cNem szerkesztheted ezt a területet. &7Lépj kapcsolatba a tulajdonossal!'
     player:
       trust: '&8[&aLands&8] &cNem adhatsz engedélyt másik játékos területén. &7Lépj kapcsolatba a tulajdonossal!'
       setRole: '&8[&aLands&8] &cNem oszhatsz ki szerepkört másik játékos területén. &7Lépj kapcsolatba a tulajdonossal!'
@@ -189,7 +189,7 @@ land:
     removedInvite: '&8[&aLands&8] &7Az engedélykérés sikeresen megszüntetve. &8(&7Terület:&a %land%&8)'
     roleWeight: '&8[&aLands&8] &cNem szüntetheted meg ennek a játékosnak az engedélyét &7, mert magasabb rangú a szerepköre. &8(&7Terület:&a %land%&8)'
     successChunk: '&8[&aLands&8] &7Sikeresen megszüntetted &a %player% &7játékos jogait ebben a chunk-ban. &8(&7Terület:&a %land%&8)'
-    successLand: '&8[&aLands&8] &7Sikeresen megszüntetted &a %player% &7játékos jogait ezen a telken. &8(&7Terület:&a %land%&8)'
+    successLand: '&8[&aLands&8] &7Sikeresen megszüntetted &a %player% &7játékos jogait ezen a területen. &8(&7Terület:&a %land%&8)'
   setRole:
     noLand: '&8[&aLands&8] &cNincs olyan területed, hogy szerepeket adhass másoknak. &7Használd a &8/&aLand create &8<&aName&8> &7parancsot a létrehozáshoz vagy a &8/&aLand edit &8<&aLand&8> &7a szerkesztéshez.'
     notExist: '&8[&aLands&8] &cA&e %player% &c nevű játékos nem létezik. &7Elgépelés?'
@@ -202,7 +202,7 @@ land:
     trusted: '&8[&aLands&8] &cEnnek a játékosnak nincs engedélye. &7Elgépelés?'
     maxMembersChunk: '&8[&aLands&8] &cA szerepkör nem állítható be, mert a tuladonos elérte a&e %maxmembers% &c darab limitet ebben a chunk-ban.'
     maxMembersLand: '&8[&aLands&8] &7A szerepkört csak itt lehetett beállítani: &e %chunks%&7/&6%size% &7chunks, &cmert a tulajdonos elérte a&e %maxmembers% &c darab limitet ebben a chunk-ban.'
-    chunksComplete: '&8[&aLands&8] &7A szerepkör sikeresen beállítva a jelenlegi telek összes chunk-jában!'
+    chunksComplete: '&8[&aLands&8] &7A szerepkör sikeresen beállítva a jelenlegi terület összes chunk-jában!'
     group: '&8[&aLands&8] &cNincs jogod ehhez a csoporthoz. &7Üzenj a tulajdonosnak!'
     successChunk: '&8[&aLands&8] &7Sikeresen beállítva&a %role% &7szerep &a %player% &7 számára ebben a chunk-ban. &8(&7Terület:&a %land%&8)'
     successLand: '&8[&aLands&8] &7Sikeresen beállítva&a %role% &7szerep &a %player% &7 számára ezen a területen. &8(&7Terület:&a %land%&8)'
@@ -217,8 +217,8 @@ land:
     landRentConfirm: '&8[&aLands&8] &7A tulajdonos &a %rent% &7 bérleti díjat kér a területhez csatlakozáshoz. &7Erősítsd meg a szándékod a következő paranccsal: &8/&aLand accept %land% confirm&7.'
     chunkRent: '&8[&aLands&8] &cA tulajdonos &a %rent% &7 bérleti díjat kér a chunkhoz csatlakozáshoz. &cNincs elég pénzed!
     chunkRentConfirm: '&8[&aLands&8] &7A tulajdonos &a %rent% &7 bérleti díjat kér a chunkhoz csatlakozáshoz. &7Erősítsd meg a szándékod a következő paranccsal: &8/&aLand accept %land% confirm&7.''
-    maxMembersLand: '&8[&aLands&8] &7Csak a következő chunk-okhoz kaptál hozzáférést:o&e %chunks%&7/&6%size% &7chunks, &cmert a tulajdonos elérte a&e %maxmembers% &c darab limitet a telkén.'
-    chunksComplete: '&8[&aLands&8] &7A telek összes chunk-jához van hozzáférésed.'
+    maxMembersLand: '&8[&aLands&8] &7Csak a következő chunk-okhoz kaptál hozzáférést:o&e %chunks%&7/&6%size% &7chunks, &cmert a tulajdonos elérte a&e %maxmembers% &c darab limitet a területén.'
+    chunksComplete: '&8[&aLands&8] &7A terület összes chunk-jához van hozzáférésed.'
     maxMembersChunk: '&8[&aLands&8] &cNem kaptál jogot ebben a chunk-ban, mert a tulajdonos elérte a&e %maxmembers% &c darab limitet a chunk-ján'
     successLand: '&8[&aLands&8] &7Meghívás sikeresen elfogadva a következő területre:&a %land%&7.'
     successChunk: '&8[&aLands&8] &7Meghívás sikeresen elfogadva a következő területre/chunk-ra:&a %land% &7. Világ:&a %world% &7X:&a %x% &7Z:&a %z%'
@@ -291,7 +291,7 @@ option:
     interact: '&8[&aLands&8] &cNincs jogod blokkokat használni a vadonban! &7Ezt csak lefoglalt területen teheted!'
 
 claimblock:
-  cmdDisabled: '&8[&aLands&8] &cCsak foglaló blokkokkal tudsz foglalni telket. &7Ez a parancs ki van kapcsolva.'
+  cmdDisabled: '&8[&aLands&8] &cCsak foglaló blokkokkal tudsz foglalni területet. &7Ez a parancs ki van kapcsolva.'
   dropped: '&8[&aLands&8] &cNéhány foglaló blokk a földre esett. &7Teli van az hátizsákod.'
   notOwner: '&8[&aLands&8] &cA foglaló blokk nem a tied. &7Nem használhatod, a tulajdonosa:&a %player%&7.'
   noLeft: '&8[&aLands&8] &cNincs több foglalóblokkod. &7Üzenj az adminnak!'
