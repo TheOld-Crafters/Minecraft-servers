@@ -49,11 +49,11 @@ general:
     edit: '&8[&aLands&8] &cNem szerkesztheted ezt a területet. &7Lépj kapcsolatba a tulajdonossal!'
     player:
       trust: '&8[&aLands&8] &cNem adhatsz engedélyt másik játékos területén. &7Lépj kapcsolatba a tulajdonossal!'
-      setRole: '&8[&aLands&8] &cNem oszhatsz ki szerepkört másik játékos területén. &7Lépj kapcsolatba a tulajdonossal!'
+      setRole: '&8[&aLands&8] &cNem oszthatsz ki szerepkört másik játékos területén. &7Lépj kapcsolatba a tulajdonossal!'
       untrust: '&8[&aLands&8] &cNem vonhatsz vissza engedélyt másik játékos területén. &7Lépj kapcsolatba a tulajdonossal!'
       landTrust: '&8[&aLands&8] &cNem adhatsz engedélyt a &e %land%&c területen. &7Lépj kapcsolatba a tulajdonossal!'
       landUntrust: '&8[&aLands&8] &cNem vonhatsz vissza engedélyt a &e %land%&c területen. &7Lépj kapcsolatba a tulajdonossal!'
-      landSetrole: '&8[&aLands&8] &cNem oszhatsz ki szerepkört a &e %land%&c területen. &7Lépj kapcsolatba a tulajdonossal!'
+      landSetrole: '&8[&aLands&8] &cNem oszthatsz ki szerepkört a &e %land%&c területen. &7Lépj kapcsolatba a tulajdonossal!'
     combat:
       animal: '&8[&aLands&8] &cItt nem támadhatsz meg állatot. &7Lépj kapcsolatba a tulajdonossal!'
       pvpAttacker: '&8[&aLands&8] &cItt nem támadhatsz meg másik játékost. &7Lépj kapcsolatba a tulajdonossal!'
@@ -63,10 +63,10 @@ general:
   wYes: '&aIgen'
   wNo: '&cNem'
   time:
-    days: 'nap(ok)'
-    hours: 'óra(órák)'
-    minutes: 'perc(ek)'
-    seconds: 'másodperc(ek)'
+    days: 'nap'
+    hours: 'óra'
+    minutes: 'perc'
+    seconds: 'másodperc'
   status:
     online: '&aonline'
     offline: '&coffline'
@@ -107,7 +107,7 @@ help:
     debug: '&8/&7Land debug &8- &eAdatstatisztikák megjelenítése'
     safezone: '&8/&7Land safezone &8- &eBiztonságos zóna beállítása'
     reload: '&8/&7Land reload &8<&aValue&8> &8- &eConfig és üzenetek újratöltése'
-    about: '&8/&7Land about &8- &eLands pluginról információ megjelenítése'
+    about: '&8/&7Land about &8- &eLands kiegészítő információ megjelenítése'
 
 land:
   create:
@@ -143,7 +143,7 @@ land:
     noAccess: '&8[&aLands&8] &7Sikertelen:&c Nincs jogod a chunk-hoz. &7X:&a %x% &7Z:&a %z% &7Ez a következő terület része:&a %land%&7.'
     claimed: '&8[&aLands&8] &7Sikeresen elfoglalva&a %chunks% &7darab chunk-ot összesen&a %costs%&7 költségért.'
   claim:
-    limit: '&8[&aLands&8] &cNem foglalhasz többet &6 %limit% &6chunk-nál.'
+    limit: '&8[&aLands&8] &cNem foglalhatsz többet &6 %limit% &6chunk-nál.'
     setEdit: '&8[&aLands&8] &cNem található elfoglalható terület ezen a játékvilágon. &7Készíts magadnak egyet a &8/&aLands create &8<&aName&8> &7paranccsal.'
     forceLandCreation: '&cNincs terület még ezen a játékvilágon. &&7Készíts magadnak egyet a &8/&aLands create &8<&aName&8> &7paranccsal.'
     creatingLand: '&8[&aLands&8] &7Nincs terület még ezen a játékvilágon, próbálj egyet foglalni az automatikus rendszerrel. A nevét később megváltoztathatod a &8/&aLands rename &8<&aLand&8>&7 paranccsal.'
@@ -215,8 +215,8 @@ land:
     ownerOnline: '&8[&aLands&8] &cA terület tulajdonosának online kell lennie a folytatáshoz.'
     landRent: '&8[&aLands&8] &cA tulajdonos &a %rent% &7 bérleti díjat kér a területhez csatlakozáshoz. &cNincs elég pénzed!'
     landRentConfirm: '&8[&aLands&8] &7A tulajdonos &a %rent% &7 bérleti díjat kér a területhez csatlakozáshoz. &7Erősítsd meg a szándékod a következő paranccsal: &8/&aLand accept %land% confirm&7.'
-    chunkRent: '&8[&aLands&8] &cA tulajdonos &a %rent% &7 bérleti díjat kér a chunkhoz csatlakozáshoz. &cNincs elég pénzed!
-    chunkRentConfirm: '&8[&aLands&8] &7A tulajdonos &a %rent% &7 bérleti díjat kér a chunkhoz csatlakozáshoz. &7Erősítsd meg a szándékod a következő paranccsal: &8/&aLand accept %land% confirm&7.''
+    chunkRent: '&8[&aLands&8] &cA tulajdonos &a %rent% &7 bérleti díjat kér a chunk-hoz csatlakozáshoz. &cNincs elég pénzed!
+    chunkRentConfirm: '&8[&aLands&8] &7A tulajdonos &a %rent% &7 bérleti díjat kér a chunk-hoz csatlakozáshoz. &7Erősítsd meg a szándékod a következő paranccsal: &8/&aLand accept %land% confirm&7.''
     maxMembersLand: '&8[&aLands&8] &7Csak a következő chunk-okhoz kaptál hozzáférést:o&e %chunks%&7/&6%size% &7chunks, &cmert a tulajdonos elérte a&e %maxmembers% &c darab limitet a területén.'
     chunksComplete: '&8[&aLands&8] &7A terület összes chunk-jához van hozzáférésed.'
     maxMembersChunk: '&8[&aLands&8] &cNem kaptál jogot ebben a chunk-ban, mert a tulajdonos elérte a&e %maxmembers% &c darab limitet a chunk-ján'
