@@ -215,7 +215,7 @@ land:
     ownerOnline: '&8[&aLands&8] &cA terület tulajdonosának online kell lennie a folytatáshoz.'
     landRent: '&8[&aLands&8] &cA tulajdonos &a %rent% &7 bérleti díjat kér a területhez csatlakozáshoz. &cNincs elég pénzed!'
     landRentConfirm: '&8[&aLands&8] &7A tulajdonos &a %rent% &7 bérleti díjat kér a területhez csatlakozáshoz. &7Erősítsd meg a szándékod a következő paranccsal: &8/&aLand accept %land% confirm&7.'
-    chunkRent: '&8[&aLands&8] &cA tulajdonos &a %rent% &7 bérleti díjat kér a chunk-hoz csatlakozáshoz. &cNincs elég pénzed!
+    chunkRent: '&8[&aLands&8] &cA tulajdonos &a %rent% &7 bérleti díjat kér a chunk-hoz csatlakozáshoz. &cNincs elég pénzed!'
     chunkRentConfirm: '&8[&aLands&8] &7A tulajdonos &a %rent% &7 bérleti díjat kér a chunk-hoz csatlakozáshoz. &7Erősítsd meg a szándékod a következő paranccsal: &8/&aLand accept %land% confirm&7.'
     maxMembersLand: '&8[&aLands&8] &7Csak a következő chunk-okhoz kaptál hozzáférést:o&e %chunks%&7/&6%size% &7chunks, &cmert a tulajdonos elérte a&e %maxmembers% &c darab limitet a területén.'
     chunksComplete: '&8[&aLands&8] &7A terület összes chunk-jához van hozzáférésed.'
