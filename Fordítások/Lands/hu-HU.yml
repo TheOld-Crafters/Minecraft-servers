@@ -200,7 +200,7 @@ land:
     roleWeight: '&8[&aLands&8] &cNem állíthatod be ennek a játékosnak a rangját&7, mert magasabb rangú nálad. &8(&7Terület:&a %land%&8)'
     wilderness: '&8[&aLands&8] &cEz a chunk nincs elfoglalva, a vadon része.'
     trusted: '&8[&aLands&8] &cEnnek a játékosnak nincs engedélye. &7Elgépelés?'
-    maxMembersChunk: '&8[&aLands&8] &cA szerepkör nem állítható be, mert a tuladonos elérte a&e %maxmembers% &c darab limitet ebben a chunk-ban.'
+    maxMembersChunk: '&8[&aLands&8] &cA szerepkör nem állítható be, mert a tulajdonos elérte a&e %maxmembers% &c darab limitet ebben a chunk-ban.'
     maxMembersLand: '&8[&aLands&8] &7A szerepkört csak itt lehetett beállítani: &e %chunks%&7/&6%size% &7chunks, &cmert a tulajdonos elérte a&e %maxmembers% &c darab limitet ebben a chunk-ban.'
     chunksComplete: '&8[&aLands&8] &7A szerepkör sikeresen beállítva a jelenlegi terület összes chunk-jában!'
     group: '&8[&aLands&8] &cNincs jogod ehhez a csoporthoz. &7Üzenj a tulajdonosnak!'
@@ -208,7 +208,7 @@ land:
     successLand: '&8[&aLands&8] &7Sikeresen beállítva&a %role% &7szerep &a %player% &7 számára ezen a területen. &8(&7Terület:&a %land%&8)'
   accept:
     chunkList: '&8[&aLands&8] &7Terület:&a %land% &7Világ:&a %world% &7X:&a %x% &7Z:&a %z%'
-    list: '&8[&aLands&8] &7Meghívóid. Terület:&a %lands% &7Chunkok:&a %chunks%'
+    list: '&8[&aLands&8] &7Meghívóid. Terület:&a %lands% &7Chunk-ok:&a %chunks%'
     notExist: '&8[&aLands&8] &cNincs meghívód erről a területről: &e %land% &cvagy az lejárt.'
     ownLand: '&8[&aLands&8] &cVan saját területed. &7Először el kell azt hagynod.'
     maxReached: '&8[&aLands&8] &cTúl sok területen vagy tag. &7Maximum:&a %max%&7.'
@@ -228,7 +228,7 @@ land:
     notFound: '&8[&aLands&8] &cNincs meghívód innen:&e %land% &cvagy az lejárt.'
     success:
       land: '&8[&aLands&8] &7Meghívó sikeresen elutasítva innen:&a %land%&7.'
-      chunk: '&8[&aLands&8] &7Meghívó sikeresen elutasítva innen:&a %land% &7a következő chunkról. X:&a %x% &7Z:&a %z%'
+      chunk: '&8[&aLands&8] &7Meghívó sikeresen elutasítva innen:&a %land% &7a következő chunk-ról. X:&a %x% &7Z:&a %z%'
   view:
     wilderness: '&8[&aLands&8] &cEz a chunk a vadon része.'
     title: '&7---------<- &dTerület nézet &7->---------'
