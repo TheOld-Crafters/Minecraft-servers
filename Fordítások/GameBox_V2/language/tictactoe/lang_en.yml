@@ -27,6 +27,8 @@ game:
   # won message send when the other player does not fire in time
   #   use %loser% for the name of the player that gave up
   otherTooSlow: " &2You won! %loser% was too slow."
+  # Display names of the player heads
+  playerHeadName: "&9%player%"
 
 name: '&1TicTacToe&r'
 prefix: "[&3TicTacToe&r]"

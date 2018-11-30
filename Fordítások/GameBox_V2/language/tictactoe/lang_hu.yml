@@ -23,10 +23,12 @@ game:
   tooSlow: " &4Kifogytál az időből!"
   # won message send when the other player gave up
   #   use %loser% for the name of the player that gave up
-  otherGaveUp: " &2Nyertél! %loser% feladta."
+  otherGaveUp: " &2Nyertél! Az ellenfél feladta."
   # won message send when the other player does not fire in time
   #   use %loser% for the name of the player that gave up
-  otherTooSlow: " &2Nyertél! %loser% túl lassú volt."
+  otherTooSlow: " &2Nyertél! Az ellenfél túl lassú volt."
+  # Display names of the player heads
+  playerHeadName: "&9%player%"
 
 name: '&1TicTacToe&r'
 prefix: "[&3TicTacToe&r]"
