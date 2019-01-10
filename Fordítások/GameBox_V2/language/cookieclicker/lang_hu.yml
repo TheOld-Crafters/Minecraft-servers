@@ -136,7 +136,7 @@ upgrades:
       - ""
     gain_mouse_and_other:
       - "&bAz egér, és minden %building% nyeresége &l%gain%&r&b süti"
-      - "     &bfor each non-%building% object owned."
+      - "     &bminden nem-%building% tulajdonú objektum."
       - ""
     gain_mouse_per_cps: # gain a percentage of current CPS
       - "&bKlikkelésed másodpercenként &l%gain%&r&b nyereséget hoz."
