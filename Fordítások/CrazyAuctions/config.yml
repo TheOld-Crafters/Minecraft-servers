@@ -160,7 +160,7 @@ Settings:
         Slot: 52
         Name: '&6Kategóriák'
         Lore:
-          - '&bJelenlegi kategória: &6%Category%'
+          - '&bJelenlegi Kategória: &6%Category%'
           - '&aCsak egyetlen kategóriában keresel tárgyakat?'
           - '&aKattints ide a kategóriák megtekintéséhez.'
       Category2: #The button for Next Page.
