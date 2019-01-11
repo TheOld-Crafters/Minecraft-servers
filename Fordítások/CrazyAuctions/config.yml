@@ -1,10 +1,10 @@
 Settings:
   Prefix: '&7[&4Crazy &bAuctions&7]: ' #Prefix of when you get Crazy Auctions Messages.
   GUIName: '&4Crazy &bAuctions&8' #Name of the Main GUI.
-  Players-Current-Items: '&8Jelenlegi eladni kívánt tárgyaid ' #The Name of the Player Current Items GUI.
-  Cancelled/Expired-Items: '&8Megszüntetett/Lejárt tárgyak' #Name of the Cancelled/Expired GUI.
-  Buying-Item: '&8Biztos vagy benne?' #Name of the Buying GUI.
-  Bidding-On-Item: '&8Licitáltál erre a tárgyra.' #Name of the Bidding GUI.
+  Players-Current-Items: '&8Jelenlegi Eladni Kívánt Tárgyaid ' #The Name of the Player Current Items GUI.
+  Cancelled/Expired-Items: '&8Megszüntetett/Lejárt Tárgyak' #Name of the Cancelled/Expired GUI.
+  Buying-Item: '&8Biztos Vagy Benne?' #Name of the Buying GUI.
+  Bidding-On-Item: '&8Licitáltál Erre A Tárgyra.' #Name of the Bidding GUI.
   Categories: '&8Kategóriák' #Name of the Category GUI.
   Sell-Time: 2d #The time that each item will sell for.
   Bid-Time: 2m 30s #Time for each item that is biddable.
@@ -43,15 +43,15 @@ Settings:
       - '&7-------------------------'
       - '&aKattints, hogy visszatérjen hozzád.'
       - ''
-      - '&9Idő a teljes lejáratig: &e%Time%'
+      - '&9Idő a Teljes Lejáratig: &e%Time%'
       - '&7-------------------------'
     Bidding: #Lore on Bidding Items.
       - '&7-------------------------'
       - '&aKattints a licitáláshoz.'
       - ''
       - '&9Eladó &e%Seller%'
-      - '&9Jelenlegi licit: &e%TopBid%$'
-      - '&9Jelenlegi legtöbbet licitáló játékos: &e%TopBidder%'
+      - '&9Jelenlegi Licit: &e%TopBid%$'
+      - '&9Legtöbbet Licitáló: &e%TopBidder%'
       - '&9Hátramaradt idő: &e%Time%'
       - '&7-------------------------'
     Category-Settings:
@@ -124,7 +124,7 @@ Settings:
         Item: 'DIAMOND' #The item that this button is.
         Toggle: true #If the item is in the gui or not.
         Slot: 46 #The slot it is in. I recommend not changing these. If you do make sure they are still in the bottom row.
-        Name: '&6Eladó tárgyaid' #Name of the item.
+        Name: '&6Eladó Tárgyaid' #Name of the item.
         Lore: #Lore of the item.
           - '&aKattints a jelenleg'
           - '&aeladó tárgyaid megtekintéséhez.'
@@ -132,27 +132,27 @@ Settings:
         Item: 'POISONOUS_POTATO'
         Toggle: true
         Slot: 47
-        Name: '&6Lejárt / Már nem eladható tárgyaid összegyűjtése'
+        Name: '&6Lejárt / Törölt Tárgyak Összegyűjtése'
         Lore:
-          - '&aKattints az összes lejárt vagy már'
-          - '&a nem eladható tárgyaid összegyűjtéséhez.'
+          - '&aKattints az összes lejárt vagy'
+          - '&atörölt tárgyaid összegyűjtéséhez.'
       PreviousPage: #The button for Previous Page.
         Item: 'PAPER'
         Toggle: true
         Slot: 49
-        Name: '&6Előző oldal'
+        Name: '&6Előző Oldal'
         Lore: {}
       Refesh: #The button for Refresh Page.
         Item: 'SUNFLOWER'
         Toggle: true
         Slot: 50
-        Name: '&6Oldal újratöltése'
+        Name: '&6Oldal Újratöltése'
         Lore: {}
       NextPage: #The button for Next Page.
         Item: 'PAPER'
         Toggle: true
         Slot: 51
-        Name: '&6Következő oldal'
+        Name: '&6Következő Oldal'
         Lore: {}
       Category1: #The button for Next Page.
         Item: 'CHEST'
@@ -160,7 +160,7 @@ Settings:
         Slot: 52
         Name: '&6Kategóriák'
         Lore:
-          - '&bJelenlegi Kategória: &6%Category%'
+          - '&bJelenlegi kategória: &6%Category%'
           - '&aCsak egyetlen kategóriában keresel tárgyakat?'
           - '&aKattints ide a kategóriák megtekintéséhez.'
       Category2: #The button for Next Page.
@@ -169,7 +169,7 @@ Settings:
         Slot: 48
         Name: '&6Kategóriák'
         Lore:
-          - '&bJelenlegi kategória: &6%Category%'
+          - '&bJelenlegi Kategória: &6%Category%'
           - '&aCsak egyetlen kategóriban keresel tárgyakat?'
           - '&aKattints ide a kategóriák megtekintéséhez.'
       Bidding/Selling: #Switch between Bidding and Selling.
@@ -194,7 +194,7 @@ Settings:
           Item: 'BOOK'
           Toggle: true
           Slot: 54
-          Name: '&6Mi ez az oldal?'
+          Name: '&6Mi Ez Az Oldal?'
           Lore:
             - '&aEz az aukciós ház, ahol'
             - '&aeladhatsz tárgyakat,'
@@ -207,7 +207,7 @@ Settings:
           Item: 'BOOK'
           Toggle: true
           Slot: 54
-          Name: '&6Mi ez az oldal?'
+          Name: '&6Mi Ez Az Oldal?'
           Lore:
             - '&aEz az aukciós ház, ahol'
             - '&aárverésre rakhatsz tárgyakat,'
@@ -220,7 +220,7 @@ Settings:
           Item: 'BOOK'
           Toggle: true
           Slot: 54
-          Name: '&6Mi ez az oldal?'
+          Name: '&6Mi Ez Az Oldal?'
           Lore:
             - '&aAzok a tárgyak, amiket jelenleg'
             - '&a eladásra kínálsz az aukciós házban,'
@@ -245,7 +245,7 @@ Settings:
           Item: 'BOOK'
           Toggle: true
           Slot: 50
-          Name: '&6Mi ez az oldal?'
+          Name: '&6Mi Ez Az Oldal?'
           Lore:
             - '&aEz az oldal az összes árverésre bocsájtott'
             - '&a, vagy eladó tárgyakat mutatja.'
@@ -255,7 +255,7 @@ Settings:
           Item: 'BOOK'
           Toggle: true
           Slot: 54
-          Name: '&6Mi ez az oldal?'
+          Name: '&6Mi Ez Az Oldal?'
           Lore:
             - '&aEz az oldal megmutatja az összes kategóriát,'
             - '&aahonnan tudsz választani. Mikor rákattintasz'
@@ -268,7 +268,7 @@ Settings:
       Return: #The Return Buttons.
         Item: 'FLOWER_POT'
         Slot: 50
-        Name: '&6Összes visszagyűjtése'
+        Name: '&6Összes Visszagyűjtése'
         Lore:
           - '&aKattints ide, hogy az összes megszüntetett'
           - '&aés lejárt tárgyadat visszakaphasd.'
@@ -280,10 +280,10 @@ Settings:
         Name: '&cMégsem'
       Your-Item: #The item that shows when you try to buy/bid on your item.
         Item: 'BARRIER'
-        Name: '&cNem tudod a saját tárgyaidat megvásárolni.'
+        Name: '&cNem Tudod a Saját Tárgyaidat Megvásárolni.'
       Cant-Afford: #The item that shows when you cant afford this item.
         Item: 'BARRIER'
-        Name: '&cNincs erre elég pénzed.'
+        Name: '&cNincs Erre Elég Pénzed.'
       Top-Bidder: #The item for when a player is already the top bidder.
         Item: 'BARRIER'
         Name: '&cJelenleg te vagy a legtöbbet licitáló.'
@@ -293,10 +293,10 @@ Settings:
         Lore:
           - '&7<--&aHozzáad &cTöröl&7-->'
           - '&9Árajánlatod: &e%Bid%$'
-          - '&9Jelenlegi legnagyobb árajánlat: &e%TopBid%$'
+          - '&9Jelenlegi Legnagyobb Arajánlat: &e%TopBid%$'
       Bid: #The button for when you want to confirm your bid.
         Item: 'LIGHT_BLUE_STAINED_GLASS_PANE'
-        Name: '&bLicitálás most'
+        Name: '&bLicitálás Most'
         Lore:
           - '&7Kattints ide az azonnali licitáláshoz.'
   BlackList:
