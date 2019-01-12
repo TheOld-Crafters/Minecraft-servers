@@ -213,9 +213,9 @@ Settings:
             - '&aárverésre rakhatsz tárgyakat,'
             - '&avagy licitálhatsz másokéra.'
             - ''
-            - '&aThe bidding auction is also a great place to'
-            - '&amake money by bidding off items that others'
-            - '&amay be interested in bidding on.'
+            - '&aAz aukciós ház egyben nagyszerű hely ahhoz is,'
+            - '&ahogy pénzt nyerj azáltal, hogy olyan tételeket'
+            - '&aajánlasz fel, amelyekre mások licitálhatnak.'
         CurrentItems: #The Book in the Current items GUI.
           Item: 'BOOK'
           Toggle: true
