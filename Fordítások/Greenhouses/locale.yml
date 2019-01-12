@@ -52,12 +52,12 @@ messages:
    ecolost: "A(z) [location] helyen lévő üvegházad elveszítette az ökoszisztémáját, így eltávolításra került."
 
 info:
-   title: "&A[Hogyan készíts üvegházat]"
+   title: "&A[Hogyan Készíts Üvegházat]"
    instructions:
-     - "&EKészíts egy üvegdobozt 4 fallal és egy tetővel,"
-     - "&Ehelyezz &F4 ajtót &Ea falakba."
+     - "&EKészíts egy üvegdobozt 4 fallal, egy tetővel,"
+     - "&Eés akár 4 ajtót is tehetsz a falba."
      - "&ERakj a falba vagy a tetőbe &F1 tölcsért, &Eés helyezz bele vizes vödröket,"
-     - "&Ehogy havat és/vagy csontlisztet készítsen, mellyel automatikusan tudod növeszteni a növényeidet."
+     - "&Ehogy havat és/vagy csontlisztet készíts, mellyel automatikusan tudod növeszteni a növényeidet."
      - "&ENézd meg a biome-okhoz tartozó recepteket, hogy megtudd milyen blokkok legyenek feltétlenül"
      - "&Eaz üvegházban ahhoz, hogy sikeresen elkészítsd."  
    info: "[Üvegház információk]"
