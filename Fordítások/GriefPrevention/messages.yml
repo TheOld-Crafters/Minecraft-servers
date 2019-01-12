@@ -510,7 +510,7 @@ Messages:
   BookAuthor:
     Text: kova97 :D
   BookTitle:
-    Text: Hogyan védd le a földed!
+    Text: Hogyan Védd Le a Földed
   BookIntro:
     Text: Védd le a területed, hogy biztonságban tudd a tárgyaidat! Kattints a linkre
       feljebb, hogy többet megtudj!
@@ -518,7 +518,7 @@ Messages:
     Text: Ezen a szerveren, ha leteszel egy ládát, az NEM fog levédeni területet is
       körülötte!
   BookUsefulCommands:
-    Text: 'Hasznos parancsok:'
+    Text: 'Hasznos Parancsok:'
   BookLink:
     Text: 'Kattints: {0}'
     Notes: '{0}: video URL'
