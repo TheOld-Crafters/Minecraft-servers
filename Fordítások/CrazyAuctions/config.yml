@@ -52,7 +52,7 @@ Settings:
       - '&9Eladó &e%Seller%'
       - '&9Jelenlegi Licit: &e%TopBid%$'
       - '&9Legtöbbet Licitáló: &e%TopBidder%'
-      - '&9Hátramaradt idő: &e%Time%'
+      - '&9Hátramaradt Idő: &e%Time%'
       - '&7-------------------------'
     Category-Settings:
       Armor:
