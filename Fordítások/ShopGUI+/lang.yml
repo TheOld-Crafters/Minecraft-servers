@@ -1,35 +1,43 @@
-PREFIX: '&7[&aBolt&7] &f'
+DIALOG:
+  AMOUNTSELECTION:
+    BULKBUY:
+      NAME: '&c%item% stack vásárlása'
+    BULKSELL:
+      NAME: '&c%item% stack eladása'
+    BUY:
+      NAME: '&2%item% vásárlása'
+    SELL:
+      NAME: '&c%item% eladása'
 LANG:
   CONSOLE: Console
 MSG:
-  ERROR: Hiba történt, lépj kapcsolatba egy adminisztrátorral.
-  INGAMEONLY: Ez a parancs csak játékban használható.
-  NOACCESS: Nincs jogod ehhez.
-  NOTLOADED: Az adataid még nem töltődtek be, próbáld újra később.
-  NOTLOADEDTARGET: Ennek a játékosnak az adatai még nem töltődtek be, próbáld újra
-    később.
-  RELOADED: Beállítások újratöltve!
-  USAGE:
-    SUBCOMMAND: 'Rossz parancs használat. Helyes használat: %usage%'
   CMD:
     SHOP:
       ADDMODIFIER:
+        GLOBAL:
+          ADDED: 'Beállítottad &c%player%&-nak %type% ármódosítóját erre: &c%modifier%&f.'
+          ADDEDBY: 'A te %type% ármódosítód be lett állítva erre: &c%modifier%&f &c%player%&f
+            által.'
+          USAGE: /shop addmodifier global <Játékosnév> <Érték> [buy|sell]
         ITEM:
-          USAGE: /shop addmodifier item <Játékosnév> <Bolt> <Tárgy> <Érték> [buy|sell]
           ADDED: Beállítottad &c%player%&f-nak %type% ármódosítóját a(z) %item% tárgy
             a(z) %shop% boltban &c%modifier%&f.
-          ADDEDBY: A te %type% ármódosítód a(z) %item% tárgyadnál a(z) %shop% boltodban be lett állítva &c%modifier%&f-ra &c%player%&f által.
+          ADDEDBY: A te %type% ármódosítód a(z) %item% tárgyadnál a(z) %shop% boltodban
+            be lett állítva &c%modifier%&f-ra &c%player%&f által.
+          USAGE: /shop addmodifier item <Játékosnév> <Bolt> <Tárgy> <Érték> [buy|sell]
         SHOP:
+          ADDED: 'Beállítottad &c%player%&f-nak %type% ármódosítóját az összes tárgynak
+            a(z) %shop% boltban erre: &c%modifier%&f.'
+          ADDEDBY: A te %type% ármódosító az összes tárgyadra a(z) %shop% boltodban
+            át lett állítva &c%modifier%&f-ra &c%player%&f által.
           USAGE: /shop addmodifier shop <Játékosnév> <Bolt> <Tárgy> <Érték> [buy|sell]
-          ADDED: Beállítottad &c%player%&f-nak %type% ármódosítóját az összes tárgynak a(z) %shop%
-            boltban erre: &c%modifier%&f.
-          ADDEDBY: A te %type% ármódosító az összes tárgyadra a(z) %shop% boltodban át lett állítva &c%modifier%&f-ra &c%player%&f által.
-        GLOBAL:
-          USAGE: /shop addmodifier global <Játékosnév> <Érték> [buy|sell]
-          ADDED: Beállítottad &c%player%&-nak %type% ármódosítóját erre: &c%modifier%&f.
-          ADDEDBY: A te %type% ármódosítód be lett állítva erre: &c%modifier%&f &c%player%&f által.
       CHECKMODIFIERS:
         VIEW:
+          ENTRY:
+            SHOP: 'Bolt: &c%shop%&f, vásárlás: &c%buy%&f, eladás: &c%sell%&f'
+            GLOBAL: 'Vásárlás: &c%buy%&f, eladás: &c%sell%&f'
+            ITEM: 'Tárgy: &c%item%&f, bolt: &c%shop%&f, vásárlás: &c%buy%&f, eladás:
+              &c%sell%&f'
           VIEW: |-
             &c%player%&f-nak a változói:
             Globális változók:
@@ -38,92 +46,95 @@ MSG:
             %shop%
             Tárgy változók:
             %item%
-          ENTRY:
-            Tárgy: 'Tárgy: &c%item%&f, Bolt: &c%shop%&f, Vásárlás: &c%buy%&f, Eladás: &c%sell%&f'
-            Bolt: 'Bolt: &c%shop%&f, Vásárlás: &c%buy%&f, Eladás: &c%sell%&f'
-            Globális: 'Vásárlás: &c%buy%&f, Eladás: &c%sell%&f'
       RESETMODIFIER:
-        ITEM:
-          USAGE: /shop resetmodifier item <Játékosnév> <Bolt> <Tárgy> [buy|sell]
-          RESET: Visszaállítottad &c%player%&-nak a %type% ármódosítóját a(z) %item% tárgyra
-            a(z) %shop% boltban.
-          RESETBY: A te %type% ármódosítód a(z) %item% tárgyadnak a(z) %shop% boltban vissza lett állítva &c%player%&f által.
-        SHOP:
-          USAGE: /shop resetmodifier shop <Játékosnév> <Bolt> <Tárgy> [buy|sell]
-          RESET: Visszaállítottad &c%player%&-nak %type%  ármódosítoját az összes tárgyára a(z) %shop%
-            boltban.
-          RESETBY: A te %type% ármódosítód az összes tárgyadra a(z) %shop% boltban át lett állítva &c%player%&f által.
         GLOBAL:
-          USAGE: /shop resetmodifier global <Játékosnév> [buy|sell]
           RESET: Visszaállítottad &c%player%&f-nak  %type% ármódosítóját.
-          RESETBY: A te %type% ármódosítod át lett állítva &c%modifier%&f-ra &c%player%&f által.
-  MODIFIER:
-    INVALIDAMOUNT: Helytelen módosító érték. Az érvényes értékek például
-      0.50 ami 50%, 2.0 ami 200% stb.
-    INVALIDTYPE: Helytelen módosító típus. A helyes értékek: buy, sell és both.
-    Buy: Vásárlás
-    SELL: Eladás
-    BOTH: Vásárlás és eladás
-  INVALIDPLAYER: Helytelen játékosnév.
-  INVALIDSHOP: Nem található bolt. (shopID &c%shop%&f)
-  INVALIDITEM: Tárgy ID-vel &c%item%&f nem található a(z) &c%shop%&f boltban.
-  NOACCESSTOSHOP: Nincs jogosultságod ehhez a bolthoz.
-  NODIRECTACCESSTOSHOP: Nincs hozzáférésed a(z) &c%shop%&f bolthoz.
-  MAINMENUDISABLED: Nem használhatod ezt a parancsot. Használd a /shop <id> -t helyette.
-  WORLDBLACKLISTED: Nincs hozzáférésed a(z) %shop% bolthoz ebben a világban.
-  WORLDBANNED: Nincs hozzáférésed.
-  WORLDBANNEDTARGET: '%player%-nek nincs hozzáférése a bolthoz ebben a világban.'
-  GAMEMODEBANNED: Nincs hozzáférésed a bolthoz, amíg ebben a játékmódban vagy: %gamemode%.
-  GAMEMODEBANNEDTARGET: '%player%-nek nincs hozzáférése a bolthoz, amíg ebben a játékmódban van: %gamemode%.'
-  ITEM:
-    FULLINVENTORY: Nincs elég hely a táskádban.
-    CANNOTAFFORD: Neked kell még &c%price%$&f hogy megvedd: &c%amount% x %item%&f.
-    CANNOTBUY: Ezt nem veheted meg.
-    CANNOTSELL: Ezt nem adhatod el.
-    BOUGHT: Megvetted: &c%amount% x %item%&f ennyiért: &c%price%$&f.
-    BOUGHTFREE: Kaptál &c%amount% x %item%&f.
-    NOTENOUGH: Nincs elegendő &c%amount% x %item%&f-ed/ad hogy eladd.
-    SOLD: Eladtál &a%amount% x %item%&f ennyiért: &a%price%$&f.
-    SOLDFREE: Elajándékoztál &a%amount% x %item%&f.
-    SOLDALL: Eladtál minden %item%&f (&a%amount% x %item%&f) ennyiért: &a%price%$&f.
-    SOLDALLFREE: Elajándékoztál minden %item%&f (&a%amount% x %item%&f).
-    NOACCESS: Nincs hozzáférésed ehhez a tárgyhoz.
+          RESETBY: A te %type% ármódosítod át lett állítva &c%modifier%&f-ra &c%player%&f
+            által.
+          USAGE: /shop resetmodifier global <Játékosnév> [buy|sell]
+        ITEM:
+          RESET: Visszaállítottad &c%player%&-nak a %type% ármódosítóját a(z) %item%
+            tárgyra a(z) %shop% boltban.
+          RESETBY: A te %type% ármódosítód a(z) %item% tárgyadnak a(z) %shop% boltban
+            vissza lett állítva &c%player%&f által.
+          USAGE: /shop resetmodifier item <Játékosnév> <Bolt> <Tárgy> [buy|sell]
+        SHOP:
+          RESET: Visszaállítottad &c%player%&-nak %type%  ármódosítoját az összes
+            tárgyára a(z) %shop% boltban.
+          RESETBY: A te %type% ármódosítód az összes tárgyadra a(z) %shop% boltban
+            át lett állítva &c%player%&f által.
+          USAGE: /shop resetmodifier shop <Játékosnév> <Bolt> <Tárgy> [buy|sell]
+  COMMAND:
+    BOUGHT: 'Megvásároltad a parancsot ennyiért: &c%price%$&f.'
+    CANNOTAFFORD: Kell még &c%price%$&f hogy megvedd ezt a parancsot.
   ENCHANT:
-    CANNOTAPPLY: A következő varázslat: &c%enchantment%&f alkalmazható a tárgyra, ami a kezedben van.
     ALREADYAPPLIED: A tárgyon már van &c%enchantment%&f alkalmazva.
-    LEVELDIFF: Kell egy tárgy legalább &c%enchantment% %level%&f el/al.
+    BOUGHT: 'Vásároltál &c%enchantment%&f varázslatot ennyiért: &c%price%$&f.'
     CANNOTAFFORD: Kell még &c%price%$&f hogy meg tudd venni a(z) &c%enchantment%&f.
+    CANNOTAPPLY: 'A következő varázslat: &c%enchantment%&f alkalmazható a tárgyra,
+      ami a kezedben van.'
+    LEVELDIFF: Kell egy tárgy legalább &c%enchantment% %level%&f el/al.
     MAX: A tárgyon már megtalálható a maximum rárakható varázslat. (%amount%).
     TOOMANY: Nem varázsolhatsz több tárgyat %amount%-nál/nél.
-    BOUGHT: Vásároltál &c%enchantment%&f varázslatot ennyiért: &c%price%$&f.
+  ERROR: Hiba történt, lépj kapcsolatba egy adminisztrátorral.
+  GAMEMODEBANNED: 'Nincs hozzáférésed a bolthoz, amíg ebben a játékmódban vagy: %gamemode%.'
+  GAMEMODEBANNEDTARGET: '%player%-nek nincs hozzáférése a bolthoz, amíg ebben a játékmódban
+    van: %gamemode%.'
+  INGAMEONLY: Ez a parancs csak játékban használható.
+  INVALIDITEM: Tárgy ID-vel &c%item%&f nem található a(z) &c%shop%&f boltban.
+  INVALIDPLAYER: Helytelen játékosnév.
+  INVALIDSHOP: Nem található bolt. (shopID &c%shop%&f)
+  ITEM:
+    BOUGHT: 'Megvetted: &c%amount% x %item%&f ennyiért: &c%price%$&f.'
+    BOUGHTFREE: Kaptál &c%amount% x %item%&f.
+    CANNOTAFFORD: 'Neked kell még &c%price%$&f hogy megvedd: &c%amount% x %item%&f.'
+    CANNOTBUY: Ezt nem veheted meg.
+    CANNOTSELL: Ezt nem adhatod el.
+    FULLINVENTORY: Nincs elég hely a táskádban.
+    NOACCESS: Nincs hozzáférésed ehhez a tárgyhoz.
+    NOTENOUGH: Nincs elegendő &c%amount% x %item%&f-ed/ad hogy eladd.
+    SOLD: 'Eladtál &a%amount% x %item%&f ennyiért: &a%price%$&f.'
+    SOLDALL: 'Eladtál minden %item%&f (&a%amount% x %item%&f) ennyiért: &a%price%$&f.'
+    SOLDALLFREE: Elajándékoztál minden %item%&f (&a%amount% x %item%&f).
+    SOLDFREE: Elajándékoztál &a%amount% x %item%&f.
+  MAINMENUDISABLED: Nem használhatod ezt a parancsot. Használd a /shop <id> -t helyette.
+  MODIFIER:
+    BOTH: Vásárlás és eladás
+    BUY: Vásárlás
+    INVALIDAMOUNT: Helytelen módosító érték. Az érvényes értékek például 0.50 ami
+      50%, 2.0 ami 200% stb.
+    INVALIDTYPE: 'Helytelen módosító típus. A helyes értékek: buy, sell és both.'
+    SELL: Eladás
+  NOACCESS: Nincs jogod ehhez.
+  NOACCESSTOSHOP: Nincs jogosultságod ehhez a bolthoz.
+  NODIRECTACCESSTOSHOP: Nincs hozzáférésed a(z) &c%shop%&f bolthoz.
+  NOTLOADED: Az adataid még nem töltődtek be, próbáld újra később.
+  NOTLOADEDTARGET: Ennek a játékosnak az adatai még nem töltődtek be, próbáld újra
+    később.
   PERMISSION:
-    PERMISSIONSDISABLED: Engedélyek letiltva, kérjük, lépjen kapcsolatba a szerver tulajdonosával
     ALREADYHAVE: Neked már van &c%permission%&f engedélyed.
-    CANNOTAFFORD: Neked kell &c%price%$&f hogy megvedd: &c%permission%&f.
-    BOUGHT: Vásároltál &c%permission%&f engedélyt ennyiért: &c%price%$&f.
-  COMMAND:
-    BOUGHT: Megvásároltad a parancsot ennyiért: &c%price%$&f.
-    CANNOTAFFORD: Kell még &c%price%$&f hogy megvedd ezt a parancsot.
-  SELLHAND:
-    NOITEM: A kezedben kell tartanod a tárgyat, hogy el tudd adni.
-    INVALIDQUANTITY: Helytelen darabszám. 1 és %max% között kell lennie.
-    CANNOTSELL: Nem adhatod el ezt a tárgyat.
-    MULTIPLEQUANTITYONLY: Nem adhatsz el ennyi darabot. Csak a többszöröseit tudod eladni ennek a számnak: %quantity%.
-  SELLHANDALL:
-    SOLD: Eladtál %quantity% x %item% ennyiért: %price%$.
+    BOUGHT: 'Vásároltál &c%permission%&f engedélyt ennyiért: &c%price%$&f.'
+    CANNOTAFFORD: 'Neked kell &c%price%$&f hogy megvedd: &c%permission%&f.'
+    PERMISSIONSDISABLED: Engedélyek letiltva, kérjük, lépjen kapcsolatba a szerver
+      tulajdonosával.
+  RELOADED: Beállítások újratöltve!
   SELLALL:
     NOITEMS: Nincsen tárgyad, amit el tudnál adni.
-    SOLD: Eladtál %quantity% tárgyat ennyiért: %price%$.
-DIALOG:
-  AMOUNTSELECTION:
-    BUY:
-      NAME: '&2%item% vásárlása'
-    SELL:
-      NAME: '&c%item% eladása'
-    BULKBUY:
-      NAME: '&c%item% stack vásárlása'
-    BULKSELL:
-      NAME: '&c%item% stack eladása'
+    SOLD: 'Eladtál %quantity% tárgyat ennyiért: %price%$.'
+  SELLHAND:
+    CANNOTSELL: Nem adhatod el ezt a tárgyat.
+    INVALIDQUANTITY: Helytelen darabszám. 1 és %max% között kell lennie.
+    MULTIPLEQUANTITYONLY: 'Nem adhatsz el ennyi darabot. Csak a többszöröseit tudod
+      eladni ennek a számnak: %quantity%.'
+    NOITEM: A kezedben kell tartanod a tárgyat, hogy el tudd adni.
+  SELLHANDALL:
+    SOLD: 'Eladtál %quantity% x %item% ennyiért: %price%$.'
+  USAGE:
+    SUBCOMMAND: 'Rossz parancs használat. Helyes használat: %usage%'
+  WORLDBANNED: Nincs hozzáférésed.
+  WORLDBANNEDTARGET: '%player%-nek nincs hozzáférése a bolthoz ebben a világban.'
+  WORLDBLACKLISTED: Nincs hozzáférésed a(z) %shop% bolthoz ebben a világban.
+PREFIX: '&7[&aBolt&7] &f'
 SHOP:
   PERMISSION:
     ALREADYOWNED: '&4(Már van ilyen jogod)'
