@@ -515,7 +515,8 @@ Messages:
     Text: Védd le a területed, hogy biztonságban tudd a tárgyaidat! Kattints a linkre
       feljebb, hogy többet megtudj!
   BookDisabledChestClaims:
-    Text: Ezen a szerveren, ha leteszel egy ládát, az NEM fog levédeni területet is körülötte!
+    Text: Ezen a szerveren, ha leteszel egy ládát, az NEM fog levédeni területet is
+      körülötte!
   BookUsefulCommands:
     Text: 'Hasznos parancsok:'
   BookLink:
