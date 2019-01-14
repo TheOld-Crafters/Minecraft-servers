@@ -64,7 +64,7 @@ Messages:
     Text: Nincs elég pénzed! Szükséged lenne {0}, de csak {1} van.
     Notes: '0: total cost; 1: player''s account balance'
   PurchaseConfirmation:
-    Text: Fizetve {0}. Most {1} rendelkezésedre áll a levédés blokkokból.
+    Text: Fizetve {0}. Most rendelkezésedre áll {1} levédhető blokk.
     Notes: '0: total cost; 1: remaining blocks'
   OnlyPurchaseBlocks:
     Text: A levédésblokkok csak megvásárolhatók, és nem értékesíthetők.
