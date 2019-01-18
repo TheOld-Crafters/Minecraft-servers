@@ -3,110 +3,110 @@ Settings:
   Update-Checker: true #Toggle on and off if you get an update message when you join if there is a new update.
   Player-Info-Backup-Message: true #Toggle this on and off if you wish to see when the player's data gets backed up.
   Reset-Players-Max-Health: true #This is for some servers that get a health duplication glitch from plugins like CombatTagPlus(v1.2.3 down)
-  invName: '&4&l&nCrazy Enchanter' #The name of the /CE inventory
+  InvName: '&4&l&nCrazy Enchanter' #The name of the /CE inventory
   Enchantment-Book-Item: 'BOOK' #The item that the enchantment book is.
   Enchantment-Book-Glowing: true #Toggle on or off if the book will have an enchanted look.
   GUISize: 54 #The size of the GUI, must be a factor of 9
-  Enchant-Book-Lore: #The lore on the enchantments books.
-    - '&7Fogd meg a bűbájt, és dobd az eszközre.'
-    - '&7Jobb klikkelj további Infoért.'
+  EnchantmentBookLore: #The lore on the enchantments books.
+    - '&7Drag book and drop on Item.'
+    - '&7Right click for more Info.'
     - ''
     - '%Description%'
     - ''
-    - '&4%Destroy_Rate%% Pusztítás Esélye'
-    - '&a%Success_Rate%% Siker Esélye'
-  Elveszett Bűbáj: #Lost book options.
+    - '&4%Destroy_Rate%% Destroy Chance'
+    - '&a%Success_Rate%% Success Chance'
+  LostBook: #Lost book options.
     Item: 'BOOK' #The item the lost books is.
-    Name: '&8&l&nEgy Elveszett %Category%&8&l&n Bűbáj' #The name of the lost books.
+    Name: '&8&l&nA Lost %Category%&8&l&n Book' #The name of the lost books.
     Lore: #The lore of the lost books.
-      - '&7Ez a könyv szazadokkal ezelőtt elveszett'
-      - '&7 Ebből a következő bűbáj lehetséges %Category%'
-      - '&7De előtte le kell tisztogatnod, hogy megtudhasd mit is rejt.'
-      - '&7&l(&6&l!&7&l) &7Jobb klikkelj a tisztításhoz.'
-  Tülekedő:
+      - '&7This book has been lost for centuries'
+      - '&7It is said to be an enchantment book from %Category%'
+      - '&7But you must clean it off to find out what kind it is.'
+      - '&7&l(&6&l!&7&l) &7Right Click to clean off.'
+  Scrambler:
     Item: 'SUNFLOWER' #The item it will be.
     Glowing: true #If it has the glowing effect.
-    Name: '&e&lA Nagy Tülekedő' #The name of the item.
+    Name: '&e&lThe Grand Scrambler' #The name of the item.
     Lore: #The lore of the item.
-      - '&7A &e&lNagy Tülekedő &7lehetővé teszi'
-      - '&7hogy visszaállítsd a Siker és Pusztítás százalékos esélyeit.'
-      - '&7Fogd meg, és dobd a Bűbájra'
-      - '&7ahhoz, hogy kapj egy új Siker és Pusztítás rátát.'
+      - '&7The &e&lThe Grand Scrambler &7will allow'
+      - '&7you to re-roll the destroy and success rates.'
+      - '&7Drag and drop it on an enchantment book'
+      - '&7to get a new destroy and success rate.'
     GUI: #Options for the GUI.
-      Name: '&8Ugrás ehhez: &eTülekedő' #Name of the GUI.
+      Name: '&8Rolling the &eScrambler' #Name of the GUI.
       Toggle: true #If the GUI will show. Warning>> This may cause lag if a lot of players are using it all the time.
       Pointer: #The pointer in the middle of the GUI.
         Item: 'REDSTONE_TORCH' #The item the pointer is.
-        Név: '&c&lMutató' #The name of the pointer.
+        Name: '&c&lPointer' #The name of the pointer.
         Lore: #The lore on the pointer.
-          - '&7Amilyen százalékot kapsz'
-          - '&7olyan százalékon lesz a könyved.'
+          - '&7Whatever percents the item lands on'
+          - '&7will be the new percents on your book.'
     InGUI: false #If you can buy it in the GUI.
     Slot: 1 #The slot the item will be in.
-    GUIName: '&e&lA Nagy Tülekedő' #Name of the item in the GUI.
+    GUIName: '&e&lThe Grand Scrambler' #Name of the item in the GUI.
     GUILore: #The lore of the item in the GUI.
-      - '&7A &e&lNagy Tülekedő &7wlehetővé teszi'
-      - '&7hogy visszaállítsd a Siker és Pusztítás százalékos esélyeit.'
-      - '&7Fogd meg, és dobd a Bűbájra'
-      - '&7ahhoz, hogy kapj egy új Siker és Pusztítás rátát.'
+      - '&7The &e&lThe Grand Scrambler &7will allow'
+      - '&7you to re-roll the destroy and success rates.'
+      - '&7Drag and drop it on an enchantment book'
+      - '&7to get a new destroy and success rate.'
       - ''
-      - '&eÁra: &e&l$800'
-  Kitek: #GKitz GUI option.
+      - '&eCost: &e&l$800'
+  GKitz: #GKitz GUI option.
     InGUI: false #If you can open the GKitz GUI from the main /ce gui.
     Slot: 1 #The slot it will be in.
     Item: 'DIAMOND_CHESTPLATE' #The item it is.
     Glowing: true #If the item has a glowing effect.
-    Name: '&c&lKitek' #The name of the item.
+    Name: '&c&lGKitz' #The name of the item.
     Lore: #The lore of the item.
-      - '&b>>&7&nKattints a megynitáshoz&b<<'
-  Védő Kristály:
+      - '&b>>&7&nClick to open&b<<'
+  ProtectionCrystal:
     InGUI: false #If its in the GUI.
     Slot: 1 #Slot it is in
     Item: 'EMERALD' #Item it is
     Glowing: true #If it is enchanted
-    Protected: '&6Ősi Védelem' #The lore that goes on the item that is protected.
+    Protected: '&6Ancient Protection' #The lore that goes on the item that is protected.
     Lose-Protection-On-Death: true #If true then when the player dies they get the item but it loses its protection.
-    Chances: #The option to allow the protection to fail.
+    Chance: #The option to allow the protection to fail.
       Toggle: false #Toggle if the protection has a chance of failing.
       Success-Chance: 75 #The chance that the protection will work.
-    Name: '&5&lVédő &b&lKristályl' #Name of the item
+    Name: '&5&lProtection &b&lCrystal' #Name of the item
     Lore: #Lore of the item
-      - '&7Egy ritka krisztály, melyről azt beszélik'
-      - '&7megóvja eszközeidet attól, hogy elveszítsd őket'
-      - '&7mikor a tulajdonos áttért a túlvilágra.'
+      - '&7A rare crystal that is said to'
+      - '&7protect items from getting lost'
+      - '&7while the owners away in the after life.'
       - ''
-      - '&7&l(&6&l!&7&l) &7DFogd meg, és dobd az eszközre.'
-    GUIName: '&5&lVédő &b&lKristrály'
+      - '&7&l(&6&l!&7&l) &7Drag and drop on an item.'
+    GUIName: '&5&lProtection &b&lCrystal'
     GUILore:
-      - '&7Egy ritka krisztály, melyről azt beszélik'
-      - '&7megóvja eszközeidet attól, hogy elveszítsd őket'
-      - '&7mikor a tulajdonos áttért a túlvilágra.'
+      - '&7A rare crystal that is said to'
+      - '&7protect items from getting lost'
+      - '&7while the owners away in the after life.'
       - ''
-      - '&eÁra: &e&l$500'
-  Kovács: #Options for the Black Smith
+      - '&eCost: &e&l$500'
+  BlackSmith: #Options for the Black Smith
     InGUI: true #In the GUI.
     Slot: 24 #Slot it is in.
     Item: 'ANVIL' #Item that shows in the GUI
     Glowing: false #Is it enchanted
-    Name: '&7&lA &b&lKovács' #Name of the Item in the GUI
+    Name: '&7&lThe &b&lBlack &9&lSmith' #Name of the Item in the GUI
     Lore: #Lore on the item.
-      - '&b>>&7&nKattints a megnyitáshoz&b<<'
-    GUIName: '&8&lA Kovács' #Name of the Black Smith's GUI
+      - '&b>>&7&nClick to open&b<<'
+    GUIName: '&8&lThe Black Smith' #Name of the Black Smith's GUI
     Results:
-      None: '&c&lNincs Eredmény' #Name of the item when there are no results in the Black Smith
-      Nem Található Lore:
-        - '&7Eredmény nem található.'
-        - '&7Kérlek tegély 2 könyvet'
-        - '&7amely ugyanolyan szintű, és ugyanolyan Bűbáj van rajta.'
-        - '&7Vagy 2 targyat, melyet szeretnél kombinálni'
-        - '&7a Bűbájaikat.'
-      Find: '&c&eÁra: &6&l%Cost%XP' #The lore at the bottom of the item
+      None: '&c&lNo Results' #Name of the item when there are no results in the Black Smith
+      Not-Found-Lore:
+        - '&7No results could be found.'
+        - '&7Please put in two books of'
+        - '&7the same enchantment and level.'
+        - '&7Or put in two items to combined'
+        - '&7the enchantments on them.'
+      Found: '&c&lCost: &6&l%Cost%XP' #The lore at the bottom of the item
     Transaction: #Options for the pricing
-      Hozzáférés: XP_Level
+      Currency: XP_Level
       Costs: #Cost options
         Power-Up: 5 #When an enchantment levels up 1 on an item
-        Custom-Enchantments: 3 #When it adds an enchantment to the item from another item
-        Book-Upgrades: 5 #Leveling up the power of a book
+        Add-Enchantment: 3 #When it adds an enchantment to the item from another item
+        Book-Upgrade: 5 #Leveling up the power of a book
   Tinker: #Settings for Info item in the GUI
     InGUI: true #Toggle whether it is in the /CE GUI or not
     Slot: 22 #Slot it is in
@@ -114,23 +114,23 @@ Settings:
     Glowing: false #Whether it glows like its enchanted
     Name: '&7&lThe &b&lCrazy &9&lTinkerer' #Name of the Item
     Lore: #Lore of the item
-      - '&b>>&7&nKattints a megnyitáshoz&b<<'
+      - '&b>>&7&nClick to open&b<<'
   Info: #Settings for Info item in the GUI
     InGUI: true #Toggle whether it is in the /CE GUI or not
     Slot: 23 #Slot it is in
     Item: 'COMPASS' #Item it is
     Glowing: true #Whether it glows like its enchanted
-    Name: '&eInfo a Bűbájon' #Name of the Item
+    Name: '&eInfo on the Enchantments' #Name of the Item
     Lore: #Lore of the item
       - '&b>>&7&nClick to view&b<<'
   Dust: #Settings for the Magical Dust
-    Misztikus Por:
+    MysteryDust:
       Item: 'GUNPOWDER' #Item mystery dust is
       Name: '&7Mystery Dust' #Name of the dust
       Lore: #Use %Percent% to set the percent
-        - '&a1-%Percent%% &7lehet az'
-        - '&aMágikus Angyal Poron &7vagy &eMágikus Javító Poron'
-        - '&7&l(&6&l!&7&l) &7Jobb klikkel'
+        - '&a1-%Percent%% &7will be on a'
+        - '&aMagical AngelDust &7or &eMagical Fixing &7Dust'
+        - '&7&l(&6&l!&7&l) &7Right click'
       Firework:
         Toggle: true #Toggle if the firework happens on open.
         Colors: 'Black, Gray, Lime' #The colors the firework will be.
@@ -138,106 +138,106 @@ Settings:
         Success: true #Toggle whether you can get success dust from Mystery Dust.
         Destroy: true #Toggle whether you can get destroy dust from Mystery Dust.
         Failed: true #Toggle whether you can get failed dust from Mystery Dust.
-      Maximum Százalék: #Range the mystery rate will be.
+      PercentRange: #Range the mystery rate will be.
         Max: 30 #Max percent
         #Min will always be 1.
-    Siker Por:
+    SuccessDust:
       InGUI: true #If you can buy it in the /CE GUI
       GUIName: '&aMagical Angel Dust' #Name of the item in the GUI
       GUILore: #Lore in the GUI.
-        - '&eÁra: &a&l$500'
-        - '&7A Porok lehetővé teszik, hogy'
-        - '&7feljebb vidd a &aSiker Rátát7.'
+        - '&eCost: &a&l$500'
+        - '&7Dust allows you to bring'
+        - '&7up your &aSuccess Rate&7.'
       Slot: 25 #Slot number it is on
       Item: 'SUGAR' #Item the dust is
-      Name: '&aMágikus Angyal Por' #Name of the dust
+      Name: '&aMagical Angel Dust' #Name of the dust
       Lore: #Lore for the dust
-        - '&a+%Percent%% Siker ráta'
-        - '&7lesz a bűbájon, amely'
-        - '&7amely növelhető ennyivel: &e%Percent%%'
-      Maximum Százalék: #Range the success rate will be.
+        - '&a+%Percent%% Success Rate'
+        - '&7Apply to an Enchantment Book to'
+        - '&7Increase the Success Rate by &e%Percent%%'
+      PercentRange: #Range the success rate will be.
         Max: 30 #Max percent
         Min: 2 #Minimum percent
-    Pusztító Por:
+    DestroyDust:
       InGUI: true #If you can buy it in the /CE GUI
       GUIName: '&eMagical Fixing Dust' #Name of the item in the GUI
       GUILore: #Lore in the GUI.
-        - '&eÁra: &a&l$500'
-        - '&7A Por lehetőve teszi,'
-        - '&7hogy lejebb vidd a &4Pusztulási Rátát&7.'
+        - '&eCost: &a&l$500'
+        - '&7Dust allows you to bring'
+        - '&7down your &4Destroy Rate&7.'
       Slot: 34 #Slot number it is on
       Item: 'REDSTONE' #Item the dust is
-      Name: '&eMágikus Javító Por' #Name of the dust
+      Name: '&eMagical Fixing Dust' #Name of the dust
       Lore: #Lore for the dust
-        - '&c-%Percent%% Pusztulási Ráta'
-        - '&7használható egy Bűbájon'
-        - '&7Ennyivel csökkenti a pusztulási rátát &e%Percent%%'
+        - '&c-%Percent%% Destroy Rate'
+        - '&7Apply to an Enchantment Book to'
+        - '&7Decrease the Destroy Rate by &e%Percent%%'
       PercentRange: #Range the destroy rate will be.
         Max: 10 #Max percent
         Min: 2 #Minimum percent
-    Sikertelen Por:
+    FailedDust:
       Item: 'GUNPOWDER' #Item the dust is
-      Name: '&7Sikertelen Por' #Name of the dust
+      Name: '&7Failed Dust' #Name of the dust
       Lore: #Lore for the dust
-        - '&7Ez a por  nem sikerült.'
-        - '&7Így haszontalan számodra'
-        - '&7TNT-hez, vagy eldobható bájitalhoz még jó lehet!.'
-  Sötét Tekercs: #Settings for the black scrolls
+        - '&7This dust has failed.'
+        - '&7It is now useless unless you'
+        - '&7needed to make TNT or a throwable potion.'
+  BlackScroll: #Settings for the black scrolls
     Item: 'INK_SAC' #The item the black scroll can be
-    Name: '&8&l&nSötét tekercs' #The name of the black scroll
+    Name: '&8&l&nBlack Scroll' #The name of the black scroll
     Item-Lore: #The lore that will be on the black scroll.
-      - '&7Van egy egyedi bűbájod amit nem szeretnél?'
-      - '&7Fogd meg, és dobd a bűbájra a Tekercset'
-      - '&7ami eltüntet egy véletlenszerű bűbájt az eszközről.'
-      - '&7&l(&6&l!&7&l) &7Csak Egyedi Bűbájokon működik.'
+      - '&7Have a custom enchantment you don''t want?'
+      - '&7Drag and drop this on an item with a custom enchantment'
+      - '&7and it will remove a random enchantment for you.'
+      - '&7&l(&6&l!&7&l) &7Only works on Custom Enchantments.'
     Chance-Toggle: false #Toggle on and off if the black scrolls have a chance of failing.
     Chance: 75 #The chance that the black scroll will work.
     InGUI: true #Toggle being able to buy in the /CE GUI. Cost is controlled in the SignOptions section
-    GUIName: '&7Sötét Tekerfcs'
+    GUIName: '&7Black Scroll'
     Glowing: false #If the item is glowing.
     Slot: 21 #Slot you can buy the scroll at
     Lore: #Lore of the item in the GUI
-      - '&eÁra: &a&l$1000'
-      - '&7A Sötét Tekercs lehetővé teszi'
-      - '&7Eltávolít egy véletlenszerű bűbájt.'
-    Siker Esélye: #Controls what the success chance will be when they get the book from the Black Scroll
+      - '&eCost: &a&l$1000'
+      - '&7Black Scrolls allow you to'
+      - '&7take off random enchantments.'
+    SuccessChance: #Controls what the success chance will be when they get the book from the Black Scroll
       Max: 75 #The Max percent
       Min: 35 #The Minimum percent
-    Pusztitás Esély: #Controls what the destroy chance will be when they get the book from the Black Scroll
+    DestroyChance: #Controls what the destroy chance will be when they get the book from the Black Scroll
       Max: 25 #The Max percent
       Min: 5 #The Minimum percent
-  Fehér Tekercs:
+  WhiteScroll:
     Item: 'PAPER' #The item the white scroll is.
     Name: '&e&lWhite Scroll' #The name of the white scrolls.
     Item-Lore: #The lore that will be on the white scroll.
-      - '&7Szeretnél egy eszközt megóvni az elpusztulástól?'
-      - '&7Fogd meg, és dobd rá egy bűvölhető Itemra'
-      - '&7és ez megóvja azt, a pusztulási rátától.'
+      - '&7Want to protect an item from a book''s destroy rate?'
+      - '&7Drag and drop this on an enchant-able item'
+      - '&7and it will protect the item from the destroy rate.'
     InGUI: true #Toggle being able to buy in the /CE GUI. Cost is controlled in the SignOptions section
-    GUIName: '&7Fehér Tekercs'
+    GUIName: '&7White Scroll'
     Glowing: false #If the item is glowing.
     Slot: 30 #Slot you can buy the scroll at
     Lore: #Lore of the scroll in the GUI
-      - '&eÁra: &a&l$2000'
-      - '&7Fehér Porok lehetőve teszik'
-      - '&7hogy megóvj egy Itemat az eltöréstől.'
+      - '&eCost: &a&l$2000'
+      - '&7White Scrolls allow you to'
+      - '&7protect items from breaking.'
     ProtectedName: '&b&lPROTECTED' #The lore that is added to protect an item.
-  Átalakító Tekercs:
+  TransmogScroll:
     Item: 'QUARTZ' #The item the scroll is.
-    Name: '&d&lÁtalakító Tekercs' #The name of the scroll.
+    Name: '&d&lTransmog Scroll' #The name of the scroll.
     Item-Lore: #The lore that will be on the scroll.
-      - '&7Ez a Tekercs lehetővé teszi, hogy'
-      - '&7rendezd a bűbájaidat, és elmondja mennyi'
-      - '&7bűbáj van jelenleg az eszközödön.'
+      - '&7This scroll allows you to organize'
+      - '&7your enchantments and tell you how many'
+      - '&7enchantments you currently have on the item.'
     InGUI: false #Toggle being able to buy in the /CE GUI. Cost is controlled in the SignOptions section
-    GUIName: '&dÁtalakító Tekercs'
+    GUIName: '&dTransmog Scroll'
     Glowing: false #If the item is glowing.
     Slot: 30 #Slot you can buy the scroll at
     Lore: #Lore of the scroll in the GUI
-      - '&eÁra: &a&l$200'
-      - '&7Ez a Tekercs lehetővé teszi, hogy'
-      - '&7rendezd a bűbájaidat, és elmondja mennyi'
-      - '&7bűbáj van jelenleg az eszközödön.'
+      - '&eCost: &a&l$200'
+      - '&7This scroll allows you to organize'
+      - '&7your enchantments and tell you how many'
+      - '&7enchantments you currently have on the item.'
     Amount-of-Enchantments: ' &7[&6&n%Amount%&7]' #The suffix that will be added at the end of the item's name.
     Amount-Toggle: true #If the amount is added to the suffix of the item's name.
     Count-Vanilla-Enchantments: true #If it counts the vanilla enchantments in the amount.
@@ -255,7 +255,7 @@ Settings:
     Armor-Upgrade: #Having this enabled will allow players to try and add a higher level of an enchantment onto an item with a lower level of the enchantment.
       Toggle: true #Toggle on or off the ability to upgrade the enchantments.
       Enchantment-Break: true #If the book's destroy rate happens the item doesn't break but instead the current lower version of the enchantment is destroyed. If false then the item will be destroyed instead.
-    Szárnyak: #Options for the Wings Enchantment.
+    Wings: #Options for the Wings Enchantment.
       Clouds: true #Toggle if the wings enchantment shows particles under the player's feet. Warning this option has been known to cause lag so toggle it off if you get lag.
       Enemy-Toggle: true #This toggles on and off the wings enchantment when an enemy is # away from the player.
       Distance: 25 #How far away the enemy has to be to toggle off the enchantment.
@@ -269,77 +269,77 @@ Settings:
           - 'Hub_Example'
         Blacklisted: #Wings will not work at all in these worlds regardless of regions.
           - 'SkyBlock_Example'
-  Árak: #This is where you set the cost of stuff in the shop GUI. https://github.com/kicjow/Crazy-Enchantments/wiki/Currency-Types
-    Tülekedő: #The item that is being bought.
-      Ára: 800 #How much the item will cost.
+  Costs: #This is where you set the cost of stuff in the shop GUI. https://github.com/kicjow/Crazy-Enchantments/wiki/Currency-Types
+    Scrambler: #The item that is being bought.
+      Cost: 800 #How much the item will cost.
       Currency: Vault #The currency that will be taken when bought.
-    Vádő Kristály:
-      Ára: 500
+    ProtectionCrystal:
+      Cost: 500
       Currency: Vault
-    Átalakító Tekercs:
-      Ára: 200
+    TransmogScroll:
+      Cost: 200
       Currency: Vault
-    Sötét Tekercs:
-      Ára: 1000
+    BlackScroll:
+      Cost: 1000
       Currency: Vault
-    Fehér Tekercs:
-      Ára: 2000
+    WhiteScroll:
+      Cost: 2000
       Currency: Vault
-    Siker Por:
-      Ára: 500
+    SuccessDust:
+      Cost: 500
       Currency: Vault
-    Pusztító Por:
-      Ára: 500
+    DestroyDust:
+      Cost: 500
       Currency: Vault
   SignOptions: #Options for the Signs.
     CategoryShopStyle: #What the sign will look like. The price will be determined by the category you pick
       Line1: '&b&lCrazy Enchant' #Line 1 of the sign
-      Line2: '&b&lBolt:' #Line 2 of the sign
+      Line2: '&b&lShop:' #Line 2 of the sign
       Line3: '&2&l%Category%' #Line 3 of the sign
-      Line4: '&c&lÁra: &6&l%Cost%XP' #Line 4 of the sign
-      Buy-Message: '&7Sikeresen megvetted a következő Bűbájt: %BookName%&7 innen: %Category%&7 tier.'
+      Line4: '&c&lCost: &6&l%Cost%XP' #Line 4 of the sign
+      Buy-Message: '&7You have just bought an enchantment book, and it is %BookName%&7 from the %Category%&7 tier.'
     ProtectionCrystalStyle:
       Line1: '&b&lCrazy Enchant'
-      Line2: '&b&lBolt:'
-      Line3: '&5&lVédő &b&lKristály'
-      Line4: '&c&lÁra: &a&l$500'
-      Buy-Message: '&7Sikeresen megvettél egy &5&lVédő &b&lKristályt.' #Message when buying an item.
+      Line2: '&b&lShop:'
+      Line3: '&5&lProtection &b&lCrystal'
+      Line4: '&c&lCost: &a&l$500'
+      Buy-Message: '&7You have just bought a &5&lProtection &b&lCrystal.' #Message when buying an item.
     ScramblerStyle:
       Line1: '&b&lCrazy Enchant'
-      Line2: '&b&lBolt:'
-      Line3: '&e&lTülekedő'
-      Line4: '&c&lÁra: &a&l$800'
-      Buy-Message: '&7Sikeresen megvettél egy &e&lNagy Tülekedőt&7.' #Message when buying an item.
+      Line2: '&b&lShop:'
+      Line3: '&e&lScrambler'
+      Line4: '&c&lCost: &a&l$800'
+      Buy-Message: '&7You have just bought a &e&lThe Grand Scrambler&7.' #Message when buying an item.
     SuccessDustStyle:
       Line1: '&b&lCrazy Enchant'
-      Line2: '&b&lBolt:'
-      Line3: '&e&lVarázslatos Angyal Por'
-      Line4: '&c&lÁra: &a&l$500'
-      Buy-Message: '&7Sikeresen megvettél egy &aMágikus Angyal Port&7.'
+      Line2: '&b&lShop:'
+      Line3: '&e&lMagical Angel Dust'
+      Line4: '&c&lCost: &a&l$500'
+      Buy-Message: '&7You have just bought a &aMagical Angel Dust&7.'
     DestroyDustStyle:
       Line1: '&b&lCrazy Enchant'
-      Line2: '&b&lBolt:'
-      Line3: '&e&lMágikus Javító Por'
-      Line4: '&c&lÁra: &a&l$500'
-      Buy-Message: '&7Sikeresen megvettél egy &eMágikus Javító Port&7.'
+      Line2: '&b&lShop:'
+      Line3: '&e&lMagical Fixing Dust'
+      Line4: '&c&lCost: &a&l$500'
+      Buy-Message: '&7You have just bought a &eMagical Fixing Dust&7.'
     BlackScrollStyle:
       Line1: '&b&lCrazy Enchant'
-      Line2: '&b&lBolt:'
-      Line3: '&4&lSötét &8&lTekercs'
-      Line4: '&c&lÁra: &a&l$1000'
-      Buy-Message: '&7Sikeresen megvettél egy &8&l&nSötét Tekercset&7.'
+      Line2: '&b&lShop:'
+      Line3: '&4&lBlack &8&lScrolls'
+      Line4: '&c&lCost: &a&l$1000'
+      Buy-Message: '&7You have just bought a &8&l&nBlack Scroll&7.'
     WhiteScrollStyle:
       Line1: '&b&lCrazy Enchant'
-      Line2: '&b&lBolt:'
-      Line3: '&f&lfehér &b&lTekercs'
-      Line4: '&c&lÁra: &a&l$2000'
-      Buy-Message: '&7SIkeresen megvettél egy &e&lfehér Tekercset&7.'
+      Line2: '&b&lShop:'
+      Line3: '&f&lWhite &b&lScrolls'
+      Line4: '&c&lCost: &a&l$2000'
+      Buy-Message: '&7You have just bought a &e&lWhite Scroll&7.'
     TransmogScrollStyle:
       Line1: '&b&lCrazy Enchant'
-      Line2: '&b&lBolt:'
-      Line3: '&d&lÁtalakító &b&lTekercs'
-      Line4: '&c&lÁra: &a&l$200'
-      Buy-Message: '&7Sikeresen megvettél egy &d&lÁtalakító Tekercset&7.'
+      Line2: '&b&lShop:'
+      Line3: '&d&lTransmog &b&lScrolls'
+      Line4: '&c&lCost: &a&l$200'
+      Buy-Message: '&7You have just bought a &d&lTransmog Scroll&7.'
   #####################
   # Slot:<Slot> - The slot the item will go in.
   # Item:<Item Name> - The item that it will be. You can use meta data for the items. List of names: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
@@ -395,11 +395,11 @@ Settings:
     - 'Slot:44, Item:WHITE_STAINED_GLASS_PANE, Name: '
 Categories: #You can make as many different categories as you want
   Common: #Name of the category
-    Name: '&a&l&nGyakori' #Name in the GUI
+    Name: '&a&l&nCommon' #Name in the GUI
     Slot: 31 #The Slot number the item will be in
     InGUI: true #Toggle if it's in the GUI or not.
     Lore: #The lore of the Item
-      - '&eÁra: &6&l20 &6XP Levels'
+      - '&eCost: &6&l20 &6XP Levels'
     Item: 'LIME_STAINED_GLASS_PANE' #The id for the item
     Glowing: true #If the item is glowing in the GUI.
     Cost: 20 #How much each book will cost to buy.
@@ -410,14 +410,14 @@ Categories: #You can make as many different categories as you want
       Slot: 1 #Slot it will be in
       Item: 'BOOK' #The item that is shown in the GUI
       Glowing: false #Is it enchanted
-      Name: '&8&l&nElveszett&c&l Tier1 &8&l&nKönyvek' #Name of the item
+      Name: '&8&l&nLost&c&l Tier1 &8&l&nBooks' #Name of the item
       Lore: #Lore on the item
-        - '&7Ezek az elveszet könyvek'
-        - '&7Melyekről azt beszélik &c&lTier1 &7Bűbájok lehetnek.'
-        - '&7De eddig senki sem próbálta megtsiztítani a könyveket.'
-        - '&7Talán te leszel az, aki ezt megteszi?'
+        - '&7These are lost books that are'
+        - '&7Said to be &c&lTier1 &7Enchantment books.'
+        - '&7But no one has tried to clean the books yet.'
+        - '&7Will you be the one to clean the books?'
         - ''
-        - '&c&lÁra: &6&l$1000'
+        - '&c&lCost: &6&l$1000'
       Cost: 1000
       Currency: Vault
       FireworkToggle: true #Toggle on and off if when opening a lost book a firework effect happens
@@ -456,12 +456,12 @@ Categories: #You can make as many different categories as you want
       Glowing: false
       Name: '&8&l&nLost&c&l Tier2 &8&l&nBooks'
       Lore:
-        - '&7Ezek az elveszett könyvek'
-        - '&7Melyekről azt beszélik &c&lTier2 &7Bűbájok lehetnek.'
-        - '&7De eddig senki sem próbálta megtisztítani a könyveket.'
-        - '&7Talán te leszel az, aki ezt megteszi?'
+        - '&7These are lost books that are'
+        - '&7Said to be &c&lTier2 &7Enchantment books.'
+        - '&7But no one has tried to clean the books yet.'
+        - '&7Will you be the one to clean the books?'
         - ''
-        - '&c&lÁra: &6&l$2000'
+        - '&c&lCost: &6&l$2000'
       Cost: 2000
       Currency: Vault
       FireworkToggle: true
@@ -497,12 +497,12 @@ Categories: #You can make as many different categories as you want
       Glowing: false
       Name: '&8&l&nLost&c&l Tier3 &8&l&nBooks'
       Lore:
-        - '&7Ezek az elveszett könyvek'
-        - '&7Melyekről azt beszélik &c&lTier3 &7Bűbájok lehetnek.'
-        - '&7De eddig senki sem próbálta megtisztítani a könyveket.'
-        - '&7Talán te leszel az, aki ezt megteszi?'
+        - '&7These are lost books that are'
+        - '&7Said to be &c&lTier3 &7Enchantment books.'
+        - '&7But no one has tried to clean the books yet.'
+        - '&7Will you be the one to clean the books?'
         - ''
-        - '&c&lÁra: &6&l$3000'
+        - '&c&lCost: &6&l$3000'
       Cost: 3000
       Currency: Vault
       FireworkToggle: true
