@@ -1,13 +1,13 @@
 Settings:
   Prefix: '&8[&aCrazyEnchants&8]: ' #The prefix in the messages
-  Update-Checker: true #Toggle on and off if you get an update message when you join if there is a new update.
+  Update-Checker: false #Toggle on and off if you get an update message when you join if there is a new update.
   Player-Info-Backup-Message: true #Toggle this on and off if you wish to see when the player's data gets backed up.
   Reset-Players-Max-Health: true #This is for some servers that get a health duplication glitch from plugins like CombatTagPlus(v1.2.3 down)
-  invName: '&4&l&nCrazy Enchanter' #The name of the /CE inventory
+  InvName: '&4&l&nCrazy Enchanter' #The name of the /CE inventory
   Enchantment-Book-Item: 'BOOK' #The item that the enchantment book is.
   Enchantment-Book-Glowing: true #Toggle on or off if the book will have an enchanted look.
   GUISize: 54 #The size of the GUI, must be a factor of 9
-  Enchant-Book-Lore: #The lore on the enchantments books.
+  EnchantmentBookLore: #The lore on the enchantments books.
     - '&7Fogd meg a bűbájt, és dobd az eszközre.'
     - '&7Jobb klikkelj további Infoért.'
     - ''
@@ -15,7 +15,7 @@ Settings:
     - ''
     - '&4%Destroy_Rate%% Pusztítás Esélye'
     - '&a%Success_Rate%% Siker Esélye'
-  Elveszett Bűbáj: #Lost book options.
+  LostBook: #Lost book options.
     Item: 'BOOK' #The item the lost books is.
     Name: '&8&l&nEgy Elveszett %Category%&8&l&n Bűbáj' #The name of the lost books.
     Lore: #The lore of the lost books.
@@ -23,7 +23,7 @@ Settings:
       - '&7 Ebből a következő bűbáj lehetséges %Category%'
       - '&7De előtte le kell tisztogatnod, hogy megtudhasd mit is rejt.'
       - '&7&l(&6&l!&7&l) &7Jobb klikkelj a tisztításhoz.'
-  Tülekedő:
+  Scrambler:
     Item: 'SUNFLOWER' #The item it will be.
     Glowing: true #If it has the glowing effect.
     Name: '&e&lA Nagy Tülekedő' #The name of the item.
@@ -37,7 +37,7 @@ Settings:
       Toggle: true #If the GUI will show. Warning>> This may cause lag if a lot of players are using it all the time.
       Pointer: #The pointer in the middle of the GUI.
         Item: 'REDSTONE_TORCH' #The item the pointer is.
-        Név: '&c&lMutató' #The name of the pointer.
+        Name: '&c&lMutató' #The name of the pointer.
         Lore: #The lore on the pointer.
           - '&7Amilyen százalékot kapsz'
           - '&7olyan százalékon lesz a könyved.'
@@ -51,7 +51,7 @@ Settings:
       - '&7ahhoz, hogy kapj egy új Siker és Pusztítás rátát.'
       - ''
       - '&eÁra: &e&l$800'
-  Kitek: #GKitz GUI option.
+  GKitz: #GKitz GUI option.
     InGUI: false #If you can open the GKitz GUI from the main /ce gui.
     Slot: 1 #The slot it will be in.
     Item: 'DIAMOND_CHESTPLATE' #The item it is.
@@ -59,14 +59,14 @@ Settings:
     Name: '&c&lKitek' #The name of the item.
     Lore: #The lore of the item.
       - '&b>>&7&nKattints a megynitáshoz&b<<'
-  Védő Kristály:
+  ProtectionCrystal:
     InGUI: false #If its in the GUI.
     Slot: 1 #Slot it is in
     Item: 'EMERALD' #Item it is
     Glowing: true #If it is enchanted
     Protected: '&6Ősi Védelem' #The lore that goes on the item that is protected.
     Lose-Protection-On-Death: true #If true then when the player dies they get the item but it loses its protection.
-    Chances: #The option to allow the protection to fail.
+    Chance: #The option to allow the protection to fail.
       Toggle: false #Toggle if the protection has a chance of failing.
       Success-Chance: 75 #The chance that the protection will work.
     Name: '&5&lVédő &b&lKristályl' #Name of the item
@@ -83,7 +83,7 @@ Settings:
       - '&7mikor a tulajdonos áttért a túlvilágra.'
       - ''
       - '&eÁra: &e&l$500'
-  Kovács: #Options for the Black Smith
+  BlackSmith: #Options for the Black Smith
     InGUI: true #In the GUI.
     Slot: 24 #Slot it is in.
     Item: 'ANVIL' #Item that shows in the GUI
@@ -94,18 +94,18 @@ Settings:
     GUIName: '&8&lA Kovács' #Name of the Black Smith's GUI
     Results:
       None: '&c&lNincs Eredmény' #Name of the item when there are no results in the Black Smith
-      Nem Található Lore:
+      Not-Found-Lore:
         - '&7Eredmény nem található.'
         - '&7Kérlek tegély 2 könyvet'
         - '&7amely ugyanolyan szintű, és ugyanolyan Bűbáj van rajta.'
         - '&7Vagy 2 targyat, melyet szeretnél kombinálni'
         - '&7a Bűbájaikat.'
-      Find: '&c&eÁra: &6&l%Cost%XP' #The lore at the bottom of the item
+      Found: '&c&eÁra: &6&l%Cost%XP' #The lore at the bottom of the item
     Transaction: #Options for the pricing
-      Hozzáférés: XP_Level
+      Currency: XP_Level
       Costs: #Cost options
         Power-Up: 5 #When an enchantment levels up 1 on an item
-        Custom-Enchantments: 3 #When it adds an enchantment to the item from another item
+        Add-Enchantment: 3 #When it adds an enchantment to the item from another item
         Book-Upgrades: 5 #Leveling up the power of a book
   Tinker: #Settings for Info item in the GUI
     InGUI: true #Toggle whether it is in the /CE GUI or not
@@ -124,7 +124,7 @@ Settings:
     Lore: #Lore of the item
       - '&b>>&7&nClick to view&b<<'
   Dust: #Settings for the Magical Dust
-    Misztikus Por:
+    MysteryDust:
       Item: 'GUNPOWDER' #Item mystery dust is
       Name: '&7Mystery Dust' #Name of the dust
       Lore: #Use %Percent% to set the percent
@@ -138,10 +138,10 @@ Settings:
         Success: true #Toggle whether you can get success dust from Mystery Dust.
         Destroy: true #Toggle whether you can get destroy dust from Mystery Dust.
         Failed: true #Toggle whether you can get failed dust from Mystery Dust.
-      Maximum Százalék: #Range the mystery rate will be.
+      PercentRange: #Range the mystery rate will be.
         Max: 30 #Max percent
         #Min will always be 1.
-    Siker Por:
+    SuccessDust:
       InGUI: true #If you can buy it in the /CE GUI
       GUIName: '&aMagical Angel Dust' #Name of the item in the GUI
       GUILore: #Lore in the GUI.
@@ -155,10 +155,10 @@ Settings:
         - '&a+%Percent%% Siker ráta'
         - '&7lesz a bűbájon, amely'
         - '&7amely növelhető ennyivel: &e%Percent%%'
-      Maximum Százalék: #Range the success rate will be.
+      PercentRange: #Range the success rate will be.
         Max: 30 #Max percent
         Min: 2 #Minimum percent
-    Pusztító Por:
+    DestroyDust:
       InGUI: true #If you can buy it in the /CE GUI
       GUIName: '&eMagical Fixing Dust' #Name of the item in the GUI
       GUILore: #Lore in the GUI.
@@ -175,14 +175,14 @@ Settings:
       PercentRange: #Range the destroy rate will be.
         Max: 10 #Max percent
         Min: 2 #Minimum percent
-    Sikertelen Por:
+    FailedDust:
       Item: 'GUNPOWDER' #Item the dust is
       Name: '&7Sikertelen Por' #Name of the dust
       Lore: #Lore for the dust
         - '&7Ez a por  nem sikerült.'
         - '&7Így haszontalan számodra'
         - '&7TNT-hez, vagy eldobható bájitalhoz még jó lehet!.'
-  Sötét Tekercs: #Settings for the black scrolls
+  BlackScroll: #Settings for the black scrolls
     Item: 'INK_SAC' #The item the black scroll can be
     Name: '&8&l&nSötét tekercs' #The name of the black scroll
     Item-Lore: #The lore that will be on the black scroll.
@@ -200,13 +200,13 @@ Settings:
       - '&eÁra: &a&l$1000'
       - '&7A Sötét Tekercs lehetővé teszi'
       - '&7Eltávolít egy véletlenszerű bűbájt.'
-    Siker Esélye: #Controls what the success chance will be when they get the book from the Black Scroll
+    SuccessChance: #Controls what the success chance will be when they get the book from the Black Scroll
       Max: 75 #The Max percent
       Min: 35 #The Minimum percent
-    Pusztitás Esély: #Controls what the destroy chance will be when they get the book from the Black Scroll
+    DestroyChance: #Controls what the destroy chance will be when they get the book from the Black Scroll
       Max: 25 #The Max percent
       Min: 5 #The Minimum percent
-  Fehér Tekercs:
+  WhiteScroll:
     Item: 'PAPER' #The item the white scroll is.
     Name: '&e&lWhite Scroll' #The name of the white scrolls.
     Item-Lore: #The lore that will be on the white scroll.
@@ -222,7 +222,7 @@ Settings:
       - '&7Fehér Porok lehetőve teszik'
       - '&7hogy megóvj egy Itemat az eltöréstől.'
     ProtectedName: '&b&lPROTECTED' #The lore that is added to protect an item.
-  Átalakító Tekercs:
+  TransmogScroll:
     Item: 'QUARTZ' #The item the scroll is.
     Name: '&d&lÁtalakító Tekercs' #The name of the scroll.
     Item-Lore: #The lore that will be on the scroll.
@@ -255,7 +255,7 @@ Settings:
     Armor-Upgrade: #Having this enabled will allow players to try and add a higher level of an enchantment onto an item with a lower level of the enchantment.
       Toggle: true #Toggle on or off the ability to upgrade the enchantments.
       Enchantment-Break: true #If the book's destroy rate happens the item doesn't break but instead the current lower version of the enchantment is destroyed. If false then the item will be destroyed instead.
-    Szárnyak: #Options for the Wings Enchantment.
+    Wings: #Options for the Wings Enchantment.
       Clouds: true #Toggle if the wings enchantment shows particles under the player's feet. Warning this option has been known to cause lag so toggle it off if you get lag.
       Enemy-Toggle: true #This toggles on and off the wings enchantment when an enemy is # away from the player.
       Distance: 25 #How far away the enemy has to be to toggle off the enchantment.
@@ -269,26 +269,26 @@ Settings:
           - 'Hub_Example'
         Blacklisted: #Wings will not work at all in these worlds regardless of regions.
           - 'SkyBlock_Example'
-  Árak: #This is where you set the cost of stuff in the shop GUI. https://github.com/kicjow/Crazy-Enchantments/wiki/Currency-Types
+  Costs: #This is where you set the cost of stuff in the shop GUI. https://github.com/kicjow/Crazy-Enchantments/wiki/Currency-Types
     Tülekedő: #The item that is being bought.
       Ára: 800 #How much the item will cost.
       Currency: Vault #The currency that will be taken when bought.
-    Vádő Kristály:
+    ProtectionCrystal:
       Ára: 500
       Currency: Vault
-    Átalakító Tekercs:
+    TransmogScroll:
       Ára: 200
       Currency: Vault
-    Sötét Tekercs:
+    BlackScroll:
       Ára: 1000
       Currency: Vault
-    Fehér Tekercs:
+    WhiteScroll:
       Ára: 2000
       Currency: Vault
-    Siker Por:
+    SuccessDust:
       Ára: 500
       Currency: Vault
-    Pusztító Por:
+    DestroyDust:
       Ára: 500
       Currency: Vault
   SignOptions: #Options for the Signs.
