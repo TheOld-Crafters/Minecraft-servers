@@ -45,7 +45,7 @@ landlord:
   - "    hover: %lang:action|Regions of %landlord%|%"
   - "    command: /areashop info player %landlord%"
 
-total-maximum: "Nem bérelhetsz vagy vásárolhatsz %0% területnál többet (Neked már van %1% in group '%2%')."
+total-maximum: "Nem bérelhetsz vagy vásárolhatsz %0% területnél többet (Neked már van %1% in group '%2%')."
 
 confirm-yes: " [gray]Kattins a %lang:command|Confirm|%0%|%[gray], vagy ismételd meg a parancsot"
 
