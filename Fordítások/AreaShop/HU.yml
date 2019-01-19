@@ -98,7 +98,7 @@ help-resell: "%lang:helpCommand|/as resell|% Tedd a területet újra eladás mó
 help-stopResell: "%lang:helpCommand|/as stopresell|% Tedd vissza a területet értékesített módba."
 help-addFriend: "%lang:helpCommand|/as addfriend|% Barát hozzáadása a területhez"
 help-delFriend: "%lang:helpCommand|/as delfriend|% Barát törlése a területről"
-help-linksigns: "%lang:helpCommand|/as linksigns|% Használj tábla összeköttetés módot" /* Valamilyen összekapcsolási mód */ 
+help-linksigns: "%lang:helpCommand|/as linksigns|% Használj tábla összeköttetés módot"
 help-stack: "%lang:helpCommand|/as stack|% Készíts több területet és vond össze őket."
 help-setlandlord: "%lang:helpCommand|/as setlandlord|% Földbirtokos beállítása. "
 help-import: "%lang:helpCommand|/as import|% Importálj területet a  RegionForSale-ből."
