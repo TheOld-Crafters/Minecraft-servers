@@ -45,14 +45,14 @@ landlord:
   - "    hover: %lang:action|Regions of %landlord%|%"
   - "    command: /areashop info player %landlord%"
 
-total-maximum: "Nem bérelhetsz vagy vásárolhatsz %0% területnél többet (Neked már van %1% in group '%2%')."
+total-maximum: "Nem bérelhetsz vagy vásárolhatsz %0% területnél többet (Neked már van %1% a '%2%' csoportban)."
 
 confirm-yes: " [gray]Kattins a %lang:command|Confirm|%0%|%[gray], vagy ismételd meg a parancsot"
 
 general-notReady: "Az AreaShop még nem töltött be, kérlek várj."
-general-noWorld: "Ezt nem teheted meg, A %lang:region% világa jelenleg nem elérhető  (world '%world%')."
-general-noRegion: "Ezt nem teheted meg, a WorldGuard régió jelenleg nem elérhető (region %lang:region%)."
-general-noEconomy: "Nincs Economy plugin installálva vagy nincs helyesen beállítva , értesítsd a szervertulajt erről."
+general-noWorld: "Ezt nem teheted meg, A %lang:region% világa jelenleg nem elérhető  (világ: '%world%')."
+general-noRegion: "Ezt nem teheted meg, a WorldGuard régió jelenleg nem elérhető (terület: %lang:region%)."
+general-noEconomy: "Nincs Economy plugin installálva vagy nincs helyesen beállítva , értesítsd a szerver tulajdonosát erről."
 general-cancelled: "%0%"
 
 cmd-notValid: "Helytelen parancs, használd a '/as help'-et a további információkért."
