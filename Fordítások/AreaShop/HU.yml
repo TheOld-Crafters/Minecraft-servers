@@ -217,7 +217,7 @@ info-regionHeaderBuy: "[darkgreen]További információ %lang:region%-ról/ről:
 info-regionFooterRent: ""
 info-regionFooterBuy: ""
 info-regionRented: "[darkgreen][bold]►[reset] Kibérelve %lang:player% által, [gray]%until%-ig."
-info-regionBought: "[darkgreen][bold]►[reset] Megvásárolva %lang:player% űltal."
+info-regionBought: "[darkgreen][bold]►[reset] Megvásárolva %lang:player% által."
 info-regionReselling: "[darkgreen][bold]►[reset] Megvásárolta %lang:player%, jelenleg viszonteladó"
 info-regionExtending:
   - "[darkgreen][bold]►[reset] "
