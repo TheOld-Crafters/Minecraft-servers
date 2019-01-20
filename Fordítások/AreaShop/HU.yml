@@ -88,7 +88,7 @@ help-groupdel: "%lang:helpCommand|/as groupdel|% Terület törlése a csoportbó
 help-grouplist: "%lang:helpCommand|/as grouplist|% Az összes regisztrált terület megjelenítése."
 help-groupinfo: "%lang:helpCommand|/as groupinfo|% Csoportinformációk megjelenítése."
 help-schemevent: "%lang:helpCommand|/as schemevent|% Előre meghatározott event futtatása a területben."
-help-add: "%lang:helpCommand|/as add|% Regisztrálj egy terület bérlésre vagy vásárlásra."
+help-add: "%lang:helpCommand|/as add|% Regisztrálj egy területet bérlésre vagy vásárlásra."
 help-del: "%lang:helpCommand|/as del|% A terület törlése AreaShop-ból."
 help-addsign: "%lang:helpCommand|/as addsign|% Tábla hozzáadása egy meglévő területhez."
 help-delsign: "%lang:helpCommand|/as delsign|% Töröld a táblát, amire nézel."
