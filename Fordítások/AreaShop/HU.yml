@@ -579,12 +579,12 @@ confirm-rent:
   - "    command: /areashop rent %0%"
 confirm-extend:
   - "%lang:prefix%Biztos, hogy meg szeretnéd hosszabbítani a %lang:tRegion|%0%|%? terület bérlését?[break]"
-  - "[darkgreen][bold]►[reset] %lang:button|Kattints a meghosszabításhoz %0%|%"
+  - "[darkgreen][bold]►[reset] %lang:button|Kattints a meghosszabbításhoz %0%|%"
   - "    hover: %lang:action|Extend %0%|%"
   - "    command: /areashop rent %0%"
 confirm-unrent:
   - "%lang:prefix%Biztos, hogy nem szeretnéd már bérelni ezt a területet %lang:tRegion|%0%|%?[break]"
-  - "[darkgreen][bold]►[reset] %lang:button|Katints hogy megszűntesd a bérlést %0%|%"
+  - "[darkgreen][bold]►[reset] %lang:button|Kattints, hogy töröld a bérlést %0%|%"
   - "    hover: %lang:action|Stop renting %0%|%"
   - "    command: /areashop unrent %0%"
 confirm-buy:
