@@ -145,7 +145,7 @@ unrent-noPermission: "Nincs engedélyed, hogy töröld bérlésből a területet
 unrent-noPermissionOther: "Nincs engedélyed, hogy törölj bérlésből másik területet."
 unrent-notRegistered: "A terület nem törölhető bérlésből, hiszen az nincs kiadva bérlésre."
 unrent-notRented: "A régiót nem lehet törölni bérlésből, mert az nincs bérelve."
-unrent-unrented: "%lang:region% területe %lang:player% játékosnak bérlésből törölve lett."
+unrent-unrented: "%lang:player% %lang:region% területének bérlése törölve lett."
 unrent-expired: "A bérleti ideje a(z) %lang:region% területnek lejárt."
 
 sell-help: "/as sell [region], Ha nem határozod meg a területet, az lesz eladva, amin állsz."
