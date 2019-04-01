@@ -21,8 +21,8 @@ Messages:
   Not-A-Currency: '&cEz nem egy pénznem. Használj pénzt vagy zsetonokat.' #Vedd ki a zsetonokat, ha nincsen TokenManagered.
   Sell-Price-To-Low: '&cAz eladási ár kevesebb &a10$&c-nál.'
   Sell-Price-To-High: '&cAz eladási ár több &a1000000$&c-nál.' 
-  Bid-Price-To-Low: '&cA kezdő árajánlatod kevesebb is &a100$&c-nál..'
-  Bid-Price-To-High: '&cA kezdő árajánlatod nagyobb &a$1000000&c.'
+  Bid-Price-To-Low: '&cA kezdő árajánlatod kevesebb &a100$&c-nál..'
+  Bid-Price-To-High: '&cA kezdő árajánlatod nagyobb &a$1000000&c-nál.'
   Bought-Item: '&7Megvetted ezt a tárgyat &a%Price%$&7-ért.'
   Win-Bidding: '&7Megnyerted az árverést &a%Price%$&7-ért. Írd be a /ah collect parancsot, hogy begyűjthesd a megnyert tárgyat.'
   Player-Bought-Item: '&7%Player% megvette az egyik eladásra kínált tárgyadat &a%Price%$&7-ért.'
@@ -37,3 +37,4 @@ Messages:
     - '&9/Ah Expired/Collect - &eLejárt, vagy megszüntetett áruk megnézése/begyűjtése.'
     - '&9/Ah Listed - &eEladni kívánt tárgyaid megnézése és kezelése.'
     - '&9/Ah Help - &eEzen menü megnyitása.'
+    
