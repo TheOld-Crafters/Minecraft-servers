@@ -2,7 +2,7 @@ Settings:
   Prefix: '&7[&4Crazy &bAuctions&7]: ' #Prefix of when you get Crazy Auctions Messages.
   GUIName: '&4Crazy &bAuctions&8' #Name of the Main GUI.
   Players-Current-Items: '&8Jelenlegi Eladni Kívánt Tárgyaid ' #The Name of the Player Current Items GUI.
-  Cancelled/Expired-Items: '&8Megszüntetett/Lejárt Tárgyak' #Name of the Cancelled/Expired GUI.
+  Cancelled/Expired-Items: '&8Törölt/Lejárt Tárgyak' #Name of the Cancelled/Expired GUI.
   Buying-Item: '&8Biztos Vagy Benne?' #Name of the Buying GUI.
   Bidding-On-Item: '&8Licitáltál Erre A Tárgyra.' #Name of the Bidding GUI.
   Categories: '&8Kategóriák' #Name of the Category GUI.
@@ -34,7 +34,7 @@ Settings:
       - '&7-------------------------'
     CurrentLore: #Lore on items that are in your current items GUI.
       - '&7-------------------------'
-      - '&aKattints a megszüntetéséhez.'
+      - '&aKattints a törléshez.'
       - ''
       - '&9Ár: &e%Price%$'
       - '&9Lejár: &e%Time%'
@@ -235,7 +235,7 @@ Settings:
           Name: '&6Mi ez az oldal?'
           Lore:
             - '&aEzen az oldalon találod az összes'
-            - '&amegszüntetett vagy lejárt tárgyadat.'
+            - '&atörölt vagy lejárt tárgyadat.'
             - '&aEzeket a tárgyakat magadhoz'
             - '&ainnen vissza tudod hozni.'
             - ''
@@ -270,7 +270,7 @@ Settings:
         Slot: 50
         Name: '&6Összes Visszagyűjtése'
         Lore:
-          - '&aKattints ide, hogy az összes megszüntetett'
+          - '&aKattints ide, hogy az összes törölt'
           - '&aés lejárt tárgyadat visszakaphasd.'
       Confirm: #The Confirm Buttons.
         Item: 'LIME_STAINED_GLASS_PANE'
