@@ -8,4 +8,4 @@ Hibajelentésekért és fordításokért kapható jutalmak:
 
 A videós hibajelentésekért több OCD jár.
 
-Kritikus (Nem publikus hibák) jelentése: https://www.oldcrafters.net/kapcsolat/
+Kritikus (nem publikus) hibák jelentése: https://www.oldcrafters.net/kapcsolat/
