@@ -1,6 +1,6 @@
 ---
-name: Custom issue template
-about: Figyelmeztetés
+name: Hibajelentés
+about: Hibák jelentése
 title: ''
 labels: ''
 assignees: ''
