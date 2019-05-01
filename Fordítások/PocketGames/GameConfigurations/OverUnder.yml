@@ -1,0 +1,48 @@
+# Edit OverUnder in this file.
+# 
+# All items are customizable. Add from one to nine lives (increment paths by one for each live)
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&b&lOverUnder'
+MenuItem:
+  page: 2
+  slot: 31
+  item: REDSTONE_LAMP
+  name: '       &6&l&m--[-&f  &b&lOverUnder&f  &6&l&m-]--'
+  lore:
+  - ' &f&m-----------------------------&7 '
+  - '  &eTest your luck in OverUnder, a'
+  - '  &etactical luck based game. Guess'
+  - '  &eif the next number will be Over'
+  - '  &eor Under the current one. Each'
+  - '  &ecorrect guess equals one point!'
+  - ' &7&m-----------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m-----------------------------&7 '
+GameItems:
+  border:
+    item: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: '&b&l*'
+  lives:
+    '1':
+      head: http://textures.minecraft.net/texture/76fdd4b13d54f6c91dd5fa765ec93dd9458b19f8aa34eeb5c80f455b119f278
+      name: '&4❤'
+    '2':
+      head: http://textures.minecraft.net/texture/76fdd4b13d54f6c91dd5fa765ec93dd9458b19f8aa34eeb5c80f455b119f278
+      name: '&4❤'
+    '3':
+      head: http://textures.minecraft.net/texture/76fdd4b13d54f6c91dd5fa765ec93dd9458b19f8aa34eeb5c80f455b119f278
+      name: '&4❤'
+Controls:
+  up:
+    slot: 13
+    head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
+    name: '&aOver!'
+  down:
+    slot: 22
+    head: http://textures.minecraft.net/texture/3912d45b1c78cc22452723ee66ba2d15777cc288568d6c1b62a545b29c7187
+    name: '&aUnder!'

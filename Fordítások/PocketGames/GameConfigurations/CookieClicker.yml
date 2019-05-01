@@ -1,0 +1,299 @@
+# Edit Cookie Clicker in this file.
+# 
+# You can change slot, price, basePrice, cpc, and cps as you go without messing up old saves.
+# All values are recalculated when the game is opened which is why you are able to do this.
+# If you do change these values please use /reload or /restart. NOT /pg reload.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&d&lCookie Clicker'
+MenuItem:
+  page: 2
+  slot: 21
+  item: COOKIE
+  name: '    &6&l&m--[-&f  &d&lCookie Clicker&f  &6&l&m-]--'
+  lore:
+  - ' &f&m-----------------------------&7 '
+  - '  &eA Pocket Games mini version of'
+  - '  &ethe popular game Cookie Clicker.'
+  - '  &eBuy buildings and upgrades to'
+  - '  &eacquire insane quantities of'
+  - '  &etasteful chocolate chip cookies.'
+  - ' &7&m-----------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m-----------------------------&7 '
+GameItems:
+  background:
+    item: BLUE_STAINED_GLASS_PANE
+    name: '&9&l*'
+  edge:
+    item: OAK_LOG
+    name: '&8&l*'
+  mainCookie:
+    item: COOKIE
+    name: '&7&lClick Me'
+    glow: true
+  fallingCookie:
+    item: COOKIE
+    name: '&7&l*'
+  info:
+    slot: 13
+    item: PAPER
+    name: '&9&l&oStats:'
+    lore:
+    - '&eCurrent: &a%cookiesCurrent% cookies'
+    - '&eTotal: &a%cookiesTotal% cookies'
+    - '&eCpc: &a%cpc% cookies per click'
+    - '&eCps: &a%cps% cookies per second'
+    - '&ePlayed: &a%played%'
+    glow: true
+  save:
+    slot: 22
+    item: WRITTEN_BOOK
+    name: '&e&lClick to Save'
+    lore:
+    - '&7Remember to save before'
+    - '&7closing the inventory.'
+    - '&7End Game to update the highscore.'
+    - '&7Does not reset progress.'
+    - ''
+    - '&7&oAutosaves every 30 seconds'
+  reset:
+    slot: 31
+    item: TNT
+    name: '&c&oReset Progress'
+    lore:
+    - '&7&oThis is irreversible!'
+    - '&7&oClick this item 3 times'
+    - '&7&oin a row to reset!'
+  Milk:
+    normal:
+      item: WHITE_STAINED_GLASS_PANE
+      name: '&f&l*'
+    chocolate:
+      item: BROWN_STAINED_GLASS_PANE
+      name: '&f&l*'
+  Buildings:
+    building1:
+      slot: 9
+      cps: 0.1
+      basePrice: 15
+      head: http://textures.minecraft.net/texture/532a5838fd9cd4c977f15071d6997ff5c7f956074a2da571a19ccefb03c57
+      name: '&fAuto Clicker &7(Owned: %amount%)'
+      lore:
+      - '&aAuto clicks once every'
+      - '&a10 seconds.'
+      - ''
+      - '&fCps: &a0,10'
+      - '&fPrice: &a%price%'
+    building2:
+      slot: 10
+      cps: 1
+      basePrice: 100
+      head: http://textures.minecraft.net/texture/dbc2b22444eb38bd29cbeecafa33b936f92ad1e8637bb11f84f868bf3d68a4
+      name: '&fGrandma &7(Owned: %amount%)'
+      lore:
+      - '&aA nice grandma to'
+      - '&abake more cookies.'
+      - ''
+      - '&fCps: &a1,00'
+      - '&fPrice: &a%price%'
+    building3:
+      slot: 11
+      cps: 8
+      basePrice: 1100
+      item: WOODEN_HOE
+      name: '&fFarm &7(Owned: %amount%)'
+      lore:
+      - '&aGrow cookies plants'
+      - '&afrom cookie seeds.'
+      - ''
+      - '&fCps: &a8,00'
+      - '&fPrice: &a%price%'
+      itemFlags:
+      - HIDE_ATTRIBUTES
+    building4:
+      slot: 18
+      cps: 47
+      basePrice: 12000
+      item: STONE_PICKAXE
+      name: '&fMine &7(Owned: %amount%)'
+      lore:
+      - '&aMines out cookie dough'
+      - '&aand chocolate chips.'
+      - ''
+      - '&fCps: &a47,00'
+      - '&fPrice: &a%price%'
+      itemFlags:
+      - HIDE_ATTRIBUTES
+    building5:
+      slot: 19
+      cps: 260
+      basePrice: 130000
+      item: FURNACE
+      name: '&fFactory &7(Owned: %amount%)'
+      lore:
+      - '&aProduces large'
+      - '&aquantities of cookies.'
+      - ''
+      - '&fCps: &a260,00'
+      - '&fPrice: &a%price%'
+    building6:
+      slot: 20
+      cps: 1400
+      basePrice: 1400000
+      item: GOLD_NUGGET
+      name: '&fBank &7(Owned: %amount%)'
+      lore:
+      - '&aGenerates cookies'
+      - '&afrom interest.'
+      - ''
+      - '&fCps: &a1.400,00'
+      - '&fPrice: &a%price%'
+    building7:
+      slot: 27
+      cps: 7800
+      basePrice: 20000000
+      head: http://textures.minecraft.net/texture/9452abb9528bc3ad48ff2bb5256bf8c0fd144fabfe4c8e28ebf2ef29ee15f937
+      name: '&fTemple &7(Owned: %amount%)'
+      lore:
+      - '&aFull of precious,'
+      - '&aancient chocolate.'
+      - ''
+      - '&fCps: &a7.800,00'
+      - '&fPrice: &a%price%'
+    building8:
+      slot: 28
+      cps: 44000
+      basePrice: 330000000
+      item: EXPERIENCE_BOTTLE
+      name: '&fWizard Tower &7(Owned: %amount%)'
+      lore:
+      - '&aSummons cookies with'
+      - '&amagic spells.'
+      - ''
+      - '&fCps: &a44.000,00'
+      - '&fPrice: &a%price%'
+    building9:
+      slot: 29
+      cps: 260000
+      basePrice: 5.1E9
+      item: FIREWORK_ROCKET
+      name: '&fShipment &7(Owned: %amount%)'
+      lore:
+      - '&aBrings in fresh cookies'
+      - '&afrom the cookie planet..'
+      - ''
+      - '&fCps: &a260.000,00'
+      - '&fPrice: &a%price%'
+  CpcUpgrades:
+    bought:
+      item: RED_WOOL
+      name: '&c&oYou already have this upgrade'
+    upgrade1:
+      slot: 15
+      cpc: 0.02
+      price: 100
+      head: http://textures.minecraft.net/texture/8cca259d3ec8a9e26279a09c981fc57d46a74b27a27f2d8a1c4877867bb7899
+      name: '&fReinforced index finger'
+      lore:
+      - '&aThe mouse gain +0,02 cookies for each object owned.'
+      - '&a&o"prod prod"'
+      - ''
+      - '&fPrice: &a%price%'
+    upgrade2:
+      slot: 16
+      cpc: 0.04
+      price: 500
+      head: http://textures.minecraft.net/texture/90e0a4d48cd829a6d5868909d643fa4affd39e8ae6caaf6ec79609cf7649b1c
+      name: '&fCarpal tunnel prevention cream'
+      lore:
+      - '&aThe mouse gain +0,04 cookies for each object owned.'
+      - '&a&o"it... it hurts to click..."'
+      - ''
+      - '&fPrice: &a%price%'
+    upgrade3:
+      slot: 17
+      cpc: 0.06
+      price: 10000
+      head: http://textures.minecraft.net/texture/e138452bca86cb9abcae325e889917bdc7bec95b4da8f1e706c3c4d4ef727bd
+      name: '&fAmbidextrous'
+      lore:
+      - '&aThe mouse gain +0,06 cookies for each object owned.'
+      - '&a&o"Look ma, both hands!"'
+      - ''
+      - '&fPrice: &a%price%'
+    upgrade4:
+      slot: 24
+      cpc: 0.1
+      price: 100000
+      head: http://textures.minecraft.net/texture/370a90a159d79854cdeca5cd4b1b633984a0bc1c9f187d8397f584f614a
+      name: '&fThousand fingers'
+      lore:
+      - '&aThe mouse gain +0,10 cookies for each object owned.'
+      - '&a&o"clickity"'
+      - ''
+      - '&fPrice: &a%price%'
+    upgrade5:
+      slot: 25
+      cpc: 0.5
+      price: 10000000
+      head: http://textures.minecraft.net/texture/67d196f5fbc31afee3372da4f9669dc9536ee3eb60c9161b11632a268bfdf467
+      name: '&fMillion fingers'
+      lore:
+      - '&aThe mouse gain +0,50 cookies for each object owned.'
+      - '&a&o"clickity"'
+      - ''
+      - '&fPrice: &a%price%'
+    upgrade6:
+      slot: 26
+      cpc: 5
+      price: 100000000
+      head: http://textures.minecraft.net/texture/577ec44fb7503de6afe3bdd7e583c7b93979f59f6d634b6b6a5af7f3a1c58515
+      name: '&fBillion fingers'
+      lore:
+      - '&aThe mouse gain +5,00 cookies for each object owned.'
+      - '&a&o"clickityclickity"'
+      - ''
+      - '&fPrice: &a%price%'
+    upgrade7:
+      slot: 33
+      cpc: 50
+      price: 1000000000
+      head: http://textures.minecraft.net/texture/16227036b8afed6935d53143d16488d39cf4fb73a671f2b2955e80fc9dfe458
+      name: '&fTrillion fingers'
+      lore:
+      - '&aThe mouse gain +50,00 cookies for each object owned.'
+      - '&a&o"clickityclickityclickity"'
+      - ''
+      - '&fPrice: &a%price%'
+    upgrade8:
+      slot: 34
+      cpc: 500
+      price: 1.0E10
+      head: http://textures.minecraft.net/texture/aacacb836c5e428b49b5d224cab22828efe2f6c704f759364d71c656e301420
+      name: '&fQuadrillion fingers'
+      lore:
+      - '&aThe mouse gain +500,00 cookies for each object owned.'
+      - '&a&o"clickityclickityclickityclickityclick"'
+      - ''
+      - '&fPrice: &a%price%'
+    upgrade9:
+      slot: 35
+      cpc: 5000
+      price: 1.0E13
+      head: http://textures.minecraft.net/texture/ac9f813ae82cd688574a849ab9ab441346763adb9ce7cf1b1c727de795df9b
+      name: '&fQuintillion fingers'
+      lore:
+      - '&aThe mouse gain +5.000,00 cookies for each object owned.'
+      - '&a&o"man, just go click click click click click, it’s real easy, man."'
+      - ''
+      - '&fPrice: &a%price%'
+GameSettings:
+  changeToChocolateAt: 100000
+  fallingCookieAnimationSpeed: 8
+  maxFallingCookiesOnScreen: 6
+  milkAnimationSpeed: 20

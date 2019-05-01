@@ -1,0 +1,44 @@
+# Edit Rock Paper Scissors in this file.
+# 
+# All items are customizable. The BestOf has to be an uneven number and a max of 9.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&7&lRock Paper Scissors'
+MenuItem:
+  page: 1
+  slot: 21
+  item: SHEARS
+  name: ' &6&l&m--[-&f  &7&lRock Paper Scissors &6&l&m-]--'
+  lore:
+  - ' &f&m--------------------------------&7 '
+  - '  &ePlay the classic game Rock Paper'
+  - '  &eScissors against another player.'
+  - '  &eClick one of the options and wait'
+  - '  &efor your opponent to do the same!'
+  - ' &7&m--------------------------------&7 '
+  - '  &f&oClick to challenge a player!'
+  - ' &7&m--------------------------------&7 '
+GameItems:
+  background:
+    item: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: '&b&l█'
+  overlay:
+    item: BLACK_STAINED_GLASS_PANE
+    name: '&0&l█'
+  rock:
+    item: COBBLESTONE
+    name: '&8Rock'
+  paper:
+    item: PAPER
+    name: '&fPaper'
+  scissors:
+    item: SHEARS
+    name: '&7Scissors'
+GameSettings:
+  BestOf: 3
+Inactivity:
+  enabled: true
+  duration: 30

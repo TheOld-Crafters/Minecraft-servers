@@ -1,0 +1,61 @@
+# Edit FallingBlocks in this file.
+# 
+# You can add more lives by simply adding more paths. (Increment each path by 1: '1', '2', '3', '4', '5', '6' etc.)
+# At least one life is needed. Remember to add a slot: for each life.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&d&lFalling Blocks'
+MenuItem:
+  page: 2
+  slot: 22
+  item: SAND
+  name: '    &6&l&m--[-&f  &d&lFalling Blocks&f  &6&l&m-]--'
+  lore:
+  - ' &f&m-----------------------------&7 '
+  - '  &eClick the falling blocks before'
+  - '  &ethey hit the ground. Some blocks'
+  - '  &emay take more clicks, but yields'
+  - '  &eone point for each click needed.'
+  - ' &7&m-----------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m-----------------------------&7 '
+GameItems:
+  fallingBlock:
+    item: SAND
+    name: '&7Click Me!'
+  ground:
+    item: GRASS_BLOCK
+  basket:
+    name: '&f&l*'
+  trunk:
+    item: BROWN_STAINED_GLASS_PANE
+    name: '&8&l*'
+  leaves:
+    item: LIME_STAINED_GLASS_PANE
+    name: '&a&l*'
+  sun:
+    item: YELLOW_STAINED_GLASS_PANE
+    name: '&eSun'
+  background:
+    item: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: '&b&l*'
+  lives:
+    '1':
+      slot: 9
+      head: http://textures.minecraft.net/texture/76fdd4b13d54f6c91dd5fa765ec93dd9458b19f8aa34eeb5c80f455b119f278
+      name: '&4❤'
+    '2':
+      slot: 10
+      head: http://textures.minecraft.net/texture/76fdd4b13d54f6c91dd5fa765ec93dd9458b19f8aa34eeb5c80f455b119f278
+      name: '&4❤'
+    '3':
+      slot: 11
+      head: http://textures.minecraft.net/texture/76fdd4b13d54f6c91dd5fa765ec93dd9458b19f8aa34eeb5c80f455b119f278
+      name: '&4❤'
+GameSettings:
+  gameSpeedMIN: 20
+  gameSpeedMAX: 9

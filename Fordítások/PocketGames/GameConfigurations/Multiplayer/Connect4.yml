@@ -1,0 +1,47 @@
+# Edit Connect4 in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&e&lConnect4'
+MenuItem:
+  page: 1
+  slot: 30
+  item: GOLDEN_APPLE
+  name: '      &6&l&m--[-&f  &e&lConnect4 &6&l&m-]--'
+  lore:
+  - ' &f&m----------------------------&7 '
+  - ' &e Who can connect 4 first? Click'
+  - ' &e on the top row to drop a piece.'
+  - ' &e Connect your pieces vertically,'
+  - ' &e horizontally, and diagonally.'
+  - ' &e Make sure to block your oppo-'
+  - ' &e nents pieces so they don''t win!'
+  - ' &7&m----------------------------&7 '
+  - '  &f&oClick to challenge a player!'
+  - ' &7&m----------------------------&7 '
+GameItems:
+  background:
+    item: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: '&b&l█'
+  clickableRow:
+    item: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: '&b&l█'
+    glow: true
+  border:
+    item: BLUE_STAINED_GLASS_PANE
+    name: '&7&l█'
+  red:
+    item: APPLE
+    name: '&cRed'
+  yellow:
+    item: GOLDEN_APPLE
+    name: '&eYellow'
+GameSettings:
+  dropSpeed: 3
+Inactivity:
+  enabled: true
+  duration: 30

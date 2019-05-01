@@ -1,0 +1,63 @@
+# Edit Simon Says in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&9&lSimon Says'
+MenuItem:
+  page: 1
+  slot: 33
+  item: PUFFERFISH
+  name: '        &6&l&m--[-&f  &9&lSimon Says&f  &6&l&m-]--'
+  lore:
+  - ' &f&m--------------------------------&7 '
+  - '  &eCheck your memory capabilities in a'
+  - '  &eMinecraft replica of Simon Says!'
+  - '  &eRemember the order of many colors'
+  - '  &ein a list that keeps on getting longer!'
+  - '  &e&oHow many colors can you remember?'
+  - ' &7&m--------------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m--------------------------------&7 '
+GameItems:
+  filler:
+    item: GRAY_STAINED_GLASS_PANE
+    name: '&7&l*'
+  green:
+    normal:
+      item: LIME_STAINED_GLASS_PANE
+      name: '&a&lGREEN'
+    clicked:
+      item: LIME_STAINED_GLASS_PANE
+      name: '&a&lGREEN'
+      glow: true
+  red:
+    normal:
+      item: RED_STAINED_GLASS_PANE
+      name: '&c&lRED'
+    clicked:
+      item: RED_STAINED_GLASS_PANE
+      name: '&a&lRED'
+      glow: true
+  yellow:
+    normal:
+      item: YELLOW_STAINED_GLASS_PANE
+      name: '&e&lYELLOW'
+    clicked:
+      item: YELLOW_STAINED_GLASS_PANE
+      name: '&e&lYELLOW'
+      glow: true
+  blue:
+    normal:
+      item: BLUE_STAINED_GLASS_PANE
+      name: '&9&lBLUE'
+    clicked:
+      item: BLUE_STAINED_GLASS_PANE
+      name: '&9&lBLUE'
+      glow: true
+GameSettings:
+  clicksAnimationSpeed: 7

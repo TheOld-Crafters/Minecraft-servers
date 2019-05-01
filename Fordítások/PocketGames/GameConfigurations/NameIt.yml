@@ -1,0 +1,1131 @@
+# Edit NameIt in this file.
+# 
+# Paths do not have to be numbers. Two or more identical path names cannot exist.
+# Items have to have an answer: and can optionally have lore, glow, itemFlags, amount. Can also be a head:
+# Because of this you can add your own custom items e.g.
+# You have a player head on your server named 'phone'. Add this to nameItems:
+#   head: <URL or Name of the player head>
+#   name: '&eWhat is this custom item?'
+#   answer: '&eAn Awesome Phone!'
+# The %solution% for this item will be '&eAn Awesome Phone!'.
+# You can set the solution placeholder in both the name and lore of the answerItem.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&e&lName It'
+MenuItem:
+  page: 2
+  slot: 32
+  item: NAME_TAG
+  name: '          &6&l&m--[-&f  &e&lName It&f  &6&l&m-]--'
+  lore:
+  - ' &f&m-------------------------------&7 '
+  - ' &e How well do you know the Minecraft'
+  - ' &e item names? Test your skills now!'
+  - ' &e Guess the name of the shown item'
+  - ' &e and click the answer before time'
+  - ' &e runs out. The more points you'
+  - ' &e score the more possible solutions!'
+  - ' &7&m-------------------------------&7 '
+  - ' &f&o Left Click -> Play Game'
+  - ' &f&o Right Click -> Highscore'
+  - ' &7&m-------------------------------&7 '
+GameSettings:
+  gameSpeed: 20
+  maxGameSpeed: 8
+GameItems:
+  border:
+    item: RED_STAINED_GLASS_PANE
+    name: '&c&l*'
+  timer:
+    item: WHITE_STAINED_GLASS_PANE
+    name: '&f&l*'
+  nameItems:
+    '1':
+      item: STONE
+      name: '&eWhat am i?'
+      answer: '&aStone'
+    '2':
+      item: GRASS_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aGrass'
+    '3':
+      item: DIRT
+      name: '&eWhat am i?'
+      answer: '&aDirt'
+    '4':
+      item: COBBLESTONE
+      name: '&eWhat am i?'
+      answer: '&aCobblestone'
+    '5':
+      item: OAK_WOOD
+      name: '&eWhat am i?'
+      answer: '&aWood'
+    '6':
+      item: OAK_SAPLING
+      name: '&eWhat am i?'
+      answer: '&aSapling'
+    '7':
+      item: BEDROCK
+      name: '&eWhat am i?'
+      answer: '&aBedrock'
+    '8':
+      item: SAND
+      name: '&eWhat am i?'
+      answer: '&aSand'
+    '9':
+      item: GRAVEL
+      name: '&eWhat am i?'
+      answer: '&aGravel'
+    '10':
+      item: GOLD_ORE
+      name: '&eWhat am i?'
+      answer: '&aGold Ore'
+    '11':
+      item: IRON_ORE
+      name: '&eWhat am i?'
+      answer: '&aIron Ore'
+    '12':
+      item: COAL_ORE
+      name: '&eWhat am i?'
+      answer: '&aCoal Ore '
+    '13':
+      item: OAK_LOG
+      name: '&eWhat am i?'
+      answer: '&aLog'
+    '14':
+      item: OAK_LEAVES
+      name: '&eWhat am i?'
+      answer: '&aOAK_LEAVES'
+    '15':
+      item: SPONGE
+      name: '&eWhat am i?'
+      answer: '&aSponge'
+    '16':
+      item: GLASS
+      name: '&eWhat am i?'
+      answer: '&aGlass'
+    '17':
+      item: LAPIS_ORE
+      name: '&eWhat am i?'
+      answer: '&aLapis Ore'
+    '18':
+      item: LAPIS_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aLapis Block'
+    '19':
+      item: DISPENSER
+      name: '&eWhat am i?'
+      answer: '&aDispenser'
+    '20':
+      item: SANDSTONE
+      name: '&eWhat am i?'
+      answer: '&aSandstone'
+    '21':
+      item: NOTE_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aNote Block'
+    '22':
+      item: POWERED_RAIL
+      name: '&eWhat am i?'
+      answer: '&aPowered Rail'
+    '23':
+      item: DETECTOR_RAIL
+      name: '&eWhat am i?'
+      answer: '&aDetector Rail '
+    '24':
+      item: COBWEB
+      name: '&eWhat am i?'
+      answer: '&aCobweb'
+    '25':
+      item: TALL_GRASS
+      name: '&eWhat am i?'
+      answer: '&aTall Grass'
+    '26':
+      item: DEAD_BUSH
+      name: '&eWhat am i?'
+      answer: '&aDead Bush'
+    '27':
+      item: WHITE_WOOL
+      name: '&eWhat am i?'
+      answer: '&aWhite Wool'
+    '28':
+      item: DANDELION_YELLOW
+      name: '&eWhat am i?'
+      answer: '&aYellow Flower'
+    '29':
+      item: ROSE_RED
+      name: '&eWhat am i?'
+      answer: '&aRed Rose'
+    '30':
+      item: BROWN_MUSHROOM
+      name: '&eWhat am i?'
+      answer: '&aBrown Mushroom'
+    '31':
+      item: RED_MUSHROOM
+      name: '&eWhat am i?'
+      answer: '&aRed Mushroom'
+    '32':
+      item: GOLD_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aGold Block'
+    '33':
+      item: IRON_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aIron Block'
+    '34':
+      item: BRICKS
+      name: '&eWhat am i?'
+      answer: '&aBricks'
+    '35':
+      item: TNT
+      name: '&eWhat am i?'
+      answer: '&aTnt'
+    '36':
+      item: BOOKSHELF
+      name: '&eWhat am i?'
+      answer: '&aBookshelf'
+    '37':
+      item: MOSSY_COBBLESTONE
+      name: '&eWhat am i?'
+      answer: '&aMossy Cobblestone '
+    '38':
+      item: OBSIDIAN
+      name: '&eWhat am i?'
+      answer: '&aObsidian'
+    '39':
+      item: TORCH
+      name: '&eWhat am i?'
+      answer: '&aTorch'
+    '40':
+      item: OAK_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aWood Stairs '
+    '41':
+      item: CHEST
+      name: '&eWhat am i?'
+      answer: '&aChest'
+    '42':
+      item: DIAMOND_ORE
+      name: '&eWhat am i?'
+      answer: '&aDiamond Ore'
+    '43':
+      item: DIAMOND_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aDiamond Block'
+    '44':
+      item: CRAFTING_TABLE
+      name: '&eWhat am i?'
+      answer: '&aCrafting Table'
+    '45':
+      item: FURNACE
+      name: '&eWhat am i?'
+      answer: '&aFurnace'
+    '46':
+      item: LADDER
+      name: '&eWhat am i?'
+      answer: '&aLadder'
+    '47':
+      item: RAIL
+      name: '&eWhat am i?'
+      answer: '&aRail'
+    '48':
+      item: COBBLESTONE_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aCobblestone Stairs '
+    '49':
+      item: LEVER
+      name: '&eWhat am i?'
+      answer: '&aLever'
+    '50':
+      item: STONE_PRESSURE_PLATE
+      name: '&eWhat am i?'
+      answer: '&aStone Plate'
+    '51':
+      item: OAK_PRESSURE_PLATE
+      name: '&eWhat am i?'
+      answer: '&aWood Plate'
+    '52':
+      item: REDSTONE_ORE
+      name: '&eWhat am i?'
+      answer: '&aRedstone Ore'
+    '53':
+      item: STONE_BUTTON
+      name: '&eWhat am i?'
+      answer: '&aStone Button'
+    '54':
+      item: ICE
+      name: '&eWhat am i?'
+      answer: '&aIce'
+    '55':
+      item: SNOW_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aSnow Block '
+    '56':
+      item: CACTUS
+      name: '&eWhat am i?'
+      answer: '&aCactus'
+    '57':
+      item: CLAY
+      name: '&eWhat am i?'
+      answer: '&aClay'
+    '58':
+      item: JUKEBOX
+      name: '&eWhat am i?'
+      answer: '&aJukebox'
+    '59':
+      item: OAK_FENCE
+      name: '&eWhat am i?'
+      answer: '&aFence'
+    '60':
+      item: PUMPKIN
+      name: '&eWhat am i?'
+      answer: '&aPumpkin'
+    '61':
+      item: NETHERRACK
+      name: '&eWhat am i?'
+      answer: '&aNetherrack'
+    '62':
+      item: SOUL_SAND
+      name: '&eWhat am i?'
+      answer: '&aSoul Sand '
+    '63':
+      item: GLOWSTONE
+      name: '&eWhat am i?'
+      answer: '&aGlowstone'
+    '64':
+      item: JACK_O_LANTERN
+      name: '&eWhat am i?'
+      answer: '&aJack O Lantern'
+    '65':
+      item: WHITE_STAINED_GLASS
+      name: '&eWhat am i?'
+      answer: '&aWhite Stained Glass'
+    '66':
+      item: OAK_TRAPDOOR
+      name: '&eWhat am i?'
+      answer: '&aTrap Door'
+    '67':
+      item: STONE_BRICKS
+      name: '&eWhat am i?'
+      answer: '&aSmooth Brick'
+    '68':
+      item: MELON
+      name: '&eWhat am i?'
+      answer: '&aMelon Block'
+    '69':
+      item: VINE
+      name: '&eWhat am i?'
+      answer: '&aVine'
+    '70':
+      item: OAK_FENCE_GATE
+      name: '&eWhat am i?'
+      answer: '&aFence Gate'
+    '71':
+      item: BRICK_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aBrick Stairs'
+    '72':
+      item: STONE_BRICK_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aStone Brick Stairs'
+    '73':
+      item: NETHER_BRICK
+      name: '&eWhat am i?'
+      answer: '&aNether Brick'
+    '74':
+      item: NETHER_BRICK_FENCE
+      name: '&eWhat am i?'
+      answer: '&aNether Fence'
+    '75':
+      item: NETHER_BRICK_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aNether Brick Stairs'
+    '76':
+      item: ENCHANTING_TABLE
+      name: '&eWhat am i?'
+      answer: '&aEnchanting Table'
+    '77':
+      item: END_PORTAL_FRAME
+      name: '&eWhat am i?'
+      answer: '&aEnd Portal Frame'
+    '78':
+      item: END_STONE
+      name: '&eWhat am i?'
+      answer: '&aEnder Stone'
+    '79':
+      item: DRAGON_EGG
+      name: '&eWhat am i?'
+      answer: '&aDragon Egg'
+    '80':
+      item: SANDSTONE_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aSandstone Stairs'
+    '81':
+      item: EMERALD_ORE
+      name: '&eWhat am i?'
+      answer: '&aEmerald Ore'
+    '82':
+      item: ENDER_CHEST
+      name: '&eWhat am i?'
+      answer: '&aEnder Chest'
+    '83':
+      item: TRIPWIRE_HOOK
+      name: '&eWhat am i?'
+      answer: '&aTripwire Hook'
+    '84':
+      item: EMERALD_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aEmerald Block'
+    '85':
+      item: SPRUCE_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aSpruce Wood Stairs'
+    '86':
+      item: BIRCH_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aBirch Wood Stairs'
+    '87':
+      item: JUNGLE_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aJungle Wood Stairs '
+    '88':
+      item: BEACON
+      name: '&eWhat am i?'
+      answer: '&aBeacon'
+    '89':
+      item: COBBLESTONE_WALL
+      name: '&eWhat am i?'
+      answer: '&aCobblestone Wall'
+    '90':
+      item: OAK_BUTTON
+      name: '&eWhat am i?'
+      answer: '&aWood Button'
+    '91':
+      item: ANVIL
+      name: '&eWhat am i?'
+      answer: '&aAnvil'
+    '92':
+      item: TRAPPED_CHEST
+      name: '&eWhat am i?'
+      answer: '&aTrapped Chest'
+    '93':
+      item: LIGHT_WEIGHTED_PRESSURE_PLATE
+      name: '&eWhat am i?'
+      answer: '&aLight Weighted Pressure Plate'
+    '94':
+      item: HEAVY_WEIGHTED_PRESSURE_PLATE
+      name: '&eWhat am i?'
+      answer: '&aHeavy Weighted Pressure Plate'
+    '95':
+      item: DAYLIGHT_DETECTOR
+      name: '&eWhat am i?'
+      answer: '&aDaylight Detector'
+    '96':
+      item: REDSTONE_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aRedstone Block'
+    '97':
+      item: NETHER_QUARTZ_ORE
+      name: '&eWhat am i?'
+      answer: '&aNether Quartz Ore'
+    '98':
+      item: HOPPER
+      name: '&eWhat am i?'
+      answer: '&aHopper'
+    '99':
+      item: QUARTZ_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aQuartz Block'
+    '100':
+      item: QUARTZ_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aQuartz Stairs'
+    '101':
+      item: ACTIVATOR_RAIL
+      name: '&eWhat am i?'
+      answer: '&aActivator Rail '
+    '102':
+      item: DROPPER
+      name: '&eWhat am i?'
+      answer: '&aDropper'
+    '103':
+      item: TERRACOTTA
+      name: '&eWhat am i?'
+      answer: '&aTerracotta'
+    '104':
+      item: ACACIA_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aAcacia Stairs'
+    '105':
+      item: DARK_OAK_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aDark Oak Stairs'
+    '106':
+      item: SLIME_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aSlime Block'
+    '107':
+      item: IRON_TRAPDOOR
+      name: '&eWhat am i?'
+      answer: '&aIron Trapdoor'
+    '108':
+      item: PRISMARINE
+      name: '&eWhat am i?'
+      answer: '&aPrismarine'
+    '109':
+      item: SEA_LANTERN
+      name: '&eWhat am i?'
+      answer: '&aSea Lantern'
+    '110':
+      item: HAY_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aHay Block'
+    '111':
+      item: WHITE_CARPET
+      name: '&eWhat am i?'
+      answer: '&aCarpet'
+    '112':
+      item: COAL_BLOCK
+      name: '&eWhat am i?'
+      answer: '&aCoal Block'
+    '113':
+      item: PACKED_ICE
+      name: '&eWhat am i?'
+      answer: '&aPacked Ice'
+    '114':
+      item: RED_SANDSTONE
+      name: '&eWhat am i?'
+      answer: '&aRed Sandstone'
+    '115':
+      item: RED_SANDSTONE_STAIRS
+      name: '&eWhat am i?'
+      answer: '&aRed Sandstone Stairs'
+    '116':
+      item: SPRUCE_FENCE_GATE
+      name: '&eWhat am i?'
+      answer: '&aSpruce Fence Gate'
+    '117':
+      item: BIRCH_FENCE_GATE
+      name: '&eWhat am i?'
+      answer: '&aBirch Fence Gate'
+    '118':
+      item: JUNGLE_FENCE_GATE
+      name: '&eWhat am i?'
+      answer: '&aJungle Fence Gate'
+    '119':
+      item: DARK_OAK_FENCE_GATE
+      name: '&eWhat am i?'
+      answer: '&aDark Oak Fence Gate'
+    '120':
+      item: ACACIA_FENCE_GATE
+      name: '&eWhat am i?'
+      answer: '&aAcacia Fence Gate'
+    '121':
+      item: SPRUCE_FENCE
+      name: '&eWhat am i?'
+      answer: '&aSpruce Fence'
+    '122':
+      item: BIRCH_FENCE
+      name: '&eWhat am i?'
+      answer: '&aBirch Fence'
+    '123':
+      item: JUNGLE_FENCE
+      name: '&eWhat am i?'
+      answer: '&aJungle Fence'
+    '124':
+      item: DARK_OAK_FENCE
+      name: '&eWhat am i?'
+      answer: '&aDark Oak Fence'
+    '125':
+      item: ACACIA_FENCE
+      name: '&eWhat am i?'
+      answer: '&aAcacia Fence'
+    '126':
+      item: IRON_SHOVEL
+      name: '&eWhat am i?'
+      answer: '&aIron Shovel'
+    '127':
+      item: IRON_PICKAXE
+      name: '&eWhat am i?'
+      answer: '&aIron Pickaxe'
+    '128':
+      item: IRON_AXE
+      name: '&eWhat am i?'
+      answer: '&aIron Axe'
+    '129':
+      item: FLINT_AND_STEEL
+      name: '&eWhat am i?'
+      answer: '&aFlint And Steel '
+    '130':
+      item: APPLE
+      name: '&eWhat am i?'
+      answer: '&aApple'
+    '131':
+      item: BOW
+      name: '&eWhat am i?'
+      answer: '&aBow'
+    '132':
+      item: ARROW
+      name: '&eWhat am i?'
+      answer: '&aArrow'
+    '133':
+      item: COAL
+      name: '&eWhat am i?'
+      answer: '&aCoal'
+    '134':
+      item: DIAMOND
+      name: '&eWhat am i?'
+      answer: '&aDiamond'
+    '135':
+      item: IRON_INGOT
+      name: '&eWhat am i?'
+      answer: '&aIron Ingot'
+    '136':
+      item: GOLD_INGOT
+      name: '&eWhat am i?'
+      answer: '&aGold Ingot'
+    '137':
+      item: IRON_SWORD
+      name: '&eWhat am i?'
+      answer: '&aIron Sword'
+    '138':
+      item: WOODEN_SWORD
+      name: '&eWhat am i?'
+      answer: '&aWooden Sword'
+    '139':
+      item: WOODEN_SHOVEL
+      name: '&eWhat am i?'
+      answer: '&aWooden Shovel'
+    '140':
+      item: WOODEN_PICKAXE
+      name: '&eWhat am i?'
+      answer: '&aWooden Pickaxe'
+    '141':
+      item: WOODEN_AXE
+      name: '&eWhat am i?'
+      answer: '&aWooden Axe'
+    '142':
+      item: STONE_SWORD
+      name: '&eWhat am i?'
+      answer: '&aStone Sword'
+    '143':
+      item: STONE_SHOVEL
+      name: '&eWhat am i?'
+      answer: '&aStone Shovel'
+    '144':
+      item: STONE_PICKAXE
+      name: '&eWhat am i?'
+      answer: '&aStone Pickaxe'
+    '145':
+      item: STONE_AXE
+      name: '&eWhat am i?'
+      answer: '&aStone Axe'
+    '146':
+      item: DIAMOND_SWORD
+      name: '&eWhat am i?'
+      answer: '&aDiamond Sword'
+    '147':
+      item: DIAMOND_SHOVEL
+      name: '&eWhat am i?'
+      answer: '&aDiamond Shovel'
+    '148':
+      item: DIAMOND_PICKAXE
+      name: '&eWhat am i?'
+      answer: '&aDiamond Pickaxe'
+    '149':
+      item: DIAMOND_AXE
+      name: '&eWhat am i?'
+      answer: '&aDiamond Axe '
+    '150':
+      item: STICK
+      name: '&eWhat am i?'
+      answer: '&aStick'
+    '151':
+      item: BOWL
+      name: '&eWhat am i?'
+      answer: '&aBowl'
+    '152':
+      item: MUSHROOM_STEW
+      name: '&eWhat am i?'
+      answer: '&aMushroom Stew'
+    '153':
+      item: GOLDEN_SWORD
+      name: '&eWhat am i?'
+      answer: '&aGolden Sword'
+    '154':
+      item: GOLDEN_SHOVEL
+      name: '&eWhat am i?'
+      answer: '&aGolden Shovel'
+    '155':
+      item: GOLDEN_PICKAXE
+      name: '&eWhat am i?'
+      answer: '&aGolden Pickaxe'
+    '156':
+      item: GOLDEN_AXE
+      name: '&eWhat am i?'
+      answer: '&aGolden Axe'
+    '157':
+      item: STRING
+      name: '&eWhat am i?'
+      answer: '&aString'
+    '158':
+      item: FEATHER
+      name: '&eWhat am i?'
+      answer: '&aFeather'
+    '159':
+      item: WOODEN_HOE
+      name: '&eWhat am i?'
+      answer: '&aWooden Hoe'
+    '160':
+      item: STONE_HOE
+      name: '&eWhat am i?'
+      answer: '&aStone Hoe'
+    '161':
+      item: IRON_HOE
+      name: '&eWhat am i?'
+      answer: '&aIron Hoe'
+    '162':
+      item: DIAMOND_HOE
+      name: '&eWhat am i?'
+      answer: '&aDiamond Hoe'
+    '163':
+      item: GOLDEN_HOE
+      name: '&eWhat am i?'
+      answer: '&aGolden Hoe'
+    '164':
+      item: WHEAT_SEEDS
+      name: '&eWhat am i?'
+      answer: '&aWheat Seeds'
+    '165':
+      item: WHEAT
+      name: '&eWhat am i?'
+      answer: '&aWheat'
+    '166':
+      item: BREAD
+      name: '&eWhat am i?'
+      answer: '&aBread'
+    '167':
+      item: LEATHER_HELMET
+      name: '&eWhat am i?'
+      answer: '&aLeather Helmet'
+    '168':
+      item: LEATHER_CHESTPLATE
+      name: '&eWhat am i?'
+      answer: '&aLeather Chestplate'
+    '169':
+      item: LEATHER_LEGGINGS
+      name: '&eWhat am i?'
+      answer: '&aLeather Leggings'
+    '170':
+      item: LEATHER_BOOTS
+      name: '&eWhat am i?'
+      answer: '&aLeather Boots'
+    '171':
+      item: CHAINMAIL_HELMET
+      name: '&eWhat am i?'
+      answer: '&aChainmail Helmet'
+    '172':
+      item: CHAINMAIL_CHESTPLATE
+      name: '&eWhat am i?'
+      answer: '&aChainmail Chestplate'
+    '173':
+      item: CHAINMAIL_LEGGINGS
+      name: '&eWhat am i?'
+      answer: '&aChainmail Leggings'
+    '174':
+      item: CHAINMAIL_BOOTS
+      name: '&eWhat am i?'
+      answer: '&aChainmail Boots'
+    '175':
+      item: IRON_HELMET
+      name: '&eWhat am i?'
+      answer: '&aIron Helmet'
+    '176':
+      item: IRON_CHESTPLATE
+      name: '&eWhat am i?'
+      answer: '&aIron Chestplate'
+    '177':
+      item: IRON_LEGGINGS
+      name: '&eWhat am i?'
+      answer: '&aIron Leggings'
+    '178':
+      item: IRON_BOOTS
+      name: '&eWhat am i?'
+      answer: '&aIron Boots'
+    '179':
+      item: DIAMOND_HELMET
+      name: '&eWhat am i?'
+      answer: '&aDiamond Helmet'
+    '180':
+      item: DIAMOND_CHESTPLATE
+      name: '&eWhat am i?'
+      answer: '&aDiamond Chestplate'
+    '181':
+      item: DIAMOND_LEGGINGS
+      name: '&eWhat am i?'
+      answer: '&aDiamond Leggings'
+    '182':
+      item: DIAMOND_BOOTS
+      name: '&eWhat am i?'
+      answer: '&aDiamond Boots'
+    '183':
+      item: GOLDEN_HELMET
+      name: '&eWhat am i?'
+      answer: '&aGolden Helmet'
+    '184':
+      item: GOLDEN_CHESTPLATE
+      name: '&eWhat am i?'
+      answer: '&aGolden Chestplate'
+    '185':
+      item: GOLDEN_LEGGINGS
+      name: '&eWhat am i?'
+      answer: '&aGolden Leggings'
+    '186':
+      item: GOLDEN_BOOTS
+      name: '&eWhat am i?'
+      answer: '&aGolden Boots'
+    '187':
+      item: FLINT
+      name: '&eWhat am i?'
+      answer: '&aFlint'
+    '188':
+      item: PORKCHOP
+      name: '&eWhat am i?'
+      answer: '&aPorkchop'
+    '189':
+      item: PAINTING
+      name: '&eWhat am i?'
+      answer: '&aPainting'
+    '190':
+      item: GOLDEN_APPLE
+      name: '&eWhat am i?'
+      answer: '&aGolden Apple'
+    '191':
+      item: SIGN
+      name: '&eWhat am i?'
+      answer: '&aSign'
+    '192':
+      item: BUCKET
+      name: '&eWhat am i?'
+      answer: '&aBucket'
+    '193':
+      item: WATER_BUCKET
+      name: '&eWhat am i?'
+      answer: '&aWater Bucket'
+    '194':
+      item: LAVA_BUCKET
+      name: '&eWhat am i?'
+      answer: '&aLava Bucket'
+    '195':
+      item: MINECART
+      name: '&eWhat am i?'
+      answer: '&aMinecart'
+    '196':
+      item: SADDLE
+      name: '&eWhat am i?'
+      answer: '&aSaddle'
+    '197':
+      item: IRON_DOOR
+      name: '&eWhat am i?'
+      answer: '&aIron Door '
+    '198':
+      item: REDSTONE
+      name: '&eWhat am i?'
+      answer: '&aRedstone'
+    '199':
+      item: SNOWBALL
+      name: '&eWhat am i?'
+      answer: '&aSnowball '
+    '200':
+      item: OAK_BOAT
+      name: '&eWhat am i?'
+      answer: '&aBoat'
+    '201':
+      item: LEATHER
+      name: '&eWhat am i?'
+      answer: '&aLeather'
+    '202':
+      item: MILK_BUCKET
+      name: '&eWhat am i?'
+      answer: '&aMilk Bucket'
+    '203':
+      item: BRICK
+      name: '&eWhat am i?'
+      answer: '&aBRICK'
+    '204':
+      item: CLAY_BALL
+      name: '&eWhat am i?'
+      answer: '&aClay Ball'
+    '205':
+      item: SUGAR_CANE
+      name: '&eWhat am i?'
+      answer: '&aSugar Cane'
+    '206':
+      item: PAPER
+      name: '&eWhat am i?'
+      answer: '&aPaper'
+    '207':
+      item: BOOK
+      name: '&eWhat am i?'
+      answer: '&aBook'
+    '208':
+      item: SLIME_BALL
+      name: '&eWhat am i?'
+      answer: '&aSlime Ball'
+    '209':
+      item: CHEST_MINECART
+      name: '&eWhat am i?'
+      answer: '&aChest Minecart'
+    '210':
+      item: FURNACE_MINECART
+      name: '&eWhat am i?'
+      answer: '&aFurance Minecart'
+    '211':
+      item: EGG
+      name: '&eWhat am i?'
+      answer: '&aEgg'
+    '212':
+      item: COMPASS
+      name: '&eWhat am i?'
+      answer: '&aCompass'
+    '213':
+      item: FISHING_ROD
+      name: '&eWhat am i?'
+      answer: '&aFishing Rod '
+    '214':
+      item: CLOCK
+      name: '&eWhat am i?'
+      answer: '&aClock'
+    '215':
+      item: GLOWSTONE_DUST
+      name: '&eWhat am i?'
+      answer: '&aGlowstone Dust'
+    '216':
+      item: COD
+      name: '&eWhat am i?'
+      answer: '&aRaw Cod'
+    '217':
+      item: COOKED_SALMON
+      name: '&eWhat am i?'
+      answer: '&aCooked Salmon'
+    '218':
+      item: INK_SAC
+      name: '&eWhat am i?'
+      answer: '&aInk Sac'
+    '219':
+      item: BONE
+      name: '&eWhat am i?'
+      answer: '&aBone'
+    '220':
+      item: SUGAR
+      name: '&eWhat am i?'
+      answer: '&aSugar'
+    '221':
+      item: CAKE
+      name: '&eWhat am i?'
+      answer: '&aCake'
+    '222':
+      item: WHITE_BED
+      name: '&eWhat am i?'
+      answer: '&aBed'
+    '223':
+      item: COOKIE
+      name: '&eWhat am i?'
+      answer: '&aCookie'
+    '224':
+      item: MAP
+      name: '&eWhat am i?'
+      answer: '&aMap'
+    '225':
+      item: SHEARS
+      name: '&eWhat am i?'
+      answer: '&aShears'
+    '226':
+      item: MELON_SLICE
+      name: '&eWhat am i?'
+      answer: '&aMelon Slice'
+    '227':
+      item: PUMPKIN_SEEDS
+      name: '&eWhat am i?'
+      answer: '&aPumpkin Seeds'
+    '228':
+      item: MELON_SEEDS
+      name: '&eWhat am i?'
+      answer: '&aMelon Seeds'
+    '229':
+      item: CHICKEN
+      name: '&eWhat am i?'
+      answer: '&aChicken'
+    '230':
+      item: COOKED_CHICKEN
+      name: '&eWhat am i?'
+      answer: '&aCooked Chicken'
+    '231':
+      item: ROTTEN_FLESH
+      name: '&eWhat am i?'
+      answer: '&aRotten Flesh'
+    '232':
+      item: ENDER_PEARL
+      name: '&eWhat am i?'
+      answer: '&aEnder Pearl'
+    '233':
+      item: BLAZE_ROD
+      name: '&eWhat am i?'
+      answer: '&aBlaze Rod'
+    '234':
+      item: GHAST_TEAR
+      name: '&eWhat am i?'
+      answer: '&aGhast Tear'
+    '235':
+      item: GOLD_NUGGET
+      name: '&eWhat am i?'
+      answer: '&aGold Nugget'
+    '236':
+      item: GLASS_BOTTLE
+      name: '&eWhat am i?'
+      answer: '&aGlass Bottle'
+    '237':
+      item: SPIDER_EYE
+      name: '&eWhat am i?'
+      answer: '&aSpider Eye'
+    '238':
+      item: FERMENTED_SPIDER_EYE
+      name: '&eWhat am i?'
+      answer: '&aFermented Spider Eye'
+    '239':
+      item: BLAZE_POWDER
+      name: '&eWhat am i?'
+      answer: '&aBlaze Powder'
+    '240':
+      item: MAGMA_CREAM
+      name: '&eWhat am i?'
+      answer: '&aMagma Cream'
+    '241':
+      item: ENDER_EYE
+      name: '&eWhat am i?'
+      answer: '&aEnder Eye'
+    '242':
+      item: EXPERIENCE_BOTTLE
+      name: '&eWhat am i?'
+      answer: '&aExp Bottle'
+    '243':
+      item: FIRE_CHARGE
+      name: '&eWhat am i?'
+      answer: '&aFire Charge'
+    '244':
+      item: WRITTEN_BOOK
+      name: '&eWhat am i?'
+      answer: '&aBook And Quill'
+    '245':
+      item: EMERALD
+      name: '&eWhat am i?'
+      answer: '&aEmerald'
+    '246':
+      item: ITEM_FRAME
+      name: '&eWhat am i?'
+      answer: '&aItem Frame'
+    '247':
+      item: BAKED_POTATO
+      name: '&eWhat am i?'
+      answer: '&aBaked Potato'
+    '248':
+      item: POISONOUS_POTATO
+      name: '&eWhat am i?'
+      answer: '&aPoisonous Potato'
+    '249':
+      item: MAP
+      name: '&eWhat am i?'
+      answer: '&aEmpty Map'
+    '250':
+      item: GOLDEN_CARROT
+      name: '&eWhat am i?'
+      answer: '&aGolden Carrot'
+    '251':
+      item: CARROT_ON_A_STICK
+      name: '&eWhat am i?'
+      answer: '&aCarrot Stick'
+    '252':
+      item: NETHER_STAR
+      name: '&eWhat am i?'
+      answer: '&aNether Star'
+    '253':
+      item: PUMPKIN_PIE
+      name: '&eWhat am i?'
+      answer: '&aPumpkin Pie'
+    '254':
+      item: FIREWORK_ROCKET
+      name: '&eWhat am i?'
+      answer: '&aFirework Rocket'
+    '255':
+      item: FIREWORK_STAR
+      name: '&eWhat am i?'
+      answer: '&aFirework Charge'
+    '256':
+      item: ENCHANTED_BOOK
+      name: '&eWhat am i?'
+      answer: '&aEnchanted Book'
+    '257':
+      item: COMPARATOR
+      name: '&eWhat am i?'
+      answer: '&aComparator'
+    '258':
+      item: QUARTZ
+      name: '&eWhat am i?'
+      answer: '&aQuartz'
+    '259':
+      item: TNT_MINECART
+      name: '&eWhat am i?'
+      answer: '&aTNT Minecart'
+    '260':
+      item: HOPPER_MINECART
+      name: '&eWhat am i?'
+      answer: '&aHopper Minecart'
+    '261':
+      item: PRISMARINE_SHARD
+      name: '&eWhat am i?'
+      answer: '&aPrismarine Shard'
+    '262':
+      item: PRISMARINE_CRYSTALS
+      name: '&eWhat am i?'
+      answer: '&aPrismarine Crystals'
+    '263':
+      item: RABBIT_STEW
+      name: '&eWhat am i?'
+      answer: '&aRabbit Stew'
+    '264':
+      item: RABBIT_FOOT
+      name: '&eWhat am i?'
+      answer: '&aRabbit Foot'
+    '265':
+      item: RABBIT_HIDE
+      name: '&eWhat am i?'
+      answer: '&aRabbit Hide'
+    '266':
+      item: ARMOR_STAND
+      name: '&eWhat am i?'
+      answer: '&aArmor Stand'
+    '267':
+      item: LEAD
+      name: '&eWhat am i?'
+      answer: '&aLEAD'
+    '268':
+      item: NAME_TAG
+      name: '&eWhat am i?'
+      answer: '&aName Tag'
+    '269':
+      item: MUSIC_DISC_13
+      name: '&eWhat am i?'
+      answer: '&aMusic Disc 13'
+    '270':
+      item: MUSIC_DISC_CAT
+      name: '&eWhat am i?'
+      answer: '&aMusic Disc Cat'
+Controls:
+  answerItem:
+    item: NAME_TAG
+    name: '&eAnswer:'
+    lore:
+    - '&a%solution%'

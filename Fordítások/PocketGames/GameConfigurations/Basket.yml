@@ -1,0 +1,101 @@
+# Edit Basket in this file.
+# 
+# All items are customizable. The GameSettings are in ticks. The button is in one slot
+# but can have different appearances for power, height, and launch.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&6&lBasket'
+MenuItem:
+  page: 2
+  slot: 33
+  head: http://textures.minecraft.net/texture/edf84715a64dc45586f7a6079f8e49a9477c0fe96589b4cfd71cba32254ac8
+  name: '        &6&l&m--[-&f  &6&lBasket&f  &6&l&m-]--'
+  lore:
+  - ' &f&m---------------------------&7 '
+  - '  &eTest you basket skills in this'
+  - '  &efun small basket game. Charge'
+  - '  &ePower and Height just right to'
+  - '  &escore! The ball and pole will'
+  - '  &echange position and height for'
+  - '  &eeach shot you take. Game On!'
+  - ' &7&m---------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m---------------------------&7 '
+GameItems:
+  ball:
+    head: http://textures.minecraft.net/texture/edf84715a64dc45586f7a6079f8e49a9477c0fe96589b4cfd71cba32254ac8
+    name: '&6Basket Ball'
+  pole:
+    item: ARMOR_STAND
+    name: '&7&l*'
+  net:
+    item: COBWEB
+    name: '&fNet'
+  ground:
+    item: BLACK_STAINED_GLASS_PANE
+    name: '&0&l*'
+  background:
+    item: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: '&b&l*'
+  ChargeBars:
+    edgeLeft:
+      item: REDSTONE_TORCH
+      name: '&c&l■'
+    edgeRight:
+      item: REDSTONE_TORCH
+      name: '&c&l■'
+    default:
+      item: WHITE_WOOL
+      name: '&f&l■'
+    '1':
+      item: LIME_WOOL
+      name: '&a&l■'
+    '2':
+      item: LIME_WOOL
+      name: '&a&l■'
+    '3':
+      item: YELLOW_WOOL
+      name: '&e&l■'
+    '4':
+      item: YELLOW_WOOL
+      name: '&e&l■'
+    '5':
+      item: ORANGE_WOOL
+      name: '&6&l■'
+    '6':
+      item: ORANGE_WOOL
+      name: '&6&l■'
+    '7':
+      item: RED_WOOL
+      name: '&4&l■'
+  lives:
+    '1':
+      head: http://textures.minecraft.net/texture/76fdd4b13d54f6c91dd5fa765ec93dd9458b19f8aa34eeb5c80f455b119f278
+      name: '&4❤'
+    '2':
+      head: http://textures.minecraft.net/texture/76fdd4b13d54f6c91dd5fa765ec93dd9458b19f8aa34eeb5c80f455b119f278
+      name: '&4❤'
+    '3':
+      head: http://textures.minecraft.net/texture/76fdd4b13d54f6c91dd5fa765ec93dd9458b19f8aa34eeb5c80f455b119f278
+      name: '&4❤'
+GameSettings:
+  ballSpeed: 3
+  chargeBarSpeed:
+    power: 4
+    height: 4
+Controls:
+  ButtonSlot: 22
+  Buttons:
+    power:
+      head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
+      name: '&aClick to set Power'
+    height:
+      head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
+      name: '&aClick to set Height'
+    launch:
+      head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
+      name: '&eClick to throw!'

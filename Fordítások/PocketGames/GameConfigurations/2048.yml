@@ -1,0 +1,137 @@
+# Edit 2048 in this file.
+# 
+# All tiles can be changed independently. Do not change the paths or add more.
+# The paths defines the values of the tiles. You can name your tiles whatever you want it does not have to be the value.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&2&l2048'
+MenuItem:
+  page: 1
+  slot: 23
+  item: MAP
+  name: '            &6&l&m--[-&f  &2&l2048&f  &6&l&m-]--'
+  lore:
+  - ' &f&m-------------------------------&7 '
+  - '  &ePlay the highly popular game 2048'
+  - '  &einside of Minecraft. Get the very'
+  - '  &eprestigious 2048 tile! Continue'
+  - '  &eplaying to reach the highest score!'
+  - '  &e&oThis game autosaves progress!'
+  - ' &7&m-------------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m-------------------------------&7 '
+GameItems:
+  filler:
+    item: GRAY_STAINED_GLASS_PANE
+  tiles:
+    '2':
+      item: WHITE_WOOL
+      name: '&a2'
+    '4':
+      item: ORANGE_WOOL
+      name: '&a4'
+    '8':
+      item: MAGENTA_WOOL
+      name: '&a8'
+    '16':
+      item: LIGHT_BLUE_WOOL
+      name: '&a16'
+    '32':
+      item: YELLOW_WOOL
+      name: '&a32'
+    '64':
+      item: LIME_WOOL
+      name: '&a64'
+    '128':
+      item: PINK_WOOL
+      name: '&a128'
+    '256':
+      item: GRAY_WOOL
+      name: '&a256'
+    '512':
+      item: LIGHT_GRAY_WOOL
+      name: '&a512'
+    '1024':
+      item: CYAN_WOOL
+      name: '&a1,024'
+    '2048':
+      item: PURPLE_WOOL
+      name: '&a2,048'
+    '4096':
+      item: BLUE_WOOL
+      name: '&a4,096'
+    '8192':
+      item: BROWN_WOOL
+      name: '&a8,192'
+    '16384':
+      item: GREEN_WOOL
+      name: '&a16,384'
+    '32768':
+      item: RED_WOOL
+      name: '&a32,768'
+    '65536':
+      item: BLACK_WOOL
+      name: '&a65,536'
+    '131072':
+      item: WHITE_TERRACOTTA
+      name: '&a131,072'
+    '262144':
+      item: ORANGE_TERRACOTTA
+      name: '&a262,144'
+    '524288':
+      item: MAGENTA_TERRACOTTA
+      name: '&a524,288'
+    '1048576':
+      item: LIGHT_BLUE_TERRACOTTA
+      name: '&a1,048,576'
+    '2097152':
+      item: YELLOW_TERRACOTTA
+      name: '&a2,097,152'
+    '4194304':
+      item: LIME_TERRACOTTA
+      name: '&a4,194,304'
+    '8388608':
+      item: PINK_TERRACOTTA
+      name: '&a8,388,608'
+    '16777216':
+      item: GRAY_TERRACOTTA
+      name: '&a16,777,216'
+    '33554432':
+      item: LIGHT_GRAY_TERRACOTTA
+      name: '&a33,554,432'
+    '67108864':
+      item: CYAN_TERRACOTTA
+      name: '&a67,108,864'
+    '134217728':
+      item: PURPLE_TERRACOTTA
+      name: '&a134,217,728'
+    '268435456':
+      item: BLUE_TERRACOTTA
+      name: '&a268,435,456'
+    '536870912':
+      item: BROWN_TERRACOTTA
+      name: '&a536,870,912'
+    '1073741824':
+      item: GREEN_TERRACOTTA
+      name: '&a1,073,741,824'
+Controls:
+  up:
+    slot: 13
+    head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
+    name: '&aUp'
+  down:
+    slot: 22
+    head: http://textures.minecraft.net/texture/3912d45b1c78cc22452723ee66ba2d15777cc288568d6c1b62a545b29c7187
+    name: '&aDown'
+  left:
+    slot: 21
+    head: http://textures.minecraft.net/texture/5f133e91919db0acefdc272d67fd87b4be88dc44a958958824474e21e06d53e6
+    name: '&aLeft'
+  right:
+    slot: 23
+    head: http://textures.minecraft.net/texture/e3fc52264d8ad9e654f415bef01a23947edbccccf649373289bea4d149541f70
+    name: '&aRight'

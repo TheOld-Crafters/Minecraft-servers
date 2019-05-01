@@ -1,0 +1,365 @@
+# Edit The Quiz in this file.
+# 
+# You can add as many questions as you want for each difficulty. Each question
+# can have up to 9 answers. Both questions and answers path have to increment by 1. (1,2,3...)
+# The 'correct: true' is only required for answers that are correct. Multiple answers can be correct.
+# Only required item setting is item: or head:. You can optionally add name, glow, lore, itemFlags, and amount to any item.
+# 'startWhenScoreEquals:' switches to the next difficulty when that score is reached. Do not set it higher than the number of questions for that difficulty.
+# The game will end with another sound than the game over sound if all questions have been answered correctly.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&9&lThe Quiz'
+MenuItem:
+  page: 2
+  slot: 29
+  head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+  name: '       &6&l&m--[-&f  &9&lThe Quiz&f  &6&l&m-]--'
+  lore:
+  - ' &f&m----------------------------&7 '
+  - ' &e How clever are you? Test your'
+  - ' &e skills in The Quiz! The Quiz'
+  - ' &e contains questions about both'
+  - ' &e Minecraft related stuff but'
+  - ' &e also some other fun subjects.'
+  - ' &7&m----------------------------&7 '
+  - ' &f&o Left Click -> Play Game'
+  - ' &f&o Right Click -> Highscore'
+  - ' &7&m----------------------------&7 '
+GameItems:
+  border:
+    item: RED_STAINED_GLASS_PANE
+    name: '&c&l*'
+Questions:
+  easy:
+    answerTime: 25
+    '1':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWhat is 9 + 10?'
+      answers:
+        '1':
+          item: LIME_WOOL
+          name: '&a19'
+          correct: true
+        '2':
+          item: YELLOW_WOOL
+          name: '&ax'
+        '3':
+          item: ORANGE_WOOL
+          name: '&a21'
+    '2':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWhat is the name of the default skin?'
+      answers:
+        '1':
+          item: PINK_WOOL
+          name: '&aNotch'
+        '2':
+          item: BROWN_WOOL
+          name: '&aSteve'
+          correct: true
+        '3':
+          item: GRAY_WOOL
+          name: '&aBeth'
+    '3':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWhat is blue and shiny?'
+      answers:
+        '1':
+          item: PINK_WOOL
+          name: '&aDiamonds'
+          correct: true
+        '2':
+          item: ORANGE_WOOL
+          name: '&aDirt'
+        '3':
+          item: YELLOW_WOOL
+          name: '&aThe sun'
+    '4':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWhat three mobs can you have as a pet?'
+      answers:
+        '1':
+          item: PINK_WOOL
+          name: '&aCats, Birds, and Iron Golems'
+        '2':
+          item: CYAN_WOOL
+          name: '&aWolfs, Ocelots, and, Horses'
+          correct: true
+        '3':
+          item: YELLOW_WOOL
+          name: '&aNone?'
+    '5':
+      question:
+        item: RED_WOOL
+        name: '&eWhat color is this item?'
+      answers:
+        '1':
+          item: PINK_WOOL
+          name: '&aRed'
+          correct: true
+        '2':
+          item: RED_WOOL
+          name: '&aBlue'
+        '3':
+          item: LIGHT_GRAY_WOOL
+          name: '&aGreen'
+  medium:
+    answerTime: 20
+    startWhenScoreEquals: 5
+    '1':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWhat are the main Hostile mobs in Minecraft?'
+      answers:
+        '1':
+          item: LIME_WOOL
+          name: '&aCats, Wolfs, Moms, and Bats'
+        '2':
+          item: MAGENTA_WOOL
+          name: '&aZombies, Creepers, Skeletons, Spiders, and Endermen'
+          correct: true
+        '3':
+          item: GREEN_WOOL
+          name: '&aGhasts, Zombie Pigmen, Silverfish, and Blaze'
+        '4':
+          item: LIGHT_BLUE_WOOL
+          name: '&aThe Ender Dragon, The Wither, and Herobrine'
+        '5':
+          item: YELLOW_WOOL
+          name: '&aEndermites, Silverfish, Jockeys, and Giants'
+    '2':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWho is the original creator of Minecraft?'
+      answers:
+        '1':
+          item: LIME_WOOL
+          name: '&aNotch'
+          correct: true
+        '2':
+          item: ORANGE_WOOL
+          name: '&aJeb'
+        '3':
+          item: WHITE_WOOL
+          name: '&aNotch and Jeb'
+        '4':
+          item: LIGHT_GRAY_WOOL
+          name: '&aMarkus Persson'
+          correct: true
+        '5':
+          item: MAGENTA_WOOL
+          name: '&aMark Zuckerberg'
+    '3':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWhich of these is a scary hidden character?'
+      answers:
+        '1':
+          item: LIGHT_BLUE_WOOL
+          name: '&aNotch'
+        '2':
+          item: CYAN_WOOL
+          name: '&aHerobrine'
+          correct: true
+        '3':
+          item: GRAY_WOOL
+          name: '&aThe Ender Dragon'
+        '4':
+          item: LIGHT_GRAY_WOOL
+          name: '&aShrek'
+        '5':
+          item: PURPLE_WOOL
+          name: '&aThe Iron Giant'
+    '4':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWhat is the standard spell in Minecraft?'
+      answers:
+        '1':
+          item: GRAY_WOOL
+          name: '&aFire blast'
+        '2':
+          item: MAGENTA_WOOL
+          name: '&aWater blast'
+        '3':
+          item: WHITE_WOOL
+          name: '&aThere are no spells?'
+          correct: true
+        '4':
+          item: CYAN_WOOL
+          name: '&aLightning blast?'
+        '5':
+          item: BLUE_WOOL
+          name: '&aWind blast?'
+    '5':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eHow tall is Steve?'
+      answers:
+        '1':
+          item: GRAY_WOOL
+          name: '&a2.0 Blocks'
+        '2':
+          item: LIME_WOOL
+          name: '&a2.1 Blocks'
+        '3':
+          item: BROWN_WOOL
+          name: '&a1.8 Blocks'
+          correct: true
+        '4':
+          item: GREEN_WOOL
+          name: '&a1.95 Blocks'
+        '5':
+          item: RED_WOOL
+          name: '&a2.2 Blocks'
+  hard:
+    answerTime: 15
+    startWhenScoreEquals: 10
+    '1':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWho is the creator of Pocket Games?'
+      answers:
+        '1':
+          item: MAGENTA_WOOL
+          name: '&aThe server owner'
+        '2':
+          item: PURPLE_WOOL
+          name: '&aBenz24'
+        '3':
+          item: BLUE_WOOL
+          name: '&aBenz56'
+          correct: true
+        '4':
+          item: CYAN_WOOL
+          name: '&aMarkus Persson'
+        '5':
+          item: LIGHT_BLUE_WOOL
+          name: '&aSpigot'
+    '2':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWhich material can you not progress without?'
+      answers:
+        '1':
+          item: GRAY_WOOL
+          name: '&aWood'
+          correct: true
+        '2':
+          item: LIGHT_BLUE_WOOL
+          name: '&aWater'
+        '3':
+          item: MAGENTA_WOOL
+          name: '&aStone'
+        '4':
+          item: LIME_WOOL
+          name: '&aQuartz'
+        '5':
+          item: LIGHT_GRAY_WOOL
+          name: '&aGrass'
+        '6':
+          item: PURPLE_WOOL
+          name: '&aDirt'
+        '7':
+          item: BLACK_WOOL
+          name: '&aSand'
+    '3':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eHow many distinct Biomes are there?'
+      answers:
+        '1':
+          item: GRAY_WOOL
+          name: '&a8'
+        '2':
+          item: CYAN_WOOL
+          name: '&a18'
+        '3':
+          item: PURPLE_WOOL
+          name: '&a62'
+          correct: true
+        '4':
+          item: GREEN_WOOL
+          name: '&a22'
+        '5':
+          item: YELLOW_WOOL
+          name: '&a34'
+        '6':
+          item: ORANGE_WOOL
+          name: '&a12'
+        '7':
+          item: WHITE_WOOL
+          name: '&a59'
+    '4':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWhen was Minecraft released?'
+      answers:
+        '1':
+          item: MAGENTA_WOOL
+          name: '&a2007'
+        '2':
+          item: GREEN_WOOL
+          name: '&a2011'
+          correct: true
+        '3':
+          item: LIME_WOOL
+          name: '&a2008'
+        '4':
+          item: PURPLE_WOOL
+          name: '&a2006'
+        '5':
+          item: BROWN_WOOL
+          name: '&a2010'
+        '6':
+          item: LIGHT_BLUE_WOOL
+          name: '&a2004'
+        '7':
+          item: MAGENTA_WOOL
+          name: '&a2013'
+    '5':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWhat ocean mobs are coming soon?'
+      answers:
+        '1':
+          item: PINK_WOOL
+          name: '&aSharks and Dolphins'
+        '2':
+          item: LIGHT_BLUE_WOOL
+          name: '&aFish and Whales'
+        '3':
+          item: ORANGE_WOOL
+          name: '&aDolphins and Fish'
+          correct: true
+        '4':
+          item: CYAN_WOOL
+          name: '&aJellyfish, and Sharks'
+        '5':
+          item: MAGENTA_WOOL
+          name: '&aDolphins, Fish, and Jellyfish'
+    '6':
+      question:
+        head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
+        name: '&eWho is not a designer of Minecraft?'
+      answers:
+        '1':
+          item: PINK_WOOL
+          name: '&aJens Bergensten'
+        '2':
+          item: LIGHT_BLUE_WOOL
+          name: '&aMarc Persius'
+          correct: true
+        '3':
+          item: WHITE_WOOL
+          name: '&aStephen McManus'
+        '4':
+          item: BLACK_WOOL
+          name: '&aMarkus Persson'

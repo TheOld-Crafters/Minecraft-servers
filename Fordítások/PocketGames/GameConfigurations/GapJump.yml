@@ -1,0 +1,86 @@
+# Edit Gap Jump in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&a&lGap Jump'
+MenuItem:
+  page: 1
+  slot: 20
+  item: GRASS_BLOCK
+  name: '           &6&l&m--[-&f  &a&lGap Jump&f  &6&l&m-]--'
+  lore:
+  - ' &f&m---------------------------------&7 '
+  - '  &eJump from island to island in this fun'
+  - '  &elittle minigame. Click to charge, then'
+  - '  &eclick again to launch and hopefully'
+  - '  &eyou''ll touch down on the next island!'
+  - ' &7&m---------------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m---------------------------------&7 '
+GameItems:
+  character:
+    head: http://textures.minecraft.net/texture/451b78fbe4df1d74cdf9aa495641d0aab9d5c0367c774dbb0e7facff36dff
+    name: '&eHappy'
+  platformTop:
+    item: GRASS_BLOCK
+    name: '&a&l*'
+  platformBottom:
+    item: DIRT
+    name: '&a&l*'
+  cloud:
+    item: WHITE_STAINED_GLASS_PANE
+    name: '&fCloud'
+  sun:
+    item: YELLOW_STAINED_GLASS_PANE
+    name: '&eSun'
+  background:
+    item: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: '&b&l*'
+  ChargeBars:
+    edgeLeft:
+      item: REDSTONE_TORCH
+      name: '&c&l■'
+    edgeRight:
+      item: REDSTONE_TORCH
+      name: '&c&l■'
+    default:
+      item: WHITE_WOOL
+      name: '&f&l■'
+    '1':
+      item: LIME_WOOL
+      name: '&a&l■'
+    '2':
+      item: LIME_WOOL
+      name: '&a&l■'
+    '3':
+      item: YELLOW_WOOL
+      name: '&e&l■'
+    '4':
+      item: YELLOW_WOOL
+      name: '&e&l■'
+    '5':
+      item: ORANGE_WOOL
+      name: '&6&l■'
+    '6':
+      item: ORANGE_WOOL
+      name: '&6&l■'
+    '7':
+      item: RED_WOOL
+      name: '&4&l■'
+GameSettings:
+  jumpSpeed: 5
+  chargeBarSpeed: 5
+  screenMoveLeftSpeed: 4
+  screenMoveLeftDelay: 3
+Controls:
+  up:
+    slot: 22
+    head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
+    name: '&aClick once to charge'
+    lore:
+    - '&eClick again to launch'

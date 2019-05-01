@@ -1,0 +1,41 @@
+# Edit DontTap in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&c&lDont Tap'
+MenuItem:
+  page: 3
+  slot: 23
+  item: LAVA_BUCKET
+  name: '        &6&l&m--[-&f  &c&lDont Tap&f  &6&l&m-]--'
+  lore:
+  - ' &f&m-------------------------------&7 '
+  - '  &eYou have 10 seconds to click 30'
+  - '  &ewater buckets. Every 30 buckets'
+  - '  &eyou click, you get another 10 secs.'
+  - '  &eBeware! Do not tap the burning hot'
+  - '  &elava buckets! They will kill you!'
+  - ' &7&m-------------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m-------------------------------&7 '
+GameItems:
+  background:
+    item: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: '&7&l*'
+  tap:
+    item: WATER_BUCKET
+    name: '&b&lCold'
+  dontTap:
+    item: LAVA_BUCKET
+    name: '&c&lHot'
+  timer:
+    item: CLOCK
+    name: '&7Timer'
+GameSettings:
+  time: 10
+  clicks: 30

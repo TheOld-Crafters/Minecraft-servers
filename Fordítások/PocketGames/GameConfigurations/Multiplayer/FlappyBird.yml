@@ -1,0 +1,46 @@
+# Edit Flappy Bird in this file.
+# 
+# All items are customizable. Each player controls his/her own head.!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&3&lFlappy Bird'
+MenuItem:
+  page: 1
+  slot: 31
+  item: FEATHER
+  name: '      &6&l&m--[-&f  &3&lFlappy Bird&f  &6&l&m-]--'
+  lore:
+  - ' &f&m-----------------------------&7 '
+  - ' &e Flap as far as you possibly can!'
+  - ' &e The player who survives for the'
+  - ' &e longest duration is the winner.'
+  - ' &7&m-----------------------------&7 '
+  - '  &f&oClick to challenge a player!'
+  - ' &7&m-----------------------------&7 '
+GameItems:
+  column:
+    item: LIME_TERRACOTTA
+    name: '&a&l*'
+  trunk:
+    item: BROWN_STAINED_GLASS_PANE
+    name: '&8&l*'
+  leaves:
+    item: LIME_STAINED_GLASS_PANE
+    name: '&a&l*'
+  cloud:
+    item: WHITE_STAINED_GLASS_PANE
+    name: '&fCloud'
+  sun:
+    item: YELLOW_STAINED_GLASS_PANE
+    name: '&eSun'
+  background:
+    item: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: '&b&l*'
+Controls:
+  up:
+    slot: 22
+    head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
+    name: '&aFlap'

@@ -1,0 +1,59 @@
+# Edit BlockCrush in this file.
+# 
+# Add/remove as many blocks as you want.
+# Do not add the glow: attribute to the blocks as it is used to show selected and connected items.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&e&lBlock Crush'
+MenuItem:
+  page: 3
+  slot: 22
+  item: IRON_BLOCK
+  name: '      &6&l&m--[-&f  &e&lBlock Crush&f  &6&l&m-]--'
+  lore:
+  - ' &f&m------------------------------&7 '
+  - '  &eBlock Crush is as you might have'
+  - '  &eguessed a Pocket Games version'
+  - '  &eof the popular game Candy Crush.'
+  - '  &eSwap blocks and connect them in'
+  - '  &elength of at least three blocks.'
+  - ' &7&m------------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m------------------------------&7 '
+GameItems:
+  background:
+    item: GRAY_STAINED_GLASS_PANE
+    name: '&7&l*'
+  movesCounter:
+    item: CLOCK
+    name: '&e%moves% &9moves left!'
+    slot: 22
+  Blocks:
+    dirt:
+      item: DIRT
+      name: '&fDirt'
+    stone:
+      item: STONE
+      name: '&7Stone'
+    log:
+      item: OAK_LOG
+      name: '&6Oak Log'
+    sand:
+      item: SAND
+      name: '&eSand'
+    ice:
+      item: ICE
+      name: '&bIce'
+    brick:
+      item: BRICK
+      name: '&cBricks'
+    netherrack:
+      item: NETHERRACK
+      name: '&4Netherrack'
+GameSettings:
+  moves: 15
+  gravitySpeed: 3

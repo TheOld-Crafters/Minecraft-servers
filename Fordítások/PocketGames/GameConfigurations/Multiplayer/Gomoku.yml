@@ -1,0 +1,36 @@
+# Edit Gomoku in this file.
+# 
+# All items are customizable. The starting player is chosen randomly when the game starts.!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&4&lGomoku'
+MenuItem:
+  page: 1
+  slot: 24
+  item: COAL
+  name: '       &6&l&m--[-&f  &4&lGomoku &6&l&m-]--'
+  lore:
+  - ' &f&m-------------------------&7 '
+  - ' &e Tired of playing regular Tic'
+  - ' &e Tac Toe? Challenge a player'
+  - ' &e in a game of Gomoku and see'
+  - ' &e who can connect five first!'
+  - ' &7&m-------------------------&7 '
+  - '  &f&oClick to challenge players'
+  - ' &7&m-------------------------&7 '
+GameItems:
+  board:
+    item: GRAY_STAINED_GLASS_PANE
+    name: '&f&l█'
+  O:
+    item: COAL
+    name: '&4&l⬤'
+  X:
+    item: SNOWBALL
+    name: '&9&l╳'
+Inactivity:
+  enabled: true
+  duration: 30

@@ -1,0 +1,41 @@
+# Edit DustFlip in this file.
+# 
+# All items are customizable. Once a player reaches the WinningScore the game ends.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&c&lDust Flip'
+MenuItem:
+  page: 1
+  slot: 22
+  item: REDSTONE
+  name: '       &6&l&m--[-&f  &c&lDust Flip &6&l&m-]--'
+  lore:
+  - ' &f&m-----------------------------&7 '
+  - ' &e Dust Flip resembles a Mincraft'
+  - ' &e version of Coin Flip. The sta-'
+  - ' &e rting player is chosen randomly.'
+  - ' &e Who will get 3 points first?'
+  - ' &7&m-----------------------------&7 '
+  - '  &f&oClick to challenge a player!'
+  - ' &7&m-----------------------------&7 '
+GameItems:
+  background:
+    item: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: '&b&l█'
+  selectorBorder:
+    item: GRAY_STAINED_GLASS_PANE
+    name: '&7&l█'
+  item1:
+    item: REDSTONE
+    name: '&cRedstone'
+  item2:
+    item: GLOWSTONE_DUST
+    name: '&eGlowstone'
+GameSettings:
+  WinningScore: 3
+Inactivity:
+  enabled: true
+  duration: 30

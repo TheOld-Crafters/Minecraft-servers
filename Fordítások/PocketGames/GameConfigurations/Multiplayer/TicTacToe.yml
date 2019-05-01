@@ -1,0 +1,45 @@
+# Edit TicTacToe in this file.
+# 
+# All items are customizable. The starting player is chosen randomly when the game starts.!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&3&lTic Tac Toe'
+MenuItem:
+  page: 1
+  slot: 23
+  item: SLIME_BALL
+  name: '     &6&l&m--[-&f  &3&lTic Tac Toe &6&l&m-]--'
+  lore:
+  - ' &f&m----------------------------&7 '
+  - ' &e Tired of playing against the'
+  - ' &e computer? Challenge a player'
+  - ' &e in a game of TicTacToe and'
+  - ' &e see who comes out on top! The'
+  - ' &e starting player is chosen'
+  - ' &e randomly when the game starts.'
+  - ' &7&m----------------------------&7 '
+  - '  &f&oClick to challenge players'
+  - ' &7&m----------------------------&7 '
+GameItems:
+  border:
+    item: BLACK_STAINED_GLASS_PANE
+    name: '&f&l█'
+  board:
+    item: GRAY_STAINED_GLASS_PANE
+    name: '&f&l█'
+  O:
+    item: SLIME_BALL
+    name: '&4&l⬤'
+  playerItem:
+    name: '&4&l⬤'
+  X:
+    item: NETHER_STAR
+    name: '&9&l╳'
+  AI_Item:
+    name: '&9&l╳'
+Inactivity:
+  enabled: true
+  duration: 30

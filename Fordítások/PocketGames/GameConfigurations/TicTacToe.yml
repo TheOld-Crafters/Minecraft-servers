@@ -1,0 +1,41 @@
+# Edit TicTacToe in this file.
+# 
+# This game implements an unbeatable AI. The difficulty can be set by changing the 'AI_ChanceOfRandomMove'.
+# If this is set to 0 you can only tie or lose, never win. Setting it higher increases the chance of choosing a
+# random move instead of the correct move. (The random move can still be the correct move)
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&3&lTic Tac Toe'
+MenuItem:
+  page: 3
+  slot: 30
+  item: SLIME_BALL
+  name: '   &6&l&m--[-&f  &3&lTic Tac Toe &6&l&m-]--'
+  lore:
+  - ' &f&m-------------------------&7 '
+  - '  &ePlay TicTacToe against the'
+  - '  &ecomputer. Win as many times'
+  - '  &eas you can in sixty seconds!'
+  - ' &7&m-------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m-------------------------&7 '
+GameItems:
+  border:
+    item: BLACK_STAINED_GLASS_PANE
+    name: '&f&l█'
+  board:
+    item: GRAY_STAINED_GLASS_PANE
+    name: '&f&l█'
+  playerItem:
+    item: SLIME_BALL
+    name: '&4&l⬤'
+  AI_Item:
+    item: NETHER_STAR
+    name: '&9&l╳'
+GameSettings:
+  AI_ChanceOfRandomMove: 20
+  gameDuration: 60

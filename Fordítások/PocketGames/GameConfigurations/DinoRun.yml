@@ -1,0 +1,63 @@
+# Edit DinoRun in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&e&lDino Run'
+MenuItem:
+  page: 1
+  slot: 21
+  item: BONE
+  name: '         &6&l&m--[-&f  &e&lDino Run&f  &6&l&m-]--'
+  lore:
+  - ' &f&m-------------------------------&7 '
+  - '  &eThis game is inspired by the Google'
+  - '  &eno connection game. Run as far as'
+  - '  &eyou possibly can while avoiding all'
+  - '  &ethe Cacti and Birds. Best of Luck!'
+  - ' &7&m-------------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m-------------------------------&7 '
+GameItems:
+  head:
+    head: http://textures.minecraft.net/texture/6da6c914404bed21bd4cffb049b927eed0f887609e4d1f4e49761eb891c68d92
+    name: '&7Dino'
+  legs:
+    item: IRON_LEGGINGS
+    name: '&7Dino''s Legs'
+    itemFlags:
+    - HIDE_ATTRIBUTES
+  sun:
+    item: YELLOW_STAINED_GLASS_PANE
+    name: '&eSun'
+  background:
+    item: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: '&b&l*'
+  sand:
+    item: SAND
+    name: '&e&l*'
+  redSand:
+    item: RED_SAND
+    name: '&6&l*'
+  cactus:
+    item: CACTUS
+    name: '&2&l*'
+  bird:
+    head: http://textures.minecraft.net/texture/b0f8b5392065e12fdbbbb7a06e1f56ce9803b5b791b78f1de73453ce229eda
+    name: '&7Bird'
+GameSettings:
+  gameSpeed: 15
+  maxGameSpeed: 5
+Controls:
+  up:
+    slot: 13
+    head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
+    name: '&aJump'
+  down:
+    slot: 22
+    head: http://textures.minecraft.net/texture/3912d45b1c78cc22452723ee66ba2d15777cc288568d6c1b62a545b29c7187
+    name: '&aDuck'

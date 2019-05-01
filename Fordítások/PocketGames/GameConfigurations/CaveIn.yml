@@ -1,0 +1,86 @@
+# Edit CaveIn in this file.
+# 
+# Add as many resources as you want.
+# Value equals score pr. block.
+# Probability is calculated through a weight system. Larger probability values equals greater frequency of that item.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&8&lCave In'
+MenuItem:
+  page: 2
+  slot: 20
+  item: STONE_PICKAXE
+  name: '          &6&l&m--[-&f  &8&lCave In&f  &6&l&m-]--'
+  lore:
+  - ' &f&m------------------------------&7 '
+  - '  &eCaveIn is an awesome mining game!'
+  - '  &eYou have to collect large veins'
+  - '  &eof different resources. Larger'
+  - '  &eveins yield more points, so does'
+  - '  &erarer resources. Each connected'
+  - '  &eblock yields its worth in points.'
+  - ' &7&m------------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m------------------------------&7 '
+  itemFlags:
+  - HIDE_ATTRIBUTES
+GameItems:
+  background:
+    item: GRAY_STAINED_GLASS_PANE
+    name: '&7&l*'
+  border:
+    item: QUARTZ_BLOCK
+    name: '&f&l*'
+  movesCounter:
+    item: CLOCK
+    name: '&e%moves% &9moves left!'
+    slot: 22
+  Resources:
+    dirt:
+      item: DIRT
+      value: 1
+      probability: 5
+      name: '&fDirt'
+      lore:
+      - '&a&o%value% &7&opoint for each'
+      - '&7&oconnected dirt block.'
+    stone:
+      item: STONE
+      value: 2
+      probability: 4
+      name: '&7Stone'
+      lore:
+      - '&a&o%value% &7&opoints for each'
+      - '&7&oconnected stone block.'
+    iron:
+      item: IRON_INGOT
+      value: 4
+      probability: 3.5
+      name: '&aIron'
+      lore:
+      - '&a&o%value% &7&opoints for each'
+      - '&7&oconnected iron ingot.'
+    gold:
+      item: GOLD_INGOT
+      value: 7
+      probability: 3
+      name: '&eGold'
+      lore:
+      - '&a&o%value% &7&opoints for each'
+      - '&7&oconnected gold ingot.'
+    diamond:
+      item: DIAMOND
+      value: 10
+      probability: 1
+      name: '&bDiamond'
+      lore:
+      - '&a&o%value% &7&opoints for each'
+      - '&7&oconnected diamond.'
+GameSettings:
+  moves: 30
+  gravitySpeed: 3
+  obliqueBlocks: false

@@ -1,0 +1,38 @@
+# Edit SpeedClicker in this file.
+# 
+# All items are customizable. Play around with the GameSettings and find the sweet spot for your server!
+# The maximum supported game duration is 99 seconds.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&c&lSpeed Clicker'
+MenuItem:
+  page: 2
+  slot: 24
+  head: http://textures.minecraft.net/texture/aacacb836c5e428b49b5d224cab22828efe2f6c704f759364d71c656e301420
+  name: '   &6&l&m--[-&f  &c&lSpeed Clicker&f  &6&l&m-]--'
+  lore:
+  - ' &f&m----------------------------&7 '
+  - '  &eHow fast can you click? Test'
+  - '  &eyourself in this fun clicking'
+  - '  &egame. Click the button as many'
+  - '  &etimes as you can within the'
+  - '  &egiven game duration! Good luck!'
+  - ' &7&m----------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m----------------------------&7 '
+GameItems:
+  border:
+    item: CYAN_TERRACOTTA
+    name: '&9&l*'
+  background:
+    item: RED_STAINED_GLASS_PANE
+    name: '&c&l*'
+  button:
+    item: STONE_BUTTON
+    name: '&a&lClick here!'
+GameSettings:
+  gameDuration: 20

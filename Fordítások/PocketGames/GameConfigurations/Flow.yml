@@ -1,0 +1,173 @@
+# Edit Flow in this file.
+# 
+# The select: specifies the amount of unique random levels of that difficulty to complete in a run.
+# Add as many colors and levels as you want. Tip: Keeping the color at a length of 4 makes the config a lot more foreseeable.
+# You cannot add or change the difficulties! Please also make sure to always have exactly 2 of each color you choose in a level.
+# All the pre-configured levels are completable though it is possible to add impossible levels. Refrain from doing that.
+# 
+# Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
+
+
+Enabled: true
+GameHeader: '&c&lF&2&lL&1&lO&e&lW'
+MenuItem:
+  page: 3
+  slot: 31
+  item: SUNFLOWER
+  name: '        &6&l&m--[-&f  &c&lF&2&lL&1&lO&e&lW  &6&l&m-]--'
+  lore:
+  - ' &f&m--------------------------&7 '
+  - '  &ePlay a replica of the popular'
+  - '  &egame Flow Free. Connect the'
+  - '  &ecolors by clicking on a color'
+  - '  &eand then clicking your way'
+  - '  &eover to the matching one.'
+  - '  &eConnect all colors to go to'
+  - '  &ethe next level. Beat 9 random'
+  - '  &elevels ranging in difficulty'
+  - '  &eas fast as you possibly can!'
+  - ' &7&m--------------------------&7 '
+  - '  &f&oLeft Click -> Play Game'
+  - '  &f&oRight Click -> Highscore'
+  - ' &7&m--------------------------&7 '
+GameItems:
+  background:
+    item: BLACK_STAINED_GLASS_PANE
+    name: '&0&l█'
+  fill:
+    item: WHITE_STAINED_GLASS_PANE
+    name: '&f&l█'
+  Colors:
+    red_:
+      item: RED_CONCRETE
+      name: '&4&l█'
+    lblu:
+      item: LIGHT_BLUE_CONCRETE
+      name: '&b&l█'
+    oran:
+      item: ORANGE_CONCRETE
+      name: '&6&l█'
+    yell:
+      item: YELLOW_CONCRETE
+      name: '&e&l█'
+    blue:
+      item: BLUE_CONCRETE
+      name: '&1&l█'
+    gree:
+      item: GREEN_CONCRETE
+      name: '&2&l█'
+    pink:
+      item: MAGENTA_CONCRETE
+      name: '&d&l█'
+Levels:
+  easy5x5:
+    select: 3
+    '1':
+    - red_,fill,gree,fill,yell
+    - fill,fill,blue,fill,oran
+    - fill,fill,fill,fill,fill
+    - fill,gree,fill,yell,fill
+    - fill,red_,blue,oran,fill
+    '2':
+    - yell,fill,fill,fill,fill
+    - fill,fill,fill,fill,fill
+    - fill,fill,gree,fill,fill
+    - blue,gree,red_,fill,yell
+    - red_,fill,fill,fill,blue
+    '3':
+    - fill,yell,blue,gree,fill
+    - fill,fill,fill,red_,fill
+    - fill,fill,red_,fill,fill
+    - yell,fill,fill,oran,fill
+    - blue,fill,oran,gree,fill
+    '4':
+    - fill,fill,fill,red_,gree
+    - red_,fill,fill,fill,fill
+    - fill,fill,yell,fill,fill
+    - fill,fill,fill,blue,fill
+    - gree,blue,yell,fill,fill
+    '5':
+    - fill,fill,fill,red_,gree
+    - fill,yell,blue,gree,fill
+    - fill,fill,fill,fill,fill
+    - fill,fill,fill,fill,blue
+    - fill,fill,red_,fill,yell
+  medium6x6:
+    select: 3
+    '1':
+    - gree,yell,lblu,fill,red_,blue
+    - fill,fill,fill,fill,oran,fill
+    - fill,fill,lblu,fill,fill,fill
+    - fill,fill,red_,fill,fill,fill
+    - gree,fill,oran,fill,fill,fill
+    - yell,fill,blue,fill,fill,fill
+    '2':
+    - fill,oran,blue,fill,fill,gree
+    - fill,fill,fill,fill,fill,fill
+    - fill,fill,yell,red_,fill,gree
+    - fill,fill,fill,lblu,fill,blue
+    - fill,red_,yell,fill,lblu,oran
+    - fill,fill,fill,fill,fill,fill
+    '3':
+    - fill,fill,fill,fill,fill,fill
+    - fill,yell,fill,fill,gree,fill
+    - fill,fill,fill,red_,fill,fill
+    - fill,fill,fill,fill,fill,fill
+    - fill,fill,yell,blue,gree,fill
+    - fill,fill,blue,red_,fill,fill
+    '4':
+    - yell,fill,fill,fill,fill,fill
+    - fill,fill,fill,fill,fill,fill
+    - fill,fill,fill,fill,fill,fill
+    - red_,gree,blue,gree,fill,fill
+    - yell,blue,fill,red_,fill,fill
+    - fill,fill,fill,fill,fill,fill
+    '5':
+    - gree,fill,fill,fill,fill,fill
+    - fill,fill,fill,fill,fill,fill
+    - yell,fill,fill,red_,yell,fill
+    - fill,fill,fill,fill,blue,fill
+    - fill,blue,fill,fill,red_,fill
+    - fill,fill,fill,fill,gree,fill
+  hard7x7:
+    select: 3
+    '1':
+    - fill,fill,fill,fill,fill,fill,blue
+    - fill,fill,fill,fill,fill,oran,red_
+    - fill,oran,fill,fill,fill,fill,fill
+    - fill,fill,fill,gree,lblu,fill,fill
+    - fill,fill,gree,fill,yell,fill,fill
+    - fill,fill,fill,fill,red_,yell,fill
+    - fill,fill,fill,fill,fill,blue,lblu
+    '2':
+    - fill,pink,red_,fill,fill,fill,fill
+    - fill,fill,oran,blue,fill,blue,fill
+    - fill,fill,gree,fill,fill,fill,fill
+    - fill,fill,lblu,yell,fill,gree,fill
+    - fill,fill,fill,fill,yell,lblu,fill
+    - fill,fill,oran,fill,fill,fill,fill
+    - fill,fill,pink,red_,fill,fill,fill
+    '3':
+    - fill,fill,fill,fill,fill,fill,fill
+    - gree,fill,fill,fill,fill,fill,fill
+    - fill,fill,yell,fill,fill,fill,fill
+    - fill,fill,fill,fill,yell,fill,fill
+    - fill,fill,oran,fill,blue,fill,fill
+    - red_,blue,fill,fill,oran,red_,fill
+    - gree,fill,fill,fill,fill,fill,fill
+    '4':
+    - lblu,blue,yell,fill,fill,fill,fill
+    - fill,fill,fill,fill,fill,gree,fill
+    - fill,red_,fill,yell,fill,fill,fill
+    - fill,oran,fill,fill,blue,fill,fill
+    - fill,fill,red_,fill,gree,fill,fill
+    - fill,fill,fill,fill,fill,fill,fill
+    - fill,lblu,fill,fill,fill,fill,oran
+    '5':
+    - fill,fill,fill,fill,fill,fill,fill
+    - lblu,red_,fill,red_,fill,gree,fill
+    - fill,fill,pink,lblu,gree,fill,fill
+    - fill,fill,yell,fill,fill,fill,blue
+    - fill,fill,oran,fill,fill,fill,fill
+    - fill,fill,fill,fill,yell,fill,blue
+    - fill,fill,fill,fill,pink,fill,oran
