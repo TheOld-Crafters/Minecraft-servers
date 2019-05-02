@@ -7,33 +7,33 @@
 
 
 Enabled: true
-GameHeader: '&b&lDiamond Collect'
+GameHeader: '&b&lGyémánt gyűjtés'
 MenuItem:
   page: 1
   slot: 22
   item: DIAMOND
-  name: '      &6&l&m--[-&f  &b&lDiamond Collect&f  &6&l&m-]--'
+  name: '      &6&l&m--[-&f  &b&lDGyémánt gyűjtést&f  &6&l&m-]--'
   lore:
   - ' &f&m---------------------------------&7 '
-  - '  &eCollect as many Diamonds as you can.'
-  - '  &eCollecting them increases difficulty.'
-  - '  &eAvoid the many scattered obstacles'
-  - '  &eon the constantly transforming map!'
+  - '  &eGyűjts össze annyi gyémántot, amennyit tudsz.'
+  - '  &eGyűjtésük növeli a nehézségi szintet.'
+  - '  &eKerüld ki a szétszórt akadályokat'
+  - '  &ea folyamatosan változó pályán!'
   - ' &7&m---------------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m--------------------------------&7 '
   glow: true
 GameItems:
   player:
     head: http://textures.minecraft.net/texture/c42070acc814bc946e59879ec7da45de984d3ee9a159393defb59853abe3b6
-    name: '&7&lCollector'
+    name: '&7&lGyűjtő'
   diamond:
     item: DIAMOND
-    name: '&b&lShiny'
+    name: '&b&lFényes'
   obstacle:
     item: GRAY_STAINED_GLASS_PANE
-    name: '&7&oObstacle'
+    name: '&7&oAkadály'
   background:
     item: LIGHT_BLUE_STAINED_GLASS_PANE
     name: '&b&l*'
@@ -49,16 +49,16 @@ Controls:
   up:
     slot: 13
     head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
-    name: '&aUp'
+    name: '&aFel'
   down:
     slot: 22
     head: http://textures.minecraft.net/texture/3912d45b1c78cc22452723ee66ba2d15777cc288568d6c1b62a545b29c7187
-    name: '&aDown'
+    name: '&aLe'
   left:
     slot: 21
     head: http://textures.minecraft.net/texture/5f133e91919db0acefdc272d67fd87b4be88dc44a958958824474e21e06d53e6
-    name: '&aLeft'
+    name: '&aBal'
   right:
     slot: 23
     head: http://textures.minecraft.net/texture/e3fc52264d8ad9e654f415bef01a23947edbccccf649373289bea4d149541f70
-    name: '&aRight'
+    name: '&aJobb'

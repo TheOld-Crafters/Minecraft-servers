@@ -14,16 +14,16 @@ MenuItem:
   name: '         &6&l&m--[-&f  &c&lT&6&lE&e&lT&a&lR&b&lI&5&lS  &6&l&m-]--'
   lore:
   - ' &f&m-----------------------------&7 '
-  - '  &ePlay the good ol'' classic game'
-  - '  &eTetris! Rotate tetrominoes and'
-  - '  &earrange them correctly in order'
-  - '  &eto score points. 1 line equals 1'
-  - '  &epoint. Some features have been'
-  - '  &ealtered in order to accommodate'
-  - '  &ethe smaller sized inventory.'
+  - '  &eJátssz a régi klasszikus Tetrisszel!'
+  - '  &eForgasd a kockákat'
+  - '  &eés illeszd őket össze,'
+  - '  &ehogy pontot szerezz.'
+  - '  &e1 sor egyenlő 1 ponttal.'
+  - '  &eEgyes funkciók megválzotak'
+  - '  &eaz elhelyezésekre való tekintettel.'
   - ' &7&m-----------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m-----------------------------&7 '
 GameItems:
   background:
@@ -58,20 +58,20 @@ Controls:
   up:
     slot: 13
     head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
-    name: '&aRotate'
+    name: '&aForgatás'
   down:
     slot: 22
     head: http://textures.minecraft.net/texture/3912d45b1c78cc22452723ee66ba2d15777cc288568d6c1b62a545b29c7187
-    name: '&aDown'
+    name: '&aLe'
   left:
     slot: 21
     head: http://textures.minecraft.net/texture/5f133e91919db0acefdc272d67fd87b4be88dc44a958958824474e21e06d53e6
-    name: '&aLeft'
+    name: '&aBalra'
   right:
     slot: 23
     head: http://textures.minecraft.net/texture/e3fc52264d8ad9e654f415bef01a23947edbccccf649373289bea4d149541f70
-    name: '&aRight'
+    name: '&aJobbra'
   drop:
     slot: 14
     head: http://textures.minecraft.net/texture/25e9152efd892f60d7e0d7e53369e04779ed3111e2fb2752b6f4c26df540aedc
-    name: '&cDrop'
+    name: '&cEldobás'

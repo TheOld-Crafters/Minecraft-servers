@@ -8,26 +8,26 @@
 
 
 Enabled: true
-GameHeader: '&c&lApple Catch'
+GameHeader: '&c&lKapd el az almát'
 MenuItem:
   page: 1
   slot: 30
   item: GOLDEN_APPLE
-  name: '        &6&l&m--[-&f  &c&lApple Catch&f  &6&l&m-]--'
+  name: '        &6&l&m--[-&f  &c&lKapd el az almát&f  &6&l&m-]--'
   lore:
   - ' &f&m--------------------------------&7 '
-  - '  &eCatch as many Apples as you can.'
-  - '  &eCollecting them increases difficulty.'
-  - '  &eCollect Super and God Apples worth'
-  - '  &eup to x5 more than regular Apples!'
+  - '  &eKapj el annyi almát, amennyit csak tudsz.'
+  - '  &eGyűjtésük növeli a szint nehézségét.'
+  - '  &eA Szuper és Isteni almák 5x többet érnek'
+  - '  &emint a hagyományos almák!'
   - ' &7&m--------------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m--------------------------------&7 '
 GameItems:
   basket:
     head: http://textures.minecraft.net/texture/31385a7afb3552faf71c2c5a8e6a5b1d2e672c786e8074433eb5839ace83b4
-    name: '&e&lBasket'
+    name: '&e&lKosár'
   grass:
     item: TALL_GRASS
     name: '&2&l*'
@@ -39,10 +39,10 @@ GameItems:
     name: '&a&l*'
   cloud:
     item: WHITE_STAINED_GLASS_PANE
-    name: '&fCloud'
+    name: '&fFelhő'
   sun:
     item: YELLOW_STAINED_GLASS_PANE
-    name: '&eSun'
+    name: '&eNap'
   background:
     item: LIGHT_BLUE_STAINED_GLASS_PANE
     name: '&b&l*'
@@ -50,21 +50,21 @@ GameItems:
     normal:
       points: 1
       item: APPLE
-      name: '&a&lApple'
+      name: '&a&lAlma'
       lore:
-      - '&a1 Point'
+      - '&a1 Pont'
     super:
       points: 3
       item: GOLDEN_APPLE
-      name: '&b&lSuper Apple'
+      name: '&b&lSzuper Alma'
       lore:
-      - '&a3 Points'
+      - '&a3 Pont'
     god:
       points: 5
       item: ENCHANTED_GOLDEN_APPLE
-      name: '&d&lGod Apple'
+      name: '&d&lIsteni Alma'
       lore:
-      - '&a5 Points'
+      - '&a5 Pont'
   lives:
     '1':
       slot: 9
@@ -86,8 +86,8 @@ Controls:
   left:
     slot: 21
     head: http://textures.minecraft.net/texture/5f133e91919db0acefdc272d67fd87b4be88dc44a958958824474e21e06d53e6
-    name: '&aLeft'
+    name: '&aBal'
   right:
     slot: 23
     head: http://textures.minecraft.net/texture/e3fc52264d8ad9e654f415bef01a23947edbccccf649373289bea4d149541f70
-    name: '&aRight'
+    name: '&aJobb'

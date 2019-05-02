@@ -6,22 +6,22 @@
 
 
 Enabled: true
-GameHeader: '&3&lTic Tac Toe'
+GameHeader: '&3&lAmőba'
 MenuItem:
   page: 1
   slot: 23
   item: SLIME_BALL
-  name: '     &6&l&m--[-&f  &3&lTic Tac Toe &6&l&m-]--'
+  name: '     &6&l&m--[-&f  &3&lAmőba &6&l&m-]--'
   lore:
   - ' &f&m----------------------------&7 '
-  - ' &e Tired of playing against the'
-  - ' &e computer? Challenge a player'
-  - ' &e in a game of TicTacToe and'
-  - ' &e see who comes out on top! The'
-  - ' &e starting player is chosen'
-  - ' &e randomly when the game starts.'
+  - ' &e Unod a számítógép elleni játékos?'
+  - ' &e Mérkőzz meg egy játékossal'
+  - ' &e egy Amőba játékban és'
+  - ' &e nézzük meg ki kerül ki nyertesként!'
+  - ' &e A kezdő játékos választ véletlenszerűen'
+  - ' &e amikor a játék elindul.'
   - ' &7&m----------------------------&7 '
-  - '  &f&oClick to challenge players'
+  - '  &f&oKattints a játékos kihívásához'
   - ' &7&m----------------------------&7 '
 GameItems:
   border:

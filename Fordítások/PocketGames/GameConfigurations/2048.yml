@@ -15,14 +15,14 @@ MenuItem:
   name: '            &6&l&m--[-&f  &2&l2048&f  &6&l&m-]--'
   lore:
   - ' &f&m-------------------------------&7 '
-  - '  &ePlay the highly popular game 2048'
-  - '  &einside of Minecraft. Get the very'
-  - '  &eprestigious 2048 tile! Continue'
-  - '  &eplaying to reach the highest score!'
-  - '  &e&oThis game autosaves progress!'
+  - '  &eJátsz a nagy népszerűségnek örvendő 2048 játékkal'
+  - '  &ea Minecraft keretein belül. Érd el a '
+  - '  &etekintélyes 2048-at! Folytasd a játékot'
+  - '  &ea legmagasabb pont eléréséért!'
+  - '  &e&oA játék automatikusan ment!'
   - ' &7&m-------------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m-------------------------------&7 '
 GameItems:
   filler:
@@ -122,16 +122,16 @@ Controls:
   up:
     slot: 13
     head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
-    name: '&aUp'
+    name: '&aFel'
   down:
     slot: 22
     head: http://textures.minecraft.net/texture/3912d45b1c78cc22452723ee66ba2d15777cc288568d6c1b62a545b29c7187
-    name: '&aDown'
+    name: '&aLe'
   left:
     slot: 21
     head: http://textures.minecraft.net/texture/5f133e91919db0acefdc272d67fd87b4be88dc44a958958824474e21e06d53e6
-    name: '&aLeft'
+    name: '&aBal'
   right:
     slot: 23
     head: http://textures.minecraft.net/texture/e3fc52264d8ad9e654f415bef01a23947edbccccf649373289bea4d149541f70
-    name: '&aRight'
+    name: '&aJobb'

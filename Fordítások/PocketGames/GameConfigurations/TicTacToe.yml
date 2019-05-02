@@ -13,15 +13,15 @@ MenuItem:
   page: 3
   slot: 30
   item: SLIME_BALL
-  name: '   &6&l&m--[-&f  &3&lTic Tac Toe &6&l&m-]--'
+  name: '   &6&l&m--[-&f  &3&lAmőba &6&l&m-]--'
   lore:
   - ' &f&m-------------------------&7 '
-  - '  &ePlay TicTacToe against the'
-  - '  &ecomputer. Win as many times'
-  - '  &eas you can in sixty seconds!'
+  - '  &eJátssz Amőbát a gép ellen.'
+  - '  &eNyersz annyiszor, ahányszor tudsz,'
+  - '  &ehatvan másodperc alatt!'
   - ' &7&m-------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m-------------------------&7 '
 GameItems:
   border:

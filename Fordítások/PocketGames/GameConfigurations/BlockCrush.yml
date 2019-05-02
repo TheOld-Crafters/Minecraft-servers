@@ -15,14 +15,14 @@ MenuItem:
   name: '      &6&l&m--[-&f  &e&lBlock Crush&f  &6&l&m-]--'
   lore:
   - ' &f&m------------------------------&7 '
-  - '  &eBlock Crush is as you might have'
-  - '  &eguessed a Pocket Games version'
-  - '  &eof the popular game Candy Crush.'
-  - '  &eSwap blocks and connect them in'
-  - '  &elength of at least three blocks.'
+  - '  &eA Block Crush, ahogy látod, egyike'
+  - '  &ea Pocket Games egyik verziójának,'
+  - '  &ea jól ismert Candy Crush alapján.'
+  - '  &eCserélgess blokkokat és párosítsd őket'
+  - '  &elegalább három blokk hosszan.'
   - ' &7&m------------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m------------------------------&7 '
 GameItems:
   background:
@@ -30,30 +30,30 @@ GameItems:
     name: '&7&l*'
   movesCounter:
     item: CLOCK
-    name: '&e%moves% &9moves left!'
+    name: '&e%moves% &9lépés maradt!'
     slot: 22
   Blocks:
     dirt:
       item: DIRT
-      name: '&fDirt'
+      name: '&fFöld'
     stone:
       item: STONE
-      name: '&7Stone'
+      name: '&7Kő'
     log:
       item: OAK_LOG
-      name: '&6Oak Log'
+      name: '&6Fenyőfa rönk'
     sand:
       item: SAND
-      name: '&eSand'
+      name: '&eHomok'
     ice:
       item: ICE
-      name: '&bIce'
+      name: '&bJég'
     brick:
       item: BRICK
-      name: '&cBricks'
+      name: '&cTégla'
     netherrack:
       item: NETHERRACK
-      name: '&4Netherrack'
+      name: '&4Pokolkő'
 GameSettings:
   moves: 15
   gravitySpeed: 3

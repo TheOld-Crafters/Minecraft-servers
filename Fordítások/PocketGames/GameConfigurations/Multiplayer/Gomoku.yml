@@ -14,12 +14,12 @@ MenuItem:
   name: '       &6&l&m--[-&f  &4&lGomoku &6&l&m-]--'
   lore:
   - ' &f&m-------------------------&7 '
-  - ' &e Tired of playing regular Tic'
-  - ' &e Tac Toe? Challenge a player'
-  - ' &e in a game of Gomoku and see'
-  - ' &e who can connect five first!'
+  - ' &e Unod már az egyszerű Amőbát?'
+  - ' &e Hívj ki egy játékost egy'
+  - ' &e Gomoku-ra és lássuk hogy'
+  - ' &e kinek jön össze 5 egy sorban!'
   - ' &7&m-------------------------&7 '
-  - '  &f&oClick to challenge players'
+  - '  &f&oKattints a játékos kihívásához'
   - ' &7&m-------------------------&7 '
 GameItems:
   board:

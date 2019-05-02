@@ -7,26 +7,26 @@
 
 
 Enabled: true
-GameHeader: '&d&lFalling Blocks'
+GameHeader: '&d&lLeeső blokkok'
 MenuItem:
   page: 2
   slot: 22
   item: SAND
-  name: '    &6&l&m--[-&f  &d&lFalling Blocks&f  &6&l&m-]--'
+  name: '    &6&l&m--[-&f  &d&lLeeső blokkok&f  &6&l&m-]--'
   lore:
   - ' &f&m-----------------------------&7 '
-  - '  &eClick the falling blocks before'
-  - '  &ethey hit the ground. Some blocks'
-  - '  &emay take more clicks, but yields'
-  - '  &eone point for each click needed.'
+  - '  &eKattints a lehulló blokkokra mielőtt'
+  - '  &ea földre esnének. Néhány blokk'
+  - '  &etöbb klikkelést igényel, tehát'
+  - '  &eegy pontot kapsz minden klikkelésért.'
   - ' &7&m-----------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m-----------------------------&7 '
 GameItems:
   fallingBlock:
     item: SAND
-    name: '&7Click Me!'
+    name: '&7Kattints rám!'
   ground:
     item: GRASS_BLOCK
   basket:
@@ -39,7 +39,7 @@ GameItems:
     name: '&a&l*'
   sun:
     item: YELLOW_STAINED_GLASS_PANE
-    name: '&eSun'
+    name: '&eNap'
   background:
     item: LIGHT_BLUE_STAINED_GLASS_PANE
     name: '&b&l*'

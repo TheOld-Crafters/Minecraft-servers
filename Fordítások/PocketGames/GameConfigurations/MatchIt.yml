@@ -7,20 +7,20 @@
 
 
 Enabled: true
-GameHeader: '&a&lMatch It'
+GameHeader: '&a&lPárosítás'
 MenuItem:
   page: 1
   slot: 32
   item: BLAZE_ROD
-  name: '        &6&l&m--[-&f  &a&lMatch It&f  &6&l&m-]--'
+  name: '        &6&l&m--[-&f  &a&lPárosítást&f  &6&l&m-]--'
   lore:
   - ' &f&m------------------------------&7 '
-  - '  &ePlay an awesome game of Match It!'
-  - '  &eClick on a block of wool to flip it'
-  - '  &eMatch items as fast as you can!'
+  - '  &eJátssz egy remek Párosító játékot!'
+  - '  &eKattints a gyapjúra, hogy megfordítsd'
+  - '  &ePárosítsd a tárgyakat amilyen gyorsan tudod!'
   - ' &7&m------------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m------------------------------&7 '
   glow: true
 GameItems:
@@ -30,49 +30,49 @@ GameItems:
   matchItems:
     '1':
       item: BONE
-      name: '&fBone'
+      name: '&fCsont'
     '2':
       item: DIAMOND
-      name: '&bDiamond'
+      name: '&bGyémánt'
     '3':
       item: GOLD_INGOT
-      name: '&eGold Ingot'
+      name: '&eAranyrúd'
     '4':
       item: IRON_INGOT
-      name: '&8Iron Ingot'
+      name: '&8Vasrúd'
     '5':
       item: GLOWSTONE_DUST
-      name: '&eGlowstone Dust'
+      name: '&eIzzókő-por'
     '6':
       item: TNT
       name: '&cTNT'
     '7':
       item: BLAZE_ROD
-      name: '&6Blaze Rod'
+      name: '&6Lángrúd'
     '8':
       item: ARROW
-      name: '&fArrow'
+      name: '&fNyíl'
     '9':
       item: HOPPER
-      name: '&7Hopper'
+      name: '&7Tölcsér'
     '10':
       item: ANVIL
-      name: '&7Anvil'
+      name: '&7Üllő'
     '11':
       item: COAL
-      name: '&8Coal'
+      name: '&8Szén'
     '12':
       item: APPLE
-      name: '&cApple'
+      name: '&cAlma'
     '13':
       item: STRING
-      name: '&fString'
+      name: '&fFonal'
     '14':
       item: MAGMA_CREAM
-      name: '&cMagma Cream'
+      name: '&cMagmakrém'
 GameSettings:
   wrongMatchDelay: 20
 Controls:
   flipItem:
     item: WHITE_WOOL
-    name: '&eClick to Flip'
+    name: '&eKattints a megfordításhoz!'

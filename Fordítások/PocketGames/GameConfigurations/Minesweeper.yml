@@ -6,33 +6,33 @@
 
 
 Enabled: true
-GameHeader: '&f&lMinesweeper'
+GameHeader: '&f&lAknakereső'
 MenuItem:
   page: 3
   slot: 20
   item: TNT
-  name: '    &6&l&m--[-&f  &f&lMinesweeper  &6&l&m-]--'
+  name: '    &6&l&m--[-&f  &f&lAknakereső  &6&l&m-]--'
   lore:
   - ' &f&m----------------------------&7 '
-  - ' &e Minesweeper is a single-player'
-  - ' &e puzzle game. The objective of'
-  - ' &e the game is to clear a rectan-'
-  - ' &e gular board containing mines'
-  - ' &e without detonating any of them,'
-  - ' &e with help from clues about the'
-  - ' &e number of neighboring mines'
-  - ' &e in each field. Good luck!'
+  - ' &e Az aknakereső egy egyjátékos játékos.'
+  - ' &e A játék lényege, hogy megtisztítsátok'
+  - ' &e a téglalap alakú táblát'
+  - ' &e ami aknákat rejt,'
+  - ' &e anélkül hogy felrobbantanátok őket,'
+  - ' &e a számok segítségével, amik jelölik'
+  - ' &e a szomszédos aknák számát'
+  - ' &e minden mezőben. Sok szerencsét!'
   - ' &7&m----------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m----------------------------&7 '
 GameItems:
   covered:
     item: GRAY_STAINED_GLASS_PANE
     name: '&8&l█'
     lore:
-    - '&7Left-click to uncover'
-    - '&7Right-click to place flag'
+    - '&7Bal-klikk a felfedéshez'
+    - '&7Jobb-klikk a zászló elhelyezéséhez'
   uncovered:
     item: LIGHT_GRAY_STAINED_GLASS_PANE:8
     name: '&7&l█'
@@ -40,8 +40,8 @@ GameItems:
     item: REDSTONE_TORCH
     name: '&c&l█'
     lore:
-    - '&7Left-click to uncover'
-    - '&7Right-click to remove flag'
+    - '&7Bal-klikk a felfedéshez'
+    - '&7RJobb-klikk a zászló eltávolításához'
   mine:
     item: TNT
     name: '&4&l█'

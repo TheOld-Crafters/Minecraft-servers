@@ -7,34 +7,34 @@
 
 
 Enabled: true
-GameHeader: '&6&lBasket'
+GameHeader: '&6&lKosár'
 MenuItem:
   page: 2
   slot: 33
   head: http://textures.minecraft.net/texture/edf84715a64dc45586f7a6079f8e49a9477c0fe96589b4cfd71cba32254ac8
-  name: '        &6&l&m--[-&f  &6&lBasket&f  &6&l&m-]--'
+  name: '        &6&l&m--[-&f  &6&lKosár&f  &6&l&m-]--'
   lore:
   - ' &f&m---------------------------&7 '
-  - '  &eTest you basket skills in this'
-  - '  &efun small basket game. Charge'
-  - '  &ePower and Height just right to'
-  - '  &escore! The ball and pole will'
-  - '  &echange position and height for'
-  - '  &eeach shot you take. Game On!'
+  - '  &eTeszteld a kosaras képességeidet'
+  - '  &eezen a kis kosaras játékon. Célzás'
+  - '  &eErő és Magasság kell a '
+  - '  &etalálathoz! A labda és az oszlop'
+  - '  &ehely váltakozik és a magassága is'
+  - '  &eminden egyes dobásnál. Kezdődjön a játék!'
   - ' &7&m---------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m---------------------------&7 '
 GameItems:
   ball:
     head: http://textures.minecraft.net/texture/edf84715a64dc45586f7a6079f8e49a9477c0fe96589b4cfd71cba32254ac8
-    name: '&6Basket Ball'
+    name: '&6Kosárlabda'
   pole:
     item: ARMOR_STAND
     name: '&7&l*'
   net:
     item: COBWEB
-    name: '&fNet'
+    name: '&fHáló'
   ground:
     item: BLACK_STAINED_GLASS_PANE
     name: '&0&l*'
@@ -92,10 +92,10 @@ Controls:
   Buttons:
     power:
       head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
-      name: '&aClick to set Power'
+      name: '&aKattints az erő beállításához!'
     height:
       head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
-      name: '&aClick to set Height'
+      name: '&aKattints a magasság beállításához!'
     launch:
       head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
-      name: '&eClick to throw!'
+      name: '&eKattints a dobáshoz!'

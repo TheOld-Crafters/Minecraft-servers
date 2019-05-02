@@ -6,22 +6,22 @@
 
 
 Enabled: true
-GameHeader: '&9&lSimon Says'
+GameHeader: '&9&lSimon Mondja'
 MenuItem:
   page: 1
   slot: 33
   item: PUFFERFISH
-  name: '        &6&l&m--[-&f  &9&lSimon Says&f  &6&l&m-]--'
+  name: '        &6&l&m--[-&f  &9&lSimon Mondja&f  &6&l&m-]--'
   lore:
   - ' &f&m--------------------------------&7 '
-  - '  &eCheck your memory capabilities in a'
-  - '  &eMinecraft replica of Simon Says!'
-  - '  &eRemember the order of many colors'
-  - '  &ein a list that keeps on getting longer!'
-  - '  &e&oHow many colors can you remember?'
+  - '  &eTeszteld a memóriád kapacitását'
+  - '  &ea Minecraft másolatú Simon Mondja játékban!'
+  - '  &eEmlékezz a színek sorrendjére a listán,'
+  - '  &eami egyre csak növekszik!'
+  - '  &e&oHány színre tudsz emlékezni?'
   - ' &7&m--------------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m--------------------------------&7 '
 GameItems:
   filler:
@@ -30,34 +30,34 @@ GameItems:
   green:
     normal:
       item: LIME_STAINED_GLASS_PANE
-      name: '&a&lGREEN'
+      name: '&a&lZÖLD'
     clicked:
       item: LIME_STAINED_GLASS_PANE
-      name: '&a&lGREEN'
+      name: '&a&lZÖLD'
       glow: true
   red:
     normal:
       item: RED_STAINED_GLASS_PANE
-      name: '&c&lRED'
+      name: '&c&lPIROS'
     clicked:
       item: RED_STAINED_GLASS_PANE
-      name: '&a&lRED'
+      name: '&a&lPIROS'
       glow: true
   yellow:
     normal:
       item: YELLOW_STAINED_GLASS_PANE
-      name: '&e&lYELLOW'
+      name: '&e&lSÁRGA'
     clicked:
       item: YELLOW_STAINED_GLASS_PANE
-      name: '&e&lYELLOW'
+      name: '&e&lSÁRGA'
       glow: true
   blue:
     normal:
       item: BLUE_STAINED_GLASS_PANE
-      name: '&9&lBLUE'
+      name: '&9&lKÉK'
     clicked:
       item: BLUE_STAINED_GLASS_PANE
-      name: '&9&lBLUE'
+      name: '&9&lKÉK'
       glow: true
 GameSettings:
   clicksAnimationSpeed: 7

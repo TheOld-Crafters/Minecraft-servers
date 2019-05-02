@@ -6,26 +6,26 @@
 
 
 Enabled: true
-GameHeader: '&a&lGap Jump'
+GameHeader: '&a&lSzakadék ugrás'
 MenuItem:
   page: 1
   slot: 20
   item: GRASS_BLOCK
-  name: '           &6&l&m--[-&f  &a&lGap Jump&f  &6&l&m-]--'
+  name: '           &6&l&m--[-&f  &a&lSzakadék ugrás&f  &6&l&m-]--'
   lore:
   - ' &f&m---------------------------------&7 '
-  - '  &eJump from island to island in this fun'
-  - '  &elittle minigame. Click to charge, then'
-  - '  &eclick again to launch and hopefully'
-  - '  &eyou''ll touch down on the next island!'
+  - '  &eUgorj szigetről szigetre ebben a játékban.'
+  - '  &eKattints, hogy célozhass, majd kattints újból'
+  - '  &ea kilövéshez, és remélhetőleg'
+  - '  &ea következő szigeten érsz földet!'
   - ' &7&m---------------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m---------------------------------&7 '
 GameItems:
   character:
     head: http://textures.minecraft.net/texture/451b78fbe4df1d74cdf9aa495641d0aab9d5c0367c774dbb0e7facff36dff
-    name: '&eHappy'
+    name: '&eBoldog'
   platformTop:
     item: GRASS_BLOCK
     name: '&a&l*'
@@ -34,10 +34,10 @@ GameItems:
     name: '&a&l*'
   cloud:
     item: WHITE_STAINED_GLASS_PANE
-    name: '&fCloud'
+    name: '&fFelhő'
   sun:
     item: YELLOW_STAINED_GLASS_PANE
-    name: '&eSun'
+    name: '&eNap'
   background:
     item: LIGHT_BLUE_STAINED_GLASS_PANE
     name: '&b&l*'
@@ -81,6 +81,6 @@ Controls:
   up:
     slot: 22
     head: http://textures.minecraft.net/texture/a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669
-    name: '&aClick once to charge'
+    name: '&aKattints a célzáshoz!'
     lore:
-    - '&eClick again to launch'
+    - '&eKattints újra a kilövéshez!'

@@ -11,22 +11,22 @@
 
 
 Enabled: true
-GameHeader: '&9&lThe Quiz'
+GameHeader: '&9&lA kvíz'
 MenuItem:
   page: 2
   slot: 29
   head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-  name: '       &6&l&m--[-&f  &9&lThe Quiz&f  &6&l&m-]--'
+  name: '       &6&l&m--[-&f  &9&lA kvíz&f  &6&l&m-]--'
   lore:
   - ' &f&m----------------------------&7 '
-  - ' &e How clever are you? Test your'
-  - ' &e skills in The Quiz! The Quiz'
-  - ' &e contains questions about both'
-  - ' &e Minecraft related stuff but'
-  - ' &e also some other fun subjects.'
+  - ' &e Mennyire vagy okos?'
+  - ' &e Teszteld a képességeidet a Kvízben!'
+  - ' &e A kvíz tartalmaz'
+  - ' &e Minecraft-hoz kapcsolódó kérdéseket'
+  - ' &e és más szórakoztató témákat is.'
   - ' &7&m----------------------------&7 '
-  - ' &f&o Left Click -> Play Game'
-  - ' &f&o Right Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m----------------------------&7 '
 GameItems:
   border:
@@ -38,7 +38,7 @@ Questions:
     '1':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWhat is 9 + 10?'
+        name: '&eMennyi 9 + 10?'
       answers:
         '1':
           item: LIME_WOOL
@@ -53,7 +53,7 @@ Questions:
     '2':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWhat is the name of the default skin?'
+        name: '&eMi a neve az alap skin-nek?'
       answers:
         '1':
           item: PINK_WOOL
@@ -68,76 +68,76 @@ Questions:
     '3':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWhat is blue and shiny?'
+        name: '&eMi az, kék és fényes?'
       answers:
         '1':
           item: PINK_WOOL
-          name: '&aDiamonds'
+          name: '&aGyémántok'
           correct: true
         '2':
           item: ORANGE_WOOL
-          name: '&aDirt'
+          name: '&aFöld'
         '3':
           item: YELLOW_WOOL
-          name: '&aThe sun'
+          name: '&aA nap'
     '4':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWhat three mobs can you have as a pet?'
+        name: '&eMelyik három teremtmény lehet a pet-ed?'
       answers:
         '1':
           item: PINK_WOOL
-          name: '&aCats, Birds, and Iron Golems'
+          name: '&aMacskák, Madarak, és Vasgólemek'
         '2':
           item: CYAN_WOOL
-          name: '&aWolfs, Ocelots, and, Horses'
+          name: '&aFarkasok, Ocelotok, és, Lovak'
           correct: true
         '3':
           item: YELLOW_WOOL
-          name: '&aNone?'
+          name: '&aEgyik sem?'
     '5':
       question:
         item: RED_WOOL
-        name: '&eWhat color is this item?'
+        name: '&eMilyen színű ez a tárgy?'
       answers:
         '1':
           item: PINK_WOOL
-          name: '&aRed'
+          name: '&aPiros'
           correct: true
         '2':
           item: RED_WOOL
-          name: '&aBlue'
+          name: '&aKék'
         '3':
           item: LIGHT_GRAY_WOOL
-          name: '&aGreen'
+          name: '&aZöld'
   medium:
     answerTime: 20
     startWhenScoreEquals: 5
     '1':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWhat are the main Hostile mobs in Minecraft?'
+        name: '&eMelyek a fő ellenséges lényeg a Minecraft-ban?'
       answers:
         '1':
           item: LIME_WOOL
-          name: '&aCats, Wolfs, Moms, and Bats'
+          name: '&aMacskák, Farkasok, Anyák és Denevérek'
         '2':
           item: MAGENTA_WOOL
-          name: '&aZombies, Creepers, Skeletons, Spiders, and Endermen'
+          name: '&aZombik, Creeper-ek, Csontvázak, Pókok, és Bevégzők'
           correct: true
         '3':
           item: GREEN_WOOL
-          name: '&aGhasts, Zombie Pigmen, Silverfish, and Blaze'
+          name: '&aSzellemek, Zombi-malacemberek, Ezüstmolyok, és Őrlángok'
         '4':
           item: LIGHT_BLUE_WOOL
-          name: '&aThe Ender Dragon, The Wither, and Herobrine'
+          name: '&aA végzetsárkány, A boszorkány, és Herobrine'
         '5':
           item: YELLOW_WOOL
-          name: '&aEndermites, Silverfish, Jockeys, and Giants'
+          name: '&aVégbogarak, Ezüstmolyok, Póklovasok, és Óriások'
     '2':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWho is the original creator of Minecraft?'
+        name: '&eKi a Minecraft eredeti készítője?'
       answers:
         '1':
           item: LIME_WOOL
@@ -148,7 +148,7 @@ Questions:
           name: '&aJeb'
         '3':
           item: WHITE_WOOL
-          name: '&aNotch and Jeb'
+          name: '&aNotch és Jeb'
         '4':
           item: LIGHT_GRAY_WOOL
           name: '&aMarkus Persson'
@@ -159,7 +159,7 @@ Questions:
     '3':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWhich of these is a scary hidden character?'
+        name: '&eEzek közül melyik egy ijesztő rejtett karakter?'
       answers:
         '1':
           item: LIGHT_BLUE_WOOL
@@ -170,66 +170,66 @@ Questions:
           correct: true
         '3':
           item: GRAY_WOOL
-          name: '&aThe Ender Dragon'
+          name: '&aA végzetsárkány'
         '4':
           item: LIGHT_GRAY_WOOL
           name: '&aShrek'
         '5':
           item: PURPLE_WOOL
-          name: '&aThe Iron Giant'
+          name: '&aA Vas Óriás'
     '4':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWhat is the standard spell in Minecraft?'
+        name: '&eMi az alap bűbáj a Minecraft-ban?'
       answers:
         '1':
           item: GRAY_WOOL
-          name: '&aFire blast'
+          name: '&aLáng csóva'
         '2':
           item: MAGENTA_WOOL
-          name: '&aWater blast'
+          name: '&aVíz áradat'
         '3':
           item: WHITE_WOOL
-          name: '&aThere are no spells?'
+          name: '&aNincsenek bűbájok?'
           correct: true
         '4':
           item: CYAN_WOOL
-          name: '&aLightning blast?'
+          name: '&aVillámcsapás?'
         '5':
           item: BLUE_WOOL
-          name: '&aWind blast?'
+          name: '&aSzélfúvás?'
     '5':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eHow tall is Steve?'
+        name: '&eMilyen magas Steve?'
       answers:
         '1':
           item: GRAY_WOOL
-          name: '&a2.0 Blocks'
+          name: '&a2.0 Blokk'
         '2':
           item: LIME_WOOL
-          name: '&a2.1 Blocks'
+          name: '&a2.1 Blokk'
         '3':
           item: BROWN_WOOL
-          name: '&a1.8 Blocks'
+          name: '&a1.8 Blokk'
           correct: true
         '4':
           item: GREEN_WOOL
-          name: '&a1.95 Blocks'
+          name: '&a1.95 Blokk'
         '5':
           item: RED_WOOL
-          name: '&a2.2 Blocks'
+          name: '&a2.2 Blokk'
   hard:
     answerTime: 15
     startWhenScoreEquals: 10
     '1':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWho is the creator of Pocket Games?'
+        name: '&eKi a Pocket Games készítője?'
       answers:
         '1':
           item: MAGENTA_WOOL
-          name: '&aThe server owner'
+          name: '&aA szerver tulaja'
         '2':
           item: PURPLE_WOOL
           name: '&aBenz24'
@@ -246,34 +246,34 @@ Questions:
     '2':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWhich material can you not progress without?'
+        name: '&eMelyik anyag nélkül nem tudsz előrelépni?'
       answers:
         '1':
           item: GRAY_WOOL
-          name: '&aWood'
+          name: '&aFa'
           correct: true
         '2':
           item: LIGHT_BLUE_WOOL
-          name: '&aWater'
+          name: '&aVíz'
         '3':
           item: MAGENTA_WOOL
-          name: '&aStone'
+          name: '&aKő'
         '4':
           item: LIME_WOOL
-          name: '&aQuartz'
+          name: '&aKvarc'
         '5':
           item: LIGHT_GRAY_WOOL
-          name: '&aGrass'
+          name: '&aFű'
         '6':
           item: PURPLE_WOOL
-          name: '&aDirt'
+          name: '&aFöld'
         '7':
           item: BLACK_WOOL
-          name: '&aSand'
+          name: '&aHomok'
     '3':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eHow many distinct Biomes are there?'
+        name: '&eHány különböző éghajlati övezet van?'
       answers:
         '1':
           item: GRAY_WOOL
@@ -300,7 +300,7 @@ Questions:
     '4':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWhen was Minecraft released?'
+        name: '&eMikor adták ki a Minecraft-ot?'
       answers:
         '1':
           item: MAGENTA_WOOL
@@ -327,28 +327,28 @@ Questions:
     '5':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWhat ocean mobs are coming soon?'
+        name: '&eMilyen vízi lények kerülnek be a játékba hamarosan?'
       answers:
         '1':
           item: PINK_WOOL
-          name: '&aSharks and Dolphins'
+          name: '&aCápák és Delfinek'
         '2':
           item: LIGHT_BLUE_WOOL
-          name: '&aFish and Whales'
+          name: '&aHalak és Bálnák'
         '3':
           item: ORANGE_WOOL
-          name: '&aDolphins and Fish'
+          name: '&aDelfinek és Halak'
           correct: true
         '4':
           item: CYAN_WOOL
-          name: '&aJellyfish, and Sharks'
+          name: '&aMedúza és Cápák'
         '5':
           item: MAGENTA_WOOL
-          name: '&aDolphins, Fish, and Jellyfish'
+          name: '&aDelfinek, Halak, Medúzák'
     '6':
       question:
         head: http://textures.minecraft.net/texture/bc8ea1f51f253ff5142ca11ae45193a4ad8c3ab5e9c6eec8ba7a4fcb7bac40
-        name: '&eWho is not a designer of Minecraft?'
+        name: '&eMelyikőjük nem Minecraft tervező?'
       answers:
         '1':
           item: PINK_WOOL

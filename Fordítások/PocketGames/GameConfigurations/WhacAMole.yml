@@ -5,28 +5,27 @@
 # Warning: Always ctrl+a and ctrl+c before testing your new settings. One small mistake can result in a file reset!
 
 
-Enabled: true
-GameHeader: '&2&lWhac A Mole'
+GameHeader: '&2&lVakond hajsza'
 MenuItem:
   page: 1
   slot: 29
   item: IRON_SHOVEL
-  name: '         &6&l&m--[-&f  &2&lWhac a Mole&f  &6&l&m-]--'
+  name: '         &6&l&m--[-&f  &2&lVakond hajsza&f  &6&l&m-]--'
   lore:
   - ' &f&m---------------------------------&7 '
-  - '  &eWhac-a-Mole recreated in Minecraft!'
-  - '  &eWhac as many moles as you possibly'
-  - '  &ecan in 60 seconds! The minigame gets'
-  - '  &eprogressively more difficult the more'
-  - '  &emoles you whac. Equip your hammer!'
+  - '  &eA vakond hajsza megvalósult a Minecraft-ban!'
+  - '  &eÜss le annyi vakondot amennyit csak tudsz'
+  - '  &e60 másodpercen belül!'
+  - '  &eA játék egyre nehezebbé válik,'
+  - '  &eminél több vakondot ütsz le. Készítsd a kalapácsod!'
   - ' &7&m---------------------------------&7 '
-  - '  &f&oLeft Click -> Play Game'
-  - '  &f&oRight Click -> Highscore'
+  - '  &f&oBal Klikk -> Játék'
+  - '  &f&oJobb Klikk -> Rekord'
   - ' &7&m---------------------------------&7 '
-GameItems:
+  GameItems:
   mole:
     head: http://textures.minecraft.net/texture/fea3f447455cd229dbc7eb3974e3cb5766aacfc46b5a3bf4c596d19594179d
-    name: '&aMole'
+    name: '&aVakond'
   background:
     item: LIGHT_BLUE_STAINED_GLASS_PANE
     name: '&b&l*'

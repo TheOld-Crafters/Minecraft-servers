@@ -6,20 +6,20 @@
 
 
 Enabled: true
-GameHeader: '&7&lRock Paper Scissors'
+GameHeader: '&7&lKő Papír Olló'
 MenuItem:
   page: 1
   slot: 21
   item: SHEARS
-  name: ' &6&l&m--[-&f  &7&lRock Paper Scissors &6&l&m-]--'
+  name: ' &6&l&m--[-&f  &7&lKő Papír Olló &6&l&m-]--'
   lore:
   - ' &f&m--------------------------------&7 '
-  - '  &ePlay the classic game Rock Paper'
-  - '  &eScissors against another player.'
-  - '  &eClick one of the options and wait'
-  - '  &efor your opponent to do the same!'
+  - '  &eJátssz a klasszikus Kő papír Ollóval'
+  - '  &eegy másik játékos ellen.'
+  - '  &eKattints az egyik lehetőségre és várj,'
+  - '  &eamíg az ellenfeled ugyan így nem tesz!'
   - ' &7&m--------------------------------&7 '
-  - '  &f&oClick to challenge a player!'
+  - '  &f&oKattints a játékos kihívásához!'
   - ' &7&m--------------------------------&7 '
 GameItems:
   background:
@@ -30,13 +30,13 @@ GameItems:
     name: '&0&l█'
   rock:
     item: COBBLESTONE
-    name: '&8Rock'
+    name: '&8Kő'
   paper:
     item: PAPER
-    name: '&fPaper'
+    name: '&fPapír'
   scissors:
     item: SHEARS
-    name: '&7Scissors'
+    name: '&7Olló'
 GameSettings:
   BestOf: 3
 Inactivity:
