@@ -223,7 +223,7 @@ GameItems:
       name: '&fKétkezes'
       lore:
       - '&aAz egér +0,06 sütit szerez minden birtokolt tárgyért.'
-      - '&a&o"Figyelj má', két kézzel!"'
+      - '&a&o"Figyelj má, két kézzel!"'
       - ''
       - '&fÁr: &a%price%'
     upgrade4:
