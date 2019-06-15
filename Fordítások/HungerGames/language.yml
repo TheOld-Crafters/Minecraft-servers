@@ -33,7 +33,7 @@ game-full: '&cTele van!'
 
 #  <arena> will be replaced with name of arena the player won in
 #  <winner> will be replaced with name of winner
-player-won: '&b&l<winner> &6nyert a &b&l<arena> &6arénában&7!'
+player-won: '&b&l<winner> &6nyert a(z) &b&l<arena> &6arénában&7!'
 
 #  <amount> will be replaced with the amount the player will receive on win
 winning-amount: '&7Kaptál &b$<amount> &7-t, mert megnyerted a &3&lHunger&b&lGames-t!'
@@ -99,7 +99,7 @@ death-other-entity: '<player> váratlanul meghalt...'
 #  COMMANDS
 ## Spawn
 cmd-spawn-same: '&cNem lehet két kezdőhely ugyanazon a helyen!'
-cmd-spawn-set: '&cLeraktad a #<number> számú HG kezdőhelyett.'
+cmd-spawn-set: '&cLeraktad a #<number> számú HG kezdőhelyet.'
 
 ## Base
 cmd-base-noperm: '&cEhhez nincs jogod: /hg <command>'
@@ -112,13 +112,13 @@ cmd-create-need-selection: '&cAz aréna készítés előtt ki kell jelölnöd a 
 cmd-create-divisible-1: '&cA másodperceknek oszthatónak kell lennie 30-cal!'
 cmd-create-divisible-2: '&cpl.: 90 30-cal osztható'
 cmd-create-minmax: '&cA min. játékosszám nem lehet több a max.-nál!'
-cmd-create-created: '&aElkészítetted a &b<arena>&a arénát!'
+cmd-create-created: '&aElkészítetted a(z) &b<arena>&a arénát!'
 
 ## Delete
 cmd-delete-attempt: '&aA(z) <arena> aréna törlésének próbája!'
 cmd-delete-stopping: '&7- &cA játék fut! &aLeállítás..'
 cmd-delete-kicking: '&7- &c&lJátékosok érzékelve! &aKickelés..'
-cmd-delete-deleted: '&aSikeresen törölted a &b<arena> &a arénát!'
+cmd-delete-deleted: '&aSikeresen törölted a(z) &b<arena> &a arénát!'
 cmd-delete-failed: '&cNem sikerült törölni az arénát!'
 cmd-delete-noexist: '&cEz az aréna nem található!'
 
@@ -129,7 +129,7 @@ cmd-join-in-game: '&cMár játékban vagy!'
 cmd-kit-no-change: '&cA játék futása közben nem tudod módosítani a felszerelésed!'
 
 ## Leave
-cmd-leave-left: '&6Elhagytad a &b&l<arena>&6 arénát&c!'
+cmd-leave-left: '&6Elhagytad a(z) &b&l<arena>&6 arénát&c!'
 
 ## Reload
 cmd-reload-attempt: '&a&lHungerGames újratöltésének próbálása...'
@@ -148,12 +148,12 @@ cmd-lobbywall-notcorrect: '&cEzek a táblák nincsenek a jó formátumban!'
 cmd-lobbywall-format: '&cformátum: &6[sign] &c[sign] [sign]'
 
 ## Start
-cmd-start-starting: '&6A &b<arena>&6 aréna indul!'
+cmd-start-starting: '&6A(z) &b<arena>&6 aréna indul!'
 
 ## Stop
 cmd-stop-all: '&aMinden játék leállítva'
 cmd-stop-arena: '&b<arena>&c aréna leállítva!'
-cmd-stop-noexist: '&cA &b<arena>&c arénában nem fut játék!'
+cmd-stop-noexist: '&cA(z) &b<arena>&c arénában nem fut játék!'
 
 ## Team
 cmd-team-not-avail: '&b<player> &cnem található!'
