@@ -1,0 +1,321 @@
+#  This is the language file
+
+#  Change the messages to your liking
+
+#  Supports '&' color codes
+
+#  Messages that contain <> indicate things that the plugin replaces, such as <player> or <distance>
+
+#  Comments in this file will be removed if we update messages during a plugin update
+
+#  To restore these messages, backup this file, delete it, and restart your server, this will create a new lang file with all the notes
+
+#  GENERAL PLUGIN MESSAGES
+
+prefix: '&7&l[&3&lHungerGames&7&l]'
+
+#  GAME MESSAGES
+
+#  <player> will be replaced with name of player
+
+player-joined-game: '&b&l<player> &7Csatlakozott a játékhoz'
+
+player-left-game: '&b&l<player> &cKiképett a játékból'
+
+#  <arena> will be replaced with the name of the arena
+
+game-started: '&6&l A(z) &c&l<arena> &6&laréna 30 másodperc múlva indul!'
+
+game-join: '&6&l Használd a&c&l /hg join <arena>&6&l parancsot a csatlakozáshoz!'
+
+game-countdown: 'A játék <timer> másodpercen belül kezdődik.'
+
+game-almost-over: '&l&cA játéknak mindjárt vége, harcolj az életedért!'
+
+game-ending-minsec: '&aA játéknak vége <minutes> perc <seconds> másodperc múlva.!'
+
+game-ending-min: '&aA játéknak vége <minutes> perc múlva!'
+
+game-ending-sec: '&aA játéknak vége <seconds> másodperc múlva!'
+
+game-border-closing: '&6A határ közeledik, <seconds> másodperced van, hogy elérd az aréna közepét!'
+
+game-chests-refill: '&6Ládák újratöltve.'
+
+# <min>/<sec> will be replaced with the remaining minutes and seconds in a game
+
+game-bossbar: '&6&lA játék vége: &b&l<min> &7perc &b&l<sec> &7másodperc'
+
+#  <amount> will be replaced with amount of players left to start a game
+
+players-to-start: '&b&l<amount> &6játékos kell még a kezdéshez!'
+
+arena-not-ready: '&cAz aréna még nem áll készen! Kérlek várj a csatlakozás előtt!'
+
+game-full: '&cTele van!'
+
+#  <arena> will be replaced with name of arena the player won in
+
+#  <winner> will be replaced with name of winner
+
+player-won: '&b&l<winner> &6nyert a &b&l<arena> &6arénában&7!'
+
+#  <amount> will be replaced with the amount the player will receive on win
+
+winning-amount: '&7Kaptál &b$<amount> &7-t, mert megnyerted a &3&lHunger&b&lGames-t!'
+
+#  KIT MESSAGES
+
+kit-join-header: '&c&l>&7&l----------[&f&lÜdv a Hunger&f&lGames-ben&7&l]&7&l----------&c&l<'
+
+kit-join-msg: '&7&l           - &3&lVálassz egy felszerelést a&b/hg kit &7<&rkit-name&7> paranccsal'
+
+kit-join-available: '&3&l  Elérhető felszerelések:&b'
+
+kit-join-footer: '&c&l>&7&l------------------------------------------&c&l<'
+
+kit-no-perm: '&cNincs engedélyed a felszerelés használatához!'
+
+kit-doesnt-exist: '&cEz a felszerelés nem található'
+
+#  SCOREBOARD
+
+scoreboard-title: '&6&lHungerGames'
+
+players-alive: '&d&lÉlők:'
+
+# <num> will be replaced by the number of remaining players in the game
+
+players-alive-num: '&e<num> élő'
+
+scoreboard-arena: "&a&lAréna: &b"
+
+#  TEAMS
+
+team-invite-1: '&6*&b&m                                                                             &6*'
+
+team-invite-2: '| &f<inviter> &3Meghívott &fCsapatba&3!'
+
+team-invite-3: '| &3Írd be a &f/hg team accept &3parancsot a csatlakozáshoz!'
+
+team-invite-4: '&6*&b&m                                                                             &6*'
+
+joined-team: '&3Sikeresen csatlakoztál a csapathoz!'
+
+#  CHEST DROPS
+
+chest-drop-1: '&6*&b&m                                                                                   &6*'
+
+chest-drop-2: '"&b| &3Egy csomagot dobtak le ide: &f<x>&3, &f<y>&3, &f<z>'
+
+#  COMPASS
+
+#  <player> will be replaced with the name of the nearest player
+
+#  <distance> will be replaced with the distance of the nearest player
+
+compass-nearest-player: '&f&lLegközelebbi játékos: &r<player>    &7&lTávolság: &c<distance>'
+
+#  FREE ROAM
+
+roam-game-started: '&4[]---------[ &6&lA kalandozási idő kezdetét vette! &4]---------[]'
+
+#  <roam> will be replaced with the time the players can roam for
+
+roam-time: ' &e <roam> másodperced van sebzés nélkül kalandozni!'
+
+roam-finished: '&c&lA pvp védelemnek vége, PvP Engedélyezve!'
+
+#  DEATH MESSAGES
+
+death-fallen: '&7&l[&3&lHungerGames Bukott&7&l]'
+
+death-explosion: '<player> darabjaira robbant!'
+
+death-custom: '<player> ismeretlen okból meghalt...'
+
+death-fall: '<player> a halálba zuhant...'
+
+death-falling-block: '<player>-t összezúzta egy blokk!'
+
+death-fire: '<player> elevenen elégett...'
+
+death-projectile: '<player> meghalt egy lövedék miatt...'
+
+death-lava: '<player> lávába zuhant!'
+
+death-magic: '<player>-t megsemmisítette a varázslat...'
+
+death-suicide: '<player> nem bírta az élet-halál harcot!'
+
+death-other-cause: '<player> meghalt <cause> miatt'
+
+death-player: '&6<player> &c&l-t megölte &6<killer> ezzel:&6<weapon> &c!'
+
+death-zombie: '<player>-t darabjaira szaggatta egy zombi!'
+
+death-skeleton: '<player>-t fejbelőtte egy csontváz!'
+
+death-spider: '<player>-t élve ette meg egy pók!'
+
+death-drowned: '<player>-t szétszaggatta egy megfulladt!'
+
+death-trident: '<player>-t felnyársalta egy Trident!'
+
+death-stray: '<player>-t fejenlőtte egy kóborló...'
+
+death-other-entity: '<player> váratlanul meghalt...'
+
+#  COMMANDS
+
+## Spawn
+
+cmd-spawn-same: '&cNem lehet két kezdőhely ugyanazon a helyen!'
+
+cmd-spawn-set: '&cLeraktad a #<number> számú HG kezdőhelyett.'
+
+## Base
+
+cmd-base-noperm: '&cEhhez nincs jogod: /hg <command>'
+
+cmd-base-nogame: '&cNem vagy játékban!'
+
+cmd-base-noregion: '&cNem vagy HungarGames régióban!'
+
+cmd-base-wrongusage: '&cHelytelen használat:'
+
+## Create
+
+cmd-create-need-selection: '&cAz aréna készítés előtt ki kell jelölnöd a területet!'
+
+cmd-create-divisible-1: '&cA másodperceknek oszthatónak kell lennie 30-cal!'
+
+cmd-create-divisible-2: '&cpl.: 90 30-cal osztható'
+
+cmd-create-minmax: '&cA min. játékosszám nem lehet több a max.-nál!'
+
+cmd-create-created: '&aElkészítetted a &b<arena>&a arénát!'
+
+## Delete
+
+cmd-delete-attempt: '&aA(z) <arena> aréna törlésének próbája!'
+
+cmd-delete-stopping: '&7- &cA játék fut! &aLeállítás..'
+
+cmd-delete-kicking: '&7- &c&lJátékosok érzékelve! &aKickelés..'
+
+cmd-delete-deleted: '&aSikeresen törölted a &b<arena> &a arénát!'
+
+cmd-delete-failed: '&cNem sikerült törölni az arénát!'
+
+cmd-delete-noexist: '&cEz az aréna nem található!'
+
+## Join
+
+cmd-join-in-game: '&cMár játékban vagy!'
+
+## Kit
+
+cmd-kit-no-change: '&cA játék futása közben nem tudod módosítani a felszerelésed!'
+
+## Leave
+
+cmd-leave-left: '&6Elhagytad a &b&l<arena>&6 arénát&c!'
+
+## Reload
+
+cmd-reload-attempt: '&a&lHungerGames újratöltésének próbálása...'
+
+cmd-reload-reloaded-arena: '&6 - &eArénák újratöltve!'
+
+cmd-reload-reloaded-kit: '&6 - &eFelszerelések újratöltve!'
+
+cmd-reload-reloaded-items: '&6 - &eVéletlenszerű tárgyak újratöltve!'
+
+cmd-reload-reloaded-config: '&6 - &eBeállítás értékek újratöltve!'
+
+cmd-reload-reloaded-success: '&l&a- HungerGames sikeresen újratöltve'
+
+## Exit
+
+cmd-exit-set: '&6A kilépési kezdőhely lerakva:'
+
+## LobbyWall
+
+cmd-lobbywall-set: '&aAz elosztó táblája lerakva!'
+
+cmd-lobbywall-notcorrect: '&cEzek a táblák nincsenek a jó formátumban!'
+
+cmd-lobbywall-format: '&cformátum: &6[sign] &c[sign] [sign]'
+
+## Start
+
+cmd-start-starting: '&6A &b<arena>&6 aréna indul!'
+
+## Stop
+
+cmd-stop-all: '&aMinden játék leállítva'
+
+cmd-stop-arena: '&b<arena>&c aréna leállítva!'
+
+cmd-stop-noexist: '&cA &b<arena>&c arénában nem fut játék!'
+
+## Team
+
+cmd-team-not-avail: '&b<player> &cnem található!'
+
+cmd-team-only-leader: '&cCsak a vezető tud másokat meghívni!'
+
+cmd-team-on-team: '&b<player> &6már csapattag!'
+
+cmd-team-max: '&cA csapat tele van!'
+
+cmd-team-invited: '&b<player> &6meghívva!'
+
+cmd-team-wrong: '&cRossz használat: &6/hg team invite &b<name>'
+
+cmd-team-no-pending: '&cNincs függőben lévő meghívásod...'
+
+cmd-team-joined: '&b<player> &6csatlakozott a csapatodhoz!'
+
+## Toggle
+
+cmd-toggle-unlocked: '&6A(z) &b<arena>&6 aréna &afeloldva!'
+
+cmd-toggle-locked: '&bA(z) &3<arena>&b aréna &4zárolva&b!'
+
+## Handler
+
+cmd-handler-nokit: '&cA játék futása közben nem tudsz felszerelést választani!'
+
+cmd-handler-nocmd: '&cA játék futása közben nem tudsz HungerGames-en kívüli parancsot használni!'
+
+cmd-handler-playing: '&cEz a játékos éppen &3HungerGames-t &c játszik!'
+
+## Chest Refill
+
+cmd-chestrefill-set: '&6Láda újratöltés a(z) &b<arena> &6aréna számára &b<sec> másodpercre állítva'
+
+#  LISTENER
+
+listener-not-running: '&cA játék nem fut!'
+
+listener-no-edit-block: '&cEzt a blokktípust nem módosíthatod!'
+
+listener-no-interact: '&cA játék kezdetéig ezzel nem tudsz kapcsolatba lépni!'
+
+listener-sign-click-hand: '&cKattints a táblára a kezeddel!'
+
+#  TRACK STICK
+
+track-nearest: '"&b<player> &b<range> &eblokk távolságra van tőled: &b<location>"'
+
+track-no-near: '&cNem érzékelek embert a közelben...'
+
+track-empty: '&cA felderítő bot lemerült!'
+
+track-bar: '&a&l[]------------------------------------------[]'
+
+track-new1: '&a&l |&6&l   Kaptál egy felderítő botot! &a&l |'
+
+track-new2: '&a&l |&6&l   Lengesd a játékosok felderítéséhez!                &a&l |'
