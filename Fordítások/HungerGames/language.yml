@@ -40,7 +40,7 @@ winning-amount: '&7Kaptál &b$<amount> &7-t, mert megnyerted a &3&lHunger&b&lGam
 
 #  KIT MESSAGES
 kit-join-header: '&c&l>&7&l----------[&f&lÜdv a Hunger&f&lGames-ben&7&l]&7&l----------&c&l<'
-kit-join-msg: '&7&l           - &3&lVálassz egy felszerelést a&b/hg kit &7<&rkit-name&7> paranccsal'
+kit-join-msg: '&7&l           - &3&lVálassz egy felszerelést a &b/hg kit &7<&rkit-name&7> paranccsal'
 kit-join-available: '&3&l  Elérhető felszerelések:&b'
 kit-join-footer: '&c&l>&7&l------------------------------------------&c&l<'
 kit-no-perm: '&cNincs engedélyed a felszerelés használatához!'
