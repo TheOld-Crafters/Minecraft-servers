@@ -73,6 +73,14 @@ enabled-living-shops:
 - TROPICAL_FISH
 - DROWNED
 - DOLPHIN
+- CAT
+- PANDA
+- PILLAGER
+- RAVAGER
+- LLAMA
+- TRADER_LLAMA
+- WANDERING_TRADER
+- FOX
 use-legacy-mob-behavior: false
 disable-gravity: false
 gravity-chunk-range: 4
