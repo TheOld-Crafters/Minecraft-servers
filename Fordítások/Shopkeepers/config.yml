@@ -1,0 +1,459 @@
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# Shopkeepers Config
+# Wiki: https://github.com/Shopkeepers/Shopkeepers-Wiki/wiki/Configuration
+# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+# 
+# Determines the required config migrations. Do not edit manually!
+config-version: 1
+debug: false
+enable-metrics: true
+file-encoding: UTF-8
+save-instantly: true
+enable-spawn-verifier: false
+bypass-spawn-blocking: true
+bypass-shop-interaction-blocking: false
+enable-world-guard-restrictions: false
+require-world-guard-allow-shop-flag: false
+enable-towny-restrictions: false
+shop-creation-item: VILLAGER_SPAWN_EGG
+shop-creation-item-name: ''
+shop-creation-item-lore: []
+prevent-shop-creation-item-regular-usage: false
+deleting-player-shop-returns-creation-item: false
+create-player-shop-with-command: false
+require-chest-recently-placed: true
+max-chest-distance: 15
+protect-chests: false
+delete-shopkeeper-on-break-chest: false
+max-shops-per-player: 0
+max-shops-perm-options: 5,15,25
+player-shopkeeper-inactive-days: 0
+enabled-living-shops:
+- VILLAGER
+- COW
+- MUSHROOM_COW
+- SHEEP
+- PIG
+- CHICKEN
+- OCELOT
+- RABBIT
+- WOLF
+- SNOWMAN
+- IRON_GOLEM
+- POLAR_BEAR
+- BLAZE
+- SILVERFISH
+- SKELETON
+- STRAY
+- WITHER_SKELETON
+- SPIDER
+- CAVE_SPIDER
+- CREEPER
+- WITCH
+- ENDERMAN
+- ZOMBIE
+- ZOMBIE_VILLAGER
+- PIG_ZOMBIE
+- HUSK
+- GIANT
+- GHAST
+- SLIME
+- MAGMA_CUBE
+- SQUID
+- EVOKER
+- VEX
+- VINDICATOR
+- ILLUSIONER
+- PARROT
+- TURTLE
+- PHANTOM
+- COD
+- SALMON
+- PUFFERFISH
+- TROPICAL_FISH
+- DROWNED
+- DOLPHIN
+use-legacy-mob-behavior: false
+disable-gravity: false
+gravity-chunk-range: 4
+silence-living-shop-entities: true
+show-nameplates: true
+always-show-nameplates: false
+nameplate-prefix: '&a'
+enable-citizen-shops: false
+enable-sign-shops: false
+enable-sign-post-shops: false
+sign-shop-first-line: '[SHOP]'
+name-regex: .*
+naming-of-player-shops-via-item: false
+allow-renaming-of-player-npc-shops: false
+editor-title: Boltos Szerkesztő
+name-item: NAME_TAG
+name-item-lore: []
+enable-chest-option-on-player-shop: false
+chest-item: CHEST
+delete-item: BONE
+disable-other-villagers: false
+block-villager-spawns: false
+hire-other-villagers: false
+hire-item: EMERALD
+hire-item-name: ''
+hire-item-lore: []
+hire-other-villagers-costs: 1
+for-hire-title: For Hire
+hire-require-creation-permission: true
+prevent-trading-with-own-shop: true
+prevent-trading-while-owner-is-online: false
+use-strict-item-comparison: false
+enable-purchase-logging: false
+tax-rate: 0
+tax-round-up: false
+currency-item: EMERALD
+currency-item-name: ''
+currency-item-lore: []
+zero-currency-item: BARRIER
+zero-currency-item-name: ''
+zero-currency-item-lore: []
+high-currency-item: EMERALD_BLOCK
+high-currency-item-name: ''
+high-currency-item-lore: []
+high-currency-value: 9
+high-currency-min-cost: 20
+high-zero-currency-item: BARRIER
+high-zero-currency-item-name: ''
+high-zero-currency-item-lore: []
+language: hu
+msg-creation-item-selected: |
+  &aJobb klikk a bolt típus kiválasztásához.
+  &aShift + jobb klikk az objektum típusának kiválasztásához.
+  &aJobb klikk egy ládára a kiválasztásához.
+  &aJobb klikk egy blokkra a boltos létrehozáshoz.
+msg-button-name: '&aBolt Név Beállítása'
+msg-button-name-lore:
+- Átnevezheted a
+- boltosod
+msg-button-chest: '&aLáda Megtekintése'
+msg-button-chest-lore:
+- Megnézheted a ládát, amit a
+- a boltos használ
+msg-button-type: '&aKinézet Választása'
+msg-button-type-lore:
+- Válaszd ki, hogyan
+- nézzen ki a boltos
+msg-button-delete: '&4Törlés'
+msg-button-delete-lore:
+- Bezárja és törli
+- ezt a boltost
+msg-button-hire: '&aBérel'
+msg-button-hire-lore:
+- Vásárold meg ezt a boltost.
+msg-trading-title-prefix: '&2'
+msg-trading-title-default: Boltos
+msg-selected-sell-shop: '&aEladó boltos kiválasztva (tárgyakat ad el a játékosoknak).'
+msg-selected-buy-shop: '&aVevő boltos kiválasztva (tárgyakat vásárol a játékosoktól).'
+msg-selected-trade-shop: '&aKereskedő boltos kiválasztva (tárgyakkal kereskedik a
+  játékosokkal).'
+msg-selected-book-shop: '&aKönyboltos kiválasztva (könyveket ad el).'
+msg-selected-living-shop: '&aKiválasztottad a(z): &f{type}'
+msg-selected-sign-shop: '&aKiválasztottad a: &ftábla boltot'
+msg-selected-citizen-shop: '&aKiválasztottad a: &fcitizen npc boltot'
+msg-selected-chest: '&aLáda kiválasztva! Jobb klikk egy blokkra a boltos létrehozáshoz.'
+msg-must-select-chest: '&7Ki kell választani a ládát jobb klikkel, mielőtt a boltost
+  létrehoznád.'
+msg-no-chest-selected: '&7A kiválasztott blokk nem láda!'
+msg-chest-too-far: '&7A boltos túl távol van a ládától!'
+msg-chest-not-placed: '&7Ki kell választanod a ládát, amit nemrég raktál le'
+msg-chest-already-in-use: '&7Egy másik boltos már használja a kiválasztott ládát!'
+msg-no-chest-access: '&7Nincs hozzáférésed a kiválasztott ládához!'
+msg-too-many-shops: '&7Túl sok boltod van!'
+msg-no-admin-shop-type-selected: '&7Ki kell választani az adminbolt típusát!'
+msg-no-player-shop-type-selected: '&7Ki kell választani a játékosbolt típusát!'
+msg-shop-create-fail: '&7Itt nem hozhatsz létre boltost.'
+msg-type-new-name: |-
+  &aÍrd le a boltos nevét a chat-re.
+    &aÍrj egy gondolatjelet (-) a név törléséhez.
+msg-name-set: '&aA boltos neve beállítva!'
+msg-name-has-not-changed: '&aA boltos neve nincs beállítva.'
+msg-name-invalid: '&aEz a név nem megfelelő!'
+msg-shop-type-disabled: '&7Ez a típus ''{type}'' le van tiltva.'
+msg-shop-object-type-disabled: '&7Ez az objektum típus ''{type}'' le van tiltva.'
+msg-must-target-chest: '&7Nézz egy ládára.'
+msg-unused-chest: '&7Nincs boltos, aki használná ezt a ládát.'
+msg-not-owner: '&7Nem te vagy ennek a boltosnak a tulajdonosa.'
+msg-owner-set: '&aÚj tulajdonos beállítva &e{owner}'
+msg-trade-perm-set: '&aThe shop''s trading permission has been set!'
+msg-trade-perm-removed: '&aThe shop''s trading permission has been removed!'
+msg-trade-perm-view: '&aThe shop''s current trading permission is ''&e{perm}&a''.'
+msg-must-hold-hire-item: '&7You have to hold the required hire item in your hand.'
+msg-set-for-hire: '&aThe Shopkeeper was set for hire.'
+msg-hired: '&aYou have hired this shopkeeper!'
+msg-missing-hire-perm: '&7You do not have the permission to hire shopkeepers.'
+msg-cant-hire: '&7You cannot afford to hire this shopkeeper.'
+msg-cant-hire-shop-type: '&7You do not have the permission to hire this type of shopkeeper.'
+msg-villager-for-hire: '&aThe villager offered his services as a shopkeeper in exchange
+  for &6{costs}x {hire-item}&a.'
+msg-missing-trade-perm: '&7Nincs jogod kereskedni ebben a boltban.'
+msg-missing-custom-trade-perm: '&7Nincs jogod kereskedni ebben a boltban.'
+msg-cant-trade-while-owner-online: '&Nem lehet kereskedni, ameddig a bolt tulajdonosa
+  (''{owner}'') online.'
+msg-sell-shop-created: |
+  &aBoltos létrehozva!
+  &aAdj hozzá tárgyakat, amiket el akarsz adni a ládádból, majd
+  &akattints a shift + jobb klikkel a boltra az árak módosításához.
+msg-buy-shop-created: |
+  &aBoltos létrehozva!
+  &aAdj hozzá minden tárgyat, amiket meg akarsz vásárolni a ládádba, majd
+  &akattints a shift + jobb klikkel a boltra az árak módosításához.
+msg-trade-shop-created: |
+  &aBoltos létrehozva!
+  &aAdj hozzá tárgyakat, amiket el akarsz adni a ládádból, majd
+  &akattints a shift + jobb klikkel a boltra az árak módosításához.
+msg-book-shop-created: |
+  &aBoltos létrehozva!
+  &aAdj hozzá megírt vagy üres könyveket a ládádba, majd
+  &akattints a shift + jobb klikkel a boltra az árak módosításához.
+msg-admin-shop-created: |
+  &aBoltos létrehozva!
+  &akattints a shift + jobb klikkel a boltra az árak módosításához.
+msg-list-admin-shops-header: '&9There are &e{shopsCount} &9admin shops: &e(Page {page}
+  of {maxPage})'
+msg-list-player-shops-header: '&9Player ''&e{player}&9'' has &e{shopsCount} &9shops:
+  &e(Page {page} of {maxPage})'
+msg-list-shops-entry: '  &e{shopSessionId}) &7{shopName}&r&8at &7({location})&8, type:
+  &7{shopType}&8, object type: &7{objectType}'
+msg-removed-admin-shops: '&e{shopsCount} &aadmin shops were removed.'
+msg-removed-player-shops: '&e{shopsCount} &ashops of player ''&e{player}&a'' were
+  removed.'
+msg-removed-all-player-shops: '&aAll &e{shopsCount} &aplayer shops were removed.'
+msg-confirm-remove-admin-shops: '&cYou are about to irrevocable remove all admin shops!'
+msg-confirm-remove-own-shops: '&cYou are about to irrevocable remove all your shops!'
+msg-confirm-remove-player-shops: '&cYou are about to irrevocable remove all shops
+  of player &6{player}&c!'
+msg-confirm-remove-all-player-shops: '&cYou are about to irrevocable remove all player
+  shops of all players!'
+msg-confirmation-required: '&7Please confirm this action by typing &6/shopkeepers
+  confirm'
+msg-confirmation-expired: '&cConfirmation expired.'
+msg-nothing-to-confirm: '&cThere is nothing to confirm currently.'
+msg-no-permission: '&cEhhez nincs jogod.'
+msg-command-unknown: '&cIsmeretlen parancs ''&e{command}&c''!'
+msg-command-argument-unexpected: '&cVáratlan argumentum ''&e{argument}&c''.'
+msg-command-argument-missing: '&cHiányzó argumentum ''&e{argumentFormat}&c''.'
+msg-command-argument-invalid: '&cHibás argumentum ''&e{argument}&c''.'
+msg-command-player-argument-missing: '&cNo player specified for ''&e{argumentFormat}&c''.'
+msg-command-player-argument-invalid: '&cNo player found for ''&e{argument}&c''.'
+msg-command-shop-type-argument-invalid: '&cIsmeretlen bolt típus ''&e{argument}&c''.'
+msg-command-shop-object-type-argument-invalid: '&cIsmeretlen bolt objektum típus ''&e{argument}&c''.'
+msg-command-shopkeeper-argument-invalid: '&cNem található boltos ''&e{argument}&c''.'
+msg-command-help-title: '&9***** &8[&6Shopkeepers v{version}&8] &9*****'
+msg-command-help-usage-format: '&e{usage}'
+msg-command-help-description-format: '&8 - &3{description}'
+msg-command-description-shopkeeper: Creates a shopkeeper.
+msg-command-description-help: Shows this help page.
+msg-command-description-reload: Reloads this plugin.
+msg-command-description-debug: Toggles debug mode on and off.
+msg-command-description-list: Lists all shops for the specified player, or all admin
+  shops.
+msg-command-description-remove: Removes all shops for the specified player, all players,
+  or all admin shops.
+msg-command-description-remote: Remotely opens a shop.
+msg-command-description-transfer: Transfers the ownership of a shop.
+msg-command-description-settradeperm: Sets, removes (-) or displays (?) the trading
+  permission.
+msg-command-description-setforhire: Sets one of your shops for sale.
+prevent-item-movement: true
+previous-page-item: WRITABLE_BOOK
+next-page-item: WRITABLE_BOOK
+current-page-item: WRITABLE_BOOK
+trade-setup-item: PAPER
+msg-shop-type-admin-regular: Admin shop
+msg-shop-type-selling: Selling shop
+msg-shop-type-buying: Buying shop
+msg-shop-type-trading: Trading shop
+msg-shop-type-book: Book shop
+msg-shop-type-desc-admin-regular: has unlimited stock
+msg-shop-type-desc-selling: sells items to players
+msg-shop-type-desc-buying: buys items from players
+msg-shop-type-desc-trading: trades items with players
+msg-shop-type-desc-book: sells book copies
+msg-shop-object-type-living: '{type}'
+msg-shop-object-type-sign: sign
+msg-shop-object-type-npc: npc
+msg-selected-shop-type: '&aSelected shop type: &6{type} &7({description})'
+msg-selected-shop-object-type: '&aSelected object type: &6{type}'
+msg-button-previous-page: '&6<- Previous page ({prev_page} of {max_page})'
+msg-button-previous-page-lore: []
+msg-button-next-page: '&6Next page ({next_page} of {max_page}) ->'
+msg-button-next-page-lore: []
+msg-button-current-page: '&6Page {page} of {max_page}'
+msg-button-current-page-lore: []
+msg-must-target-shop: '&7You have to target a shopkeeper.'
+msg-must-target-admin-shop: '&7You have to target an admin shopkeeper.'
+msg-must-target-player-shop: '&7You have to target a player shopkeeper.'
+msg-target-entity-is-no-shop: '&7The targeted entity is no shopkeeper.'
+msg-target-shop-is-no-admin-shop: '&7The targeted shopkeeper is no admin shopkeeper.'
+msg-target-shop-is-no-player-shop: '&7The targeted shopkeeper is no player shopkeeper.'
+msg-shop-creation-items-given: '&aPlayer &e{player}&a has received &e{amount}&a shop
+  creation item(s)!'
+msg-unknown-book-author: Unknown
+msg-shopkeeper-created: |-
+  &aShopkeeper created: &6{type} &7({description})
+  {setupDesc}
+msg-shop-setup-desc-selling: |
+  &e  Add items you want to sell to your chest, then
+  &e  right-click the shop while sneaking to modify costs.
+msg-shop-setup-desc-buying: |
+  &e  Add one of each item you want to buy to your chest, then
+  &e  right-click the shop while sneaking to modify costs.
+msg-shop-setup-desc-trading: |
+  &e  Add items you want to sell to your chest, then
+  &e  right-click the shop while sneaking to modify costs.
+msg-shop-setup-desc-book: |
+  &e  Add written books and blank books to your chest, then
+  &e  right-click the shop while sneaking to modify costs.
+msg-shop-setup-desc-admin-regular: |
+  &e  Right-click the shop while sneaking to modify trades.
+msg-trade-setup-desc-header: '&6{shopType}'
+msg-trade-setup-desc-admin-regular:
+- Has unlimited stock.
+- Insert items from your inventory.
+- Left/Right click to adjust amounts.
+- 'Top row: Result items'
+- 'Bottom rows: Cost items'
+msg-trade-setup-desc-selling:
+- Sells items to players.
+- Insert items to sell into the chest.
+- Left/Right click to adjust amounts.
+- 'Top row: Items being sold'
+- 'Bottom rows: Cost items'
+msg-trade-setup-desc-buying:
+- Buys items from players.
+- Insert one of each item you want to
+- buy and plenty of currency items
+- into the chest.
+- Left/Right click to adjust amounts.
+- 'Top row: Cost items'
+- 'Bottom row: Items being bought'
+msg-trade-setup-desc-trading:
+- Trades items with players.
+- Pickup an item from your inventory
+- and then click a slot to place it.
+- Left/Right click to adjust amounts.
+- 'Top row: Result items'
+- 'Bottom rows: Cost items'
+msg-trade-setup-desc-book:
+- Sells book copies.
+- Insert written and blank books
+- into the chest.
+- Left/Right click to adjust costs.
+- 'Top row: Books being sold'
+- 'Bottom rows: Cost items'
+msg-command-shopkeeper-argument-no-admin-shop: '&cShopkeeper ''&e{argument}&c'' is
+  no admin shopkeeper.'
+msg-command-shopkeeper-argument-no-player-shop: '&cShopkeeper ''&e{argument}&c'' is
+  no player shopkeeper.'
+msg-command-description-give: Gives shop creation item(s) to the specified player.
+msg-command-description-remote-edit: Remotely edits a shop.
+disable-zombie-villager-curing: false
+disable-wandering-traders: false
+block-wandering-trader-spawns: false
+hire-wandering-traders: false
+msg-zombie-villager-curing-disabled: '&7Curing of zombie villagers is disabled.'
+msg-button-sign-variant: '&aChoose sign variant'
+msg-button-sign-variant-lore:
+- Changes the sign's
+- wood type
+msg-button-baby: '&aToggle baby variant'
+msg-button-baby-lore:
+- Toggles between the mob's
+- baby and adult variant
+msg-button-sitting: '&aToggle sitting pose'
+msg-button-sitting-lore:
+- Toggles the mob's
+- sitting pose
+msg-button-cat-variant: '&aChoose cat variant'
+msg-button-cat-variant-lore:
+- Changes the cat's look
+msg-button-collar-color: '&aChoose collar color'
+msg-button-collar-color-lore:
+- Changes the mob's
+- collar color
+msg-button-wolf-angry: '&aToggle angry wolf'
+msg-button-wolf-angry-lore:
+- Toggles the wolf's
+- angry state
+msg-button-carrying-chest: '&aToggle carrying chest'
+msg-button-carrying-chest-lore:
+- Toggles whether the mob
+- is carrying a chest
+msg-button-horse-color: '&aChoose horse color'
+msg-button-horse-color-lore:
+- Changes the color
+- of the horse
+msg-button-horse-style: '&aChoose horse style'
+msg-button-horse-style-lore:
+- Changes the coat pattern
+- of the horse
+msg-button-horse-armor: '&aChoose horse armor'
+msg-button-horse-armor-lore:
+- Changes the armor
+- of the horse
+msg-button-llama-variant: '&aChoose llama variant'
+msg-button-llama-variant-lore:
+- Changes the llama's look
+msg-button-llama-carpet-color: '&aLlama carpet color'
+msg-button-llama-carpet-color-lore:
+- Changes the llama's
+- carpet color
+msg-button-creeper-charged: '&aToggle charged creeper'
+msg-button-creeper-charged-lore:
+- Toggles the creeper's
+- charged state
+msg-button-fox-variant: '&aChoose fox variant'
+msg-button-fox-variant-lore:
+- Changes the fox's look
+msg-button-fox-crouching: '&aToggle crouching pose'
+msg-button-fox-crouching-lore:
+- Toggles the fox's
+- crouching pose
+msg-button-fox-sleeping: '&aToggle sleeping pose'
+msg-button-fox-sleeping-lore:
+- Toggles the fox's
+- sleeping pose
+msg-button-mooshroom-variant: '&aChoose mooshroom variant'
+msg-button-mooshroom-variant-lore:
+- Changes the look
+- of the mooshroom
+msg-button-panda-variant: '&aChoose panda variant'
+msg-button-panda-variant-lore:
+- Changes the panda's look
+msg-button-parrot-variant: '&aChoose parrot variant'
+msg-button-parrot-variant-lore:
+- Changes the parrot's look
+msg-button-pig-saddle: '&aToggle pig saddle'
+msg-button-pig-saddle-lore:
+- Toggles the pig's saddle
+msg-button-sheep-color: '&aChoose sheep color'
+msg-button-sheep-color-lore:
+- Changes the sheep's
+- wool color
+msg-button-sheep-sheared: '&aToggle sheared sheep'
+msg-button-sheep-sheared-lore:
+- Toggles the sheep's
+- sheared state
+msg-button-villager-profession: '&aChoose villager profession'
+msg-button-villager-profession-lore:
+- Changes the profession
+- of the villager
+msg-button-villager-variant: '&aChoose villager variant'
+msg-button-villager-variant-lore:
+- Changes the look
+- of the villager
+msg-button-villager-level: '&aChoose villager level'
+msg-button-villager-level-lore:
+- Changes the level
+- of the villager
+msg-button-zombie-villager-profession: '&aChoose villager profession'
+msg-button-zombie-villager-profession-lore:
+- Changes the profession
+- of the zombie villager
