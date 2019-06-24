@@ -182,7 +182,7 @@ msg-too-many-shops: '&7Túl sok boltod van!'
 msg-no-admin-shop-type-selected: '&7Ki kell választani az adminbolt típusát!'
 msg-no-player-shop-type-selected: '&7Ki kell választani a játékosbolt típusát!'
 msg-shop-create-fail: '&7Itt nem hozhatsz létre boltost.'
-msg-type-new-name: |-
+msg-type-new-name: |-.
   &aÍrd le a boltos nevét a chat-re.
     &aÍrj egy gondolatjelet (-) a név törléséhez.
 msg-name-set: '&aA boltos neve beállítva!'
@@ -194,17 +194,17 @@ msg-must-target-chest: '&7Nézz egy ládára.'
 msg-unused-chest: '&7Nincs boltos, aki használná ezt a ládát.'
 msg-not-owner: '&7Nem te vagy ennek a boltosnak a tulajdonosa.'
 msg-owner-set: '&aÚj tulajdonos beállítva &e{owner}'
-msg-trade-perm-set: '&aThe shop''s trading permission has been set!'
-msg-trade-perm-removed: '&aThe shop''s trading permission has been removed!'
-msg-trade-perm-view: '&aThe shop''s current trading permission is ''&e{perm}&a''.'
-msg-must-hold-hire-item: '&7You have to hold the required hire item in your hand.'
-msg-set-for-hire: '&aThe Shopkeeper was set for hire.'
-msg-hired: '&aYou have hired this shopkeeper!'
-msg-missing-hire-perm: '&7You do not have the permission to hire shopkeepers.'
-msg-cant-hire: '&7You cannot afford to hire this shopkeeper.'
-msg-cant-hire-shop-type: '&7You do not have the permission to hire this type of shopkeeper.'
-msg-villager-for-hire: '&aThe villager offered his services as a shopkeeper in exchange
-  for &6{costs}x {hire-item}&a.'
+msg-trade-perm-set: '&aA bolt kereskedési engedélye beállítva!'
+msg-trade-perm-removed: '&aA bolt kereskedési engedélye törölve!'
+msg-trade-perm-view: '&aA bolt jelenlegi kereskedési engedélye ''&e{perm}&a''.'
+msg-must-hold-hire-item: '&7Tartsd a szükséges tételt a kezedben.'
+msg-set-for-hire: '&aFelbérelted a boltost.'
+msg-hired: '&aFelbérelted ezt a boltost!'
+msg-missing-hire-perm: '&7Nincs engedélyed boltosokat bérelni.'
+msg-cant-hire: '&7Nincs elég pénzed, hogy felbérelj egy boltost.'
+msg-cant-hire-shop-type: '&7Nincs engedélyed ilyen típusú boltos felbérléséhez.'
+msg-villager-for-hire: '&aA falusi boltosként szolgál, ezért cserébe
+  &6{costs}x {hire-item}&a.'
 msg-missing-trade-perm: '&7Nincs jogod kereskedni ebben a boltban.'
 msg-missing-custom-trade-perm: '&7Nincs jogod kereskedni ebben a boltban.'
 msg-cant-trade-while-owner-online: '&Nem lehet kereskedni, ameddig a bolt tulajdonosa
@@ -228,245 +228,244 @@ msg-book-shop-created: |
 msg-admin-shop-created: |
   &aBoltos létrehozva!
   &akattints a shift + jobb klikkel a boltra az árak módosításához.
-msg-list-admin-shops-header: '&9There are &e{shopsCount} &9admin shops: &e(Page {page}
+msg-list-admin-shops-header: '&9Van &e{shopsCount} &9admin bolt: &e(Page {page}
   of {maxPage})'
-msg-list-player-shops-header: '&9Player ''&e{player}&9'' has &e{shopsCount} &9shops:
+msg-list-player-shops-header: '&9Játékos ''&e{player}&9'' &e{shopsCount} &9boltok:
   &e(Page {page} of {maxPage})'
 msg-list-shops-entry: '  &e{shopSessionId}) &7{shopName}&r&8at &7({location})&8, type:
   &7{shopType}&8, object type: &7{objectType}'
-msg-removed-admin-shops: '&e{shopsCount} &aadmin shops were removed.'
-msg-removed-player-shops: '&e{shopsCount} &ashops of player ''&e{player}&a'' were
-  removed.'
-msg-removed-all-player-shops: '&aAll &e{shopsCount} &aplayer shops were removed.'
-msg-confirm-remove-admin-shops: '&cYou are about to irrevocable remove all admin shops!'
-msg-confirm-remove-own-shops: '&cYou are about to irrevocable remove all your shops!'
-msg-confirm-remove-player-shops: '&cYou are about to irrevocable remove all shops
-  of player &6{player}&c!'
-msg-confirm-remove-all-player-shops: '&cYou are about to irrevocable remove all player
-  shops of all players!'
-msg-confirmation-required: '&7Please confirm this action by typing &6/shopkeepers
+msg-removed-admin-shops: '&e{shopsCount} &aadmin boltok el lettek távolítva.'
+msg-removed-player-shops: '&e{shopsCount} &ajátékos boltok ''&e{player}&a'' el lettek
+  távolítva.'
+msg-removed-all-player-shops: '&aMinden &e{shopsCount} &ajátékos bolt el lett távolítva.'
+msg-confirm-remove-admin-shops: '&cVisszavonhatatlan eltávolítása az admin boltoknak!'
+msg-confirm-remove-own-shops: '&cVisszavonhatatlanul eltávolítja az összes boltod!'
+msg-confirm-remove-player-shops: '&cVisszavonhtatalanul eltávolítja a játékos összes boltját
+  &6{player}&c!'
+msg-confirm-remove-all-player-shops: '&cVisszavonhatatlanul eltávolítja az összes játékos összes boltját!'
+msg-confirmation-required: '&7Erősítsd meg ezt a műveletet az lábbi beírásával: &6/shopkeepers
   confirm'
-msg-confirmation-expired: '&cConfirmation expired.'
-msg-nothing-to-confirm: '&cThere is nothing to confirm currently.'
+msg-confirmation-expired: '&cA megerősítés lejárt.'
+msg-nothing-to-confirm: '&cjelenleg nincs semmi ami megerősíthető.'
 msg-no-permission: '&cEhhez nincs jogod.'
 msg-command-unknown: '&cIsmeretlen parancs ''&e{command}&c''!'
 msg-command-argument-unexpected: '&cVáratlan argumentum ''&e{argument}&c''.'
 msg-command-argument-missing: '&cHiányzó argumentum ''&e{argumentFormat}&c''.'
 msg-command-argument-invalid: '&cHibás argumentum ''&e{argument}&c''.'
-msg-command-player-argument-missing: '&cNo player specified for ''&e{argumentFormat}&c''.'
-msg-command-player-argument-invalid: '&cNo player found for ''&e{argument}&c''.'
+msg-command-player-argument-missing: '&cNincs megadva játékos ''&e{argumentFormat}&c''.'
+msg-command-player-argument-invalid: '&cNem található játékos ''&e{argument}&c''.'
 msg-command-shop-type-argument-invalid: '&cIsmeretlen bolt típus ''&e{argument}&c''.'
 msg-command-shop-object-type-argument-invalid: '&cIsmeretlen bolt objektum típus ''&e{argument}&c''.'
 msg-command-shopkeeper-argument-invalid: '&cNem található boltos ''&e{argument}&c''.'
 msg-command-help-title: '&9***** &8[&6Shopkeepers v{version}&8] &9*****'
 msg-command-help-usage-format: '&e{usage}'
 msg-command-help-description-format: '&8 - &3{description}'
-msg-command-description-shopkeeper: Creates a shopkeeper.
-msg-command-description-help: Shows this help page.
-msg-command-description-reload: Reloads this plugin.
-msg-command-description-debug: Toggles debug mode on and off.
-msg-command-description-list: Lists all shops for the specified player, or all admin
-  shops.
-msg-command-description-remove: Removes all shops for the specified player, all players,
-  or all admin shops.
-msg-command-description-remote: Remotely opens a shop.
-msg-command-description-transfer: Transfers the ownership of a shop.
-msg-command-description-settradeperm: Sets, removes (-) or displays (?) the trading
-  permission.
-msg-command-description-setforhire: Sets one of your shops for sale.
+msg-command-description-shopkeeper: Létrehoz egy boltost.
+msg-command-description-help: Megjeleníti ezt a súgót.
+msg-command-description-reload: Újratölti ezt a bővítményt.
+msg-command-description-debug: Hibakeresési mód be- és kikapcsolása.
+msg-command-description-list: Felsorolja a megadott játékos összes boltját, vagy az összes admin
+boltot.
+msg-command-description-remove: Eltávolítja az összes boltot a megadott játékosnak, minden játékosnak,
+  vagy minden admin boltot.
+msg-command-description-remote: Távolról nyit egy boltot.
+msg-command-description-transfer: Átadja a bolt tulajdonjogát.
+msg-command-description-settradeperm: Beállítja, eltávolítja (-) vagy megjeleníti (?) a kereskedési
+  engedélyeket.
+msg-command-description-setforhire: Beállítja az egyik boltod eladásra.
 prevent-item-movement: true
 previous-page-item: WRITABLE_BOOK
 next-page-item: WRITABLE_BOOK
 current-page-item: WRITABLE_BOOK
 trade-setup-item: PAPER
-msg-shop-type-admin-regular: Admin shop
-msg-shop-type-selling: Selling shop
-msg-shop-type-buying: Buying shop
-msg-shop-type-trading: Trading shop
-msg-shop-type-book: Book shop
-msg-shop-type-desc-admin-regular: has unlimited stock
-msg-shop-type-desc-selling: sells items to players
-msg-shop-type-desc-buying: buys items from players
-msg-shop-type-desc-trading: trades items with players
-msg-shop-type-desc-book: sells book copies
+msg-shop-type-admin-regular: Admin bolt
+msg-shop-type-selling: Eladási bolt
+msg-shop-type-buying: Vételi bolt
+msg-shop-type-trading: Cserekereskedő bolt
+msg-shop-type-book: Könyves bolt
+msg-shop-type-desc-admin-regular: korlátlan készlet
+msg-shop-type-desc-selling: játékosoknak ad el tárgyakat
+msg-shop-type-desc-buying: játékosoktól vesz tárgyakat
+msg-shop-type-desc-trading: játékosokkal cserél tárgyakat
+msg-shop-type-desc-book: Könyv másolatokat ad el
 msg-shop-object-type-living: '{type}'
 msg-shop-object-type-sign: sign
 msg-shop-object-type-npc: npc
-msg-selected-shop-type: '&aSelected shop type: &6{type} &7({description})'
-msg-selected-shop-object-type: '&aSelected object type: &6{type}'
-msg-button-previous-page: '&6<- Previous page ({prev_page} of {max_page})'
+msg-selected-shop-type: '&aKiválasztott bolt típus: &6{type} &7({description})'
+msg-selected-shop-object-type: '&aKiválaszott tárgy típusa: &6{type}'
+msg-button-previous-page: '&6<- Előző oldal ({prev_page}  {max_page})'
 msg-button-previous-page-lore: []
-msg-button-next-page: '&6Next page ({next_page} of {max_page}) ->'
+msg-button-next-page: '&6Következő oldal ({next_page}  {max_page}) ->'
 msg-button-next-page-lore: []
-msg-button-current-page: '&6Page {page} of {max_page}'
+msg-button-current-page: '&6Oldal {page} a {max_page}-ból'
 msg-button-current-page-lore: []
-msg-must-target-shop: '&7You have to target a shopkeeper.'
-msg-must-target-admin-shop: '&7You have to target an admin shopkeeper.'
-msg-must-target-player-shop: '&7You have to target a player shopkeeper.'
-msg-target-entity-is-no-shop: '&7The targeted entity is no shopkeeper.'
-msg-target-shop-is-no-admin-shop: '&7The targeted shopkeeper is no admin shopkeeper.'
-msg-target-shop-is-no-player-shop: '&7The targeted shopkeeper is no player shopkeeper.'
-msg-shop-creation-items-given: '&aPlayer &e{player}&a has received &e{amount}&a shop
-  creation item(s)!'
-msg-unknown-book-author: Unknown
+msg-must-target-shop: '&7Célozz egy boltosra.'
+msg-must-target-admin-shop: '&7Egy admin boltosra kell céloznod.'
+msg-must-target-player-shop: '&7Egy játékos boltosra kell céloznod.'
+msg-target-entity-is-no-shop: '&7A célzott entitás nem egy boltos.'
+msg-target-shop-is-no-admin-shop: '&7A célzott boltos nem egy admin boltos.'
+msg-target-shop-is-no-player-shop: '&7A célzott boltos nem egy játékos boltos.'
+msg-shop-creation-items-given: '&aJátékos &e{player}&a kapott &e{amount}&a boltos
+  készítő tárgyat(tárgyakat)!'
+msg-unknown-book-author: Ismeretlen
 msg-shopkeeper-created: |-
-  &aShopkeeper created: &6{type} &7({description})
+  &aBoltos létrehozva: &6{type} &7({description})
   {setupDesc}
 msg-shop-setup-desc-selling: |
-  &e  Add items you want to sell to your chest, then
-  &e  right-click the shop while sneaking to modify costs.
+  &e  Adj hozzá tárgyakat, amiket el akarsz adni a ládádból, majd
+  &e  kattints a shitf + jobb klikkel a boltra az árak módosításához.
 msg-shop-setup-desc-buying: |
-  &e  Add one of each item you want to buy to your chest, then
-  &e  right-click the shop while sneaking to modify costs.
+  &e  Adj hozzá minden tárgyat, amiket meg akarsz vásárolni a ládádba, majd
+  &e  kattints a shift + jobb klikkel a boltra az árak módosításához.
 msg-shop-setup-desc-trading: |
-  &e  Add items you want to sell to your chest, then
-  &e  right-click the shop while sneaking to modify costs.
+  &e  Adj hozzá tárgyakat, amiket el akarsz adni a ládádból, majd
+  &e  kattints a shift + jobb klikkel a boltra az árak módosításához.
 msg-shop-setup-desc-book: |
-  &e  Add written books and blank books to your chest, then
-  &e  right-click the shop while sneaking to modify costs.
+  &e  Adj hozzá megírt vagy üres könyveket a ládádba, majd 
+  &e  kattints a jobb klikkel a boltra az árak módosításához.
 msg-shop-setup-desc-admin-regular: |
-  &e  Right-click the shop while sneaking to modify trades.
+  &e  Kattints a jobb klikkel a boltra az árak módosításához.
 msg-trade-setup-desc-header: '&6{shopType}'
 msg-trade-setup-desc-admin-regular:
-- Has unlimited stock.
-- Insert items from your inventory.
-- Left/Right click to adjust amounts.
-- 'Top row: Result items'
-- 'Bottom rows: Cost items'
+- Korlátlan készlete van.
+- Tedd be a tárgyakat az eszköztáradból.
+- Bal/Jobb klikk a mennyiség beállításához.
+- 'Felső sor: Kapott tárgy'
+- 'Alsó sorok: Tárgy árai'
 msg-trade-setup-desc-selling:
-- Sells items to players.
-- Insert items to sell into the chest.
-- Left/Right click to adjust amounts.
-- 'Top row: Items being sold'
-- 'Bottom rows: Cost items'
+- Tárgyak eladása játékosoknak.
+- Tedd be a tárgyakat a ládába az eladáshoz.
+- Bal/Jobb klikk a mennyiség beállításához.
+- 'Felső sor: Eladni kívánt tárgyak'
+- 'Alsó sorok: Tárgyak árai'
 msg-trade-setup-desc-buying:
-- Buys items from players.
-- Insert one of each item you want to
-- buy and plenty of currency items
-- into the chest.
-- Left/Right click to adjust amounts.
-- 'Top row: Cost items'
-- 'Bottom row: Items being bought'
+- Tárgyak vétele játékosoktól.
+- Helyezz el minden tárgyból egyet amiből
+- veszel és sokat abból amilyen tárgyért veszed,
+- a ládába.
+- Bal/Jobb klikk a mennyiség beállításához.
+- 'Felső sor: Tárgyak árai'
+- 'Alsó sor: Vásárolni kívánt tárgyak'
 msg-trade-setup-desc-trading:
-- Trades items with players.
-- Pickup an item from your inventory
-- and then click a slot to place it.
-- Left/Right click to adjust amounts.
-- 'Top row: Result items'
-- 'Bottom rows: Cost items'
+- Tárgyak cseréje játékosokkal.
+- Végy egy tárgyat az eszköztáradból
+- és kattints egy helyre a lerakáshoz.
+- Bal/Jobb klikk a mennyiség beállításához.
+- 'Fels sor: Kapott tárgy'
+- 'Alsó sor: Tárgyak árais'
 msg-trade-setup-desc-book:
-- Sells book copies.
-- Insert written and blank books
-- into the chest.
-- Left/Right click to adjust costs.
-- 'Top row: Books being sold'
-- 'Bottom rows: Cost items'
-msg-command-shopkeeper-argument-no-admin-shop: '&cShopkeeper ''&e{argument}&c'' is
-  no admin shopkeeper.'
-msg-command-shopkeeper-argument-no-player-shop: '&cShopkeeper ''&e{argument}&c'' is
-  no player shopkeeper.'
-msg-command-description-give: Gives shop creation item(s) to the specified player.
-msg-command-description-remote-edit: Remotely edits a shop.
+- Könymásolatok eladása.
+- Tegyél írott és üres könyveket
+- a ládába.
+- Bal/Jobb klikk az ár beállításához.
+- 'Felső sor: Eladni kívánt könyv'
+- 'Alsó sor: A tárgy ára'
+msg-command-shopkeeper-argument-no-admin-shop: '&c A boltos ''&e{argument}&c'' nem
+  admin boltos.'
+msg-command-shopkeeper-argument-no-player-shop: '&cA boltos ''&e{argument}&c'' nem
+  játékos boltos.'
+msg-command-description-give: Bolt készítéséhez tárgy megadása az adott játékosnak.
+msg-command-description-remote-edit: Visszavonhatatlanul módosít egy boltot.
 disable-zombie-villager-curing: false
 disable-wandering-traders: false
 block-wandering-trader-spawns: false
 hire-wandering-traders: false
-msg-zombie-villager-curing-disabled: '&7Curing of zombie villagers is disabled.'
-msg-button-sign-variant: '&aChoose sign variant'
+msg-zombie-villager-curing-disabled: '&7A zombi falusiak gyógyítása letiltva.'
+msg-button-sign-variant: '&aVálassz tábla fajtát'
 msg-button-sign-variant-lore:
-- Changes the sign's
-- wood type
-msg-button-baby: '&aToggle baby variant'
+- Megváltoztatja a tábla
+- típusát
+msg-button-baby: '&aBébi változat váltás'
 msg-button-baby-lore:
-- Toggles between the mob's
-- baby and adult variant
-msg-button-sitting: '&aToggle sitting pose'
+- Vált a bébi és a felnőtt
+- változat között.
+msg-button-sitting: '&aÜlő póz váltás'
 msg-button-sitting-lore:
-- Toggles the mob's
-- sitting pose
-msg-button-cat-variant: '&aChoose cat variant'
+- Változtatja az állat
+- vagy szörny ülő pózát
+msg-button-cat-variant: '&aMacska fajta választás'
 msg-button-cat-variant-lore:
-- Changes the cat's look
-msg-button-collar-color: '&aChoose collar color'
+- Megváltoztatja a macska kinézetét
+msg-button-collar-color: '&aNyakörv szín választás'
 msg-button-collar-color-lore:
-- Changes the mob's
-- collar color
-msg-button-wolf-angry: '&aToggle angry wolf'
+- Megváltoztatja az állatok
+- nyakörvének színét
+msg-button-wolf-angry: '&aDühös farkas váltás'
 msg-button-wolf-angry-lore:
-- Toggles the wolf's
-- angry state
-msg-button-carrying-chest: '&aToggle carrying chest'
+- Változtatja a farkas
+- dühös állapotát
+msg-button-carrying-chest: '&aVáltoztatja a láda hordozást'
 msg-button-carrying-chest-lore:
-- Toggles whether the mob
-- is carrying a chest
-msg-button-horse-color: '&aChoose horse color'
+- Változtatja, hogy a teremtmény
+- hordoz-e ládát
+msg-button-horse-color: '&aLó színének kiválasztása'
 msg-button-horse-color-lore:
-- Changes the color
-- of the horse
-msg-button-horse-style: '&aChoose horse style'
+- Megváltoztatja a
+- színét a lónak
+msg-button-horse-style: '&aLó típusának kiválasztása'
 msg-button-horse-style-lore:
-- Changes the coat pattern
-- of the horse
-msg-button-horse-armor: '&aChoose horse armor'
+- Megváltoztatja a 
+- ló mintáját
+msg-button-horse-armor: '&aLópáncél kiválasztása'
 msg-button-horse-armor-lore:
-- Changes the armor
-- of the horse
-msg-button-llama-variant: '&aChoose llama variant'
+- Megváltoztatja a
+- ló páncélját
+msg-button-llama-variant: '&aLáma típus választása'
 msg-button-llama-variant-lore:
-- Changes the llama's look
-msg-button-llama-carpet-color: '&aLlama carpet color'
+- Megváltoztatja a láma kinézetét
+msg-button-llama-carpet-color: '&aLáma szőnyegének színe'
 msg-button-llama-carpet-color-lore:
-- Changes the llama's
-- carpet color
-msg-button-creeper-charged: '&aToggle charged creeper'
+- Megváltoztatja a 
+- láma szőnyegének színét
+msg-button-creeper-charged: '&aFeltöltött Creeper változtatása'
 msg-button-creeper-charged-lore:
-- Toggles the creeper's
-- charged state
-msg-button-fox-variant: '&aChoose fox variant'
+- A feltöltött creeper
+- állapotán változtat
+msg-button-fox-variant: '&aRóka típusának kiválasztása'
 msg-button-fox-variant-lore:
-- Changes the fox's look
-msg-button-fox-crouching: '&aToggle crouching pose'
+- Megváltoztatja a róka kinézetét
+msg-button-fox-crouching: '&aBekapcsolja a róka guggolását'
 msg-button-fox-crouching-lore:
-- Toggles the fox's
-- crouching pose
-msg-button-fox-sleeping: '&aToggle sleeping pose'
+- RÓka váltása
+- guggolásra
+msg-button-fox-sleeping: '&aAlvó póz bekapcsolása'
 msg-button-fox-sleeping-lore:
-- Toggles the fox's
-- sleeping pose
-msg-button-mooshroom-variant: '&aChoose mooshroom variant'
+- Róka váltása
+- alsó pozícióra
+msg-button-mooshroom-variant: '&aGombatehén fajta választása'
 msg-button-mooshroom-variant-lore:
-- Changes the look
-- of the mooshroom
-msg-button-panda-variant: '&aChoose panda variant'
+- Megváltoztatja a kinézetét
+- a gombatehénnek
+msg-button-panda-variant: '&aPanda típus választása'
 msg-button-panda-variant-lore:
-- Changes the panda's look
-msg-button-parrot-variant: '&aChoose parrot variant'
+- Megváltoztatja a panda kinézetét
+msg-button-parrot-variant: '&aPapagáj típus választása'
 msg-button-parrot-variant-lore:
-- Changes the parrot's look
-msg-button-pig-saddle: '&aToggle pig saddle'
+- Megváltoztatja a papagáj kinézetét
+msg-button-pig-saddle: '&aMalac nyereg választás'
 msg-button-pig-saddle-lore:
-- Toggles the pig's saddle
-msg-button-sheep-color: '&aChoose sheep color'
+- Megváltoztatja a malac nyergét
+msg-button-sheep-color: '&aBárány színének kiválasztása'
 msg-button-sheep-color-lore:
-- Changes the sheep's
-- wool color
+- Megváltoztatja a bárány
+- gyapjúja színét
 msg-button-sheep-sheared: '&aToggle sheared sheep'
 msg-button-sheep-sheared-lore:
 - Toggles the sheep's
 - sheared state
-msg-button-villager-profession: '&aChoose villager profession'
+msg-button-villager-profession: '&aFalusi szakmájának kiválasztása'
 msg-button-villager-profession-lore:
-- Changes the profession
-- of the villager
-msg-button-villager-variant: '&aChoose villager variant'
+- Megváltoztatja a szakmáját
+- a falusinak
+msg-button-villager-variant: '&aFalusi típus kiválasztása'
 msg-button-villager-variant-lore:
-- Changes the look
-- of the villager
-msg-button-villager-level: '&aChoose villager level'
+- Megváltoztatja a
+- falusi kinézetét
+msg-button-villager-level: '&aFalusi szintjének kiválasztása'
 msg-button-villager-level-lore:
-- Changes the level
-- of the villager
-msg-button-zombie-villager-profession: '&aChoose villager profession'
+- Megváltoztatja a
+- falusi szintjét
+msg-button-zombie-villager-profession: '&aZombi falusi szakmájának kiválasztása'
 msg-button-zombie-villager-profession-lore:
-- Changes the profession
-- of the zombie villager
+- Megváltoztatja a szakmáját
+- a zombi falusinak
