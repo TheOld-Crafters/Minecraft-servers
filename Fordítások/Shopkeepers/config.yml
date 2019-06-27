@@ -188,15 +188,15 @@ msg-type-new-name: |-
 msg-name-set: '&aA boltos neve beállítva!'
 msg-name-has-not-changed: '&aA boltos neve nincs beállítva.'
 msg-name-invalid: '&aEz a név nem megfelelő!'
-msg-shop-type-disabled: '&7Ez a típus ''{type}'' le van tiltva.'
-msg-shop-object-type-disabled: '&7Ez az objektum típus ''{type}'' le van tiltva.'
+msg-shop-type-disabled: "&7Ez a típus '{type}' le van tiltva."
+msg-shop-object-type-disabled: "&7Ez az objektum típus '{type}' le van tiltva."
 msg-must-target-chest: '&7Nézz egy ládára.'
 msg-unused-chest: '&7Nincs boltos, aki használná ezt a ládát.'
 msg-not-owner: '&7Nem te vagy ennek a boltosnak a tulajdonosa.'
 msg-owner-set: '&aÚj tulajdonos beállítva &e{owner}'
 msg-trade-perm-set: '&aA bolt kereskedési engedélye beállítva!'
 msg-trade-perm-removed: '&aA bolt kereskedési engedélye törölve!'
-msg-trade-perm-view: '&aA bolt jelenlegi kereskedési engedélye ''&e{perm}&a''.'
+msg-trade-perm-view: "&aA bolt jelenlegi kereskedési engedélye '&e{perm}&a'."
 msg-must-hold-hire-item: '&7Tartsd a szükséges tételt a kezedben.'
 msg-set-for-hire: '&aFelbérelted a boltost.'
 msg-hired: '&aFelbérelted ezt a boltost!'
@@ -207,8 +207,8 @@ msg-villager-for-hire: '&aA falusi boltosként szolgál, ezért cserébe
   &6{costs}x {hire-item}&a.'
 msg-missing-trade-perm: '&7Nincs jogod kereskedni ebben a boltban.'
 msg-missing-custom-trade-perm: '&7Nincs jogod kereskedni ebben a boltban.'
-msg-cant-trade-while-owner-online: '&Nem lehet kereskedni, ameddig a bolt tulajdonosa
-  (''{owner}'') online.'
+msg-cant-trade-while-owner-online: "&Nem lehet kereskedni, ameddig a bolt tulajdonosa
+  ('{owner}') online."
 msg-sell-shop-created: |
   &aBoltos létrehozva!
   &aAdj hozzá tárgyakat, amiket el akarsz adni a ládádból, majd
@@ -228,35 +228,34 @@ msg-book-shop-created: |
 msg-admin-shop-created: |
   &aBoltos létrehozva!
   &akattints a shift + jobb klikkel a boltra az árak módosításához.
-msg-list-admin-shops-header: '&9Van &e{shopsCount} &9admin bolt: &e(Page {page}
-  of {maxPage})'
-msg-list-player-shops-header: '&9Játékos ''&e{player}&9'' &e{shopsCount} &9boltok:
-  &e(Page {page} of {maxPage})'
-msg-list-shops-entry: '  &e{shopSessionId}) &7{shopName}&r&8at &7({location})&8, type:
-  &7{shopType}&8, object type: &7{objectType}'
+msg-list-admin-shops-header: '&9Van &e{shopsCount} &9admin bolt: &e(Oldal {page}/{maxPage})'
+msg-list-player-shops-header: "&9Játékos '&e{player}&9' &e{shopsCount} &9boltok:
+  &e(Oldal {page}/{maxPage})"
+msg-list-shops-entry: '  &e{shopSessionId}) &7{shopName}&r&8at &7({location})&8, típus:
+  &7{shopType}&8, objektum típus: &7{objectType}'
 msg-removed-admin-shops: '&e{shopsCount} &aadmin boltok el lettek távolítva.'
-msg-removed-player-shops: '&e{shopsCount} &ajátékos boltok ''&e{player}&a'' el lettek
-  távolítva.'
+msg-removed-player-shops: "&e{shopsCount} &ajátékos boltok '&e{player}&a' el lettek
+  távolítva."
 msg-removed-all-player-shops: '&aMinden &e{shopsCount} &ajátékos bolt el lett távolítva.'
 msg-confirm-remove-admin-shops: '&cVisszavonhatatlan eltávolítása az admin boltoknak!'
 msg-confirm-remove-own-shops: '&cVisszavonhatatlanul eltávolítja az összes boltod!'
 msg-confirm-remove-player-shops: '&cVisszavonhtatalanul eltávolítja a játékos összes boltját
   &6{player}&c!'
 msg-confirm-remove-all-player-shops: '&cVisszavonhatatlanul eltávolítja az összes játékos összes boltját!'
-msg-confirmation-required: '&7Erősítsd meg ezt a műveletet az alábbi beírásával: &6/shopkeepers
+msg-confirmation-required: '&7Erősítsd meg ezt a műveletet az alábbi parancs beírásával: &6/shopkeepers
   confirm'
 msg-confirmation-expired: '&cA megerősítés lejárt.'
 msg-nothing-to-confirm: '&cjelenleg nincs semmi, ami megerősíthető.'
 msg-no-permission: '&cEhhez nincs jogod.'
-msg-command-unknown: '&cIsmeretlen parancs ''&e{command}&c''!'
-msg-command-argument-unexpected: '&cVáratlan argumentum ''&e{argument}&c''.'
-msg-command-argument-missing: '&cHiányzó argumentum ''&e{argumentFormat}&c''.'
-msg-command-argument-invalid: '&cHibás argumentum ''&e{argument}&c''.'
-msg-command-player-argument-missing: '&cNincs megadva játékos ''&e{argumentFormat}&c''.'
-msg-command-player-argument-invalid: '&cNem található játékos ''&e{argument}&c''.'
-msg-command-shop-type-argument-invalid: '&cIsmeretlen bolt típus ''&e{argument}&c''.'
-msg-command-shop-object-type-argument-invalid: '&cIsmeretlen bolt objektum típus ''&e{argument}&c''.'
-msg-command-shopkeeper-argument-invalid: '&cNem található boltos ''&e{argument}&c''.'
+msg-command-unknown: "&cIsmeretlen parancs '&e{command}&c'!"
+msg-command-argument-unexpected: "&cVáratlan argumentum '&e{argument}&c'."
+msg-command-argument-missing: "&cHiányzó argumentum '&e{argumentFormat}&c'."
+msg-command-argument-invalid: "&cHibás argumentum '&e{argument}&c'."
+msg-command-player-argument-missing: "&cNincs megadva játékos '&e{argumentFormat}&c'."
+msg-command-player-argument-invalid: "&cNem található játékos '&e{argument}&c'."
+msg-command-shop-type-argument-invalid: "&cIsmeretlen bolt típus '&e{argument}&c'."
+msg-command-shop-object-type-argument-invalid: "&cIsmeretlen bolt objektum típus '&e{argument}&c'."
+msg-command-shopkeeper-argument-invalid: "&cNem található boltos '&e{argument}&c'."
 msg-command-help-title: '&9***** &8[&6Shopkeepers v{version}&8] &9*****'
 msg-command-help-usage-format: '&e{usage}'
 msg-command-help-description-format: '&8 - &3{description}'
@@ -264,8 +263,7 @@ msg-command-description-shopkeeper: Létrehoz egy boltost.
 msg-command-description-help: Megjeleníti ezt a súgót.
 msg-command-description-reload: Újratölti ezt a bővítményt.
 msg-command-description-debug: Hibakeresési mód be- és kikapcsolása.
-msg-command-description-list: Felsorolja a megadott játékos összes boltját, vagy az összes admin
-boltot.
+msg-command-description-list: Felsorolja a megadott játékos összes boltját, vagy az összes admin boltot.
 msg-command-description-remove: Eltávolítja az összes boltot a megadott játékosnak, minden játékosnak,
   vagy minden admin boltot.
 msg-command-description-remote: Távolról nyit egy boltot.
@@ -351,8 +349,8 @@ msg-trade-setup-desc-trading:
 - Végy egy tárgyat az eszköztáradból
 - és kattints egy helyre a lerakáshoz.
 - Bal/Jobb klikk a mennyiség beállításához.
-- 'Fels sor: Kapott tárgy'
-- 'Alsó sor: Tárgyak árais'
+- 'Felső sor: Kapott tárgy'
+- 'Alsó sor: Tárgyak árai'
 msg-trade-setup-desc-book:
 - Könymásolatok eladása.
 - Tegyél írott és üres könyveket
@@ -360,10 +358,10 @@ msg-trade-setup-desc-book:
 - Bal/Jobb klikk az ár beállításához.
 - 'Felső sor: Eladni kívánt könyv'
 - 'Alsó sor: A tárgy ára'
-msg-command-shopkeeper-argument-no-admin-shop: '&c A boltos ''&e{argument}&c'' nem
-  admin boltos.'
-msg-command-shopkeeper-argument-no-player-shop: '&cA boltos ''&e{argument}&c'' nem
-  játékos boltos.'
+msg-command-shopkeeper-argument-no-admin-shop: "&c A boltos '&e{argument}&c' nem
+  admin boltos."
+msg-command-shopkeeper-argument-no-player-shop: "&cA boltos '&e{argument}&c' nem
+  játékos boltos."
 msg-command-description-give: Bolt készítéséhez tárgy megadása az adott játékosnak.
 msg-command-description-remote-edit: Visszavonhatatlanul módosít egy boltot.
 disable-zombie-villager-curing: false
@@ -451,8 +449,8 @@ msg-button-sheep-color-lore:
 - gyapjúja színét
 msg-button-sheep-sheared: '&aToggle sheared sheep'
 msg-button-sheep-sheared-lore:
-- Toggles the sheep's
-- sheared state
+- Megváltoztatja a bárány
+- levágott állapotát
 msg-button-villager-profession: '&aFalusi szakmájának kiválasztása'
 msg-button-villager-profession-lore:
 - Megváltoztatja a szakmáját
