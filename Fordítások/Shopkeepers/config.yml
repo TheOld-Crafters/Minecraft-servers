@@ -182,7 +182,7 @@ msg-too-many-shops: '&7Túl sok boltod van!'
 msg-no-admin-shop-type-selected: '&7Ki kell választani az adminbolt típusát!'
 msg-no-player-shop-type-selected: '&7Ki kell választani a játékosbolt típusát!'
 msg-shop-create-fail: '&7Itt nem hozhatsz létre boltost.'
-msg-type-new-name: |-.
+msg-type-new-name: |-
   &aÍrd le a boltos nevét a chat-re.
     &aÍrj egy gondolatjelet (-) a név törléséhez.
 msg-name-set: '&aA boltos neve beállítva!'
@@ -243,10 +243,10 @@ msg-confirm-remove-own-shops: '&cVisszavonhatatlanul eltávolítja az összes bo
 msg-confirm-remove-player-shops: '&cVisszavonhtatalanul eltávolítja a játékos összes boltját
   &6{player}&c!'
 msg-confirm-remove-all-player-shops: '&cVisszavonhatatlanul eltávolítja az összes játékos összes boltját!'
-msg-confirmation-required: '&7Erősítsd meg ezt a műveletet az lábbi beírásával: &6/shopkeepers
+msg-confirmation-required: '&7Erősítsd meg ezt a műveletet az alábbi beírásával: &6/shopkeepers
   confirm'
 msg-confirmation-expired: '&cA megerősítés lejárt.'
-msg-nothing-to-confirm: '&cjelenleg nincs semmi ami megerősíthető.'
+msg-nothing-to-confirm: '&cjelenleg nincs semmi, ami megerősíthető.'
 msg-no-permission: '&cEhhez nincs jogod.'
 msg-command-unknown: '&cIsmeretlen parancs ''&e{command}&c''!'
 msg-command-argument-unexpected: '&cVáratlan argumentum ''&e{argument}&c''.'
@@ -340,7 +340,7 @@ msg-trade-setup-desc-selling:
 - 'Alsó sorok: Tárgyak árai'
 msg-trade-setup-desc-buying:
 - Tárgyak vétele játékosoktól.
-- Helyezz el minden tárgyból egyet amiből
+- Helyezz el minden tárgyból egyet, amiből
 - veszel és sokat abból amilyen tárgyért veszed,
 - a ládába.
 - Bal/Jobb klikk a mennyiség beállításához.
