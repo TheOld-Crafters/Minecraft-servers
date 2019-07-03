@@ -152,11 +152,11 @@ GameItems:
       name: '&eMi vagyok?'
       answer: '&aFehér gyapjú'
     '28':
-      item: DANDELION_YELLOW
+      item: YELLOW_DYE
       name: '&eMi vagyok?'
       answer: '&aPitypang'
     '29':
-      item: ROSE_RED
+      item: RED_DYE
       name: '&eMi vagyok?'
       answer: '&apipacs'
     '30':
@@ -804,7 +804,7 @@ GameItems:
       name: '&eMi vagyok?'
       answer: '&aAranyalma'
     '191':
-      item: SIGN
+      item: OAK_SIGN
       name: '&eMi vagyok?'
       answer: '&aTábla'
     '192':
