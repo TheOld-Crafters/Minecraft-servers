@@ -1,10 +1,10 @@
 ---
 name: Fejlesztések és ötletek
 about: Új fejlesztéssel kapcsolatos ötletek
-title: ''
+title: Ötlet
 labels: ''
 assignees: ''
 
 ---
 
-<!--- Kérjük írd le az ötletedet! -->
+
