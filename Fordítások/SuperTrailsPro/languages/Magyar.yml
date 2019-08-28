@@ -25,7 +25,7 @@ MenuNames:
   Particles: 'Csíkok: Részecskék'
   Blokkok: 'Csíkok: Blokkok'
   Languages: 'Csíkok: Nyelvek'
-  Modes: 'Csík módok'
+  Modes: Csík módok
   Rain1: Válassz eső színt
   Rain2: Válassz eső tárgyat
   Wings1: Válassz szárnyakat
@@ -37,6 +37,7 @@ MenuNames:
   Event: 'Csíkok: Eventek'
   EventSecond: 'Csíkok: Eventek'
   EventOpen: 'Csíkok: Nyitva'
+  AreYouSure: Biztos vagy ebben?
 Menu:
   Particle: '&6Részecske csíkok'
   Block: '&3Blokk csíkok'
@@ -59,10 +60,89 @@ Menu:
   - '!permission!'
   Next: '&aKövetkező Oldal'
   Prev: '&aElőző Oldal'
+  AYS:
+    SignItem:
+      Name: '&fBiztos vagy ebben?'
+    YesItem:
+      Name: '&eIgen'
+      Lore:
+      - ' '
+      - '&fKattints ide a művelet megerősítéséhez'
+    NoItem:
+      Name: '&aNem'
+      Lore:
+      - ' '
+      - '&fKattints ide a visszavonáshoz'
+  Keeper:
+    Empty:
+      Name: '&7Üres Hely'
+      Lore:
+      - ' '
+      - '&eKattints ide szárnykészlet létrehozásához'
+    ColorWings:
+      Name: '!wingsname!'
+      Lore:
+      - ' '
+      - '&7Színek:'
+      - '&7 - !color1!'
+      - '&7 - !color2!'
+      - '&7 - !color3!'
+      - ' '
+      - '&eBal Klikk a Kiválasztáshoz'
+      - '&eJobb Klikk a Módosításhoz'
+    PatternWings:
+      Name: '!wingsname!'
+      Lore:
+      - ' '
+      - '&7Minta: &f!pattern!'
+      - ' '
+      - '&eBal Klikk a Kiválasztáshoz'
+      - '&eJobb Klikk a Módosításhoz'
+    Remove:
+      Name: '&cTávolítsd el ezt a készletet'
+      Lore:
+      - '&cKattints ide az aktuális készlet eltávolításához'
+    Save:
+      Name: '&aMentés'
+      Lore:
+      - ' '
+      - '&eKattints a módosítások mentéséhez'
+    Cancel:
+      Name: '&eTöröl'
+      Lore:
+      - ' '
+      - '&cNem alkalmazod a változásokat erre a készletre'
+    WingsChange:
+      Name: '&f!wingsname!'
+      Lore:
+      - ' '
+      - '&eKattints ide a szárnyak megváltoztatásához'
+    ColorChange:
+      Name: '&f!color!'
+      Lore:
+      - ' '
+      - '&eKattints ide a szín megváltoztatásához'
+    PatternChange:
+      Name: '&f!pattern!'
+      Lore:
+      - ' '
+      - '&eKattints ide a minta megváltoztatásához'
+    BuildIt:
+      Name: '&aKészíts saját készletet'
+      Lore:
+      - '&7Válassza a szárnyak közül'
+    Undefined: '&fEgyik sem'
+    NotSupported:
+      Name: '&cA jelenlegi szárnyak nem támogatják ezt a színt'
+    ResetPattern:
+      Name: '&cKattints ide a minta visszaállításához'
+    SetUnfinishedError: '&cNem lehet alkalmazni a készletre'
 Event:
   Messages:
-    Start: === /n&a&LAz event elkezdődött szerezz ingyenes !a! ládát most! /n&6Írd be /Trails
+    Start: === /n&a&LAz event elkezdődött szerezz ingyenes !a! ládát most! /n&6Írd
+      be /Trails
     End: '&cEvent befejeződött'
+    Wait: '&cVárj mielőtt kinyitsz egy másik ládát'
   Rarity:
     Common: '&f&lGYAKORI'
     Rare: '&3&lRITKA'
@@ -134,6 +214,23 @@ Event:
     - '&8Megidéz egy tündért, ami követ téged'
     - ' '
     - '&7Ritkaság: !r!'
+  Points:
+    LoreAdd:
+    - ' '
+    - '&cNeked már megvan ez az effekt, ez'
+    - '&cátalakult &l!points! &cpontra'
+  PointsItem:
+    Name: '&bPontok: !points!'
+    Lore:
+    - ' '
+    - '&7Átalakíthatsz pontokat ládákká'
+    - ' '
+    - '&71 Láda = 100 Pont'
+    - ' '
+    - '!convert!'
+    CanConvert: '&eKattints a pontok átalakításához!'
+    CantConvert: '&cNincs elég pontod jelenleg'
+  DatabaseErrorCatch: '&cNem sikerült frissíteni az adataid, próbáld újra később.'
 ParticleMenu:
   Heart: '&cSzivek'
   Angry: '&6Mérges'
@@ -285,20 +382,8 @@ RainAndWings:
   Pattern: '&fMinta'
 Wings:
   Angel: '&f&lAngyal'
-  embfebwdmb: §f§lDenevér Szárnyak
-  ynsggkbbrd: §f§lTündér Szárnyak
-  vuitmvtwsj: §f§lFantázia Szárnyak
-  pumdvqnery: §f§lSzárnyak
-  bzsekxnbll: §f§lSirály Szárnyak
-  faxawyexyn: §f§lSólyom szárnyak
-  nbgyytlckk: §f§lÖrdög Szárnyak
-  kzcqxgpvje: §f§lSárkány Szárnyak
-  sdgdnomvsr: §f§lPillangó Szárnyak
-  wjhexhsoba: §f§lRövid Szárnyak
-  mqpylnthdn: '§f§lPillangó #2 Szárnyak'
-  xebgnppkni: §f§lManó Szárnyak
-  heuanigzbt: §f§lHosszú Szárnyak
-  lmbcmrpjan: §f§lDémon Szárnyak
-  qdpscnblyg: §f§lAngyal Szárnyak
 Pattern:
-Pattern1: P1
+  Pattern1: 'P1'
+#PatternLore:
+#  Pattern1:
+#    - 'Lore Test'
