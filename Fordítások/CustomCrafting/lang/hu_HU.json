@@ -1,38 +1,38 @@
 { 
    "msg":{ 
       "auto_save":{ 
-         "start":"   Auto save data   ",
-         "complete":" Auto save complete "
+         "start":"   Automatikus mentés   ",
+         "complete":" Automatikus mentés kész "
       },
       "startup":{ 
-         "outdated":"Your version is outdated! There is a new version available! Download it here: https://www.spigotmc.org/resources/55883/",
-         "update_check_fail":"Failed to check for a update on spigot",
-         "playerstats":"Loading Player Stats",
-         "inventories":"Initiating Inventory GUIs",
-         "placeholder":"Registering PlaceHolder",
+         "outdated":"A verziód elavult! Új verzió érhető el! Töltsd le itt: https://www.spigotmc.org/resources/55883/",
+         "update_check_fail":"Nem sikerült a frissítéseket ellenőrizni Spigot oldalon",
+         "playerstats":"Játékos statisztikák betöltése",
+         "inventories":"Eszköztár GUI-k indítása",
+         "placeholder":"PlaceHolder regisztrálása",
          "recipes":{ 
-            "title":"________[Loading Recipes/Items]________",
-            "items":"---------[ITEMS]---------",
-            "recipes":"--------[RECIPES]--------",
-            "duplicate":"Ignoring duplicate recipe %namespace%:%key% with the config file %key%.%file_type%!"
+            "title":"________[Receptek/Tárgyak betöltése]________",
+            "items":"---------[TÁRGYAK]---------",
+            "recipes":"--------[RECEPTEK]--------",
+            "duplicate":"Duplikált receptek figyelmen kívül hagyása %namespace%:%key% a config file-al %key%.%file_type%!"
          }
       },
-      "denied_perm":"&cYou lack the permission &4%PERM%&c!",
+      "denied_perm":"&cNincs engedélyed &4%PERM%&c!",
       "player":{ 
          "outdated":{ 
-            "msg":"&cYour version is outdated! A new version is available!",
-            "msg2":"&aDownload it now!",
-            "link":" &7[&3Click Here&7]"
+            "msg":"&cElavult verzió! Új verzió érhető el!",
+            "msg2":"&aTöltsd le most!",
+            "link":" &7[&3Kattints ide&7]"
          },
          "error":{ 
             "loading":{ 
-               "msg":"&cPlugin Disabled! The Plugin won't work!",
-               "msg1":"Make sure you have the latest Spigot or Paper build!",
-               "msg2":"&7If using 1.13.x make sure to get the latest build!",
-               "msg3":"&7More Information on how to get these builds here:",
+               "msg":"&cPlugin Tiltva! A Plugin nem fog működni!",
+               "msg1":"Használd a legrégebbi verziókat: Spigot vagy Paper build!",
+               "msg2":"&7Ha 1.13.x verziót használsz, használd a legrégebbi build-et!",
+               "msg3":"&7További információk ezekről a build-ekről itt:",
                "msg4":"   &7[&6Spigot&7]",
                "msg5":"   &7[&3Paper&7]",
-               "msg6":"&cIf this solution doesn't work and you get error messages on startup please contact me on Discord or SpigotMC!"
+               "msg6":"&cHa ez a megoldás nem működik és hibaüzeneteket kapsz indításkor, vedd fel velem a kapcsolatot Discord-on vagy SpigotMC-n!"
             }
          }
       },
@@ -41,133 +41,133 @@
             "item_creator":{ 
                "save":{ 
                   "input":{ 
-                     "line1":"&3Type in the name of the folder and item",
-                     "line2":"&6e.g. example your_item"
+                     "line1":"&3Írd be a mappa és a tárgy nevét",
+                     "line2":"&6 pl.: példa saját tárgy"
                   },
-                  "success":"&aItem saved to:"
+                  "success":"&aA tárgy mentve ide:"
                },
-               "display_name":"&3Type in the name! Use &6& &3for formatting codes!",
+               "display_name":"&3Írd be a nevet! Használd a &6& &3formázási kódokat!",
                "enchant":{ 
-                  "add":"&3Type in the enchantment and level! &6unbreaking 5",
-                  "remove":"&3Type in the enchantment! &6unbreaking",
-                  "invalid_lvl":"&cInvalid level! It's not a number!",
-                  "invalid_enchant":"&cInvalid Enchantment! &4%ENCHANT%&c does not exist!",
-                  "no_lvl":"&cNo level set!"
+                  "add":"&3Írd be a varázslatot és a szintet! &6unbreaking 5",
+                  "remove":"&3Írd be a varázslatot! &6unbreaking",
+                  "invalid_lvl":"&cÉrvénytelen szint! Ez nem egy szám!",
+                  "invalid_enchant":"&cÉrvénytelen varázslat! &4%ENCHANT%&c nem létezik!",
+                  "no_lvl":"&cNincs beállítva szint!"
                },
                "lore":{ 
-                  "add":"&3Type in the lore! Use &6& &3for formatting codes!",
-                  "remove":"&3Type in the line of the lore you want to remove!",
-                  "no_number":"&cError getting the line! Is it a number? It should be!",
-                  "error":"&cError the line &4%NUM%&c does not exist!",
-                  "success":"&aRemoved Lore in line &6%NUM%"
+                  "add":"&3Írd be a leírást! Használd a &6& &3formázási kódokat!",
+                  "remove":"&3Írd be a törölni kívánt leírás sorát!",
+                  "no_number":"&cHiba a sor keresése közben! Ez egy szám? Annak kell lennie!",
+                  "error":"&cHiba, a sor &4%NUM%&c nem létezik!",
+                  "success":"&aA leírás eltávolítva a sorban &6%NUM%"
                },
                "potion":{ 
-                  "add":"&3Type in the Potion! &6<name> <duration> <level> [<ambient> <particles>]",
-                  "remove":"&3Type in the Potion name you want to remove!",
-                  "error_number":"&cError parsing Numbers! &4<name> <duration> <level> [<ambient> <particles>]",
-                  "wrong_args":"&cWrong arguments or invalid name! &4<name> <duration> <level> [<ambient> <particles>]",
-                  "success":"&aAdded Potion Effect &6%TYPE%,%DUR%,%AMP%,%AMB%,%PAR%",
-                  "invalid_name":"&cInvalid name! &4%NAME%&c does not exist!"
+                  "add":"&3Írd be a bájitalt! &6<név> <időtartam> <szint> [<ambient> <részecskék>]",
+                  "remove":"&3Írd be a bájital nevét, amit el akarsz távolítani!",
+                  "error_number":"&cHibás számok! &4<név> <időtartam> <szint> [<ambient> <részecskék>]",
+                  "wrong_args":"&cHibás adatok vagy érvénytelen név! &4<név> <időtartam> <szint> [<ambient> <részecskék>]",
+                  "success":"&aBájital hozzáadva &6%TYPE%,%DUR%,%AMP%,%AMB%,%PAR%",
+                  "invalid_name":"&cÉrvénytelen név! &4%NAME%&c nem létezik!"
                },
                "variant":{ 
                   "remove":{ 
-                     "msg":"&3Choose the Item you want to remove!",
+                     "msg":"&3Válaszd ki a tárgyat, amit el akarsz távolítani!",
                      "line":" &6%NUM%. &7%ITEM%",
-                     "success":"&aRemoved &6%ITEM%&a from variants&a!"
+                     "success":"&aEltávolítva &6%ITEM%&a a változatok közül&a!"
                   }
                },
                "attribute":{ 
                   "amount":{ 
-                     "input":"&3Type in the amount you want! For example&6 0.4",
-                     "error":"&cError parsing number! Is it a number? It should be!"
+                     "input":"&3Írd be a mennyiséget, amennyit akarsz! Például&6 0.4",
+                     "error":"&cHiba a szám elemzésekor! Ez egy szám? Annak kell lennie!"
                   },
                   "name":{ 
-                     "input":"&3Type in the name!"
+                     "input":"&3Írd be a nevet!"
                   },
                   "uuid":{ 
-                     "input":"&3Type in the uuid for the attribute! Must be a valid UUID!",
+                     "input":"&3Írd be az uuid-jét a tulajdonságnak! Valós UUID-nek kell lennie!",
                      "error":{ 
-                        "line1":"&cInvalid UUID: &4%UUID%",
-                        "line2":"&cType in a valid UUID!"
+                        "line1":"&cÉrvénytelen UUID: &4%UUID%",
+                        "line2":"&cÍrj be érvényes UUID-t!"
                      }
                   }
                },
                "skull_owner":{ 
-                  "input":"&3Type in the Player Name!"
+                  "input":"&3Írd be a Játékos Nevet!"
                },
                "damage":{ 
-                  "set":"&3Type in the amount of damage!",
-                  "invalid_type":"&cThe current item does not support damage value!",
-                  "value_success":"&aSet item damage to &6%VALUE%&a!",
-                  "invalid_value":"&cThe value &4%VALUE%&c is not a number!"
+                  "set":"&3Írd be a sebzés mennyiségét!",
+                  "invalid_type":"&cAz aktuális tárgy nem támogatja a sebzés értéket!",
+                  "value_success":"&aA sebzés beállítva &6%VALUE%&a!",
+                  "invalid_value":"&cAz érték &4%VALUE%&c nem érvényes szám!"
                },
                "repair":{ 
-                  "set":"&3Type in the amount of cost",
-                  "invalid_type":"&cThe current item does not support repair cost!",
-                  "value_success":"&aSet repair cost to &6%VALUE%&a!",
-                  "invalid_value":"&cThe value &4%VALUE%&c is not a valid number!"
+                  "set":"&3Írd be az árát",
+                  "invalid_type":"&cA jelenlegi tárgy nem támogatja a javítási költséget!",
+                  "value_success":"&aA javítási költség beállítva &6%VALUE%&a!",
+                  "invalid_value":"&cAz érték &4%VALUE%&c nem érvényes szám!"
                },
                "fuel":{ 
-                  "set":"&3Type in the Burn Time in ticks!",
-                  "value_success":"&aSet Burn Time to &6%VALUE% ticks&a!",
-                  "invalid_value":"&cThe value &4%VALUE%&c is not a valid number!"
+                  "set":"&3Írd be az Égési Időt tick-ekben megadva!",
+                  "value_success":"&aÉgési idő beállítva &6%VALUE% tick-re&a!",
+                  "invalid_value":"&cAz érték &4%VALUE%&c nem érvényes szám!"
                },
                "custom_model_data":{ 
-                  "disabled":"&l&cDisabled",
-                  "set":"&3Type in the Custom Model Data!",
-                  "success":"&aSet Model Data to &6%VALUE%&a!",
-                  "invalid_value":"&cThe value &4%VALUE%&c is not a valid Model Data number!"
+                  "disabled":"&l&cTiltva",
+                  "set":"&3Írd be az Egyedi Modell Adatokat!",
+                  "success":"&aEgyedi Modell Adatok beállítva &6%VALUE%&a!",
+                  "invalid_value":"&cAz érték &4%VALUE%&c nem egy érvényes Modell Adat szám!"
                },
-               "durability_cost":"&3Type in the durability cost, which will be subtracted from the item when used in the crafting grid",
+               "durability_cost":"&3Írd be a tartóssági költséget, amely ki lesz vonva a tárgyból amikor a barkácsolásnál használod",
                "custom_durability":{ 
-                  "set_durability":"&3Type in the custom durability. &cMax value: 2,147,483,647",
-                  "set_damage":"&3Type in the custom Damage of the item. &cMax value: 2,147,483,647"
+                  "set_durability":"&3Írd be az egyedi tartósságot. &cMaximum érték: 2,147,483,647",
+                  "set_damage":"&3Írd be az egyedi sebzés értékét a tárgynak. &cMaximum érték: 2,147,483,647"
                },
                "rarity":{ 
-                  "set":"&3Type in the percentage of how rare this item should be. &cThe number must be smaller than 1.0!"
+                  "set":"&3Írd be a százalékos értékét a tárgy ritkaságának. &cA számnak kisebbnek kell lennie mint 1.0!"
                },
                "permission":{ 
-                  "set":"&3Type in the permission string that players need to get this item"
+                  "set":"&3Írd be az engedélyt, amire a játékosoknak szüksége van, hogy megszerezzék a tárgyat"
                }
             },
             "item_editor":{ 
-               "input":"&3Type in the folder and name of the item! &6example your_item",
-               "error":"&cThis item does not exist or is not loaded!",
-               "item_gui_title":"       &cID ITEM     &3ORIGINAL ITEM",
-               "item_applied":"&aItem successfully applied to recipe!",
-               "item_editable":"&aThis item can now be edited!",
-               "no_name":"&cYou need to type in the item name!"
+               "input":"&3Írd be a mappát és a tárgy nevét! &6example your_item",
+               "error":"&cEz a tárgy nem létezik vagy nincs betöltve!",
+               "item_gui_title":"       &cID TÁRGY     &3EREDETI TÁRGY",
+               "item_applied":"&aA tárgy sikeresen alkalmazva a recepteknél!",
+               "item_editable":"&aEz a tárgy mostantól szerkeszthető!",
+               "no_name":"&cBe kell írnod a tárgy nevét!"
             },
             "recipe_creator":{ 
-               "override":"&3type the namespace and key from the recipe!",
+               "override":"&3Írd be a nevet és a kulcsot a receptből!",
                "furnace":{ 
-                  "xp":"&3Type in the amount of experience. e.g. 0.5",
-                  "cooking_time":"&3Type in the cooking time in ticks. e.g. 20"
+                  "xp":"&3Írd be az xp mennyiségét. például 0.5",
+                  "cooking_time":"&3Írd be a sütési időt tick-ben megadva. például 20"
                },
                "anvil":{ 
-                  "durability":"&3Type in the amount of durability. &6>0 increase&7, <0 decrease",
-                  "repair_cost":"&3Type in the amount of repair_cost. &cMust be greater than 0!"
+                  "durability":"&3Írd be a tartósság mennyiségét. &6>0 növelés&7, <0 csökkentés",
+                  "repair_cost":"&3Írd be a mennyiségét a javítási költségnek, repair_cost. &cLegyen nagyobb, mint 0!"
                },
                "save":{ 
-                  "input":"&3Type in the name of the folder and item! &6folder recipe_name",
-                  "empty":"&cCannot save a empty recipe! Check the Result and the Source/ingredients",
-                  "success":"&aRecipe successfully saved to:"
+                  "input":"&3Írd be a mappa és tárgy nevét! &6mappa recept_neve",
+                  "empty":"&cÜres receptet nem tudunk menteni! Nézd meg az Eredményt és a Forrás/hozzávalókat",
+                  "success":"&aA recept sikeresen mentve ide:"
                },
                "loading":{ 
-                  "error":"&cError occurred while loading recipe &4%REC%",
-                  "success":"&aLoaded and injected recipe successful!",
-                  "warning":"&cIt is better to restart the Server after you're done, to prevent recipes from not working correctly!"
+                  "error":"&cHiba történt a recept betöltése közben &4%REC%",
+                  "success":"&aSikerese recept betöltés!",
+                  "warning":"&cJavasolt a szervert újraindítani, hogy megelőzzük a receptek működési képtelenségét!"
                },
-               "valid_number":"&cType in a valid number!"
+               "valid_number":"&cÍrj be érvényes számot!"
             },
             "recipe_editor":{ 
-               "not_existing":"&cThe recipe &6%RECIPE% &cdoesn't exist!",
-               "input":"&3Type in the name of the folder and recipe! &6example your_recipe",
-               "invalid_recipe":"This recipe is not a %RECIPE_TYPE%!",
+               "not_existing":"&cA recept &6%RECIPE% &cnem létezik!",
+               "input":"&3Írd be a mappa és a recept nevét! &6example your_recipe",
+               "invalid_recipe":"Ez a recept nem %RECIPE_TYPE%!",
                "delete":{ 
-                  "confirm":"&7Do you really want to delete &6%RECIPE%",
-                  "confirmed":"&7[&aYES&7]  ",
-                  "declined":"&7[&cNO&7]"
+                  "confirm":"&7Biztosan törölni akarod: &6%RECIPE%",
+                  "confirmed":"&7[&aIGEN&7]  ",
+                  "declined":"&7[&cNEM&7]"
                }
             }
          }
@@ -175,27 +175,27 @@
       "commands":{ 
          "help":[ 
             "",
-            "            &bMain command: &e/cc",
+            "            &bElsődleges parancs: &e/cc",
             "",
-            "                &3/cc &6<label>",
-            "  &6help     &7-  &3Displays list of commands",
-            "  &6clear    &7-  &3Resets Player cache",
-            "  &6info      &7-  &3Displays info about this plugin",
-            "  &6studio    &7-  &3Opens the GUI Studio",
-            "  &6give     &7-  &3Gives custom items to players"
+            "                &3/cc &6<parancs>",
+            "  &6help     &7-  &3Parancsok listájának megjelenítése",
+            "  &6clear    &7-  &3Idieglenes Játékos fájlok törlése",
+            "  &6info      &7-  &3Információ megjelenítése a plugin-ról",
+            "  &6studio    &7-  &3GUI Stúdió megnyitása",
+            "  &6give     &7-  &3Egyedi tárgyakat ad játékosoknak"
          ],
-         "info":"&3type &6\"/cc help\" &3for help!",
+         "info":"&3Írd be &6\"/cc help\" &3ha segítségre van szükséged!",
          "lockdown":{ 
-            "enabled":"&7[&c&lLOCKDOWN&7] &aENABLED! &cRecipes will be blocked from now on!",
-            "disabled":"&7[&c&lLOCKDOWN&7] &cDISABLED! &cRecipes will no longer be blocked!"
+            "enabled":"&7[&c&lLOCKDOWN&7] &aENGEDÉLYEZVE! &cA receptek tiltva vannak mostantól!",
+            "disabled":"&7[&c&lLOCKDOWN&7] &cLETILTVA! &cA receptek újra elérhetőek!"
          },
          "give":{ 
-            "player_offline":"&cThe player &4%PLAYER% &cis not online!",
-            "invalid_amount":"&cInvalid amount! Is it a number?",
+            "player_offline":"&cA játékos &4%PLAYER% &cnem elérhető!",
+            "invalid_amount":"&cÉrvénytelen érték! Ez egy szám?",
             "success":"&aGave &e%ITEM%&a to &e%PLAYER%",
-            "success_amount":"&aGave &e%AMOUNT%x %ITEM%&a to &e%PLAYER%",
-            "no_inv_space":"&cNo space in Inventory!",
-            "invalid_item":"&cThe item &4%ITEM%&c does not exist!"
+            "success_amount":"&aAdd meg: &e%AMOUNT%x %ITEM%&a neki: &e%PLAYER%",
+            "no_inv_space":"&cNincs hely az eszköztáradban!",
+            "invalid_item":"&cA tárgy &4%ITEM%&c nem létezik!"
          },
          "recipes":{ 
             "toggle":{ 
@@ -218,22 +218,22 @@
                "name":"&4"
             },
             "back":{ 
-               "name":"&5Back",
+               "name":"&5Vissza",
                "help":[ 
 
                ]
             },
             "close":{ 
-               "name":"&4Close",
+               "name":"&4Bezárás",
                "help":[ 
 
                ]
             },
             "gui_help_on":{ 
-               "name":"&2Help",
+               "name":"&2Segítség",
                "lore":[ 
-                  "&7-Click Me-",
-                  "&7[&aEnabled&7]",
+                  "&7-Kattints ide-",
+                  "&7[&aEngedélyezve&7]",
                   "%wolfyutilities.help%"
                ],
                "help":[ 
@@ -241,10 +241,10 @@
                ]
             },
             "gui_help_off":{ 
-               "name":"&2Help",
+               "name":"&2Segítség",
                "lore":[ 
-                  "&7-Click Me-",
-                  "&7[&cDisabled&7]"
+                  "&7-Kattints ide-",
+                  "&7[&cLetiltva&7]"
                ],
                "help":[ 
 
@@ -254,214 +254,214 @@
          "main_menu":{ 
             "gui_name":"&3&lCustomCrafting",
             "gui_help":[ 
-               "&7Choose the type of recipe you want to Create/Edit",
-               "&7You can also open the ItemEditor to create/edit custom items.",
-               "&7Lockdown will toggle all custom recipes."
+               "&7Válaszd ki a recept típusát, amit szerkeszteni/létrehozni akarsz",
+               "&7Menyithatod a Tárgy Szerkesztőt is a tárgyak szerkesztéséhez/létrehozásához.",
+               "&7A Lezárás az összes egyedi receptet átállítja."
             ],
             "items":{ 
                "lockdown":{ 
                   "enabled":{ 
-                     "name":"&4&lLockDown!",
+                     "name":"&4&lLezárás!",
                      "lore":[ 
-                        "&7[&3Enabled&7]",
-                        "&4Recipes are being blocked!"
+                        "&7[&3Engedélyezve&7]",
+                        "&4A receptek le vannak tiltva!"
                      ]
                   },
                   "disabled":{ 
-                     "name":"&4LockDown",
+                     "name":"&4Lezárás",
                      "lore":[ 
-                        "&7[&8Disabled&7]",
-                        "&7Recipes are not blocked!"
+                        "&7[&8Kikapcsolva&7]",
+                        "&7A receptek újra elérhetőek!"
                      ]
                   }
                },
                "workbench":{ 
-                  "name":"&6Workbench Recipe",
+                  "name":"&6Barkácsasztal recept",
                   "help":[ 
                      ""
                   ]
                },
                "anvil":{ 
-                  "name":"&6Anvil Recipe",
+                  "name":"&6Üllő recept",
                   "help":[ 
                      ""
                   ]
                },
                "furnace":{ 
-                  "name":"&6Furnace Recipe",
+                  "name":"&6Kemence recept",
                   "help":[ 
                      ""
                   ]
                },
                "blast_furnace":{ 
-                  "name":"&6Blasting Recipe",
+                  "name":"&6Kohó recept",
                   "help":[ 
                      ""
                   ]
                },
                "smoker":{ 
-                  "name":"&6Smoking Recipe",
+                  "name":"&6Füstölő recept",
                   "help":[ 
                      ""
                   ]
                },
                "campfire":{ 
-                  "name":"&6Campfire Recipe",
+                  "name":"&6Tábortűz recept",
                   "help":[ 
                      ""
                   ]
                },
                "stonecutter":{ 
-                  "name":"&6Stonecutter Recipe",
+                  "name":"&6Kővágó recept",
                   "help":[ 
                      ""
                   ]
                },
                "item_editor":{ 
-                  "name":"&6Item Creator",
+                  "name":"&6Tárgy készítő",
                   "help":[ 
-                     "&7Create, Save custom Items",
-                     "&6Use them inside of your recipes"
+                     "&7Készít, ment egyedi tárgyakat",
+                     "&6A recepteken belül használd"
                   ]
                },
                "recipe_list":{ 
-                  "name":"&2Recipe List",
+                  "name":"&2Recept lista",
                   "help":[ 
-                     "&7List of recipes",
-                     "&6Toggle Recipes on/off"
+                     "&7Receptek listája",
+                     "&6Receptek kapcsolása be/ki"
                   ]
                }
             }
          },
          "item_editor":{ 
-            "gui_name":"&0&lItem Editor",
+            "gui_name":"&0&lTárgy szerkesztő",
             "items":{ 
                "load_item":{ 
-                  "name":"&6Load",
+                  "name":"&6Betöltés",
                   "help":[ 
-                     "&7Load a existing Item"
+                     "&7Betölt egy meglévő tárgyat"
                   ]
                },
                "create_item":{ 
-                  "name":"&6Create",
+                  "name":"&6Készítés",
                   "help":[ 
-                     "&7Create a custom Item"
+                     "&7Egyedi tárgyat készít"
                   ]
                },
                "edit_item":{ 
-                  "name":"&7Edit",
+                  "name":"&7Szerkesztés",
                   "help":[ 
-                     "&7Edit a existing Item"
+                     "&7Meglévő tárgyat szerkeszt"
                   ]
                },
                "delete_item":{ 
-                  "name":"&4Delete",
+                  "name":"&4Törlés",
                   "help":[ 
-                     "&7Delete a custom Item"
+                     "&7Egyedi tárgyat töröl"
                   ]
                }
             }
          },
          "item_creator":{ 
-            "gui_name":"&0&lItem Creator",
+            "gui_name":"&0&lTárgy készítő",
             "gui_help":[ 
-               "&7Place in the item you want to edit in top middle",
-               "&eSome features are only available if you save the item!"
+               "&7Tedd be középre a tárgyat, amit szerkeszteni szeretnél",
+               "&eNéhány változtatás csak a tárgy elmentése után érhető el!"
             ],
             "items":{ 
                "invalid_type":{ 
-                  "name":"&cInvalid Item",
+                  "name":"&cérvénytelen tárgy",
                   "lore":[ 
-                     "&7This Item is not compatible",
-                     "&7with this setting!"
+                     "&7Ez a tárgy nem kompatibilis",
+                     "&7ezzel a beállítással!"
                   ]
                },
                "invalid_version":{ 
-                  "name":"&cInvalid Minecraft Version",
+                  "name":"&cÉrvénytelen Minecraft verzió",
                   "lore":[ 
-                     "&7This feature is not compatible",
-                     "&7with this current Minecraft version!",
-                     "&7You need at least 1.14 to use this feature!"
+                     "&7Ez a funkció nem kompatibilis",
+                     "&7ezzel a Minecraft verzióval!",
+                     "&7Legalább 1.14 verziónak kell lenni!"
                   ]
                },
                "page_next":{ 
-                  "name":"&7Next Page",
+                  "name":"&7Következő Oldal",
                   "lore":[ 
                      ""
                   ]
                },
                "page_previous":{ 
-                  "name":"&7Previous Page",
+                  "name":"&7Előző oldal",
                   "lore":[ 
                      ""
                   ]
                },
                "save_item":{ 
-                  "name":"&aSave Item",
+                  "name":"&aTárgy mentése",
                   "help":[ 
-                     "&7Save the item to File",
-                     "&7input: &3<folder> <file_name>"
+                     "&7Mentsd el ide a tárgyat: Fájl",
+                     "&7Bevitel: &3<mappa> <file_neve>"
                   ]
                },
                "apply_item":{ 
-                  "name":"&aApply Item",
+                  "name":"&aTárgy alkalmazása",
                   "help":[ 
-                     "Applies the Item to the recipe"
+                     "Tárgy alkalmazása a recepteknél"
                   ]
                },
                "meta_ignore":{ 
                   "name":"&7Mode: &3%VAR%",
                   "lore":[ 
-                     "&eChange the way this meta is checked!",
-                     "&7Ignore specific meta e.g. DisplayName",
-                     "&7Numeric meta can also be configured to",
-                     "&7only allow for Higher or Lower values!"
+                     "&eMódosítsd a meta ellenőrzésének módját!",
+                     "&7Hagyd figyelmen kívül pl: DisplayName",
+                     "&7A numerikus meta is konfigurálható",
+                     "&7csak Magasabb vagy Alacsonyabb értékeket engedélyezz!"
                   ],
                   "help":[ 
                      "&7----------------------------------------",
-                     "&3EXACT &7- Meta must be exactly the same!",
-                     "&3IGNORE &7- Meta is ignored and not needed!",
-                     "&7For numeric items:",
-                     "&3HIGHER &7- The value can be higher than the set value!",
-                     "&3LOWER &7- The value can be lower than the set value!"
+                     "&3EXACT &7- A meta-nak azonosnak kell lennie!",
+                     "&3IGNORE &7- A Meta nem szükséges!",
+                     "&7Numerikus tárgyakhoz:",
+                     "&3HIGHER &7- Az érték lehet nagyobb, mint a beállított érték!",
+                     "&3LOWER &7- Az érték lehet kisebb, mint a beállított érték!"
                   ]
                },
                "display_name":{ 
                   "option":{ 
-                     "name":"&6Change name",
+                     "name":"&6Név változtatása",
                      "help":[ 
-                        "&7Edit Display Name"
+                        "&7Megjelenített név szerkesztése"
                      ]
                   },
                   "set":{ 
-                     "name":"&6Set Display Name",
+                     "name":"&6Megjelenített név beállítása",
                      "help":[ 
-                        "&7Change Display Name"
+                        "&7Megjelenített név változtatása"
                      ]
                   },
                   "remove":{ 
-                     "name":"&3Remove Display Name",
+                     "name":"&3Megjelenített név eltávolítása",
                      "help":[ 
-                        "&7Removes Display Name and",
-                        "&7reset it to default"
+                        "&7megjelenített név eltávolítása és",
+                        "&7visszaállításra alapértelmezettre"
                      ]
                   }
                },
                "enchantments":{ 
                   "option":{ 
-                     "name":"&6Enchantments",
+                     "name":"&6Fejlesztések",
                      "help":[ 
-                        "&7Edit Enchantments"
+                        "&7Fejlesztések szerkesztése"
                      ]
                   },
                   "add":{ 
-                     "name":"&6Add Enchantment",
+                     "name":"&6Fejlesztések hozzáadása",
                      "help":[ 
 
                      ]
                   },
                   "remove":{ 
-                     "name":"&4Remove Enchantment",
+                     "name":"&4Fejlesztések eltávolítása",
                      "help":[ 
 
                      ]
@@ -469,19 +469,19 @@
                },
                "lore":{ 
                   "option":{ 
-                     "name":"&6Edit Lore",
+                     "name":"&6Leírás szerkesztése",
                      "help":[ 
-                        "&7Add or Remove Lore lines"
+                        "&7Leírás sorok hozzáadása vagy eltávolítása"
                      ]
                   },
                   "add":{ 
-                     "name":"&6Add Lore",
+                     "name":"&6Leírás hozzáadása",
                      "help":[ 
 
                      ]
                   },
                   "remove":{ 
-                     "name":"&4Remove Lore",
+                     "name":"&4Leírás eltávolítása",
                      "help":[ 
 
                      ]
@@ -489,44 +489,44 @@
                },
                "flags":{ 
                   "option":{ 
-                     "name":"&6Set Flags",
+                     "name":"&6Flag beállítása",
                      "help":[ 
-                        "&7Set HIDE Flags",
-                        "&7e.g. Hide Enchants"
+                        "&7Flag elrejtése",
+                        "&7pl. fejlesztések elrejtése"
                      ]
                   },
                   "flag_enchants":{ 
-                     "name":"%C%Hide Enchants",
+                     "name":"%C%Fejlesztések elrejtése",
                      "help":[ 
 
                      ]
                   },
                   "flag_attributes":{ 
-                     "name":"%C%Hide Attributes",
+                     "name":"%C%Attribútumok elrejtése",
                      "help":[ 
 
                      ]
                   },
                   "flag_unbreakable":{ 
-                     "name":"%C%Hide Unbreakable",
+                     "name":"%C%Törhetetlenség elrejtése",
                      "help":[ 
 
                      ]
                   },
                   "flag_destroys":{ 
-                     "name":"%C%Hide Destroys",
+                     "name":"%C%Elpusztítás elrejtése",
                      "help":[ 
 
                      ]
                   },
                   "flag_placed_on":{ 
-                     "name":"%C%Hide Placed On",
+                     "name":"%C%Lerakás elrejtése",
                      "help":[ 
 
                      ]
                   },
                   "flag_potion_effects":{ 
-                     "name":"%C%Hide Potions",
+                     "name":"%C%Bájitalok elrejtése",
                      "help":[ 
 
                      ]
@@ -534,173 +534,173 @@
                },
                "player_head":{ 
                   "option":{ 
-                     "name":"&6Skull Settings",
+                     "name":"&6Fej beállítások",
                      "help":[ 
-                        "&7Add Textures to Player Heads"
+                        "&7Textúra hozzáadása a fejhez"
                      ]
                   },
                   "texture":{ 
                      "apply":{ 
-                        "name":"&6Apply Texture",
+                        "name":"&6Textúra elfogadása",
                         "help":[ 
-                           "&7Applies the texture of the Player Head",
-                           "<- Input"
+                           "&7Játékos fej textúrájának elfogadása",
+                           "<- Bevitel"
                         ]
                      }
                   },
                   "owner":{ 
-                     "name":"&6Set Skull Owner",
+                     "name":"&6Fej tulajának beállítsa",
                      "help":[ 
-                        "&7Sets the Skull Owner",
-                        "&7Input: &3<UUID or Player Name>"
+                        "&7beállítja a fej tulajdonosát",
+                        "&7Bevitel: &3<UUID vagy Játékos Név>"
                      ]
                   }
                },
                "unbreakable_on":{ 
-                  "name":"&aUnbreakable",
+                  "name":"&aTörhetetlenség",
                   "help":[ 
-                     "&7Toggle Unbreakable"
+                     "&7Törhetetlenség állítása"
                   ]
                },
                "unbreakable_off":{ 
-                  "name":"&cBreakable",
+                  "name":"&cTörhetőség",
                   "help":[ 
-                     "&7Toggle Unbreakable"
+                     "&7Törhetőség beállítása"
                   ]
                },
                "potion":{ 
                   "option":{ 
-                     "name":"&6Potion Effects",
+                     "name":"&6Bájital effektek",
                      "help":[ 
-                        "&7Configure Potion Effects"
+                        "&7Bájital effektek konfigurálása"
                      ]
                   },
                   "add":{ 
-                     "name":"&3Add Potion Effect",
+                     "name":"&3Bájital effekt hozzáadása",
                      "help":[ 
-                        "&7Add a Potion Effect",
-                        "&7Input: &3<name> <duration> <level> [<ambient> <particles>]"
+                        "&7Bájital effekt hozzáadása",
+                        "&7Bevitel: &3<név> <időtartam> <szint> [<ambient> <particles>]"
                      ]
                   },
                   "remove":{ 
-                     "name":"&4Remove Potion Effect",
+                     "name":"&4Bájital effekt eltávolítása",
                      "help":[ 
-                        "&7Remove a Potion Effect",
-                        "&7Input: &3<name>"
+                        "&7Bájital effekt eltávolítása",
+                        "&7bevitel: &3<Név>"
                      ]
                   }
                },
                "attribute":{ 
                   "option":{ 
-                     "name":"&6Set Attributes",
+                     "name":"&6Attribútumok beállítása",
                      "help":[ 
-                        "&7Add or remove Attribute Modifiers"
+                        "&7Attribútomok módosításának hozzáadása vagy eltávolítása"
                      ]
                   },
                   "generic_max_health":{ 
-                     "name":"&6GENERIC_MAX_HEALTH",
+                     "name":"&6ÁLTALÁNOS_MAX_ÉLETERŐ",
                      "help":[ 
 
                      ]
                   },
                   "generic_follow_range":{ 
-                     "name":"&6GENERIC_FOLLOW_RANGE",
+                     "name":"&6ÁLTALÁNOS_KÖVETÉSI_TÁVOLSÁG",
                      "help":[ 
 
                      ]
                   },
                   "generic_knockback_resistance":{ 
-                     "name":"&6GENERIC_KNOCKBACK_RESISTANCE",
+                     "name":"&6ÁLTALÁNOS_HÁTRALÖKÉS_ELLENÁLLÁS",
                      "help":[ 
 
                      ]
                   },
                   "generic_movement_speed":{ 
-                     "name":"&6GENERIC_MOVEMENT_SPEED",
+                     "name":"&6ÁLTALÁNOS_MOZGÁSI_SEBESSÉG",
                      "help":[ 
 
                      ]
                   },
                   "generic_flying_speed":{ 
-                     "name":"&6GENERIC_FLYING_SPEED",
+                     "name":"&6ÁLTALÁNOS_REPÜLÉSI_SEBESSÉG",
                      "help":[ 
 
                      ]
                   },
                   "generic_attack_damage":{ 
-                     "name":"&6GENERIC_ATTACK_DAMAGE",
+                     "name":"&6ÁLTALÁNOS_TÁMADÁSI_SEBZÉS",
                      "help":[ 
 
                      ]
                   },
                   "generic_attack_speed":{ 
-                     "name":"&6GENERIC_ATTACK_SPEED",
+                     "name":"&6ÁLTALÁNOS_TÁMADÁSI_SEBESSÉG",
                      "help":[ 
 
                      ]
                   },
                   "generic_armor":{ 
-                     "name":"&6GENERIC_ARMOR",
+                     "name":"&6ÁLTALÁNOS_PÁNCÉL",
                      "help":[ 
 
                      ]
                   },
                   "generic_armor_toughness":{ 
-                     "name":"&6GENERIC_ARMOR_TOUGHNESS",
+                     "name":"&6ÁLTALÁNOS_PÁNCÉL_KITARTÁSA",
                      "help":[ 
 
                      ]
                   },
                   "generic_luck":{ 
-                     "name":"&6GENERIC_LUCK",
+                     "name":"&6ÁLTALÁNOS_SZERENCSE",
                      "help":[ 
 
                      ]
                   },
                   "horse_jump_strength":{ 
-                     "name":"&6HORSE_JUMP_STRENGTH",
+                     "name":"&6LÓ_UGRÁS_ERŐSSÉGE",
                      "help":[ 
 
                      ]
                   },
                   "zombie_spawn_reinforcements":{ 
-                     "name":"&6ZOMBIE_SPAWN_REINFORCEMENTS",
+                     "name":"&6ZOMBIE_SPAWN_MEGERŐSÍTÉSE",
                      "help":[ 
 
                      ]
                   },
                   "add_number":{ 
-                     "name":"%C%Add number",
+                     "name":"%C%Szám hozzáadás",
                      "help":[ 
 
                      ]
                   },
                   "add_scalar":{ 
-                     "name":"%C%Multiply number",
+                     "name":"%C%Szám szorzása",
                      "help":[ 
 
                      ]
                   },
                   "multiply_scalar_1":{ 
-                     "name":"%C%Add percentage",
+                     "name":"%C%Százalék hozzáadása",
                      "help":[ 
 
                      ]
                   },
                   "slot_hand":{ 
-                     "name":"&6Hand",
+                     "name":"&6Kéz",
                      "help":[ 
 
                      ]
                   },
                   "slot_off_hand":{ 
-                     "name":"&6Off_Hand",
+                     "name":"&6Kéz_nélkül",
                      "help":[ 
 
                      ]
                   },
                   "slot_feet":{ 
-                     "name":"&6Feet",
+                     "name":"&6Láb",
                      "help":[ 
 
                      ]
@@ -712,487 +712,487 @@
                      ]
                   },
                   "slot_chest":{ 
-                     "name":"&6Chest",
+                     "name":"&6Mellkas",
                      "help":[ 
 
                      ]
                   },
                   "slot_head":{ 
-                     "name":"&6Head",
+                     "name":"&6Fej",
                      "help":[ 
 
                      ]
                   },
                   "save":{ 
-                     "name":"&aAdd Attribute",
+                     "name":"&aAdj hozzá tulajdonságot",
                      "help":[ 
 
                      ]
                   },
                   "delete":{ 
-                     "name":"&cRemove Attribute",
+                     "name":"&cTulajdonság eltávolítása",
                      "help":[ 
-                        "&7Removes the attribute modifier",
-                        "&7with these set settings.",
-                        "&cUUID must be equal!"
+                        "&7Eltávolítja a módosított tulajdonságokat",
+                        "&7ezekkel a beállításokkal.",
+                        "&cUUID-nek egyeznie kell!"
                      ]
                   },
                   "set_amount":{ 
-                     "name":"&aAmount: &6%NUMBER%",
+                     "name":"&amennyiség: &6%NUMBER%",
                      "help":[ 
-                        "&7Sets the amount of this modifier",
-                        "&7Input: &3<amount>"
+                        "&7Beállítja a módosító mennyiségét",
+                        "&7Input: &3<mennyiség>"
                      ]
                   },
                   "set_name":{ 
-                     "name":"&3Name:&7 %NAME%",
+                     "name":"&3Név:&7 %NAME%",
                      "help":[ 
-                        "&7Sets the name of this modifier",
-                        "&7Input: &3<name>"
+                        "&7Beállítja ennek a módosítónak a nevét",
+                        "&7Bevitel: &3<név>"
                      ]
                   },
                   "set_uuid":{ 
                      "name":"&3UUID:&7 %UUID%",
                      "help":[ 
-                        "&7Sets the uuid of this modifier",
-                        "&cMust be a valid UUID format!",
-                        "&7Input: &3<uuid>"
+                        "&7Beállítja az uuid-t ennek a módosításnak",
+                        "&cLétező UUID-nek kell lennie!",
+                        "&7Bevitel: &3<uuid>"
                      ]
                   }
                },
                "damage":{ 
                   "option":{ 
-                     "name":"&6Set Item Damage",
+                     "name":"&6Tárgy sebzés beállítása",
                      "help":[ 
-                        "&7Add a damage value to the Item",
-                        "&7This can be used for example",
-                        "&7for custom textures!"
+                        "&7Sebzés értéket ad egy tárgynak",
+                        "&7Használható például",
+                        "&7egyedi textúrákra!"
                      ]
                   },
                   "set":{ 
-                     "name":"&6Set Damage",
+                     "name":"&6Sebzés beállítása",
                      "help":[ 
-                        "&7Set the damage value!",
-                        "&7Input: &3<value>"
+                        "&7Állítsd be a sebzés értékét!",
+                        "&7bevitel: &3<érték>"
                      ]
                   },
                   "reset":{ 
-                     "name":"&cReset Damage",
+                     "name":"&cSebzés visszaállítása",
                      "help":[ 
-                        "&7Resets the damage value to 0"
+                        "&7Sebzés értékének visszaállítása 0-ra"
                      ]
                   }
                },
                "repair_cost":{ 
                   "option":{ 
-                     "name":"&6Repair Cost",
+                     "name":"&6Javítási költség",
                      "help":[ 
-                        "&7Set the repair cost for this item!",
-                        "&7e.g. to prevent repairing"
+                        "&7Javítási költség beállítása erre a tárgyra!",
+                        "&7például a javítás elkerülésére"
                      ]
                   },
                   "set":{ 
-                     "name":"&6Set Repair Cost"
+                     "name":"&6Javítási költség beállítása"
                   },
                   "reset":{ 
-                     "name":"&cReset Repair Cost",
+                     "name":"&cJavítási költség visszaállítása",
                      "help":[ 
-                        "Resets Repair Cost to 0"
+                        "Javítási költség visszaállítása 0-ra"
                      ]
                   }
                },
                "fuel":{ 
                   "option":{ 
-                     "name":"Fuel Settings",
+                     "name":"Üzemanyag beállítások",
                      "lore":[ 
-                        "&cThe Item must be saved in order to",
-                        "&cbe added as a fuel"
+                        "&cA tárgynak mentve kell legyen, ahhoz",
+                        "&chogy üzemanyagként lehessen használni"
                      ]
                   },
                   "burn_time":{ 
                      "set":{ 
-                        "name":"&aBurn Time: &7%VAR% ticks",
+                        "name":"&aÉgési idő: &7%VAR% tick",
                         "help":[ 
-                           "&7Sets the burn time in ticks!",
-                           "&720 ticks = 1 second",
-                           "&cSet it to 0 will disable this to be",
-                           "&csaved as a fuel!"
+                           "&7Tickekben állítsd be az égési időt!",
+                           "&720 tick = 1 másodperc",
+                           "&c0-ra állítva tiltva lesz",
+                           "&cüzemanyag használatra!"
                         ]
                      },
                      "reset":{ 
-                        "name":"&cReset Burn Time",
+                        "name":"&cÉgési idő visszaállítása",
                         "lore":[ 
-                           "&7The item item will not be saved",
-                           "&7as a fuel anymore!"
+                           "&7Ez a tárgy nem lesz mentve többé",
+                           "&7üzemanyagként!"
                         ]
                      }
                   },
                   "furnace":{ 
-                     "name":"%C%Furnace"
+                     "name":"%C%Kemence"
                   },
                   "blast_furnace":{ 
-                     "name":"%C%Blast Furnace"
+                     "name":"%C%Kohó"
                   },
                   "smoker":{ 
-                     "name":"%C%Smoker"
+                     "name":"%C%Füstölő"
                   }
                },
                "custom_model_data":{ 
                   "option":{ 
-                     "name":"&6Custom Model Data",
+                     "name":"&6Egyedi Modell adatok",
                      "help":[ 
-                        "&7Set the Custom Model Data",
-                        "&7Used for custom Models and Textures!",
-                        "&7Available since Minecraft 1.14"
+                        "&7Álíttsd be az egyedi Modell adatokat",
+                        "&7Egyedi Modell adatok és textúrákhoz!",
+                        "&7Elérhető a Minecraft 1.14 óta"
                      ]
                   },
                   "set":{ 
-                     "name":"&7Model Data: &7%VAR%",
+                     "name":"&7Modell adat: &7%VAR%",
                      "help":[ 
-                        "&7Sets the Custom Model Data",
-                        "&7for this item!"
+                        "&7Állítsd be a Modell adatot",
+                        "&7ehhez a tárgyhoz!"
                      ]
                   },
                   "reset":{ 
-                     "name":"&cRemove Model Data",
+                     "name":"&cModell adat eltávolítás",
                      "help":[ 
-                        "&7Removes the Custom Model Data",
-                        "&7from this item!"
+                        "&7Eltávolítja az egyedi Modell adatot",
+                        "&7erről a tárgyról!"
                      ]
                   }
                },
                "consume":{ 
                   "option":{ 
-                     "name":"&7Durability Cost & Replacement",
+                     "name":"&7Tartóssági költség és csere",
                      "lore":[ 
-                        "&4To use this feature, you need to save the item!"
+                        "&4Ehhez a beállításhoz mentsd el a tárgyat!"
                      ],
                      "help":[ 
-                        "&7Set the Durability that gets",
-                        "&7removed when crafting!",
-                        "&7Set with which item this item gets replaced",
-                        "&7in the crafting grid."
+                        "&7Állítsd be a tartósságot, ami",
+                        "&7craftolásnál el lesz távolítva!",
+                        "&7Állítsd be, hogy mely tárgy cserélje le ezt a tárgyat",
+                        "&7craftolásnál."
                      ]
                   },
                   "durability_cost":{ 
                      "enabled":{ 
-                        "name":"&7Durability cost: &3%VAR%",
+                        "name":"&7Tartóssági költség: &3%VAR%",
                         "lore":[ 
-                           "&7>0 = &3decrease durability!",
-                           "&7 0 = &3removed completely! Use replacement to prevent it!",
-                           "&7<0 = &3increase durability!"
+                           "&7>0 = &3tartósság csökkentése!",
+                           "&7 0 = &3teljesen eltávolítva! Használj cserét, hogy meggátold!",
+                           "&7<0 = &3tartósság növelése!"
                         ]
                      },
                      "disabled":{ 
-                        "name":"&7Durability cost: &4&lDisabled",
+                        "name":"&7Tartóssági költség: &4&lDisabled",
                         "lore":[ 
-                           "&cItem must not be stackable!",
-                           "&cReplacement must be disabled!"
+                           "&cNem halmozható a tárgy!",
+                           "&cA csere le van tiltva!"
                         ]
                      }
                   },
                   "consume_item":{ 
                      "enabled":{ 
-                        "name":"&aConsumed",
+                        "name":"&aElfogyasztott",
                         "lore":[ 
-                           "&7Item will be consumed!"
+                           "&7A tárgy el lesz fogyasztva!"
                         ]
                      },
                      "disabled":{ 
-                        "name":"&cNot Consumed",
+                        "name":"&cNem elfogyasztott",
                         "lore":[ 
-                           "&7The item wil not be consumed!"
+                           "&7Ez a tárgy nem lesz elfogyasztva!"
                         ]
                      }
                   },
                   "replacement":{ 
                      "enabled":{ 
-                        "name":"&aReplacement enabled!",
+                        "name":"&aCsere elérhető!",
                         "lore":[ 
-                           "&7Durability cost is blocked now!"
+                           "&7A tartóssági költség le van tiltva!"
                         ]
                      },
                      "disabled":{ 
-                        "name":"&cReplacement disabled!"
+                        "name":"&cCsere kikapcsolva!"
                      }
                   }
                },
                "custom_durability":{ 
                   "option":{ 
-                     "name":"&6Custom Durability & Damage",
+                     "name":"&6Egyedi tartósság és sebzés",
                      "lore":[ 
-                        "&7Set Custom Durability and damage to your item!",
-                        "&7This will replace the vanilla Durability and Damage!"
+                        "&7Állítsd be az egyedi tartósságot és sebzést a tárgyadra!",
+                        "&7Ez helyettesíti a vanilla tartósságot és sebzést!"
                      ]
                   },
                   "set_durability":{ 
-                     "name":"&7Set Durability: &3%VAR%",
+                     "name":"&7Tartósság beállítása: &3%VAR%",
                      "lore":[ 
-                        "&7Click to set Durability!"
+                        "&7Kattints a tartósság beállításához!"
                      ]
                   },
                   "set_damage":{ 
-                     "name":"&7Set Damage: &3%VAR%",
+                     "name":"&7Sebzés beállítása: &3%VAR%",
                      "lore":[ 
-                        "&7Click to set Damage!"
+                        "&7Kattints a sebzés beállításához!"
                      ]
                   },
                   "set_tag":{ 
-                     "name":"&7Set Tag: &3%VAR%",
+                     "name":"&7Címke beállítása: &3%VAR%",
                      "lore":[ 
-                        "&7Click to set Tag!",
-                        "&3%DUR% -> &7durability subtracted by the damage",
-                        "&3%MAX_DUR% -> &7max set durability for the item"
+                        "&7Kattints a címke beállításához!",
+                        "&3%DUR% -> &7Sérülésből kivont tartósság",
+                        "&3%MAX_DUR% -> &7a tárgy maximális beállított tartóssága"
                      ]
                   }
                },
                "localized_name":{ 
                   "option":{ 
-                     "name":"&6Localized Name",
+                     "name":"&6Lokalizált név",
                      "help":[ 
-                        "&7Set the localized name to use",
-                        "&7translations of resource packs, etc."
+                        "&7Állítsd be a lokalizált nevet",
+                        "&7erőforrás-csomagok fordítására, stb."
                      ]
                   },
                   "set":{ 
-                     "name":"&7Set Localized Name: &f%VAR%"
+                     "name":"&7Lokalizált név beállítása: &f%VAR%"
                   },
                   "remove":{ 
-                     "name":"&cRemove Localized Name"
+                     "name":"&cLokalizált név eltávolítása"
                   }
                },
                "permission":{ 
                   "option":{ 
-                     "name":"&6Permission",
+                     "name":"&6Engedély",
                      "help":[ 
-                        "&7Set the permission needed to get this item",
-                        "&7e.g. used it for crafting or anvil recipes results"
+                        "&7Állítsd be a szükséges engedélyeket a tárgy megszerzéséhez",
+                        "&7pl. barkácsoláshoz vagy üllő recept használathoz"
                      ]
                   },
                   "set":{ 
-                     "name":"&7Set Permssion: &3%VAR%"
+                     "name":"&7Engedély beállítása: &3%VAR%"
                   },
                   "remove":{ 
-                     "name":"&7Remove Permission"
+                     "name":"&7Engedély eltávolítása"
                   }
                },
                "rarity":{ 
                   "option":{ 
-                     "name":"&6Rarity",
+                     "name":"&6Ritkaság",
                      "help":[ 
-                        "&7Sets the rarity of this item.",
-                        "&7This value can be used in crafting or anvil results"
+                        "&7A tárgy ritkaságát állítja be.",
+                        "&7Ez az érték barkácsolásnál használható, vagy üllőnél."
                      ]
                   },
                   "set":{ 
-                     "name":"&7Set Rarity Percentage: &3%VAR%",
+                     "name":"&7Ritkasági százalék beállítása: &3%VAR%",
                      "lore":[ 
-                        "&7Type in a value of 1.0 or lower",
-                        "&7e.g. 1.0 -> 100%",
+                        "&7Írd be egy értéket, ami 1.0 vagy kevesebbet",
+                        "&7pl. 1.0 -> 100%",
                         "     &70.04 -> 4%"
                      ]
                   },
                   "reset":{ 
-                     "name":"&7Reset the rarity percentage",
+                     "name":"&7Ritkasági százalék visszaállítása",
                      "lore":[ 
-                        "&7Resets the percentage to 1.0 (100%)"
+                        "&7Visszaállítj a százalékot: 1.0 (100%)"
                      ]
                   }
                }
             }
          },
          "recipe_editor":{ 
-            "gui_name":"&4&lRecipe Editor",
+            "gui_name":"&4&lRecept szerkesztő",
             "items":{ 
                "create_recipe":{ 
-                  "name":"&6Create Recipe",
+                  "name":"&6Recept készítése",
                   "help":[ 
-                     "&7Create your own recipe"
+                     "&7Készítsd el saját recepted"
                   ]
                },
                "edit_recipe":{ 
-                  "name":"&7Edit Recipe",
+                  "name":"&7Recept szerkesztése",
                   "help":[ 
-                     "&7Edit a existing recipe"
+                     "&7Meglévő recept szerkesztése"
                   ]
                },
                "delete_recipe":{ 
-                  "name":"&4Delete Recipe",
+                  "name":"&4Recept törlése",
                   "help":[ 
-                     "&7Delete a existing recipe"
+                     "&7Meglévő recept törlése"
                   ]
                }
             }
          },
          "recipe_creator":{ 
-            "gui_name":"&4&lRecipe Creator",
+            "gui_name":"&4&lRecept készítő",
             "gui_help":[ 
                "&7Tip:",
-               "&eShift+Right click &7on Result or Ingredients will ",
-               "&7allow you to edit the item/s"
+               "&eShift+Jobb klikk &7a Végeredményre vagy Hozzávalókra ",
+               "&7engedélyezi a tárgy szerkesztését"
             ],
             "items":{ 
                "save":{ 
-                  "name":"&3Save",
+                  "name":"&3Mentés",
                   "help":[ 
-                     "&7Save the recipe",
-                     "&7Input: &3<namespace> <recipe_name>"
+                     "&7Mentsd el a receptet",
+                     "&7Bevitel: &3<namespace> <recipe_name>"
                   ]
                },
                "permission":{ 
                   "enabled":{ 
-                     "name":"&3Permissions",
+                     "name":"&3Engedélyek",
                      "help":[ 
-                        "&7Players need permission to craft",
+                        "&7A játékosoknak engedélyre van szükségük a barkácsoláshoz",
                         "&7Perm: &3customcrafting.craft.<recipe_id>"
                      ]
                   },
                   "disabled":{ 
-                     "name":"&4No Permissions",
+                     "name":"&4Nincsenek engedélyek",
                      "help":[ 
-                        "&7Players don't need any permission to craft"
+                        "&7A játékosoknak nincs szükségük engedélyre a barkácsoláshoz"
                      ]
                   }
                },
                "priority":{ 
-                  "name":"&3Priority:&7 %PRI%",
+                  "name":"&3prioritás:&7 %PRI%",
                   "help":[ 
-                     "&7Sets the priority of this recipe!",
-                     "&7Priorities: ",
-                     "&9LOWEST&7: will be checked first",
-                     "&bLOW&7",
-                     "&3NORMAL&7: normal priority",
-                     "&cHIGH&7",
-                     "&4HIGHEST&7: will be checked last"
+                     "&7beállítja a recept prioritását!",
+                     "&7Prioritások: ",
+                     "&9LEGALACSONYABB&7: először lesz ellenőrizve",
+                     "&bALACSONY&7",
+                     "&3NORMÁL&7: normál prioritás",
+                     "&cMAGAS&7",
+                     "&4LEGMAGASABB&7: utoljára lesz ellenőrizve"
                   ]
                },
                "exact_meta_on":{ 
-                  "name":"&aExact Meta",
+                  "name":"&aPontos Meta",
                   "help":[ 
 
                   ],
                   "lore":[ 
-                     "&7Items need to be exactly the same!",
-                     "&7That means if you put in a IronSword with no damage ",
-                     "&7then IronSwords with damage won't be allowed!"
+                     "&7A tárgyaknak pontosan ugyan olyannak kell lenniük!",
+                     "&7Ez azt jelenti, ha beraksz egy Vas kardot sebzés nélkül ",
+                     "&7a sebzés nélküli vas kardok nem lesznek engedélyezve!"
                   ]
                },
                "exact_meta_off":{ 
-                  "name":"&3Ignore Meta",
+                  "name":"&3Meta figyelmen kívül hagyása",
                   "help":[ 
 
                   ],
                   "lore":[ 
-                     "&7Items without Meta will only",
-                     "&7be checked for their type!",
-                     "&7Items with Meta still need to be exact!"
+                     "&7A tárgyak Meta nélkül csak a",
+                     "&7saját típusúak lesznek ellenőrizve!",
+                     "&7A Meta-val rendelkező tárgyaknak még mindig egyezniük kell!"
                   ]
                },
                "input":{ 
                   "cancel":{ 
-                     "name":"&7Cancel"
+                     "name":"&7Mégse"
                   },
                   "empty":{ 
-                     "name":"&7Slot is empty",
+                     "name":"&7Üres a hely",
                      "lore":[ 
-                        "&7[&aClick to set items&7]"
+                        "&7[&aKattints a tárgyak beállításához&7]"
                      ]
                   }
                },
                "workbench":{ 
                   "adv_workbench_on":{ 
-                     "name":"&3Advanced Workbench",
+                     "name":"&3Speciális barkácsasztal",
                      "help":[ 
-                        "&7Can only be crafted in",
-                        "&7Advanced Workbenches",
+                        "&7Craftolás kizárólag",
+                        "&7Speciális barkácsasztalon",
                         ""
                      ]
                   },
                   "adv_workbench_off":{ 
-                     "name":"&4Every Workbench",
+                     "name":"&4Minden barkácsasztal",
                      "help":[ 
-                        "&7Can be crafted in every Workbench"
+                        "&7Minden barkácsasztalon barkácsolható"
                      ]
                   },
                   "shapeless_off":{ 
-                     "name":"&3Shaped Recipe",
+                     "name":"&3Formázott recept",
                      "help":[ 
-                        "&7Recipe has a shape!"
+                        "&7A receptnek alakja van!"
                      ]
                   },
                   "shapeless_on":{ 
-                     "name":"&3Shapeless Recipe",
+                     "name":"&3Alaktalan recept",
                      "help":[ 
-                        "&7Recipe is shapeless!"
+                        "&7A recept alaktalan!"
                      ]
                   }
                },
                "furnace":{ 
                   "adv_furnace_on":{ 
-                     "name":"&3Advanced CookingData",
+                     "name":"&3Speciális Sütési Adat",
                      "help":[ 
 
                      ]
                   },
                   "adv_furnace_off":{ 
-                     "name":"&4Every CookingData"
+                     "name":"&4Minden Sütési Adat"
                   },
                   "xp":{ 
-                     "name":"&3Experience",
+                     "name":"&3Tapasztalat",
                      "help":[ 
 
                      ],
                      "lore":[ 
-                        "&6%XP% Exp"
+                        "&6%XP% Tapasztalatpont"
                      ]
                   },
                   "cooking_time":{ 
-                     "name":"&6Cooking Time",
+                     "name":"&6Sütési idő",
                      "help":[ 
-                        "&7Set the time how long the item",
-                        "&7needs to cook in ticks",
-                        "&3Tip: 20ticks = 1sec"
+                        "&7A sütési idő beállítsa",
+                        "&7tickekben megadva",
+                        "&3Tip: 20tick = 1mp"
                      ],
                      "lore":[ 
-                        "&6%TIME% ticks"
+                        "&6%TIME% tick"
                      ]
                   }
                },
                "anvil":{ 
                   "mode":{ 
-                     "name":"&7Mode:&6 %MODE%",
+                     "name":"&7Mód:&6 %MODE%",
                      "help":[ 
                         ""
                      ]
                   },
                   "repair_cost":{ 
-                     "name":"&7Repair Cost:&6 %VAR%",
+                     "name":"&7Javítási költség:&6 %VAR%",
                      "lore":[ 
                         ""
                      ]
                   },
                   "block_repair":{ 
                      "true":{ 
-                        "name":"&aRepairing blocked"
+                        "name":"&aJavítás letiltva"
                      },
                      "false":{ 
-                        "name":"&cRepairing allowed"
+                        "name":"&cJavítás engedélyezve"
                      }
                   },
                   "block_rename":{ 
                      "true":{ 
-                        "name":"&aRenaming blocked"
+                        "name":"&aÁtnevezes letiltva"
                      },
                      "false":{ 
-                        "name":"&cRenaming allowed"
+                        "name":"&cÁtnevezés engedélyezve"
                      }
                   },
                   "block_enchant":{ 
                      "true":{ 
-                        "name":"&aEnchanting blocked"
+                        "name":"&aBűvölés letiltva"
                      },
                      "false":{ 
-                        "name":"&cEnchanting allowed"
+                        "name":"&cBűvölés engedélyezve"
                      }
                   },
                   "durability":{ 
@@ -1203,52 +1203,52 @@
                   },
                   "repair_apply":{ 
                      "true":{ 
-                        "name":"&aApply to Result",
+                        "name":"&aElfogadás az eredményhez",
                         "lore":[ 
-                           "&7Applies the repair cost",
-                           "&7to the result's MetaData!"
+                           "&7Elfogadja a javítási költséget",
+                           "&7Az eredmény Meta értékéhez!"
                         ]
                      },
                      "false":{ 
-                        "name":"&cNot Applied!",
+                        "name":"&cNem elfogadott!",
                         "lore":[ 
-                           "&7The result's MetaData stays the same!"
+                           "&7Az eredmény Meta értéke ugyan az marad!"
                         ]
                      }
                   },
                   "repair_mode":{ 
-                     "name":"&7RepairCost mode: &3%VAR%",
+                     "name":"&7JavításiKöltség mód: &3%VAR%",
                      "lore":[ 
-                        "&eThe mode how the repaircost should be ",
-                        "&eaffected by the input left!",
-                        "&3NONE &7- Not affected at all",
-                        "&3ADD &7- Gets added to recipe repaircost!",
-                        "&3MULTIPLY &7- Gets multiplied with recipe repaircost"
+                        "&eA javítási költség módja befolyásolva van ",
+                        "&ea bennlévők által!",
+                        "&3NONE &7- Nem érintett",
+                        "&3ADD &7- Hozzáadódik a recept javítási költségéhez!",
+                        "&3MULTIPLY &7- Szorzódik a recept javítási költségével"
                      ]
                   }
                }
             }
          },
          "recipe_list":{ 
-            "gui_name":"&8&lRecipe List",
+            "gui_name":"&8&lRecept lista",
             "gui_help":[ 
-               "&7Toggle recipes.",
-               "&7if a recipe is disabled it won't be craftable to anyone!",
-               "&7Not even for players with permissions"
+               "&7Receptek váltása.",
+               "&7ha egy recept le van tiltva, akkor nem lesz barkácsolható!",
+               "&7Engedéllyel rendelkező játékosoknak sem"
             ],
             "items":{ 
                "lores":{ 
-                  "disabled":"&7&l[&c&lDISABLED&7&l]",
-                  "enabled":"&7&l[&a&lENABLED&7&l]"
+                  "disabled":"&7&l[&c&lLETILTVA&7&l]",
+                  "enabled":"&7&l[&a&lENGEDÉLYEZVE&7&l]"
                },
                "previous_page":{ 
-                  "name":"&2Previous Page",
+                  "name":"&2Előző oldal",
                   "help":[ 
 
                   ]
                },
                "next_page":{ 
-                  "name":"&2Next Page",
+                  "name":"&2Következő oldal",
                   "help":[ 
 
                   ]
@@ -1256,10 +1256,10 @@
             }
          },
          "variants":{ 
-            "gui_name":"&8&lVariants",
+            "gui_name":"&8&lVariánsok",
             "gui_help":[ 
                "&7Tip:",
-               "&eShift&7+ &eRight click &7will open the ItemEditor"
+               "&eShift&7+ &eJobb klikk &7megnyitja az ItemEditor-t"
             ],
             "items":{ 
 
@@ -1268,46 +1268,46 @@
       },
       "recipe_book":{ 
          "main_menu":{ 
-            "gui_name":"&8&lRecipe knowledge Book",
+            "gui_name":"&8&lReceptkönyv",
             "items":{ 
                "workbench":{ 
-                  "name":"&6Workbench Recipes",
+                  "name":"&6Barkácsasztal receptek",
                   "help":[ 
 
                   ]
                },
                "furnace":{ 
-                  "name":"&6Furnace Recipes",
+                  "name":"&6Sütő receptek",
                   "help":[ 
 
                   ]
                },
                "anvil":{ 
-                  "name":"&6Anvil Recipes",
+                  "name":"&6Üllő receptek",
                   "help":[ 
                      ""
                   ]
                },
                "blast_furnace":{ 
-                  "name":"&6Blasting Recipes",
+                  "name":"&6Kohó receptek",
                   "help":[ 
                      ""
                   ]
                },
                "smoker":{ 
-                  "name":"&6Smoking Recipes",
+                  "name":"&6Füstölő receptek",
                   "help":[ 
                      ""
                   ]
                },
                "campfire":{ 
-                  "name":"&6Campfire Recipes",
+                  "name":"&6Tábortűz receptek",
                   "help":[ 
                      ""
                   ]
                },
                "stonecutter":{ 
-                  "name":"&6Stonecutter Recipes",
+                  "name":"&6Kővágó receptek",
                   "help":[ 
                      ""
                   ]
@@ -1315,40 +1315,40 @@
             }
          },
          "recipe_book":{ 
-            "gui_name":"&8&lRecipe knowledge Book",
+            "gui_name":"&8&lRecept könyvek",
             "items":{ 
                "previous_page":{ 
-                  "name":"&2Previous Page",
+                  "name":"&2Előző oldal",
                   "help":[ 
 
                   ]
                },
                "next_page":{ 
-                  "name":"&2Next Page",
+                  "name":"&2Következő oldal",
                   "help":[ 
 
                   ]
                },
                "lores":{ 
-                  "click":"&7[&a&lClick for Recipe&r&7]"
+                  "click":"&7[&a&lKattints a receptért&r&7]"
                },
                "workbench_filter_button":{ 
                   "all":{ 
-                     "name":"&7Recipe Filter:&3 ALL",
+                     "name":"&7Recept szűrő:&3 ALL",
                      "lore":[ 
-                        "&7Showing all recipes"
+                        "&7Minden recept mutatása"
                      ]
                   },
                   "normal":{ 
-                     "name":"&7Recipe Filter:&3 NORMAL",
+                     "name":"&7Recept szűrő:&3 NORMAL",
                      "lore":[ 
-                        "&7Only showing normal recipes"
+                        "&7Csak normál receptek mutatása"
                      ]
                   },
                   "advanced":{ 
-                     "name":"&7Recipe Filter:&3 ADVANCED",
+                     "name":"&7Recept szűrő:&3 ADVANCED",
                      "lore":[ 
-                        "&7Only showing advanced recipes"
+                        "&7Csak haladó receptek mutatása"
                      ]
                   }
                }
@@ -1359,15 +1359,15 @@
    "author":"WolfyScript",
    "crafting":{ 
       "workbench":{ 
-         "name":"&6Advanced Workbench",
+         "name":"&6Haladó barkácsasztal",
          "lore":[ 
-            "&7Workbench for advanced crafting"
+            "&7Barkácsasztal haladó receptekhez"
          ]
       },
       "knowledgebook":{ 
-         "name":"&6Knowledge Book",
+         "name":"&6Tudás Könyve",
          "lore":[ 
-            "&7Contains some interesting recipes..."
+            "&7Tartalmaz néhány érdekes receptet..."
          ]
       }
    },
