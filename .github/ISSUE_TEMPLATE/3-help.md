@@ -1,6 +1,6 @@
 ---
 name: "⁉️ Segítségre van szükséged a szerverrel kapcsolatban?"
-about: Itt kérhetsz segítséget.
+about: Itt kérhetsz segítséget
 
 ---
 
