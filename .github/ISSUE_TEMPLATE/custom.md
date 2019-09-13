@@ -1,9 +1,6 @@
 ---
-name: Hibajelentés
-about: Hibák jelentése
-title: ''
-labels: ''
-assignees: ''
+name: "\U0001F41B Hibajelentés"
+about: Készíts egy jelentést a javítás érdekében
 
 ---
 
