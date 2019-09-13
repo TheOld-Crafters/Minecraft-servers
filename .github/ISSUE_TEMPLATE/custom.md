@@ -1,7 +1,7 @@
 ---
 name: Hibajelentés
 about: Hibák jelentése
-title: Hibajelentés
+title: ''
 labels: ''
 assignees: ''
 
