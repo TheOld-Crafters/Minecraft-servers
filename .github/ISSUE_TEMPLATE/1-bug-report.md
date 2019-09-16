@@ -1,5 +1,5 @@
 ---
-name: "\U0001F41B Hibajelentés"
+name: "🦋 Hibajelentés"
 about: Készíts egy jelentést a javítás érdekében
 labels: '❗ Hiba'
 ---
