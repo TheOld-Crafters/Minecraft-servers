@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-<!--- Segítség kérés előtt olvasd át az oldalunkat, hátha megtalálod a választ a kérdésedre: https://www.oldcrafters.net/ -->
+<!--- Segítség kérése előtt olvasd át az oldalunkat, hátha megtalálod a választ a kérdésedre: https://www.oldcrafters.net/ -->
