@@ -2,7 +2,7 @@
 name: "⁉️ Segítségre van szükséged a szerverrel kapcsolatban?"
 about: Itt kérhetsz segítséget
 title: ''
-labels: "❔ Segítség kérés"
+labels: ''
 assignees: ''
 
 ---
