@@ -8,4 +8,5 @@ assignees: ''
 ---
 
 <!-- Melyik szerverrel kapcsolatos az ötlet? pl.: Survival -->
-* **Szerver**:
+**Szerver**:
+

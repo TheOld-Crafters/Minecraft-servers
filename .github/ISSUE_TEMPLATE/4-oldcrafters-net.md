@@ -6,5 +6,3 @@ labels: "\U0001F30F  Weboldal/MineMarket, \U0001F4CB Státusz: Várakozás..."
 assignees: ''
 
 ---
-
-
