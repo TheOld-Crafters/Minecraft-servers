@@ -1,0 +1,4 @@
+dimensionaltrees:
+  invalid-material: "§cCan't grow the tree. A invalid material has been detected."
+  reloaded: "§aDimensionalTrees has been reloaded."
+  error: "error"

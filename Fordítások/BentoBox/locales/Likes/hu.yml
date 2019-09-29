@@ -1,0 +1,137 @@
+likes:
+  gui:
+    titles:
+      select-block: "&dSelect a Block"
+      top: "&dTop Islands by [type]"
+      view: "&dView Island Likes"
+      manage: "&dAdd Like or Dislike"
+      settings: "&dEdit Settings"
+      admin: "&dAdmin Panel"
+      select-island: "&dSelect an Island"
+      select-player: "&dSelect a Player"
+      edit-view: "&dEdit Island Likes"
+    buttons:
+      cancel: "&cCancel"
+      accept: "&aAccept"
+      previous: "Previous"
+      next: "Next"
+      return: "&aReturn"
+
+      view-mode: "&6Top Type"
+      name: "[name]"
+
+      like: "&6Likes count"
+      like-rank: "&6Rank by Likes"
+      dislike: "&cDislikes count"
+      dislike-rank: "&cRank by Dislikes"
+      overall: "&aRank number"
+      overall-rank: "&aSort by Rank"
+
+      add-like: "&6Add/Remove Like"
+      add-dislike: "&cAdd/Remove Dislike"
+
+      like-cost: "Like Cost"
+      like-remove-cost: "Like Remove Cost"
+      dislike-cost: "Dislike Cost"
+      dislike-remove-cost: "Dislike Remove Cost"
+      default-icon: "Default Icon"
+      inform-players: "Inform Island Members"
+      log-history: "Log History"
+      reset-likes: "Reset likes on Reset"
+
+      manage-likes: "Manage Island Likes/Dislikes"
+      likes-icon: "Change Island Icon"
+      wipe-data: "Wipe Data"
+      edit-settings: "Edit Settings"
+
+      add-dislike-user: "Add Dislike"
+      add-like-user: "Add Like"
+      remove-dislike-user: "Remove Dislike"
+      remove-like-user: "Remove Like"
+    descriptions:
+      selected: "&dSelected"
+
+      view-mode: "&fAllows to choose|&fwhich top should|&fbe displayed."
+      mode: "Shows top ten|islands by [type]."
+      top-value:
+        likes: "&6[rank]. island by likes|&6with [value] likes."
+        dislikes: "&6[rank]. island by dislikes|&6with [value] dislikes."
+        rank: "&6[rank]. island by rank|&6with [value] rank points."
+      values: "Island has:|[likes] likes|[dislikes] dislikes|[rank] rank points."
+      unknown: "&cunknown player"
+
+      current-value: "Current value: [value]."
+      like: "Likes added by |other players."
+      dislike: "Dislikes added by |other players."
+      overall: "Calculated Rank value|(likes - dislikes)."
+      like-rank: "Placement in top by|Likes count."
+      dislike-rank: "Placement in top by|Dislikes count."
+      overall-rank: "Placement in top by|Rank."
+      like-next: "Shows next players|who liked your island."
+      dislike-next: "Shows next players|who disliked your island."
+      like-previous: "Shows previous players|who liked your island."
+      dislike-previous: "Shows previous players|who disliked your island."
+
+      add-like: "Allows to add or|remove like to this|island."
+      add-dislike: "Allows to add or|remove dislike to this|island."
+      cost: "Current operation cost $[value]."
+
+      like-cost: "Allows to change how|much cost adding new like."
+      like-remove-cost: "Allows to change how|much cost removing like."
+      dislike-cost: "Allows to change how|much cost adding new dislike."
+      dislike-remove-cost: "Allows to change how|much cost removing dislike."
+      default-icon: "Allows to change default|icon in tops."
+      inform-players: "Allows to toggle if|island members should be|notified if someone|liked/disliked their island"
+      log-history: "Allows to toggle if|history data should be|stored."
+      reset-likes: "Allows to toggle if|resetting island should|reset island likes."
+
+      manage-likes: "Allows to add/remove|players who liked or|disliked selected island."
+      likes-icon: "Allows to change an island icon in top menu."
+      wipe-data: "Allows to completely|remove all stored data|from current GameMode."
+      edit-settings: "Allows to edit addon|settings via GUI."
+  types:
+    likes: "Likes"
+    dislikes: "Dislikes"
+    rank: "Rank"
+
+  messages:
+    add-like: "&aYou liked [island]'s island."
+    player-add-like: "&a[user] liked your island."
+    remove-like: "&cYou remove your like [island]'s island."
+    player-remove-like: "&c[user] removed his like from your island."
+    add-dislike: "&cYou disliked [island]'s island."
+    player-add-dislike: "&c[user] disliked your island."
+    remove-dislike: "&aYou remove your dislike [island]'s island."
+    player-remove-dislike: "&a[user] removed his dislike from your island."
+    no-data-about-island: "There is no data about this island."
+    no-data-about-your-island: "There is no data about your island."
+  errors:
+    not-on-island: "&cYou must be on the island to run this command!"
+    your-island: "&cYou cannot add like or dislike to your own island!"
+    numeric-only: "&cInput should be only numbers!"
+    not-valid-value: "&cNumber should be larger than [min] and smaller than [max], but input is [value]!"
+    top-is-empty: "&cSorry, there is no one in the top!"
+    database-error: "&cSorry, there was some error with database. Cannot find your island Data."
+  questions:
+    prefix: "&c[SERVER]&r: "
+    like-cost: "&5Please input cost per like."
+    like-remove-cost: "&5Please input cost per removing like."
+    dislike-cost: "&5Please input cost per dislike."
+    dislike-remove-cost: "&5Please input cost per removing dislike."
+  commands:
+    admin:
+      help:
+        parameters: ""
+        description: "opens admin GUI"
+      settings:
+        parameters: ""
+        description: "opens admin settings GUI"
+    help:
+      parameters: ""
+      description: "opens likes GUI"
+    top:
+      parameters: "<type>"
+      description: "opens top GUI"
+    view:
+      parameters: "<player>"
+      description: "opens GUI where you can see your likes"
