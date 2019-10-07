@@ -15,19 +15,19 @@ admin:
   limits:
       main:
         parameters: "<játékos>"
-        description: "egy játékos sziget limitjének megnézése"
+        description: "Egy játékos sziget limitjének megtekintése"
       calc:
          parameters: "<játékos>"
-         description: "egy játékos sziget limitjének újraszámolása"
+         description: "Egy játékos sziget limitjének újraszámolása"
          finished: "&aA Sziget újraszámolás sikeresen befejeződött!"
 
 island:
   limits:
-    description: "sziget limitek megnézése"
+    description: "Sziget limitek megtekintése"
     max-color: "&c"
     regular-color: "&a"
     block-limit-syntax: "[number]/[limit]"
     no-limits: "&cNincsenek limitek ebben a világban"
     recount:
-      description: "limitek újraszámolása a szigeteden"
+      description: "Limitek újraszámolása a szigeteden"
 
