@@ -42,10 +42,10 @@ challenges:
                 parameters: ''
         user:
             main:
-                description: 'This method opens Challenges GUI.'
+                description: 'Ez a módszer megnyitja a Küldesét GUI-t.'
                 parameters: ''
             complete:
-                description: 'This method allows to complete challenge without GUI.'
+                description: 'Ez a módszer lehetővé teszi a küldetések teljesítését GUI nélkül.'
                 parameters: '<challenge_id> [count]'
     gui:
         title:
@@ -366,7 +366,7 @@ challenges:
             reward-commands: '&6Parancs jutalmak:'
             required-items: '&bSzükséges tárgyak:'
             required-entities: '&bSzükséges entitások:'
-            required-blocks: '&bSzükséges blokk-kok:'
+            required-blocks: '&bSzükséges blokkok:'
         level-description:
             completed: '&BTeljesítve'
             completed-challenges-of: '&3[number] küldetést teljesítettél a maxból ([max]) ezen a szinten.'
