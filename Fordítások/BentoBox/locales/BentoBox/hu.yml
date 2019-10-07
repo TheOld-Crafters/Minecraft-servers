@@ -404,18 +404,18 @@ commands:
       description: "A kiegészítőről"
     go:
       parameters: "[otthon száma]"
-      description: "teleportálás a szigetedre"
+      description: "Teleportálás a szigetedre"
       teleport: "&aTeleportálás a szigetedre..."
       teleported: "&aTeleportálás a(z) &e[number]. számú otthonodhoz."
     help:
       description: "A fő sziget parancs"
       pick-world: "&cAdj meg egy világot: [worlds]"
     spawn:
-      description: "teleportálás a kezdőhelyre"
+      description: "Teleportálás a kezdőhelyre"
       teleporting: "&aTeleportálás a kezdőhelyre..."
       no-spawn: "&cEbben a világban nincs kezdőhely."
     create:
-      description: "sziget létrehozás opcionális blueprint használatával"
+      description: "Sziget létrehozás opcionális blueprint használatával"
       parameters: "<blueprint>"
       too-many-islands: "&cTúl sok sziget van a világban, nem tudunk több szigetet létrehozni. Lépj kapcsolatba egy adminisztrátorral."
       unable-create-island: "&cA szigetet nem sikerült legenerálni, kérjük lépj kapcsolatba egy adminisztrátorral."
@@ -426,17 +426,17 @@ commands:
       description: "információ megtekintése saját vagy mások szigetéről"
       parameters: "<játékos>"
     near:
-      description: "show the name of neighboring islands around you"
+      description: "Környező szigetek nevének mutatása"
       parameters: ""
-      the-following-islands: "&aThe following islands are nearby:"
+      the-following-islands: "&aA következő szigetek vannak a közelben:"
       syntax: "&6[direction]: &a[name]"
-      north: North
-      south: South
-      east: East
-      west: West
-      no-neighbors: "&cYou have no immediate neighboring islands!"
+      north: Észak
+      south: Dél
+      east: Kelet
+      west: Nyugat
+      no-neighbors: "&cNincs közvetlen szomszédos sziget!"
     reset:
-      description: "sziget újrakezdése és a régi sziget törlése"
+      description: "Sziget újrakezdése és a régi sziget törlése"
       parameters: "<blueprint>"
       none-left: "&cNincs több újrakezdésed!"
       resets-left: "&c[number] újrakezdésed maradt."
@@ -446,7 +446,7 @@ commands:
         &cNincs visszaút: ha a jelenlegi szigetet törlöd, &lnem lesz&r&c mód arra, hogy később visszaszerezd.
       kicked-from-island: "&cTörlésre kerültél a szigetről itt [gamemode], mert a tulajdonos újrakezdte a szigetet."
     sethome:
-      description: "otthon teleport pont beállítása"
+      description: "Otthon teleport pont beállítása"
       must-be-on-your-island: "&cEhhez szigeten kell lenned!"
       num-homes: "&cAz otthon száma 1-től [number]-ig adható meg."
       home-set: "&6A sziget otthon pontod beállítva ahol állsz."
@@ -458,26 +458,26 @@ commands:
         confirmation: "&cBiztos vagy benne, hogy a Végben állítasz be otthont?"
       parameters: "[otthon száma]"
     setname:
-      description: "név beállítása a szigetednek"
+      description: "Név beállítása a szigetednek"
       name-too-short: "&cTúl rövid. A minimum hosszúság [number] karakter."
       name-too-long: "&cTúl hosszú. A maximum hosszúság [number] karakter."
       name-already-exists: "&cEbben a játékmódban már létezik egy ilyen nevű sziget."
       parameters: "<név>"
     resetname:
-      description: "sziget név visszaállítása"
+      description: "Sziget név visszaállítása"
     team:
-      description: "csapat kezelése"
+      description: "Csapat kezelése"
       info:
-        description: "részletes információ megjelenítése a csapatodról"
+        description: "Részletes információ megjelenítése a csapatodról"
       coop:
-        description: "coop rangot ad egy játékosnak a szigeteden"
+        description: "Coop rangot ad egy játékosnak a szigeteden"
         parameters: "<játékos>"
         cannot-coop-yourself: "&cSaját magadnak nem adhatsz Coop rangot!"
         already-has-rank: "&cEnnek a játékosnak már van rangja!"
         you-are-a-coop-member: "&2Coop rangot kaptál tőle: [name]"
         success: "&aCoop rangot adtál neki &b[name]."
       uncoop:
-        description: "eltávolítja a coop rangot egy játékostól a szigeteden"
+        description: "Eltávolítja a coop rangot egy játékostól a szigeteden"
         parameters: "<játékos>"
         cannot-uncoop-yourself: "&cNem veheted el magadtól a Coop rangot!"
         cannot-uncoop-member: "&cNem veheted el a Coop rangot egy csapattagtól!"
@@ -486,7 +486,7 @@ commands:
         all-members-logged-off: "&cMinden csapattag kilépett, ezért már nincs Coop rangod [name] szigetén"
         success: "&b[name] &amár nem coop rangos a szigeteden."
       trust:
-        description: "megbízott rangot ad egy játékosnak a szigeteden"
+        description: "Megbízott rangot ad egy játékosnak a szigeteden"
         parameters: "<játékos>"
         trust-in-yourself: "&cMagadban mindig bíznod kell!"
         members-trusted: "&cA csapattagok már Megbízott rangúak."
@@ -494,7 +494,7 @@ commands:
         you-are-trusted: "&2Megbízott rangot kaptál tőle: [name]!"
         success: "&aMegbíztad őt &b[name]&a."
       untrust:
-        description: "eltávolítja a megbízott rangot egy játékostól a szigeteden"
+        description: "Eltávolítja a megbízott rangot egy játékostól a szigeteden"
         parameters: "<játékos>"
         cannot-untrust-yourself: "&cNem veheted el magadtól a Megbízott rangot!"
         cannot-untrust-member: "&cNem veheted el a Megbízott rangot egy csapattagtól!"
@@ -502,7 +502,7 @@ commands:
         you-are-no-longer-trusted: "&cTöbbé nincs Megbízott rangod [name] szigetén!"
         success: "&b[name] &amár nem megbízott a szigeteden."
       invite:
-        description: "játékos meghívása, hogy csatlakozzon a szigetedre"
+        description: "Játékos meghívása, hogy csatlakozzon a szigetedre"
         invitation-sent: "&aMeghívó elküldve [name] számára"
         removing-invite: "&cMeghívó eltávolítása"
         name-has-invited-you: "&a[name] meghív téged, hogy csatlakozz a szigetére."
@@ -519,43 +519,43 @@ commands:
         parameters: "<játékos>"
         you-can-invite: "&aTovábbi [number] játékost hívhatsz meg."
         accept:
-          description: "meghívás elfogadása"
+          description: "Meghívás elfogadása"
           you-joined-island: "&aBeléptél egy szigetre! Használd az /[label] team info parancsot a többi csapattag megtekintéséhez."
           name-joined-your-island: "&a[name] belépett a szigetre!"
           confirmation: |-
             &cBiztos vagy benne, hogy elfogadod a meghívást?
             &c&lEl fogod &nVESZÍTENI &r&c&la jelenlegi szigetedet!
         reject:
-          description: "meghívás mellőzése"
+          description: "Meghívás mellőzése"
           you-rejected-invite: "&aMellőzted a meghívást."
           name-rejected-your-invite: "&c[name] mellőzte a meghívásodat!"
         cancel:
-          description: "a függő meghívás megszakítása"
+          description: "A függő meghívás megszakítása"
       leave:
         cannot-leave: "&cTulajdonosok nem hagyhatják el a szigetet! Először legyél Tag, vagy dobj ki mindenkit a szigetről."
-        description: "szigeted elhagyása"
+        description: "Szigeted elhagyása"
         left-your-island: "&c[name] &celhagyta a szigetet"
         success: "&aElhagytad ezt a szigetet."
       kick:
-        description: "tag eltávolítása a csapatból"
+        description: "Tag eltávolítása a csapatból"
         parameters: "<játékos>"
         owner-kicked: "&cA sziget tulajdonosa kidobott téged a szigetéről!"
         cannot-kick: "&cNem dobhatod ki saját magadat!"
         success: "&b[name] &akidobva a szigetedről."
       demote:
-        description: "játékos lefokozása egy ranggal a szigeteden"
+        description: "Játékos lefokozása egy ranggal a szigeteden"
         parameters: "<játékos>"
         errors:
           cant-demote-yourself: "&cMagadat nem fokozhatod le!"
         failure: "&cA játékos nem fokozható le tovább!"
         success: "&aLefokozva [name] játékos [rank] rangra."     
       promote:
-        description: "játékos előléptetése egy ranggal a szigeteden"
+        description: "Játékos előléptetése egy ranggal a szigeteden"
         parameters: "<játékos>"
         failure: "&cA játékos nem léptethető elő tovább!"
         success: "&aElőléptetve [name] játékos [rank] rangra."
       setowner:
-        description: "sziget tulajdon átruházása másra"
+        description: "Sziget tulajdon átruházása másra"
         errors:
           cant-transfer-to-yourself: "&cNem ruházhatod át a sziget tulajdont saját magadra. &7(&oNos, valójában, átruházhatnád... De mi nem szeretnénk. Azért, mert hiábavaló.&r&7)"
           target-is-not-member: "&cEz a játékos nem tagja a szigetednek!"
@@ -563,7 +563,7 @@ commands:
         parameters: "<játékos>"
         you-are-the-owner: "&aMostantól te vagy a sziget tulajdonos!"
     ban:
-      description: "játékos kitiltása a szigetedről"
+      description: "Játékos kitiltása a szigetedről"
       parameters: "<játékos>"
       cannot-ban-yourself: "&cNem tilthatod ki saját magadat!"
       cannot-ban: "&cA megadott játékost nem tilthatod ki."
@@ -574,24 +574,24 @@ commands:
       owner-banned-you: "&b[name]&c kitiltott a szigetéről!"
       you-are-banned: "&bKitiltottak a szigetről!"
     unban:
-      description: "játékos tiltásának feloldása"
+      description: "Játékos tiltásának feloldása"
       parameters: "<játékos>"
       cannot-unban-yourself: "&cNem oldhatod fel a tiltást saját magadról!"
       player-not-banned: "&cA megadott játékos nincs kitiltva."
       player-unbanned: "&b[name]&a tiltása feloldva a szigeteden."
       you-are-unbanned: "&b[name]&a feloldotta a tiltásodat a szigetéről!"
     banlist:
-      description: "kitiltott játékosok listájának megtekintése"
+      description: "Kitiltott játékosok listájának megtekintése"
       noone: "&aSenki sincs kitiltva a szigetről"
       the-following: "&bAz alábbi játékosok vannak kitiltva:"
       names: "§e- &c[line]"
       you-can-ban: "&bTovábbi &e[number] &bjátékost tilthatsz ki."
     settings:
-      description: "sziget beállítások megjelenítése"
+      description: "Sziget beállítások megjelenítése"
     language:
-      description: "nyelv kiválasztása"
+      description: "Nyelv kiválasztása"
     expel:
-      description: "kiutasít egy játékost a szigetről"
+      description: "Kiutasít egy játékost a szigetről"
       parameters: "<játékos>"
       cannot-expel-yourself: "&cNem utasíthatod ki magad!"
       cannot-expel: "&cEzt a játékost nem lehet kiutasítani."
