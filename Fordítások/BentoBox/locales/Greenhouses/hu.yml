@@ -8,15 +8,15 @@ protection:
     GREENHOUSE:
       name: Greenhouses
       description: |
-        &bToggle who can
-        &bcontrol greenhouses   
+        &bÁllítsd be ki, hogy
+        &bkezelheti az üvegházat   
 
 greenhouses:
   general:
    greenhouses: "Üvegházak"
    
   errors:
-    move: "Először menj a saját üvegházadhoz."
+    move: "Menj a saját üvegházadhoz."
     no-rank: "&cNincs rangod ehhez."
     notyours: "Ez nem a te üvegházad!"
     not-inside: "&cNem vagy üvegházban!"
@@ -26,8 +26,8 @@ greenhouses:
     
   event:
    broke: "Összetörted az üvegházad! Visszaállítjuk a biome-ot [biome]-ra/re!"
-   entering: "Belépés [biome] üvegházba"
-   leaving: "Kilépés [biome] üvegházból"
+   entering: "Belépés a(z) [biome] üvegházba."
+   leaving: "Kilépés a(z) [biome] üvegházból."
    
   recipe:
    blockscolor: "&f"
@@ -44,7 +44,7 @@ greenhouses:
       remove:
         description: "Ha az üvegházadban állsz és te vagy a tulaja, akkor törli azt."        
       make:
-        description: "Megpróbál készíteni egy üvegházat"
+        description: "Megpróbál készíteni egy üvegházat."
         parameters: "<recipe>"
         error:
           already: "Az üvegház már létezik!"
@@ -52,19 +52,19 @@ greenhouses:
           FAIL_BAD_WALL_BLOCKS: "&cA fal nem engedélyezett blokkokat tartalmaz!"
           FAIL_BELOW: "&cAz üvegházban kell lenned, hogy megpróbáld elkészíteni"
           FAIL_BLOCKS_ABOVE: "&cAz üvegház felett nem lehetnek blokkok! A piros üvegblokkoknak meg kell mutatniuk a problémás blokkokat."
-          FAIL_HOLE_IN_ROOF: "&cVan egy lyuk a tetőben, vagy nem sík! A piros üvegblokkoknak meg kell mutatniuk a problémát."
+          FAIL_HOLE_IN_ROOF: "&cVan egy lyuk a tetőn, vagy nem sík! A piros üvegblokkoknak meg kell mutatniuk a problémát."
           FAIL_HOLE_IN_WALL: "&cVan egy lyuk a falban!"
           FAIL_NO_ROOF: "&cÚgy tűnik, nincs tető!"
           FAIL_TOO_MANY_DOORS: "&cAz üvegházban nem lehet négynél több ajtó!"
           FAIL_TOO_MANY_HOPPERS: "&cCsak egy tölcsér megengedett a falakban vagy a tetőben."
           FAIL_UNEVEN_WALLS: "&cA falak egyenetlenek. A piros üvegblokkoknak meg kell mutatniuk a problémás blokkokat."
-          FAIL_INSUFFICIENT_ICE: "&cNem elegendő a jég ehhez a recept elkészítéséhez"
-          FAIL_INSUFFICIENT_LAVA: "&cNem elegendő a láva ehhez a recept elkészítéséhez"
-          FAIL_INSUFFICIENT_WATER: "&cNem elegendő a víz ehhez a recept elkészítéséhez"
-          FAIL_NO_ICE: "&cA jég szükséges ehhez a recepthez"
-          FAIL_NO_LAVA: "&cA láva szükséges ehhez a recepthez"
-          FAIL_NO_WATER: "&cA víz szükséges ehhez a recepthez"
-        success: "Sikeresen elkészítettél egy [biome] üvegházat! A biome szinkronizálódik a következő teleportálásnál, vagy belépésnél."
+          FAIL_INSUFFICIENT_ICE: "&cNem elegendő a jég ehhez a recept elkészítéséhez."
+          FAIL_INSUFFICIENT_LAVA: "&cNem elegendő a láva ehhez a recept elkészítéséhez."
+          FAIL_INSUFFICIENT_WATER: "&cNem elegendő a víz ehhez a recept elkészítéséhez."
+          FAIL_NO_ICE: "&cA jég szükséges ehhez a recepthez."
+          FAIL_NO_LAVA: "&cA láva szükséges ehhez a recepthez."
+          FAIL_NO_WATER: "&cA víz szükséges ehhez a recepthez."
+        success: "Sikeresen elkészítettél egy [biome] üvegházat! Az éghajlat szinkronizálódik a következő teleportálásnál, vagy belépésnél."
       info:
         title: "&A[Hogyan Készíts Üvegházat]"
         instructions: |
@@ -72,7 +72,7 @@ greenhouses:
           &Eés akár 4 ajtót is tehetsz a falba.
           &ERakj a falba vagy a tetőbe &F1 tölcsért, &Eés helyezz bele vizes vödröket,
           &Ehogy havat és/vagy csontlisztet készíts, mellyel automatikusan tudod növeszteni a növényeidet.
-          &ENézd meg az égahjlatokhoz tartozó recepteket, hogy megtudd milyen blokkok legyenek feltétlenül
+          &ENézd meg az éghajlatokhoz tartozó recepteket, hogy megtudd milyen blokkok legyenek feltétlenül
           &Eaz üvegházban ahhoz, hogy sikeresen elkészítsd. 
 
 
