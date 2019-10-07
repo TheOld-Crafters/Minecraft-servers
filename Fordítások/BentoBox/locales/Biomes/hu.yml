@@ -74,9 +74,9 @@ biomes:
         remove-element: "Remove Element"
 
       value: "Jelenlegi Érték: [number]"
-      increase: "Növelés ennyivel [number]"
-      decrease: "Csökkentés ennyivel [number]"
-      set: "Érték állítása erre [number]"
+      increase: "Növelés ennyivel: [number]"
+      decrease: "Csökkentés ennyivel: [number]"
+      set: "Érték állítása erre: [number]"
       accept: "Elfogad"
       decline: "Elutasít"
 
@@ -155,8 +155,8 @@ biomes:
         with-island: "With island"
 
       current-value: "Jelenlegi érték: [value]"
-      enabled: "engedélyezve"
-      disabled: "letiltva"
+      enabled: "Engedélyezve"
+      disabled: "Letiltva"
       permission: " - [permission]"
 
       information: "If you accept this changes, we will try to change your island biome to [biome] in update mode [mode] with range [range]."
@@ -205,7 +205,7 @@ biomes:
         description: "Éghajlat változtatás menü."
         parameters: ""
       info:
-        description: "az INFO paranccsal lekérhetsz információt egy éghajlatról."
+        description: "az INFO paranccsal kérhetsz le információt egy éghajlatról."
         parameters: "<éghajlat>"
       set:
         description: "a SET paranccsal menü nélkül állíthatsz be éghajlatot."
