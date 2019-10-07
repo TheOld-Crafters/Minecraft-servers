@@ -6,7 +6,7 @@
 admin:
   level:
     parameters: "<játékos>"
-    description: "egy játékos sziget szintjének kiszámítása"
+    description: "Egy játékos sziget szintjének kiszámítása"
   top:
     description: "Top Tíz lista megtekintése"
     unknown-world: "&cIsmeretlen világ!"
@@ -15,7 +15,7 @@ admin:
 island:
   level: 
     parameters: "[játékos]"
-    description: "a saját vagy más játékos sziget szintjének kiszámítása"
+    description: "A saját vagy más játékos sziget szintjének kiszámítása"
     calculating: "&aSziget szint kiszámítása..." 
     island-level-is: "&aA sziget szint: &b[level]"
     required-points-to-next-level: "&a[points] pont szükséges a következő szinthez."
@@ -30,7 +30,7 @@ island:
     warp-to: "&ATeleportálás [name] szigetére."
 
   value:
-    description: "bármely blokk értékét mutatja"
+    description: "Bármely blokk értékét mutatja"
     success: "&7Ennek a blokknak az értéke: &e[value]"
     success-underwater: "&7Ennek a blokknak a tengerszint alatti értéke: &e[value]"
     empty-hand: "&cNincsenek blokkok a kezedben"
