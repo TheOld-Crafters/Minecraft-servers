@@ -5,7 +5,7 @@
 
 warp: 
   help: 
-    description: "teleportálás a játékos teleport táblájához"
+    description: "Teleportálás a játékos teleport táblájához"
     parameters: <játékosnév>
 warps: 
   deactivate: "&cRégi teleport tábla deaktiválva!"
@@ -19,7 +19,7 @@ warps:
     not-safe: "&cEz a teleport nem biztonságos!"
     your-level-is: "&cJelenleg a sziget szinted [level], és nagyobbnak kell lennie, mint [required]."
   help: 
-    description: "teleportok panel megnyitása"
+    description: "Teleportok panel megnyitása"
   next: "&6Következő oldal"
   player-warped: "&2[name] teleportált a teleport tábládhoz!"
   previous: "&6Előző oldal"
