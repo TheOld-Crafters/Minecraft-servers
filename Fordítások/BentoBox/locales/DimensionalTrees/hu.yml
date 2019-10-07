@@ -1,4 +1,4 @@
 dimensionaltrees:
-  invalid-material: "§cCan't grow the tree. A invalid material has been detected."
-  reloaded: "§aDimensionalTrees has been reloaded."
-  error: "error"
+  invalid-material: "§cNem lehet megnöveszteni a fát. Hibás alapanyag található benne."
+  reloaded: "§aDimensionalTrees újratöltve."
+  error: "Hiba"
