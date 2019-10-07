@@ -8,7 +8,7 @@ protection:
     GREENHOUSE:
       name: Greenhouses
       description: |
-        &bÁllítsd be ki, hogy
+        &bÁllítsd be, hogy ki
         &bkezelheti az üvegházat   
 
 greenhouses:
