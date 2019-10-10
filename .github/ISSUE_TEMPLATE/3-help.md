@@ -1,8 +1,8 @@
 ---
-name: "⁉️ Segítségre van szükséged a szerverrel kapcsolatban?"
+name: "\U0002049 Segítségre van szükséged a szerverrel kapcsolatban?"
 about: Itt kérhetsz segítséget
 title: ''
-labels: "\U0002049 Segítségkérés"
+labels: "⁉️ Segítségkérés"
 assignees: ''
 
 ---
