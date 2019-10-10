@@ -2,7 +2,7 @@
 name: "\U0001F41E Hibajelentés"
 about: Készíts egy jelentést a javítás érdekében
 title: ''
-labels: "\U+2757 Hiba"
+labels: "\U00012757 Hiba"
 assignees: ''
 
 ---
