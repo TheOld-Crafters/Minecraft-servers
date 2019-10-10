@@ -2,7 +2,7 @@
 name: "\U0001F41E Hibajelentés"
 about: Készíts egy jelentést a javítás érdekében
 title: ''
-labels: "❗ Hiba, \U0001F4CB Státusz: Várakozás..."
+labels: "\U0002757 Hiba"
 assignees: ''
 
 ---
