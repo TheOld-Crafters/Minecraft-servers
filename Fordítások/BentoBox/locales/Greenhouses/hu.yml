@@ -64,7 +64,12 @@ greenhouses:
           FAIL_NO_ICE: "&cA jég szükséges ehhez a recepthez."
           FAIL_NO_LAVA: "&cA láva szükséges ehhez a recepthez."
           FAIL_NO_WATER: "&cA víz szükséges ehhez a recepthez."
+          FAIL_INSUFFICIENT_BLOCKS: "&cTovábbi blokkokra van szükség a recept elkészítéséhez!"
         success: "Sikeresen elkészítettél egy [biome] üvegházat! Az éghajlat szinkronizálódik a következő teleportálásnál, vagy belépésnél."
+        missing-blocks: "&cHiányzik [material] x [number]"
+        unknown-recipe: "&cIsmeretlen recept"
+        try-these: "&cPróbálj meg egyet az alábbiak közül:"
+        recipe-format: "&3[name]"
       info:
         title: "&A[Hogyan Készíts Üvegházat]"
         instructions: |
