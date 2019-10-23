@@ -149,6 +149,7 @@ commands:
       no-island-here: "&cItt nem található sziget. Erősítsd meg a létrehozáshoz."
       in-deletion: "&cEz a terület törlés alatt van. Próbáld meg később."
       cannot-make-island: "&cAn island cannot be placed here, sorry. See console for possible errors."
+      island-is-spawn: "&6Island is spawn. Are you sure? Enter command again to confirm."
     unregister:
       parameters: "<owner>"
       description: "tulajdonos törlése egy szigetről, a blokkok meghagyásával"
@@ -240,14 +241,14 @@ commands:
       file-exists: "&cA fájl már létezik. Felülírod?"
       no-such-file: "&cNincs ilyen fájl!"
       could-not-load: "&cNem lehet betölteni a fájlt!"
-      could-not-save: "&cHmm, valami nem volt okés a fájl mentése közben: [message]"
+      could-not-save: "&cHmm, valami nem volt oké a fájl mentése közben: [message]"
       set-pos1: "&a1. pozíció beállítva: [vector]"
       set-pos2: "&a2. pozíció beállítva: [vector]"
       set-different-pos: "&cÁllítsd be egy eltérő helyzetet - ez a pozíció már be van állítva!"
       need-pos1-pos2: "&cElőször állítsd be a két pozíciót."
       copying: "&bCopying blocks..."
       copied-blocks: "&b[number] blokk másolva a vágólapra"
-      look-at-a-block: "&cNézz egy blokra max. 20 blokk távolságban a beállításhoz."
+      look-at-a-block: "&cNézz egy blokkra max. 20 blokk távolságban a beállításhoz."
       mid-copy: "&cYou are mid-copy. Wait until the copy is done."
       copied-percent: "&6Copied [number]%"
       copy:
@@ -320,8 +321,11 @@ commands:
           &aLeft click to increment
           &aRight click to decrement
     resetflags:
+      parameters: "[flag]"
       description: "Reset all islands to default flag settings in config.yml"
+      confirm: "&4This will reset the flag(s) to default for all islands!"
       success: "&aSuccessfully reset all islands' flags to the default settings."
+      success-one: "&a[name] flag set to default for all islands."
     world:
       description: "Manage world settings"
     delete:
@@ -397,7 +401,7 @@ commands:
     request-cancelled: "&cMegerősítés időtúllépés - &bkérés visszavonva."
   delay:
     previous-command-cancelled: "&cAz előző parancs törölve"
-    stand-still: "&6Ne mozogj! Teleportálás [seconds] másodperc múlve"
+    stand-still: "&6Ne mozogj! Teleportálás [seconds] másodperc múlva"
     moved-so-command-cancelled: "&cMozogtál. Teleportálás megszakítva!"
   island:
     about:
@@ -420,7 +424,12 @@ commands:
       too-many-islands: "&cTúl sok sziget van a világban, nem tudunk több szigetet létrehozni. Lépj kapcsolatba egy adminisztrátorral."
       unable-create-island: "&cA szigetet nem sikerült legenerálni, kérjük lépj kapcsolatba egy adminisztrátorral."
       creating-island: "&aSziget létrehozása folyamatban, egy pillanat..."
-      pick-world: "&cVálassz világot: [worlds]."
+      pasting:
+        estimated-time: "&aBecsült idő: &b[number] &amásodperc."
+        blocks: "&aÉpítés blokkonként: &b[number] &ablokk összesen..."
+        entities: "&aFeltöltés entitásokkal: &b[number] &aentitás összesen..."
+        done: "&aKész! A szigeted készen áll, és vár rád!!"
+      pick: "&2Válassz szigetet"
       unknown-blueprint: "&cA blueprint még nincs betöltve."
     info:
       description: "információ megtekintése saját vagy mások szigetéről"
@@ -476,6 +485,7 @@ commands:
         already-has-rank: "&cEnnek a játékosnak már van rangja!"
         you-are-a-coop-member: "&2Coop rangot kaptál tőle: [name]"
         success: "&aCoop rangot adtál neki &b[name]."
+        name-has-invited-you: "&a[name] meghívott, hogy csatlakozz coop rangosként a szigetéhez."
       uncoop:
         description: "Eltávolítja a coop rangot egy játékostól a szigeteden"
         parameters: "<játékos>"
@@ -489,7 +499,7 @@ commands:
         description: "Megbízott rangot ad egy játékosnak a szigeteden"
         parameters: "<játékos>"
         trust-in-yourself: "&cMagadban mindig bíznod kell!"
-        members-trusted: "&cA csapattagok már Megbízott rangúak."
+        name-has-invited-you: "&a[name] meghívott, hogy csatlakozz megbízottként a szigetéhez."
         player-already-trusted: "&cA megadott játékos már Megbízott!"
         you-are-trusted: "&2Megbízott rangot kaptál tőle: [name]!"
         success: "&aMegbíztad őt &b[name]&a."
@@ -516,6 +526,7 @@ commands:
           you-already-are-in-team: "&cMár csapattag vagy egy szigeten!"
           already-on-team: "&cEz a játékos már csapattag egy szigeten!"
           invalid-invite: "&cA meghívás nem érvényes többé. Sajnáljuk."
+          you-have-already-invited: "&cMár meghívtad ezt a játékost!"
         parameters: "<játékos>"
         you-can-invite: "&aTovábbi [number] játékost hívhatsz meg."
         accept:
@@ -657,6 +668,10 @@ protection:
       description: "Gomb használat állítása"
       name: "Gombok"
       hint: "Gomb használat letiltva."
+    CAKE:
+      description: "Cake eating disabled"
+      name: "Cakes"
+      hint: "Toggle cake interaction"
     CONTAINER:
       name: "Tárolók"
       description: |-
@@ -698,9 +713,9 @@ protection:
       name: "Clean Super Flat"
     COARSE_DIRT_TILLING:
       description: |-
-          &aToggle tilling the
-          &acoarse dirt to
-          &aobtain dirt
+          &aToggle tilling coarse
+          &adirt and breaking podzol
+          &ato obtain dirt
       name: "Coarse dirt tilling"
       hint: "No coarse dirt tilling"
     COLLECT_LAVA: 
@@ -714,29 +729,29 @@ protection:
           &aToggle collecting water
           &a(override Buckets)
       name: "Collect water"
-      hint: "No water collection"
+      hint: "Water buckets disabled"
     COMMAND_RANKS:
       name: "&eCommand Ranks"
       description: "&aConfigure command ranks"
     CRAFTING: 
       description: "Toggle use"
       name: "Workbenches"
-      hint: "No workbench use"
+      hint: "Workbench access disabled"
     CREEPER_DAMAGE:
       description: "Toggle creeper damage"
       name: "Creeper damage"
     CREEPER_GRIEFING:
       description: "Toggle creeper griefing"
       name: "Creeper griefing"
-      hint: "No creeper griefing allowed"
+      hint: "Creeper griefing disabled"
     CROP_TRAMPLE: 
       description: "Toggle crop trampling"
       name: "Trample crops"
-      hint: "Crops are protected"
+      hint: "Crop trampling disabled"
     DOOR: 
       description: "Toggle door usage"
       name: "Use doors"
-      hint: "No door use"
+      hint: "Door interaction disabled"
     DRAGON_EGG:
       name: "Dragon Egg"
       description: |-
@@ -744,19 +759,19 @@ protection:
 
         &cThis does not protect it from being
         &cplaced or broken.
-      hint: "No Dragon Egg interaction"
+      hint: "Dragon egg interaction disabled"
     DYE:
       description: "Prevent dye use"
       name: "Dye use"
-      hint: "No dying allowed"
+      hint: "Dying disabled"
     EGGS: 
       description: "Toggle egg throwing"
       name: "Egg throwing"
-      hint: "No egg throwing"
+      hint: "Egg throwing disabled"
     ENCHANTING:
       description: "Toggle use"
       name: "Enchanting table"
-      hint: "No table use"
+      hint: "Enchantment tables disabled"
     ENDER_CHEST:
       description: "Toggle use/crafting"
       name: "Ender Chests"
@@ -775,7 +790,7 @@ protection:
     ENDER_PEARL: 
       description: "Toggle use"
       name: "EnderPearls"
-      hint: "No enderpearl use"
+      hint: "Enderpearl use disabled"
     ENTER_EXIT_MESSAGES: 
       description: "Be, és kilépési üzenetek megjelenítése"
       island: "[name]"
@@ -785,7 +800,7 @@ protection:
     EXPERIENCE_BOTTLE_THROWING:
       name: "Experience bottle throwing"
       description: "Toggle throwing experience bottles."
-      hint: "Not allowed to throw experience bottles"
+      hint: "Experience bottles disabled"
     FIRE_BURNING:
       name: "Fire burning"
       description: |-
@@ -794,7 +809,7 @@ protection:
     FIRE_EXTINGUISH: 
       description: "Toggle extinguishing fires"
       name: "Fire extinguish"
-      hint: "No fire extinguishing allowed"
+      hint: "Extinguishing fire disabled"
     FIRE_IGNITE:
       name: "Fire ignition"
       description: |-
@@ -808,21 +823,21 @@ protection:
     FISH_SCOOPING:
       name: "Fish Scooping"
       description: "Allow scooping of fishes using a bucket"
-      hint: "No scooping of fishes"
+      hint: "Fish scooping disabled"
     FLINT_AND_STEEL:
       name: 'Tűzgyújtás'
       description: |-
         &aEnegedélyezi a játékosoknak a tűzgyújtást
         &akovakő és acéllal vagy tűzgolyóval.
-      hint: "No flint and steel or fire charges usage"
+      hint: "Flint and steel and fire charges disabled"
     FURNACE: 
       description: "Toggle use"
       name: "Furnace"
-      hint: "No furnace use"
+      hint: "Furnace use disabled"
     GATE: 
       description: "Toggle use"
       name: "Gates"
-      hint: "No gate use"
+      hint: "Gate use disabled"
     GEO_LIMIT_MOBS: 
       description: |-
          &aRemove mobs that go
@@ -832,15 +847,15 @@ protection:
     HURT_ANIMALS: 
       description: "Toggle hurting"
       name: "Hurt animals"
-      hint: "No animal hurting allowed"
+      hint: "Animal hurting disabled"
     HURT_MONSTERS: 
       description: "Toggle hurting"
       name: "Hurt monsters"
-      hint: "No monster hurting"
+      hint: "Monster hurting disabled"
     HURT_VILLAGERS: 
       description: "Toggle hurting"
       name: "Hurt villagers"
-      hint: "No villager hurting"
+      hint: "Villager hurting disabled"
     ITEM_FRAME:
       name: "Item Frame"
       description: "Toggle interaction"
@@ -864,15 +879,15 @@ protection:
     ITEM_DROP: 
       description: "Toggle dropping"
       name: "Item drop"
-      hint: "Items cannot be dropped"
+      hint: "Item dropping disabled"
     ITEM_PICKUP: 
       description: "Toggle pickup"
       name: "Item pickup"
-      hint: "Items cannot be picked up"
+      hint: "Item pickup disabled"
     JUKEBOX:
       description: "Toggle usage"
       name: "Jukebox use"
-      hint: "No jukebox use allowed"
+      hint: "Jukebox use disabled"
     LEAF_DECAY:
       name: "Leaf decay"
       description: "Allow leaves to naturally decay"
@@ -882,7 +897,7 @@ protection:
     LEVER:
       description: "Toggle use"
       name: "Lever use"
-      hint: "No lever use"
+      hint: "Lever use disabled"
     LIQUIDS_FLOWING_OUT:
       name: "Liquids flowing outside islands"
       description: |-
@@ -902,11 +917,11 @@ protection:
     MILKING: 
       description: "Toggle cow milking"
       name: "Milking"
-      hint: "No milking allowed"
+      hint: "Milking cows disabled"
     MINECART:
       name: "Minecarts"
       description: "Toggle minecart interactions"
-      hint: "No minecart interaction allowed"
+      hint: "Minecart interaction disabled"
     MONSTER_SPAWN: 
       description: "Toggle spawning"
       name: "Monster spawning"
@@ -915,11 +930,11 @@ protection:
         &aToggle access
         &ato mount inventory
       name: "Mount inventory"
-      hint: "No access to mount inventory"
+      hint: "Mounting inventories disabled"
     NAME_TAG:
       name: "Name tags"
       description: "Toggle use"
-      hint: "No name tags use"
+      hint: "Name tag interaction disabled"
     NATURAL_SPAWNING_OUTSIDE_RANGE:
       name: "Natural creature spawning outside range"
       description: |-
@@ -933,7 +948,7 @@ protection:
     NOTE_BLOCK: 
       description: "Toggle use"
       name: "Note block"
-      hint: "No note block use"
+      hint: "Noteblock interaction disabled"
     OBSIDIAN_SCOOPING:
       name: "Obsidian scooping"
       description: | 
@@ -963,48 +978,48 @@ protection:
     PLACE_BLOCKS: 
       description: "Toggle placing"
       name: "Place blocks"
-      hint: "Not allowed to place blocks"
+      hint: "Block placing disabled"
     POTION_THROWING:
       name: "Potion throwing"
       description: |-
         &aToggle throwing potions.
         &aThis include splash and lingering potions.
-      hint: "Not allowed to throw potions"
+      hint: "Throwing potions disabled"
     NETHER_PORTAL:
       description: "Toggle use"
       name: "Nether Portal"
-      hint: "Portal use is disallowed"
+      hint: "Portal use disabled"
     END_PORTAL:
       description: "Toggle use"
       name: "End Portal"
-      hint: "Portal use is disallowed"
+      hint: "Portal use disabled"
     PRESSURE_PLATE: 
       description: "Toggle usage"
       name: "Pressure Plates"
-      hint: "No pressure plate use"
+      hint: "Pressure plate use disabled"
     PVP_END: 
       description: |-
           &cEnable/Disable PVP
           &cin the End.
       name: "End PVP"
-      hint: "No PVP allowed in the End"
+      hint: "PVP disabled in the End"
     PVP_NETHER: 
       description: |-
           &cEnable/Disable PVP
           &cin the Nether.
       name: "Nether PVP"
-      hint: "No PVP allowed in the Nether"
+      hint: "PVP disabled in the Nether"
     PVP_OVERWORLD: 
       description: |-
           &cEnable/Disable PVP
           &con island.
       name: "Overworld PVP"
-      hint: "&cPVP is not allowed"
+      hint: "&cPVP disabled in the Overworld"
       active: "&cPVP is active here!"
     REDSTONE: 
       description: "Toggle use"
       name: "Redstone items"
-      hint: "No redstone item use"
+      hint: "Redstone interaction disabled"
     REMOVE_END_EXIT_ISLAND:
       description: |-
         &aPrevents the end exit
@@ -1019,15 +1034,15 @@ protection:
     RIDING: 
       description: "Toggle riding"
       name: "Animal riding"
-      hint: "No animal riding allowed"
+      hint: "Animal riding disabled"
     SHEARING: 
       description: "Toggle shearing"
       name: "Shearing"
-      hint: "No shearing"
+      hint: "Shearing disabled"
     SPAWN_EGGS: 
       description: "Toggle use"
       name: "Spawn eggs"
-      hint: "No throwing spawn eggs"
+      hint: "Spawn eggs disabled"
     SPAWNER_SPAWN_EGGS:
       description: |-
         &aAllows to change a spawner's entity type
@@ -1046,15 +1061,15 @@ protection:
         &aIt does not override the
         &aFlint and steel protection.
       name: "TNT priming"
-      hint: "No TNT priming"
+      hint: "TNT priming disabled"
     TRADING: 
       description: "Toggle trading"
       name: "Villager trading"
-      hint: "No villager trading"
+      hint: "Villager trading disabled"
     TRAPDOOR:
       description: "Toggle access"
       name: "Trap doors"
-      hint: "No trapdoor use"
+      hint: "Trapdoor use disabled"
     TREES_GROWING_OUTSIDE_RANGE:
       name: "Trees growing outside range"
       description: |-
@@ -1068,11 +1083,11 @@ protection:
     TURTLE_EGGS:
       description: "Toggle crushing"
       name: "Turtle Eggs"
-      hint: "Turtle eggs cannot be crushed!"
+      hint: "Turtle egg crushing disabled"
     FROST_WALKER:
       description: "Toggle Frost Walker enchantment"
       name: "Frost Walker"
-      hint: "Frost Walker cannot be used here"
+      hint: "Frost Walker disabled"
     EXPERIENCE_PICKUP:
       name: "Tapasztalat felvétel"
       description: "Tapasztalat golyó felvétel állítása"
@@ -1083,7 +1098,7 @@ protection:
         &aPrevent players from teleporting
         &aback to their island using commands
         &aif they are falling.
-      hint: "&cYou cannot teleport back to your island while you are falling."
+      hint: "&cYou cannot do that while falling."
     WITHER_DAMAGE:
       name: "Toggle wither damage"
       description: |-
