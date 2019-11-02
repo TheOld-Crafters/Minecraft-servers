@@ -528,7 +528,7 @@ challenges:
             hit-things: 'Üss meg dolgokat, hogy hozzáadd a szükséges listához. Jobb klikkelj ha kész van.'
             you-added: 'Hozzáadtál egy [thing]-t a küldetéshez'
             challenge-created: '[challenge] létrehozva!'
-            complete-wipe: '&cHopefully you have backups, because you just erased all the Challenges Addon databases!''
+            complete-wipe: '&cHopefully you have backups, because you just erased all the Challenges Addon databases!'
 
             challenge-wipe: '&cHopefully you have backups, because you just erased all the Challenges and their levels!'
             players-wipe: '&cHopefully you have backups, because you just erase all the player completed challenges!'
