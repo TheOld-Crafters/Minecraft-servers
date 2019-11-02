@@ -46,7 +46,7 @@ challenges:
                 parameters: ''
         user:
             main:
-                description: 'Megnyitja a Küldesek GUI-t.'
+                description: 'Megnyitja a küldetések GUI-t.'
                 parameters: ''
             complete:
                 description: 'Küldetés teljesítése.'
