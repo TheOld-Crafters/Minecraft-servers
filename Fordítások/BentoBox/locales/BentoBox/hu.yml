@@ -478,6 +478,21 @@ commands:
       description: "Csapat kezelése"
       info:
         description: "Részletes információ megjelenítése a csapatodról"
+        member-layout:
+          online: "&a&l o &r&f[name]"
+          offline: "&c&l o &r&f[name] &7([last_seen])"
+        last-seen:
+          layout: "&b[number] &7[unit]"
+          days: "nap"
+          hours: "óra"
+          minutes: "perc"
+        header: |+
+          &f--- &aCsapat részletek &f---
+          &aTagok: &b[total]&7/&b[max]
+          &aOnline tagok: &b[online]
+        rank-layout:
+          owner: "&6[rank]:"
+          generic: "&6[rank] &7(&b[number]&7)&6:"
       coop:
         description: "Coop rangot ad egy játékosnak a szigeteden"
         parameters: "<játékos>"
@@ -1123,6 +1138,11 @@ protection:
         name: "&cExpert Settings"
         description: "&aDisplays all the available settings."
       click-to-switch: "&eClick &ato switch to the &r[next]&r&a."
+    reset-to-default:
+      name: "&cReset to default"
+      description: |+
+        &aResets &c&lALL &r&athe settings to their
+        &adefault value.
     PROTECTION:
       title: "&6Védelem"
       description: |-
@@ -1196,6 +1216,9 @@ management:
       catalog:
         name: "&6Addons Catalog"
         description: "&aOpens the Addons Catalog"
+      credits:
+        name: "&6Credits"
+        description: "&aOpens the Credits for BentoBox"
       empty-here:
         name: "&bThis looks empty here..."
         description: "&aWhat if you take a look at our catalog?"
@@ -1274,6 +1297,22 @@ catalog:
       name: "&bThis looks empty here..."
       description: |+
         &cBentoBox could not connect to GitHub.
+
+        &aAllow BentoBox to connect to GitHub in
+        &athe configuration or try again later.
+
+panel:
+  credits:
+    title: "&8[name] &2Credits"
+    contributor:
+      name: "&a[name]"
+      description: |
+        &aCommits: &b[commits]
+    empty-here:
+      name: "&cThis looks empty here..."
+      description: |+
+        &cBentoBox could not gather the Contributors
+        &cfor this Addon.
 
         &aAllow BentoBox to connect to GitHub in
         &athe configuration or try again later.
