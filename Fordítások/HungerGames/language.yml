@@ -7,8 +7,8 @@
 # 
 #  GENERAL PLUGIN MESSAGES
 prefix: '&7[&3HungerGames&7]'
-player-joined-game: '&b<player> &7Csatlakozott a játékhoz'
-player-left-game: '&b<player> &cKiképett a játékból'
+player-joined-game: '&b<player> &7csatlakozott a játékhoz'
+player-left-game: '&b<player> &ckilépett a játékból'
 game-started: '&6 A(z) &c<arena> &6aréna 30 másodperc múlva indul!'
 game-join: '&6 Használd a&c /hg join <arena>&6 parancsot a csatlakozáshoz!'
 game-countdown: '&cA játék <timer> másodpercen belül kezdődik.'
