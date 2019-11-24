@@ -5,7 +5,7 @@
 
 admin:
   level:
-    parameters: "<játékos>"
+    parameters: "<player>"
     description: "Egy játékos sziget szintjének kiszámítása"
   top:
     description: "Top Tíz lista megtekintése"
@@ -14,7 +14,7 @@ admin:
 
 island:
   level: 
-    parameters: "[játékos]"
+    parameters: "[player]"
     description: "A saját vagy más játékos sziget szintjének kiszámítása"
     calculating: "&aSziget szint kiszámítása..." 
     island-level-is: "&aA sziget szint: &b[level]"
@@ -29,7 +29,7 @@ island:
     island-level: "&BLevel [level]"
     warp-to: "&ATeleportálás [name] szigetére."
     remove:
-      description: "remove player from Top Ten"
+      description: "játékos törlése a Top Tízből"
       parameters: "<player>"
 
   value:
