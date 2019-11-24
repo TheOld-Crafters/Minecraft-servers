@@ -28,6 +28,9 @@ island:
     gui-heading: "&6[name]: &B[rank]"
     island-level: "&BLevel [level]"
     warp-to: "&ATeleportálás [name] szigetére."
+    remove:
+      description: "remove player from Top Ten"
+      parameters: "<player>"
 
   value:
     description: "Bármely blokk értékét mutatja"
