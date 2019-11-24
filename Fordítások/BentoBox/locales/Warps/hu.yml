@@ -6,7 +6,7 @@
 warp: 
   help: 
     description: "Teleportálás a játékos teleport táblájához"
-    parameters: <játékosnév>
+    parameters: <player name>
 warps: 
   deactivate: "&cRégi teleport tábla deaktiválva!"
   error: 
