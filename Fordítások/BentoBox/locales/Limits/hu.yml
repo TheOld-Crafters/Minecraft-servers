@@ -14,10 +14,10 @@ limits:
 admin:
   limits:
       main:
-        parameters: "<játékos>"
+        parameters: "<player>"
         description: "Egy játékos sziget limitjének megtekintése"
       calc:
-         parameters: "<játékos>"
+         parameters: "<player>"
          description: "Egy játékos sziget limitjének újraszámolása"
          finished: "&aA Sziget újraszámolás sikeresen befejeződött!"
 
