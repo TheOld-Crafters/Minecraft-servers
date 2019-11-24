@@ -35,7 +35,7 @@ likes:
       dislike-cost: "Dislike költsége"
       dislike-remove-cost: "Dislike eltávolításának költsége"
       default-icon: "Alapértelezett ikon"
-      inform-players: "Inform Island Members"
+      inform-players: "Tájékoztatja a Sziget Tagokat"
       log-history: "Log előzmények"
       reset-likes: "Visszaállításnál like-ok visszaállítása"
 
@@ -46,8 +46,8 @@ likes:
 
       add-dislike-user: "Dislike hozzáadása"
       add-like-user: "Like hozzáadása"
-      remove-dislike-user: "Dislike elvátolítása"
-      remove-like-user: "Like elvátolítása"
+      remove-dislike-user: "Dislike eltávolítása"
+      remove-like-user: "Like eltávolítása"
     descriptions:
       selected: "&dKiválasztott"
 
@@ -63,7 +63,7 @@ likes:
       current-value: "Jelenlegi érték: [value]."
       like: "Like-ok hozzáadva |más játékosok által."
       dislike: "Dislike-ok hozzáadva |más játékosok által."
-      overall: "Calculated Rank value|(like-ok - dislike-ok)."
+      overall: "Kiszámított Rangérték|(like-ok - dislike-ok)."
       like-rank: "Top helyezések|Like-ok által."
       dislike-rank: "Top helyezések|Dislike-ok által."
       overall-rank: "Top helyezések|Rangok által."
