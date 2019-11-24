@@ -5,8 +5,8 @@
 
 acidisland:
   sign:
-    line0: "&2Savsziget"
-    line1: "Üdv, [name]"
-    line2: "A víz sebez!"
+    line0: "&2SavSziget"
+    line1: "[name]"
+    line2: "A víz savas!"
     line3: "Légy óvatos! &d<3"
     
