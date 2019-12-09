@@ -45,10 +45,10 @@ messages:
   not-valid-item: '&4%item% &cnem megfelelő Tárgy!'
   not-valid-amount: '&4%amount% &cnem megfelelő mennyiség : 0-nál nagyobbnak kell
     lennie!'
-  given-item: '&bKaptál &a%amount% &7"%item%&7"-t'
-  give-item: '&bAdtál %player%-nek/nak &a%amount% &7"%item%"-t'
+  given-item: '&bKaptál &a%amount% &7"%item%&7"&b-t'
+  give-item: '&bAdtál %player%-nek/nak &a%amount% &7"%item%&7"&b-t'
   not-valid-research: '&4%research% &cnem megfelelő Kutatás!'
-  give-research: '&bAdtál %player% Kutatást &7"%research%"'
+  give-research: '&bAdtál %player%-nek/nak &7"%research%" Kutatást'
   battery:
     add: '&2+ &7%charge% J &8(%machine%)'
     remove: '&4- &7%charge% J &8(%machine%)'
