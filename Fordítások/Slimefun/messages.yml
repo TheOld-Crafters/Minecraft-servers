@@ -48,7 +48,7 @@ messages:
   given-item: '&bKaptál &a%amount% &7"%item%&7"&b-t'
   give-item: '&bAdtál %player%-nek/nak &a%amount% &7"%item%&7"&b-t'
   not-valid-research: '&4%research% &cnem megfelelő Kutatás!'
-  give-research: '&bAdtál %player%-nek/nak &7"%research%" Kutatást'
+  give-research: '&bAdtál %player%-nek/nak &7"%research%&7" &bKutatást'
   battery:
     add: '&2+ &7%charge% J &8(%machine%)'
     remove: '&4- &7%charge% J &8(%machine%)'
