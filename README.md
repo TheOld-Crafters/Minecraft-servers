@@ -7,4 +7,4 @@ Nagyobb hibajelentésekért és jó ötletekért kapható jutalom:
 
 Kritikus (nem publikus) hibák jelentése: https://www.oldcrafters.net/kapcsolat/
 
-[![Fejlesztési kérések](https://feathub.com/andris155/TheOld-Crafters?format=svg)](https://feathub.com/andris155/TheOld-Crafters)
+Adj hozzá fejlesztési ötleteket, és szavazz a fejlesztési ötletekre: https://feathub.com/andris155/TheOld-Crafters
