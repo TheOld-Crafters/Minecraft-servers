@@ -102,7 +102,7 @@ machines:
   ANCIENT_ALTAR:
     not-enough-pedestals: '&4Az Altar körül nincs elég Pedestal, ami szükséges a működéséhez
       &c(%pedestals% / 8)'
-    unknown-catalyst: '&4Ismeretlen Katalizátor! &cHEhelyett használd a helyes Receptet!'
+    unknown-catalyst: '&4Ismeretlen Katalizátor! &cEhelyett használd a helyes Receptet!'
     unknown-recipe: '&4Ismeretlen Recept! &cEhelyett használd a helyes Receptet!'
   ANCIENT_PEDESTAL:
     obstructed: '&4A Pedestal el van torlaszolva! &cTávolíts el mindent, ami a pedestal
