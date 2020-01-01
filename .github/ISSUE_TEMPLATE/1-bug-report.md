@@ -11,6 +11,4 @@ assignees: ''
 
 <!-- Melyik szerveren van a hiba? pl.: Survival -->
 **Szerver**: 
-<!-- Milyen verzióval játszol a szerveren? pl.: 1.14.4 -->
-**Verzió**: 
 
