@@ -113,7 +113,7 @@ cmd-toggle-locked: '&bA(z) &3<arena>&b aréna &4zárolva&b!'
 cmd-handler-nokit: '&cA játék futása közben nem tudsz felszerelést választani!'
 cmd-handler-nocmd: '&cA játék futása közben nem tudsz HungerGames-en kívüli parancsot
   használni!'
-cmd-handler-playing: 'Ez a játékos éppen HungerGames-t játszik!'
+cmd-handler-playing: Ez a játékos éppen HungerGames-t játszik!
 cmd-chestrefill-set: '&6Láda újratöltés a(z) &b<arena> &6aréna számára &b<sec> másodpercre
   állítva'
 listener-not-running: '&cA játék nem fut!'
@@ -125,10 +125,40 @@ track-no-near: '&cNem érzékelek embert a közelben...'
 track-empty: '&cA felderítő bot lemerült!'
 track-bar: '&a[]------------------------------------------[]'
 track-new1: '&a |&6   Kaptál egy felderítő botot! &a |'
-track-new2: '&a |&6   Lengesd a játékosok felderítéséhez!                &a
-  |'
+track-new2: '&a |&6   Lengesd a játékosok felderítéséhez!                &a |'
 cmd-border-size: '&6Border size for &b<arena> &6has been set to &b<size>'
 cmd-border-center: '&6Border center for &b<arena> &6has been set at your location'
 cmd-border-timer: '&6Border time for &b<arena> &6has been set to start at remaining
   &b<start> seconds &6and stop at &b<end> seconds'
 arena-spectate: '&6You can spectate this arena by running &3/hg spectate <arena>'
+lb-blank-space: ''
+lb-combined-separator: ' : '
+cmd-join-no-money: '&cYou do not have enough money to join this game. Cost: &b$<cost>'
+cmd-leave-refund: '&6You got a refund of &b$<cost> &6for leaving the game before it
+  started'
+cmd-chestrefill-now: '&6Chests have now been refilled in &b<arena>'
+cmd-team-no-team: '&cYou are not on a team!'
+cmd-team-not-on-team: '&b<player> &cis not on your team!'
+cmd-team-tp: '&6Teleporting to &b<player>'
+cmd-team-self: '&cYou can not invite yourself to your own team.'
+spectator-compass: '&3Spectator Compass'
+spectator-head-lore: '&7Click to TP to player'
+kit-disabled: '&cKits disabled in this game.'
+status-running: '&a&lRunning'
+status-stopped: '&4&lStopped'
+status-ready: '&5&lReady'
+status-waiting: '&b&lWaiting...'
+status-broken: '&4&lBROKEN'
+status-rollback: '&c&lRestoring...'
+status-notready: '&1&lNotReady'
+status-beginning: '&a&lRunning'
+status-countdown: '&b&lStarting...'
+lobby-signs:
+  sign-1:
+    line-1: '&1&lHunger Games'
+    line-3: '&0&lClick To Join'
+    line-4: Cost $&b<cost>
+  sign-2:
+    line-1: '&1&lGame Status'
+  sign-3:
+    line-1: '&1&lAlive'
