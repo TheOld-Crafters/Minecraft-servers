@@ -78,7 +78,7 @@ messages:
   radiation: '&4Halálos sugárzásnak volt kitéve! &cSzabadulj meg a radioaktív tárgytól, vagy viselj Hazmat Suit-ot!'
   opening-guide: '&bÚtmutató megnyitása, ez eltarthat pár másodpercig...'
   opening-backpack: '&bHátizsák megnyitása, ez eltarthat pár másodpercig...'
-    no-iron-golem-heal: '&cEz nem egy Vasrúd. Ezt nem használhatod a Vasgólem gyógyítására!'
+  no-iron-golem-heal: '&cEz nem egy Vasrúd. Ezt nem használhatod a Vasgólem gyógyítására!'
   link-prompt: '&eKattints ide:'
   diet-cookie: '&eNagyon könnyednek érzed magad...'
   
