@@ -31,9 +31,9 @@ general:
   tips:
     changing-obsidian-to-lava: '&6Obszidián visszaállítva lávává. Légy óvatos!'
   worlds:
-    overworld: "Overworld"
-    nether: "Nether"
-    the-end: "The End"
+    overworld: Overworld
+    nether: Nether
+    the-end: The End
 commands:
   help:
     header: '&7=========== &c[label] segítség &7==========='
@@ -411,7 +411,7 @@ commands:
       loaded-addons: 'Loaded Addons:'
       loaded-game-worlds: 'Loaded Game Worlds:'
       addon-syntax: '&2[name] &3[version] &7(&3[state]&7)'
-      game-world: "&2 [name] &7 (&3 [addon]&7 ): &3 [worlds]"
+      game-world: '&2 [name] &7 (&3 [addon]&7 ): &3 [worlds]'
       server: '&2Running &3[name] [version]&2.'
       database: '&2Database: &3[database]'
     manage:
@@ -514,8 +514,10 @@ commands:
       name-too-long: '&cTúl hosszú. A maximum hosszúság [number] karakter.'
       name-already-exists: '&cEbben a játékmódban már létezik egy ilyen nevű sziget.'
       parameters: <name>
+      success: '&aSuccessfully set your island''s name to &b[name]&a.'
     resetname:
       description: Sziget név visszaállítása
+      success: '&aSuccessfully reset your island name.'
     team:
       description: Csapat kezelése
       info:
@@ -688,112 +690,116 @@ ranks:
   admin: Admin
   mod: Moderátor
 protection:
-  command-is-banned: A parancs nem használható látogatók számára.
+  command-is-banned: Command is banned for visitors
   flags:
     ANIMAL_SPAWN:
-      description: Állatidézés állítása
-      name: Állatidézés
+      description: Toggle spawning
+      name: Animal spawning
     ANVIL:
-      description: Interakció állítása
-      name: Üllők
-      hint: Üllő használat letiltva.
+      description: Toggle interaction
+      name: Anvils
+      hint: Anvil use disabled
     ARMOR_STAND:
-      description: Interakció állítása
-      name: Páncélállványok
-      hint: Páncélállvány használat letiltva.
+      description: Toggle interaction
+      name: Armor stands
+      hint: Armor stand use disabled
     BEACON:
-      description: Interakció állítása
-      name: Jelzőfények
-      hint: Jelzőfény használat letiltva.
+      description: Toggle interaction
+      name: Beacons
+      hint: Beacon use disabled
     BED:
-      description: Interakció állítása
-      name: Ágyak
-      hint: Ágy használat letiltva.
+      description: Toggle interaction
+      name: Beds
+      hint: Bed use disabled
     BOAT:
-      name: Hajók
-      description: Hajó interakció állítása
-      hint: Hajó használat letiltva."
+      name: Boats
+      description: Toggle boats interactions
+      hint: No boat interaction allowed
     BREAK_BLOCKS:
-      description: Kiütés állítása
-      name: Blokk kiütése
-      hint: Blokk kiütés letiltva.
+      description: Toggle breaking
+      name: Break blocks
+      hint: Block breaking disabled
     BREEDING:
-      description: Tenyésztés állítása
-      name: Állattenyésztés
-      hint: Állattenyésztés letiltva.
+      description: Toggle breeding
+      name: Breed animals
+      hint: Animal breeding protected
     BREWING:
-      description: Interakció állítása
-      name: Főzőállványok
-      hint: Főzőállvány használat letiltva.
+      description: Toggle interaction
+      name: Brewing stands
+      hint: Brewing disabled
     BUCKET:
-      description: Interakció állítása
-      name: Vödrök
-      hint: Vödör használat letiltva.
+      description: Toggle interaction
+      name: Buckets
+      hint: Bucket use disabled
     BUTTON:
-      description: Gomb használat állítása
-      name: Gombok
-      hint: Gomb használat letiltva.
+      description: Toggle button use
+      name: Buttons
+      hint: Button use disabled
     CAKE:
-      description: Cake eating disabled
+      description: Toggle cake interaction
       name: Cakes
-      hint: Toggle cake interaction
+      hint: Cake eating disabled
     CONTAINER:
-      name: Tárolók
-      description: "&aInterakció állítása ládák,\n&ashulker dobozok és \n&avirágcserepek\
-        \ használatához.\n\n&7A többi tároló használatát\n&7különálló flag-ekkel á\
-        llíthatod."
-      hint: Tároló hozzáférés letiltva.
+      name: Containers
+      description: |-
+        &a Toggle interaction with chests,
+        &a shulker boxes and flower pots,
+        &a composters and barrels.
+
+        &7 Other containers are handled
+        &7 by dedicated flags.
+      hint: Container access disabled
     DISPENSER:
-      name: Adagolók
-      description: Adagolók használatának állítása
-      hint: Adagoló használat letiltva.
+      name: Dispensers
+      description: Toggle dispenser interaction
+      hint: Dispenser interaction disabled
     DROPPER:
-      name: Kidobók
-      description: Kidobók használatának állítása
-      hint: Kidobó használat letiltva.
+      name: Droppers
+      description: Toggle dropper interaction
+      hint: Dropper interaction disabled
     ELYTRA:
-      name: Kitinszárny
-      description: Kitinszárny tiltása vagy engedélyezése
-      hint: '&cFIGYELMEZTETÉS: A kitinszárny nem használható itt!'
+      name: Elytra
+      description: Toggle elytra allowed or not
+      hint: '&c WARNING: Elytra cannot be used here!'
     HOPPER:
-      name: Tölcsérek
-      description: Tölcsérek használatának állítása
-      hint: Tölcsér használat letiltva.
+      name: Hoppers
+      description: Toggle hopper interaction
+      hint: Hopper interaction disabled
     CHEST_DAMAGE:
-      description: Ládák robbanásból származó sérüléseinek állítása
-      name: Láda sérülés
+      description: Toggle chest damage from explosions
+      name: Chest Damage
     CHORUS_FRUIT:
-      description: Teleportálás állítása
-      name: Teleportálás
-      hint: Teleportálás letiltva.
+      description: Toggle teleportation
+      name: Chorus fruits
+      hint: Chorus fruit teleporting disabled
     CLEAN_SUPER_FLAT:
       description: |-
-        &aEnable to clean any
-        &asuper-flat chunks in
-        &aisland worlds
+        &a Enable to clean any
+        &a super-flat chunks in
+        &a island worlds
       name: Clean Super Flat
     COARSE_DIRT_TILLING:
       description: |-
-        &aToggle tilling coarse
-        &adirt and breaking podzol
-        &ato obtain dirt
+        &a Toggle tilling coarse
+        &a dirt and breaking podzol
+        &a to obtain dirt
       name: Coarse dirt tilling
       hint: No coarse dirt tilling
     COLLECT_LAVA:
       description: |-
-        &aToggle collecting lava
-        &a(override Buckets)
-      name: Láva begyűjtés
-      hint: Láva begyűjtés letiltva.
+        &a Toggle collecting lava
+        &a (override Buckets)
+      name: Collect lava
+      hint: No lava collection
     COLLECT_WATER:
       description: |-
-        &aToggle collecting water
-        &a(override Buckets)
+        &a Toggle collecting water
+        &a (override Buckets)
       name: Collect water
       hint: Water buckets disabled
     COMMAND_RANKS:
-      name: '&eCommand Ranks'
-      description: '&aConfigure command ranks'
+      name: '&e Command Ranks'
+      description: '&a Configure command ranks'
     CRAFTING:
       description: Toggle use
       name: Workbenches
@@ -816,10 +822,10 @@ protection:
     DRAGON_EGG:
       name: Dragon Egg
       description: |-
-        &aPrevents interaction with Dragon Eggs.
+        &a Prevents interaction with Dragon Eggs.
 
-        &cThis does not protect it from being
-        &cplaced or broken.
+        &c This does not protect it from being
+        &c placed or broken.
       hint: Dragon egg interaction disabled
     DYE:
       description: Prevent dye use
@@ -839,27 +845,27 @@ protection:
       hint: Ender chests are disabled in this world
     ENDERMAN_DEATH_DROP:
       description: |-
-        &aEndermen will drop
-        &aany block they are
-        &aholding if killed.
+        &a Endermen will drop
+        &a any block they are
+        &a holding if killed.
       name: Enderman Death Drop
     ENDERMAN_GRIEFING:
       description: |-
-        &aEndermen can remove
-        &ablocks from islands
+        &a Endermen can remove
+        &a blocks from islands
       name: Enderman griefing
     ENDER_PEARL:
       description: Toggle use
       name: EnderPearls
       hint: Enderpearl use disabled
     ENTER_EXIT_MESSAGES:
-      description: Be, és kilépési üzenetek megjelenítése
-      island: '[name]'
-      name: Be/kilépéi üzenetek
-      now-entering: '&aBeléptél &b[name] &aszigetére.'
-      now-entering-your-island: "&aBeléptél a szigetedre."
-      now-leaving: '&aElhagytad &b[name] &aszigetét.'
-      now-leaving-your-island: "&aElhagytad a szigeted."
+      description: Display entry and exit messages
+      island: '[name] szigete'
+      name: Enter/Exit messages
+      now-entering: '&a Beléptél ide: &b [name]&a .'
+      now-entering-your-island: '&a Beléptél a szigetedre.'
+      now-leaving: '&a Elhagytad ezt: &b [name]&a .'
+      now-leaving-your-island: '&a Elhagytad a szigeted.'
     EXPERIENCE_BOTTLE_THROWING:
       name: Experience bottle throwing
       description: Toggle throwing experience bottles.
@@ -867,8 +873,8 @@ protection:
     FIRE_BURNING:
       name: Fire burning
       description: |-
-        &aToggle whether fire can burn
-        &ablocks or not.
+        &a Toggle whether fire can burn
+        &a blocks or not.
     FIRE_EXTINGUISH:
       description: Toggle extinguishing fires
       name: Fire extinguish
@@ -876,22 +882,23 @@ protection:
     FIRE_IGNITE:
       name: Fire ignition
       description: |-
-        &aToggle whether fire can be ignited
-        &aby non-player means or not.
+        &a Toggle whether fire can be ignited
+        &a by non-player means or not.
     FIRE_SPREAD:
       name: Fire spread
       description: |-
-        &aToggle whether fire can spread
-        &ato nearby blocks or not.
+        &a Toggle whether fire can spread
+        &a to nearby blocks or not.
     FISH_SCOOPING:
       name: Fish Scooping
       description: Allow scooping of fishes using a bucket
       hint: Fish scooping disabled
     FLINT_AND_STEEL:
-      name: Tűzgyújtás
+      name: Flint and steel
       description: |-
-        &aEnegedélyezi a játékosoknak a tűzgyújtást
-        &akovakő és acéllal vagy tűzgolyóval.
+        &a Allow players to ignite fires or
+        &a campfires using flint and steel
+        &a or fire charges.
       hint: Flint and steel and fire charges disabled
     FURNACE:
       description: Toggle use
@@ -903,10 +910,10 @@ protection:
       hint: Gate use disabled
     GEO_LIMIT_MOBS:
       description: |-
-        &aRemove mobs that go
-        &aoutside protected
-        &aisland space
-      name: '&eLimit mobs to island'
+        &a Remove mobs that go
+        &a outside protected
+        &a island space
+      name: '&e Limit mobs to island'
     HURT_ANIMALS:
       description: Toggle hurting
       name: Hurt animals
@@ -922,24 +929,24 @@ protection:
     ITEM_FRAME:
       name: Item Frame
       description: |-
-        &aToggle interaction.
-        &aOverrides place or break blocks
+        &a Toggle interaction.
+        &a Overrides place or break blocks
       hint: Item Frame use disabled
     ITEM_FRAME_DAMAGE:
       description: |-
-        &aMobs can damage
-        &aitem frames
+        &a Mobs can damage
+        &a item frames
       name: Item Frame Damage
     INVINCIBLE_VISITORS:
       description: |-
-        &aConfigure invincible visitor
-        &asettings.
-      name: '&eInvincible Visitors'
-      hint: '&cVisitors protected'
+        &a Configure invincible visitor
+        &a settings.
+      name: '&e Invincible Visitors'
+      hint: '&c Visitors protected'
     ISLAND_RESPAWN:
       description: |-
-        &aPlayers respawn
-        &aon island
+        &a Players respawn
+        &a on island
       name: Island respawn
     ITEM_DROP:
       description: Toggle dropping
@@ -962,29 +969,37 @@ protection:
     LECTERN:
       name: Lecterns
       description: |-
-        &aAllow to place books on a lectern
-        &aor to take books from it.
+        &a Allow to place books on a lectern
+        &a or to take books from it.
 
-        &cIt does not prevent players from
-        &creading the books.
+        &c It does not prevent players from
+        &c reading the books.
       hint: cannot place a book on a lectern or take a book from it.
     LEVER:
       description: Toggle use
       name: Lever use
       hint: Lever use disabled
+    LIMIT_MOBS:
+      description: |-
+        &a Limit entities from
+        &a spawning in this game
+        &a mode.
+      name: '&e Limit entity type spawning'
+      can: '&a Can spawn'
+      cannot: '&c Cannot spawn'
     LIQUIDS_FLOWING_OUT:
       name: Liquids flowing outside islands
       description: |-
-        &aToggle whether liquids can flow outside
-        &aof the island's protection range.
-        &aDisabling it helps avoiding lava and water
-        &agenerating cobblestone in the area between
-        &atwo islands.
+        &a Toggle whether liquids can flow outside
+        &a of the island's protection range.
+        &a Disabling it helps avoiding lava and water
+        &a generating cobblestone in the area between
+        &a two islands.
 
-        &cNote that liquids will still flow vertically.
-        &cThey will also not spread horizontally if
-        &cthey are placed outside an island's
-        &cprotection range.
+        &c Note that liquids will still flow vertically.
+        &c They will also not spread horizontally if
+        &c they are placed outside an island's
+        &c protection range.
     LOCK:
       description: Toggle lock
       name: Lock island
@@ -1001,8 +1016,8 @@ protection:
       name: Monster spawning
     MOUNT_INVENTORY:
       description: |-
-        &aToggle access
-        &ato mount inventory
+        &a Toggle access
+        &a to mount inventory
       name: Mount inventory
       hint: Mounting inventories disabled
     NAME_TAG:
@@ -1012,44 +1027,53 @@ protection:
     NATURAL_SPAWNING_OUTSIDE_RANGE:
       name: Natural creature spawning outside range
       description: |-
-        &aToggle whether creatures (animals and
-        &amonsters) can spawn naturally outside
-        &aan island's protection range.
+        &a Toggle whether creatures (animals and
+        &a monsters) can spawn naturally outside
+        &a an island's protection range.
 
-        &cNote that it doesn't prevent creatures
-        &cto spawn via a mob spawner or a spawn
-        &cegg.
+        &c Note that it doesn't prevent creatures
+        &c to spawn via a mob spawner or a spawn
+        &c egg.
     NOTE_BLOCK:
       description: Toggle use
       name: Note block
       hint: Noteblock interaction disabled
     OBSIDIAN_SCOOPING:
       name: Obsidian scooping
-      description: |
-        &aToggle scooping
-        &aAllow obsidian to be scooped up
-        &awith an empty bucket back into lava.
-        &aProtects newbies. Reduces resets.
+      description: |-
+        &a Allow players to scoop up obsidian
+        &a with an empty bucket back into lava.
+
+        &a This helps the newbies that failed to
+        &a build their cobblestone generator.
+
+        &a Note: obsidian cannot be scooped up
+        &a if there are other obsidian blocks
+        &a within a 2-block radius.
+      scooping: '&a Changing obsidian back into lava. Be careful next time!'
+      obsidian-nearby: '&c There are obsidian blocks nearby, you cannot scoop up this
+        block into lava.'
     OFFLINE_GROWTH:
       description: |-
-        &aWhen disabled, plants
-        &awill not grow on islands
-        &awhere all members are offline.
-        &aMay help reduce lag.
+        &a When disabled, plants
+        &a will not grow on islands
+        &a where all members are offline.
+        &a May help reduce lag.
       name: Offline Growth
     OFFLINE_REDSTONE:
       description: |-
-        &aWhen disabled, redstone
-        &awill not operate on islands
-        &awhere all members are offline.
-        &aMay help reduce lag.
-        &aDoes not affect spawn island.
+        &a When disabled, redstone
+        &a will not operate on islands
+        &a where all members are offline.
+        &a May help reduce lag.
+        &a Does not affect spawn island.
       name: Offline Redstone
     PISTON_PUSH:
       description: |-
-        &aAllow pistons to push
-        &ablocks outside island
-      name: Piston Push
+        &a Enable this to prevent
+        &a pistons from pushing
+        &a blocks outside island
+      name: Piston Push Protection
     PLACE_BLOCKS:
       description: Toggle placing
       name: Place blocks
@@ -1057,8 +1081,8 @@ protection:
     POTION_THROWING:
       name: Potion throwing
       description: |-
-        &aToggle throwing potions.
-        &aThis include splash and lingering potions.
+        &a Toggle throwing potions.
+        &a This include splash and lingering potions.
       hint: Throwing potions disabled
     NETHER_PORTAL:
       description: Toggle use
@@ -1074,37 +1098,41 @@ protection:
       hint: Pressure plate use disabled
     PVP_END:
       description: |-
-        &cEnable/Disable PVP
-        &cin the End.
+        &c Enable/Disable PVP
+        &c in the End.
       name: End PVP
       hint: PVP disabled in the End
+      enabled: '&c The PVP in the End has been enabled.'
+      disabled: '&a The PVP in the End has been disabled.'
     PVP_NETHER:
       description: |-
-        &cEnable/Disable PVP
-        &cin the Nether.
+        &c Enable/Disable PVP
+        &c in the Nether.
       name: Nether PVP
       hint: PVP disabled in the Nether
+      enabled: '&c The PVP in the Nether has been enabled.'
+      disabled: '&a The PVP in the Nether has been disabled.'
     PVP_OVERWORLD:
       description: |-
-        &cEnable/Disable PVP
-        &con island.
+        &c Enable/Disable PVP
+        &c on island.
       name: Overworld PVP
-      hint: '&cPVP disabled in the Overworld'
-      active: '&cPVP is active here!'
+      enabled: '&c The PVP in the Overworld has been enabled.'
+      disabled: '&a The PVP in the Overworld has been disabled.'
     REDSTONE:
       description: Toggle use
       name: Redstone items
       hint: Redstone interaction disabled
     REMOVE_END_EXIT_ISLAND:
       description: |-
-        &aPrevents the end exit
-        &aisland from generating
-        &aat coordinates 0,0
+        &a Prevents the end exit
+        &a island from generating
+        &a at coordinates 0,0
       name: Remove end exit island
     REMOVE_MOBS:
       description: |-
-        &aRemove monsters when
-        &ateleporting to island
+        &a Remove monsters when
+        &a teleporting to island
       name: Remove monsters
     RIDING:
       description: Toggle riding
@@ -1120,21 +1148,21 @@ protection:
       hint: Spawn eggs disabled
     SPAWNER_SPAWN_EGGS:
       description: |-
-        &aAllows to change a spawner's entity type
-        &ausing spawn eggs.
+        &a Allows to change a spawner's entity type
+        &a using spawn eggs.
       name: Spawn eggs on spawners
       hint: changing a spawner's entity type using spawn eggs is not allowed
     TNT_DAMAGE:
       description: |-
-        &aAllow TNT and TNT minecarts
-        &ato break blocks and damage
-        &aentities.
+        &a Allow TNT and TNT minecarts
+        &a to break blocks and damage
+        &a entities.
       name: TNT damage
     TNT_PRIMING:
       description: |-
-        &aPrevents priming TNT.
-        &aIt does not override the
-        &aFlint and steel protection.
+        &a Prevents priming TNT.
+        &a It does not override the
+        &a Flint and steel protection.
       name: TNT priming
       hint: TNT priming disabled
     TRADING:
@@ -1148,13 +1176,13 @@ protection:
     TREES_GROWING_OUTSIDE_RANGE:
       name: Trees growing outside range
       description: |-
-        &aToggle whether trees can grow outside an
-        &aisland's protection range or not.
-        &aNot only will it prevent saplings placed
-        &aoutside an island's protection range from
-        &agrowing, but it will also block generation
-        &aof leaves/logs outside of the island, thus
-        &acutting the tree.
+        &a Toggle whether trees can grow outside an
+        &a island's protection range or not.
+        &a Not only will it prevent saplings placed
+        &a outside an island's protection range from
+        &a growing, but it will also block generation
+        &a of leaves/logs outside of the island, thus
+        &a cutting the tree.
     TURTLE_EGGS:
       description: Toggle crushing
       name: Turtle Eggs
@@ -1164,21 +1192,21 @@ protection:
       name: Frost Walker
       hint: Frost Walker disabled
     EXPERIENCE_PICKUP:
-      name: Tapasztalat felvétel
-      description: Tapasztalat golyó felvétel állítása
-      hint: Tapasztalat golyó felvétel letiltva.
+      name: Experience pickup
+      description: Toggle experience orb pickup
+      hint: Experience pickup disabled
     PREVENT_TELEPORT_WHEN_FALLING:
       name: Prevent teleport when falling
       description: |-
-        &aPrevent players from teleporting
-        &aback to their island using commands
-        &aif they are falling.
-      hint: '&cYou cannot do that while falling.'
+        &a Prevent players from teleporting
+        &a back to their island using commands
+        &a if they are falling.
+      hint: '&c You cannot do that while falling.'
     WITHER_DAMAGE:
       name: Toggle wither damage
       description: |-
-        &aIf active, withers can
-        &adamage blocks and players
+        &a If active, withers can
+        &a damage blocks and players
   locked: '&cEz a sziget le van zárva!'
   protected: '&cA sziget védelem alatt áll: [description]'
   world-protected: '&cA világ védelem alatt áll: [description]'
