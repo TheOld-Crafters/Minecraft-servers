@@ -5,6 +5,8 @@ meta:
   authors:
   - poma123
   banner: WHITE_BANNER:1:STRIPE_TOP:RED:STRIPE_BOTTOM:LIME
+prefixes:
+  bentobox: '&6 BentoBox &7 &l > &r '
 general:
   success: '&aSikeres!'
   invalid: Helytelen
@@ -404,14 +406,14 @@ commands:
       description: displays copyright and license information
     reload:
       description: reloads BentoBox and all addons, settings and locales
-      locales-reloaded: '&2Languages reloaded.'
-      addons-reloaded: '&2Addons reloaded.'
-      settings-reloaded: '&2Settings reloaded.'
-      addon: '&6Reloading &b[name]&2.'
-      addon-reloaded: '&b[name] &2reloaded.'
-      warning: '&cWarning: Reloading may cause instability, so if you see errors afterwards,
-        restart the server.'
-      unknown-addon: '&cUnknown addon!'
+      locales-reloaded: '[prefix_bentobox]&2 Languages reloaded.'
+      addons-reloaded: '[prefix_bentobox]&2 Addons reloaded.'
+      settings-reloaded: '[prefix_bentobox]&2 Settings reloaded.'
+      addon: '[prefix_bentobox]&6 Reloading &b [name]&2 .'
+      addon-reloaded: '[prefix_bentobox]&b [name] &2 reloaded.'
+      warning: '[prefix_bentobox]&c Warning: Reloading may cause instability, so if
+        you see errors afterwards, restart the server.'
+      unknown-addon: '[prefix_bentobox]&c Unknown addon!'
     version:
       plugin-version: '&2BentoBox version: &3[version]'
       description: displays BentoBox and addons versions
@@ -428,15 +430,15 @@ commands:
     locale:
       description: performs localization files analysis
       see-console: |-
-        &aCheck the console to see the feedback.
-        &aThis command is so spammy that the feedback cannot be read from chat...
+        [prefix_bentobox]&a Check the console to see the feedback.
+        [prefix_bentobox]&a This command is so spammy that the feedback cannot be read from chat...
     migrate:
       description: migrates data from one database to another
-      players: '&6Migrating players'
-      names: '&6Migrating names'
-      addons: '&6Migrating addons'
-      class: '&6Migrating [description]'
-      migrated: '&AMigrated'
+      players: '[prefix_bentobox]&6 Migrating players'
+      names: '[prefix_bentobox]&6 Migrating names'
+      addons: '[prefix_bentobox]&6 Migrating addons'
+      class: '[prefix_bentobox]&6 Migrating [description]'
+      migrated: '[prefix_bentobox]&a Migrated'
   confirmation:
     confirm: '&cÍrd be újra a parancsot &b[seconds]s&c-en belül a megerősítéshez.'
     previous-request-cancelled: '&6A korábbi megerősítési kérelem visszavonva.'
@@ -553,6 +555,7 @@ commands:
         success: '&aCoop rangot adtál neki &b[name].'
         name-has-invited-you: '&a[name] meghívott, hogy csatlakozz coop rangosként
           a szigetéhez.'
+        is-full: '&cTöbb coop rangos nem lehet.'
       uncoop:
         description: Eltávolítja a coop rangot egy játékostól a szigeteden
         parameters: <játékos>
@@ -572,6 +575,7 @@ commands:
         player-already-trusted: '&cA megadott játékos már Megbízott!'
         you-are-trusted: '&2Megbízott rangot kaptál tőle: [name]!'
         success: '&aMegbíztad őt &b[name]&a.'
+        is-full: '&cTöbb megbízott nem lehet.'
       untrust:
         description: Eltávolítja a megbízott rangot egy játékostól a szigeteden
         parameters: <játékos>
