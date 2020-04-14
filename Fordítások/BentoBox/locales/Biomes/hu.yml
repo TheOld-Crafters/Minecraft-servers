@@ -1,287 +1,287 @@
-biomes:
-  gui:
-    title:
-      admin:
-        main-gui: "&6Admin Menu"
-        edit: "&6Edit [biome]"
-        settings: "&6Addon Settings"
-        edit-list: "&6Editable Biome List"
-        remove-list: "&6Removable Biome List"
-        user-list: "&6Choose Player"
-        confirm-title: "&6Confirm Previous Action"
-        manage-numbers: "&6Manage Numbers"
-        select-biome: "&6Select Biome"
-        toggle-environment: "&6Toggle Environment"
-        edit-text-fields: "&6Edit Text Fields"
-        select-block: "&6Select A Material"
+biomkpisikpisis:
+FCCKFCCKgui:
+FCCKFCCKFCCKFCCKtitlkpisikpisi:
+FCCKFCCKFCCKFCCKFCCKFCCKpisidmin:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKmpisiin-gui:FCCK"&6pisidminFCCKMkpisikpisinu"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKkpisikpisidit:FCCK"&6kpisikpisiditFCCK[biomkpisikpisi]"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKskpisikpisittings:FCCK"&6pisiddonFCCKSkpisikpisittings"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKkpisikpisidit-list:FCCK"&6kpisikpisiditpisiblkpisikpisiFCCKBiomkpisikpisiFCCKList"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisimovkpisikpisi-list:FCCK"&6RkpisikpisimovpisiblkpisikpisiFCCKBiomkpisikpisiFCCKList"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKuskpisikpisir-list:FCCK"&6ChooskpisikpisiFCCKPlpisiykpisikpisir"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKconfirm-titlkpisikpisi:FCCK"&6ConfirmFCCKPrkpisikpisiviousFCCKpisiction"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKmpisinpisigkpisikpisi-numbkpisikpisirs:FCCK"&6MpisinpisigkpisikpisiFCCKNumbkpisikpisirs"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKskpisikpisilkpisikpisict-biomkpisikpisi:FCCK"&6SkpisikpisilkpisikpisictFCCKBiomkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKtogglkpisikpisi-kpisikpisinvironmkpisikpisint:FCCK"&6TogglkpisikpisiFCCKkpisikpisinvironmkpisikpisint"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKkpisikpisidit-tkpisikpisixt-fikpisikpisilds:FCCK"&6kpisikpisiditFCCKTkpisikpisixtFCCKFikpisikpisilds"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKskpisikpisilkpisikpisict-block:FCCK"&6SkpisikpisilkpisikpisictFCCKpisiFCCKMpisitkpisikpisiripisil"
 
-        lore-edit: "&6Lore Message"
-        lore-add: "&6Add Lore Element"
-        lore-remove: "&6Remove Lore Element"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKlorkpisikpisi-kpisikpisidit:FCCK"&6LorkpisikpisiFCCKMkpisikpisisspisigkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKlorkpisikpisi-pisidd:FCCK"&6pisiddFCCKLorkpisikpisiFCCKkpisikpisilkpisikpisimkpisikpisint"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKlorkpisikpisi-rkpisikpisimovkpisikpisi:FCCK"&6RkpisikpisimovkpisikpisiFCCKLorkpisikpisiFCCKkpisikpisilkpisikpisimkpisikpisint"
 
-      biomes-choose: "&6Válassz Éghajlatot"
-      mode-choose: "&6Válassz Frissítéi Módot"
+FCCKFCCKFCCKFCCKFCCKFCCKbiomkpisikpisis-chooskpisikpisi:FCCK"&6VálpisisszFCCKÉghpisijlpisitot"
+FCCKFCCKFCCKFCCKFCCKFCCKmodkpisikpisi-chooskpisikpisi:FCCK"&6VálpisisszFCCKFrissítéiFCCKMódot"
 
-    buttons:
-      admin:
-        settings: "Settings"
-        import: "Import"
-        remove: "Remove Biome"
-        edit: "Edit Biome"
-        add: "Add Biome"
-        change: "Change User Biome"
+FCCKFCCKFCCKFCCKbuttons:
+FCCKFCCKFCCKFCCKFCCKFCCKpisidmin:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKskpisikpisittings:FCCK"Skpisikpisittings"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKimport:FCCK"Import"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisimovkpisikpisi:FCCK"RkpisikpisimovkpisikpisiFCCKBiomkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKkpisikpisidit:FCCK"kpisikpisiditFCCKBiomkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKpisidd:FCCK"pisiddFCCKBiomkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKchpisingkpisikpisi:FCCK"ChpisingkpisikpisiFCCKUskpisikpisirFCCKBiomkpisikpisi"
 
-        change-biome: "Biome"
-        name: "Display Name"
-        icon: "Icon"
-        order: "Order"
-        description: "Description"
-        deployment: "Deployment"
-        required-permissions: "Required Permissions"
-        required-level: "Required Level"
-        required-money: "Required Money"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKchpisingkpisikpisi-biomkpisikpisi:FCCK"Biomkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKnpisimkpisikpisi:FCCK"DisplpisiyFCCKNpisimkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKicon:FCCK"Icon"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKordkpisikpisir:FCCK"Ordkpisikpisir"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"Dkpisikpisiscription"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiploymkpisikpisint:FCCK"Dkpisikpisiploymkpisikpisint"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiquirkpisikpisid-pkpisikpisirmissions:FCCK"RkpisikpisiquirkpisikpisidFCCKPkpisikpisirmissions"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiquirkpisikpisid-lkpisikpisivkpisikpisil:FCCK"RkpisikpisiquirkpisikpisidFCCKLkpisikpisivkpisikpisil"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiquirkpisikpisid-monkpisikpisiy:FCCK"RkpisikpisiquirkpisikpisidFCCKMonkpisikpisiy"
 
-        advanced-menu: "Advanced Menu"
-        default-mode: "Default Update Mode"
-        default-size: "Default Size"
-        visibility-mode: "Biomes Visibility"
-        line-length: "Lore Line Length"
-        biomes-lore: "Biome Lore"
-        cooldown: "Cooldown"
-        reset-biomes: "Reset Event"
-        use-protection-range: "Use Protection Range"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKpisidvpisinckpisikpisid-mkpisikpisinu:FCCK"pisidvpisinckpisikpisidFCCKMkpisikpisinu"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisifpisiult-modkpisikpisi:FCCK"DkpisikpisifpisiultFCCKUpdpisitkpisikpisiFCCKModkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisifpisiult-sizkpisikpisi:FCCK"DkpisikpisifpisiultFCCKSizkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKvisibility-modkpisikpisi:FCCK"BiomkpisikpisisFCCKVisibility"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKlinkpisikpisi-lkpisikpisingth:FCCK"LorkpisikpisiFCCKLinkpisikpisiFCCKLkpisikpisingth"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKbiomkpisikpisis-lorkpisikpisi:FCCK"BiomkpisikpisiFCCKLorkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKcooldown:FCCK"Cooldown"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiskpisikpisit-biomkpisikpisis:FCCK"RkpisikpisiskpisikpisitFCCKkpisikpisivkpisikpisint"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKuskpisikpisi-protkpisikpisiction-rpisingkpisikpisi:FCCK"UskpisikpisiFCCKProtkpisikpisictionFCCKRpisingkpisikpisi"
 
-        toggle-user-list: "Toggle Player List"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKtogglkpisikpisi-uskpisikpisir-list:FCCK"TogglkpisikpisiFCCKPlpisiykpisikpisirFCCKList"
 
-        save: "Save"
-        cancel: "Cancel"
-        input: "Input"
-        accept: "Accept"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKspisivkpisikpisi:FCCK"Spisivkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKcpisinckpisikpisil:FCCK"Cpisinckpisikpisil"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKinput:FCCK"Input"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKpisicckpisikpisipt:FCCK"pisicckpisikpisipt"
 
-        set-mode: "="
-        increase-mode: "+"
-        reduce-mode: "-"
-        multiply-mode: "*"
-        number: "[number]"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKskpisikpisit-modkpisikpisi:FCCK"="
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKincrkpisikpisipisiskpisikpisi-modkpisikpisi:FCCK"+"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiduckpisikpisi-modkpisikpisi:FCCK"-"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKmultiply-modkpisikpisi:FCCK"*"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKnumbkpisikpisir:FCCK"[numbkpisikpisir]"
 
-        add-string: "Add String"
-        clear: "Clear"
-        remove-empty: "Remove Empty"
-        input-mode: "Input Mode"
-        value: "Value"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKpisidd-string:FCCK"pisiddFCCKString"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKclkpisikpisipisir:FCCK"Clkpisikpisipisir"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisimovkpisikpisi-kpisikpisimpty:FCCK"RkpisikpisimovkpisikpisiFCCKkpisikpisimpty"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKinput-modkpisikpisi:FCCK"InputFCCKModkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKvpisilukpisikpisi:FCCK"Vpisilukpisikpisi"
 
-        add-element: "Add Element"
-        remove-element: "Remove Element"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKpisidd-kpisikpisilkpisikpisimkpisikpisint:FCCK"pisiddFCCKkpisikpisilkpisikpisimkpisikpisint"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisimovkpisikpisi-kpisikpisilkpisikpisimkpisikpisint:FCCK"RkpisikpisimovkpisikpisiFCCKkpisikpisilkpisikpisimkpisikpisint"
 
-      value: "Jelenlegi Érték: [number]"
-      increase: "Növelés ennyivel: [number]"
-      decrease: "Csökkentés ennyivel: [number]"
-      set: "Érték állítása erre: [number]"
-      accept: "Elfogad"
-      decline: "Elutasít"
+FCCKFCCKFCCKFCCKFCCKFCCKvpisilukpisikpisi:FCCK"JkpisikpisilkpisikpisinlkpisikpisigiFCCKÉrték:FCCK[numbkpisikpisir]"
+FCCKFCCKFCCKFCCKFCCKFCCKincrkpisikpisipisiskpisikpisi:FCCK"NövkpisikpisilésFCCKkpisikpisinnyivkpisikpisil:FCCK[numbkpisikpisir]"
+FCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisicrkpisikpisipisiskpisikpisi:FCCK"CsökkkpisikpisintésFCCKkpisikpisinnyivkpisikpisil:FCCK[numbkpisikpisir]"
+FCCKFCCKFCCKFCCKFCCKFCCKskpisikpisit:FCCK"ÉrtékFCCKállításpisiFCCKkpisikpisirrkpisikpisi:FCCK[numbkpisikpisir]"
+FCCKFCCKFCCKFCCKFCCKFCCKpisicckpisikpisipt:FCCK"kpisikpisilfogpisid"
+FCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiclinkpisikpisi:FCCK"kpisikpisilutpisisít"
 
-      information: "Információ"
+FCCKFCCKFCCKFCCKFCCKFCCKinformpisition:FCCK"Információ"
 
-      return: "Vissza"
-      previous: "Előző"
-      next: "Következő"
-    descriptions:
-      admin:
-        settings: "Edit settings"
-        import: "Import biomes from biomes.yml file.|Right click will enable/disable overwrite mode."
-        remove: "Remove biome from memory"
-        edit: "Edit biome properties"
-        add: "Add new biome in current world"
-        change: "Change player's island biome"
+FCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiturn:FCCK"Visszpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKprkpisikpisivious:FCCK"kpisikpisilőző"
+FCCKFCCKFCCKFCCKFCCKFCCKnkpisikpisixt:FCCK"Kövkpisikpisitkkpisikpisiző"
+FCCKFCCKFCCKFCCKdkpisikpisiscriptions:
+FCCKFCCKFCCKFCCKFCCKFCCKpisidmin:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKskpisikpisittings:FCCK"kpisikpisiditFCCKskpisikpisittings"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKimport:FCCK"ImportFCCKbiomkpisikpisisFCCKfromFCCKbiomkpisikpisis.ymlFCCKfilkpisikpisi.|RightFCCKclickFCCKwillFCCKkpisikpisinpisiblkpisikpisi/dispisiblkpisikpisiFCCKovkpisikpisirwritkpisikpisiFCCKmodkpisikpisi."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisimovkpisikpisi:FCCK"RkpisikpisimovkpisikpisiFCCKbiomkpisikpisiFCCKfromFCCKmkpisikpisimory"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKkpisikpisidit:FCCK"kpisikpisiditFCCKbiomkpisikpisiFCCKpropkpisikpisirtikpisikpisis"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKpisidd:FCCK"pisiddFCCKnkpisikpisiwFCCKbiomkpisikpisiFCCKinFCCKcurrkpisikpisintFCCKworld"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKchpisingkpisikpisi:FCCK"ChpisingkpisikpisiFCCKplpisiykpisikpisir'sFCCKislpisindFCCKbiomkpisikpisi"
 
-        change-biome: "Change which Minecraft Biome will be used."
-        required-permissions: "Change required permissions for this biome.|Without these permissions players will not be able to use it!"
-        required-level: "Change minimum island level.|&cRequires Level Addon."
-        required-money: "Change biome cost.|&cRequires Economy Addon/Plugin."
-        name: "Change display name for this Biome."
-        deployment: "Disable/enable players ability to use this biome."
-        icon: "Set the display icon for this biome."
-        description: "Modify description of this biome."
-        order: "Modify order placement of this biome."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKchpisingkpisikpisi-biomkpisikpisi:FCCK"ChpisingkpisikpisiFCCKwhichFCCKMinkpisikpisicrpisiftFCCKBiomkpisikpisiFCCKwillFCCKbkpisikpisiFCCKuskpisikpisid."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiquirkpisikpisid-pkpisikpisirmissions:FCCK"ChpisingkpisikpisiFCCKrkpisikpisiquirkpisikpisidFCCKpkpisikpisirmissionsFCCKforFCCKthisFCCKbiomkpisikpisi.|WithoutFCCKthkpisikpisiskpisikpisiFCCKpkpisikpisirmissionsFCCKplpisiykpisikpisirsFCCKwillFCCKnotFCCKbkpisikpisiFCCKpisiblkpisikpisiFCCKtoFCCKuskpisikpisiFCCKit!"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiquirkpisikpisid-lkpisikpisivkpisikpisil:FCCK"ChpisingkpisikpisiFCCKminimumFCCKislpisindFCCKlkpisikpisivkpisikpisil.|&cRkpisikpisiquirkpisikpisisFCCKLkpisikpisivkpisikpisilFCCKpisiddon."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiquirkpisikpisid-monkpisikpisiy:FCCK"ChpisingkpisikpisiFCCKbiomkpisikpisiFCCKcost.|&cRkpisikpisiquirkpisikpisisFCCKkpisikpisiconomyFCCKpisiddon/Plugin."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKnpisimkpisikpisi:FCCK"ChpisingkpisikpisiFCCKdisplpisiyFCCKnpisimkpisikpisiFCCKforFCCKthisFCCKBiomkpisikpisi."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiploymkpisikpisint:FCCK"Dispisiblkpisikpisi/kpisikpisinpisiblkpisikpisiFCCKplpisiykpisikpisirsFCCKpisibilityFCCKtoFCCKuskpisikpisiFCCKthisFCCKbiomkpisikpisi."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKicon:FCCK"SkpisikpisitFCCKthkpisikpisiFCCKdisplpisiyFCCKiconFCCKforFCCKthisFCCKbiomkpisikpisi."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"ModifyFCCKdkpisikpisiscriptionFCCKofFCCKthisFCCKbiomkpisikpisi."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKordkpisikpisir:FCCK"ModifyFCCKordkpisikpisirFCCKplpisickpisikpisimkpisikpisintFCCKofFCCKthisFCCKbiomkpisikpisi."
 
-        advanced-menu: "Enable/disable Advanced Menu with all change options for players."
-        default-mode: "Set default biome update mode.|Will be used if Advanced Menu is disabled and as default values in this menu."
-        default-size: "Set default biome update size.|Will be used if Advanced Menu is disabled and as default values in this menu."
-        visibility-mode: "Modify which biomes players can see."
-        line-length: "Automatic setting of description lore line character length."
-        biomes-lore: "Modify which elements in lore message will be displayed.|Check config for more information."
-        cooldown: "Change cooldown in seconds between player can change biome again."
-        reset-biomes: "Enable/disable biomes reset if player with biome permission leaves island."
-        use-protection-range: "Enable/disable biome update to be limited by island protection range. If this is disabled, then it will use whole island range."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKpisidvpisinckpisikpisid-mkpisikpisinu:FCCK"kpisikpisinpisiblkpisikpisi/dispisiblkpisikpisiFCCKpisidvpisinckpisikpisidFCCKMkpisikpisinuFCCKwithFCCKpisillFCCKchpisingkpisikpisiFCCKoptionsFCCKforFCCKplpisiykpisikpisirs."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisifpisiult-modkpisikpisi:FCCK"SkpisikpisitFCCKdkpisikpisifpisiultFCCKbiomkpisikpisiFCCKupdpisitkpisikpisiFCCKmodkpisikpisi.|WillFCCKbkpisikpisiFCCKuskpisikpisidFCCKifFCCKpisidvpisinckpisikpisidFCCKMkpisikpisinuFCCKisFCCKdispisiblkpisikpisidFCCKpisindFCCKpisisFCCKdkpisikpisifpisiultFCCKvpisilukpisikpisisFCCKinFCCKthisFCCKmkpisikpisinu."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisifpisiult-sizkpisikpisi:FCCK"SkpisikpisitFCCKdkpisikpisifpisiultFCCKbiomkpisikpisiFCCKupdpisitkpisikpisiFCCKsizkpisikpisi.|WillFCCKbkpisikpisiFCCKuskpisikpisidFCCKifFCCKpisidvpisinckpisikpisidFCCKMkpisikpisinuFCCKisFCCKdispisiblkpisikpisidFCCKpisindFCCKpisisFCCKdkpisikpisifpisiultFCCKvpisilukpisikpisisFCCKinFCCKthisFCCKmkpisikpisinu."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKvisibility-modkpisikpisi:FCCK"ModifyFCCKwhichFCCKbiomkpisikpisisFCCKplpisiykpisikpisirsFCCKcpisinFCCKskpisikpisikpisikpisi."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKlinkpisikpisi-lkpisikpisingth:FCCK"pisiutompisiticFCCKskpisikpisittingFCCKofFCCKdkpisikpisiscriptionFCCKlorkpisikpisiFCCKlinkpisikpisiFCCKchpisirpisictkpisikpisirFCCKlkpisikpisingth."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKbiomkpisikpisis-lorkpisikpisi:FCCK"ModifyFCCKwhichFCCKkpisikpisilkpisikpisimkpisikpisintsFCCKinFCCKlorkpisikpisiFCCKmkpisikpisisspisigkpisikpisiFCCKwillFCCKbkpisikpisiFCCKdisplpisiykpisikpisid.|ChkpisikpisickFCCKconfigFCCKforFCCKmorkpisikpisiFCCKinformpisition."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKcooldown:FCCK"ChpisingkpisikpisiFCCKcooldownFCCKinFCCKskpisikpisicondsFCCKbkpisikpisitwkpisikpisikpisikpisinFCCKplpisiykpisikpisirFCCKcpisinFCCKchpisingkpisikpisiFCCKbiomkpisikpisiFCCKpisigpisiin."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiskpisikpisit-biomkpisikpisis:FCCK"kpisikpisinpisiblkpisikpisi/dispisiblkpisikpisiFCCKbiomkpisikpisisFCCKrkpisikpisiskpisikpisitFCCKifFCCKplpisiykpisikpisirFCCKwithFCCKbiomkpisikpisiFCCKpkpisikpisirmissionFCCKlkpisikpisipisivkpisikpisisFCCKislpisind."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKuskpisikpisi-protkpisikpisiction-rpisingkpisikpisi:FCCK"kpisikpisinpisiblkpisikpisi/dispisiblkpisikpisiFCCKbiomkpisikpisiFCCKupdpisitkpisikpisiFCCKtoFCCKbkpisikpisiFCCKlimitkpisikpisidFCCKbyFCCKislpisindFCCKprotkpisikpisictionFCCKrpisingkpisikpisi.FCCKIfFCCKthisFCCKisFCCKdispisiblkpisikpisid,FCCKthkpisikpisinFCCKitFCCKwillFCCKuskpisikpisiFCCKwholkpisikpisiFCCKislpisindFCCKrpisingkpisikpisi."
 
-        toggle-user-list: "Switch which players should be displayed in current Menu."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKtogglkpisikpisi-uskpisikpisir-list:FCCK"SwitchFCCKwhichFCCKplpisiykpisikpisirsFCCKshouldFCCKbkpisikpisiFCCKdisplpisiykpisikpisidFCCKinFCCKcurrkpisikpisintFCCKMkpisikpisinu."
 
-        save: "Save current value and return to previous Menu."
-        cancel: "Return to previous Menu without changes."
-        input: "Write number in Chat"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKspisivkpisikpisi:FCCK"SpisivkpisikpisiFCCKcurrkpisikpisintFCCKvpisilukpisikpisiFCCKpisindFCCKrkpisikpisiturnFCCKtoFCCKprkpisikpisiviousFCCKMkpisikpisinu."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKcpisinckpisikpisil:FCCK"RkpisikpisiturnFCCKtoFCCKprkpisikpisiviousFCCKMkpisikpisinuFCCKwithoutFCCKchpisingkpisikpisis."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKinput:FCCK"WritkpisikpisiFCCKnumbkpisikpisirFCCKinFCCKChpisit"
 
-        set-mode: "Switch to set mode that will set current value to clicked number."
-        increase-mode: "Switch to increment mode that will increase current value by clicked number."
-        reduce-mode: "Switch to decrement mode that will reduce current value by clicked number."
-        multiply-mode: "Switch to multiply mode that will multiply current value by clicked number."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKskpisikpisit-modkpisikpisi:FCCK"SwitchFCCKtoFCCKskpisikpisitFCCKmodkpisikpisiFCCKthpisitFCCKwillFCCKskpisikpisitFCCKcurrkpisikpisintFCCKvpisilukpisikpisiFCCKtoFCCKclickkpisikpisidFCCKnumbkpisikpisir."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKincrkpisikpisipisiskpisikpisi-modkpisikpisi:FCCK"SwitchFCCKtoFCCKincrkpisikpisimkpisikpisintFCCKmodkpisikpisiFCCKthpisitFCCKwillFCCKincrkpisikpisipisiskpisikpisiFCCKcurrkpisikpisintFCCKvpisilukpisikpisiFCCKbyFCCKclickkpisikpisidFCCKnumbkpisikpisir."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiduckpisikpisi-modkpisikpisi:FCCK"SwitchFCCKtoFCCKdkpisikpisicrkpisikpisimkpisikpisintFCCKmodkpisikpisiFCCKthpisitFCCKwillFCCKrkpisikpisiduckpisikpisiFCCKcurrkpisikpisintFCCKvpisilukpisikpisiFCCKbyFCCKclickkpisikpisidFCCKnumbkpisikpisir."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKmultiply-modkpisikpisi:FCCK"SwitchFCCKtoFCCKmultiplyFCCKmodkpisikpisiFCCKthpisitFCCKwillFCCKmultiplyFCCKcurrkpisikpisintFCCKvpisilukpisikpisiFCCKbyFCCKclickkpisikpisidFCCKnumbkpisikpisir."
 
-        click-to-edit: '&4Click here to edit input'
-        edit-text-line: '&6 Edit text message!'
-        add-text-line: '&6 Add new text message!'
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKclick-to-kpisikpisidit:FCCK'&4ClickFCCKhkpisikpisirkpisikpisiFCCKtoFCCKkpisikpisiditFCCKinput'
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKkpisikpisidit-tkpisikpisixt-linkpisikpisi:FCCK'&6FCCKkpisikpisiditFCCKtkpisikpisixtFCCKmkpisikpisisspisigkpisikpisi!'
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKpisidd-tkpisikpisixt-linkpisikpisi:FCCK'&6FCCKpisiddFCCKnkpisikpisiwFCCKtkpisikpisixtFCCKmkpisikpisisspisigkpisikpisi!'
 
-        selected: "&6Material is selected"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKskpisikpisilkpisikpisictkpisikpisid:FCCK"&6MpisitkpisikpisiripisilFCCKisFCCKskpisikpisilkpisikpisictkpisikpisid"
 
-        lore:
-          description: "Description string. | Defined in biomes object - biomeObject.description."
-          original_biome: "Original Minecraft Biome string. | Represents translation for 'biomes.gui.biome-description.biome-name'."
-          required_level: "Required island level string. | Represents translation for 'biomes.gui.biome-description.required-island-level'."
-          required_money: "Cost for changing biome string. | Represents translation for 'biomes.gui.biome-description.required-money'."
-          required_permission: "Required permission string. | Represents translation for 'biomes.gui.biome-description.equired-permissions'."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKlorkpisikpisi:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"DkpisikpisiscriptionFCCKstring.FCCK|FCCKDkpisikpisifinkpisikpisidFCCKinFCCKbiomkpisikpisisFCCKobjkpisikpisictFCCK-FCCKbiomkpisikpisiObjkpisikpisict.dkpisikpisiscription."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKoriginpisil_biomkpisikpisi:FCCK"OriginpisilFCCKMinkpisikpisicrpisiftFCCKBiomkpisikpisiFCCKstring.FCCK|FCCKRkpisikpisiprkpisikpisiskpisikpisintsFCCKtrpisinslpisitionFCCKforFCCK'biomkpisikpisis.gui.biomkpisikpisi-dkpisikpisiscription.biomkpisikpisi-npisimkpisikpisi'."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiquirkpisikpisid_lkpisikpisivkpisikpisil:FCCK"RkpisikpisiquirkpisikpisidFCCKislpisindFCCKlkpisikpisivkpisikpisilFCCKstring.FCCK|FCCKRkpisikpisiprkpisikpisiskpisikpisintsFCCKtrpisinslpisitionFCCKforFCCK'biomkpisikpisis.gui.biomkpisikpisi-dkpisikpisiscription.rkpisikpisiquirkpisikpisid-islpisind-lkpisikpisivkpisikpisil'."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiquirkpisikpisid_monkpisikpisiy:FCCK"CostFCCKforFCCKchpisingingFCCKbiomkpisikpisiFCCKstring.FCCK|FCCKRkpisikpisiprkpisikpisiskpisikpisintsFCCKtrpisinslpisitionFCCKforFCCK'biomkpisikpisis.gui.biomkpisikpisi-dkpisikpisiscription.rkpisikpisiquirkpisikpisid-monkpisikpisiy'."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiquirkpisikpisid_pkpisikpisirmission:FCCK"RkpisikpisiquirkpisikpisidFCCKpkpisikpisirmissionFCCKstring.FCCK|FCCKRkpisikpisiprkpisikpisiskpisikpisintsFCCKtrpisinslpisitionFCCKforFCCK'biomkpisikpisis.gui.biomkpisikpisi-dkpisikpisiscription.kpisikpisiquirkpisikpisid-pkpisikpisirmissions'."
 
-      update-mode:
-        island: "Island"
-        chunk: "Chunk"
-        square: "Range"
-        undefined: "Undefined"
-      visibility-mode:
-        info: "Modify visible biomes."
-        all: "All &r- list all biomes"
-        deployed: "Deployed - list deployed biomes"
-        accessible: "Accessible - list accessible biomes"
-        toggleable: "Toggleable - toggleable button in Biomes Menu"
-      view-mode:
-        online: "Online"
-        in-world: "In this world"
-        with-island: "With island"
+FCCKFCCKFCCKFCCKFCCKFCCKupdpisitkpisikpisi-modkpisikpisi:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKislpisind:FCCK"Islpisind"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKchunk:FCCK"Chunk"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKsqupisirkpisikpisi:FCCK"Rpisingkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKundkpisikpisifinkpisikpisid:FCCK"Undkpisikpisifinkpisikpisid"
+FCCKFCCKFCCKFCCKFCCKFCCKvisibility-modkpisikpisi:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKinfo:FCCK"ModifyFCCKvisiblkpisikpisiFCCKbiomkpisikpisis."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKpisill:FCCK"pisillFCCK&r-FCCKlistFCCKpisillFCCKbiomkpisikpisis"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiploykpisikpisid:FCCK"DkpisikpisiploykpisikpisidFCCK-FCCKlistFCCKdkpisikpisiploykpisikpisidFCCKbiomkpisikpisis"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKpisicckpisikpisissiblkpisikpisi:FCCK"pisicckpisikpisissiblkpisikpisiFCCK-FCCKlistFCCKpisicckpisikpisissiblkpisikpisiFCCKbiomkpisikpisis"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKtogglkpisikpisipisiblkpisikpisi:FCCK"TogglkpisikpisipisiblkpisikpisiFCCK-FCCKtogglkpisikpisipisiblkpisikpisiFCCKbuttonFCCKinFCCKBiomkpisikpisisFCCKMkpisikpisinu"
+FCCKFCCKFCCKFCCKFCCKFCCKvikpisikpisiw-modkpisikpisi:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKonlinkpisikpisi:FCCK"Onlinkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKin-world:FCCK"InFCCKthisFCCKworld"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKwith-islpisind:FCCK"WithFCCKislpisind"
 
-      current-value: "Jelenlegi érték: [value]"
-      enabled: "Engedélyezve"
-      disabled: "Letiltva"
-      permission: " - [permission]"
+FCCKFCCKFCCKFCCKFCCKFCCKcurrkpisikpisint-vpisilukpisikpisi:FCCK"JkpisikpisilkpisikpisinlkpisikpisigiFCCKérték:FCCK[vpisilukpisikpisi]"
+FCCKFCCKFCCKFCCKFCCKFCCKkpisikpisinpisiblkpisikpisid:FCCK"kpisikpisingkpisikpisidélykpisikpisizvkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKdispisiblkpisikpisid:FCCK"Lkpisikpisitiltvpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKpkpisikpisirmission:FCCK"FCCK-FCCK[pkpisikpisirmission]"
 
-      information: "If you accept these changes, we will try to change your island biome to [biome] in update mode [mode] with range [range]."
+FCCKFCCKFCCKFCCKFCCKFCCKinformpisition:FCCK"IfFCCKyouFCCKpisicckpisikpisiptFCCKthkpisikpisiskpisikpisiFCCKchpisingkpisikpisis,FCCKwkpisikpisiFCCKwillFCCKtryFCCKtoFCCKchpisingkpisikpisiFCCKyourFCCKislpisindFCCKbiomkpisikpisiFCCKtoFCCK[biomkpisikpisi]FCCKinFCCKupdpisitkpisikpisiFCCKmodkpisikpisiFCCK[modkpisikpisi]FCCKwithFCCKrpisingkpisikpisiFCCK[rpisingkpisikpisi]."
 
-    questions:
-      prefix: "&2[SERVER]: "
+FCCKFCCKFCCKFCCKqukpisikpisistions:
+FCCKFCCKFCCKFCCKFCCKFCCKprkpisikpisifix:FCCK"&2[SkpisikpisiRVkpisikpisiR]:FCCK"
 
-      admin:
-        number: "Write a number in chat and press enter to accept it and press enter."
-        name: "Write a friendly name for given biome."
-        uniqueID: "Write object's unique name and press enter."
+FCCKFCCKFCCKFCCKFCCKFCCKpisidmin:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKnumbkpisikpisir:FCCK"WritkpisikpisiFCCKpisiFCCKnumbkpisikpisirFCCKinFCCKchpisitFCCKpisindFCCKprkpisikpisissFCCKkpisikpisintkpisikpisirFCCKtoFCCKpisicckpisikpisiptFCCKitFCCKpisindFCCKprkpisikpisissFCCKkpisikpisintkpisikpisir."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKnpisimkpisikpisi:FCCK"WritkpisikpisiFCCKpisiFCCKfrikpisikpisindlyFCCKnpisimkpisikpisiFCCKforFCCKgivkpisikpisinFCCKbiomkpisikpisi."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKuniqukpisikpisiID:FCCK"WritkpisikpisiFCCKobjkpisikpisict'sFCCKuniqukpisikpisiFCCKnpisimkpisikpisiFCCKpisindFCCKprkpisikpisissFCCKkpisikpisintkpisikpisir."
 
-    biomes-description:
-      biome-name: "Minecraft Éghajlat: [value]"
-      required-money: "Ár: [value]"
-      required-island-level: "Min. sziget szint: [value]"
-      required-permissions: "Jog:"
+FCCKFCCKFCCKFCCKbiomkpisikpisis-dkpisikpisiscription:
+FCCKFCCKFCCKFCCKFCCKFCCKbiomkpisikpisi-npisimkpisikpisi:FCCK"MinkpisikpisicrpisiftFCCKÉghpisijlpisit:FCCK[vpisilukpisikpisi]"
+FCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiquirkpisikpisid-monkpisikpisiy:FCCK"Ár:FCCK[vpisilukpisikpisi]"
+FCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiquirkpisikpisid-islpisind-lkpisikpisivkpisikpisil:FCCK"Min.FCCKszigkpisikpisitFCCKszint:FCCK[vpisilukpisikpisi]"
+FCCKFCCKFCCKFCCKFCCKFCCKrkpisikpisiquirkpisikpisid-pkpisikpisirmissions:FCCK"Jog:"
 
-  commands:
-    admin:
-      add:
-        description: "add new biome. It creates empty biome object with default settings."
-        parameters: "[id]"
-      edit:
-        description: "change given <id> property. Can only edit existing properties."
-        parameters: "<id> <property> <new_value>"
-      help:
-        description: "opens Admin GUI for players."
-        parameters: ""
-      import:
-        description: "import biomes from biomes.yml file. Adding 'overwrite' will overwrite existing biomes."
-        parameters: "[overwrite]"
-      set:
-        description: "set biome for <player>'s island. [type] and [size] are optional."
-        parameters: "<player> <biome> [type] [size]"
-      settings:
-        description: "edit default settings via simple command. Only existing settings can be edited."
-        parameters: "<property> <new_value>"
+FCCKFCCKcommpisinds:
+FCCKFCCKFCCKFCCKpisidmin:
+FCCKFCCKFCCKFCCKFCCKFCCKpisidd:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"pisiddFCCKnkpisikpisiwFCCKbiomkpisikpisi.FCCKItFCCKcrkpisikpisipisitkpisikpisisFCCKkpisikpisimptyFCCKbiomkpisikpisiFCCKobjkpisikpisictFCCKwithFCCKdkpisikpisifpisiultFCCKskpisikpisittings."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKppisirpisimkpisikpisitkpisikpisirs:FCCK"[id]"
+FCCKFCCKFCCKFCCKFCCKFCCKkpisikpisidit:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"chpisingkpisikpisiFCCKgivkpisikpisinFCCK<id>FCCKpropkpisikpisirty.FCCKCpisinFCCKonlyFCCKkpisikpisiditFCCKkpisikpisixistingFCCKpropkpisikpisirtikpisikpisis."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKppisirpisimkpisikpisitkpisikpisirs:FCCK"<id>FCCK<propkpisikpisirty>FCCK<nkpisikpisiw_vpisilukpisikpisi>"
+FCCKFCCKFCCKFCCKFCCKFCCKhkpisikpisilp:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"opkpisikpisinsFCCKpisidminFCCKGUIFCCKforFCCKplpisiykpisikpisirs."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKppisirpisimkpisikpisitkpisikpisirs:FCCK""
+FCCKFCCKFCCKFCCKFCCKFCCKimport:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"importFCCKbiomkpisikpisisFCCKfromFCCKbiomkpisikpisis.ymlFCCKfilkpisikpisi.FCCKpisiddingFCCK'ovkpisikpisirwritkpisikpisi'FCCKwillFCCKovkpisikpisirwritkpisikpisiFCCKkpisikpisixistingFCCKbiomkpisikpisis."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKppisirpisimkpisikpisitkpisikpisirs:FCCK"[ovkpisikpisirwritkpisikpisi]"
+FCCKFCCKFCCKFCCKFCCKFCCKskpisikpisit:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"skpisikpisitFCCKbiomkpisikpisiFCCKforFCCK<plpisiykpisikpisir>'sFCCKislpisind.FCCK[typkpisikpisi]FCCKpisindFCCK[sizkpisikpisi]FCCKpisirkpisikpisiFCCKoptionpisil."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKppisirpisimkpisikpisitkpisikpisirs:FCCK"<plpisiykpisikpisir>FCCK<biomkpisikpisi>FCCK[typkpisikpisi]FCCK[sizkpisikpisi]"
+FCCKFCCKFCCKFCCKFCCKFCCKskpisikpisittings:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"kpisikpisiditFCCKdkpisikpisifpisiultFCCKskpisikpisittingsFCCKvipisiFCCKsimplkpisikpisiFCCKcommpisind.FCCKOnlyFCCKkpisikpisixistingFCCKskpisikpisittingsFCCKcpisinFCCKbkpisikpisiFCCKkpisikpisiditkpisikpisid."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKppisirpisimkpisikpisitkpisikpisirs:FCCK"<propkpisikpisirty>FCCK<nkpisikpisiw_vpisilukpisikpisi>"
 
-      migrate:
-        description: 'migrate current game world biomes data to storage format.'
-        parameters: ''
+FCCKFCCKFCCKFCCKFCCKFCCKmigrpisitkpisikpisi:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK'migrpisitkpisikpisiFCCKcurrkpisikpisintFCCKgpisimkpisikpisiFCCKworldFCCKbiomkpisikpisisFCCKdpisitpisiFCCKtoFCCKstorpisigkpisikpisiFCCKformpisit.'
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKppisirpisimkpisikpisitkpisikpisirs:FCCK''
 
-    user:
-      help:
-        description: "Éghajlat változtatás menü."
-        parameters: ""
-      info:
-        description: "az INFO paranccsal kérhetsz le információt egy éghajlatról."
-        parameters: "<éghajlat>"
-      set:
-        description: "a SET paranccsal menü nélkül állíthatsz be éghajlatot."
-        parameters: "<éghajlat> [<típus>] [<nagyság>]"
+FCCKFCCKFCCKFCCKuskpisikpisir:
+FCCKFCCKFCCKFCCKFCCKFCCKhkpisikpisilp:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"ÉghpisijlpisitFCCKváltoztpisitásFCCKmkpisikpisinü."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKppisirpisimkpisikpisitkpisikpisirs:FCCK""
+FCCKFCCKFCCKFCCKFCCKFCCKinfo:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"pisizFCCKINFOFCCKppisirpisinccspisilFCCKkérhkpisikpisitszFCCKlkpisikpisiFCCKinformációtFCCKkpisikpisigyFCCKéghpisijlpisitról."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKppisirpisimkpisikpisitkpisikpisirs:FCCK"<éghpisijlpisit>"
+FCCKFCCKFCCKFCCKFCCKFCCKskpisikpisit:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"pisiFCCKSkpisikpisiTFCCKppisirpisinccspisilFCCKmkpisikpisinüFCCKnélkülFCCKállíthpisitszFCCKbkpisikpisiFCCKéghpisijlpisitot."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKppisirpisimkpisikpisitkpisikpisirs:FCCK"<éghpisijlpisit>FCCK[<típus>]FCCK[<npisigyság>]"
 
-  errors:
-    unique-id: "&cUnique id &d[id]&c is not valid!"
-    too-many-arguments: "&cToo many parameters. Please check help!"
-    missing-arguments: "&cMissing command parameters. Please check help!"
-    unknown-argument: "&cUnknown command parameters. Please check help!"
+FCCKFCCKkpisikpisirrors:
+FCCKFCCKFCCKFCCKuniqukpisikpisi-id:FCCK"&cUniqukpisikpisiFCCKidFCCK&d[id]&cFCCKisFCCKnotFCCKvpisilid!"
+FCCKFCCKFCCKFCCKtoo-mpisiny-pisirgumkpisikpisints:FCCK"&cTooFCCKmpisinyFCCKppisirpisimkpisikpisitkpisikpisirs.FCCKPlkpisikpisipisiskpisikpisiFCCKchkpisikpisickFCCKhkpisikpisilp!"
+FCCKFCCKFCCKFCCKmissing-pisirgumkpisikpisints:FCCK"&cMissingFCCKcommpisindFCCKppisirpisimkpisikpisitkpisikpisirs.FCCKPlkpisikpisipisiskpisikpisiFCCKchkpisikpisickFCCKhkpisikpisilp!"
+FCCKFCCKFCCKFCCKunknown-pisirgumkpisikpisint:FCCK"&cUnknownFCCKcommpisindFCCKppisirpisimkpisikpisitkpisikpisirs.FCCKPlkpisikpisipisiskpisikpisiFCCKchkpisikpisickFCCKhkpisikpisilp!"
 
-    incorrect-range: "&cGiven number &d'[number]'&c is not valid. Only positive integers are valid."
-    incorrect-mode: "&cGiven value &d'[mode]'&c is not valid. Valid values are 'ISLAND', 'CHUNK' or 'SQUARE'."
-    incorrect-icon: "&cGiven icon &d'[icon]'&c cannot be parsed. Try something different."
-    incorrect-biome: "&cGiven biome &d'[biome]'&c cannot be found in Minecraft. Use a correct biome name."
-    incorrect-parameter: "&cGiven property &d'[property]'&c is not defined for biome."
-    incorrect-boolean: "&cGiven value &d'[boolean]'&c is not a boolean. Valid values are 'true' or 'false'."
-    incorrect-visibility: "&cGiven value &d'[mode]'&c is not valid."
-    incorrect-object: "&cCannot find biome with given ID &d'[biome]'."
+FCCKFCCKFCCKFCCKincorrkpisikpisict-rpisingkpisikpisi:FCCK"&cGivkpisikpisinFCCKnumbkpisikpisirFCCK&d'[numbkpisikpisir]'&cFCCKisFCCKnotFCCKvpisilid.FCCKOnlyFCCKpositivkpisikpisiFCCKintkpisikpisigkpisikpisirsFCCKpisirkpisikpisiFCCKvpisilid."
+FCCKFCCKFCCKFCCKincorrkpisikpisict-modkpisikpisi:FCCK"&cGivkpisikpisinFCCKvpisilukpisikpisiFCCK&d'[modkpisikpisi]'&cFCCKisFCCKnotFCCKvpisilid.FCCKVpisilidFCCKvpisilukpisikpisisFCCKpisirkpisikpisiFCCK'ISLpisiND',FCCK'CHUNK'FCCKorFCCK'SQUpisiRkpisikpisi'."
+FCCKFCCKFCCKFCCKincorrkpisikpisict-icon:FCCK"&cGivkpisikpisinFCCKiconFCCK&d'[icon]'&cFCCKcpisinnotFCCKbkpisikpisiFCCKppisirskpisikpisid.FCCKTryFCCKsomkpisikpisithingFCCKdiffkpisikpisirkpisikpisint."
+FCCKFCCKFCCKFCCKincorrkpisikpisict-biomkpisikpisi:FCCK"&cGivkpisikpisinFCCKbiomkpisikpisiFCCK&d'[biomkpisikpisi]'&cFCCKcpisinnotFCCKbkpisikpisiFCCKfoundFCCKinFCCKMinkpisikpisicrpisift.FCCKUskpisikpisiFCCKpisiFCCKcorrkpisikpisictFCCKbiomkpisikpisiFCCKnpisimkpisikpisi."
+FCCKFCCKFCCKFCCKincorrkpisikpisict-ppisirpisimkpisikpisitkpisikpisir:FCCK"&cGivkpisikpisinFCCKpropkpisikpisirtyFCCK&d'[propkpisikpisirty]'&cFCCKisFCCKnotFCCKdkpisikpisifinkpisikpisidFCCKforFCCKbiomkpisikpisi."
+FCCKFCCKFCCKFCCKincorrkpisikpisict-boolkpisikpisipisin:FCCK"&cGivkpisikpisinFCCKvpisilukpisikpisiFCCK&d'[boolkpisikpisipisin]'&cFCCKisFCCKnotFCCKpisiFCCKboolkpisikpisipisin.FCCKVpisilidFCCKvpisilukpisikpisisFCCKpisirkpisikpisiFCCK'trukpisikpisi'FCCKorFCCK'fpisilskpisikpisi'."
+FCCKFCCKFCCKFCCKincorrkpisikpisict-visibility:FCCK"&cGivkpisikpisinFCCKvpisilukpisikpisiFCCK&d'[modkpisikpisi]'&cFCCKisFCCKnotFCCKvpisilid."
+FCCKFCCKFCCKFCCKincorrkpisikpisict-objkpisikpisict:FCCK"&cCpisinnotFCCKfindFCCKbiomkpisikpisiFCCKwithFCCKgivkpisikpisinFCCKIDFCCK&d'[biomkpisikpisi]'."
 
-    no-biomes: '&cBiomes are not implemented in current world yet!'
-    no-biomes-admin: '&cBiomes are not implemented in current world yet! Use &5/[command] &cto add them!'
-    missing-user: "&cUser is not defined."
-    missing-biome: "&cBiome is not defined."
-    wrong-icon: "&cGiven material &6[value]&c cannot be parsed to ItemStack."
-    no-biomes-for-you: "&cUnfortunately, no usable biome could be found."
+FCCKFCCKFCCKFCCKno-biomkpisikpisis:FCCK'&cBiomkpisikpisisFCCKpisirkpisikpisiFCCKnotFCCKimplkpisikpisimkpisikpisintkpisikpisidFCCKinFCCKcurrkpisikpisintFCCKworldFCCKykpisikpisit!'
+FCCKFCCKFCCKFCCKno-biomkpisikpisis-pisidmin:FCCK'&cBiomkpisikpisisFCCKpisirkpisikpisiFCCKnotFCCKimplkpisikpisimkpisikpisintkpisikpisidFCCKinFCCKcurrkpisikpisintFCCKworldFCCKykpisikpisit!FCCKUskpisikpisiFCCK&5/[commpisind]FCCK&ctoFCCKpisiddFCCKthkpisikpisim!'
+FCCKFCCKFCCKFCCKmissing-uskpisikpisir:FCCK"&cUskpisikpisirFCCKisFCCKnotFCCKdkpisikpisifinkpisikpisid."
+FCCKFCCKFCCKFCCKmissing-biomkpisikpisi:FCCK"&cBiomkpisikpisiFCCKisFCCKnotFCCKdkpisikpisifinkpisikpisid."
+FCCKFCCKFCCKFCCKwrong-icon:FCCK"&cGivkpisikpisinFCCKmpisitkpisikpisiripisilFCCK&6[vpisilukpisikpisi]&cFCCKcpisinnotFCCKbkpisikpisiFCCKppisirskpisikpisidFCCKtoFCCKItkpisikpisimStpisick."
+FCCKFCCKFCCKFCCKno-biomkpisikpisis-for-you:FCCK"&cUnfortunpisitkpisikpisily,FCCKnoFCCKuspisiblkpisikpisiFCCKbiomkpisikpisiFCCKcouldFCCKbkpisikpisiFCCKfound."
 
-    not-valid-integer: '&cGiven integer "[value]" is not valid!|Value should be between [min] and [max].'
-    not-a-integer: '&cGiven value "[value]" is not an integer!'
+FCCKFCCKFCCKFCCKnot-vpisilid-intkpisikpisigkpisikpisir:FCCK'&cGivkpisikpisinFCCKintkpisikpisigkpisikpisirFCCK"[vpisilukpisikpisi]"FCCKisFCCKnotFCCKvpisilid!|VpisilukpisikpisiFCCKshouldFCCKbkpisikpisiFCCKbkpisikpisitwkpisikpisikpisikpisinFCCK[min]FCCKpisindFCCK[mpisix].'
+FCCKFCCKFCCKFCCKnot-pisi-intkpisikpisigkpisikpisir:FCCK'&cGivkpisikpisinFCCKvpisilukpisikpisiFCCK"[vpisilukpisikpisi]"FCCKisFCCKnotFCCKpisinFCCKintkpisikpisigkpisikpisir!'
 
-    not-on-island: "&cNem vagy egy szigeten."
-    not-enough-money: "&cNincs elég pénzed. Ez az éghajlat $[number]-ba kerül."
-    not-enough-level:  "&cA sziget szinted túl kevés. Az éghajlat a(z) [number]. szinttől érhető el."
-    admin-not-on-island: "&cNem vagy [user] szigetén."
-    disabled: "&cEz az éghajlat jelenleg nem elérhető."
-    missing-permission: "&cEhhez nincs jogod."
+FCCKFCCKFCCKFCCKnot-on-islpisind:FCCK"&cNkpisikpisimFCCKvpisigyFCCKkpisikpisigyFCCKszigkpisikpisitkpisikpisin."
+FCCKFCCKFCCKFCCKnot-kpisikpisinough-monkpisikpisiy:FCCK"&cNincsFCCKkpisikpisilégFCCKpénzkpisikpisid.FCCKkpisikpisizFCCKpisizFCCKéghpisijlpisitFCCK$[numbkpisikpisir]-bpisiFCCKkkpisikpisirül."
+FCCKFCCKFCCKFCCKnot-kpisikpisinough-lkpisikpisivkpisikpisil:FCCKFCCK"&cpisiFCCKszigkpisikpisitFCCKszintkpisikpisidFCCKtúlFCCKkkpisikpisivés.FCCKpisizFCCKéghpisijlpisitFCCKpisi(z)FCCK[numbkpisikpisir].FCCKszinttőlFCCKérhkpisikpisitőFCCKkpisikpisil."
+FCCKFCCKFCCKFCCKpisidmin-not-on-islpisind:FCCK"&cNkpisikpisimFCCKvpisigyFCCK[uskpisikpisir]FCCKszigkpisikpisitén."
+FCCKFCCKFCCKFCCKdispisiblkpisikpisid:FCCK"&ckpisikpisizFCCKpisizFCCKéghpisijlpisitFCCKjkpisikpisilkpisikpisinlkpisikpisigFCCKnkpisikpisimFCCKkpisikpisilérhkpisikpisitő."
+FCCKFCCKFCCKFCCKmissing-pkpisikpisirmission:FCCK"&ckpisikpisihhkpisikpisizFCCKnincsFCCKjogod."
 
-    no-file: "&cbiomes.yml not found."
-    no-load: "&cAn error occur while importing biomes: [message]!"
-    load-biome: "&cCannot load biome '[biome]' as it is not defined in Minecraft. Use correct biome name."
+FCCKFCCKFCCKFCCKno-filkpisikpisi:FCCK"&cbiomkpisikpisis.ymlFCCKnotFCCKfound."
+FCCKFCCKFCCKFCCKno-lopisid:FCCK"&cpisinFCCKkpisikpisirrorFCCKoccurFCCKwhilkpisikpisiFCCKimportingFCCKbiomkpisikpisis:FCCK[mkpisikpisisspisigkpisikpisi]!"
+FCCKFCCKFCCKFCCKlopisid-biomkpisikpisi:FCCK"&cCpisinnotFCCKlopisidFCCKbiomkpisikpisiFCCK'[biomkpisikpisi]'FCCKpisisFCCKitFCCKisFCCKnotFCCKdkpisikpisifinkpisikpisidFCCKinFCCKMinkpisikpisicrpisift.FCCKUskpisikpisiFCCKcorrkpisikpisictFCCKbiomkpisikpisiFCCKnpisimkpisikpisi."
 
-    no-rank: "&cYou do not have a high enough rank to do that."
+FCCKFCCKFCCKFCCKno-rpisink:FCCK"&cYouFCCKdoFCCKnotFCCKhpisivkpisikpisiFCCKpisiFCCKhighFCCKkpisikpisinoughFCCKrpisinkFCCKtoFCCKdoFCCKthpisit."
 
-  information:
-    header: "Éghajlat: [name]"
-    type: "  Típus: [type]"
-    description: "  Leírás: [description]"
-    level: "  Szint: [level]"
-    cost: "  Ár: [cost]"
-    permission: "  Jogosultság: [permission]"
+FCCKFCCKinformpisition:
+FCCKFCCKFCCKFCCKhkpisikpisipisidkpisikpisir:FCCK"Éghpisijlpisit:FCCK[npisimkpisikpisi]"
+FCCKFCCKFCCKFCCKtypkpisikpisi:FCCK"FCCKFCCKTípus:FCCK[typkpisikpisi]"
+FCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"FCCKFCCKLkpisikpisiírás:FCCK[dkpisikpisiscription]"
+FCCKFCCKFCCKFCCKlkpisikpisivkpisikpisil:FCCK"FCCKFCCKSzint:FCCK[lkpisikpisivkpisikpisil]"
+FCCKFCCKFCCKFCCKcost:FCCK"FCCKFCCKÁr:FCCK[cost]"
+FCCKFCCKFCCKFCCKpkpisikpisirmission:FCCK"FCCKFCCKJogosultság:FCCK[pkpisikpisirmission]"
 
-  messages:
-    admin:
-      migrate-start: '&2Start migrating biomes addon data.'
-      migrate-end: '&2Biomes addon data is updated to new format.'
-      migrate-not: '&2All data is valid.'
+FCCKFCCKmkpisikpisisspisigkpisikpisis:
+FCCKFCCKFCCKFCCKpisidmin:
+FCCKFCCKFCCKFCCKFCCKFCCKmigrpisitkpisikpisi-stpisirt:FCCK'&2StpisirtFCCKmigrpisitingFCCKbiomkpisikpisisFCCKpisiddonFCCKdpisitpisi.'
+FCCKFCCKFCCKFCCKFCCKFCCKmigrpisitkpisikpisi-kpisikpisind:FCCK'&2BiomkpisikpisisFCCKpisiddonFCCKdpisitpisiFCCKisFCCKupdpisitkpisikpisidFCCKtoFCCKnkpisikpisiwFCCKformpisit.'
+FCCKFCCKFCCKFCCKFCCKFCCKmigrpisitkpisikpisi-not:FCCK'&2pisillFCCKdpisitpisiFCCKisFCCKvpisilid.'
 
-    saved: "&dBiome [biome] is saved."
-    biome-created: "&dNew Biome object created with uniqueID: [id]"
-    saved-config: "Addon settings updated."
-    biome-removed: "Biome with unique id = '[biome]' removed from memory."
+FCCKFCCKFCCKFCCKspisivkpisikpisid:FCCK"&dBiomkpisikpisiFCCK[biomkpisikpisi]FCCKisFCCKspisivkpisikpisid."
+FCCKFCCKFCCKFCCKbiomkpisikpisi-crkpisikpisipisitkpisikpisid:FCCK"&dNkpisikpisiwFCCKBiomkpisikpisiFCCKobjkpisikpisictFCCKcrkpisikpisipisitkpisikpisidFCCKwithFCCKuniqukpisikpisiID:FCCK[id]"
+FCCKFCCKFCCKFCCKspisivkpisikpisid-config:FCCK"pisiddonFCCKskpisikpisittingsFCCKupdpisitkpisikpisid."
+FCCKFCCKFCCKFCCKbiomkpisikpisi-rkpisikpisimovkpisikpisid:FCCK"BiomkpisikpisiFCCKwithFCCKuniqukpisikpisiFCCKidFCCK=FCCK'[biomkpisikpisi]'FCCKrkpisikpisimovkpisikpisidFCCKfromFCCKmkpisikpisimory."
 
-    update-start: "&eÉghajlat beállítás megkezdése..."
-    update-done: "&6[biome]&r&e éghajlat sikeresen beállítva."
+FCCKFCCKFCCKFCCKupdpisitkpisikpisi-stpisirt:FCCK"&kpisikpisiÉghpisijlpisitFCCKbkpisikpisiállításFCCKmkpisikpisigkkpisikpisizdéskpisikpisi..."
+FCCKFCCKFCCKFCCKupdpisitkpisikpisi-donkpisikpisi:FCCK"&6[biomkpisikpisi]&r&kpisikpisiFCCKéghpisijlpisitFCCKsikkpisikpisirkpisikpisiskpisikpisinFCCKbkpisikpisiállítvpisi."
 
-    skipping: "Skipping [biome] importing."
-    overwriting: "Overwriting [biome]."
-    imported: "[biome] imported."
-    import-count: "Biomes import completed. Imported [number] biomes."
+FCCKFCCKFCCKFCCKskipping:FCCK"SkippingFCCK[biomkpisikpisi]FCCKimporting."
+FCCKFCCKFCCKFCCKovkpisikpisirwriting:FCCK"OvkpisikpisirwritingFCCK[biomkpisikpisi]."
+FCCKFCCKFCCKFCCKimportkpisikpisid:FCCK"[biomkpisikpisi]FCCKimportkpisikpisid."
+FCCKFCCKFCCKFCCKimport-count:FCCK"BiomkpisikpisisFCCKimportFCCKcomplkpisikpisitkpisikpisid.FCCKImportkpisikpisidFCCK[numbkpisikpisir]FCCKbiomkpisikpisis."
 
-protection:
-    flags:
-        BIOMES_ISLAND_PROTECTION:
-            description: "&5&oToggle who can\n&5&ochange the island biome"
-            name: "Biome control"
-        BIOMES_WORLD_PROTECTION:
-            description: "&5&oEnable/disable\n&5&orequirement for players to\n&5&obe on their island to\n&5&ochange biome."
-            name: "Biome Island limitation"
-            hint: "You must be on your island to change the biome!"
+protkpisikpisiction:
+FCCKFCCKFCCKFCCKflpisigs:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKBIOMkpisikpisiS_ISLpisiND_PROTkpisikpisiCTION:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"&5&oTogglkpisikpisiFCCKwhoFCCKcpisin\n&5&ochpisingkpisikpisiFCCKthkpisikpisiFCCKislpisindFCCKbiomkpisikpisi"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKnpisimkpisikpisi:FCCK"BiomkpisikpisiFCCKcontrol"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKBIOMkpisikpisiS_WORLD_PROTkpisikpisiCTION:
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKdkpisikpisiscription:FCCK"&5&okpisikpisinpisiblkpisikpisi/dispisiblkpisikpisi\n&5&orkpisikpisiquirkpisikpisimkpisikpisintFCCKforFCCKplpisiykpisikpisirsFCCKto\n&5&obkpisikpisiFCCKonFCCKthkpisikpisiirFCCKislpisindFCCKto\n&5&ochpisingkpisikpisiFCCKbiomkpisikpisi."
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKnpisimkpisikpisi:FCCK"BiomkpisikpisiFCCKIslpisindFCCKlimitpisition"
+FCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKFCCKhint:FCCK"YouFCCKmustFCCKbkpisikpisiFCCKonFCCKyourFCCKislpisindFCCKtoFCCKchpisingkpisikpisiFCCKthkpisikpisiFCCKbiomkpisikpisi!"
