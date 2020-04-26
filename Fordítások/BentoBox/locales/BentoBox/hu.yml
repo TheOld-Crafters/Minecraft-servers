@@ -258,6 +258,13 @@ commands:
       confirmation: '&cBiztos vagy benne, hogy beállítod ezt a szigetet kezdőhelynek
         ebben a világban?'
       success: '&aSuccessfully set this island as the spawn for this world.'
+    setspawnpoint:
+      description: set current location as spawn point for this island
+      no-island-here: '&c There is no island here.'
+      confirmation: '&c Are you sure you want to set this location as the spawn point
+        for this island?'
+      success: '&a Successfully set this location as the spawn point for this island.'
+      island-spawnpoint-changed: '&a [user] changed this island spawn point.'
     settings:
       parameters: '[player]'
       description: open system settings or island settings for player
@@ -414,6 +421,8 @@ commands:
       warning: '[prefix_bentobox]&c Warning: Reloading may cause instability, so if
         you see errors afterwards, restart the server.'
       unknown-addon: '[prefix_bentobox]&c Unknown addon!'
+      locales:
+        description: reloads locales
     version:
       plugin-version: '&2BentoBox version: &3[version]'
       description: displays BentoBox and addons versions
@@ -704,7 +713,7 @@ protection:
   command-is-banned: Command is banned for visitors
   flags:
     ANIMAL_SPAWN:
-      description: Toggle spawning
+      description: Toggle natural spawning
       name: Animal spawning
     ANVIL:
       description: Toggle interaction
@@ -1029,7 +1038,7 @@ protection:
       description: Toggle minecart interactions
       hint: Minecart interaction disabled
     MONSTER_SPAWN:
-      description: Toggle spawning
+      description: Toggle natural spawning
       name: Monster spawning
     MOUNT_INVENTORY:
       description: |-
