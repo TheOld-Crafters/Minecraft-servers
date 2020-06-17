@@ -1,129 +1,5 @@
-# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-# Shopkeepers Config
-# Wiki: https://github.com/Shopkeepers/Shopkeepers-Wiki/wiki/Configuration
-# The wiki also explains how item data gets specified inside the config.
-# *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-# 
-# Determines the required config migrations. Do not edit manually!
-config-version: 2
-debug: false
-enable-metrics: true
-file-encoding: UTF-8
-save-instantly: true
-enable-spawn-verifier: false
-bypass-spawn-blocking: true
-bypass-shop-interaction-blocking: false
-enable-world-guard-restrictions: false
-require-world-guard-allow-shop-flag: false
-enable-towny-restrictions: false
-shop-creation-item: VILLAGER_SPAWN_EGG
-prevent-shop-creation-item-regular-usage: false
-deleting-player-shop-returns-creation-item: false
-create-player-shop-with-command: false
-require-chest-recently-placed: true
-max-chest-distance: 15
-protect-chests: false
-delete-shopkeeper-on-break-chest: false
-max-shops-per-player: 0
-max-shops-perm-options: 5,15,25
-player-shopkeeper-inactive-days: 0
-enabled-living-shops:
-- VILLAGER
-- COW
-- MUSHROOM_COW
-- SHEEP
-- PIG
-- CHICKEN
-- OCELOT
-- RABBIT
-- WOLF
-- SNOWMAN
-- IRON_GOLEM
-- POLAR_BEAR
-- BLAZE
-- SILVERFISH
-- SKELETON
-- STRAY
-- WITHER_SKELETON
-- SPIDER
-- CAVE_SPIDER
-- CREEPER
-- WITCH
-- ENDERMAN
-- ZOMBIE
-- ZOMBIE_VILLAGER
-- PIG_ZOMBIE
-- HUSK
-- GIANT
-- GHAST
-- SLIME
-- MAGMA_CUBE
-- SQUID
-- HORSE
-- MULE
-- DONKEY
-- SKELETON_HORSE
-- ZOMBIE_HORSE
-- EVOKER
-- VEX
-- VINDICATOR
-- ILLUSIONER
-- PARROT
-- TURTLE
-- PHANTOM
-- COD
-- SALMON
-- PUFFERFISH
-- TROPICAL_FISH
-- DROWNED
-- DOLPHIN
-- CAT
-- PANDA
-- PILLAGER
-- RAVAGER
-- LLAMA
-- TRADER_LLAMA
-- WANDERING_TRADER
-- FOX
-- BEE
-use-legacy-mob-behavior: false
-disable-gravity: false
-gravity-chunk-range: 4
-silence-living-shop-entities: true
-show-nameplates: true
-always-show-nameplates: false
-nameplate-prefix: '&a'
-enable-citizen-shops: false
-enable-sign-shops: false
-enable-sign-post-shops: false
-sign-shop-first-line: '[SHOP]'
-name-regex: .*
-naming-of-player-shops-via-item: false
-allow-renaming-of-player-npc-shops: false
-editor-title: Boltos Szerkesztő
-name-item: NAME_TAG
-enable-chest-option-on-player-shop: false
-chest-item: CHEST
-delete-item: BONE
-disable-other-villagers: false
-block-villager-spawns: false
-hire-other-villagers: false
-hire-item: EMERALD
-hire-other-villagers-costs: 1
-for-hire-title: For Hire
-hire-require-creation-permission: true
-prevent-trading-with-own-shop: true
-prevent-trading-while-owner-is-online: false
-use-strict-item-comparison: false
-enable-purchase-logging: false
-tax-rate: 0
-tax-round-up: false
-currency-item: EMERALD
-zero-currency-item: BARRIER
-high-currency-item: EMERALD_BLOCK
-high-currency-value: 9
-high-currency-min-cost: 20
-language: hu
+# Language: hu
+
 msg-creation-item-selected: |
   &aJobb klikk a bolt típus kiválasztásához.
   &aShift + jobb klikk az objektum típusának kiválasztásához.
@@ -262,11 +138,6 @@ msg-command-description-transfer: Átadja a bolt tulajdonjogát.
 msg-command-description-settradeperm: Beállítja, eltávolítja (-) vagy megjeleníti
   (?) a kereskedési engedélyeket.
 msg-command-description-setforhire: Beállítja az egyik boltod eladásra.
-prevent-item-movement: true
-previous-page-item: WRITABLE_BOOK
-next-page-item: WRITABLE_BOOK
-current-page-item: WRITABLE_BOOK
-trade-setup-item: PAPER
 msg-shop-type-admin-regular: Admin bolt
 msg-shop-type-selling: Eladási bolt
 msg-shop-type-buying: Vételi bolt
@@ -357,10 +228,6 @@ msg-ambiguous-player-name-entry: '&c  - ''&e{name}&r&c'' (&6{uuid}&c)'
 msg-ambiguous-player-name-more: '&c  - ....'
 msg-command-description-give: Bolt készítéséhez tárgy megadása az adott játékosnak.
 msg-command-description-remote-edit: Visszavonhatatlanul módosít egy boltot.
-disable-zombie-villager-curing: false
-disable-wandering-traders: false
-block-wandering-trader-spawns: false
-hire-wandering-traders: false
 msg-zombie-villager-curing-disabled: '&7A zombi falusiak gyógyítása letiltva.'
 msg-button-sign-variant: '&aVálassz tábla fajtát'
 msg-button-sign-variant-lore:
@@ -460,10 +327,5 @@ msg-button-zombie-villager-profession: '&aZombi falusi szakmájának kiválaszt�
 msg-button-zombie-villager-profession-lore:
 - Megváltoztatja a szakmáját
 - a zombi falusinak
-zero-high-currency-item: BARRIER
-debug-options: []
-check-shop-interaction-result: false
-register-world-guard-allow-shop-flag: true
-increment-villager-statistics: false
 msg-command-argument-requires-player: '&cArgument ''&e{argumentFormat}&c'' requires
   a player to execute the command.'
