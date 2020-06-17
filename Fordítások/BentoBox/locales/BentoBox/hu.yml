@@ -4,6 +4,8 @@
 meta:
   authors:
   - poma123
+  - Nicolettie
+  - andris155
   banner: WHITE_BANNER:1:STRIPE_TOP:RED:STRIPE_BOTTOM:LIME
 prefixes:
   bentobox: '&6 BentoBox &7 &l > &r '
@@ -13,6 +15,8 @@ general:
   errors:
     command-cancelled: '&cParancs megszakítva.'
     no-permission: '&cEhhez nincs jogod. (&7[permission]&c).'
+    insufficient-rank: '&cA rangod nem elég magas ahhoz, hogy ezt megtehesd! (&7 [rank]&c
+      )'
     use-in-game: '&cEz a parancs csak a játékban elérhető.'
     no-team: '&cNincs csapatod!'
     no-island: '&cNincs szigeted!'
@@ -51,46 +55,46 @@ commands:
     resets:
       description: a játékos sziget újrakezdéseinek szerkesztése
       set:
-        description: sets how many time this player reset his island
+        description: a játékos sziget újrakezdési számának beállítása
         parameters: <player> <resets>
-        success: '&aSuccessfully set &b[name]&a''s resets to &b[number]&a.'
+        success: '&aSikeresen beállítva &b[name]&a-nak/nek újrakezdése &b[number]&a-ra/re.'
       reset:
-        description: resets how many time this player reset his island to 0
+        description: újrakezdési szám visszaállítása ennek a játékosnak 0-ra
         parameters: <játékos>
-        success-everyone: '&aSuccessfully reset &beveryone&a''s resets to &b0&a.'
-        success: '&aSuccessfully reset &b[name]&a''s resets to &b0&a.'
+        success-everyone: '&aSikeresen visszaállítva &beveryone&a-nek &b0&a-ra.'
+        success: '&aSikeresen visszaállítáva &b[name]&a-nak/nek &b0&a-ra.'
       add:
-        description: adds to how many times this player reset his island
+        description: növeli a játékos általi sziget újrakezdésének számát
         parameters: <player> <resets>
-        success: '&aSuccessfully added &b[number] &aresets to &b[name], increasing
-          the total to &b[total]&a resets.'
+        success: '&aSikeresen hozzáadva &b[number] &aújrakezdés &b[name]-nak/nek,
+          növelve &b[total]&a újrakezdésre.'
       remove:
-        description: removes from how many times this player reset his island
+        description: a játékos általi sziget újrakezdés visszaállítása
         parameters: <player> <resets>
-        success: '&aSuccessfully removed &b[number] &aresets to &b[name], decreasing
-          the total to &b[total]&a resets.'
+        success: '&aSikeresen eltávolítva &b[number] &aújrakezdés &b[name]-tól/től,
+          csökkentve a &b[total]&a újrakezdést.'
     purge:
       parameters: '[days]'
-      description: purge islands abandoned for more than [days]
-      days-or-more: Must be at least 1 day or more
-      purgable-islands: '&a Found &b [number] &a purgable islands.'
-      purge-in-progress: '&c Purging in progress. Use &b /[label] purge stop &c to
-        cancel.'
-      number-error: '&cArgument must be a number of days'
-      confirm: '&d Type &b /[label] purge confirm &d to start purging'
-      completed: '&a Purging stopped.'
-      see-console-for-status: '&a Purge started. See console for status or use &b
-        /[label] purge status&a.'
+      description: 'Megtisztítja a szigeteket amik elhagyottak voltak ennél több napja:
+        [days]'
+      days-or-more: Legalább 1 vagy több napnak kell lennie
+      purgable-islands: '&aTalálat &b[number]&amegtisztítandó szigetre.'
+      purge-in-progress: '&cPurge folyamatban. Használd a &b/[label] purge stop-ot
+        &c a visszavonáshoz'
+      number-error: '&cA megadott érték a napok száma kell legyen'
+      confirm: '&dÍrd be,hogy [label] purge confirm a megtisztítás elkezdéséhez'
+      completed: '&aMegtisztítás megállítva'
+      see-console-for-status: Megtisztítás elkezdődött. Nézd a konzolt a státuszáról
       no-purge-in-progress: '&c There is currently no purge in progress.'
       protect:
-        description: toggle island purge protection
-        move-to-island: '&cMove to an island first!'
-        protecting: '&aPurge-protecting island'
-        unprotecting: '&aRemoving purge protection'
+        description: sziget tisztítási védelem kapcsolása
+        move-to-island: '&cMenj egy szigetre először!'
+        protecting: '&aTisztítási-védelmezett sziget'
+        unprotecting: '&aTisztítási védelem eltávolítása.'
       stop:
-        description: stop a purge in progress
-        stopping: Stopping the purge
-        no-purge-in-progress: '&cNo purge in progress!'
+        description: megtisztítási folyamat leállítása
+        stopping: Purge leállítása
+        no-purge-in-progress: '&cNincs folyamatban tisztítás!'
       unowned:
         description: purge unowned islands
         unowned-islands: '&a Found &b [number] &a unowned islands.'
@@ -102,34 +106,36 @@ commands:
       add:
         parameters: <owner> <player>
         description: játékos hozzáadása egy sziget tulajdonosának csapatához
-        name-not-owner: '&c[name] is not the owner.'
-        name-has-island: '&c[name] has an island. Unregister or delete them first!'
-        success: '&b[name]&a has been added to &b[owner]&a''s island.'
+        name-not-owner: '&c[name] nem a tulajdonos.'
+        name-has-island: '&c[name]-nek már van egy szigete. Először lépjen ki vagy
+          törölje!'
+        success: '&b[name]&a hozzáadva &b[owner]&a szigetéhez.'
       disband:
         parameters: <owner>
         description: sziget tulajdonos csapatának feloszlatása
-        use-disband-owner: '&cNot owner! Use disband [owner].'
+        use-disband-owner: '&cNem tulajdonos! Oszlassa fel [owner].'
         disbanded: '&cEgy adminisztrátor feloszlatta a csapatodat!'
-        success: '&b[name]&a''s team has been disbanded.'
+        success: '&b[name]&a csapata feloszlott.'
       kick:
         parameters: <team player>
         description: játékos kidobása egy csapatból
-        cannot-kick-owner: '&cYou cannot kick the owner. Kick members first.'
-        not-in-team: '&cThis player is not in a team.'
+        cannot-kick-owner: '&cNem tudod kirúgni a tulajdonost. A tagokat rúgd ki először.'
+        not-in-team: '&cEz a játékos nincs a csapatban.'
         admin-kicked: '&cEgy adminisztrátor kidobott téged a csapatból.'
-        success: '&b[name] &ahas been kicked from &b[owner]&a''s island.'
+        success: '&b[name] &aki lett rúgva &b[owner]&a csapatából.'
       setowner:
         parameters: <player>
         description: tulajdonosi jog átadása
         already-owner: '&cJelenleg is ez a játékos a sziget tulajdonosa!'
-        success: '&b[name]&a is now the owner of this island.'
+        success: '&b[name]&a lett a sziget tolajdonosa.'
     range:
       description: szigetek távolságának megtekintése
       invalid-value:
-        too-low: '&cThe protection range must be greater than &b 1&c !'
-        too-high: '&cThe protection range should be equal or less than &b [number]&c
+        too-low: '&cA levédési távolságnak nagyobbnak kell lennie, mint &b 1&c !'
+        too-high: '&cA levédési távolságnakk kisebb vagy egyenlőnek kell lennie, mint
+          &b [number]&c !'
+        same-as-before: '&cA levédési távolság már beállítva ennyire: &b [number]&c
           !'
-        same-as-before: '&cThe protection range is already set to &b [number]&c !'
       display:
         already-off: '&cIndikátorok már ki vannak kapcsolva'
         already-on: '&cIndikátorok már be vannak kapcsolva'
@@ -147,32 +153,33 @@ commands:
       reset:
         parameters: <player>
         description: visszaállítja a sziget alapértelmezett levédésének távolságát.
-        success: '&2Reset island protection range to [number]'
+        success: '&2A sziget alapértelmezett levédési távolsága [number]'
       add:
-        description: increases the island protected range
+        description: növeli a sziget levédésének távolságát.
         parameters: <player> <range>
-        success: '&a Successfully increased &b [name]&a ''s island protected range
+        success: '&a Sikeresen növelve &b [name]&a szigetének levédési távolsága.
           to &b [total] &7 (&b +[number]&7 )&a .'
       remove:
-        description: decreases the island protected range
+        description: csökkenti a sziget levédésének távolságát.
         parameters: <player> <range>
-        success: '&a Successfully decreased &b [name]&a ''s island protected range
+        success: '&a Sikeresen csökkentve &b [name]&a szigetének levédési távolsága.
           to &b [total] &7 (&b -[number]&7 )&a .'
     register:
       parameters: <player>
       description: játékos regisztrálása a tulajdonos nélküli szigetre, amelyen tartózkodsz
-      registered-island: '&aJátékos regisztrálva: [xyz].'
-      reserved-island: '&aReserved island at [xyz] for player.'
+      registered-island: '&a[name] regisztrálva: [xyz].'
+      reserved-island: '&aFoglalt sziget: [xyz] neki [name].'
       already-owned: '&cEz a sziget már valaki tulajdonában van!'
       no-island-here: '&cItt nem található sziget. Erősítsd meg a létrehozáshoz.'
       in-deletion: '&cEz a terület törlés alatt van. Próbáld meg később.'
-      cannot-make-island: '&cAn island cannot be placed here, sorry. See console for
-        possible errors.'
-      island-is-spawn: '&6Island is spawn. Are you sure? Enter command again to confirm.'
+      cannot-make-island: '&cNem lehet szigetet létrehozni ide, bocsi. Nézd meg a
+        konzolt lehetséges hibákért.'
+      island-is-spawn: '&6Sziget készítése. Biztos vagy benne? Írd be újra a parancsot
+        a megerősítéshez.'
     unregister:
       parameters: <owner>
       description: tulajdonos törlése egy szigetről, a blokkok meghagyásával
-      unregistered-island: '&aTulajdonos törölve erről a szigetről: [xyz].'
+      unregistered-island: '&a[name] törölve erről a szigetről: [xyz].'
     info:
       parameters: <játékos>
       description: információ lekérése a szigetről, amelyen tartózkodsz, vagy egy
@@ -189,9 +196,9 @@ commands:
       team-member-format: '&b[name] [rank]'
       island-location: 'Helyzet: [xyz]'
       island-coords: 'Sziget koordináták: [xz1] to [xz2]'
-      islands-in-trash: '&dPlayer has islands in trash.'
+      islands-in-trash: '&dA játékos szigete a kukában van.'
       protection-range: 'Levédés távolsága: [range]'
-      purge-protected: Island is purge protected
+      purge-protected: Purge védelem alatt áll a sziget.
       max-protection-range: 'Eddigi legnagyobb levédés távolság: [range]'
       protection-coords: 'Levédés koordináták: [xz1] to [xz2]'
       is-spawn: A sziget egy kezdőhely sziget.
@@ -199,38 +206,39 @@ commands:
       banned-format: '&c[name]'
       unowned: '&cNincs tulajdonos'
     switch:
-      description: switch on/off protection bypass
-      op: '&cOps can always bypass protection. Deop to use command.'
-      removing: Removing protection bypass...
-      adding: Adding protection bypass...
+      description: védelem kikerülés ki/bekapcsolása
+      op: '&cAz op-k mindig megkerülhetik a védelmet. Deoppolj a parancs használatához.'
+      removing: Védelem kikerülés eltávolítása...
+      adding: védelem kikerülés hozzáadása...
     switchto:
       parameters: <player> <number>
-      description: switch player's island to the numbered one in trash
-      out-of-range: '&cNumber must be between 1 and [number]. Use &l[label] trash
-        [player] &r&cto see island numbers'
-      cannot-switch: '&cSwitch failed. See console log for error.'
-      success: '&aSuccessfully switched the player''s island to the specified one.'
+      description: Játékos szigetének cseréje a kukában kijelöltre
+      out-of-range: '&cA számnak 1 és [number] között kell lennie. Használd a &l[label]
+        kukát [player] &r&csziget számainak megtekintéséhez'
+      cannot-switch: '&cCsere sikertelen. A konzol naplóban keresd a hibát.'
+      success: '&aSikeresen kicserélve a játékos szigete a megadott szigetre.'
     trash:
-      no-unowned-in-trash: '&cNo unowned islands in trash'
-      no-islands-in-trash: '&cPlayer has no islands in trash'
+      no-unowned-in-trash: '&cNincs gazdátlan sziget a kukában'
+      no-islands-in-trash: '&cA játékosnak nincs szigete a kukában'
       parameters: '[player]'
-      description: show unowned islands or player's islands in trash
-      title: '&d=========== Islands in Trash ==========='
-      count: '&l&dIsland [number]:'
-      use-switch: '&aUse &l[label] switchto <player> <number>&r&a to switch player
-        to island in trash'
-      use-emptytrash: '&aUse &l[label] emptytrash [player]&r&a to permanently remove
-        trash items'
+      description: Megjeleníti a Gazdátlan szigeteket vagy a játékosok szigeteit a
+        kukában
+      title: '&d=========== Szigetek a Kukában ==========='
+      count: '&l&dSziget [number]:'
+      use-switch: '&aHasználd a &l[label] switchto <player> <number>&r&a-t hogy válts
+        játékos szigetet a kukában'
+      use-emptytrash: '&ahasználd a &l[label] emptytrash [player]&r&a-t, hogy végleg
+        eltávolítsd a kukából a tárgyakat'
     emptytrash:
       parameters: '[player]'
-      description: Clear trash for player, or all unowned islands in trash
-      success: '&aTrash successfully emptied.'
+      description: Kuka űrítése a játékosnak, vagy az összes tulaj nélküli szigetnek.
+      success: '&aA kuka sekeresen kiűrítve.'
     version:
       description: BentoBox kiegészítők és a verziók megtekintése.
     setrange:
       parameters: <player> <range>
-      description: set the range of player's island
-      range-updated: '&aIsland range updated to &b[number]&a.'
+      description: beállítja a játékos szigetének távolságát
+      range-updated: '&aSziget távolság beállítva &b[number]&a-ra/re.'
     reload:
       description: újratöltés
     tp:
@@ -252,26 +260,20 @@ commands:
         &b[name]&a szigetén.'
       name-not-owner: '&b[name]&c nem a sziget tulajdonosa.'
     setspawn:
-      description: egy sziget beállítása kezdőhelynek ebben a világban
+      description: egy sziget beállítása kezdőhelynek ebben a játékmódban
       already-spawn: '&cMár ez a sziget a kezdőhely!'
       no-island-here: '&cItt nem található sziget.'
       confirmation: '&cBiztos vagy benne, hogy beállítod ezt a szigetet kezdőhelynek
         ebben a világban?'
-      success: '&aSuccessfully set this island as the spawn for this world.'
-    setspawnpoint:
-      description: set current location as spawn point for this island
-      no-island-here: '&c There is no island here.'
-      confirmation: '&c Are you sure you want to set this location as the spawn point
-        for this island?'
-      success: '&a Successfully set this location as the spawn point for this island.'
-      island-spawnpoint-changed: '&a [user] changed this island spawn point.'
+      success: '&aSikeresen beállítva kezdőhelynek ez a sziget ebben a világban.'
     settings:
       parameters: '[player]'
-      description: open system settings or island settings for player
+      description: megnyitja a rendszer beállításokat vagy a sziget beállításokat
+        a játékosnak.
     blueprint:
       parameters: <load/copy/paste/pos1/pos2/save>
       description: blueprint fájlok kezelése
-      bedrock-required: '&cAt least one bedrock block must be in a blueprint!'
+      bedrock-required: '&cLegalább egy bedrocknak kell lennie a blueprint-ben!'
       copy-first: '&cMásold a blueprint-et először!'
       file-exists: '&cA fájl már létezik. Felülírod?'
       no-such-file: '&cNincs ilyen fájl!'
@@ -282,172 +284,174 @@ commands:
       set-different-pos: '&cÁllítsd be egy eltérő helyzetet - ez a pozíció már be
         van állítva!'
       need-pos1-pos2: '&cElőször állítsd be a két pozíciót.'
-      copying: '&bCopying blocks...'
+      copying: '&bBlokkok másolása...'
       copied-blocks: '&b[number] blokk másolva a vágólapra'
       look-at-a-block: '&cNézz egy blokkra max. 20 blokk távolságban a beállításhoz.'
-      mid-copy: '&cYou are mid-copy. Wait until the copy is done.'
-      copied-percent: '&6Copied [number]%'
+      mid-copy: '&cA másolás közepén vagy. Várj amíg befejeződik a másolás.'
+      copied-percent: '&6Másolva [number]%'
       copy:
         parameters: '[air]'
-        description: copy the clipboard set by pos1 and pos2 and optionally the air
-          blocks
+        description: másold a vágólapra a pos1 és pos2 beállítását és opcionálisan
+          a levegő blokkokat
       delete:
         parameters: <name>
-        description: delete the blueprint
-        no-blueprint: '&b[name] &c does not exist.'
+        description: blueprint törlése
+        no-blueprint: '&b[name] &c nem létezik.'
         confirmation: |
           &cAre you sure you want to delete this blueprint?
           &cOnce deleted, there is no way to recover it.
-        success: '&aSuccessfully deleted blueprint &b[name]&a.'
+        success: '&aBlueprint sikeresen törölve &b[name]&a.'
       load:
         parameters: <name>
-        description: load blueprint into the clipboard
+        description: betölti a blueprintet a vágólapra
       list:
-        description: list available blueprints
-        no-blueprints: '&cNo blueprints in blueprints folder!'
-        available-blueprints: '&aThese blueprints are available for loading:'
+        description: elérhető blueprintek listázása
+        no-blueprints: '&cNincs blueprint a blueprints mappában!'
+        available-blueprints: '&aEzek a blueprintek elérhetőek betöltésre:'
       origin:
-        description: set the blueprint's origin to your position
+        description: terv eredetének beállítása a pozíciódba
       paste:
-        description: paste the clipboard to your location
-        pasting: '&aPasting...'
+        description: vágólap beillesztése az elhelyezkedésedre
+        pasting: '&aBeillesztés...'
       pos1:
-        description: set 1st corner of cuboid clipboard
+        description: 1. sarok beállítása kocka alakú vágólapra
       pos2:
-        description: set 2nd corner of cuboid clipboard
+        description: 2. sarok beállítása kocka alakú vágólapra
       save:
         parameters: <blueprint name>
-        description: save the copied clipboard
+        description: másolt vágólap mentése
       rename:
         parameters: <blueprint name> <new name>
-        description: rename a blueprint
-        success: '&aBlueprint &b [old] &a has been successfully renamed to &b[name]&a.'
-        pick-different-name: '&cPlease specify a name that is different from the blueprint''s
-          current name.'
+        description: blueprint átnevezése
+        success: '&aBlueprint &b [old] &a sikeresen átnevezve &b[name]&a-ra/re.'
+        pick-different-name: '&cAdj meg egy nevet, amely különbözik a blueprint jelenlegi
+          nevétől.'
       management:
-        back: Back
-        instruction: Click on blueprint then click here
-        title: Blueprint Bundle Manager
-        edit: Click to edit
-        rename: Right-click to rename
-        edit-description: Click to edit description
-        world-name-syntax: '[name] world'
+        back: Vissza
+        instruction: Kattints a blueprintre, majd kattints ide
+        title: Blueprint Csomag Kezelő
+        edit: Kattints a szerkesztéshez
+        rename: Jobb klikk az átnevezéshez
+        edit-description: Kattints a leírás szerkesztéséhez
+        world-name-syntax: '[name] világ'
         world-instructions: |
           Place blueprint
           to right to set
-        trash: Trash
-        trash-instructions: Right click here to delete
-        permission: Permission
-        perm-required: Required
-        perm-not-required: Not Required
+        trash: Kuka
+        trash-instructions: Jobb klikkelj ide a törléshez
+        permission: Engedély
+        perm-required: Szükséges
+        perm-not-required: Nem szükséges
         perm-format: '&e'
-        remove: Right click to remove
+        remove: Jobb klikk az eltávolításhoz
         blueprint-instruction: |
           Click to select,
           then add to bundle.
           Right-click to rename.
-        select-first: Select Blueprint first
-        new-bundle: New Bundle
-        new-bundle-instructions: Click to make a new bundle
+        select-first: Először válassz blueprintet
+        new-bundle: Új csomag
+        new-bundle-instructions: Kattints az új csomag készítéshez
         name:
-          quit: quit
-          prompt: Enter a name, or 'quit' to quit
-          too-long: '&cToo long'
-          pick-a-unique-name: Please pick a more unique name
-          success: Success!
+          quit: kilépés
+          prompt: Irj be nevet, vagy 'quit' a kilépéshez.
+          too-long: '&cTúl hosszú'
+          pick-a-unique-name: Kérlek válassz egyedibb nevet.
+          success: Siker!
           conversation-prefix: '>'
         description:
-          quit: quit
+          quit: kilépés
           instructions: |
             Enter a multi line description for [name]
             and 'quit' on a line by itself to finish.
           default-color: ''
-          success: Success!
-          cancelling: Cancelling
-        slot: '&fPreferred Slot [number]'
+          success: Siker!
+          cancelling: Megszakítás
+        slot: '&fPreferált slot [number]'
         slot-instructions: |
           &aLeft click to increment
           &aRight click to decrement
     resetflags:
       parameters: '[flag]'
-      description: Reset all islands to default flag settings in config.yml
-      confirm: '&4This will reset the flag(s) to default for all islands!'
-      success: '&aSuccessfully reset all islands'' flags to the default settings.'
-      success-one: '&a[name] flag set to default for all islands.'
+      description: Visszaállítja az összes szigetet az alapértelmezett flag beállításokra
+        a config.yml-ben
+      confirm: '&4Ez visszaállítja a flag(ek)et alapértelmezettre minden szigetnek!'
+      success: '&aSikeresen visszaállítva minden sziget flagje az alapértelmezettre.'
+      success-one: '&a[name] flag alapértelmezettre állítva minden szigeten.'
     world:
-      description: Manage world settings
+      description: Világ beállítások kezelése
     delete:
       parameters: <player>
-      description: deletes a player's island
-      cannot-delete-owner: '&cAll island members have to be kicked from the island
-        before deleting it.'
-      deleted-island: '&aIsland at &e[xyz] &ahas been successfully deleted.'
+      description: törli a játékos szigetét
+      cannot-delete-owner: '&cMinden szigettagot ki kell rúgni a szigetről mielőtt
+        törlésre kerül.'
+      deleted-island: '&aA sziget &e[xyz] &asikeresen töröve.'
     why:
       parameters: <játékos>
-      description: toggle console protection debug reporting
-      turning-on: Turning on console debug for [name].
-      turning-off: Turning off console debug for [name].
+      description: console debug jelentés állítása
+      turning-on: 'Console debug bekapcsolása neki: [name].'
+      turning-off: 'Console debug kikapcsolása neki: [name].'
     deaths:
-      description: edit deaths of players
+      description: játékos halálok szerkesztése
       reset:
-        description: resets deaths of the player
+        description: játékos halálainak visszaállítása
         parameters: <játékos>
-        success: '&aSuccessfully reset &b[name]&a''s deaths to &b0&a.'
+        success: '&aSikeresen visszaállítva &b[name]&a halála &b0&a-ra.'
       set:
-        description: sets deaths of the player
+        description: játékos halálainak beállítása
         parameters: <player> <deaths>
-        success: '&aSuccessfully set &b[name]&a''s deaths to &b[number]&a.'
+        success: '&aSikeresen beállítva &b[name]&ahalála &b[number]&a-ra.'
       add:
-        description: adds deaths to the player
+        description: játékos halálaihoz adás
         parameters: <player> <deaths>
-        success: '&aSuccessfully added &b[number] &adeaths to &b[name], increasing
-          the total to &b[total]&a deaths.'
+        success: '&aSikeresen hozzáadva &b[number] &ahalál &b[name]-nak/nek, növelve
+          az összeset &b[total]&a halálra.'
       remove:
-        description: removes deaths to the player
+        description: játékos halálainak eltávolítása
         parameters: <player> <deaths>
-        success: '&aSuccessfully removed &b[number] &adeaths to &b[name], decreasing
-          the total to &b[total]&a deaths.'
+        success: '&aSikeresen eltávolítva &b[number] &ahalál &b[name]-tól/től, csökkentve
+          az összeset &b[total]&a halálra.'
   bentobox:
-    description: BentoBox admin command
+    description: BentoBox admin parancs
     about:
-      description: displays copyright and license information
+      description: Megjeleníti a szerzői és licenc információkat
     reload:
-      description: reloads BentoBox and all addons, settings and locales
-      locales-reloaded: '[prefix_bentobox]&2 Languages reloaded.'
-      addons-reloaded: '[prefix_bentobox]&2 Addons reloaded.'
-      settings-reloaded: '[prefix_bentobox]&2 Settings reloaded.'
-      addon: '[prefix_bentobox]&6 Reloading &b [name]&2 .'
-      addon-reloaded: '[prefix_bentobox]&b [name] &2 reloaded.'
-      warning: '[prefix_bentobox]&c Warning: Reloading may cause instability, so if
-        you see errors afterwards, restart the server.'
-      unknown-addon: '[prefix_bentobox]&c Unknown addon!'
+      description: újratölti a BentoBoxot és az összes kiegészítőt, beállításokat
+        és helyszíneket.
+      locales-reloaded: '[prefix_bentobox]&2Nyelvek újratöltve.'
+      addons-reloaded: '[prefix_bentobox]&2Kiegészítők újratöltve.'
+      settings-reloaded: '[prefix_bentobox]&2Beállítások újratöltve.'
+      addon: '[prefix_bentobox]&6Újratöltés &b[name]&2.'
+      addon-reloaded: '[prefix_bentobox]&b[name] &2újratöltve.'
+      warning: '[prefix_bentobox]&cVigyázat: Az újraindítás instabilitást okozhat,
+        ha a későbbiekben hibákat látsz, indítsd újra a szervert.'
+      unknown-addon: '[prefix_bentobox]&cIsmeretlen kiegészítő!'
       locales:
-        description: reloads locales
+        description: fordítások újratöltése
     version:
-      plugin-version: '&2BentoBox version: &3[version]'
-      description: displays BentoBox and addons versions
-      loaded-addons: 'Loaded Addons:'
-      loaded-game-worlds: 'Loaded Game Worlds:'
+      plugin-version: '&2BentoBox verzió: &3[version]'
+      description: megjeleníti a BentoBox és a kiegészítők verzióit
+      loaded-addons: 'Betöltött kiegészítők:'
+      loaded-game-worlds: 'Betöltött játékvilágok:'
       addon-syntax: '&2[name] &3[version] &7(&3[state]&7)'
       game-world: '&2 [name] &7 (&3 [addon]&7 ): &3 [worlds]'
-      server: '&2Running &3[name] [version]&2.'
-      database: '&2Database: &3[database]'
+      server: '&2Fut &3[name] [version]&2.'
+      database: '&2Adatbázis: &3[database]'
     manage:
-      description: displays the Management Panel
+      description: Megjeleníti a kezelőpanelt
     catalog:
-      description: displays the Catalog
+      description: Megjeleníti a katalógust
     locale:
-      description: performs localization files analysis
+      description: Lokalicáziós fájlok elemzését hajtja végre
       see-console: |-
-        [prefix_bentobox]&a Check the console to see the feedback.
-        [prefix_bentobox]&a This command is so spammy that the feedback cannot be read from chat...
+        [prefix_bentobox]&aCheck the console to see the feedback.
+        [prefix_bentobox]&aThis command is so spammy that the feedback cannot be read from chat...
     migrate:
-      description: migrates data from one database to another
-      players: '[prefix_bentobox]&6 Migrating players'
-      names: '[prefix_bentobox]&6 Migrating names'
-      addons: '[prefix_bentobox]&6 Migrating addons'
-      class: '[prefix_bentobox]&6 Migrating [description]'
-      migrated: '[prefix_bentobox]&a Migrated'
+      description: adatokat telepít át az egyik adatbázisból a másikba
+      players: '[prefix_bentobox]&6Játékosok áttelepítése'
+      names: '[prefix_bentobox]&6Nevek áttelepítése'
+      addons: '[prefix_bentobox]&6Kiegészítők áttelepítése'
+      class: '[prefix_bentobox]&6Áttelepítés [description]'
+      migrated: '[prefix_bentobox]&AÁttelepítve'
   confirmation:
     confirm: '&cÍrd be újra a parancsot &b[seconds]s&c-en belül a megerősítéshez.'
     previous-request-cancelled: '&6A korábbi megerősítési kérelem visszavonva.'
@@ -458,7 +462,7 @@ commands:
     moved-so-command-cancelled: '&cMozogtál. Teleportálás megszakítva!'
   island:
     about:
-      description: display licence details
+      description: A kiegészítőről
     go:
       parameters: '[otthon száma]'
       description: Teleportálás a szigetedre
@@ -469,7 +473,7 @@ commands:
     spawn:
       description: Teleportálás a kezdőhelyre
       teleporting: '&aTeleportálás a kezdőhelyre...'
-      no-spawn: '&cEbben a világban nincs kezdőhely.'
+      no-spawn: '&cEbben a játékmódban nincs kezdőhely.'
     create:
       description: Sziget létrehozás opcionális blueprint használatával
       parameters: <blueprint>
@@ -532,10 +536,10 @@ commands:
       name-too-long: '&cTúl hosszú. A maximum hosszúság [number] karakter.'
       name-already-exists: '&cEbben a játékmódban már létezik egy ilyen nevű sziget.'
       parameters: <name>
-      success: '&aSuccessfully set your island''s name to &b[name]&a.'
+      success: '&aSikeresenk beállítva a szigeted neve erre: &b[name]&a.'
     resetname:
       description: Sziget név visszaállítása
-      success: '&aSuccessfully reset your island name.'
+      success: '&aSikeres sziget név visszaállítás.'
     team:
       description: Csapat kezelése
       info:
@@ -560,11 +564,10 @@ commands:
         parameters: <játékos>
         cannot-coop-yourself: '&cSaját magadnak nem adhatsz Coop rangot!'
         already-has-rank: '&cEnnek a játékosnak már van rangja!'
-        you-are-a-coop-member: '&2Coop rangot kaptál tőle: [name]'
-        success: '&aCoop rangot adtál neki &b[name].'
+        you-are-a-coop-member: '&aCoop rangot kaptál tőle: &b[name]&a.'
+        success: '&aCoop rangot adtál neki &b[name]&a.'
         name-has-invited-you: '&a[name] meghívott, hogy csatlakozz coop rangosként
           a szigetéhez.'
-        is-full: '&cTöbb coop rangos nem lehet.'
       uncoop:
         description: Eltávolítja a coop rangot egy játékostól a szigeteden
         parameters: <játékos>
@@ -573,8 +576,9 @@ commands:
         player-not-cooped: '&cA megadott játékosnak nincs Coop rangja.'
         you-are-no-longer-a-coop-member: '&cTöbbé nincs Coop rangod [name] szigetén.'
         all-members-logged-off: '&cMinden csapattag kilépett, ezért már nincs Coop
-          rangod [name] szigetén'
+          rangod [name] szigetén.'
         success: '&b[name] &amár nem coop rangos a szigeteden.'
+        is-full: '&c You cannot coop anyone else.'
       trust:
         description: Megbízott rangot ad egy játékosnak a szigeteden
         parameters: <játékos>
@@ -584,7 +588,7 @@ commands:
         player-already-trusted: '&cA megadott játékos már Megbízott!'
         you-are-trusted: '&2Megbízott rangot kaptál tőle: [name]!'
         success: '&aMegbíztad őt &b[name]&a.'
-        is-full: '&cTöbb megbízott nem lehet.'
+        is-full: '&c You cannot trust anyone else.'
       untrust:
         description: Eltávolítja a megbízott rangot egy játékostól a szigeteden
         parameters: <játékos>
@@ -595,8 +599,8 @@ commands:
         success: '&b[name] &amár nem megbízott a szigeteden.'
       invite:
         description: Játékos meghívása, hogy csatlakozzon a szigetedre
-        invitation-sent: '&aMeghívó elküldve [name] számára'
-        removing-invite: '&cMeghívó eltávolítása'
+        invitation-sent: '&aMeghívó elküldve &b[name]&a számára.'
+        removing-invite: '&cMeghívó eltávolítása.'
         name-has-invited-you: '&a[name] meghív téged, hogy csatlakozz a szigetére.'
         to-accept-or-reject: '&aHasználd az §2/[label] team accept §aparancsot az
           elfogadáshoz, vagy az §c/[label] team reject §aparancsot a mellőzéshez'
@@ -615,8 +619,8 @@ commands:
         you-can-invite: '&aTovábbi [number] játékost hívhatsz meg.'
         accept:
           description: Meghívás elfogadása
-          you-joined-island: '&aBeléptél egy szigetre! Használd az /[label] team info
-            parancsot a többi csapattag megtekintéséhez.'
+          you-joined-island: '&aBeléptél egy szigetre! Használd az &b/[label] team
+            &ainfo parancsot a többi csapattag megtekintéséhez.'
           name-joined-your-island: '&a[name] belépett a szigetre!'
           confirmation: |-
             &cBiztos vagy benne, hogy elfogadod a meghívást?
@@ -686,6 +690,13 @@ commands:
       the-following: '&bAz alábbi játékosok vannak kitiltva:'
       names: §e- &c[line]
       you-can-ban: '&bTovábbi &e[number] &bjátékost tilthatsz ki.'
+    setspawnpoint:
+      description: set current location as spawn point for this island
+      no-island-here: '&c There is no island here.'
+      confirmation: '&c Are you sure you want to set this location as the spawn point
+        for this island?'
+      success: '&a Successfully set this location as the spawn point for this island.'
+      island-spawnpoint-changed: '&a [user] changed this island spawn point.'
     settings:
       description: Sziget beállítások megjelenítése
     language:
@@ -710,35 +721,35 @@ ranks:
   admin: Admin
   mod: Moderátor
 protection:
-  command-is-banned: Command is banned for visitors
+  command-is-banned: A parancs le van tiltva a látogatók számára
   flags:
     ANIMAL_SPAWN:
-      description: Toggle natural spawning
-      name: Animal spawning
+      description: Spawnolás kapcsolás
+      name: Állatok természetes spawnolása
     ANVIL:
-      description: Toggle interaction
-      name: Anvils
-      hint: Anvil use disabled
+      description: Interakció váltás
+      name: Üllők
+      hint: Üllő használat kikapcsolva
     ARMOR_STAND:
-      description: Toggle interaction
-      name: Armor stands
-      hint: Armor stand use disabled
+      description: Interakció kapcsolás
+      name: Páncélállvány
+      hint: páncélállvány használat kikapcsolva
     BEACON:
-      description: Toggle interaction
-      name: Beacons
-      hint: Beacon use disabled
+      description: Interakció kapcsolás
+      name: Beacon
+      hint: Beacon használat kikapcsolva
     BED:
-      description: Toggle interaction
-      name: Beds
-      hint: Bed use disabled
+      description: Interakció kapcsolás
+      name: Ágy
+      hint: Ágy használat kikapcsolva
     BOAT:
-      name: Boats
-      description: Toggle boats interactions
-      hint: No boat interaction allowed
+      name: Csónakok
+      description: Csónak interakció kapcsolás
+      hint: Nincs csónak interakció megengedve
     BREAK_BLOCKS:
-      description: Toggle breaking
-      name: Break blocks
-      hint: Block breaking disabled
+      description: Törés kapcsolás
+      name: Blokk törés
+      hint: Blokk törés kikapcsolva
     BREAK_SPAWNERS:
       description: |-
         Toggle spawners breaking.
@@ -746,107 +757,112 @@ protection:
       name: Break spawners
       hint: Spawner breaking disabled
     BREEDING:
-      description: Toggle breeding
-      name: Breed animals
-      hint: Animal breeding protected
+      description: Szaporítás kapcsolása
+      name: Állatok szaporítása
+      hint: Állattenyésztés védett
     BREWING:
-      description: Toggle interaction
-      name: Brewing stands
-      hint: Brewing disabled
+      description: Interakció kapcsolása
+      name: Főzőállványok
+      hint: Főzés kikapcsolva
     BUCKET:
-      description: Toggle interaction
-      name: Buckets
-      hint: Bucket use disabled
+      description: Interakció kapcsolása
+      name: Vödrök
+      hint: Vödör használat kikapcsolva
     BUTTON:
-      description: Toggle button use
-      name: Buttons
-      hint: Button use disabled
+      description: Gombhasználat kapcsolása
+      name: Gombok
+      hint: Gombhasználat kikapcsolva
     CAKE:
-      description: Toggle cake interaction
-      name: Cakes
-      hint: Cake eating disabled
+      description: Torta interakció kapcsolása
+      name: Torták
+      hint: Tortaevés kikapcsolva
     CONTAINER:
-      name: Containers
+      name: Tárolók
       description: |-
-        &a Toggle interaction with chests,
-        &a shulker boxes and flower pots,
-        &a composters and barrels.
+        &a Interakciók kapcsolása ládákkal,
+        &a shulkerboxokkal és virágcserepekkel,
+        &a komposztálókkal és hordókkal.
 
-        &7 Other containers are handled
-        &7 by dedicated flags.
+        &7 Más tárolóeszközök
+        &7 dedikált flagekkel kezelhetőek.
       hint: Container access disabled
     DISPENSER:
-      name: Dispensers
-      description: Toggle dispenser interaction
-      hint: Dispenser interaction disabled
+      name: Adagolók
+      description: Adagoló interakció kapcsolása
+      hint: Adagoló interakció kikapcsolva
     DROPPER:
-      name: Droppers
-      description: Toggle dropper interaction
-      hint: Dropper interaction disabled
+      name: Kidobók
+      description: Kidobó interakció kapcsolása
+      hint: Kidobó interakció kikapcsolva
     ELYTRA:
       name: Elytra
-      description: Toggle elytra allowed or not
-      hint: '&c WARNING: Elytra cannot be used here!'
+      description: Eltyra engedélyezés kapcsolása
+      hint: '&c FIGYELEM: Elytrát nem lehet használni itt!'
     HOPPER:
-      name: Hoppers
-      description: Toggle hopper interaction
-      hint: Hopper interaction disabled
+      name: Tölcsérek
+      description: Tölcsér interakció kapcsolása
+      hint: Tölcsér interakció kikapcsolva
     CHEST_DAMAGE:
-      description: Toggle chest damage from explosions
-      name: Chest Damage
+      description: Láda sebződése robbanástól való kapcsolása
+      name: Láda sérülés
     CHORUS_FRUIT:
-      description: Toggle teleportation
-      name: Chorus fruits
-      hint: Chorus fruit teleporting disabled
+      description: Teleportálás kapcsolása
+      name: Refréngyümölcs
+      hint: Refréngyümölcs teleportálás kikapcsolva
     CLEAN_SUPER_FLAT:
       description: |-
         &a Enable to clean any
         &a super-flat chunks in
         &a island worlds
-      name: Clean Super Flat
+      name: Lapos chunkok tisztítása
     COARSE_DIRT_TILLING:
       description: |-
         &a Toggle tilling coarse
         &a dirt and breaking podzol
         &a to obtain dirt
-      name: Coarse dirt tilling
-      hint: No coarse dirt tilling
+      name: Terméketlen föld művelése
+      hint: Nem lehet a terméketlen földet megművelni
     COLLECT_LAVA:
       description: |-
         &a Toggle collecting lava
         &a (override Buckets)
-      name: Collect lava
-      hint: No lava collection
+      name: Láva szedés
+      hint: Nincs láva szedés
     COLLECT_WATER:
       description: |-
         &a Toggle collecting water
         &a (override Buckets)
-      name: Collect water
-      hint: Water buckets disabled
+      name: Víz gyűjtése
+      hint: Vizesvödör kikapcsolva
     COMMAND_RANKS:
-      name: '&e Command Ranks'
-      description: '&a Configure command ranks'
+      name: '&e Rang parancsok'
+      description: '&a Rang parancsok konfigurálása'
     CRAFTING:
-      description: Toggle use
-      name: Workbenches
-      hint: Workbench access disabled
+      description: Használat kapcsolása
+      name: Barkácsasztalok
+      hint: Barkácsasztalokhoz való hozzáférés kikapcsolva
     CREEPER_DAMAGE:
-      description: Toggle creeper damage
-      name: Creeper damage
+      description: |
+        &a Toggle creeper
+        &a damage protection
+      name: Creeper damage protection
     CREEPER_GRIEFING:
-      description: Toggle creeper griefing when ignited by island visitor
-      name: Creeper griefing
-      hint: Creeper griefing disabled
+      description: |
+        &a Toggle creeper griefing
+        &a protection when ignited
+        &a by island visitor.
+      name: Creeper griefing protection
+      hint: Creeper rombolás kikapcsolva
     CROP_TRAMPLE:
-      description: Toggle crop trampling
-      name: Trample crops
-      hint: Crop trampling disabled
+      description: Növény kitaposás kapcsolása
+      name: Növény kitaposás
+      hint: Növény kitaposás kikapcsolva
     DOOR:
-      description: Toggle door usage
-      name: Use doors
-      hint: Door interaction disabled
+      description: Ajtóhasználat kapcsolása
+      name: Ajtóhasználat
+      hint: Ajtóhasználat kikapcsolva
     DRAGON_EGG:
-      name: Dragon Egg
+      name: Sárkánytojás
       description: |-
         &a Prevents interaction with Dragon Eggs.
 
@@ -854,167 +870,167 @@ protection:
         &c placed or broken.
       hint: Dragon egg interaction disabled
     DYE:
-      description: Prevent dye use
-      name: Dye use
-      hint: Dyeing disabled
+      description: Festékhasználat megakadályozása
+      name: Festékhasználat
+      hint: Festés kikapcsolva
     EGGS:
-      description: Toggle egg throwing
-      name: Egg throwing
-      hint: Egg throwing disabled
+      description: Tojás eldobás kapcsolása
+      name: Tojás eldobás
+      hint: Tojás eldobás kikapcsolva
     ENCHANTING:
-      description: Toggle use
-      name: Enchanting table
-      hint: Enchantment tables disabled
+      description: Használat kapcsolása
+      name: Varázslóasztal
+      hint: Varázslóasztal használatának kikapcsolása
     ENDER_CHEST:
-      description: Toggle use/crafting
-      name: Ender Chests
-      hint: Ender chests are disabled in this world
+      description: Használat/készítés kapcsolása
+      name: Végzetláda
+      hint: Végzetláda kikapcsolva ebben a világban
     ENDERMAN_DEATH_DROP:
       description: |-
-        &a Endermen will drop
-        &a any block they are
-        &a holding if killed.
-      name: Enderman Death Drop
+        &a Az Endermen eldobja
+        &a azt a blokkot, amit fog
+        &a amikor megölik.
+      name: Enderman halál utáni eldobás
     ENDERMAN_GRIEFING:
       description: |-
-        &a Endermen can remove
-        &a blocks from islands
-      name: Enderman griefing
+        &a Az Endermen ellophat
+        &a blokkokat a szigetről
+      name: Enderman rombolás
     ENDER_PEARL:
-      description: Toggle use
-      name: EnderPearls
-      hint: Enderpearl use disabled
+      description: Használat kapcsolása
+      name: Véggyöngy
+      hint: Véggyöngy használat kikapcsolva
     ENTER_EXIT_MESSAGES:
-      description: Display entry and exit messages
+      description: Belépés és kilépés üzenet megjelenítése
       island: '[name] szigete'
-      name: Enter/Exit messages
+      name: Belépés/Kilépés üzenet
       now-entering: '&a Beléptél ide: &b [name]&a .'
       now-entering-your-island: '&a Beléptél a szigetedre.'
       now-leaving: '&a Elhagytad ezt: &b [name]&a .'
       now-leaving-your-island: '&a Elhagytad a szigeted.'
     EXPERIENCE_BOTTLE_THROWING:
-      name: Experience bottle throwing
-      description: Toggle throwing experience bottles.
-      hint: Experience bottles disabled
+      name: Varázslat palackja eldobás
+      description: Varázslat palackja eldobásának kapcsolása.
+      hint: Varázslat palackja kikapcsolva
     FIRE_BURNING:
-      name: Fire burning
+      name: Tűz égése
       description: |-
-        &a Toggle whether fire can burn
-        &a blocks or not.
+        &a A tűz elégethet-e blokkokat
+        &a vagy sem.
     FIRE_EXTINGUISH:
-      description: Toggle extinguishing fires
-      name: Fire extinguish
-      hint: Extinguishing fire disabled
+      description: Tűzoltás kapcsolása
+      name: Tűzoltás
+      hint: Tűzoltás kikapcsolva
     FIRE_IGNITE:
-      name: Fire ignition
+      name: Tűzgyújtás
       description: |-
         &a Toggle whether fire can be ignited
         &a by non-player means or not.
     FIRE_SPREAD:
-      name: Fire spread
+      name: Tűz terjedése
       description: |-
         &a Toggle whether fire can spread
         &a to nearby blocks or not.
     FISH_SCOOPING:
-      name: Fish Scooping
-      description: Allow scooping of fishes using a bucket
-      hint: Fish scooping disabled
+      name: Hal befogása
+      description: A halakat vödör segítségével befogásának engedélyezése
+      hint: Hal befogás engedélyezése
     FLINT_AND_STEEL:
-      name: Flint and steel
+      name: Kovakő és acél
       description: |-
         &a Allow players to ignite fires or
         &a campfires using flint and steel
         &a or fire charges.
       hint: Flint and steel and fire charges disabled
     FURNACE:
-      description: Toggle use
-      name: Furnace
-      hint: Furnace use disabled
+      description: Használat kapcsolása
+      name: Kemencék
+      hint: Kemence használat kikapcsolva
     GATE:
-      description: Toggle use
-      name: Gates
-      hint: Gate use disabled
+      description: Használat kapcsolása
+      name: Kapuk
+      hint: Kapu használat kikapcsolva
     GEO_LIMIT_MOBS:
       description: |-
         &a Remove mobs that go
         &a outside protected
         &a island space
-      name: '&e Limit mobs to island'
+      name: '&e Moblimit a szigeten'
     HURT_ANIMALS:
-      description: Toggle hurting
-      name: Hurt animals
-      hint: Animal hurting disabled
+      description: Bántalmazás kapcsolása
+      name: Állatok bántalmazása
+      hint: Állatbántalmazás kikapcsolva
     HURT_MONSTERS:
-      description: Toggle hurting
-      name: Hurt monsters
-      hint: Monster hurting disabled
+      description: Bántalmazás kapcsolása
+      name: Szörnyek bántalmazás
+      hint: Szörnybántalmazás kikapcsolva
     HURT_VILLAGERS:
-      description: Toggle hurting
-      name: Hurt villagers
-      hint: Villager hurting disabled
+      description: Bántalmazás kapcsolása
+      name: Falusiak bántalmazása
+      hint: Falusiak bántalmazás kikapcsolva
     ITEM_FRAME:
-      name: Item Frame
+      name: Eszközkeret
       description: |-
         &a Toggle interaction.
         &a Overrides place or break blocks
-      hint: Item Frame use disabled
+      hint: Eszközkeret használat kikapcsolva
     ITEM_FRAME_DAMAGE:
       description: |-
         &a Mobs can damage
         &a item frames
-      name: Item Frame Damage
+      name: Eszközkeret sebzés kikapcsolva
     INVINCIBLE_VISITORS:
       description: |-
         &a Configure invincible visitor
         &a settings.
-      name: '&e Invincible Visitors'
-      hint: '&c Visitors protected'
+      name: '&e Legyőzhetetlen látogatók'
+      hint: '&c A látogatók védettek'
     ISLAND_RESPAWN:
       description: |-
         &a Players respawn
         &a on island
-      name: Island respawn
+      name: Sziget újraéledés
     ITEM_DROP:
-      description: Toggle dropping
-      name: Item drop
-      hint: Item dropping disabled
+      description: Eldobás kapcsolása
+      name: Tárgyeldobás
+      hint: Tárgyak eldobása kikapcsolva
     ITEM_PICKUP:
-      description: Toggle pickup
-      name: Item pickup
-      hint: Item pickup disabled
+      description: Felvétel kapcsolása
+      name: Tárgyfelvétel
+      hint: Tárgyak felvétele kikapcsolva
     JUKEBOX:
-      description: Toggle usage
-      name: Jukebox use
-      hint: Jukebox use disabled
+      description: Használat kapcsolása
+      name: Zenegép használata
+      hint: Zenegép használat letiltva
     LEAF_DECAY:
-      name: Leaf decay
-      description: Allow leaves to naturally decay
+      name: Levélpusztulás
+      description: Levelek természetes pusztulásának engedélyezése
     LEASH:
-      description: Toggle use
-      name: Leash use
+      description: Használat kapcsolása
+      name: Lasszó használata
     LECTERN:
-      name: Lecterns
+      name: Olvasóállvány
       description: |-
         &a Allow to place books on a lectern
         &a or to take books from it.
 
         &c It does not prevent players from
         &c reading the books.
-      hint: cannot place a book on a lectern or take a book from it.
+      hint: Nem lehet az olvasóállványra könyvet rakni, vagy elvenni róla.
     LEVER:
-      description: Toggle use
-      name: Lever use
-      hint: Lever use disabled
+      description: Használat kapcsolása
+      name: Karok használata
+      hint: Karhasználat kikapcsolva
     LIMIT_MOBS:
       description: |-
         &a Limit entities from
         &a spawning in this game
         &a mode.
-      name: '&e Limit entity type spawning'
-      can: '&a Can spawn'
-      cannot: '&c Cannot spawn'
+      name: '&e Entitás típusú spawnolás limitálása'
+      can: '&a Spawnolhat'
+      cannot: '&c Nem spawnolhat'
     LIQUIDS_FLOWING_OUT:
-      name: Liquids flowing outside islands
+      name: folyadék folyása a szigeten kívül
       description: |-
         &a Toggle whether liquids can flow outside
         &a of the island's protection range.
@@ -1027,31 +1043,31 @@ protection:
         &c they are placed outside an island's
         &c protection range.
     LOCK:
-      description: Toggle lock
-      name: Lock island
+      description: Lezárás kapcsolása
+      name: Sziget lezárása
     MILKING:
-      description: Toggle cow milking
-      name: Milking
-      hint: Milking cows disabled
+      description: Tehénfejtés kapcsolása
+      name: Fejés
+      hint: Tehénfejés kikapcsolva
     MINECART:
-      name: Minecarts
-      description: Toggle minecart interactions
-      hint: Minecart interaction disabled
+      name: Csillék
+      description: Csille interakció kapcsolása
+      hint: Csille interakció kikapcsolva
     MONSTER_SPAWN:
-      description: Toggle natural spawning
-      name: Monster spawning
+      description: Spawnolás kapcsolása
+      name: Szörnyek természetes spawnolása
     MOUNT_INVENTORY:
       description: |-
         &a Toggle access
         &a to mount inventory
-      name: Mount inventory
-      hint: Mounting inventories disabled
+      name: Lovagolható állatok inventory
+      hint: Lovagolható állatok inventory kikapcsolva
     NAME_TAG:
-      name: Name tags
-      description: Toggle use
-      hint: Name tag interaction disabled
+      name: Cédulák
+      description: Használat kapcsolása
+      hint: Cédula interakció kikapcsolva
     NATURAL_SPAWNING_OUTSIDE_RANGE:
-      name: Natural creature spawning outside range
+      name: Természetes lények spawnolása hatótávolságon kívül
       description: |-
         &a Toggle whether creatures (animals and
         &a monsters) can spawn naturally outside
@@ -1061,11 +1077,11 @@ protection:
         &c to spawn via a mob spawner or a spawn
         &c egg.
     NOTE_BLOCK:
-      description: Toggle use
-      name: Note block
-      hint: Noteblock interaction disabled
+      description: Használat kapcsolása
+      name: Hangdoboz
+      hint: Hangdoboz interakció kikapcsolva
     OBSIDIAN_SCOOPING:
-      name: Obsidian scooping
+      name: Obszidián felszedés vödörrel
       description: |-
         &a Allow players to scoop up obsidian
         &a with an empty bucket back into lava.
@@ -1076,16 +1092,16 @@ protection:
         &a Note: obsidian cannot be scooped up
         &a if there are other obsidian blocks
         &a within a 2-block radius.
-      scooping: '&a Changing obsidian back into lava. Be careful next time!'
-      obsidian-nearby: '&c There are obsidian blocks nearby, you cannot scoop up this
-        block into lava.'
+      scooping: '&a Obszidián lávává változtatása. Légy óvatos legközelebb!'
+      obsidian-nearby: '&c Vannak obszidiánok a közelben, de nem tudod felszedni vödörrel,
+        hogy láva legyen belőle.'
     OFFLINE_GROWTH:
       description: |-
         &a When disabled, plants
         &a will not grow on islands
         &a where all members are offline.
         &a May help reduce lag.
-      name: Offline Growth
+      name: Offline Növénynövés
     OFFLINE_REDSTONE:
       description: |-
         &a When disabled, redstone
@@ -1099,108 +1115,108 @@ protection:
         &a Enable this to prevent
         &a pistons from pushing
         &a blocks outside island
-      name: Piston Push Protection
+      name: Piston eltolás védelem
     PLACE_BLOCKS:
-      description: Toggle placing
-      name: Place blocks
-      hint: Block placing disabled
+      description: Lerakás kapcsolása
+      name: Blokklerakás
+      hint: Blokklerakás kikapcsolva
     POTION_THROWING:
-      name: Potion throwing
+      name: Bájital eldobás
       description: |-
         &a Toggle throwing potions.
         &a This include splash and lingering potions.
-      hint: Throwing potions disabled
+      hint: Bájital eldobás kikapcsolva
     NETHER_PORTAL:
-      description: Toggle use
-      name: Nether Portal
-      hint: Portal use disabled
+      description: Használat kapcsolása
+      name: Nether Portál
+      hint: Portálhasználat kikapcsolva
     END_PORTAL:
-      description: Toggle use
-      name: End Portal
-      hint: Portal use disabled
+      description: Használat kapcsolása
+      name: End Portál
+      hint: Portálhasználat kikapcsolva
     PRESSURE_PLATE:
-      description: Toggle usage
-      name: Pressure Plates
-      hint: Pressure plate use disabled
+      description: Használat kapcsolása
+      name: Nyomólapok
+      hint: Nyomólap használat kikapcsolva
     PVP_END:
       description: |-
         &c Enable/Disable PVP
         &c in the End.
       name: End PVP
-      hint: PVP disabled in the End
-      enabled: '&c The PVP in the End has been enabled.'
-      disabled: '&a The PVP in the End has been disabled.'
+      hint: PVP kikapcsolva az Endben
+      enabled: '&c PVP az Endben bekapcsolva.'
+      disabled: '&a PVP az Endben kikapcsolva.'
     PVP_NETHER:
       description: |-
         &c Enable/Disable PVP
         &c in the Nether.
       name: Nether PVP
-      hint: PVP disabled in the Nether
-      enabled: '&c The PVP in the Nether has been enabled.'
-      disabled: '&a The PVP in the Nether has been disabled.'
+      hint: PVP kikapcsolva a Netherben
+      enabled: '&c PVP a Netherben bekapcsolva.'
+      disabled: '&a PVP a Netherben kikapcsolva.'
     PVP_OVERWORLD:
       description: |-
         &c Enable/Disable PVP
         &c on island.
-      name: Overworld PVP
-      enabled: '&c The PVP in the Overworld has been enabled.'
-      disabled: '&a The PVP in the Overworld has been disabled.'
+      name: Alap világ PVP
+      enabled: '&c PVP az alap világban bekapcsolva.'
+      disabled: '&a PVP az alap világban kikapcsolva.'
     REDSTONE:
-      description: Toggle use
-      name: Redstone items
-      hint: Redstone interaction disabled
+      description: Használat kapcsolása
+      name: Redstone tárgyak
+      hint: Redstone interakció kikapcsolva
     REMOVE_END_EXIT_ISLAND:
       description: |-
         &a Prevents the end exit
         &a island from generating
         &a at coordinates 0,0
-      name: Remove end exit island
+      name: Vég kilépési sziget eltávolítása
     REMOVE_MOBS:
       description: |-
         &a Remove monsters when
         &a teleporting to island
-      name: Remove monsters
+      name: Szörnyek eltávolítása
     RIDING:
-      description: Toggle riding
-      name: Animal riding
-      hint: Animal riding disabled
+      description: Lovaglás kapcsolása
+      name: Állat lovaglás
+      hint: Állat lovaglás kikapcsolva
     SHEARING:
-      description: Toggle shearing
-      name: Shearing
-      hint: Shearing disabled
+      description: Nyírás kikapcsolása
+      name: Birkanyírás
+      hint: Nyírás kikapcsolva
     SPAWN_EGGS:
-      description: Toggle use
-      name: Spawn eggs
-      hint: Spawn eggs disabled
+      description: Használat kapcsolása
+      name: Idézőtojások
+      hint: Idézőtojás kikapcsolva
     SPAWNER_SPAWN_EGGS:
       description: |-
         &a Allows to change a spawner's entity type
         &a using spawn eggs.
-      name: Spawn eggs on spawners
-      hint: changing a spawner's entity type using spawn eggs is not allowed
+      name: Idézőtojás spawnereken
+      hint: A spawn entitás típusának megváltoztatása idézőtojással nem megengedett.
     TNT_DAMAGE:
       description: |-
         &a Allow TNT and TNT minecarts
         &a to break blocks and damage
         &a entities.
-      name: TNT damage
+      name: TNT sebzés
     TNT_PRIMING:
       description: |-
         &a Prevents priming TNT.
         &a It does not override the
         &a Flint and steel protection.
-      name: TNT priming
-      hint: TNT priming disabled
+      name: TNT gyújtás
+      hint: TNT gyújtás kikapcsolva
     TRADING:
-      description: Toggle trading
-      name: Villager trading
-      hint: Villager trading disabled
+      description: Csere kapcsolása
+      name: Falusi csere
+      hint: Falusi csere kikapcsolva
     TRAPDOOR:
-      description: Toggle access
-      name: Trap doors
-      hint: Trapdoor use disabled
+      description: Hozzáférés kapcsolása
+      name: Csapóajtók
+      hint: Csapóajtók használata kikapcsolva
     TREES_GROWING_OUTSIDE_RANGE:
-      name: Trees growing outside range
+      name: Fák hatótávon kívüli növése
       description: |-
         &a Toggle whether trees can grow outside an
         &a island's protection range or not.
@@ -1210,49 +1226,49 @@ protection:
         &a of leaves/logs outside of the island, thus
         &a cutting the tree.
     TURTLE_EGGS:
-      description: Toggle crushing
-      name: Turtle Eggs
-      hint: Turtle egg crushing disabled
+      description: Törés kapcsolása
+      name: Teknőstojás
+      hint: Teknőstojás törés kikapcsolva
     FROST_WALKER:
-      description: Toggle Frost Walker enchantment
-      name: Frost Walker
-      hint: Frost Walker disabled
+      description: Fagyjárás varázslat kapcsolása
+      name: Fagyjárás
+      hint: Fagyjárás kikapcsolva
     EXPERIENCE_PICKUP:
-      name: Experience pickup
-      description: Toggle experience orb pickup
-      hint: Experience pickup disabled
+      name: XP felvétel
+      description: Xp felvétel kapcsolása
+      hint: Xp felvétel kikapcsolva
     PREVENT_TELEPORT_WHEN_FALLING:
-      name: Prevent teleport when falling
+      name: Teleportálás megakadályozása zuhanás közben
       description: |-
         &a Prevent players from teleporting
         &a back to their island using commands
         &a if they are falling.
-      hint: '&c You cannot do that while falling.'
+      hint: '&c Ezt nem teheted meg miközben zuhansz.'
     WITHER_DAMAGE:
-      name: Toggle wither damage
+      name: Wither sebzés
       description: |-
-        &a If active, withers can
-        &a damage blocks and players
+        &a Ha aktív, a witherek
+        &a rombolnak és sebeznek
   locked: '&cEz a sziget le van zárva!'
-  protected: '&cA sziget védelem alatt áll: [description]'
-  world-protected: '&cA világ védelem alatt áll: [description]'
-  spawn-protected: '&cA kezdőhely védelem alatt áll: [description]'
+  protected: '&cA sziget védelem alatt áll: [description].'
+  world-protected: '&cA világ védelem alatt áll: [description].'
+  spawn-protected: '&cA kezdőhely védelem alatt áll: [description].'
   panel:
     next: Következő oldal
     previous: Előző oldal
     mode:
       advanced:
-        name: '&6Advanced Settings'
-        description: '&aDisplays a sensible amount of settings.'
+        name: '&6További beállítások'
+        description: '&aÉsszerű mennyiségű beállítást jelenít meg.'
       basic:
-        name: '&aBasic Settings'
-        description: '&aDisplays the most useful settings.'
+        name: '&aAlapbeállítások'
+        description: '&aA leghasznosabb beállításokat jeleníti meg.'
       expert:
-        name: '&cExpert Settings'
-        description: '&aDisplays all the available settings.'
-      click-to-switch: '&eClick &ato switch to the &r[next]&r&a.'
+        name: '&cSzakértői beállítások'
+        description: '&aAz összes elérhető beállítást megjeleníti.'
+      click-to-switch: '&eKattints &aa váltáshoz &r[next]&r&a.'
     reset-to-default:
-      name: '&cReset to default'
+      name: '&cVisszaállítás alapértelmezettre'
       description: |
         &aResets &c&lALL &r&athe settings to their
         &adefault value.
@@ -1270,7 +1286,7 @@ protection:
       title: '&b[world_name] &6Beállítások'
       description: '&aBeállítások ehhez a világhoz'
     WORLD_DEFAULTS:
-      title: '&b[world_name] &6World Protections'
+      title: '&b[world_name] &6Világvédelem'
       description: |
         &aProtection settings when
         &aplayer is outside their island
@@ -1284,7 +1300,7 @@ protection:
       blocked-rank: '&3- &c'
       minimal-rank: '&3- &2'
       menu-layout: '&a[description]'
-      setting-cooldown: '&cSetting is on cooldown'
+      setting-cooldown: '&cA beállítások töltési időn vannak'
       setting-layout: |
         &a[description]
 
@@ -1301,14 +1317,14 @@ language:
   edited: '&aA nyelv megváltoztatva erre &e[lang]&a.'
 management:
   panel:
-    title: BentoBox Management
+    title: BentoBox Kezelés
     views:
       gamemodes:
-        name: '&6Gamemodes'
-        description: '&eClick &ato display currently loaded Gamemodes'
+        name: '&6Játékmód'
+        description: '&eKattints &aa jelenleg betöltött játékmódok megjelenítéséhez.'
         blueprints:
-          name: '&6Blueprints'
-          description: '&aOpens the Admin Blueprint menu.'
+          name: '&6Blueprintek'
+          description: '&aMegnyitja az Admin Blueprint menüt.'
         gamemode:
           name: '&f[name]'
           description: |
@@ -1321,60 +1337,36 @@ management:
         description: '&eClick &ato display currently loaded Hooks'
     actions:
       reload:
-        name: '&cReload'
-        description: '&eClick &c&ltwice &r&ato reload BentoBox'
+        name: '&cÚjratöltés'
+        description: '&eKattints &c&lkétszer &r&aa BentoBox újratöltéséhez'
     buttons:
       catalog:
-        name: '&6Addons Catalog'
-        description: '&aOpens the Addons Catalog'
+        name: '&6Kiegészítő katalógus'
+        description: '&aMegnyitja a kiegészítő katalógust'
       credits:
-        name: '&6Credits'
-        description: '&aOpens the Credits for BentoBox'
+        name: '&6Kreditek'
+        description: '&aMegnyitja a krediteket a BentoBoxhoz.'
       empty-here:
-        name: '&bThis looks empty here...'
-        description: '&aWhat if you take a look at our catalog?'
+        name: '&bEz itt üresnek tűnik...'
+        description: '&aMi lenne ha megnéznéd a katalógusunkat?'
     information:
       state:
-        name: '&6Compatibility'
+        name: '&6Kompatibilitás'
         description:
-          COMPATIBLE: |
-            &aRunning &e[name] [version]&a.
-
-            &aBentoBox is currently running on a
-            &a&lCOMPATIBLE &r&aserver software and
-            &aversion.
-
-            &aIts features are fully designed to
-            &arun in this environment.
-          SUPPORTED: |
-            &aRunning &e[name] [version]&a.
-
-            &aBentoBox is currently running on a
-            &a&lSUPPORTED &r&aserver software and
-            &aversion.
-
-            &aMost of its features will run smoothly
-            &ain this environment.
-          NOT_SUPPORTED: |
-            &aRunning &e[name] [version]&a.
-
-            &aBentoBox is currently running on a
-            &6&lNOT SUPPORTED &r&aserver software or
-            &aversion.
-
-            &aWhile most of its features will run
-            &acorrectly, &6platform-specific bugs or
-            &6issues are to be expected&a.
-          INCOMPATIBLE: |+
-            &aRunning &e[name] [version]&a.
-
-            &aBentoBox is currently running on an
-            &c&lINCOMPATIBLE &r&aserver software or
-            &aversion.
-
-            &cWeird behaviour and bugs can occur
-            &cand most features may be unstable.
-
+          COMPATIBLE: "&aRunning &e[name] [version]&a.\n\n&aA BentoBox jelenleg egy\
+            \ \n&a&lKOMPATIBILIS &r&aszerveren és\n&averzión fut.\n\n&aIts features\
+            \ are fully designed to\n&arun in this environment.\n"
+          SUPPORTED: "&aRunning &e[name] [version]&a.\n\n&aA BentoBox jelenleg egy\
+            \ \n&a&lTÁMOGATOTT &r&aszerveren és \n&averzión fut.\n\n&aA legtöbb funkció\
+            \ zökkenőmentesen működik\n&aebben a környezetben.\n"
+          NOT_SUPPORTED: "&aRunning &e[name] [version]&a.\n\n&aA BentoBox jelenleg\
+            \ egy \n&6&lNEM TÁMOGATOTT &r&aszerveren és \n&averzión fut.\n\n&aA legtö\
+            bb funkció futni fog\n&akorrektül, &6platform-specifikus bugok vagy\n\
+            &6hibák várhatóak lesznek&a.\n"
+          INCOMPATIBLE: "&aRunning &e[name] [version]&a.\n\n&aA BentoBox jelenleg\
+            \ egy \n&c&lIMKOMPATIBILIS &r&aszerveren és\n&averzión fut.\n\n&cEz furcsa\
+            \ működést és bugokat okozhat\n&cés a legtöbb funkció instabil lehet.\n\
+            \n"
 catalog:
   panel:
     GAMEMODES:
@@ -1399,12 +1391,12 @@ catalog:
 
         &7&o[description]
 
-        &eClick &ato get the link to the
-        &alatest release.
-      already-installed: Already installed!
-      install-now: Install now!
+        &eKattints ide &a,hogy megszerezd a linket
+        &aa legutóbbi kiadáshoz.
+      already-installed: Már telepítve van!
+      install-now: Telepítsd most!
     empty-here:
-      name: '&bThis looks empty here...'
+      name: '&bEz itt üresnek tűnik...'
       description: |+
         &cBentoBox could not connect to GitHub.
 
@@ -1413,13 +1405,13 @@ catalog:
 
 panel:
   credits:
-    title: '&8[name] &2Credits'
+    title: '&8[name] &2Kreditek'
     contributor:
       name: '&a[name]'
       description: |
         &aCommits: &b[commits]
     empty-here:
-      name: '&cThis looks empty here...'
+      name: '&cEz itt üresnek tűnik...'
       description: |+
         &cBentoBox could not gather the Contributors
         &cfor this Addon.
