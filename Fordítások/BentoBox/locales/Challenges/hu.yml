@@ -507,7 +507,7 @@ challenges:
 
             admin:
                 number: "Write a number in the chat and press enter."
-                unique-id: "Write the object's unique name and press enter."
+                unique-id: "Write the object's unique id and press enter."
                 challenge-name: "Write the display name in the chat for the current challenge."
                 level-name: "Write the display name in chat for the current level."
 
@@ -593,6 +593,8 @@ challenges:
         missing-level: '&cChallenge Level [level] is not defined in the database. It may cause errors!'
         missing-arguments: '&cCommand is missing arguments.'
         no-multiple-permission: "&cYou do not have permission to complete this challenge multiple times at once."
+        invalid-level: "&c Level [level] contains invalid data. It will not be loaded from database!"
+        invalid-challenge: "&c Challenge [challenge] contains invalid data. It will not be loaded from database!"
 protection:
     flags:
         CHALLENGES_ISLAND_PROTECTION:
