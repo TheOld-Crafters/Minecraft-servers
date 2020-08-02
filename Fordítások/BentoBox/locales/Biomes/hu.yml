@@ -73,6 +73,18 @@ biomes:
         add-element: "Add Element"
         remove-element: "Remove Element"
 
+        environment: "Change Environment"
+
+        lush: "Show lush biomes"
+        dry: "Show dry biomes"
+        cold: "Show cold biomes"
+        snowy: "Show snowy biomes"
+        ocean: "Show ocean biomes"
+        nether: "Show nether biomes"
+        the_end: "Show the end biomes"
+        neutral: "Show neutral biomes"
+        unused: "Show unused/unlisted biomes"
+
       value: "Jelenlegi Érték: [number]"
       increase: "Növelés ennyivel: [number]"
       decrease: "Csökkentés ennyivel: [number]"
@@ -129,6 +141,20 @@ biomes:
         edit-text-line: '&6 Edit text message!'
         add-text-line: '&6 Add new text message!'
 
+        environment: "Allows to change active environment for biome."
+        environment-active: ' &2 - [value]'
+        environment-inactive: ' &c - [value]'
+
+        lush: "Contains biomes with light green grass (with exception) and blue water. | Like plains, forest, beach and mushroom fields."
+        dry: "Contains biomes with olive tone grass and light blue water | Like desert, savanna and badlands."
+        cold: "Contains biomes with aqua colour grass and indigo water. | Like mountains and taiga."
+        snowy: "Contains biomes with aqua colour grass and purple water. | Like snowy tundra and frozen river."
+        ocean: "Contains large volume of water. | Like ocean."
+        nether: "Contains all nether biomes. | Like nether wastes."
+        the_end: "Contains all the end biomes. | Like the end."
+        neutral: "Contains void and all hills biomes. | Like the void."
+        unused: "Contains unused or unlisted biomes."
+
         selected: "&6Material is selected"
 
         lore:
@@ -141,7 +167,7 @@ biomes:
       update-mode:
         island: "Island"
         chunk: "Chunk"
-        square: "Range"
+        range: "Range"
         undefined: "Undefined"
       visibility-mode:
         info: "Modify visible biomes."
