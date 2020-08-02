@@ -701,6 +701,9 @@ commands:
       description: Sziget beállítások megjelenítése
     language:
       description: Nyelv kiválasztása
+      parameters: '[language]'
+      not-available: '&c This language is not available.'
+      already-selected: '&c You are already using this language.'
     expel:
       description: Kiutasít egy játékost a szigetről
       parameters: <játékos>
@@ -723,9 +726,12 @@ ranks:
 protection:
   command-is-banned: A parancs le van tiltva a látogatók számára
   flags:
-    ANIMAL_SPAWN:
-      description: Spawnolás kapcsolás
-      name: Állatok természetes spawnolása
+    ANIMAL_NATURAL_SPAWN:
+      description: Toggle natural animal spawning
+      name: Animal natural spawn
+    ANIMAL_SPAWNERS_SPAWN:
+      description: Toggle animal spawning with spawners
+      name: Animal spawners
     ANVIL:
       description: Interakció váltás
       name: Üllők
@@ -744,7 +750,9 @@ protection:
       hint: Ágy használat kikapcsolva
     BOAT:
       name: Csónakok
-      description: Csónak interakció kapcsolás
+      description: |-
+        Toggle placing, breaking and
+        entering into boats.
       hint: Nincs csónak interakció megengedve
     BREAK_BLOCKS:
       description: Törés kapcsolás
@@ -753,9 +761,15 @@ protection:
     BREAK_SPAWNERS:
       description: |-
         Toggle spawners breaking.
-        Override the Break Blocks flag.
+        Overrides the Break Blocks flag.
       name: Break spawners
       hint: Spawner breaking disabled
+    BREAK_HOPPERS:
+      description: |-
+        Toggle hoppers breaking.
+        Overrides the Break Blocks flag.
+      name: Break hoppers
+      hint: Hoppers breaking disabled
     BREEDING:
       description: Szaporítás kapcsolása
       name: Állatok szaporítása
@@ -1051,11 +1065,16 @@ protection:
       hint: Tehénfejés kikapcsolva
     MINECART:
       name: Csillék
-      description: Csille interakció kapcsolása
+      description: |-
+        Toggle placing, breaking and
+        entering into minecarts.
       hint: Csille interakció kikapcsolva
-    MONSTER_SPAWN:
-      description: Spawnolás kapcsolása
-      name: Szörnyek természetes spawnolása
+    MONSTER_NATURAL_SPAWN:
+      description: Toggle natural monster spawning
+      name: Monster natural spawn
+    MONSTER_SPAWNERS_SPAWN:
+      description: Toggle monster spawning with spawners
+      name: Monster spawners
     MOUNT_INVENTORY:
       description: |-
         &a Toggle access
@@ -1266,7 +1285,7 @@ protection:
       expert:
         name: '&cSzakértői beállítások'
         description: '&aAz összes elérhető beállítást megjeleníti.'
-      click-to-switch: '&eKattints &aa váltáshoz &r[next]&r&a.'
+      click-to-switch: '&eKattints &7a váltáshoz &r[next]&r&7.'
     reset-to-default:
       name: '&cVisszaállítás alapértelmezettre'
       description: |
@@ -1295,14 +1314,22 @@ protection:
       description-layout: |
         &a[description]
 
+        &e Bal Klikk &7 a lefelé állításhoz.
+        &e Jobb Klikk &7 a felfelé állításhoz.
+
         &7Engedélyezve:
       allowed-rank: '&3- &a'
       blocked-rank: '&3- &c'
       minimal-rank: '&3- &2'
-      menu-layout: '&a[description]'
-      setting-cooldown: '&cA beállítások töltési időn vannak'
+      menu-layout: |
+        &a [description]
+
+        &e Klikk &7 a megnyitáshoz.
+      setting-cooldown: '&cA beállítások várakozási időn vannak'
       setting-layout: |
         &a[description]
+
+        &e Klikk &7 az állításhoz.
 
         &7Jelenlegi beállítás: [setting]
       setting-active: '&aAktív'
