@@ -536,7 +536,7 @@ commands:
       name-too-long: '&cTúl hosszú. A maximum hosszúság [number] karakter.'
       name-already-exists: '&cEbben a játékmódban már létezik egy ilyen nevű sziget.'
       parameters: <name>
-      success: '&aSikeresenk beállítva a szigeted neve erre: &b[name]&a.'
+      success: '&aSikeresen beállítva a szigeted neve erre: &b[name]&a.'
     resetname:
       description: Sziget név visszaállítása
       success: '&aSikeres sziget név visszaállítás.'
