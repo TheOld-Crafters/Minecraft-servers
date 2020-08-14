@@ -11,3 +11,5 @@ assignees: ''
 
 <!-- Melyik szerveren van a hiba? pl.: Survival -->
 **Szerver**:
+
+<!-- Ez alá a sor alá írd le részletesen a hibát. Térj ki arra is, hogyan tudjuk azt reprodukálni. -->
