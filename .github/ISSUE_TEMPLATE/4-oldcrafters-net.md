@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-
+<!-- Ez alá a sor alá írd le részletesen a hibát. Kérjük készíts róla képet is. -->
