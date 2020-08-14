@@ -9,3 +9,5 @@ assignees: ''
 
 <!-- Melyik szerverrel kapcsolatos az ötlet? pl.: Survival -->
 **Szerver**:
+
+<!-- Ez alá a sor alá írd le az ötletedet. -->
