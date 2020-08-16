@@ -1,12 +1,12 @@
 command:
-  cannot_be_used_by_console: 'Ez a parancs nem használható a konzolban. :/'
+  cannot_be_used_by_console: 'Ez a parancs nem használható a konzolban.'
   cannot_edit_owner: '&4Nem változtathatod meg a védés tulajdonosát, üsd ki a táblát (már ha tudod).'
   line_number_out_of_bounds: '&4Kérlek add meg a sor számát 2 és 4 között.'
-  no_permission: '&4Nincs jogod a parancs használatához. :/'
+  no_permission: '&4Nincs jogod a parancs használatához.'
   no_sign_selected: '&4Ki kell választanod egy levédett blokkon lévő táblát jobb klikkel.'
-  player_name_too_long: '&4A játékos neve túl hosszú, ezért nem fért el a táblán.'
+  player_name_too_long: '&4A játékos neve túl hosszú, ezért nem fér el a táblán.'
   plugin_reloaded: '&6Konfigurációs fájlok újratöltve!'
-  sign_no_longer_part_of_protection: '&4A kiválasztott tábla már nem tartozik egy levédett blokkhoz.'
+  sign_no_longer_part_of_protection: '&4A kiválasztott tábla már nem tartozik levédett blokkhoz.'
   updated_sign: '&6A tábla frissítve!'
 protection:
   add_more_users_sign_instead: '&4Csak egy [Lock] tábla lehet egy tároló-védésen belül. Rakj le egy [Több Név] táblát további játékosok hozzáadásához.'
