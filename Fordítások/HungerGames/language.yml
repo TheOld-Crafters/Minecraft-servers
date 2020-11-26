@@ -1,20 +1,17 @@
+# 
 #  This is the language file
 #  Change the messages to your liking
 #  Supports '&' color codes
 #  Messages that contain <> indicate things that the plugin replaces, such as <player> or <distance>
 #  Comments in this file will be removed if we update messages during a plugin update
 #  To restore these messages, backup this file, delete it, and restart your server, this will create a new lang file with all the notes
-
+# 
 #  GENERAL PLUGIN MESSAGES
 prefix: '&7[&3HungerGames&7] '
-
-#  GAME MESSAGES
-#  <player> will be replaced with name of player
 player-joined-game: '&b<player> &7csatlakozott a játékhoz'
 player-left-game: '&b<player> &ckilépett a játékból'
-#  <arena> will be replaced with the name of the arena
-game-started: '&6 A(z) &c<arena> &6aréna 30 másodperc múlva indul!'
-game-join: '&6 Használd a&c /hg join <arena>&6 parancsot a csatlakozáshoz!'
+game-started: '&6A(z) &c<arena> &6aréna 30 másodperc múlva indul!'
+game-join: '&6Használd a&c /hg join <arena>&6 parancsot a csatlakozáshoz!'
 game-countdown: '&cA játék <timer> másodpercen belül kezdődik.'
 game-almost-over: '&cA játéknak mindjárt vége, harcolj az életedért!'
 game-ending-minsec: '&aA játéknak vége <minutes> perc <seconds> másodperc múlva.!'
@@ -23,30 +20,15 @@ game-ending-sec: '&aA játéknak vége <seconds> másodperc múlva!'
 game-border-closing: '&6A határ közeledik, <seconds> másodperced van, hogy elérd az
   aréna közepét!'
 game-chests-refill: '&6Ládák újratöltve.'
-
-# <min>/<sec> will be replaced with the remaining minutes and seconds in a game
-game-bossbar: '&6A játék vége: &b<min> &7perc &b<sec> &7másodperc'
-
-#  <amount> will be replaced with amount of players left to start a game
-players-to-start: ' &b<amount> &6játékos kell még a kezdéshez!'
+game-bossbar: '&6Játék vége: &b<min> &7perc &b<sec> &7másodperc'
+players-to-start: '&b<amount> &6játékos kell még a kezdéshez!'
 arena-not-ready: '&cAz aréna még nem áll készen! Kérlek várj a csatlakozás előtt!'
 arena-spectate: '&6You can spectate this arena by running &3/hg spectate <arena>'
 game-full: '&ctele van!'
-
-
-#  <arena> will be replaced with name of arena the player won in
-#  <winner> will be replaced with name of winner
 player-won: '&b<winner> &6nyert a(z) &b<arena> &6arénában&7!'
-
-#  <amount> will be replaced with the amount the player will receive on win
 winning-amount: '&7Kaptál &b$<amount>&7-t, mert megnyerted a &3Hunger&bGames-t!'
-
-#  SPECTATOR
 spectator-compass: '&3Spectator Compass'
 spectator-head-lore: '&7Click to TP to player'
-spectator-start-title: 'You are now spectating!'
-
-#  KIT MESSAGES
 kit-join-header: '&c>&7----------[&fÜdv a Hunger&fGames-ben&7]&7----------&c<'
 kit-join-msg: '&7           - &3Válassz egy felszerelést a &b/hg kit &7<&rkit-name&7>
   paranccsal'
@@ -54,56 +36,31 @@ kit-join-available: '&3  Elérhető felszerelések:&b'
 kit-join-footer: '&c>&7------------------------------------------&c<'
 kit-no-perm: '&cNincs engedélyed a felszerelés használatához!'
 kit-doesnt-exist: '&cEz a felszerelés nem található'
-kit-disabled: '&cKits disabled in this game.'
-
-#  SCOREBOARD
+kit-disabled: '&cA felszerelések le vannak tiltva ebben a játékban.'
 scoreboard-title: '&6HungerGames'
 players-alive: '&dÉlők:'
-# <num> will be replaced by the number of remaining players in the game
 players-alive-num: '&e<num> élő'
 scoreboard-arena: '&aAréna: &b'
-
-#  TEAMS
 team-invite-1: '&6*&b&m                                                                             &6*'
 team-invite-2: '| &f<inviter> &3Meghívott &fCsapatba&3!'
 team-invite-3: '| &3Írd be a &f/hg team accept &3parancsot a csatlakozáshoz!'
 team-invite-4: '&6*&b&m                                                                             &6*'
 joined-team: '&3Sikeresen csatlakoztál a csapathoz!'
-# <name> will be replaced with team name
-team-prefix: "&7[&aTeam-<name>&7]"
-team-suffix: ""
-team-created: "&aCreated team: &b<name>"
-team-already-exists: "&cTeam &b<name> &calready exists."
-team-already-have: "&cYou have already created a team: &b<name>"
-team-none: "&cYou do not have a team, create one first with command &b'/hg team create <name>'"
-
-#  CHEST DROPS
 chest-drop-1: '&6*&b&m                                                                                   &6*'
 chest-drop-2: '"&b| &3Egy csomagot dobtak le ide: &f<x>&3, &f<y>&3, &f<z>'
-
-#  COMPASS
-#  <player> will be replaced with the name of the nearest player
-#  <distance> will be replaced with the distance of the nearest player
 compass-nearest-player: '&fLegközelebbi játékos: &r<player>    &7Távolság: &c<distance>'
-
-#  FREE ROAM
 roam-game-started: '&4[]---------[ &6A kalandozási idő kezdetét vette! &4]---------[]'
-#  <roam> will be replaced with the time the players can roam for
 roam-time: ' &e <roam> másodperced van sebzés nélkül kalandozni!'
 roam-finished: '&cA pvp védelemnek vége, PvP engedélyezve!'
-
-#  GAME STATUSES
-status-running: '&a&lRunning'
-status-stopped: '&4&lStopped'
-status-ready: '&5&lReady'
-status-waiting: '&b&lWaiting...'
-status-broken: '&4&lBROKEN'
-status-rollback: '&c&lRestoring...'
-status-notready: '&1&lNotReady'
-status-beginning: '&a&lRunning'
-status-countdown: '&b&lStarting...'
-
-#  DEATH MESSAGES
+status-running: '&a&lFut'
+status-stopped: '&4&lLeállítva'
+status-ready: '&5&lKészen áll'
+status-waiting: '&b&lVárakozás...'
+status-broken: '&4&lMEGTÖRVE'
+status-rollback: '&c&lVisszaállítás...'
+status-notready: '&1&lNem áll készen'
+status-beginning: '&a&lFut'
+status-countdown: '&b&lIndítás...'
 death-fallen: '&7[&3HungerGames Bukott&7]'
 death-explosion: <player> darabjaira robbant!
 death-custom: <player> ismeretlen okból meghalt...
@@ -123,81 +80,53 @@ death-drowned: <player>-t szétszaggatta egy megfulladt!
 death-trident: <player>-t felnyársalta egy Trident!
 death-stray: <player>-t fejenlőtte egy kóborló...
 death-other-entity: <player> váratlanul meghalt...
-
-#  COMMANDS
-## Spawn
 cmd-spawn-same: '&cNem lehet két kezdőhely ugyanazon a helyen!'
 cmd-spawn-set: '&aLeraktad a &7#<number>&a számú HG kezdőhelyet.'
-
-## Base
 cmd-base-noperm: '&cEhhez nincs jogod: /hg <command>'
 cmd-base-nogame: '&cNem vagy játékban!'
 cmd-base-noregion: '&cNem vagy HungarGames régióban!'
 cmd-base-wrongusage: '&cHelytelen használat:'
-
-## Create
 cmd-create-need-selection: '&cAz aréna készítés előtt ki kell jelölnöd a területet!'
 cmd-create-divisible-1: '&cA másodperceknek oszthatónak kell lennie 30-cal!'
 cmd-create-divisible-2: '&cpl.: 90 30-cal osztható'
 cmd-create-minmax: '&cA min. játékosszám nem lehet több a max.-nál!'
 cmd-create-created: '&aElkészítetted a(z) &b<arena>&a arénát!'
-cmd-create-add-spawns: "&6You're now ready to set some spawns with '&a/hg addspawn&6'"
-
-## Delete
 cmd-delete-attempt: '&aA(z) <arena> aréna törlésének próbája!'
 cmd-delete-stopping: '&7- &cA játék fut! &aLeállítás..'
-cmd-delete-kicking: '&7- &cJátékosok érzékelve! &aKickelés..'
+cmd-delete-kicking: '&7- &cJátékosok érzékelve! &aKidobás..'
 cmd-delete-deleted: '&aSikeresen törölted a(z) &b<arena> &a arénát!'
 cmd-delete-failed: '&cNem sikerült törölni az arénát!'
 cmd-delete-noexist: '&cEz az aréna nem található!'
-
-## Join
 cmd-join-in-game: '&cMár játékban vagy!'
 cmd-join-no-money: '&cYou do not have enough money to join this game. Cost: &b$<cost>'
-
-## Kit
 cmd-kit-no-change: '&cA játék futása közben nem tudod módosítani a felszerelésed!'
-
-## Leave
 cmd-leave-left: '&6Elhagytad a(z) &b<arena>&6 arénát&c!'
 cmd-leave-refund: '&6You got a refund of &b$<cost> &6for leaving the game before it
   started'
-
-## Reload
 cmd-reload-attempt: '&aHungerGames újratöltésének próbálása...'
 cmd-reload-reloaded-arena: '&6 - &eArénák újratöltve!'
 cmd-reload-reloaded-kit: '&6 - &eFelszerelések újratöltve!'
 cmd-reload-reloaded-items: '&6 - &eVéletlenszerű tárgyak újratöltve!'
 cmd-reload-reloaded-config: '&6 - &eBeállítás értékek újratöltve!'
 cmd-reload-reloaded-success: '&a- HungerGames sikeresen újratöltve'
-
-## Exit
 cmd-exit-set: '&6A kilépési kezdőhely lerakva:'
 cmd-exit-set-arena: '&6<arena> Exit Spawn Set:'
-
-## LobbyWall
 cmd-lobbywall-set: '&aAz elosztó táblája lerakva!'
 cmd-lobbywall-notcorrect: '&cEzek a táblák nincsenek a jó formátumban!'
 cmd-lobbywall-format: '&cformátum: &6[sign] &c[sign] [sign]'
 lobby-signs:
-    sign-1:
-        line-1: '&1&lHunger Games'
-        line-3: '&0&lClick To Join'
-        line-4: 'Cost $&b<cost>'
-    sign-2:
-        line-1: '&1&lGame Status'
-    sign-3:
-        line-1: '&1&lAlive'
-
-## Start
+  sign-1:
+    line-1: '&1&lHunger Games'
+    line-3: '&0&lBelépéshez klikk'
+    line-4: Ár $&b<cost>
+  sign-2:
+    line-1: '&1&lJáték Állapot'
+  sign-3:
+    line-1: '&1&lÉlő'
 cmd-start-starting: '&6A(z) &b<arena>&6 aréna indul!'
-
-## Stop
 cmd-stop-all: '&aMinden játék leállítva'
 cmd-stop-arena: '&b<arena>&c aréna leállítva!'
 cmd-stop-noexist: '&cA(z) &b<arena>&c arénában nem fut játék!'
-
-## Team
 cmd-team-not-avail: '&b<player> &cnem található!'
 cmd-team-only-leader: '&cCsak a vezető tud másokat meghívni!'
 cmd-team-on-team: '&b<player> &6már csapattag!'
@@ -206,58 +135,53 @@ cmd-team-invited: '&b<player> &6meghívva!'
 cmd-team-wrong: '&cRossz használat: &6/hg team invite &b<name>'
 cmd-team-no-pending: '&cNincs függőben lévő meghívásod...'
 cmd-team-joined: '&b<player> &6csatlakozott a csapatodhoz!'
-cmd-team-no-team: '&cYou are not on a team!'
-cmd-team-not-on-team: '&b<player> &cis not on your team!'
-cmd-team-tp: '&6Teleporting to &b<player>'
-cmd-team-self: '&cYou can not invite yourself to your own team.'
-
-## Toggle
+cmd-team-no-team: '&cNem vagy egy csapatban!'
+cmd-team-not-on-team: '&b<player> &cnincs a csapatodban!'
+cmd-team-tp: '&6Teleportálás hozzá &b<player>'
+cmd-team-self: '&cNem hívhatod meg magadat a saját csapatodba.'
 cmd-toggle-unlocked: '&6A(z) &b<arena>&6 aréna &afeloldva!'
 cmd-toggle-locked: '&bA(z) &3<arena>&b aréna &4zárolva&b!'
-
-## Handler
 cmd-handler-nokit: '&cA játék futása közben nem tudsz felszerelést választani!'
 cmd-handler-nocmd: '&cA játék futása közben nem tudsz HungerGames-en kívüli parancsot
   használni!'
 cmd-handler-playing: Ez a játékos éppen HungerGames-t játszik!
-
-## Chest Refill
 cmd-chestrefill-set: '&6Láda újratöltés a(z) &b<arena> &6aréna számára &b<sec> másodpercre
   állítva'
-cmd-chestrefill-now: '&6Chests have now been refilled in &b<arena>'
-
-## Border
+cmd-chestrefill-now: '&6A ládák újratöltve itt &b<arena>'
 cmd-border-size: '&6Border size for &b<arena> &6has been set to &b<size>'
 cmd-border-center: '&6Border center for &b<arena> &6has been set at your location'
 cmd-border-timer: '&6Border time for &b<arena> &6has been set to start at remaining
   &b<start> seconds &6and stop at &b<end> seconds'
-
-#  LISTENER
 listener-not-running: '&cA játék nem fut!'
 listener-no-edit-block: '&cEzt a blokktípust nem módosíthatod!'
 listener-no-interact: '&cA játék kezdetéig ezzel nem tudsz kapcsolatba lépni!'
 listener-sign-click-hand: '&cKattints a táblára a kezeddel!'
-
-#  WAND LISTENER
-listener-wand-create-arena: "&6You're now ready to create your arena with '&a/hg create&6'"
-listener-wand-set-pos-2: '&6Now you need to set position 2!'
-
-#  ARENA CHECK
-check-need-more-spawns: '&cYou still need &7<number> &c more spawns!'
-check-broken-debug: '&cYour arena is marked as broken! use &7/hg debug <arena> &cto check for errors!'
-check-broken-debug-2: '&cIf no errors are found, please use &7/hg toggle <arena>&c!'
-check-invalid-lobby: '&cYour LobbyWall is invalid! Please reset them!'
-check-set-lobby: '&6Set lobbywall: &7/hg setlobbywall <arena>'
-check-ready-run: '&aYour HungerGames arena &7<arena>&a is ready to run!'
-
-#  TRACK STICK
 track-nearest: '"&b<player> &b<range> &eblokk távolságra van tőled: &b<location>"'
 track-no-near: '&cNem érzékelek embert a közelben...'
 track-empty: '&cA felderítő bot lemerült!'
 track-bar: '&a[]------------------------------------------[]'
 track-new1: '&a |&6   Kaptál egy felderítő botot! &a |'
 track-new2: '&a |&6   Lengesd a játékosok felderítéséhez!                &a |'
-
-#  LEADERBOARD
 lb-blank-space: ''
 lb-combined-separator: ' : '
+spectator-start-title: You are now spectating!
+team-prefix: '&7[&a<name>-csapat&7]'
+team-suffix: ''
+team-created: '&aCsapat létrehozva: &b<name>'
+team-already-exists: '&b<name> &ccsapat már létezik.'
+team-already-have: '&cMár létrehoztad ezt a csapatot: &b<name>'
+team-none: '&cNincs egy csapatod, hozz létre egyet ezzel a paranccsal &b''/hg team create
+  <name>'''
+cmd-create-add-spawns: '&6You''re now ready to set some spawns with ''&a/hg addspawn&6'''
+listener-wand-create-arena: '&6You''re now ready to create your arena with ''&a/hg
+  create&6'''
+listener-wand-set-pos-2: '&6Now you need to set position 2!'
+listener-wand-big-enough: '&cAn arena needs to be a cuboid of at least 5x5x5 in size.'
+check-need-more-spawns: '&cYou still need &7<number> &c more spawns!'
+check-broken-debug: '&cYour arena is marked as broken! use &7/hg debug <arena> &cto
+  check for errors!'
+check-broken-debug-2: '&cIf no errors are found, please use &7/hg toggle <arena>&c!'
+check-invalid-lobby: '&cYour LobbyWall is invalid! Please reset them!'
+check-set-lobby: '&6Set lobbywall: &7/hg setlobbywall <arena>'
+check-ready-run: '&aYour HungerGames arena &7<arena>&a is ready to run!'
+lb-missing-player: <none>
