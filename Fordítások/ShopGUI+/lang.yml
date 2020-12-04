@@ -64,9 +64,13 @@ MSG:
           RESETBY: A te %type% ármódosítód az összes tárgyadra a(z) %shop% boltban
             át lett állítva &c%player%&f által.
           USAGE: /shop resetmodifier shop <Játékosnév> <Bolt> <Tárgy> [buy|sell]
+      CHECK:
+        ITEM: This item's type is &c%material%&f with damage &c%damage%&f.
+        NOITEM: You have to hold an item in your hand in order to check its type.
   COMMAND:
     BOUGHT: 'Megvásároltad a parancsot ennyiért: &c%price%$&f.'
     CANNOTAFFORD: Kell még &c%price%$&f hogy megvedd ezt a parancsot.
+    BOUGHTFREE: You received &c%command%&f.
   ENCHANT:
     ALREADYAPPLIED: A tárgyon már van &c%enchantment%&f alkalmazva.
     BOUGHT: 'Vásároltál &c%enchantment%&f varázslatot ennyiért: &c%price%$&f.'
@@ -76,6 +80,7 @@ MSG:
     LEVELDIFF: Kell egy tárgy legalább &c%enchantment% %level%&f el/al.
     MAX: A tárgyon már megtalálható a maximum rárakható varázslat. (%amount%).
     TOOMANY: Nem varázsolhatsz több tárgyat %amount%-nál/nél.
+    BOUGHTFREE: You received &c%enchantment%&f.
   ERROR: Hiba történt, lépj kapcsolatba egy adminisztrátorral.
   GAMEMODEBANNED: 'Nincs hozzáférésed a bolthoz, amíg ebben a játékmódban vagy: %gamemode%.'
   GAMEMODEBANNEDTARGET: '%player%-nek nincs hozzáférése a bolthoz, amíg ebben a játékmódban
@@ -117,10 +122,12 @@ MSG:
     CANNOTAFFORD: 'Neked kell &c%price%$&f hogy megvedd: &c%permission%&f.'
     PERMISSIONSDISABLED: Engedélyek letiltva, kérjük, lépjen kapcsolatba a szerver
       tulajdonosával.
+    BOUGHTFREE: You received &c%permission%&f.
   RELOADED: Beállítások újratöltve!
   SELLALL:
     NOITEMS: Nincsen tárgyad, amit el tudnál adni.
     SOLD: 'Eladtál %quantity% tárgyat ennyiért: %price%$.'
+    INVALIDSHOP: Invalid shop specified.
   SELLHAND:
     CANNOTSELL: Nem adhatod el ezt a tárgyat.
     INVALIDQUANTITY: Helytelen darabszám. 1 és %max% között kell lennie.
@@ -134,6 +141,7 @@ MSG:
   WORLDBANNED: Nincs hozzáférésed.
   WORLDBANNEDTARGET: '%player%-nek nincs hozzáférése a bolthoz ebben a világban.'
   WORLDBLACKLISTED: Nincs hozzáférésed a(z) %shop% bolthoz ebben a világban.
+  AND: ' and '
 PREFIX: '&7[&aBolt&7] &f'
 SHOP:
   PERMISSION:
