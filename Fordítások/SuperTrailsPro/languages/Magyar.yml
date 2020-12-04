@@ -261,6 +261,8 @@ ParticleMenu:
   EndRod: '&7End rúd'
   Damage: '&cSebzés'
   Totem: '&aTotem'
+  Soul: '&bLélek'
+  SoulFire: '&bLélektűz'
 Modes:
   Default: Alapértelmezett
   Circle: Kör
@@ -268,6 +270,9 @@ Modes:
   Shooter: Lövöldözős
   Slinky: Slinky
   Pulse: Vibráló
+  Helix: 'Csigavonal'
+  Dna: 'Dna'
+  Spiral: 'Spirál'
   ModeNotSupported: '&cA jelenlegi mód nem támogatott ezzel a csíkkal!'
   TrailNotSupported: '&cA jelenlegi csík nem támogatott ezzel a móddal!'
   Lore:
