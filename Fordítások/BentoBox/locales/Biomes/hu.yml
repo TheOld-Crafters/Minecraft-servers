@@ -2,25 +2,25 @@ biomes:
   gui:
     title:
       admin:
-        main-gui: "&6Admin Menu"
-        edit: "&6Edit [biome]"
-        settings: "&6Addon Settings"
-        edit-list: "&6Editable Biome List"
-        remove-list: "&6Removable Biome List"
-        user-list: "&6Choose Player"
-        confirm-title: "&6Confirm Previous Action"
-        manage-numbers: "&6Manage Numbers"
-        select-biome: "&6Select Biome"
-        toggle-environment: "&6Toggle Environment"
-        edit-text-fields: "&6Edit Text Fields"
-        select-block: "&6Select A Material"
+        main-gui: "&6 Admin Menu"
+        edit: "&6 Edit [biome]"
+        settings: "&6 Addon Settings"
+        edit-list: "&6 Editable Biome List"
+        remove-list: "&6 Removable Biome List"
+        user-list: "&6 Choose Player"
+        confirm-title: "&6 Confirm Previous Action"
+        manage-numbers: "&6 Manage Numbers"
+        select-biome: "&6 Select Biome"
+        toggle-environment: "&6 Toggle Environment"
+        edit-text-fields: "&6 Edit Text Fields"
+        select-block: "&6 Select A Material"
 
-        lore-edit: "&6Lore Message"
-        lore-add: "&6Add Lore Element"
-        lore-remove: "&6Remove Lore Element"
+        lore-edit: "&6 Lore Message"
+        lore-add: "&6 Add Lore Element"
+        lore-remove: "&6 Remove Lore Element"
 
-      biomes-choose: "&6Válassz Éghajlatot"
-      mode-choose: "&6Válassz Frissítéi Módot"
+      biomes-choose: "&6 Válassz Éghajlatot"
+      mode-choose: "&6 Válassz Frissítéi Módot"
 
     buttons:
       admin:
@@ -108,8 +108,8 @@ biomes:
 
         change-biome: "Change which Minecraft Biome will be used."
         required-permissions: "Change required permissions for this biome.|Without these permissions players will not be able to use it!"
-        required-level: "Change minimum island level.|&cRequires Level Addon."
-        required-money: "Change biome cost.|&cRequires Economy Addon/Plugin."
+        required-level: "Change minimum island level.|&c Requires Level Addon."
+        required-money: "Change biome cost.|&c Requires Economy Addon/Plugin."
         name: "Change display name for this Biome."
         deployment: "Disable/enable players ability to use this biome."
         icon: "Set the display icon for this biome."
@@ -137,7 +137,7 @@ biomes:
         reduce-mode: "Switch to decrement mode that will reduce current value by clicked number."
         multiply-mode: "Switch to multiply mode that will multiply current value by clicked number."
 
-        click-to-edit: '&4Click here to edit input'
+        click-to-edit: '&4 Click here to edit input'
         edit-text-line: '&6 Edit text message!'
         add-text-line: '&6 Add new text message!'
 
@@ -155,7 +155,7 @@ biomes:
         neutral: "Contains void and all hills biomes. | Like the void."
         unused: "Contains unused or unlisted biomes."
 
-        selected: "&6Material is selected"
+        selected: "&6 Material is selected"
 
         lore:
           description: "Description string. | Defined in biomes object - biomeObject.description."
@@ -232,48 +232,48 @@ biomes:
         parameters: ""
       info:
         description: "az INFO paranccsal kérhetsz le információt egy éghajlatról."
-        parameters: "<éghajlat>"
+        parameters: "<biome>"
       set:
         description: "a SET paranccsal menü nélkül állíthatsz be éghajlatot."
-        parameters: "<éghajlat> [<típus>] [<nagyság>]"
+        parameters: "<biome> [type] [size]"
 
   errors:
-    unique-id: "&cUnique id &d[id]&c is not valid!"
-    too-many-arguments: "&cToo many parameters. Please check help!"
-    missing-arguments: "&cMissing command parameters. Please check help!"
-    unknown-argument: "&cUnknown command parameters. Please check help!"
+    unique-id: "&c Unique id &d[id] &c is not valid!"
+    too-many-arguments: "&c Too many parameters. Please check help!"
+    missing-arguments: "&c Missing command parameters. Please check help!"
+    unknown-argument: "&c Unknown command parameters. Please check help!"
 
-    incorrect-range: "&cGiven number &d'[number]'&c is not valid. Only positive integers are valid."
-    incorrect-mode: "&cGiven value &d'[mode]'&c is not valid. Valid values are 'ISLAND', 'CHUNK' or 'SQUARE'."
-    incorrect-icon: "&cGiven icon &d'[icon]'&c cannot be parsed. Try something different."
-    incorrect-biome: "&cGiven biome &d'[biome]'&c cannot be found in Minecraft. Use a correct biome name."
-    incorrect-parameter: "&cGiven property &d'[property]'&c is not defined for biome."
-    incorrect-boolean: "&cGiven value &d'[boolean]'&c is not a boolean. Valid values are 'true' or 'false'."
-    incorrect-visibility: "&cGiven value &d'[mode]'&c is not valid."
-    incorrect-object: "&cCannot find biome with given ID &d'[biome]'."
+    incorrect-range: "&c Given number &d'[number]' &c is not valid. Only positive integers are valid."
+    incorrect-mode: "&c Given value &d'[mode]' &c is not valid. Valid values are 'ISLAND', 'CHUNK' or 'SQUARE'."
+    incorrect-icon: "&c Given icon &d'[icon]' &c cannot be parsed. Try something different."
+    incorrect-biome: "&c Given biome &d'[biome]' &c cannot be found in Minecraft. Use a correct biome name."
+    incorrect-parameter: "&c Given property &d'[property]' &c is not defined for biome."
+    incorrect-boolean: "&c Given value &d'[boolean]' &c is not a boolean. Valid values are 'true' or 'false'."
+    incorrect-visibility: "&c Given value &d'[mode]' &c is not valid."
+    incorrect-object: "&c Cannot find biome with given ID &d'[biome]'."
 
-    no-biomes: '&cBiomes are not implemented in current world yet!'
-    no-biomes-admin: '&cBiomes are not implemented in current world yet! Use &5/[command] &cto add them!'
-    missing-user: "&cUser is not defined."
-    missing-biome: "&cBiome is not defined."
-    wrong-icon: "&cGiven material &6[value]&c cannot be parsed to ItemStack."
-    no-biomes-for-you: "&cUnfortunately, no usable biome could be found."
+    no-biomes: '&c Biomes are not implemented in current world yet!'
+    no-biomes-admin: '&c Biomes are not implemented in current world yet! Use &5/[command] &c to add them!'
+    missing-user: "&c User is not defined."
+    missing-biome: "&c Biome is not defined."
+    wrong-icon: "&c Given material &6[value] &c cannot be parsed to ItemStack."
+    no-biomes-for-you: "&c Unfortunately, no usable biome could be found."
 
-    not-valid-integer: '&cGiven integer "[value]" is not valid!|Value should be between [min] and [max].'
-    not-a-integer: '&cGiven value "[value]" is not an integer!'
+    not-valid-integer: '&c Given integer "[value]" is not valid!|Value should be between [min] and [max].'
+    not-a-integer: '&c Given value "[value]" is not an integer!'
 
-    not-on-island: "&cNem vagy egy szigeten."
-    not-enough-money: "&cNincs elég pénzed. Ez az éghajlat $[number]-ba kerül."
-    not-enough-level:  "&cA sziget szinted túl kevés. Az éghajlat a(z) [number]. szinttől érhető el."
-    admin-not-on-island: "&cNem vagy [user] szigetén."
-    disabled: "&cEz az éghajlat jelenleg nem elérhető."
-    missing-permission: "&cEhhez nincs jogod."
+    not-on-island: "&c Nem vagy egy szigeten."
+    not-enough-money: "&c Nincs elég pénzed. Ez az éghajlat $[number]-ba kerül."
+    not-enough-level:  "&c A sziget szinted túl kevés. Az éghajlat a(z) [number]. szinttől érhető el."
+    admin-not-on-island: "&c Nem vagy [user] szigetén."
+    disabled: "&c Ez az éghajlat jelenleg nem elérhető."
+    missing-permission: "&c Ehhez nincs jogod."
 
-    no-file: "&cbiomes.yml not found."
-    no-load: "&cAn error occur while importing biomes: [message]!"
-    load-biome: "&cCannot load biome '[biome]' as it is not defined in Minecraft. Use correct biome name."
+    no-file: "&c biomes.yml not found."
+    no-load: "&c An error occur while importing biomes: [message]!"
+    load-biome: "&c Cannot load biome '[biome]' as it is not defined in Minecraft. Use correct biome name."
 
-    no-rank: "&cYou do not have a high enough rank to do that."
+    no-rank: "&c You do not have a high enough rank to do that."
 
   information:
     header: "Éghajlat: [name]"
@@ -285,17 +285,17 @@ biomes:
 
   messages:
     admin:
-      migrate-start: '&2Start migrating biomes addon data.'
-      migrate-end: '&2Biomes addon data is updated to new format.'
-      migrate-not: '&2All data is valid.'
+      migrate-start: '&2 Start migrating biomes addon data.'
+      migrate-end: '&2 Biomes addon data is updated to new format.'
+      migrate-not: '&2 All data is valid.'
 
-    saved: "&dBiome [biome] is saved."
-    biome-created: "&dNew Biome object created with uniqueID: [id]"
+    saved: "&d Biome [biome] is saved."
+    biome-created: "&d New Biome object created with uniqueID: [id]"
     saved-config: "Addon settings updated."
     biome-removed: "Biome with unique id = '[biome]' removed from memory."
 
-    update-start: "&eÉghajlat beállítás megkezdése..."
-    update-done: "&6[biome]&r&e éghajlat sikeresen beállítva."
+    update-start: "&e Éghajlat beállítás megkezdése..."
+    update-done: "&6[biome] &r&e éghajlat sikeresen beállítva."
 
     skipping: "Skipping [biome] importing."
     overwriting: "Overwriting [biome]."
@@ -305,9 +305,9 @@ biomes:
 protection:
     flags:
         BIOMES_ISLAND_PROTECTION:
-            description: "&5&oToggle who can\n&5&ochange the island biome"
+            description: "&5&o Toggle who can\n&5&o change the island biome"
             name: "Biome control"
         BIOMES_WORLD_PROTECTION:
-            description: "&5&oEnable/disable\n&5&orequirement for players to\n&5&obe on their island to\n&5&ochange biome."
+            description: "&5&o Enable/disable\n&5&o requirement for players to\n&5&o be on their island to\n&5&o change biome."
             name: "Biome Island limitation"
             hint: "You must be on your island to change the biome!"
