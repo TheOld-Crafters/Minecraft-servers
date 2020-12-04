@@ -141,7 +141,7 @@ MSG:
   WORLDBANNED: Nincs hozzáférésed.
   WORLDBANNEDTARGET: '%player%-nek nincs hozzáférése a bolthoz ebben a világban.'
   WORLDBLACKLISTED: Nincs hozzáférésed a(z) %shop% bolthoz ebben a világban.
-  AND: ' and '
+  AND: ' és '
 PREFIX: '&7[&aBolt&7] &f'
 SHOP:
   PERMISSION:
