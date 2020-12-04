@@ -585,3 +585,12 @@ Messages:
     Notes: '{0}: video URL'
   WorldNotFound:
     Text: A világ nem található.
+  MaxBonusReached:
+    Text: Nem vásárolhatsz még {0} levédésblokkot. A szervernek van egy {1} blokkos
+      bónusz blokk korlátja.
+    Notes: '0: block count; 1: bonus claims limit'
+  ConfirmAbandonAllClaims:
+    Text: Biztosan elakarod hagyni az összes levédésedet?  Kérlek erősítsd meg ezzel a paranccsal
+      /AbandonAllClaims confirm
+  AutomaticClaimOtherClaimTooClose:
+    Text: Nem hozható létre levédés a ládádhoz, mert egy másik levédés túl közel van!
