@@ -54,35 +54,35 @@ challenges:
     gui:
         title:
             admin:
-                gui-title: '&aChallenges Admin'
-                edit-challenge-title: '&aEdit Challenge'
-                edit-level-title: '&aEdit Level'
-                settings-title: '&aEdit Settings'
-                choose-challenge-title: '&aChoose Challenge'
-                choose-level-title: '&aChoose Level'
-                choose-user-title: '&aChoose Player'
-                manage-blocks: '&aManage Blocks'
-                manage-entities: '&aManage Entities'
-                confirm-title: '&aConfirmation'
-                manage-items: '&aManage Items'
-                manage-numbers: '&aNumber Pad'
-                select-block: '&aSelect Block'
-                select-challenge: '&aSelect Challenge'
-                select-entity: '&aSelect Entity'
-                toggle-environment: '&aToggle Environment'
-                edit-text-fields: '&aEdit Text Fields'
+                gui-title: '&a Challenges Admin'
+                edit-challenge-title: '&a  Edit Challenge'
+                edit-level-title: '&a  Edit Level'
+                settings-title: '&a  Edit Settings'
+                choose-challenge-title: '&a  Choose Challenge'
+                choose-level-title: '&a  Choose Level'
+                choose-user-title: '&a  Choose Player'
+                manage-blocks: '&a  Manage Blocks'
+                manage-entities: '&a  Manage Entities'
+                confirm-title: '&a  Confirmation'
+                manage-items: '&a  Manage Items'
+                manage-numbers: '&a  Number Pad'
+                select-block: '&a  Select Block'
+                select-challenge: '&a  Select Challenge'
+                select-entity: '&a  Select Entity'
+                toggle-environment: '&a  Toggle Environment'
+                edit-text-fields: '&a  Edit Text Fields'
 
-                library-title: '&aDownloadable Libraries'
+                library-title: '&a  Downloadable Libraries'
 
-                lore-add: '&aAdd Lore Element'
-                lore-remove: '&aRemove Lore Element'
-                lore-edit: '&aEdit Lore'
+                lore-add: '&a  Add Lore Element'
+                lore-remove: '&a  Remove Lore Element'
+                lore-edit: '&a  Edit Lore'
 
-                type-select: "&aChoose Challenge Type"
-            challenges: '&6Küldetések'
-            game-modes: '&6Choose GameMode'
+                type-select: "&a  Choose Challenge Type"
+            challenges: '&6  Challenges'
+            game-modes: '&6  Choose GameMode'
 
-            multiple-complete: '&6How many times?'
+            multiple-complete: '&6  How many times?'
         buttons:
             admin:
                 complete: 'Complete user challenge'
@@ -180,9 +180,9 @@ challenges:
                 download: 'Download Libraries'
 
                 type:
-                    island: '&6Island Type'
-                    inventory: '&6Inventory Type'
-                    other: '&6Other Type'
+                    island: '&6  Island Type'
+                    inventory: '&6  Inventory Type'
+                    other: '&6 Other Type'
             next: 'Next'
             previous: 'Previous'
             return: 'Return'
@@ -252,13 +252,13 @@ challenges:
                 remove-experience: 'Remove required experience.'
                 required-level: |-
                     Define the required island level for this challenge.
-                    &cRequires Level addon.'
+                    &c Requires Level addon.'
                 required-money: |-
                     Define the required money in player"s account.
-                    &cRequires Vault and an Economy plugin.'
+                    &c Requires Vault and an Economy plugin.'
                 remove-money: |-
                     Remove required money from player"s account.
-                    &cRequires Vault and an Economy plugin.'
+                    &c Requires Vault and an Economy plugin.'
                 reward-text: 'Change message that will be sent to player after challenges completion.'
                 reward-items: |-
                     Change first time completion reward items.
@@ -266,7 +266,7 @@ challenges:
                 reward-experience: 'Change first time completion reward experience.'
                 reward-money: |-
                     Change first time completion reward money.
-                    &cRequires Vault and Economy plugin.
+                    &c Requires Vault and Economy plugin.
                 reward-commands: |-
                     Define reward commands that will be called after first time completion.
                     ***Adding "[SELF]" at the start means that command will be run by player, e.g. "/kill"
@@ -281,7 +281,7 @@ challenges:
                 repeat-reward-experience: 'Change repeated completion reward experience.'
                 repeat-reward-money: |-
                     Change repeated completion reward money.
-                    &cRequires Vault and an Economy plugin.
+                    &c Requires Vault and an Economy plugin.
                 repeat-reward-commands: |-
                     Define reward commands that will be executed after challenge repeated completion.
                     ***Adding "[SELF]" at the start means that command will be run by player, e.g. "/kill"
@@ -315,18 +315,18 @@ challenges:
                     0 means forever.
                 island-store: |-
                     Enable/disable challenges data storing per island. This means that challenges will be the same for the whole team if this is enabled.
-                    &cWill NOT convert data on click. PROGRESS WILL BE LOST.'
+                    &c Will NOT convert data on click. PROGRESS WILL BE LOST.'
                 default-locked-icon: |-
                     Change default locked level icon.
                     This option can be overwritten by each level.'
                 gui-mode: |-
                     Enable/disable single challenges GUI.
-                    &2Requires a server restart.'
+                    &2 Requires a server restart.'
                 visibility-mode: 'Show/hide undeployed challenges.'
 
-                click-to-edit: '&4Click here to edit input.'
-                edit-text-line: '&6Edit text message!'
-                add-text-line: '&6Add new text message!'
+                click-to-edit: '&4 Click here to edit input.'
+                edit-text-line: '&6 Edit text message!'
+                add-text-line: '&6 Add new text message!'
                 input-mode: 'Switch between chat and anvil input modes.'
                 title-enable: 'Enable/disable the title message that will be shown to player"s when they complete a challenge.'
                 title-showtime: 'Modify how long title messages will be visible to the player.'
@@ -339,10 +339,10 @@ challenges:
 
                 library: 'Open GUI that shows all available public Challenges Libraries.'
 
-                library-author: 'by &e[author]'
-                library-version: '&9Made in Challenges [version]'
-                library-lang: '&aLanguage: [lang]'
-                library-gamemode: '&aPrimary for [gamemode]'
+                library-author: 'by &e [author]'
+                library-version: '&9 Made in Challenges [version]'
+                library-lang: '&a Language: [lang]'
+                library-gamemode: '&a Primary for [gamemode]'
 
                 download: |-
                     Manually update available challenges libraries.
@@ -425,13 +425,13 @@ challenges:
                     Reward commands.
                     List of commands that will be rewarded defined in challengeLevel.rewardCommands
             current-value: |-
-                &6Jelenlegi érték: [value].
+                &6 Jelenlegi érték: [value].
             enabled: 'Aktív'
             disabled: 'Letiltva'
             type:
-                island: '&aallows to require blocks or mobs around player'
-                inventory: '&aallows to require items in players inventory'
-                other: '&aallows to require things from other plugins/addons'
+                island: '&a allows to require blocks or mobs around player'
+                inventory: '&a allows to require items in players inventory'
+                other: '&a allows to require things from other plugins/addons'
             the-end: '- Vég'
             nether: '- Pokol'
             normal: '- Világ'
@@ -445,8 +445,8 @@ challenges:
             level-unlocked: 'Kattints a(z) [level] szint küldetéseinek megtekintéséhez!'
             level-locked: 'Teljesíts [count] [level] küldetést, hogy feloldd ezt a szintet!'
 
-            increase-by: "&aIncrease completion count by [value]"
-            reduce-by: "&cReduce completion count by [value]"
+            increase-by: "&a Increase completion count by [value]"
+            reduce-by: "&c Reduce completion count by [value]"
 
             visibility:
                 visible: "All challenges are visible to everyone"
@@ -454,35 +454,36 @@ challenges:
                 toggleable: "Toggle if undeployed challenges should be displayed"
 
         challenge-description:
-            level: '&FSzint: [level]'
-            completed: '&BTeljesítve'
-            completed-times-of: '&7[donetimes]x teljesítve a maxból: [maxtimes]'
-            maxed-reached: '&7[donetimes]x teljesítve a maxból: [maxtimes]'
-            completed-times: '&7Teljesítve [donetimes]x'
-            warning-items-take: '&cTeljesítéskor a küldetéshez szükséges tárgyakat elvesszük!'
-            objects-close-by: '&cMinden szükséges tárgynak/entitásnak közel kell lennie hozzád a szigeten!'
-            warning-entities-kill: '&cTeljesítéskor minden szükséges entitás meg lesz ölve!'
-            warning-blocks-remove: '&cTeljesítéskor minden szükséges blokk törölve lesz!'
-            not-repeatable: '&cNem ismételhető!'
-            experience-reward: '&6XP jutalom: [value]'
-            money-reward: '&6Pénzjutalom: $[value]'
-            required-experience: '&bSzükséges XP: [value]'
-            required-money: '&bSzükséges pénz: $[value]'
-            required-island-level: '&bSzükséges sziget szint: [value]'
-            environment: '&bSzükséges környezet:'
-            reward-items: '&6Tárgy jutalmak:'
-            reward-commands: '&6Parancs jutalmak:'
-            required-items: '&bSzükséges tárgyak:'
-            required-entities: '&bSzükséges entitások:'
-            required-blocks: '&bSzükséges blokkok:'
+            level: '&f Szint: [level]'
+            completed: '&b Teljesítve'
+            completed-times-of: '[donetimes]x teljesítve a maxból: [maxtimes]'
+            maxed-reached: '[donetimes]x teljesítve a maxból: [maxtimes]'
+            completed-times: 'Teljesítve [donetimes]x'
+            warning-items-take: '&c Teljesítéskor a küldetéshez szükséges tárgyakat elvesszük!'
+            objects-close-by: '&c Minden szükséges tárgynak/entitásnak közel kell lennie hozzád a szigeten!'
+            warning-entities-kill: '&c Teljesítéskor minden szükséges entitás meg lesz ölve!'
+            warning-blocks-remove: '&c Teljesítéskor minden szükséges blokk törölve lesz!'
+            not-repeatable: '&c Nem ismételhető!'
+            experience-reward: '&6 XP jutalom: [value]'
+            money-reward: '&6 Pénzjutalom: $[value]'
+            required-experience: '&6 Szükséges XP: [value]'
+            required-money: '&6 Szükséges pénz: $[value]'
+            required-island-level: '&6 Szükséges sziget szint: [value]'
+            environment: 'Szükséges környezet:'
+            rewards-title: '&a  Jutalmak:'
+            reward-items: '&6 Tárgy jutalmak:'
+            reward-commands: '&6 Parancs jutalmak:'
+            required-items: 'Szükséges tárgyak:'
+            required-entities: 'Szükséges entitások:'
+            required-blocks: 'Szükséges blokkok:'
         level-description:
-            completed: '&BTeljesítve'
-            completed-challenges-of: '&3[number] küldetést teljesítettél a maxból ([max]) ezen a szinten.'
-            waver-amount: '&6[value] küldetést hagyhatsz ki a következő szint feloldásához.'
-            experience-reward: '&6XP jutalom: [value]'
-            money-reward: '&6Pénzjutalom: $[value]'
-            reward-items: '&6Tárgy jutalmak:'
-            reward-commands: '&6Parancs jutalmak:'
+            completed: '&b Teljesítve'
+            completed-challenges-of: '&3 [number] küldetést teljesítettél a maxból ([max]) ezen a szinten.'
+            waver-amount: '&6 [value] küldetést hagyhatsz ki a következő szint feloldásához.'
+            experience-reward: '&6 XP jutalom: [value]'
+            money-reward: '&6 Pénzjutalom: $[value]'
+            reward-items: '&6 Tárgy jutalmak:'
+            reward-commands: '&6 Parancs jutalmak:'
         item-description:
             item: '- [count] x [item]'
             item-meta: '  ([meta])'
@@ -503,7 +504,7 @@ challenges:
             fish-meta: '  [body-color] with [pattern-color] [pattern]'
 
         questions:
-            prefix: "&2[SERVER]: "
+            prefix: "&2 [SERVER]: "
 
             admin:
                 number: "Write a number in the chat and press enter."
@@ -527,26 +528,27 @@ challenges:
         admin:
             hit-things: 'Üss meg dolgokat, hogy hozzáadd a szükséges listához. Jobb klikkelj ha kész van.'
             you-added: 'Hozzáadtál egy [thing]-t a küldetéshez'
-            challenge-created: '[challenge] létrehozva!'
-            complete-wipe: '&cHopefully you have backups, because you just erased all the Challenges Addon databases!'
+            challenge-created: '[challenge]&r létrehozva!'
+            complete-wipe: '&c Hopefully you have backups, because you just erased all the Challenges Addon databases!'
 
-            challenge-wipe: '&cHopefully you have backups, because you just erased all the Challenges and their levels!'
-            players-wipe: '&cHopefully you have backups, because you just erase all the player completed challenges!'
-            completed: '&2You completed challenge [name] for [player]!'
-            already-completed: '&2This challenge was already completed!'
-            reset: '&2You reset challenge [name] for [player]!'
-            reset-all: '&2All [player] challenges were reset!'
-            not-completed: '&2This challenge is not completed yet!'
+            challenge-wipe: '&c Hopefully you have backups, because you just erased all the Challenges and their levels!'
+            players-wipe: '&c Hopefully you have backups, because you just erase all the player completed challenges!'
 
-            migrate-start: '&2Start migrating challenges addon data.'
-            migrate-end: '&2Challenges addon data updated to new format.'
-            migrate-not: '&2All data is valid.'
+            completed: '&2 You completed challenge [name] for [player]!'
+            already-completed: '&2 This challenge was already completed!'
+            reset: '&2 You reset challenge [name] for [player]!'
+            reset-all: '&2 All [player] challenges were reset!'
+            not-completed: '&2 This challenge is not completed yet!'
 
-            start-downloading: '&5Starting to download and import Challenges Library.'
-        you-completed-challenge: '&2Teljesítetted a(z) [value] küldetést!'
-        you-repeated-challenge: '&2Megismételted a(z) [value] küldetést!'
+            migrate-start: '&2 Start migrating challenges addon data.'
+            migrate-end: '&2 Challenges addon data updated to new format.'
+            migrate-not: '&2 All data is valid.'
+
+            start-downloading: '&5 Starting to download and import Challenges Library.'
+        you-completed-challenge: '&2 Teljesítetted a(z) [value] küldetést!'
+        you-repeated-challenge: '&2 Megismételted a(z) [value] küldetést!'
         you-repeated-challenge-multiple: '&2Megismételted a(z) [value] &r&2küldetést [count]x!'
-        you-completed-level: '&2Teljesítetted a(z) [value] szintet!'
+        you-completed-level: '&2 Teljesítetted a(z) [value] szintet!'
         name-has-completed-challenge: '&5[name] teljesítette a(z) [value] küldetést!'
         name-has-completed-level: '&5[name] teljesítette a(z) [value] szintet!'
         import-levels: 'Szintek importálása...'
@@ -559,49 +561,49 @@ challenges:
         defaults-file-overwrite: 'defaults.json exists. It will be overwritten.'
         defaults-file-completed: 'defaults.json file is populated with challenges from [world]!'
     errors:
-        no-name: '&cMissing challenge name'
-        unknown-challenge: '&cUnknown challenge'
-        unique-id: '&cUniqueID "[id]" is not valid.'
-        wrong-icon: '&cGiven material "[value]" is not valid and cannot be used as icon.'
+        no-name: '&c Missing challenge name'
+        unknown-challenge: '&c Unknown challenge'
+        unique-id: '&c UniqueID "[id]" is not valid.'
+        wrong-icon: '&c Given material "[value]" is not valid and cannot be used as icon.'
         not-valid-integer: |-
-            &cGiven integer "[value]" is not valid!
+            &c Given integer "[value]" is not valid!
             Value should be between [min] and [max].
-        not-a-integer: '&cGiven value "[value]" is not an integer!'
-        not-deployed: '&cChallenge is not deployed!'
-        not-on-island: '&cYou must be on your island to do that!'
-        challenge-level-not-available: '&cYou have not unlocked the required level to complete this challenge.'
-        not-repeatable: '&cThis challenge is not repeatable!'
-        wrong-environment: '&cYou are in the wrong environment!'
-        not-enough-items: '&cYou do not have enough [items] to complete this challenge!'
-        not-close-enough: '&cYou must be standing within [number] blocks of all required items.'
-        you-still-need: '&cYou still need [amount] x [item]'
-        missing-addon: '&cCannot complete challenge: Required addon or plugin is missing.'
-        incorrect: '&cCannot complete challenge: Requirements are incorrect.'
-        not-enough-money: '&cIt is necessary to have [value] on your account to complete the challenge.'
-        not-enough-experience: '&cIt is necessary to have [value] EXP to complete this challenge.'
-        island-level: '&cYour island must be level [number] or greater to complete this challenge!'
-        import-no-file: '&cCould not find challenges.yml file to import!'
-        no-load: '&cError: Could not load challenges.yml. [message]'
-        load-error: '&cError: Cannot load [value].'
-        no-rank: "&cYou do not have rank that is high enough to do that."
-        cannot-remove-items: '&cSome items cannot be removed from your inventory!'
-        exist-challenges-or-levels: '&cChallenges already exist in your world. Cannot proceed!'
-        defaults-file-exist: '&cdefaults.json already exists. Use overwrite mode to replace it!'
-        defaults-file-error: '&cThere was an error while creating defaults.json file! Check console!'
-        no-challenges: '&cChallenges are not implemented in this world yet!'
-        no-challenges-admin: '&cChallenges are not implemented in this world yet! Use &5/[command] &cto add them!'
-        missing-level: '&cChallenge Level [level] is not defined in the database. It may cause errors!'
-        missing-arguments: '&cCommand is missing arguments.'
-        no-multiple-permission: "&cYou do not have permission to complete this challenge multiple times at once."
+        not-a-integer: '&c Given value "[value]" is not an integer!'
+        not-deployed: '&c Challenge is not deployed!'
+        not-on-island: '&c You must be on your island to do that!'
+        challenge-level-not-available: '&c You have not unlocked the required level to complete this challenge.'
+        not-repeatable: '&c This challenge is not repeatable!'
+        wrong-environment: '&c You are in the wrong environment!'
+        not-enough-items: '&c You do not have enough [items] to complete this challenge!'
+        not-close-enough: '&c You must be standing within [number] blocks of all required items.'
+        you-still-need: '&c You still need [amount] x [item]'
+        missing-addon: '&c Cannot complete challenge: Required addon or plugin is missing.'
+        incorrect: '&c Cannot complete challenge: Requirements are incorrect.'
+        not-enough-money: '&c It is necessary to have [value] on your account to complete the challenge.'
+        not-enough-experience: '&c It is necessary to have [value] EXP to complete this challenge.'
+        island-level: '&c Your island must be level [number] or greater to complete this challenge!'
+        import-no-file: '&c Could not find challenges.yml file to import!'
+        no-load: '&c Error: Could not load challenges.yml. [message]'
+        load-error: '&c Error: Cannot load [value].'
+        no-rank: "&c You do not have rank that is high enough to do that."
+        cannot-remove-items: '&c Some items cannot be removed from your inventory!'
+        exist-challenges-or-levels: '&c Challenges already exist in your world. Cannot proceed!'
+        defaults-file-exist: '&c defaults.json already exists. Use overwrite mode to replace it!'
+        defaults-file-error: '&c There was an error while creating defaults.json file! Check console!'
+        no-challenges: '&c Challenges are not implemented in this world yet!'
+        no-challenges-admin: '&c Challenges are not implemented in this world yet! Use &5 /[command] &c to add them!'
+        missing-level: '&c Challenge Level [level] is not defined in the database. It may cause errors!'
+        missing-arguments: '&c Command is missing arguments.'
+        no-multiple-permission: "&c You do not have permission to complete this challenge multiple times at once."
         invalid-level: "&c Level [level] contains invalid data. It will not be loaded from database!"
         invalid-challenge: "&c Challenge [challenge] contains invalid data. It will not be loaded from database!"
 protection:
     flags:
         CHALLENGES_ISLAND_PROTECTION:
-            description: "&5&oToggle who can\n&5&ocomplete challenges"
+            description: "&5 &o Toggle who can\n&5 &o complete challenges"
             name: "Challenges protection"
         CHALLENGES_WORLD_PROTECTION:
-            description: "&5&oEnable/disable\n&5&orequirement for players to\n&5&obe on their island to\n&5&ocomplete a challenge."
+            description: "&5 &o Enable/disable\n&5 &o requirement for players to\n&5 &o be on their island to\n&5 &o complete a challenge."
             name: "Challenges Island limitation"
             hint: "No challenges outside island"
 version: 11
