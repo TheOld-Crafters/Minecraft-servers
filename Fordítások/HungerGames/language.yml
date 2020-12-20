@@ -7,7 +7,7 @@
 #  To restore these messages, backup this file, delete it, and restart your server, this will create a new lang file with all the notes
 # 
 #  GENERAL PLUGIN MESSAGES
-prefix: '&7[&3HungerGames&7] '
+prefix: '&7[&3HungerGames&7]'
 player-joined-game: '&b<player> &7csatlakozott a játékhoz'
 player-left-game: '&b<player> &ckilépett a játékból'
 game-started: '&6A(z) &c<arena> &6aréna 30 másodperc múlva indul!'
