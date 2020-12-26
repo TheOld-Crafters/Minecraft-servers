@@ -21,7 +21,7 @@ game-border-closing: '&6A határ közeledik, <seconds> másodperced van, hogy el
   aréna közepét!'
 game-chests-refill: '&6Ládák újratöltve.'
 game-bossbar: '&6Játék vége: &b<min> &7perc &b<sec> &7másodperc'
-players-to-start: '&b<amount> &6játékos kell még a kezdéshez!'
+players-to-start: ' &b<amount> &6játékos kell még a kezdéshez!'
 arena-not-ready: '&cAz aréna még nem áll készen! Kérlek várj a csatlakozás előtt!'
 arena-spectate: '&6You can spectate this arena by running &3/hg spectate <arena>'
 game-full: '&ctele van!'
