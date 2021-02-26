@@ -876,9 +876,9 @@ Pages:
 # Messages related to players
 # -------------------------------------------------------------------------------------------------
 Player:
-  Not_Online: '&cPlayer {player} &cnincs fent a szerveren.'
+  Not_Online: '&c{player} &cnincs online a szerveren.'
   Not_Connected: '&cPlayer ''{0}&c'' is not connected through BungeeCord.'
-  Not_Stored: '&cPlayer ''{0}&c'' nem található az adatbázisban.'
+  Not_Stored: '&c''{0}&c'' játékos nincs tárolva az adatbázisban.'
   Possessive_Form: '{player}''s'
   Has: has
   Newcomer_Cannot_Command: You are a newcomer and cannot run this command yet!
@@ -887,7 +887,7 @@ Player:
   No_Channel: You have no channel to write into. Use '/{label_channel} join' to join one.
   No_Possible_Channel: You lack permissions to join any channels.
   Cannot_Chat_Vanished: You can't write chat messages directly when you're vanished. Use '/{label_channel} send' instead.
-  Kick_Disallowed_Nickname: '&cA neved helytelen karaktereket tartalmaz!'
+  Kick_Disallowed_Nickname: '&cA neved nem engedélyezett karaktereket tartalmaz!'
   Kick_Relogin: '&cKérlek várj {0} másodpercet mielőtt újra csatlakoznál!'
   Channel_Range_Notification: '''{prefix_warn}There is no one in '' + (hasRange ? ''range'' : ''channel'') + '' you can chat to.'''
   Already_Conversing: '{0} is already having an ongoing server conversation!'
@@ -1007,7 +1007,7 @@ Checker:
   Delay: '''Kérlek, várj {seconds} a következő '' + (chat ? ''message'' : ''command'') + ''.'''
   Similarity: '''Kérlek, ne '' + (chat ? ''type messages'' : ''run commands'') + '', amik {similarity}% azonosak.'''
   Period: You can only send {type_amount} {type} in {period_amount} {period}.
-  Caps: Kérlek, kerüld a nagybetűk használatát az {type}.
+  Caps: Kérlek, kerüld a túlzott nagybetűk használatát az {type}.
   Sound_Notify: '&cYou cannot use sound notify for another {seconds}.'
   No_Text: You cannot send chat messages without text!
 
@@ -1015,9 +1015,9 @@ Checker:
 # Words for both singular and plural form. Separate these two forms with ", "
 # -------------------------------------------------------------------------------------------------
 Cases:
-  Second: second, seconds
-  Message: message, messages
-  Command: command, commands
+  Second: másodperc, másodperc
+  Message: üzenet, üzenetek
+  Command: parancs, parancsok
 
 # -------------------------------------------------------------------------------------------------
 # Different prefixes you can use by calling {prefix_<type>} such as {prefix_info}
