@@ -876,9 +876,9 @@ Pages:
 # Messages related to players
 # -------------------------------------------------------------------------------------------------
 Player:
-  Not_Online: '&cPlayer {player} &cis not online on this server.'
+  Not_Online: '&cPlayer {player} &cnincs fent a szerveren.'
   Not_Connected: '&cPlayer ''{0}&c'' is not connected through BungeeCord.'
-  Not_Stored: '&cPlayer ''{0}&c'' is not stored in our database.'
+  Not_Stored: '&cPlayer ''{0}&c'' nem található az adatbázisban.'
   Possessive_Form: '{player}''s'
   Has: has
   Newcomer_Cannot_Command: You are a newcomer and cannot run this command yet!
@@ -887,8 +887,8 @@ Player:
   No_Channel: You have no channel to write into. Use '/{label_channel} join' to join one.
   No_Possible_Channel: You lack permissions to join any channels.
   Cannot_Chat_Vanished: You can't write chat messages directly when you're vanished. Use '/{label_channel} send' instead.
-  Kick_Disallowed_Nickname: '&cYour player name contains disallowed characters!'
-  Kick_Relogin: '&cPlease wait {0} second(s) before joining again!'
+  Kick_Disallowed_Nickname: '&cA neved helytelen karaktereket tartalmaz!'
+  Kick_Relogin: '&cKérlek várj {0} másodpercet mielőtt újra csatlakoznál!'
   Channel_Range_Notification: '''{prefix_warn}There is no one in '' + (hasRange ? ''range'' : ''channel'') + '' you can chat to.'''
   Already_Conversing: '{0} is already having an ongoing server conversation!'
   
@@ -995,19 +995,19 @@ Menu:
 # Messages related to tools
 # -------------------------------------------------------------------------------------------------
 Tool:
-  Error: '&cOups! There was a problem with this tool! Please contact the administrator to review the console for details.'
+  Error: '&cHoppá! Hiba lépett fel ezzel az eszközzel! Kérlek keresd fel a szerver egy adminisztrátorát, hogy megtekintse a konzolt a részletekért.'
 
 # -------------------------------------------------------------------------------------------------
 # Messages related to checking messages/chat/signs etc. against spam, rules and so on
 # -------------------------------------------------------------------------------------------------
 Checker:
-  Sign_Duplication: Do not place multiple signs with the same text.
-  Move: '''Please move before typing '' + (chat ? ''into chat'' : ''commands'') + ''.'''
-  Delay_After_Join: '''Please wait {seconds} before typing '' + (chat ? ''messages'' : ''commands'') + ''.'''
-  Delay: '''Please wait {seconds} before your next '' + (chat ? ''message'' : ''command'') + ''.'''
-  Similarity: '''Please do not '' + (chat ? ''type messages'' : ''run commands'') + '' that are {similarity}% similar.'''
+  Sign_Duplication: Ne helyezz le több táblát is ugyanazzal a szöveggel.
+  Move: '''Kérlek, mozdulj meg mielőtt írnál '' + (chat ? ''into chat'' : ''commands'') + ''.'''
+  Delay_After_Join: '''Kérlek, várj {seconds} mielőtt írnál '' + (chat ? ''messages'' : ''commands'') + ''.'''
+  Delay: '''Kérlek, várj {seconds} a következő '' + (chat ? ''message'' : ''command'') + ''.'''
+  Similarity: '''Kérlek, ne '' + (chat ? ''type messages'' : ''run commands'') + '', amik {similarity}% azonosak.'''
   Period: You can only send {type_amount} {type} in {period_amount} {period}.
-  Caps: Please avoid excessive capitalization in your {type}.
+  Caps: Kérlek, kerüld a nagybetűk használatát az {type}.
   Sound_Notify: '&cYou cannot use sound notify for another {seconds}.'
   No_Text: You cannot send chat messages without text!
 
