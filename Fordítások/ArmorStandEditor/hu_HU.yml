@@ -13,209 +13,209 @@ menutitle: 8
 
 #info
 setmode: 
-  msg: Setting mode to <x>.
-  head: Head Position
-  body: Body Position
-  leftleg: Left Leg Position
-  rightleg: Right Leg Position
-  leftarm: Left Arm Position
-  rightarm: Right Arm Position
-  equipment: Equipment
-  showarms: Toggle Show Arms
-  invisible: Toggle Visibility
-  size: Toggle Size
+  msg: Beállítási mód <x>.
+  head: Fej Pozíció
+  body: Test Pozíció
+  leftleg: Bal Láb Pozíció
+  rightleg: Jobb Láb Pozíció
+  leftarm: Bal Kar Pozíció
+  rightarm: Jobb Kar Pozíció
+  equipment: Felszerelés
+  showarms: Karok Láthatósága
+  invisible: Láthatóság
+  size: Méret
   disableslots: Toggle Disable Slots
-  gravity: Toggle Gravity
-  baseplate: Toggle BasePlate
-  placement: Placement
-  rotate: Rotate
-  copy: Copy
-  paste: Paste
-  reset: Reset Pose
+  gravity: Gravitáció
+  baseplate: Állvány Alapjának láthatósága
+  placement: Mozgatás
+  rotate: Forgatás
+  copy: Másolás
+  paste: Beillesztés
+  reset: Póz törlése
 setaxis: 
-  msg: Setting axis to <x>.
+  msg: Tengely beállítása: <x>.
   x: X
   y: Y
   z: Z
 setslot: 
   msg: Setting copy slot to <x>.
 setadj:
-  msg: Setting adjustment to <x>.
-  coarse: Coarse
-  fine: Fine
+  msg: Mozgatás beállítása: <x>.
+  coarse: Durva
+  fine: Enyhe
 setgravity: 
-  msg: Gravity turned <x>.
-  on: on
-  off: off
+  msg: Gravitáció: <x>.
+  on: bekapcsolva
+  off: kikapcsolva
 nomode: 
-  msg: Click with the edit tool away from an armorstand to select an editing mode first!
+  msg: Először állítsd be a szerkesztési módot, ehhez kattints félre a kovakővel a páncélállványtól!
 copied: 
-  msg: ArmorStand state copied to slot <x>.
+  msg: Páncélállvány beállításainak másolása ide: <x>.
 pasted: 
-  msg: ArmorStand state pasted from slot <x>.
+  msg: Mentés beillesztése erről a vágólapról: <x>.
 target:
   msg: ArmorStand target locked.
 notarget:
   msg: ArmorStand target unlocked.
 help:
-  msg: "1. Hold the editing tool(<x>) in your main hand
+  msg: "1. Tartsd a szerkesztőeszközt(<x>) a domináns kezedben.
 
-      2. Left or right click away from an armor stand to open menu.
+      2. A menü megnyitásához jobb vagy balklikkelj elfelé a páncélállványtól.
 
-      3. Select the labeled menu options.
+      3. Válassz a megadott beállítási lehetőségek közül.
 
-      4. Left click the armor stand with the edit tool in hand to apply those options.
+      4. Bal klikkelj a páncélállványra a kovakővel a kezedben, hogy alkalmazd a beállításaid.
 
-      5. Right click instead to edit in reverse!"
+      5. Right click instead to edit in reverse!" Jobb klikkelj, hogy fordítva alkalmazt a beállításaid.
 helptips:
   msg: "Tips:
 
   1. Press the \"Swap Item in Hands\" key (default F) while holding the edit tool to target a specific armor stand, if other armor stands are in the way.
 
-  2. You can apply NameTags to armor stands. You may use the & symbol to make colored names.
+  2. Névcédulával el tudsz nevezni páncélállványokat. A & jellel tudsz színes nevet adni neki. Színkódokért -> /einfo színek.
 
-  3. You can use crouch + scroll wheel while holding the edit tool to change Axis without opening the menu"
+  3. A kövakövet kézben tartva a guggolás + görgő használatával változtathatod az állvány tengelyét a menü megnyitása nélkül." 
 helpurl:
-  msg: "More info: https://github.com/RypoFalem/ArmorStandEditor/wiki"
+  msg: "Több infó: https://github.com/RypoFalem/ArmorStandEditor/wiki"
 
 #warn
 cantedit:
-  msg: Sorry, you cannot edit armor stands here!
+  msg: Sajnálom, itt nem tudsz páncélállványt módosítani!
 noperm: 
-  msg: You don't have permission to use this!
+  msg: Ehhez nincs elegendő jogod!
 noslotnumcom: 
-  msg: You must specify a slot number!
+  msg: Meg kell adnod egy slotszámot!
 noadjcom:
-  msg: You must specify Coarse or Fine adjustment!
+  msg: Ki kell választanod a Durva vagy Enyhe beállítást!
 noaxiscom:
-  msg: You must specify an Axis!
+  msg: Meg kell adnod egy tengelyt!
 nomodecom:
-  msg: You must specify a Mode!
+  msg: Meg kell adnod egy Módot!
 
 #menutitle
 mainmenutitle:
-  msg: Armor Stand Editor Menu
+  msg: Állványszerkesztő menü
 equiptitle:
-  msg: ArmorStand Equipment
+  msg: Páncélállvány Felszerelés
 
 #icons
 xaxis:
-  msg: X Axis
-  description: 
-    msg: Rotate body parts along the X Axis
+  msg: X Tengely
+  description:
+    msg: Testrészek forgatása az X Tengely felé.
 yaxis: 
-  msg: Y Axis
+  msg: Y Tengely
   description: 
-    msg: Rotate body parts along the Y Axis
+    msg: Testrészek forgatása az Y Tengely felé.
 zaxis: 
-  msg: Z Axis
+  msg: Z Tengely
   description: 
-    msg: Rotate body parts along the Z Axis
+    msg: Testrészek forgatása a Z Tengely felé.
 coarseadj: 
-  msg: Coarse Adjustment
+  msg: Durva Beállítás
   description: 
-    msg: Make large adjustments
+    msg: Nagy módosításokat végez.
 fineadj: 
-  msg: Fine Adjustment
+  msg: Enyhe Beállítás
   description: 
-    msg: Make tiny adjustments
+    msg: Apró módosításokat végez.
 head: 
-  msg: Head Position
+  msg: Fej Pozíció
   description: 
-    msg: Rotate the head
+    msg: Fej Forgatása.
 body: 
-  msg: Body Position
+  msg: Test Pozíció
   description: 
-    msg: Rotate the body
+    msg: Test Forgatása.
 leftleg: 
-  msg: Left Leg Position
+  msg: Bal Láb Pozíció
   description: 
-    msg: Rotate the left leg
+    msg: Bal Láb Forgatása.
 rightleg: 
-  msg: Right Leg Position
+  msg: Jobb Láb Pozíció
   description: 
-    msg: Rotate the right leg
+    msg: Jobb Láb Forgatása.
 leftarm: 
-  msg: Left Arm Position
+  msg: Bal Kar Pozíció
   description: 
-    msg: Rotate the left arm
+    msg: Bal Kar Forgatása.
 rightarm: 
-  msg: Right Arm Position
+  msg: Jobb Kar Pozíció
   description: 
-    msg: Rotate the right arm
+    msg: Jobb Kar Forgatása.
 equipment: 
-  msg: Equipment
+  msg: Felszerelés
   description: 
-    msg: Edit equipment
+    msg: Felszerelés szerkesztése.
 showarms: 
-  msg: Show Arms
+  msg: Karok mutatása
   description: 
-    msg: Turn arms on and off
+    msg: Be- és kikapcsolja a karokat.
 invisible: 
-  msg: Visibility
+  msg: Láthatóság
   description: 
-    msg: Make it visibile or invisible
+    msg: Láthatóvá és Láthatatlanná teszi.
 size: 
-  msg: Size
+  msg: Méret
   description: 
-    msg: Make it big or small
+    msg: Növeli és csökkenti a méretet.
 disableslots: 
-  msg: Disable Slots
+  msg: Felszerelési helyek kikapcsolása
   description: 
-    msg: Enable and disable equipment lock
+    msg: Be- és kikapcsolja a felszerelési helyeket.
 gravity: 
-  msg: Gravity
+  msg: Gravitáció
   description: 
-    msg: Turn gravity on or off
+    msg: Be- és kikapcsolja a gravitációt.
 baseplate: 
-  msg: BasePlate
+  msg: Állványalap
   description: 
-    msg: Turn baseplate on or off
+    msg: Be- és kikapcsolja az állvány alapját.
 placement: 
-  msg: Placement
+  msg: Elhelyezés
   description: 
-    msg: Move the entire armorstand
+    msg: Mozgatja az egész Páncélállványt.
 rotate: 
-  msg: Rotate
+  msg: Forgatás
   description:
-    msg: Rotate the entire armorstand
+    msg: Elforgatja az egész Páncélállványt.
 copy: 
-  msg: Copy
+  msg: Másolás
   description:
-    msg: Copy the armorstand's settings
+    msg: Másolja a Páncélállvány beálíltásait.
 paste: 
-  msg: Paste
+  msg: Beillesztés
   description:  
-    msg: Paste the armorstand's settings
+    msg: Beilleszti a Páncélállvány beállításait.
 copyslot: 
-  msg: Copy Slot <x>
+  msg: Másolás a következő slotról <x>
   description:
-    msg: Select a slot to store settings
+    msg: Válassz ki egy slotot a beállítások tárolására.
 reset:
-  msg: Reset Pose
+  msg: Póz törlése
   description:
-    msg: Reset bodypart position to default
+    msg: Testrész pozíciójának törlése.
 helpgui:
-  msg: Help!
+  msg: Segítség!
   description:
-    msg: Click here to get help!
+    msg: Kattints ide, hogy segítséget kapj!
 
 #icons (equipment menu)
 disabled: 
-  msg: Disabled
+  msg: Kikapcsolva
 equipslot: 
   msg: <x> Slot
   description: 
-    msg: Drag your <x> into the slot below
-    helm: Helmet
-    chest: Chestplate
-    pants: Pants
-    boots: Boots
-    rhand: Right Hand Item
-    lhand: Left Hand Item
-  helm: Helmet
-  chest: Chestplate
-  pants: Pants
-  boots: Feetsies
-  rhand: Right Hand
-  lhand: Left Hand
+    msg: Helyezd be az alábbi helyre a következő tárgyat: <x>.
+    helm: Sisak
+    chest: Mellvért
+    pants: Lábszárvédő
+    boots: Cipő
+    rhand: Jobb Kéz Felőli Eszköz
+    lhand: Bal Kéz Felőli Eszköz
+  helm: Sisak
+  chest: Mellvért
+  pants: Lábszárvédő
+  boots: Cipellők
+  rhand: Jobb Kéz
+  lhand: Bal Kéz
