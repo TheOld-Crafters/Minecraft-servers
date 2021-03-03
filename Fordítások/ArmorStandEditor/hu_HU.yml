@@ -21,12 +21,12 @@ setmode:
   leftarm: Bal Kar Pozíció
   rightarm: Jobb Kar Pozíció
   equipment: Felszerelés
-  showarms: Karok Láthatósága
-  invisible: Láthatóság
-  size: Méret
-  disableslots: Toggle Disable Slots
-  gravity: Gravitáció
-  baseplate: Állvány Alapjának láthatósága
+  showarms: Karok Láthatóságának Állítása
+  invisible: Láthatóság Állítása
+  size: Méret Állítása
+  disableslots: Letiltott Helyek Állítása
+  gravity: Gravitáció Állítása
+  baseplate: Állvány Alapjának Állítása
   placement: Mozgatás
   rotate: Forgatás
   copy: Másolás
@@ -38,43 +38,43 @@ setaxis:
   y: Y
   z: Z
 setslot: 
-  msg: Setting copy slot to <x>.
+  msg: A másolási hely beállítása: <x>.
 setadj:
   msg: Mozgatás beállítása: <x>.
   coarse: Durva
   fine: Enyhe
 setgravity: 
   msg: Gravitáció: <x>.
-  on: bekapcsolva
-  off: kikapcsolva
+  on: be
+  off: ki
 nomode: 
-  msg: Először állítsd be a szerkesztési módot, ehhez kattints félre a kovakővel a páncélállványtól!
+  msg: Először állítsd be a szerkesztési módot, ehhez kattints félre a szerkesztőeszközzel a páncélállványtól!
 copied: 
   msg: Páncélállvány beállításainak másolása ide: <x>.
 pasted: 
   msg: Mentés beillesztése erről a vágólapról: <x>.
 target:
-  msg: ArmorStand target locked.
+  msg: A páncélállvány cél lezárva.
 notarget:
-  msg: ArmorStand target unlocked.
+  msg: A páncélállvány cél feloldva.
 help:
-  msg: "1. Tartsd a szerkesztőeszközt(<x>) a domináns kezedben.
+  msg: "1. Tartsd a szerkesztőeszközt(<x>) a fő kezedben.
 
-      2. A menü megnyitásához jobb vagy balklikkelj elfelé a páncélállványtól.
+      2. A menü megnyitásához jobb vagy bal klikkelj elfelé a páncélállványtól.
 
       3. Válassz a megadott beállítási lehetőségek közül.
 
-      4. Bal klikkelj a páncélállványra a kovakővel a kezedben, hogy alkalmazd a beállításaid.
+      4. Bal klikkelj a páncélállványra a szerkesztőeszközzel a kezedben, hogy alkalmazd a beállításaid.
 
-      5. Right click instead to edit in reverse!" Jobb klikkelj, hogy fordítva alkalmazt a beállításaid.
+      5. Jobb klikkelj, hogy fordítva alkalmazd a beállításaid."
 helptips:
-  msg: "Tips:
+  msg: "Tippek:
 
-  1. Press the \"Swap Item in Hands\" key (default F) while holding the edit tool to target a specific armor stand, if other armor stands are in the way.
+  1. Nyomd meg a \"Tárgy cseréje a kezekben\" gombot (alapértelmezetten az F), miközben a szerkesztőeszközt tartod egy adott páncélállvány megcélzásához, ha más páncélállványok útban vannak.
 
   2. Névcédulával el tudsz nevezni páncélállványokat. A & jellel tudsz színes nevet adni neki. Színkódokért -> /einfo színek.
 
-  3. A kövakövet kézben tartva a guggolás + görgő használatával változtathatod az állvány tengelyét a menü megnyitása nélkül." 
+  3. A szerkesztőeszközt kézben tartva a guggolás + görgő használatával változtathatod az állvány tengelyét a menü megnyitása nélkül." 
 helpurl:
   msg: "Több infó: https://github.com/RypoFalem/ArmorStandEditor/wiki"
 
@@ -84,7 +84,7 @@ cantedit:
 noperm: 
   msg: Ehhez nincs elegendő jogod!
 noslotnumcom: 
-  msg: Meg kell adnod egy slotszámot!
+  msg: Meg kell adnod egy helyszámot!
 noadjcom:
   msg: Ki kell választanod a Durva vagy Enyhe beállítást!
 noaxiscom:
@@ -182,15 +182,15 @@ rotate:
 copy: 
   msg: Másolás
   description:
-    msg: Másolja a Páncélállvány beálíltásait.
+    msg: Másolja a Páncélállvány beállításait.
 paste: 
   msg: Beillesztés
   description:  
     msg: Beilleszti a Páncélállvány beállításait.
 copyslot: 
-  msg: Másolás a következő slotról <x>
+  msg: Másolás a következő helyről <x>
   description:
-    msg: Válassz ki egy slotot a beállítások tárolására.
+    msg: Válassz ki egy helyet a beállítások tárolására.
 reset:
   msg: Póz törlése
   description:
@@ -202,9 +202,9 @@ helpgui:
 
 #icons (equipment menu)
 disabled: 
-  msg: Kikapcsolva
+  msg: Letiltva
 equipslot: 
-  msg: <x> Slot
+  msg: <x> Hely
   description: 
     msg: Helyezd be az alábbi helyre a következő tárgyat: <x>.
     helm: Sisak
