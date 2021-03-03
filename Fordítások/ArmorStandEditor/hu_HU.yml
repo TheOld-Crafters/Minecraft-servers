@@ -33,26 +33,26 @@ setmode:
   paste: Beillesztés
   reset: Póz törlése
 setaxis: 
-  msg: Tengely beállítása: <x>.
+  msg: "Tengely beállítása: <x>."
   x: X
   y: Y
   z: Z
 setslot: 
-  msg: A másolási hely beállítása: <x>.
+  msg: "A másolási hely beállítása: <x>."
 setadj:
-  msg: Mozgatás beállítása: <x>.
+  msg: "Mozgatás beállítása: <x>."
   coarse: Durva
   fine: Enyhe
 setgravity: 
-  msg: Gravitáció: <x>.
+  msg: "Gravitáció: <x>."
   on: be
   off: ki
 nomode: 
   msg: Először állítsd be a szerkesztési módot, ehhez kattints félre a szerkesztőeszközzel a páncélállványtól!
 copied: 
-  msg: Páncélállvány beállításainak másolása ide: <x>.
+  msg: "Páncélállvány beállításainak másolása ide: <x>."
 pasted: 
-  msg: Mentés beillesztése erről a vágólapról: <x>.
+  msg: "Mentés beillesztése erről a vágólapról: <x>."
 target:
   msg: A páncélállvány cél lezárva.
 notarget:
@@ -206,7 +206,7 @@ disabled:
 equipslot: 
   msg: <x> Hely
   description: 
-    msg: Helyezd be az alábbi helyre a következő tárgyat: <x>.
+    msg: "Helyezd be az alábbi helyre a következő tárgyat: <x>."
     helm: Sisak
     chest: Mellvért
     pants: Lábszárvédő
