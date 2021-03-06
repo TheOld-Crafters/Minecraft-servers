@@ -94,7 +94,6 @@ commands:
       stop:
         description: megtisztítási folyamat leállítása
         stopping: Purge leállítása
-        no-purge-in-progress: '&cNincs folyamatban tisztítás!'
       unowned:
         description: purge unowned islands
         unowned-islands: '&a Found &b [number] &a unowned islands.'
@@ -194,7 +193,8 @@ commands:
       team-members-title: 'Csapat:'
       team-owner-format: '&a[name] [rank]'
       team-member-format: '&b[name] [rank]'
-      island-location: 'Helyzet: [xyz]'
+      island-protection-center: 'Protection area center: [xyz]'
+      island-center: 'Island center: [xyz]'
       island-coords: 'Sziget koordináták: [xz1] to [xz2]'
       islands-in-trash: '&dA játékos szigete a kukában van.'
       protection-range: 'Levédés távolsága: [range]'
@@ -258,7 +258,16 @@ commands:
       not-possible: '&cA rangnak magasabbnak kell lennie a látogatónál.'
       rank-set: '&aA játékos szigetén lévő rangja beállítva [from] rangról [to] rangra
         &b[name]&a szigetén.'
-      name-not-owner: '&b[name]&c nem a sziget tulajdonosa.'
+    setprotectionlocation:
+      parameters: '[x y z coords]'
+      description: set current location or [x y z] as center of island's protection
+        area
+      island: '&c This will affect the island at [xyz] owned by ''[name]''.'
+      confirmation: '&c Are you sure you want to set [xyz] as the protection center?'
+      success: '&a Successfully set [xyz] as the protection center.'
+      fail: '&a Successfully set [xyz] as the protection center.'
+      island-location-changed: '&a [user] changed island''s protection center to [xyz].'
+      xyz-error: '&c Specify three integer coordinates: e.g, 100 120 100'
     setspawn:
       description: egy sziget beállítása kezdőhelynek ebben a játékmódban
       already-spawn: '&cMár ez a sziget a kezdőhely!'
@@ -267,9 +276,9 @@ commands:
         ebben a világban?'
       success: '&aSikeresen beállítva kezdőhelynek ez a sziget ebben a világban.'
     settings:
-      parameters: '[player]'
-      description: megnyitja a rendszer beállításokat vagy a sziget beállításokat
-        a játékosnak.
+      parameters: '[player]/[world flag] [flag/active/disable] [rank/active/disable]'
+      description: open settings GUI or set settings
+      unknown-setting: '&c Unknown setting'
     blueprint:
       parameters: <load/copy/paste/pos1/pos2/save>
       description: blueprint fájlok kezelése
@@ -468,10 +477,11 @@ commands:
     about:
       description: A kiegészítőről
     go:
-      parameters: '[otthon száma]'
+      parameters: '[otthon név]'
       description: Teleportálás a szigetedre
       teleport: '&aTeleportálás a szigetedre...'
       teleported: '&aTeleportálás a(z) &e[number]. számú otthonodhoz.'
+      unknown-home: '&c Ismeretlen otthon név!'
     help:
       description: A fő sziget parancs
     spawn:
@@ -498,6 +508,9 @@ commands:
       on-first-login: '&aÜdvözlünk! Néhány másodperc múlva elkezdjük előkészíteni
         a szigetet.'
       you-can-teleport-to-your-island: '&aTeleportálhatsz a szigetedre, ha szeretnél.'
+    deletehome:
+      description: egy otthon hely törlése
+      parameters: '[otthon név]'
     info:
       description: információ megtekintése saját vagy mások szigetéről
       parameters: <játékos>
@@ -525,8 +538,10 @@ commands:
     sethome:
       description: Otthon teleport pont beállítása
       must-be-on-your-island: '&cEhhez szigeten kell lenned!'
-      num-homes: '&cAz otthon száma 1-től [number]-ig adható meg.'
+      too-many-homes: '&c Cannot set - your island is at the maximum of [number] homes.'
       home-set: '&6A sziget otthon pontod beállítva ahol állsz.'
+      homes-are: '&6 Island homes are:'
+      home-list-syntax: '&6 [name]'
       nether:
         not-allowed: '&cNem állíthatsz be otthont a Pokolban.'
         confirmation: '&cBiztos vagy benne, hogy a Pokolban állítasz be otthont?'
@@ -541,6 +556,11 @@ commands:
       name-already-exists: '&cEbben a játékmódban már létezik egy ilyen nevű sziget.'
       parameters: <name>
       success: '&aSikeresen beállítva a szigeted neve erre: &b[name]&a.'
+    renamehome:
+      description: rename a home location
+      parameters: '[home name]'
+      enter-new-name: '&6 Enter the new name'
+      already-exists: '&c That name already exists, try another name.'
     resetname:
       description: Sziget név visszaállítása
       success: '&aSikeres sziget név visszaállítás.'
@@ -753,15 +773,15 @@ protection:
       hint: Üllő használat kikapcsolva
     ARMOR_STAND:
       description: Interakció kapcsolás
-      name: Páncélállvány
+      name: Páncélállványok
       hint: páncélállvány használat kikapcsolva
     BEACON:
       description: Interakció kapcsolás
-      name: Beacon
-      hint: Beacon használat kikapcsolva
+      name: Jelzőfények
+      hint: Jelzőfény használat kikapcsolva
     BED:
       description: Interakció kapcsolás
-      name: Ágy
+      name: Ágyak
       hint: Ágy használat kikapcsolva
     BOAT:
       name: Csónakok
@@ -985,6 +1005,10 @@ protection:
         &a outside protected
         &a island space
       name: '&e Moblimit a szigeten'
+    HIVE:
+      description: '&a Toggle hive harvesting.'
+      name: Hive harvesting
+      hint: Harvesting disabled
     HURT_ANIMALS:
       description: Bántalmazás kapcsolása
       name: Állatok bántalmazása
@@ -1144,6 +1168,13 @@ protection:
         &a May help reduce lag.
         &a Does not affect spawn island.
       name: Offline Redstone
+    PETS_STAY_AT_HOME:
+      description: |-
+        &a When active, tamed pets
+        &a can only go to and
+        &a cannot leave the owner's
+        &a home island.
+      name: Pets Stay At Home
     PISTON_PUSH:
       description: |-
         &a Enable this to prevent
@@ -1177,7 +1208,7 @@ protection:
         &c Enable/Disable PVP
         &c in the End.
       name: End PVP
-      hint: PVP kikapcsolva az Endben
+      hint: A PVP kikapcsolva az Endben
       enabled: '&c PVP az Endben bekapcsolva.'
       disabled: '&a PVP az Endben kikapcsolva.'
     PVP_NETHER:
@@ -1185,7 +1216,7 @@ protection:
         &c Enable/Disable PVP
         &c in the Nether.
       name: Nether PVP
-      hint: PVP kikapcsolva a Netherben
+      hint: A PVP kikapcsolva a Netherben
       enabled: '&c PVP a Netherben bekapcsolva.'
       disabled: '&a PVP a Netherben kikapcsolva.'
     PVP_OVERWORLD:
@@ -1193,6 +1224,7 @@ protection:
         &c Enable/Disable PVP
         &c on island.
       name: Alap világ PVP
+      hint: '&cA PVP kikapcsolva az Alap világban'
       enabled: '&c PVP az alap világban bekapcsolva.'
       disabled: '&a PVP az alap világban kikapcsolva.'
     REDSTONE:
@@ -1399,22 +1431,46 @@ management:
         description: '&aMi lenne ha megnéznéd a katalógusunkat?'
     information:
       state:
-        name: '&6Kompatibilitás'
+        name: '&6 Compatibility'
         description:
-          COMPATIBLE: "&aRunning &e[name] [version]&a.\n\n&aA BentoBox jelenleg egy\
-            \ \n&a&lKOMPATIBILIS &r&aszerveren és\n&averzión fut.\n\n&aIts features\
-            \ are fully designed to\n&arun in this environment.\n"
-          SUPPORTED: "&aRunning &e[name] [version]&a.\n\n&aA BentoBox jelenleg egy\
-            \ \n&a&lTÁMOGATOTT &r&aszerveren és \n&averzión fut.\n\n&aA legtöbb funkció\
-            \ zökkenőmentesen működik\n&aebben a környezetben.\n"
-          NOT_SUPPORTED: "&aRunning &e[name] [version]&a.\n\n&aA BentoBox jelenleg\
-            \ egy \n&6&lNEM TÁMOGATOTT &r&aszerveren és \n&averzión fut.\n\n&aA legtö\
-            bb funkció futni fog\n&akorrektül, &6platform-specifikus bugok vagy\n\
-            &6hibák várhatóak lesznek&a.\n"
-          INCOMPATIBLE: "&aRunning &e[name] [version]&a.\n\n&aA BentoBox jelenleg\
-            \ egy \n&c&lIMKOMPATIBILIS &r&aszerveren és\n&averzión fut.\n\n&cEz furcsa\
-            \ működést és bugokat okozhat\n&cés a legtöbb funkció instabil lehet.\n\
-            \n"
+          COMPATIBLE: |
+            &a Running &e [name] [version]&a .
+
+            &a BentoBox is currently running on a
+            &a &l COMPATIBLE &r &a server software and
+            &a version.
+
+            &a Its features are fully designed to
+            &a run in this environment.
+          SUPPORTED: |
+            &a Running &e [name] [version]&a .
+
+            &a BentoBox is currently running on a
+            &a &l SUPPORTED &r &a server software and
+            &a version.
+
+            &a Most of its features will run smoothly
+            &a in this environment.
+          NOT_SUPPORTED: |
+            &a Running &e [name] [version]&a .
+
+            &a BentoBox is currently running on a
+            &6 &l NOT SUPPORTED &r &a server software or
+            &a version.
+
+            &a While most of its features will run
+            &a correctly, &6 platform-specific bugs or
+            &6 issues are to be expected&a .
+          INCOMPATIBLE: |+
+            &a Running &e [name] [version]&a .
+
+            &a BentoBox is currently running on an
+            &c &l INCOMPATIBLE &r &a server software or
+            &a version.
+
+            &c Weird behaviour and bugs can occur
+            &c and most features may be unstable.
+
 catalog:
   panel:
     GAMEMODES:

@@ -185,7 +185,7 @@ biomes:
       disabled: "Letiltva"
       permission: " - [permission]"
 
-      information: "If you accept these changes, we will try to change your island biome to [biome] in update mode [mode] with range [range]."
+      information: "If you accept these changes, we will try to change your island biome to [biome] in update mode [mode] with range [range]. | Be aware, that biome can be changed only in 4x4x4 blocks."
 
     questions:
       prefix: "&2[SERVER]: "
