@@ -1,0 +1,1062 @@
+stone-generator:
+  # This section contains translations which are used in commands.
+  commands:
+    # This section contains only admin commands translations.
+    admin:
+      main:
+        description: "Mágikus zúzottkő generátor ADMIN parancs"
+      import:
+        description: "Betölti a generátorokat"
+        confirmation: "Eltávolítja a meglévő generátorokat [gamemode]-ból és betölti az újakat a megadott fájlból. - Kérlek erősítsd meg a szándékod!"
+      why:
+        parameters: "<player>"
+        description: "Tiltja a plugin debug üzeneteit."
+      database:
+        description: "Fő adatbázis parancs"
+      import-database:
+        parameters: "<file>"
+        description: "Betölti a plugin adatbázisának fájlját"
+        confirmation: "Eltávolítja a meglévő generátorokat [gamemode]-ból és betölti az újakat a megadott fájlból. - Kérlek erősítsd meg a szándékod!"
+      export:
+        parameters: "<file>"
+        description: "Export magic generators database from Game Mode into file"
+    # This section contains only player commands translations.
+    player:
+      main:
+        description: "megnyitja a generátor választó GUI-t"
+      view:
+        description: "megnyitja a generátorok tulajdonságai GUI-t"
+        parameters: "<generator-id>"
+      buy:
+        description: "Megvásárolja a kiválasztott generátort"
+        parameters: "<generator-id>"
+      activate:
+        description: "Aktiválja/kikapcsolja a választott generátort"
+        parameters: "<generator-id> <true/false>"
+  # This section contains translations for items inside GUI interfaces.
+  gui:
+    # This section contains translations for all GUI titles.
+    titles:
+      # Title for listing all generators.
+      player-panel: "&0&l Generátorok"
+      # Title for detailed generator view.
+      view-generator: "&0&l Generátor: &r [generator]"
+      # Title for admin panel.
+      admin-panel: "&0&l Admin Panel"
+      # Title for GUI that allows to select biomes for generator.
+      select-biome: "&0&l Választ egy éghajlatot"
+      # Title for GUI that allows to select a block generator.
+      select-block: "&0&l Generátor kiválasztása"
+      # Title for GUI that allows to select a bundle for island.
+      select-bundle: "&0&l Select Bundle"
+      # Title for GUI that allows to choose generator type.
+      select-type: "&0&l Generátor típusának kiválasztása"
+      # Title for detailed bundle view.
+      view-bundle: "&0&l Bundle: &r [bundle]"
+      # Title for managing bundles GUI.
+      manage-bundles: "&0&l Manage Bundles"
+      # Title for managing generators GUI.
+      manage-generators: "&0&l Generátorok kezelése"
+      # Title for editing island data.
+      view-island: "&0&l Sziget: [island]"
+      # Title for managing all island data.
+      manage-islands: "&0&l Sziget adatainak módosítása"
+      # Title for Library GUI
+      library: "&0&l Könyvtár"
+      # Title for Settings GUI
+      settings: "&0&l Beállítások"
+    # This section contains translations for all buttons inside GUI.
+    buttons:
+      # Section of buttons for Generator View GUI
+      default:
+        name: "&f&l Kezdő generátor"
+        description: |-
+          &7 A kezdő generátor mindig
+          &7 aktív.
+        enabled: |-
+          &b Ez az &a alapértelmezett &b generátor.
+        disabled: |-
+          &b Ez &c nem az alapértelmezett &b generátor.
+      priority:
+        name: "&f&l Generátor Prioritás"
+        description: |-
+          &7 A nagyobb prioritási számú
+          &7 generátor részesül előnyben,
+          &7 ha több generátor is építhető
+          &7 ugyan azon a helyen.
+        value: "&b Prioritás: &7 [number]"
+      type:
+        name: "&f&l Generátor Típusa"
+        description: |-
+          &7 Leírja milyen generátorral
+          &7 tudod használni a
+          &7 generátort.
+        value: "&b Típusa: &7 [type]"
+      required_min_level:
+        name: "&f&l Minimum sziget szint"
+        description: |-
+          &7 Megmutatja, hányas szintű
+          &7 sziget szükséges a
+          &7 generátor megszerzéséhez.
+        value: "&b Minimum szükséges szint: [number]"
+      required_permissions:
+        name: "&f&l Szükséges engedélyek"
+        description: |-
+          &7 Lista a szükséges engedélyekről
+          &7 a generátor feloldásához
+        list: "&b Szükséges engedélyek:"
+        value: "&b - [permission]"
+        none: "&b - nincs"
+      purchase_cost:
+        name: "&f&l Vásárlási ár"
+        description: |-
+          &7 Pénz szükséges ahhoz,
+          &7 hogy megvedd ezt a generátort.
+        value: "&b Ára: [number]"
+      activation_cost:
+        name: "&f&l Aktiválási díj"
+        description: |-
+          &7 Pénzre van szükséged ahhoz, 
+          &7 hogy aktiváld, vagy újra-aktiváld
+          &7 ezt a generátort.
+        value: "&b Ára: [number]"
+      biomes:
+        name: "&f&l Működőképes Éghajlatok"
+        description: |-
+          &7 Lista az Éghajlatokról, ahol
+          &7 a generátor működik.
+        list: "&b Éghajlatok:"
+        value: "&b - [biome]"
+        any: "&b - bármi"
+      treasure_amount:
+        name: "&f&l Kincs mennyisége"
+        description: |-
+          &7 Maximum mennyiség, amit
+          &7 kaphatsz egy kincs
+          &7 megtalálásakor
+        value: "&b Mennyiség: [number]"
+      treasure_chance:
+        name: "&f&l Esély a kincsre"
+        description: |-
+          &7 Megmutatja, mekkora eséllyel
+          &7 kapsz kincset a generátorból.
+        value: "&b CEsély: [number]"
+      # Section of buttons for Generator View GUI title.
+      info:
+        name: "&f&l Fő információk"
+        description: |-
+          &7 A legfőbb információk
+          &7 erről a generátorról.
+      blocks:
+        name: "&f&l Blokkok listája"
+        description: |-
+          &7 Megmutatja a bányászható blokkokat,
+          &7 és azok generálási esélyét.
+      treasures:
+        name: "&f&l Kincs lista"
+        description: |-
+          &7 Megmutatja a kincseket, és azok
+          &7 generálási esélyét.
+          &7 A kincset akkor dobja, 
+          &7 amikor blokkot generál.
+        drag-and-drop: |-
+          &7 Supports drag and drop
+          &7 items to empty spaces.
+      # Section for blocks and treasures icons in Generator View GUI.
+      block-icon:
+        name: "&f&l [material]"
+        # Supports [number], [#.#], [#.##], [#.###], [#.####], [#.#####]
+        description: "&b Esély: [#.##]"
+        actual: "&b Database value: [number]"
+      treasure-icon:
+        name: "&f&l [material]"
+        # Supports [number], [#.#], [#.##], [#.###], [#.####], [#.#####]
+        description: "&b Esély: [#.####]"
+        actual: "&b Database value: [number]"
+      # Section of buttons for User Generator List
+      show_cobblestone:
+        name: "&f&l Zúzottkő generátor"
+        description: |-
+          &7 Megmutatja milyen generátor lehet
+          &7 a zúzottkő generátor.
+      show_stone:
+        name: "&f&l Kő generátor"
+        description: |-
+          &7 Megmutatja milyen generátor lehet
+          &7 a kő generátor.
+      show_basalt:
+        name: "&f&l Bazalt generátor"
+        description: |-
+          &7 Megmutatja milyen generátor lehet
+          &7 a bazalt generátor.
+      toggle_visibility:
+        name: "&f&l Feloldott generátorok"
+        description: |-
+          &7 Csak a már feloldott
+          &7 generátorokat mutatja.
+      show_active:
+        name: "&f&l Aktív generátorok"
+        description: |-
+          &7 Csak az aktív generátorokat
+          &7 mutatja
+      # Button that is used to return to previous GUI or exit it completely.
+      return:
+        name: "&f&l Vissza"
+        description: |-
+          &7 
+      # Button that is used in multi-page GUIs which allows to return to previous page.
+      previous:
+        name: "&f&l Előző oldal"
+        description: |-
+          &7 
+      # Button that is used in multi-page GUIs which allows to go to next page.
+      next:
+        name: "&f&l Következő oldal"
+        description: |-
+          &7 
+      # All buttons below here are used for Admin GUIs.
+      # Buttons in main Admin GUI
+      manage_users:
+        name: "&f&l Manage Island Data"
+        description: |-
+          &7 Manage island data
+          &7 in the current gamemode.
+      manage_generator_tiers:
+        name: "&f&l Manage Generators"
+        description: |-
+          &7 Manage generators
+          &7 in the current gamemode.
+      manage_generator_bundles:
+        name: "&f&l Manage Bundles"
+        description: |-
+          &7 Manage bundles
+          &7 in the current gamemode.
+      settings:
+        name: "&f&l Settings"
+        description: |-
+          &7 Check and change
+          &7 addon settings.
+      import_template:
+        name: "&f&l Import Template"
+        description: |-
+          &7 Import template
+          &7 file located inside the
+          &7 addon directory.
+      web_library:
+        name: "&f&l Web Library"
+        description: |-
+          &7 Access the web
+          &7 library that contains
+          &7 shared generators.
+      export_from_database:
+        name: "&f&l Export Database"
+        description: |-
+          &7 Export the database
+          &7 into a single file located in
+          &7 the addon directory.
+      import_to_database:
+        name: "&f&l Import Database"
+        description: |-
+          &7 Import a database from
+          &7 a file located in the addon
+          &7 directory.
+      wipe_user_data:
+        name: "&f&l Clear User Database"
+        description: |-
+          &7 Clear user data for
+          &7 each island in the
+          &7 current gamemode.
+      wipe_generator_data:
+        name: "&f&l Clear Generator Database"
+        description: |-
+          &7 Clear generator and bundle
+          &7 data in the current gamemode.
+      # Buttons in Bundle Edit GUI
+      bundle_name:
+        name: "&f&l Bundle Name"
+        description: |-
+          &7 Change the bundle name.
+        value: "&b Name: &r [bundle]"
+      bundle_icon:
+        name: "&f&l Bundle Icon"
+        description: |-
+          &7 Change the bundle icon.
+      bundle_description:
+        name: "&f&l Bundle Description"
+      bundle_info:
+        name: "&f&l General Information"
+        description: |-
+          &7 Show general information
+          &7 about this bundle.
+      bundle_generators:
+        name: "&f&l Generators"
+        description: |-
+          &7 Show a list of generators
+          &7 assigned to this bundle.
+      add_generator:
+        name: "&f&l Add Generator"
+        description: |-
+          &7 Assign a generator
+          &7 to this bundle.
+        list: "&b Selected Generators:"
+        value: "&b - [generator]"
+      remove_generator:
+        name: "&f&l Remove Generator"
+        description: |-
+          &7 Remove a generator
+          &7 from this bundle.
+        list: "&b Selected Generators:"
+        value: "&b - [generator]"
+      # Buttons in Bundle Management GUI
+      create_bundle:
+        name: "&f&l Create Bundle"
+        description: |-
+          &7 Create a new bundle
+          &7 for this gamemode.
+      delete_bundle:
+        name: "&f&l Remove Bundle"
+        description: |-
+          &7 Remove a bundle from
+          &7 this gamemode completely.
+        list: "&b Selected Bundles:"
+        value: "&b - [bundle]"
+      # Buttons in Generator Edit Panel
+      name:
+        name: "&f&l Generator Name"
+        description: |-
+          &7 Title for this generator.
+          &7 Supports color codes.
+        value: "&b Name: &r [generator]"
+      icon:
+        name: "&f&l Generator Icon"
+        description: |-
+          &7 Item used to display this
+          &7 generator in all GUIs.
+      locked_icon:
+        name: "&f&l Locked Icon"
+        description: |-
+          &7 Item used to display this
+          &7 generator in all GUIs if
+          &7 it is locked.
+      description:
+        name: "&f&l Generator Description"
+        description: |-
+          &7 Text for generator that will
+          &7 be written under title.
+        value: "&b Description:"
+      deployed:
+        name: "&f&l Deployed"
+        description: |-
+          &7 Deployed generators are visible
+          &7 to and accessible by players.
+          &7 Undeployed generators will not
+          &7 generate blocks.
+        enabled: |-
+          &b This generator is &a deployed.
+        disabled: |-
+          &b This generator is &c not deployed.
+      add_material:
+        name: "&f&l Add Material"
+        description: |-
+          &7 Add new material to the
+          &7 current material list.
+      remove_material:
+        name: "&f&l Remove Materials"
+        description: |-
+          &7 Remove selected
+          &7 materials from the list.
+        selected-materials: "&7 Selected Materials:"
+        list-value: "&7 - [number] x [value]"
+      # Buttons in Bundle Management GUI
+      create_generator:
+        name: "&f&l Create Generator"
+        description: |-
+          &7 Create a new
+          &7 generator for
+          &7 the gamemode.
+      delete_generator:
+        name: "&f&l Remove Generator"
+        description: |-
+          &7 Remove generator
+          &7 from gamemode completely.
+        list: "&b Selected Generators:"
+        value: "&b - [generator]"
+      # Buttons in Island Data Edit GUI
+      island_name:
+        name: "&f&l [name]"
+        description: |-
+          &7 [owner]
+          &b [members]
+          &b Island ID: &7 [id]
+        owner: "&b Owner: [player]"
+        list: "&b Members:"
+        value: "&b - [player]"
+      island_working_range:
+        name: "&f&l Island Working Range"
+        description: |-
+          &7 Working range for generators
+          &7 on current island.
+          &7 0 and below means unlimited
+          &7 range.
+        value: "&b Range: [number]"
+        overwritten: |-
+          &c Owner has a permission that
+          &c overwrites working range.
+      owner_working_range:
+        name: "&f&l Owner Working Range"
+        description: |-
+          &7 Working range for generators
+          &7 for the current owner.
+          &7 '0' means that owner range is
+          &7 ignored.
+          &7 '-1' means that owner has
+          &7 unlimitated working range.
+          "&7 Permission for user to assign:"
+          "&7&o '[gamemode].stone-generator."
+          "&7&o max-range.<number>'"
+        value: "&b Range: [number]"
+      island_max_generators:
+        name: "&f&l Max Island Generators"
+        description: |-
+          &7 Maximum active
+          &7 generator tiers allowed
+          &7 at the same time that
+          &7 for current island.
+          &7 0 and below means 
+          &7 unlimited.
+        value: "&b Max Generators: [number]"
+        overwritten: |-
+          &c Owner has a permission that
+          &c overwrites the generator count.
+      owner_max_generators:
+        name: "&f&l Max Owner Generators"
+        description: |-
+          &7 Maximum active concurrent
+          &7 generator tiers that the
+          &7 island owner is allowed.
+          &7 '0' means that owner amount
+          &7 is ignored.
+          &7 '-1' means that owner has
+          &7 unlimitated generator count.
+          "&7 Permission for user to assign:"
+          "&7&o '[gamemode].stone-generator."
+          "&7&o active-generators.<number>'"
+        value: "&b Max Generators: [number]"
+      island_bundle:
+        name: "&f&l Island Bundle"
+        description: |-
+          &7 Bundle that is assigned to
+          &7 the current island.
+          &7 Only generators from this 
+          &7 bundle can be used on the
+          &7 island.
+        value: "&b Bundle: [bundle]"
+        overwritten: |-
+          &c Owner has a permission that
+          &c overwrites bundle.
+      owner_bundle:
+        name: "&f&l Owner Bundle"
+        description: |-
+          &7 Bundle that is assigned to
+          &7 the current island owner.
+          &7 Only generators from this 
+          &7 bundle can be used on the
+          &7 island.
+          "&7 Permission for user to assign:"
+          "&7&o '[gamemode].stone-generator."
+          "&7&o bundle.<bundle-id>'"
+        value: "&b Bundle: [bundle]"
+      island_info:
+        name: "&f&l General Information"
+        description: |-
+          &7 Shows general information
+          &7 about this island.
+      island_generators:
+        name: "&f&l Island Generators"
+        description: |-
+          &7 Shows list of all generators
+          &7 that are available for the
+          &7 current island.
+      reset_to_default:
+        name: "&f&l Reset To Defaults"
+        description: |-
+          &7 Resets all island values
+          &7 to the default values from
+          &7 the settings.
+      # Buttons in Island Management GUI
+      is_online:
+        name: "&f&l Online Players"
+        description: |-
+          &7 List of online player
+          &7 islands.
+      all_islands:
+        name: "&f&l All Islands"
+        description: |-
+          &7 List of all islands.
+      search:
+        name: "&f&l Search"
+        description: |-
+          &7 Search for a specific
+          &7 island.
+        search: "&b Value: [value]"
+      # Buttons in Settings GUI
+      offline_generation:
+        name: "&f&l Offline Generation"
+        description: |-
+          &7 Prevents blocks from being
+          &7 generated if all island
+          &7 members are offline.
+        enabled: |-
+          &b Offline generation is &a enabled &b .
+        disabled: |-
+          &b Offline generation is &c disabled &b .
+      use_physic:
+        name: "&f&l Use Physics"
+        description: |-
+          &7 Using physics on block
+          &7 generation allows the
+          &7 use of redstone machines,
+          &7 however it reduces server
+          &7 performance a little.
+        enabled: |-
+          &b Physics is &a enabled &b .
+        disabled: |-
+          &b Physics is &c disabled &b .
+      working_range:
+        name: "&f&l Default Working Range"
+        description: |-
+          &7 Distance from players until
+          &7 block generation will stop.
+          &7 0 and below means unlimited.
+          &7 Setting requires server
+          &7 restart to activate.
+        value: "&b Range: [number]"
+      active_generators:
+        name: "&f&l Default Active Generators"
+        description: |-
+          &7 Default maximum amount of
+          &7 active generators at the
+          &7 same time.
+          &7 0 and below means unlimited.
+        value: "&b Count: [number]"
+      show_filters:
+        name: "&f&l Show Filters"
+        description: |-
+          &7 Filters are a top row in
+          &7 Player GUI, which allows
+          &7 to show only generators
+          &7 by type or status.
+          &7 This setting disables
+          &7 and hides them.
+        enabled: |-
+          &b Filters are &a enabled &b .
+        disabled: |-
+          &b Filters are &c disabled &b .
+      border_block:
+        name: "&f&l Border Block"
+        description: |-
+          &7 Border block is a material
+          &7 which surrounds the user GUI.
+          &7 Setting it to air disables
+          &7 it.
+      border_block_name:
+        name: "&f&l Border Block Name"
+        description: |-
+          &7 Display name for a border
+          &7 block.
+          &7 If it is set to empty, then
+          &7 it will use the block name.
+          &7 To set it as 1 empty space,
+          "&7 write 'empty'."
+        value: "&b Name: `&r[name]&r&b`"
+      unlock_notify:
+        name: "&f&l Notify On Unlock"
+        description: |-
+          &7 A message will be sent
+          &7 to a user when she unlocks
+          &7 a new generator.
+        enabled: |-
+          &b Notify on unlock is &a enabled &b.
+        disabled: |-
+          &b Notify on unlock is &c disabled &b.
+      disable_on_activate:
+        name: "&f&l Disable on Activation"
+        description: |-
+          &7 Disable oldest active generator
+          &7 if user activates a new
+          &7 generator.
+          &7 Useful for situations where
+          &7 only a single generator is allowed.
+        enabled: |-
+          &b Disable on activation is &a enabled &b.
+        disabled: |-
+          &b Disable on activation is &c disabled &b.
+      # Buttons in Library GUI
+      library:
+        name: "&f&l [name]"
+        description: |-
+          &7 [description]
+          &7 Author: [author]
+          &7 Created for [gamemode]
+          &7 Language: [lang]
+          &7 Version: [version]
+      # Button in GUI that allows to choose blocks for generators to be generated.
+      accept_blocks:
+        name: "&f&l Accept the blocks"
+        description: |-
+          &7 Accepts selected blocks
+          &7 and returns.
+        selected-blocks: "&7 Selected Blocks:"
+        list-value: "&7 - [value]"
+      material-icon:
+        name: "&f&l [material]"
+      search_block:
+        name: "&f&l Search"
+        description: |-
+          &7 Search for a specific
+          &7 block.
+        search: "&b Value: [value]"
+      # Button in GUI that allows to choose biomes for generator.
+      accept_biome:
+        name: "&f&l Elfogadás és visszalépés"
+        description: |-
+          &7 Elfogadja a kiválasztott
+          &7 éghajlatokat és visszalép.
+        selected-biomes: "&7 Kiválasztott éghajlatok:"
+        list-value: "&7 - [value]"
+      biome-icon:
+        name: "&f&l [biome]"
+      # This section contains names for filter biome groups.
+      biome-groups:
+        lush:
+          name: "&f&l Nedves"
+          description: |-
+            &7 Csak a nedves éghajlatokat mutatja.
+        dry:
+          name: "&f&l Száraz"
+          description: |-
+            &7 Csak a száraz éghajlatokat mutatja.
+        cold:
+          name: "&f&l Hideg"
+          description: |-
+            &7 Csak a hideg éghajlatokat mutatja.
+        snowy:
+          name: "&f&l Havas"
+          description: |-
+            &7 Csak a havas éghajlatokat mutatja.
+        ocean:
+          name: "&f&l Óceán"
+          description: |-
+            &7 Csak az óceán éghajlatokat mutatja.
+        nether:
+          name: "&f&l Pokol"
+          description: |-
+            &7 Csak a pokol éghajlatokat
+            &7 mutatja
+        the_end:
+          name: "&f&l A vég"
+          description: |-
+            &7 Csak a vég éghajlatokat mutatja.
+        neutral:
+          name: "&f&l Semleges"
+          description: |-
+            &7 Csak a semleges éghajlatokat mutatja.
+        unused:
+          name: "&f&l Nem használt"
+          description: |-
+            &7 Csak a nem használt éghajlatokat
+            &7 mutatja.
+      # This section contains names and descriptions for generator type buttons.
+      generator-types:
+        cobblestone:
+          name: "&f&l Zúzottkő generátor"
+          description: |-
+            &7 Csak zúzottkő generátorral
+            &7 működik.
+        stone:
+          name: "&f&l Kő generátor"
+          description: |-
+            &7 Csak kő generátorral
+            &7 működik.
+        basalt:
+          name: "&f&l Bazalt generátor"
+          description: |-
+            &7 Csak bazalt generátorral
+            &7 működik.
+        cobblestone_or_stone:
+          name: "&f&l Zúzottkő vagy kő generátor"
+          description: |-
+            &7 Zúzottkő és kő generátorral
+            &7 is működik.
+        basalt_or_cobblestone:
+          name: "&f&l Bazalt vagy zúzottkő generátor"
+          description: |-
+            &7 Bazalt, és zúzottkő generátorral 
+            &7 is működik.
+        basalt_or_stone:
+          name: "&f&l Bazalt vagy kő generátor"
+          description: |-
+            &7 Bazalt, és kő generátorral
+            &7 is működik.
+        any:
+          name: "&f&l Bármelyik"
+          description: |-
+            &7 Minden generátorral működik.
+    # This section contains translations for GUI button tips.
+    tips:
+      click-to-previous: "&e Kattints &7, hogy megnézd az előző oldalt."
+      click-to-next: "&e Kattints &7 hogy megnézd a következő oldalt.."
+      click-to-cancel: "&e Kattints &7 a megszakításhoz."
+      click-to-choose: "&e Kattints &7 a kiválasztáshoz."
+      click-to-select: "&e Kattints &7 a kijelöléshez."
+      click-to-deselect: "&e Kattints &7 a kijelölés eltávolításához."
+      click-to-accept: "&e Kattints &7, hogy elfogadd."
+      click-to-filter-enable: "&e Kattints &7 a szűrő engedélyezéséhez."
+      click-to-filter-disable: "&e Kattints &7 a szűrő letiltásához."
+      click-to-activate: "&e Kattints &7 az aktiváláshoz."
+      click-to-deactivate: "&e Kattints &7 a kikapcsoláshoz."
+      click-gold-to-purchase: |-
+        &e Kattints &7 az aranytömbre
+        &7 a vásárláshoz.
+      click-to-purchase: "&e Kattints &7 a vásárláshoz."
+      click-to-return: "&e Kattints &7 a visszatéréshez."
+      click-to-quit: "&e Kattints &7 a kilépéshez."
+      click-to-wipe: "&e Kattints &7 a törléshez."
+      click-to-open: "&e Kattints &7 a megnyitáshoz."
+      click-to-export: "&e Kattints &7 az exportáláshoz."
+      click-to-change: "&e Kattints &7 a módosításhoz."
+      click-on-item: |-
+        &e Kattints &7 a tárgyra 
+        &7 az eszköztáradban.
+      click-to-view: "&e Kattints &7 a megtekintéshez."
+      click-to-add: "&e Kattints &7 a hozzáadáshoz."
+      click-to-remove: "&e Kattints &7 az eltávolításhoz."
+      select-before: "&e Válassz &7 mielőtt folytatnád."
+      click-to-create: "&e Kattints &7 a létrehozáshoz."
+      right-click-to-select: "&e Jobb kattintás &7 a kijelöléshez."
+      right-click-to-deselect: "&e Jobb kattintás &7 a kijelölés eltávolításhoz."
+      click-to-toggle: "&e Kattints &7 a tiltáshoz."
+      left-click-to-edit: "&e Bal kattintás &7 a szerkesztéshez."
+      right-click-to-lock: "&e Jobb kattintás &7 a lezáráshoz."
+      right-click-to-unlock: "&e Jobb kattintás &7 a feloldáshoz."
+      click-to-perform: "&e Kattints &7 a végrehajtáshoz."
+      click-to-edit: "&e Kattints &7 a szerkesztéshez."
+      right-click-to-clear: "&e Jobb kattintás &7 a törléshez."
+      # These tooltips are showed in user gui.
+      left-click-to-view: "&e Bal kattintás &7 a megtekintéshez."
+      left-click-to-purchase: "&e Bal kattintás &7 a vásárláshoz."
+      left-click-to-activate: "&e Bal kattintás &7 az aktiváláshoz."
+      left-click-to-deactivate: "&e Bal kattintás &7 a kikapcsoláshoz."
+      right-click-to-view: "&e Jobb kattintás &7 a megtekintéshez."
+      right-click-to-purchase: "&e Jobb kattintás &7 a vásárláshoz."
+      right-click-to-activate: "&e Jobb kattintás &7 az aktiváláshoz."
+      right-click-to-deactivate: "&e Jobb kattintás &7 a kikapcsoláshoz."
+      shift-click-to-view: "&e Shift + Kattintás &7 a megtekintéshez."
+      shift-click-to-purchase: "&e Shift + Kattintás &7 a vásárláshoz."
+      shift-click-to-activate: "&e Shift + Kattintás &7 az aktiváláshoz."
+      shift-click-to-deactivate: "&e Shift + Kattintás &7 a kikapcsoláshoz."
+      shift-click-to-reset: "&e Shift + Kattintás &7 a visszaállításhoz."
+    # This section contains translations for some different GUI descriptions.
+    descriptions:
+      # Generator lore message generator. All elements in generator lore is generated
+      # based on section below.
+      generator:
+        # Main lore element content. If you do not want to display treasures at all,
+        # just remove them from [treasures] section.
+        # [description] comes from each generator tier.
+        # Lore does not supports colour codes. Each object separate supports.
+        lore: |-
+          [description]
+          [blocks]
+          [treasures]
+          [type]
+          [requirements]
+          [status]
+        # Generates [blocks] section
+        blocks:
+          # First line in blocks section. Empty line will not be displayed.
+          title: "&7&l Blokkok:"
+          # Each block and its value under title. Cannot be empty.
+          # Supports [number], [#.#], [#.##], [#.###], [#.####], [#.#####]
+          value: "&8 [material] - [#.##]%"
+        # Generates [treasures] section
+        treasures:
+          # First line in blocks section. Empty line will not be displayed.
+          title: "&7&l Kincs:"
+          # Each treasure and its value under title. Cannot be empty.
+          # Supports [number], [#.#], [#.##], [#.###], [#.####], [#.#####]
+          value: "&8 [material] - [#.####]%"
+        # Generates [requirements] section
+        requirements:
+          # Allows to change order and content of requirements message.
+          description: |-
+            [biomes]
+            [level]
+            [missing-permissions]
+          # Generates [level] message.
+          level: "&c&l Szükséges szint: &r&c [number]"
+          # Generates [missing-permission] message title.
+          permission-title: "&c&l Hiányzó engedély:"
+          # Generates [missing-permission] message values.
+          permission: "&c  -[permission]"
+          # Generates [biomes] message title.
+          biome-title: "&7&l Szükséges Éghajlatok:"
+          # Generates [biomes] message values.
+          biome: "&8 [biome]"
+          # Generates [biomes] message for All Biomes.
+          any: "&e&o Minden &7&l éghajlaton működik!"
+        # Generates [status] section
+        status:
+          # Message that is showed for Locked generators.
+          locked: "&c Lezárva!"
+          # Message that is showed for generators that is not deployed.
+          undeployed: "&c Nincs telepítve!"
+          # Message that is showed for Active generators.
+          active: "&2 Aktív"
+          # Message that is showed for generators that required purchasing.
+          purchase-cost: "&e Ára: $[number]"
+          # Message that is showed for generators that has activation cost.
+          activation-cost: "&e Aktiválás ára: $[number]"
+        # Generates [type] section
+        type:
+          title: "&7&l Igényelt generátor:"
+          cobblestone: "&8 Zúzottkő generátor"
+          stone: "&8 Kő generátor"
+          basalt: "&8 Bazalt Generátor"
+          any: "&e&o Minden &r&7&l generátorral használható"
+      # String that displays required permission that must be set for user to set bundle.
+      bundle-permission: |-
+        &7 Permission that must be
+        &7 assigned to player:
+        &7&o [gamemode].stone-generator.bundle.[id]
+      # String that are before listing all generators assigned to bundle.
+      generators: "&7 Bundle Generators: "
+      # Each generator name in listing
+      generator-list: "&7 - [generator]"
+      # Indicates that element is selected.
+      selected: "&e Kiválasztva."
+      # Used to refer to players island.
+      island-owner: "[player] szigete"
+      # Used to refer to unknown player.
+      unknown: "Ismeretlen"
+  # This section contains translations for different informative messages.
+  messages:
+    # Message that appears after loading generator in local cache.
+    generator-loaded: "&a Generator &r '[generator]' &r&a  is loaded into local cache."
+    # Message that appears after loading bundle in local cache.
+    bundle-loaded: "&a Bundle &r '[bundle]' &r&a  is loaded into local cache."
+    # Message that appears after deactivating generator.
+    generator-deactivated: "&e A &r '[generator]' &r&e kikapcsolva."
+    # Message that appears when trying to activate too many generators.
+    active-generators-reached: "&c Túl sok generátor működik itt. Állítsd le az egyiket, hogy újat indíthass el."
+    # Message that appears when trying to unlock default or undeployed generator.
+    generator-cannot-be-unlocked: "&c A &r '[generator]' &r&c nem sikerült feloldani."
+    # Message that appears when trying to activate locked generator.
+    generator-not-unlocked: "&c A &r '[generator]' &r&c nincs feloldva."
+    # Message that appears when purchasing the generator.
+    generator-not-purchased: "&c A &r '[generator]' &r&c vásárlása sikertelen."
+    # Message that appears when trying to activate generator that have an activation cost, but player do not have enough credits.
+    no-credits: "&c Nincs elegendő kredited a generátor aktiválásához. [number] kredit szükséges hozzá."
+    # Message that appears when activating the generator.
+    generator-activated: "&e A &r '[generator]' &r&e sikeresen aktiválva!"
+    # Message that appears when purchasing the generator.
+    generator-purchased: "&e A &r '[generator]' &r&e mostmár a tied!"
+    # Message that appears when trying to buy already purchased generator.
+    generator-already-purchased: "&c A &r '[generator]' -t &r&c már megvetted."
+    # Message that appears when trying to buy generator without required island level
+    island-level-not-reached: "&c A &r '[generator]' &r&c csak [number] -as szitnű szigettől érhető el."
+    # Message that appears when trying to buy generator without required permissions
+    missing-permission: "&c A &r '[generator]' &r&c engedélyköteles: `[permission]`."
+    # Message that appears when trying to purchase generator that have an purchase cost, but player do not have enough credits.
+    no-credits-buy: "&c Nincs elég pénzed a generátor vásárláshoz! Az ára: [number]$ ."
+    # Message that appears after importing a file.
+    import-count: "&e Imported [generator] new generators and [bundle] new bundles."
+    # Message that appears after clicking on download button in web library.
+    start-downloading: "&e Start downloading library."
+  # This section contains translations for different error messages.
+  errors:
+    # Error message that is displayed when generator tier data is not find.
+    no-generator-data: "&c Could not find a valid generator data"
+    # Error message that is displayed when island data is not found for island in management panel.
+    no-island-data: "&c Island Data is not found."
+    # Error message that is displayed when bundle data is not find.
+    no-bundle-data: "&c Could not find a valid bundle data"
+    # Error message that is displayed when library does not have any data.
+    no-library-entries: "&c Could not find any library entry!"
+    # Error message that is displayed when trying to load file that does not exists.
+    no-file: "&c `[file]` file not found. Cannot perform importing."
+    # Error message that is displayed when loading file lead to a crash.
+    no-load: "&c Could not load `[file]` file. Error while reading: [description]."
+    # Error message that is displayed when trying to import generators in non-gamemode-world.
+    not-a-gamemode-world: "&c A '[world]' világ nem Game Mode bővítményhez tartozik.."
+    # Error message that is displayed when saving file with the same name
+    file-exist: "&c The file `[file]` already exist. Choose different name."
+    # Error message that is displayed when trying to view generator that does not exist.
+    generator-tier-not-found: "&c Generator with id '[generator]' &r&c not found in [gamemode]."
+    # Error message that is displayed when user uses generator command in world without generators. [world]
+    no-generators-in-world: "&c Ebben a világban nincsenek elérhető generátorok számodra!"
+  # Conversations are chat input between server and user.
+  # They are used to get some information that requires more than clicking on icon.
+  conversations:
+    # List of strings that are valid for confirming input. (separated with ,)
+    confirm-string: "true, on, yes, confirm, y, valid, correct"
+    # List of strings that are valid for denying input. (separated with ,)
+    deny-string: "false, off, no, deny, n, invalid, incorrect"
+    # String that allows to cancel conversation. (can be only one)
+    cancel-string: "cancel"
+    # List of strings that allows to exit conversation. (separated with ,)
+    exit-string: "cancel, exit, quit"
+    # Message that is send to user when conversation is cancelled.
+    cancelled: "&c Conversation cancelled!"
+    # Prefix for messages that are send from server.
+    prefix: "&l&6 [BentoBox]: &r"
+    # Error message that is showed if user input a value that is not a number.
+    numeric-only: "&c A megadott érték csak számokat tartalmazhat!!"
+    # Error message that is showed if user input a number that is smaller or larger that allowed.
+    not-valid-value: "&c A megadott érték nem megfelelő! Válassz olyat ami nagyobb mint [min] de kisebb mint [max]!"
+    # Message that displays new description by each line.
+    new-description: "&a New description:"
+    # Below here starts messages and questions created by GUI.
+    # Message that asks for search value input.
+    write-search: "&e Ird be a keresendő szót. (írd hogy 'cancel' ha ki szeretnél lépni)"
+    # Message that appears after updating search value.
+    search-updated: "&a A kért érték frissítve."
+    # Message that appears when admin clicks on island data deletion button.
+    confirm-island-data-deletion: "&e Biztosan törölni szeretnéd a szigetedet? [gamemode]."
+    # Message that appears after successful user data removing.
+    user-data-removed: "&a Sikerült, minden adat eltávolítva!"
+    # Message that appears when admin clicks on generator data deletion button.
+    confirm-generator-data-deletion: "&e Confirm that you want to delete all generator data from the database for [gamemode]."
+    # Message that appears after successful generator data removing.
+    generator-data-removed: "&a Success, all generator data for [gamemode] was removed!"
+    # Message that appears after admin clicks on database exporting button.
+    exported-file-name: "&e Please enter a file name for the exported database file. (write 'cancel' to exit)"
+    # Message that appears after successful database exporting to file.
+    database-export-completed: "&a Success, the database export for [world] is completed. File [file] generated."
+    # Message that appears if input file name is already taken.
+    file-name-exist: "&c File with name '[id]' exists. Cannot overwrite."
+    # Message that appears after admin clicks on editing bundle name button.
+    write-name: "&e Please enter a new name in chat."
+    # Message that appears after successful name change.
+    name-changed: "&a Success, the name was updated."
+    # Message that appears after clicking
+    write-description: "&e Please enter a new description in chat and 'quit' on a line by itself to finish."
+    # Message that appears after successful description change.
+    description-changed: "&a Success, the description was updated."
+    # Message that appears after successful bundle or generator creation.
+    new-object-created: "&a Success, new object is created in [world]."
+    # Message that appears if object already exist in the database.
+    object-already-exists: "&c The object with `[id]` is already is defined in gamemode. Choose different one."
+    # Message that appears after admin tries to delete selected objects.
+    confirm-deletion: "&e Confirm that you want to delete [number] objects: ([value])"
+    # Message that appears after successful data removing.
+    data-removed: "&a Success, the data was removed!"
+    # Message that appears when admin clicks on number editing button.
+    input-number: "&e Please enter a number in chat."
+    # Message that appears when admin clicks on permission editing button.
+    write-permissions: "&e Please enter the required permissions, one per line in chat, and 'quit' on a line by itself to finish."
+    # Message that appears after successful permission updating.
+    permissions-changed: "&a Success, generator permissions were updated."
+    # Message that appears after importing library data into database.
+    confirm-data-replacement: "&e Please confirm that you want to replace your current generators with new one."
+    # Message that appears after successful data importing
+    new-generators-imported: "&a Success, new generators for [gamemode] were imported."
+    # Message that appears after unlocking a new generator.
+    click-text-to-purchase: "&e Feloldottad a &r [generator]-t&r&e! Kattints ide, hogy megvedd [number]$-ért!"
+    click-text-to-activate-vault: "&e Feloldottad a&r [generator]-t&r&e! Kattints ide, hogy aktiváld [number]$-ért!"
+    click-text-to-activate: "&e Feloldottad a&r [generator]-t&r&e! Kattints ide, hogy aktiváld!"
+  # Showcase for manual material translation
+  materials:
+    # Names should be lowercase.
+    cobblestone: "Zúzottkő"
+    # Also supports descriptions.
+    stone:
+      name: "Kő"
+      description: ""
+    gold:
+      name: "Arany"
+    gravel:
+      name: "Sóder"
+    granite:
+      name: "Gránit"
+    diorite:
+      name: "Diorit"
+    andesite:
+      name: "Andezit"
+    coal:
+      name: "Szén"
+    basalt:
+      name: "Bazalt"
+    netherrack:
+      name: "Alvilági kő"
+    coal_ore:
+      name: "Szén-érc"
+    iron_nugget:
+      name: "Vasrög"
+    iron_ore:
+      name: "Vas-érc"
+    gold_nugget:
+      name: "Aranyrög"
+    gold_ore:
+      name: "Arany-érc"
+    redstone:
+      name: "Vöröskő"
+    redstone_ore:
+      name: "Vöröskő-érc"
+    emerald:
+      name: "Smaragd"
+    lapis_ore:
+      name: "Lazurit-érc"
+    diamond:
+      name: "Gyémánt"
+    emerald_ore:
+      name: "Smaragd-érc"
+    diamond_ore:
+      name: "Gyémánt-érc"
+    soul_sand:
+      name: "Lélekhomok"
+    magma_block:
+      name: "Magmablokk"
+    soul_soil:
+      name: "Lélek talaj"
+    glowstone:
+      name: "Ízzókő"
+    nether_quartz_ore:
+      name: "Netherkvarc-érc"
+    ancient_derbis:
+      name: "Ősi törmelék"
+    nether_gold_ore:
+      name: "Nether arany-érc"
+    netherrack:
+      name: "Alvilági kő"
+    warped_nylium:
+      name: "Torz nílium"
+    crimson_nylium:
+      name: "Karmazsin nílium"
+    netherite-scrap:
+      name: "Netheritdarab"
+  # Showcase for manual biome translation
+  biomes:
+    # Names should be lowercase.
+    plains: "Plains"
+    # Also supports descriptions.
+    flower_forest:
+      name: "Flower Forest"
+      description: ""
+# Protection flags that are used in current addon.
+protection:
+  flags:
+    # This flag allows to enable or disable magic cobblestone generators on this island.
+    MAGIC_COBBLESTONE_GENERATOR:
+      name: "Magic Generator"
+      description: |-
+        &a Toggle to enable or disable
+        &a all Magic Generators
+        &a on the whole island
+      hint: "&e Magic Generators are disabled in island settings"
+    # This flag allows to switch which island member group can activate and deactivate generators.
+    MAGIC_COBBLESTONE_GENERATOR_PERMISSION:
+      name: "Magic Generator Permissions"
+      description: |-
+        &a Select who can activate
+        &a and deactivate generators
