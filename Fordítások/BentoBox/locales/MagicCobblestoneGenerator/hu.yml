@@ -864,7 +864,7 @@ stone-generator:
     # Message that appears when trying to buy already purchased generator.
     generator-already-purchased: "&c A &r '[generator]' -t &r&c már megvetted."
     # Message that appears when trying to buy generator without required island level
-    island-level-not-reached: "&c A &r '[generator]' &r&c csak [number] -as szitnű szigettől érhető el."
+    island-level-not-reached: "&c A &r '[generator]' &r&c csak [number] -as szintű szigettől érhető el."
     # Message that appears when trying to buy generator without required permissions
     missing-permission: "&c A &r '[generator]' &r&c engedélyköteles: `[permission]`."
     # Message that appears when trying to purchase generator that have an purchase cost, but player do not have enough credits.
