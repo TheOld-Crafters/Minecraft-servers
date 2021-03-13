@@ -1,0 +1,229 @@
+# Edit items in all of the Pocket Games GUI's.
+# Use the in-game GUI's for reference if you are unsure what something changes.
+# Items support material names, id's and data values (Default file shows all methods).
+# Please read the Pocket Games Wiki carefully:
+# https://github.com/Benz56/PocketGames/wiki
+
+
+Menu:
+  header: '&9&l&nZsebjátékok Menü!'
+  border:
+    enabled: true
+    item: BLUE_STAINED_GLASS_PANE
+    name: '&f&l*'
+    slots: 0,1,2,3,5,6,7,8,9,17,36,44,45,46,47,48,50,51,52,53
+  Info:
+    enabled: true
+    item: BOOK
+    name: ' &6&l&m--[-&f  &e&lZsebjátékok Infó&f  &6&l&m-]--'
+    lore:
+    - '&7&m-------------------------------'
+    - ' &f&oJátssz a GUI Minijátékokkal és szerezz'
+    - ' &f&onyereményeket legjobb eredményedért! '
+    - ''
+    - ' &f&oBal klikkelj a játék indításához. '
+    - ' &f&oJobb klikkelj a legjobb eredmények listájához. '
+    - '&7&m-------------------------------'
+    slot: 49
+  noPermission:
+    item: RED_WOOL
+    name: '&c&lNincs jogod ehhez.'
+    showTicks: 20
+    hideGame: false
+  PageButtons:
+    nextPage:
+      slot: 53
+      head: http://textures.minecraft.net/texture/e3fc52264d8ad9e654f415bef01a23947edbccccf649373289bea4d149541f70
+      name: '&eKövetkező oldal'
+    prevPage:
+      slot: 45
+      head: http://textures.minecraft.net/texture/5f133e91919db0acefdc272d67fd87b4be88dc44a958958824474e21e06d53e6
+      name: '&eElőző oldal'
+Hotbar:
+  SoundToggle:
+    enabled: true
+    'on':
+      item: NOTE_BLOCK
+      name: '&eHangok: &aBekapcsolva'
+      slot: 0
+    'off':
+      item: NOTE_BLOCK
+      name: '&eHangok: &cKikapcsolva'
+      slot: 0
+  EndGame:
+    enabled: true
+    item: END_STONE
+    name: '&eJáték vége'
+    slot: 2
+  Restart:
+    enabled: true
+    item: ENDER_PEARL
+    name: '&eÚjrakezdés'
+    slot: 4
+  MainMenu:
+    enabled: true
+    item: SPRUCE_DOOR
+    name: '&eFőmenü'
+    slot: 6
+    customMenu: false
+    command: /Open custom menu %player%
+  PlayAgain:
+    enabled: true
+    item: LIME_WOOL
+    name: '&aÚjrapróbálkozás'
+    slot: 22
+  Close:
+    enabled: true
+    item: BARRIER
+    name: '&cKilépés'
+    slot: 8
+    customClose: false
+    command: /Open custom menu %player%
+Countdown:
+  enabled: true
+  Numbers:
+    item: BLUE_STAINED_GLASS_PANE
+    name: '&f&l*'
+  Underline:
+    enabled: true
+    item: BLACK_STAINED_GLASS_PANE
+    name: '&f&l*'
+  Filler:
+    enabled: true
+    item: WHITE_STAINED_GLASS_PANE
+    name: '&7&l*'
+GameOver:
+  border:
+    enabled: true
+    item: BLUE_STAINED_GLASS_PANE
+    name: '&f&l*'
+    slots: 0,1,2,3,4,5,6,7,8,9,17,18,26,27,35,36,44,45,46,47,48,49,50,51,52,53
+  Result:
+    points:
+      item: PAPER
+      name: '         &6&l&m--[-&f  &a&lPontok&f  &6&l&m-]--'
+      lore1:
+      - ' &f&m-----------------------------&7 '
+      - '  &eSzereztél %points% pontot!'
+      - ''
+      - '  &7&oSzükséged van minimum %minPoints% pontra'
+      - '  &7&ohogy a legjobb eredmények között legyél.'
+      - ' &f&m-----------------------------&7 '
+      lore2:
+      - ' &f&m-----------------------------&7 '
+      - '  &eSzereztél %points% pontot!'
+      - ''
+      - '  &e&oA legjobb eredmények között vagy!'
+      - ' &f&m-----------------------------&7 '
+      slot: 31
+    time:
+      item: CLOCK
+      name: '          &6&l&m--[-&f  &a&lIdő&f  &6&l&m-]--'
+      lore1:
+      - ' &f&m-----------------------------&7 '
+      - '  &eA te időd %time% másodperc!'
+      - ''
+      - '  &7&oTúl lassú voltál.. Az időd nem'
+      - '  &7&olehet több, mint %maxTime% másodperc,'
+      - '  &7&ohogy bekerülj a legjobbak közé.'
+      - ' &f&m-----------------------------&7 '
+      lore2:
+      - ' &f&m-----------------------------&7 '
+      - '  &eA te időd %time% másodperc!'
+      - ''
+      - '  &e&oA legjobb eredmények között vagy!'
+      - ' &f&m-----------------------------&7 '
+      slot: 31
+Highscore:
+  border:
+    enabled: true
+    item: BLUE_STAINED_GLASS_PANE
+    name: '&f&l*'
+    slots: 0,1,2,3,4,5,6,7,8,9,17,18,26,27,35,36,37,38,39,40,41,42,43,44
+  top:
+    default:
+      name: '&8&l%position%.&b játékos'
+      lore:
+      - '&ePont:&a 0'
+    '1':
+      name: '&e&l1.&b %player%'
+      lore:
+      - '&ePont:&a %score%'
+    '2':
+      name: '&7&l2.&b %player%'
+      lore:
+      - '&ePont:&a %score%'
+    '3':
+      name: '&6&l3.&b %player%'
+      lore:
+      - '&ePont:&a %score%'
+    '4':
+      name: '&8&l4.&b %player%'
+      lore:
+      - '&ePont:&a %score%'
+    '5':
+      name: '&8&l5.&b %player%'
+      lore:
+      - '&ePont:&a %score%'
+  maxOneEntry: false
+Invulnerability:
+  enabled: false
+  after: 15
+  setInvisibleInstead: false
+  Animation:
+    enabled: true
+    particle: REDSTONE
+    color: '&c'
+    radius: 1.2
+    ringDistance: 8
+    ringDensity: 4
+    speed: 3
+InactivityTimer:
+  enabled: true
+  maxInactivitySeconds: 900
+Spectator:
+  enabled: true
+  item: PLAYER_HEAD
+  name: '&eJátékosok megfigyelése'
+  lore:
+  - ''
+  - '&7&oKattints ide a játékosok megfigyeléséhez.'
+  slot: 21
+  spectator_head:
+    name: '&a%player% &eezzel játszik: &b%game_noColor%!'
+    lore:
+    - ''
+    - '&7Kattints ide a megfigyeléshez.'
+Multiplayer:
+  enabled: true
+  head: http://textures.minecraft.net/texture/c56c4d0ac3277547a093d0b79e39d846593c674f3f5f81a8cb9b1826a073
+  name: '&f&eTöbbjátékos mód!'
+  lore:
+  - ''
+  - '&7&oKattints ide a Többjátékos módhoz!'
+  slot: 23
+  opponent:
+    name: '&a%player%'
+    lore:
+    - ''
+    - '&7Kattints ide, hogy kihívj valakit!'
+    loadSkin: true
+  endScreen:
+    background:
+      item: LIGHT_BLUE_STAINED_GLASS_PANE
+      name: '&b&l█'
+    winnerBanner: true
+  Inactivity:
+    item: CLOCK
+    name: '&a%seconds% &emásodperced van a lépéshez!'
+  duelInviteDelay: 2
+  duelInviteExpiry: 300
+  duelPlayersWithoutGamePermission: false
+Sounds:
+  lose: BLOCK_ANVIL_LAND
+  win: ENTITY_PLAYER_LEVELUP
+  noPermission: BLOCK_ANVIL_LAND
+CrashSafetyFile:
+  enabled: true
+UserDataFile:
+  enabled: true
