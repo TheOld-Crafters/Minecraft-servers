@@ -1,0 +1,168 @@
+# PlayerWarps by Olzie-12
+# https://www.spigotmc.org/resources/66692/
+# We also have a discord server for help: https://discord.gg/bAHuRJq
+# Also if you find any bugs be happy to report them i will fix them :)
+# Made with love
+
+# If you want to disable any message just set it to nothing. by doing
+# list: "' <- This will no longer send a message.
+
+
+# every singe message in the plugin is here.
+# make sure you use '' to end of every string
+# Also you can use colour codes <3
+
+# To use hex color codes you will need to do
+# '{#HEX} text"
+
+lang:
+  console-name: "&dServer Warp"
+  cancel-chat-wait: "cancel"
+  prefix: "&b&lPW &7»" # Use %prefix% to add the prefix to any message!
+  list: "%prefix% &bCurrent Warps: &d%list%"
+  list-none: "&cNincs" # What should be displayed if there are no warps?
+  warp-removed: "%prefix% &aSuccess! Your warp has been removed!"
+  teleported: "%prefix% &aSuccessfully teleported to &d%warp%&a!"
+  someone-teleported: "%prefix% &d%player%&a has teleported to &d%warp%&a!" # If they teleport to their own warp, it will not send the message!
+  warp-set-confirmation: "%prefix% &aSetting this warp will cost you &d$%price%&a, do the command again to confirm."
+  warp-teleport-confirmation: "%prefix% &aTeleporting to this warp will cost you $%price%, do the command again to confirm."
+  warp-remove-confirmation: "%prefix% &aAre you sure you want to remove this warp? Do it again if you wish."
+  warp-set: "%prefix% &aSuccessfully set a player warp called &d%name%&a!"
+  reloaded: "%prefix% &aSuccessfully reloaded all configs!"
+  money-taken: "%prefix% &a$%price% has been taken from your bank account."
+  items-taken: "%prefix% &aDimaonds have been taken from your inventory."
+  teleporting-dont-move: "%prefix% &aTeleporting to &d%warp%&a in &d%time%&a seconds!"
+  desc-set-success: "%prefix% &aSuccessfully set the description to &d%desc%&a for the warp &d%warp%"
+  desc-remove-success: "%prefix% &aSuccessfully removed the description for the warp &d%warp%"
+  given-more-warps-success: "%prefix% &aSuccessfully given &d%player%&a an extra of &d%extra%&a warps and a total of &d%total%&a!"
+  set-warp-icon: "%prefix% &aSuccessfully set &d%warp%''s&a icon to &d%icon%&a!"
+  removed-warp-icon: "%prefix% &aSuccessfully removed &d%warp%''s&a icon!"
+  category-set: "%prefix% &aYou have successfully set &d%warp%''s&a category to &d%category%&a!"
+  rate-set: "%prefix% &aYou have successfully rated the warp &d%warp% %rate%&a!"
+  warps-removed: "%prefix% &aSuccess! &d%player%''s&a have been warp removed!"
+  warp-locked: "%prefix% &aSuccessfully locked the warp &d%warp%&a!"
+  warp-unlocked: "%prefix% &aSuccessfully un-locked the warp &d%warp%&a!"
+  warp-cost-set: "%prefix% &aSuccessfully set the warp cost to &d$%cost%&a!"
+  warp-cost-removed: "%prefix% &aSuccessfully removed the warp cost!"
+  successfully-reset-warp: "%prefix% &aSuccessfully re-set the warps location!"
+  successfully-renamed-warp: "%prefix% &aSuccessfully renamed the warp to &d%warp%&a!"
+  successfully-setowner: "%prefix% &aSuccessfully set the ownership to &d%owner%&a!"
+  successfully-banned: "%prefix% &aSuccessfully banned &d%player%&a from &d%warp%&a!"
+  successfully-unbanned: "%prefix% &aSuccessfully un-banned &d%player%&a from &d%warp%&a!"
+  successfully-whitelisted: "%prefix% &aSuccessfully whitelisted &d%player%&a to &d%warp%&a!"
+  successfully-unwhitelisted: "%prefix% &aSuccessfully un-whitelisted &d%player%&a from &d%warp%&a!"
+  new-owner: "%prefix% &d%player%&a has just set you the owner of &d%warp%&a!"
+  pass-set-success: "%prefix% &aSuccessfully set the password for the warp &d%warp%&a!"
+  pass-remove-success: "%prefix% &aSuccessfully removed the password for the warp &d%warp%&a!"
+  require-password: "%prefix% &cThis warp requires a password to teleport, please enter the password!"
+  rent: "%prefix% &aYou have successfully paid the rent for &d%warp%&a!"
+  rent-offline: "%prefix% &aYou successfully paid the rent for &d%warp%&a while you were offline!"
+  banned-list: "%prefix% &bBanned players: &d%list%"
+  whitelisted-list: "%prefix% &bWhitelisted players: &d%list%"
+  rate-notify: "%prefix% &d%player%&a has just rated your warp &d%warp% %rate%&a stars!"
+  favourite-warp: "%prefix% &aSuccessfully added &d%warp%&a on your favourite list!"
+  unfavourite-warp: "%prefix% &aSuccessfully removed &d%warp%&a from your favourite list!"
+  sponsored-warp: "%prefix% &aYou have successfully purchased that sponsor slot!"
+  current-amount-of-warps:
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Warps &7&l]&m----------"
+    - "%prefix% &bYou currently have a maximum of &d%warpsmax%&b warps."
+    - "%prefix% &bYou currently have used &d%warpsused%&b warps."
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Warps &7&l]&m----------"
+  locked-gui: "&c&lLocked"
+  unlocked-gui: "&a&lUnlocked"
+
+  # the help menu for a player
+  # The variable %cmd% is any command from the config.yml :)
+  help-player:
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Warps &7&l]&m----------"
+    - "%prefix% &d/%cmd% help &7&l- &bDisplays this menu."
+    - "%prefix% &d/%cmd% <warp> &7&l- &bTeleports to the player warp."
+    - "%prefix% &d/%cmd% set <warp> &7&l- &bSets a warp to your location."
+    - "%prefix% &d/%cmd% remove <warp> &7&l- &bRemoves the warp."
+    - "%prefix% &d/%cmd% removeall <player> &7&l- &bRemoves all players warps."
+    - "%prefix% &d/%cmd% desc set/remove <warp> <desc> &7&l- &bWarp descriptions."
+    - "%prefix% &d/%cmd% list &7&l- &bLists all the current player warps."
+    - "%prefix% &d/%cmd% open [category] &7&l- &bOpens the player warp gui."
+    - "%prefix% &d/%cmd% amount &7&l- &bCheck how much warps you have."
+    - "%prefix% &d/%cmd% reload &7&l- &bReloads all the config files."
+    - "%prefix% &d/%cmd% icon <set/remove> <warp> &7&l- &bSet a warp icon."
+    # This is useful for if you want to sell warp amounts on your store, but what happens if a player already has 5 warps?
+    # This just simply gives them more warps. For example if a player has 10 warps (pw.limit.10) and you do /pw addwarps *player* 10. They will now have 20 warps.
+    - "%prefix% &d/%cmd% addwarps <player> <amount> &7&l- &bAdd more warps to a player via command."
+    - "%prefix% &d/%cmd% category <warp> <category> &7&l- &bSet a warp category."
+    - "%prefix% &d/%cmd% rate <warp> <rate> &7&l- &bRate a warp."
+    - "%prefix% &d/%cmd% ban set/remove/list <warp> [player] &7&l- &bWarp bans."
+    - "%prefix% &d/%cmd% reset <warp> &7&l- &bRe-set a warps location."
+    - "%prefix% &d/%cmd% rename <warp> <name> &7&l- &bRename a warp."
+    - "%prefix% &d/%cmd% setowner <warp> <player> &7&l- &bTransfer ownership."
+    - "%prefix% &d/%cmd% favourite <warp> &7&l- &bFavourite a warp."
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Warps &7&l]&m----------"
+
+  # the help menu for console
+  # The variable %cmd% is any command from the config.yml :)
+  help-console:
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Warps &7&l]&m----------"
+    - "%prefix% &d/%cmd% help &7&l- &bDisplays this menu."
+    - "%prefix% &d/%cmd% remove <warp> &7&l- &bRemoves the warp."
+    - "%prefix% &d/%cmd% list &7&l- &bLists all the current player warps."
+    - "%prefix% &d/%cmd% reload &7&l- &bReloads all the config files"
+    # This is useful for if you want to sell warp amounts on your store, but what happends if a player already has 5 playerwarps.
+    # This just simply gives them more warps. For example if a player has 10 warps (pw.limit.10) and you do /pw addwarps *player* 10. They will now have 20 warps.
+    - "%prefix% &d/%cmd% addwarps <player> <amount> &7&l- &bAdd more warps to a player via command."
+    - "%prefix% &d/%cmd% category <warp> <category> &7&l- &bSet a warp category."
+    - "%prefix% &d/%cmd% removeall <player> &7&l- &bRemoves all players warps."
+    - "%prefix% &d/%cmd% setowner <warp> <player> &7&l- &bTransfer ownership."
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Warps &7&l]&m----------"
+
+  # error messages.
+  errors:
+    player-only: "%prefix% &cYou must be a player!"
+    name-too-long-set: "%prefix% &cYou cannot have a warp name longer than &4%max%&c characters!"
+    desc-too-long-set: "%prefix% &cYou cannot have a desc name longer than &4%max%&c characters!"
+    rate-too-big: "%prefix% &cYou cannot rate a warp above &45&c!"
+    not-a-number: "%prefix% &cThat is a not a number!"
+    invalid-name-set: "%prefix% &cYou cannot set a player warp called &4%name%&c!"
+    name-taken-set: "%prefix% &cThat warp name is already taken!"
+    valid-name-set: "%prefix% &cPlease enter a valid name for your warp!"
+    warp-dont-own: "%prefix% &cYou do not own that warp!"
+    warp-dont-exist: "%prefix% &cThat warp does not exist!"
+    invalid-warp: "%prefix% &cThat is an invalid warp."
+    no-permission: "%prefix% &cYou do not have permission to perform this command!"
+    too-many-warps-set: "%prefix% &cYou cannot set this many warps you can only set &4%amount%&c!"
+    warp-not-safe: "%prefix% &cThis warp is not safe. If you want to teleport, do it again."
+    money-not-enough-teleport: "%prefix% &cYou do not have $%price% to teleport to this warp!"
+    money-not-enough-reset: "%prefix% &cYou do not have $%price% to teleport to re-set warp!"
+    items-not-enough-set: "%prefix% &cYou do not have diamonds to set to this warp!"
+    money-not-enough-set: "%prefix% &cYou do not have $%price% to set this warp!"
+    money-not-enough-sponsor: "%prefix% &cYou do not have $%price% to sponsor this warp!"
+    item-not-enough-sponsor: "%prefix% &cYou do not have enough %item% to sponsor this warp!"
+    moved-while-teleporting: "%prefix% &cCanceled, you moved!"
+    desc-no-desc-gui: "&cNincs"
+    desc-no-desc: "%prefix% &c%warp% does not have a description!"
+    cost-no-cost: "%prefix% &c%warp% does not have a cost!"
+    pass-no-pass: "%prefix% &c%warp% does not have a password!"
+    disabled-world-set: "%prefix% &cYou cannot set warps in this world!"
+    player-offline: "%prefix% &cThat player is offline!"
+    player-has-max-warps: "%prefix% &cThat player already has max warps because of their permissions!"
+    permissions-plugin-needed: "%prefix% &cYou need a permissions plugin for this to work!"
+    invalid-item: "%prefix% &cThat is an invalid item to set your warp icon to."
+    invalid-category: "%prefix% &cThat is a invalid category"
+    no-player-joined: "%prefix% &cThat player does not exist!"
+    set-cooldown: "%prefix% &cYou currently have a cooldown for setting warps!"
+    rate-cooldown: "%prefix% &cYou currently have a cooldown for rating warps!"
+    teleport-cooldown: "%prefix% &cYou currently have a cooldown for teleporting!"
+    teleport-warp-locked: "%prefix% &cThis warp is currently locked!"
+    rate-own-warp: "%prefix% &cYou cannot rate your own warp!"
+    already-owner: "%prefix% &cYou are already the owner of this warp!"
+    already-teleporting: "%prefix% &cYou are already teleporting to a warp!"
+    wrong-password: "%prefix% &cThat password is incorrect!"
+    not-whitelisted: "%prefix% &cSorry, the owner has not whitelisted you. Tough times :("
+    not-same-world: "%prefix% &cYou cannot teleport to that warp!"
+    rent: "%prefix% &cYou couldn''t pay for %warp%, the warp has now been removed!"
+    banned: "%prefix% &cSorry, the owner has banned you. Tough times :("
+    owner-ban: "%prefix% &cYou cannot ban yourself, silly!"
+    already-banned: "%prefix% &cThat player is already banned!"
+    max-cost: "%prefix &cSorry, the maximum cost you can set is %max%!"
+    already-whitelisted: "%prefix% &cThat player is already whitelisted!"
+    already-sponsored: "%prefix% &cYou already have sponsored that warp!"
+    max-sponsors: "%prefix% &cYou're only limited to 1 sponsor warp!"
