@@ -1009,7 +1009,7 @@ Checker:
   Period: You can only send {type_amount} {type} in {period_amount} {period}.
   Caps: Kérlek, kerüld a(z) {type} túlzott nagybetűs írását.
   Sound_Notify: '&cYou cannot use sound notify for another {seconds}.'
-  No_Text: Nem küldhetsz chat üzenetet szöveg nélkül!
+  No_Text: Nem küldhetsz chat üzeneteket szöveg nélkül!
 
 # -------------------------------------------------------------------------------------------------
 # Words for both singular and plural form. Separate these two forms with ", "
