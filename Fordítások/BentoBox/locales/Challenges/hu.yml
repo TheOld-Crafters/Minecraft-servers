@@ -442,8 +442,8 @@ challenges:
             item-meta: '  &e([meta])'
             item-enchant: '   &e- [enchant] [level]'
             command: '&e- [command]'
-            level-unlocked: '&e&lKattints a(z) [level] szint küldetéseinek megtekintéséhez!'
-            level-locked: '&e&lTeljesíts [count] [level] küldetést, hogy feloldd ezt a szintet!'
+            level-unlocked: '&7&lKattints a(z) [level] &7szint küldetéseinek megtekintéséhez!'
+            level-locked: '&7Teljesíts [count] [level] &7küldetést, hogy feloldd ezt a szintet!'
 
             increase-by: "&a Increase completion count by [value]"
             reduce-by: "&c Reduce completion count by [value]"
@@ -478,7 +478,7 @@ challenges:
             required-blocks: '&bSzükséges blokkok:'
         level-description:
             completed: '&b Teljesítve'
-            completed-challenges-of: '&3 [number] küldetést teljesítettél a maxból ([max]) ezen a szinten.'
+            completed-challenges-of: '&7 [number] küldetést teljesítettél a maxból ([max]) ezen a szinten.'
             waver-amount: '&6 [value] küldetést hagyhatsz ki a következő szint feloldásához.'
             experience-reward: '&6&l XP jutalom: [value]'
             money-reward: '&6 Pénzjutalom: $[value]'
@@ -547,7 +547,7 @@ challenges:
             start-downloading: '&5 Starting to download and import Challenges Library.'
         you-completed-challenge: '&2 Teljesítetted a(z) [value] küldetést!'
         you-repeated-challenge: '&2 Megismételted a(z) [value] küldetést!'
-        you-repeated-challenge-multiple: '&2Megismételted a(z) [value] &r&2küldetést [count]x!'
+        you-repeated-challenge-multiple: '&2Megismételted a(z) [value] &2küldetést [count]x!'
         you-completed-level: '&2 Teljesítetted a(z) [value] szintet!'
         name-has-completed-challenge: '&5[name] teljesítette a(z) [value] küldetést!'
         name-has-completed-level: '&5[name] teljesítette a(z) [value] szintet!'
