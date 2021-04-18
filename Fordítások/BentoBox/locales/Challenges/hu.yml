@@ -454,7 +454,7 @@ challenges:
                 toggleable: "Toggle if undeployed challenges should be displayed"
 
         challenge-description:
-            level: '&&3 Szint: [level]'
+            level: '&3 Szint: [level]'
             completed: '&b Teljesítve'
             completed-times-of: '&a&l[donetimes]&ax teljesítve a maxból: &a&l[maxtimes]'
             maxed-reached: '&a&l[donetimes]&ax teljesítve a maxból: &a&l[maxtimes]'
