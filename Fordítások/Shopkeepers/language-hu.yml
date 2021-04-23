@@ -107,12 +107,12 @@ msg-button-fox-variant-lore:
 - Megváltoztatja a róka kinézetét
 msg-button-fox-crouching: '&aBekapcsolja a róka guggolását'
 msg-button-fox-crouching-lore:
-- RÓka váltása
+- Róka váltása
 - guggolásra
 msg-button-fox-sleeping: '&aAlvó póz bekapcsolása'
 msg-button-fox-sleeping-lore:
 - Róka váltása
-- alsó pozícióra
+- alvó pozícióra
 msg-button-mooshroom-variant: '&aGombatehén fajta választása'
 msg-button-mooshroom-variant-lore:
 - Megváltoztatja a kinézetét
@@ -228,7 +228,7 @@ msg-shopkeeper-created: "&aBoltos létrehozva: &6{type} &7({description})\n{setu
 
 msg-shop-setup-desc-selling: |-
   &e  Adj hozzá tárgyakat, amiket el akarsz adni a tárolóból, majd
-  &e  kattints a shitf + jobb klikkel a boltra az árak módosításához.
+  &e  kattints a shift + jobb klikkel a boltra az árak módosításához.
 msg-shop-setup-desc-buying: |-
   &e  Adj hozzá minden tárgyat, amiket meg akarsz vásárolni a tárolóba, majd
   &e  kattints a shift + jobb klikkel a boltra az árak módosításához.
