@@ -990,15 +990,15 @@ stone-generator:
     netherrack:
       name: "Alvilági kő"
     coal_ore:
-      name: "Szén-érc"
+      name: "Szénérc"
     iron_nugget:
       name: "Vasrög"
     iron_ore:
-      name: "Vas-érc"
+      name: "Vasérc"
     gold_nugget:
       name: "Aranyrög"
     gold_ore:
-      name: "Arany-érc"
+      name: "Aranyérc"
     redstone:
       name: "Vöröskő"
     redstone_ore:
@@ -1006,23 +1006,23 @@ stone-generator:
     emerald:
       name: "Smaragd"
     lapis_ore:
-      name: "Lazurit-érc"
+      name: "Lazuritérc"
     diamond:
       name: "Gyémánt"
     emerald_ore:
-      name: "Smaragd-érc"
+      name: "Smaragdérc"
     diamond_ore:
-      name: "Gyémánt-érc"
+      name: "Gyémántérc"
     soul_sand:
       name: "Lélekhomok"
     magma_block:
       name: "Magmablokk"
     soul_soil:
-      name: "Lélek talaj"
+      name: "Lélektalaj"
     glowstone:
-      name: "Ízzókő"
+      name: "Izzókő"
     nether_quartz_ore:
-      name: "Netherkvarc-érc"
+      name: "Netherkvarcérc"
     ancient_derbis:
       name: "Ősi törmelék"
     nether_gold_ore:
@@ -1035,6 +1035,8 @@ stone-generator:
       name: "Karmazsin nílium"
     netherite-scrap:
       name: "Netheritdarab"
+    mossy_cobblestone:
+      name: "Mohás zúzottkő"
   # Showcase for manual biome translation
   biomes:
     # Names should be lowercase.
