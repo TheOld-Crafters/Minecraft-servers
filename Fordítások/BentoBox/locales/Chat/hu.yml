@@ -1,0 +1,21 @@
+chat:
+  team-chat:
+    description: csapat chat állítása be/ki
+    chat-on: '&a Csapat chat be.'
+    chat-off: '&a Csapat chat ki.'
+    syntax: '&2[team] &a[name]&8: &a[message]'
+    spy:
+      description: kémkedés állítása az összes csapat chatben
+      spy-on: '&a Csapat chat kémkedés be.'
+      spy-off: '&c Csapat chat kémkedés ki.'
+      syntax: '&c[team-chat-spy] &a[name]&8: [message]'
+  island-chat:
+    description: sziget chat állítása be/ki
+    island-on: '&a Sziget chat be.'
+    island-off: '&c Sziget chat ki.'
+    syntax: '&2[island] &a[name]&8: &a[message]'
+    spy:
+      description: kémkedés állítása az összes sziget chatben
+      spy-on: '&a Sziget chat kémkedés be.'
+      spy-off: '&c Sziget chat kémkedés ki.'
+      syntax: '&c [island-chat-spy] &a[name]&8: &f[message]'
