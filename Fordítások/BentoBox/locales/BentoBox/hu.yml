@@ -6,6 +6,7 @@ meta:
   - poma123
   - Nicolettie
   - andris155
+  - MrZeri
   banner: WHITE_BANNER:1:STRIPE_TOP:RED:STRIPE_BOTTOM:LIME
 prefixes:
   bentobox: '&6 BentoBox &7 &l > &r '
@@ -35,7 +36,7 @@ general:
     you-must-wait: '&cVárnod kell [number] másodpercet a parancs használatához.'
     must-be-positive-number: '&cA(z) [number] nem pozitív szám.'
   tips:
-    changing-obsidian-to-lava: '&6Obszidián visszaállítva lávává. Légy óvatos!'
+    changing-obsidian-to-lava: '&6Obszidián visszaállítva lávára. Légy óvatos!'
   worlds:
     overworld: Overworld
     nether: Nether
@@ -106,8 +107,8 @@ commands:
         parameters: <owner> <player>
         description: játékos hozzáadása egy sziget tulajdonosának csapatához
         name-not-owner: '&c[name] nem a tulajdonos.'
-        name-has-island: '&c[name]-nek már van egy szigete. Először lépjen ki vagy
-          törölje!'
+        name-has-island: '&c[name]-nak/nek már van egy szigete. Először lépjen ki
+          vagy törölje!'
         success: '&b[name]&a hozzáadva &b[owner]&a szigetéhez.'
       disband:
         parameters: <owner>
@@ -466,9 +467,9 @@ commands:
       class: '[prefix_bentobox]&6Áttelepítés [description]'
       migrated: '[prefix_bentobox]&AÁttelepítve'
   confirmation:
-    confirm: '&cÍrd be újra a parancsot &b[seconds]s&c-en belül a megerősítéshez.'
+    confirm: '&9Írd be újra a parancsot &b[seconds]s&c-en &9belül a megerősítéshez.'
     previous-request-cancelled: '&6A korábbi megerősítési kérelem visszavonva.'
-    request-cancelled: '&cMegerősítés időtúllépés - &bkérés visszavonva.'
+    request-cancelled: '&4Megerősítés időtúllépés - &bkérés visszavonva.'
   delay:
     previous-command-cancelled: '&cAz előző parancs törölve'
     stand-still: '&6Ne mozogj! Teleportálás [seconds] másodperc múlva'
@@ -502,8 +503,8 @@ commands:
         estimated-time: '&aBecsült idő: &b[number] &amásodperc.'
         blocks: '&aÉpítés blokkonként: &b[number] &ablokk összesen...'
         entities: '&aFeltöltés entitásokkal: &b[number] &aentitás összesen...'
-        done: '&aKész! A szigeted készen áll, és vár rád!!'
-      pick: '&2Válassz szigetet'
+        done: '&aKész! A szigeted készen áll, és csak rád vár!'
+      pick: '&2Válassz szigetet!'
       unknown-blueprint: '&cA blueprint még nincs betöltve.'
       on-first-login: '&aÜdvözlünk! Néhány másodperc múlva elkezdjük előkészíteni
         a szigetet.'
@@ -530,9 +531,9 @@ commands:
       none-left: '&cNincs több újrakezdésed!'
       resets-left: '&c[number] újrakezdésed maradt.'
       confirmation: |-
-        &cBiztos vagy ebben?
-        &cAz összes szigettagot törölni fogjuk a szigetről, utána újból meg kell hívnod őket.
-        &cNincs visszaút: ha a jelenlegi szigetet törlöd, &lnem lesz&r&c mód arra, hogy később visszaszerezd.
+        &b&lBiztos vagy ebben?
+        &aAz összes szigettagot &ctörölni &afogjuk a szigetről, utána újból meg kell hívnod őket.
+        &cNincs visszaút: ha a jelenlegi szigetet törlöd, &b&lnem lesz &cmód arra, hogy később visszaszerezd.
       kicked-from-island: '&cTörlésre kerültél a szigetről itt [gamemode], mert a
         tulajdonos újrakezdte a szigetet.'
     sethome:
@@ -624,7 +625,7 @@ commands:
         success: '&b[name] &amár nem megbízott a szigeteden.'
       invite:
         description: Játékos meghívása, hogy csatlakozzon a szigetedre
-        invitation-sent: '&aMeghívó elküldve &b[name]&a számára.'
+        invitation-sent: '&aMeghívó elküldve &b[name] &aszámára.'
         removing-invite: '&cMeghívó eltávolítása.'
         name-has-invited-you: '&a[name] meghív téged, hogy csatlakozz a szigetére.'
         to-accept-or-reject: '&aHasználd az §2/[label] team accept §aparancsot az
@@ -635,7 +636,7 @@ commands:
           cannot-invite-self: '&cNem hívhatod meg saját magadat!'
           cooldown: '&cNem hívhatod meg ezt a játékost [number] másodpercig.'
           island-is-full: '&cA szigeted tele van, nem hívhatsz meg több játékost.'
-          none-invited-you: '&cSenki sem hívott meg :c.'
+          none-invited-you: '&cSenki sem hívott meg :C.'
           you-already-are-in-team: '&cMár csapattag vagy egy szigeten!'
           already-on-team: '&cEz a játékos már csapattag egy szigeten!'
           invalid-invite: '&cA meghívás nem érvényes többé. Sajnáljuk.'
@@ -750,7 +751,7 @@ commands:
       success: '&aKiutasítottad &b[name]-t &aa szigetedről.'
 ranks:
   owner: Tulajdonos
-  sub-owner: Al-tulajdonos
+  sub-owner: Altulajdonos
   member: Tag
   trusted: Megbízott
   coop: Coop
@@ -1150,7 +1151,7 @@ protection:
         &a Note: obsidian cannot be scooped up
         &a if there are other obsidian blocks
         &a within a 2-block radius.
-      scooping: '&a Obszidián lávává változtatása. Légy óvatos legközelebb!'
+      scooping: '&a Obszidián lávára változtatása. Légy óvatos legközelebb!'
       obsidian-nearby: '&c Vannak obszidiánok a közelben, de nem tudod felszedni vödörrel,
         hogy láva legyen belőle.'
     OFFLINE_GROWTH:
@@ -1209,22 +1210,22 @@ protection:
         &c in the End.
       name: End PVP
       hint: A PVP kikapcsolva az Endben
-      enabled: '&c PVP az Endben bekapcsolva.'
-      disabled: '&a PVP az Endben kikapcsolva.'
+      enabled: '&c PVP a Végben bekapcsolva.'
+      disabled: '&a PVP a Végben kikapcsolva.'
     PVP_NETHER:
       description: |-
         &c Enable/Disable PVP
         &c in the Nether.
       name: Nether PVP
       hint: A PVP kikapcsolva a Netherben
-      enabled: '&c PVP a Netherben bekapcsolva.'
-      disabled: '&a PVP a Netherben kikapcsolva.'
+      enabled: '&c PVP a Pokolban bekapcsolva.'
+      disabled: '&a PVP a Pokolban kikapcsolva.'
     PVP_OVERWORLD:
       description: |-
         &c Enable/Disable PVP
         &c on island.
       name: Alap világ PVP
-      hint: '&cA PVP kikapcsolva az Alap világban'
+      hint: '&cA PVP kikapcsolva az alap világban'
       enabled: '&c PVP az alap világban bekapcsolva.'
       disabled: '&a PVP az alap világban kikapcsolva.'
     REDSTONE:
