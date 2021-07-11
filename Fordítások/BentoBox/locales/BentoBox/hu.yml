@@ -78,7 +78,7 @@ commands:
       parameters: '[days]'
       description: 'Megtisztítja a szigeteket amik elhagyottak voltak ennél több napja:
         [days]'
-      days-or-more: Legalább 1 vagy több napnak kell lennie
+      days-one-or-more: Must be at least 1 day or more
       purgable-islands: '&aTalálat &b[number]&amegtisztítandó szigetre.'
       purge-in-progress: '&cPurge folyamatban. Használd a &b/[label] purge stop-ot
         &c a visszavonáshoz'
@@ -116,6 +116,16 @@ commands:
         use-disband-owner: '&cNem tulajdonos! Oszlassa fel [owner].'
         disbanded: '&cEgy adminisztrátor feloszlatta a csapatodat!'
         success: '&b[name]&a csapata feloszlott.'
+      fix:
+        description: scans and fixes cross island membership in database
+        scanning: Scanning database...
+        duplicate-owner: '&c Player owns more than one island in database: [name]'
+        player-has: '&c Player [name] has [number] islands'
+        duplicate-member: '&c Player [name] is a member of more than one island in
+          the database'
+        rank-on-island: '&c [rank] on island at [xyz]'
+        fixed: '&a Fixed'
+        done: '&a Scan'
       kick:
         parameters: <team player>
         description: játékos kidobása egy csapatból
@@ -189,6 +199,7 @@ commands:
       island-uuid: 'UUID: [uuid]'
       owner: 'Tulajdonos: [owner] ([uuid])'
       last-login: 'Legutóbbi belépés: [date]'
+      last-login-date-time-format: EEE MMM dd HH:mm:ss zzz yyyy
       deaths: 'Halálok: [number]'
       resets-left: 'Újrakezdések: [number] (Max: [total])'
       team-members-title: 'Csapat:'
@@ -248,7 +259,7 @@ commands:
       manual: '&cNem található biztonságos teleport! Manuálisan teleportálj az alábbi
         koordinátákra és ellenőrizd. &b[location]'
     getrank:
-      parameters: <player>
+      parameters: <player> [island owner]
       description: egy játékos szigetén lévő rangjának lekérése
       rank-is: '&aA játékos rangja a szigetén: [rank].'
     setrank:
@@ -276,8 +287,15 @@ commands:
       confirmation: '&cBiztos vagy benne, hogy beállítod ezt a szigetet kezdőhelynek
         ebben a világban?'
       success: '&aSikeresen beállítva kezdőhelynek ez a sziget ebben a világban.'
+    setspawnpoint:
+      description: set current location as spawn point for this island
+      no-island-here: '&c There is no island here.'
+      confirmation: '&c Are you sure you want to set this location as the spawn point
+        for this island?'
+      success: '&a Successfully set this location as the spawn point for this island.'
+      island-spawnpoint-changed: '&a [user] changed this island spawn point.'
     settings:
-      parameters: '[player]/[world flag] [flag/active/disable] [rank/active/disable]'
+      parameters: '[player]/[world flag]/spawn-island [flag/active/disable] [rank/active/disable]'
       description: open settings GUI or set settings
       unknown-setting: '&c Unknown setting'
     blueprint:
@@ -512,6 +530,8 @@ commands:
     deletehome:
       description: egy otthon hely törlése
       parameters: '[otthon név]'
+    homes:
+      description: list your homes
     info:
       description: információ megtekintése saját vagy mások szigetéről
       parameters: <játékos>
@@ -549,7 +569,7 @@ commands:
       the-end:
         not-allowed: '&cNem állíthatsz be otthont a Végben.'
         confirmation: '&cBiztos vagy benne, hogy a Végben állítasz be otthont?'
-      parameters: '[otthon száma]'
+      parameters: '[otthon név]'
     setname:
       description: Név beállítása a szigetednek
       name-too-short: '&cTúl rövid. A minimum hosszúság [number] karakter.'
@@ -663,16 +683,6 @@ commands:
         description: Szigeted elhagyása
         left-your-island: '&c[name] &celhagyta a szigetet'
         success: '&aElhagytad ezt a szigetet.'
-      fix:
-        description: scans and fixes cross island membership in database
-        scanning: Scanning database...
-        duplicate-owner: '&c Player owns more than one island in database: [name]'
-        player-has: '&c Player [name] has [number] islands'
-        duplicate-member: '&c Player [name] is a member of more than one island in
-          the database'
-        rank-on-island: '&c [rank] on island at [xyz]'
-        fixed: '&a Fixed'
-        done: '&a Scan'
       kick:
         description: Tag eltávolítása a csapatból
         parameters: <player>
@@ -726,13 +736,6 @@ commands:
       the-following: '&bAz alábbi játékosok vannak kitiltva:'
       names: §e- &c[line]
       you-can-ban: '&bTovábbi &e[number] &bjátékost tilthatsz ki.'
-    setspawnpoint:
-      description: set current location as spawn point for this island
-      no-island-here: '&c There is no island here.'
-      confirmation: '&c Are you sure you want to set this location as the spawn point
-        for this island?'
-      success: '&a Successfully set this location as the spawn point for this island.'
-      island-spawnpoint-changed: '&a [user] changed this island spawn point.'
     settings:
       description: Sziget beállítások megjelenítése
     language:
@@ -827,15 +830,45 @@ protection:
       name: Torták
       hint: Tortaevés kikapcsolva
     CONTAINER:
-      name: Tárolók
+      name: All containers
       description: |-
-        &a Interakciók kapcsolása ládákkal,
-        &a shulkerboxokkal és virágcserepekkel,
-        &a komposztálókkal és hordókkal.
+        &a Toggle interaction with all containers.
+        &a Includes: Barrel, bee hive, brewing stand,
+        &a chest, composter, dispenser, dropper,
+        &a flower pot, furnace, hopper, item frame,
+        &a jukebox, minecart chest, shulker box,
+        &a trapped chest.
 
-        &7 Más tárolóeszközök
-        &7 dedikált flagekkel kezelhetőek.
+        &7 Changing individual settings overrides
+        &7 this flag.
       hint: Container access disabled
+    CHEST:
+      name: Chests and minecart chests
+      description: |-
+        &a Toggle interaction with chests
+        &a and chest minecarts.
+        &a (does not include trapped chests)
+      hint: Chest access disabled
+    BARREL:
+      name: Barrels
+      description: Toggle barrel interaction
+      hint: Barrel access disabled
+    COMPOSTER:
+      name: Composters
+      description: Toggle composter interaction
+      hint: Composter interaction disabled
+    FLOWER_POT:
+      name: Flower pots
+      description: Toggle flower pot interaction
+      hint: Flower pot interaction disabled
+    SHULKER_BOX:
+      name: Shulker boxes
+      description: Toggle shulker box interaction
+      hint: Shulker box access disabled
+    TRAPPED_CHEST:
+      name: Trapped chests
+      description: Toggle trapped chest interaction
+      hint: Trapped chest access disabled
     DISPENSER:
       name: Adagolók
       description: Adagoló interakció kapcsolása
@@ -1077,7 +1110,7 @@ protection:
       hint: Karhasználat kikapcsolva
     LIMIT_MOBS:
       description: |-
-        &a Limit entities from
+        a Limit entities from
         &a spawning in this game
         &a mode.
       name: '&e Entitás típusú spawnolás limitálása'
@@ -1311,6 +1344,15 @@ protection:
         &a back to their island using commands
         &a if they are falling.
       hint: '&c Ezt nem teheted meg miközben zuhansz.'
+    VISITOR_KEEP_INVENTORY:
+      name: Visitors keep inventory on death
+      description: |-
+        &a Prevent players from losing their
+        &a items and experience if they die on
+        &a an island in which they are a visitor.
+        &a
+        &a Island members still lose their items
+        &a if they die on their own island!
     WITHER_DAMAGE:
       name: Wither sebzés
       description: |-
@@ -1508,6 +1550,36 @@ catalog:
         &aAllow BentoBox to connect to GitHub in
         &athe configuration or try again later.
 
+enums:
+  DamageCause:
+    CONTACT: Contact
+    ENTITY_ATTACK: Mob Attack
+    ENTITY_SWEEP_ATTACK: Sweep Attack
+    PROJECTILE: Projectile
+    SUFFOCATION: Suffocation
+    FALL: Fall
+    FIRE: Fire
+    FIRE_TICK: Burning
+    MELTING: Melting
+    LAVA: Lava
+    DROWNING: Drowning
+    BLOCK_EXPLOSION: Block Explosion
+    ENTITY_EXPLOSION: Entity Explosion
+    VOID: Void
+    LIGHTNING: Lightning
+    SUICIDE: Suicide
+    STARVATION: Starvation
+    POISON: Poison
+    MAGIC: Magic
+    WITHER: Wither
+    FALLING_BLOCK: Falling Block
+    THORNS: Thorns
+    DRAGON_BREATH: Dragon Breath
+    CUSTOM: Custom
+    FLY_INTO_WALL: Fly Into Wall
+    HOT_FLOOR: Hot Floor
+    CRAMMING: Cramming
+    DRYOUT: Dryout
 panel:
   credits:
     title: '&8[name] &2Kreditek'
