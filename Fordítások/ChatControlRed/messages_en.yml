@@ -12,7 +12,7 @@
 #   2) TO HIDE any message, set it to 'none'.
 #
 #   3) For UNICODE CHARACTERS (smileys, symbols, ..), save the file in UTF-8 encoding. See
-#      - https://github.com/kangarko/ChatControl-Pro/wiki/Use-Right-Encoding
+#      - https://github.com/kangarko/ChatControl-Red/wiki/Use-Right-Encoding
 #
 #   4) JSON is supported. Prepend the message with [JSON].
 #
@@ -38,6 +38,7 @@ Channels:
   Use_Alternative_Header: false
   Tooltip_Joined: '&fYou are joined in this channel.'
   Tooltip_Join_Write: '&2Click to join this channel for writing.'
+  Tooltip_Join_Read: '&2Click to join this channel for reading.'
   Tooltip_Leave_Write:
   - ''
   - '&6Notice: &fYou will automatically leave'
@@ -60,8 +61,8 @@ Channels:
     - '&cotherwise we will kick them out of channel when they join.'
     Already_Connected: '(self ? ''You are'' : ''Player is'') + '' already joined in this channel in {0} mode.'''
     Read_Disabled: Joining channels for reading has been disabled.
-    Leave_Reading: ' You left reading &o{0}&7 channel(s) over limit.'
-    Leave: ' {person} thereby left {pronoun} old write channel &o{0}&7.'
+    Leave_Reading_You: ' You left reading &o{0}&7 channel(s) over limit.'
+    Leave_Reading_Other: ' {target} left reading &o{0}&7 channel(s) over limit.'
     Switch_Success: Switched mode for channel &o{0} &7from {1} to {2}.
     Success: Joined &o{0} &7channel in {1} mode.
     Notification: '&8[&2+&8] &7Player {player} has joined ''{channel}'' channel.'
@@ -74,8 +75,8 @@ Channels:
     - '/{label} {sublabel} <channel> <player> &7- Force player to leave channel.'
     Not_Joined: '(self ? ''You are'' : ''{0} is'') + '' not joined in this channel. '' + (channelsPlayerCanLeave.isEmpty() ? ''There are no channels '' + (self ? ''you'' : ''player'') + '' can leave.'' : (self ? ''You'' : ''Player'') + '' can leave channels: {1}'')'
     No_Channels: '(self ? ''You have'' : ''Player has'') + '' no channels to leave.'''
-    Switch_To_Reading: '{person} switched the &o{0} &7channel to reading. Type the command again to leave.'
-    Success: '{person} left the &o{0} &7channel.'
+    Switch_To_Reading_V2: '(self ? ''You'' : ''{target}'') + '' switched the &o{0} &7channel to reading. Type the command again to leave.'''
+    Success_V2: ' (self ? ''You'' : ''{target}'') + '' left the &o{0} &7channel.'''
     Notification: '&8[&4-&8] &7Player {player} has left ''{channel}'' channel.'
     
   List:
@@ -253,6 +254,7 @@ Commands:
     Unnamed: Unnamed
     Unsigned: Unsigned
     Open: The book has been opened for {0}.
+    Give: Player {0} has received the book as item.
 
   Clear:
     Usage: '[-a/-c/-s] [reason]'
@@ -341,6 +343,8 @@ Commands:
     Cannot_Ignore_Self: You cannot ignore the same player fool :)
     Success: '(!otherPlayer ? ''You are '' : ''{0} is '') + (ignored ? ''&ano longer'' : ''&cnow'') + '' &7ignoring {1}.'''
     Cannot_PM: '{0} is ignoring you. No message sent.'
+    Cannot_Sound_Notify_Sender: Cannot tag {0} because you ignore them.
+    Cannot_Sound_Notify_Receiver: Cannot tag {0} because they ignore you.
 
   Inspect:
     Usage: <file/plugin/class> <value>
@@ -443,6 +447,7 @@ Commands:
     Autoresponder_Missing: You attempted to set a time but you're not creating a draft nor you have an old auto-responder. Create a new mail draft first.
     Autoresponder_Updated: Updated your old auto-responder to expire {0}.
     Autoresponder_Set: Set a new auto-responder that expires {0}.
+    Autoresponder_Invalid_Time: Malformed syntax, expected human readable time like '1 minute' or '3 days', got '{0}' instead.
     Delete_Invalid: No such email, perhaps it was deleted already.
     Delete_Sender: The selected email has been deleted. Keep in mind recipient will still be able to read it.
     Delete_No_Recipient: Recipient unique ID not provided.
@@ -668,6 +673,7 @@ Commands:
     Tooltip_Remove: '&7Click to remove permanently.'
     Tooltip_Visualize: '&7Click to visualize.'
     Tooltip_Teleport: '&7Click to teleport to the center.'
+    Tool_Disabled: Region tools are disabled. Set 'Register_Tools' to true in settings.yml to use tools.
     Tool: Thor given you 1x ChatControl Region Tool. Right/left click to select two points and then use '/{label} {sublabel} add' to create a region.
     Tool_Name: Region Tool
     Tool_Lore:
@@ -794,7 +800,7 @@ Commands:
     No_Tag: '''{0} presently do'' + (self ? '''' : ''es'') + '' not have a {1}.'''
     No_Impersonation: The nick cannot impersonate a real player name.
     Already_Used: This nick is already used.
-    Success: '''{person} {0} has been '' + (remove ? ''removed'' : ''set to {1}&7'') + ''.'''
+    Success_V2: ' (self ? ''Your'' : ''{target}’s '') + '' {0} has been '' + (remove ? ''removed'' : ''set to {1}&7'') + ''.'''
 
   Toggle:
     Usage: <type> [group]
@@ -882,7 +888,7 @@ Player:
   Possessive_Form: '{player}''s'
   Has: has
   Newcomer_Cannot_Command: You are a newcomer and cannot run this command yet!
-  Newcomer_Cannot_Write: You are a newcomer and cannot yet write to chat.
+  Newcomer_Cannot_Write: Még újonc vagy a szerveren. 5 perc játékidő után tudsz üzeneteket írni a chat-re.
   No_Write_Chat_Permission: You lack {0} permission to write chat messages.
   No_Channel: You have no channel to write into. Use '/{label_channel} join' to join one.
   No_Possible_Channel: You lack permissions to join any channels.
@@ -1009,7 +1015,9 @@ Checker:
   Period: '{period_amount} {period} alatt csak {type_amount} {type} küldhető.'
   Caps: Kérlek, kerüld a(z) {type} túlzott nagybetűs írását.
   Sound_Notify: '&cYou cannot use sound notify for another {seconds}.'
+  Parrot: You cannot repeat '{0}' since it's {1}% similar to what was said in the last {2}.
   No_Text: Nem küldhetsz chat üzeneteket szöveg nélkül!
+  No_Text_After_Change: Your message has been edited and cannot be sent because it is now empty.
 
 # -------------------------------------------------------------------------------------------------
 # Words for both singular and plural form. Separate these two forms with ", "
@@ -1063,4 +1071,4 @@ Conversation_Requires_Player: Only players may enter this conversation.
 # -------------------------------------------------------------------------------------------------
 # Internal versioning number
 # -------------------------------------------------------------------------------------------------
-Version: 2
+Version: 1
