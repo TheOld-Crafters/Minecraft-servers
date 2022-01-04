@@ -7,9 +7,16 @@ assignees: ''
 
 ---
 
-<!--- Kritikus (nem publikus) hibák jelentése: https://www.oldcrafters.net/kapcsolat/ -->
+<!--- Előre is köszönjük a közreműködést a szerver fejlesztésében. A hiba javítását követően egy "Jelentés" kulccsal jutalmazunk -->
 
-<!-- Melyik szerveren van a hiba? pl.: Survival -->
+<!-- Melyik szerveren találkoztál a hibával? pl.: Survival -->
 **Szerver**:
+<!-- Írd le, hogy mikor jelentkezik a hiba? (pl. ha beírsz egy parancsot) Arra is térj ki, hogyan lehet reprodukálni -->
+*Út a hibához:*
 
-<!-- Ez alá a sor alá írd le részletesen a hibát. Térj ki arra is, hogyan tudjuk azt reprodukálni. Ha készítettél róla videót vagy képet, csatold bátran. -->
+<!-- Ha van valamilyen ötleted, hogy mi okozhatja a hibát, esetleg hogyan lehetne megoldani, azt itt fejtsd ki -->
+
+<!-- Ha tudsz, kérlek csatolj képet a hibáról -->
+
+<!-- Kérlek írj egy dátumot, amikor jelentkezett a hiba (a naplófájlok közötti könnyebb navigálás érdekében) -->
+> *Dátum és idő:*
